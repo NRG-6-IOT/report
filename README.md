@@ -27,6 +27,7 @@
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
 | **Paitan Pumachuca Max Anthony**          | U201314454 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
+| **Real Calderon Sebatian Omar**           | U20221D964 |
 
 
 **Agosto 2025**
