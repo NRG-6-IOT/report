@@ -167,7 +167,9 @@ del ABET – EAC - Student Outcome 5.
 #### 1.1.2 Perfiles de integrantes del equipo
 
 ### 1.2 Solution Profile
-
+#### Problema identificado  
+En el contexto urbano, los dueños de motos suelen carecer de herramientas digitales que les permitan monitorear el estado de sus vehículos y llevar un control de sus costos de uso y mantenimiento. Esto ocasiona un uso ineficiente del combustible (monetario y rendimiento), fallas mecánicas inesperadas, gastos imprevistos y dificultades para planificar el cuidado preventivo de la moto.  
+Por otro lado, los mecánicos y talleres enfrentan la falta de información confiable y actualizada sobre el historial junto a la condición de las motos de sus clientes, lo que en ocasiones limita la precisión de los diagnósticos y la capacidad de generar relaciones de confianza y fidelización.
 #### 1.2.1 Antecedentes y problemática
 
 ##### What
