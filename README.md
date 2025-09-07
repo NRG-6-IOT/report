@@ -170,6 +170,21 @@ del ABET – EAC - Student Outcome 5.
 #### Problema identificado  
 En el contexto urbano, los dueños de motos suelen carecer de herramientas digitales que les permitan monitorear el estado de sus vehículos y llevar un control de sus costos de uso y mantenimiento. Esto ocasiona un uso ineficiente del combustible (monetario y rendimiento), fallas mecánicas inesperadas, gastos imprevistos y dificultades para planificar el cuidado preventivo de la moto.  
 Por otro lado, los mecánicos y talleres enfrentan la falta de información confiable y actualizada sobre el historial junto a la condición de las motos de sus clientes, lo que en ocasiones limita la precisión de los diagnósticos y la capacidad de generar relaciones de confianza y fidelización.
+#### Solución propuesta  
+La plataforma IoT para motos urbanas BykerZ ofrece un ecosistema digital compuesto por aplicaciones móviles, web y un dispositivo embebido que recolecta datos de telemetría en tiempo real (kilometraje, consumo de gasolina, estado de batería, vibración y temperatura del motor).  
+- Desde el rol de usuario de moto urbana:
+    - Consultar métricas de eficiencia de combustible
+    - Recibir alertas preventivas
+    - Visualizar y registrar costos acumulados de mantenimiento y uso
+    - Acceder al historial de servicios realizados.
+    - Sugerencias para próximos mantenimientos.
+- Desde el rol de mecánico o taller: 
+    - Comparación de métricas entre motos similares  
+    - Generación de reportes de salud del vehículo  
+    - La consulta del historial de servicios  
+    - La emisión de recordatorios para próximos mantenimientos.  
+
+Gracias a sus funcionalidades, la plataforma impulsa un uso más seguro, económico y sostenible de las motos, al mismo tiempo que fortalece la relación entre usuarios y mecánicos mediante datos objetivos y accesibles en tiempo real.
 #### 1.2.1 Antecedentes y problemática
 
 ##### What
