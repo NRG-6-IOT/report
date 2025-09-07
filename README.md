@@ -330,6 +330,75 @@ Desarrollar integraciones futuras con aseguradoras o talleres certificados, ofre
 
 #### 2.2.1 Diseño de entrevistas
 
+- Diseño de entrevistas para Motociclistas
+
+Preguntas principales:
+
+1. ¿Podrías contarme un poco sobre ti? (edad, ocupación, lugar de residencia, estado civil)
+
+2. ¿Cómo sueles llevar el control del gasto de combustible y mantenimiento de tu moto?
+
+3. ¿Con qué frecuencia realizas mantenimientos preventivos a tu moto?
+
+4. ¿Has tenido problemas con fallas inesperadas o gastos imprevistos relacionados con tu moto?
+
+5. ¿Cómo te comunicas actualmente con tu mecánico cuando necesitas una revisión o reparación?
+
+Preguntas complementarias:
+
+1. ¿Utilizas actualmente alguna aplicación o herramienta digital para registrar tus gastos o consumo de gasolina?
+
+2. ¿Qué tan cómodo te sentirías si tu moto enviara automáticamente datos de su estado a una aplicación?
+
+3. ¿Qué indicadores del estado de tu moto te gustaría conocer en tiempo real? (ejemplo: presión de neumáticos, combustible, temperatura del motor)
+
+4. ¿Qué tan útil te parecería recibir alertas en tu celular sobre posibles fallas antes de que ocurran?
+
+5. ¿Qué tipo de alertas te serían más útiles? (ejemplo: cambio de aceite, nivel de gasolina, revisión de frenos)
+
+6. ¿Qué dispositivos usas más frecuentemente para organizarte o monitorear cosas? (móvil, laptop, tablet)
+
+7. ¿Qué valoras más en una app para motos? (ejemplo: simplicidad, visualización clara de métricas, recordatorios)
+
+8. ¿Cuánto estarías dispuesto a pagar por un servicio que prevenga fallos y prolongue la vida útil de tu moto?
+
+
+- Diseño de entrevistas para Mecanicos
+
+Preguntas principales:
+
+1. ¿Podrías contarme un poco sobre ti? (edad, ocupación, experiencia laboral, ubicación del taller)
+
+2. ¿Qué tipo de servicios brindas con mayor frecuencia en tu taller?
+
+3. ¿Cómo registras actualmente el historial de mantenimiento de tus clientes?
+
+4. ¿Cómo realizas actualmente el diagnóstico del estado de una moto cuando llega a tu taller?
+
+5. ¿Te resultaría útil poder monitorear de forma remota el estado de las motos de tus clientes? ¿Por qué?
+
+Preguntas complementarias:
+
+1. ¿Qué tan común es que tus clientes lleguen con problemas que pudieron haberse evitado con un mantenimiento preventivo?
+
+2. ¿Sueles recomendar a tus clientes llevar un control de gastos y mantenimientos? ¿Cómo lo haces?
+
+3. ¿Usas alguna herramienta digital para organizar los diagnósticos o el historial de las motos?
+
+4. ¿Qué tan útil te parecería contar con datos de telemetría en tiempo real (ejemplo: kilometraje, consumo, estado de batería) antes de recibir una moto en tu taller?
+
+5.  ¿Qué métricas (ej. presión de neumáticos, consumo, temperatura) serían más valiosas para tu trabajo?
+
+6.  ¿Qué tipo de reportes serían más valiosos para ti y para tus clientes?
+
+7.  ¿Estarías dispuesto a ofrecer este servicio como un valor agregado a tus clientes? ¿Cómo lo integrarías a tu negocio?
+
+8.  ¿Qué tan dispuesto estarías a recomendar a tus clientes una app vinculada con tu servicio?
+
+9.  ¿Qué modelo de ingresos preferirías: una comisión por cada suscripción de tus clientes, o un plan que te permita supervisar toda tu cartera de clientes a un costo fijo?
+
+10. ¿Qué valoras más en una herramienta digital para tu trabajo? (ejemplo: precisión, facilidad de uso, integración con otros sistemas)
+
 #### 2.2.2 Registro de entrevistas
 
 #### 2.2.3 Análisis de entrevistas
