@@ -263,6 +263,106 @@ Para cubrir esta necesidad crítica, surge BykerZ como una herramienta integral 
 
 ##### 1.2.2.3 Lean UX Hypothesis Statements
 
+**Hypothesis Statement 01:**
+
+- Creemos que los motociclistas necesitan una forma sencilla y confiable de monitorear el estado de su moto en tiempo real.
+- Sabremos que estamos en lo correcto cuando observemos que los clientes consultan frecuentemente la aplicación para revisar métricas de su vehículo.
+
+**Hypothesis Statement 02:**
+
+- Creemos que los mecánicos requieren información temprana sobre fallos potenciales para brindar un servicio más proactivo.
+- Sabremos que estamos en lo correcto cuando los mecánicos reporten menor número de reparaciones de emergencia y mayor número de mantenimientos preventivos.
+
+**Hypothesis Statement 03:**
+
+- Creemos que centralizar la comunicación entre cliente y taller dentro de la plataforma reducirá la fricción y mejorará la coordinación.
+- Sabremos que estamos en lo correcto cuando los clientes usen la mensajería o notificaciones de la app en lugar de llamadas o visitas imprevistas.
+
+**Hypothesis Statement 04:**
+
+- Creemos que la creación de un historial de servicios será clave para que los motociclistas planifiquen mantenimientos futuros.
+- Sabremos que estamos en lo correcto cuando los usuarios registren y consulten con frecuencia los mantenimientos realizados en su moto.
+
+**Hypothesis Statement 05:**
+
+- Creemos que ofrecer una suscripción con acceso a datos en tiempo real dará valor suficiente para retener clientes.
+- Sabremos que estamos en lo correcto cuando observemos baja tasa de cancelación y renovaciones recurrentes de la suscripción.
+
+**Hypothesis Statement 06:**
+
+- Creemos que los usuarios percibirán a BykerZ como una forma de manejar con mayor seguridad y confianza.
+- Sabremos que estamos en lo correcto cuando recibamos comentarios positivos en encuestas y reseñas sobre la sensación de seguridad brindada por el uso de la aplicación.
+
+**Hypothesis Statement 07:**
+
+- Creemos que las notificaciones deben ser escuetas y fáciles de entender para que los motociclistas no las ignoren.
+- Sabremos que estamos en lo correcto cuando las pruebas de usabilidad muestren que los usuarios entienden y siguen las alertas que reciban.
+
+**Hypothesis Statement 08:**
+
+- Creemos que una interfaz simple con información precisa facilitará la adopción de la aplicación por los motociclistas.
+- Sabremos que estamos en lo correcto cuando veamos comentarios positivos sobre la usabilidad de la aplicación.
+
+**Hypothesis Statement 09:**
+
+- Creemos que los talleres que adopten esta plataforma tendrán mayor fidelización de clientes frente a los que no lo hagan.
+- Sabremos que estamos en lo correcto cuando los talleres suscritos muestren un aumento en clientes recurrentes.
+
+**Hypothesis Statement 10:**
+
+- Creemos que los usuarios valorarán la posibilidad de acceder al historial de mantenimiento de su motocicleta en un solo lugar.
+- Sabremos que estamos en lo correcto cuando los clientes consulten repetidamente el historial en la aplicación.
+
+**Hypothesis Statement 11:**
+
+- Creemos que la plataforma ayudará a los talleres a gestionar de manera más eficiente varias motos de distintos clientes al mismo tiempo.
+- Sabremos que estamos en lo correcto cuando los mecánicos reporten menor tiempo de organización y mayor control de su cartera de clientes.
+
+**Hypothesis Statement 12:**
+
+- Creemos que integrar recordatorios automáticos de mantenimientos programados reducirá los olvidos de los clientes.
+- Sabremos que estamos en lo correcto cuando los clientes acudan puntualmente a las citas de mantenimiento.
+
+**Hypothesis Statement 13:**
+
+- Creemos que la interfaz intuitiva de la aplicación facilitará la adopción por parte de clientes que no son expertos en tecnología.
+- Sabremos que estamos en lo correcto cuando los usuarios aprendan a manejar la app en menos de una semana y la usen sin asistencia.
+
+**Hypothesis Statement 14:**
+
+- Creemos que mostrar gráficas y estadísticas en tiempo real aumentará la percepción de valor tecnológico en la plataforma.
+- Sabremos que estamos en lo correcto cuando los usuarios interactúen frecuentemente con los paneles de datos visuales.
+
+**Hypothesis Statement 15:**
+
+- Creemos que el envío de reportes semanales sobre el estado de la moto fortalecerá la relación de confianza entre cliente y taller.
+- Sabremos que estamos en lo correcto cuando los clientes valoren positivamente los reportes y continúen la suscripción.
+
+**Hypothesis Statement 16:**
+
+- Creemos que el sistema reducirá costos inesperados al detectar anomalías antes de que se conviertan en averías graves.
+- Sabremos que estamos en lo correcto cuando los clientes reporten menos gastos de emergencia y mayor previsión.
+
+**Hypothesis Statement 17:**
+
+- Creemos que ofrecer soporte rápido en caso de fallos críticos en la moto motivará a los usuarios a depender de la aplicación.
+- Sabremos que estamos en lo correcto cuando los usuarios utilicen la función de soporte y lo califiquen positivamente.
+
+**Hypothesis Statement 18:**
+
+- Creemos que incluir un sistema de alertas personalizadas para cada cliente aumentará la efectividad del mantenimiento preventivo.
+- Sabremos que estamos en lo correcto cuando los talleres reporten mayor precisión en la programación de servicios.
+
+**Hypothesis Statement 19:**
+
+- Creemos que la transparencia en el estado real de la moto mejorará la percepción de honestidad hacia los mecánicos.
+- Sabremos que estamos en lo correcto cuando los clientes expresen confianza en las recomendaciones de mantenimiento recibidas a través de la app.
+
+**Hypothesis Statement 20:**
+
+- Creemos que los motociclistas estarán más motivados a usar BykerZ si reciben consejos prácticos de cuidado básico de sus motocicletas.
+- Sabremos que estamos en lo correcto cuando identifiquemos que los usuarios revisan de forma constante las secciones de recomendaciones en la aplicación.
+
 ##### 1.2.2.4 Lean UX Canvas
 
 ### 1.3 Segmentos objetivo
