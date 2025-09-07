@@ -381,6 +381,7 @@ Para cubrir esta necesidad crítica, surge BykerZ como una herramienta integral 
 - Sabremos que estamos en lo correcto cuando identifiquemos que los usuarios revisan de forma constante las secciones de recomendaciones en la aplicación.
 
 ##### 1.2.2.4 Lean UX Canvas
+![Lean UX Canvas](images/chapter-1/lean-ux-canvas.png)
 
 ### 1.3 Segmentos objetivo
 
