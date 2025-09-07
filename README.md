@@ -234,6 +234,78 @@ del ABET – EAC - Student Outcome 5.
 
 #### 2.1.2 Estrategias y tácticas frente a competidores
 
+1. Estrategia de Diferenciación Tecnológica (IoT + Diagnósticos Predictivos)
+Objetivo: Posicionar a BykerZ como la primera solución que integra hardware IoT y software para ofrecer métricas automáticas en tiempo real y diagnósticos predictivos, superando la limitación de registros manuales en Drivvo, aCar y Fuelio.
+
+Tácticas:
+Desarrollar un dispositivo IoT plug & play que se instale fácilmente en motos urbanas.
+Integrar algoritmos de mantenimiento predictivo basados en telemetría.
+Generar reportes personalizados descargables para usuarios y mecánicos.
+Comunicar en marketing el diferencial clave: “No registres datos, deja que tu moto hable por ti”.
+
+2. Estrategia de Enfoque en Nichos Desatendidos (Motos Urbanas + Mecánicos)
+Objetivo: Atacar un mercado poco atendido: motociclistas urbanos y talleres mecánicos, en contraste con las apps competidoras que se enfocan en autos y flotas.
+
+Tácticas:
+Ofrecer funcionalidades específicas para motos (ej. control de gasolina por cilindrada, alertas de aceite, historial de mantenimientos por kilometraje).
+Crear una app web exclusiva para mecánicos, con comparativos por modelo y gestión de clientes.
+Establecer alianzas con talleres locales y concesionarios de motos para distribución del IoT.
+Campañas de marketing dirigidas a delivery riders, mototaxistas y jóvenes motociclistas urbanos.
+
+3. Estrategia de Marca Cercana y Comunitaria
+Objetivo: Construir confianza mostrando a BykerZ como una solución hecha por y para motociclistas y mecánicos, en lugar de una app genérica de gastos.
+
+Tácticas:
+Crear una comunidad digital de motociclistas, con foros y tips de mecánica preventiva.
+Usar un lenguaje simple y cercano, evitando tecnicismos innecesarios.
+Brindar soporte personalizado (ej. chat directo, FAQs en video, tutoriales cortos en redes).
+Generar contenido educativo sobre seguridad, ahorro de combustible y mantenimiento inteligente.
+
+4. Estrategia de Precio Accesible y Transparente
+Objetivo: Superar la percepción negativa de Drivvo (suscripción costosa) y Fuelio Pro (costo adicional), ofreciendo planes claros y económicos.
+
+Tácticas:
+Modelo freemium real: funcionalidades básicas siempre gratuitas (seguimiento de consumo y alertas).
+Plan Premium accesible (<$2/mes) con reportes predictivos, diagnósticos avanzados y sincronización completa.
+Precio del dispositivo IoT asequible (ej. $30–40) con facilidades de pago en talleres.
+Descuentos especiales para mecánicos que adquieran múltiples dispositivos para sus clientes.
+
+5. Estrategia de Diferenciación por Especialización en Motocicletas
+
+Objetivo: Posicionar la solución como un producto diseñado específicamente para motocicletas y talleres mecánicos, en contraste con los competidores que se orientan a flotas grandes y heterogéneas (Wialon, Geotab).
+
+Tácticas:
+
+Desarrollar una interfaz amigable y personalizada para mecánicos y motociclistas.
+
+Ofrecer funcionalidades exclusivas para motos (ej. alertas de mantenimiento de cadena, aceite, frenos).
+
+Construir una narrativa de marca clara: “la telemática de las motos”.
+
+6. Estrategia de Accesibilidad y Flexibilidad en el Modelo de Negocio
+
+Objetivo: Competir contra grandes competidores (Wialon, Samsara, Geotab) ofreciendo un producto más accesible, económico y fácil de implementar, enfocado en usuarios individuales y talleres pequeños.
+
+Tácticas:
+
+Diseñar planes de suscripción escalonados (desde básicos hasta avanzados) que permitan crecer al ritmo del usuario.
+
+Incluir un modelo freemium o demo para captar usuarios rápidamente sin barreras de entrada.
+
+Resaltar la facilidad de instalación de sensores IoT en motos, evitando hardware costoso o complejo.
+
+7. Estrategia de Cercanía y Comunidad con el Usuario Final
+
+Objetivo: Diferenciarse por la relación directa y de confianza entre motociclistas y mecánicos, creando una comunidad alrededor del producto que los competidores globales no priorizan.
+
+Tácticas:
+
+Lanzar campañas de marketing en comunidades locales (Facebook, Instagram, clubes de motociclistas, foros especializados).
+
+Promover talleres mecánicos como socios estratégicos para captar clientes y distribuir el IoT.
+
+Desarrollar integraciones futuras con aseguradoras o talleres certificados, ofreciendo beneficios adicionales (ej. descuentos en seguros, paquetes de mantenimiento).
+
 ### 2.2 Entrevistas
 
 #### 2.2.1 Diseño de entrevistas
