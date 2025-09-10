@@ -403,7 +403,7 @@ Preguntas complementarias:
 
 #### 2.2.3 Análisis de entrevistas
 
-### Segmento Objetivo: Mecánicos y talleres de servicio
+**Segmento Objetivo: Mecánicos y talleres de servicio**
 
 **Demografía:**  
 La edad de los mecánicos entrevistados varía entre 21 y 25 años, con una experiencia laboral de 1 a 3 años. Todos trabajan en talleres urbanos de Lima y atienden principalmente motos de uso diario y delivery, lo que refleja un perfil joven, técnico y cercano a un público que depende de sus vehículos para generar ingresos.
@@ -421,6 +421,12 @@ Los mecánicos ven valor en contar con telemetría remota (kilometraje, batería
 ### 2.3 Needfinding
 
 #### 2.3.1 User Personas
+
+**Segmento Objetivo: Mecánicos y talleres de servicio**
+
+A continuación, se presenta el User Persona de Carlos Quispe. Él representa al mecánico joven y pragmático de Lima, enfocado en el mantenimiento rápido de motos de uso diario y delivery. Este perfil sintetiza las necesidades, frustraciones y motivaciones identificadas en el análisis, sirviendo como arquetipo del usuario objetivo para una solución digital que busca optimizar la gestión y el diagnóstico en talleres de servicio.
+
+![user_persona1.png](images/chapter-2/user_persona1.png)
 
 #### 2.3.2 User Task Matrix
 
