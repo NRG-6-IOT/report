@@ -400,6 +400,66 @@ Preguntas complementarias:
 10. ¿Qué valoras más en una herramienta digital para tu trabajo? (ejemplo: precisión, facilidad de uso, integración con otros sistemas)
 
 #### 2.2.2 Registro de entrevistas
+En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: [Needfinding Interviews - NRG6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/EUj4c17fPVBPn_esbB2-EzcBgePxXIyUYRGWHvw_DhCsAg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZB6Vmx)
+
+A continuación, se presentan detalles de las entrevistas realizadas a los mecánicos:
+
+| Entrevista 1              | ![Flavio](images/chapter-2/thumbnail-mecanico1-flavio.png) |
+|---------------------------|------------------------------------------------------------|
+| Nombre del entrevistado   | Flavio Gallardo                                            |
+| Edad                      | 21                                                         |
+| Distrito                  | San Miguel                                                 |
+| Ocupación                 | Ayudante de mecánico                                       |
+| Duración de la Entrevista | 4:20                                                       |
+| Minuto de Inicio          | 0:00                                                       |
+
+| Entrevista 2              | ![Juan](images/chapter-2/thumbnail-mecanico2-juan.png) |
+|---------------------------|--------------------------------------------------------|
+| Nombre del entrevistado   | Juan Cuellar                                           |
+| Edad                      | 25                                                     |
+| Distrito                  | Pueblo Libre                                           |
+| Ocupación                 | Mecánico                                               |
+| Duración de la Entrevista | 4:15                                                   |
+| Minuto de Inicio          | 4:20                                                   |
+
+| Entrevista 3              | ![Aldo](images/chapter-2/thumbnail-mecanico3-aldo.png) |
+|---------------------------|--------------------------------------------------------|
+| Nombre del entrevistado   | Aldo Vasquez                                           |
+| Edad                      | 23                                                     |
+| Distrito                  | Breña                                                  |
+| Ocupación                 | Ayudante de mecánico                                   |
+| Duración de la Entrevista | 3:58                                                   |
+| Minuto de Inicio          | 8:18                                                   |
+
+A continuación, se presentan detalles de las entrevistas realizadas a los dueños de motos:
+
+| Entrevista 4              | ![Josue](images/chapter-2/thumbnail-motociclista1-josue.png) |
+|---------------------------|--------------------------------------------------------------|
+| Nombre del entrevistado   | Josue Paiva                                                  |
+| Edad                      | 22                                                           |
+| Distrito                  | San Miguel                                                   |
+| Ocupación                 | Estudiante                                                   |
+| Duración de la Entrevista | 5:40                                                         |
+| Minuto de Inicio          | 12:10                                                        |
+
+| Entrevista 5              | ![Mathias](images/chapter-2/thumbnail-motociclista2-mathias.png) |
+|---------------------------|------------------------------------------------------------------|
+| Nombre del entrevistado   | Mathias Diaz                                                     |
+| Edad                      | 23                                                               |
+| Distrito                  | Pueblo Libre                                                     |
+| Ocupación                 | Profesor                                                         |
+| Duración de la Entrevista | 7:34                                                             |
+| Minuto de Inicio          | 17:49                                                            |
+
+| Entrevista 6              | ![NombreEntrevistado]() |
+|---------------------------|-------------------------|
+| Nombre del entrevistado   | TBD                     |
+| Edad                      | TBD                     |
+| Distrito                  | TBD                     |
+| Ocupación                 | TBD                     |
+| Duración de la Entrevista | TBD                     |
+| Minuto de Inicio          | 25:18                   |
+
 
 #### 2.2.3 Análisis de entrevistas
 
