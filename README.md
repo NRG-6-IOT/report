@@ -535,6 +535,15 @@ En esta sección se presentan los User Journey Maps para los dos segmentos objet
 
 #### 2.3.4 Empathy Mapping
 
+En esta sección se presentan los Empathy Mapping por cada segmento objetivo definido.
+
+**1. Empathy Map - Mecánico de Motocicletas**
+
+![Empathy Map Mecánico](images/chapter-2/empathy-mecanico.png)
+
+**2. Empathy Map - Usuario de Motocicleta**
+![Empathy Map Dueño](images/chapter-2/empathy-dueno.png)
+
 ### 2.4 Big Picture EventStorming
 
 ### 2.5 Ubiquitous Language
