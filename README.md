@@ -496,6 +496,31 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 
 #### 2.3.2 User Task Matrix
 
+**1. Segmento 1: Mecánico de Motocicletas**
+
+| Tarea                                               | Frecuencia | Severidad |
+|-----------------------------------------------------|------------|-----------|
+| Realizar diagnósticos precisos de fallas            | Alta       | Alta      |
+| Optimizar tiempos de servicio                       | Alta       | Alta      |
+| Recordar historial de mantenimientos de clientes    | Media      | Alta      |
+| Fidelizar clientela mediante recordatorios de citas | Media      | Media     |
+| Usar herramientas de diagnóstico manual             | Alta       | Media     |
+| Implementar nuevas herramientas tecnológicas        | Baja       | Alta      |
+| Anticipar fallas comunes de motos de delivery       | Media      | Alta      |
+
+
+**2. Segmento 2: Usuario Final de Motocicleta**
+
+| Tarea                                               | Frecuencia | Severidad |
+|-----------------------------------------------------|------------|-----------|
+| Realizar mantenimientos preventivos                 | Baja       | Alta      |
+| Confiar en su mecánico de confianza                 | Alta       | Media     |
+| Recordar fechas de último mantenimiento             | Media      | Alta      |
+| Detectar fallas solo cuando se presentan            | Alta       | Alta      |
+| Buscar información en internet sobre problemas      | Media      | Media     |
+| Administrar presupuesto de reparaciones             | Alta       | Alta      |
+| Verificar el estado básico de la moto antes de usarla | Alta     | Media     |
+
 #### 2.3.3 User Journey Mapping
 
 #### 2.3.4 Empathy Mapping
