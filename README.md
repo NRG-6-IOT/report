@@ -216,6 +216,17 @@ del ABET – EAC - Student Outcome 5.
 
 ### 3.1 User Stories
 
+Epicas:
+
+| **ID**   | **Título**                                              | **Descripción** |
+|----------|----------------------------------------------------------|-----------------|
+| **EP-001** | Monitoreo inteligente del estado de la moto | Desarrollar una aplicación móvil que permita a los motociclistas monitorear en tiempo real las métricas clave de su motocicleta, tales como el estado de la batería, kilometraje, consumo de combustible, temperatura del motor, presión de neumáticos y niveles de vibración. Esta funcionalidad busca empoderar al usuario con datos claros, visuales y accesibles desde el celular, mejorando su capacidad para tomar decisiones informadas y prevenir fallas inesperadas durante el uso diario. |
+| **EP-002** | Sistema de alertas preventivas y recordatorios automatizados | Implementar un sistema automatizado de alertas y recordatorios tanto para motociclistas como para talleres, que notifique sobre mantenimientos próximos, condiciones críticas detectadas por el sistema de telemetría, o fallas recurrentes. Estas alertas deben llegar a través de canales integrados y habituales, como notificaciones en la app para los mecánicos, con el objetivo de mejorar la prevención de fallos, reducir el riesgo de accidentes y mantener una agenda clara de servicios futuros. Esta épica responde directamente a la necesidad de anticiparse a problemas y evitar gastos innecesarios. |
+| **EP-003** | Gestión del historial de mantenimiento y gastos | Desarrollar funcionalidades que permitan al usuario y al taller llevar un registro estructurado del historial de mantenimiento de cada motocicleta, así como los costos asociados a reparaciones, repuestos y servicios realizados. Esta información debe visualizarse mediante reportes claros y simples (mensuales o por evento), y estar disponible tanto para el dueño de la moto como para el mecánico, fomentando la transparencia, planificación y fidelización del cliente. La funcionalidad busca reemplazar métodos manuales (como libretas o la memoria) por una solución digital accesible y confiable. |
+| **EP-004** | Desarrollo e integración del dispositivo embebido de telemetría | Diseñar, fabricar e integrar un dispositivo IoT embebido que recolecte en tiempo real los datos críticos del funcionamiento de la motocicleta —como batería, consumo, temperatura, vibración y kilometraje— y los transmita de forma segura a la plataforma digital. Esta épica implica el desarrollo de firmware, pruebas de sensores, aseguramiento de la compatibilidad con distintos modelos de motos (principalmente eléctricas y urbanas), y validación de la estabilidad de conexión con la app mediante protocolos eficientes (BLE, WiFi o LoRa según la arquitectura definida). Es el componente técnico clave que conecta el mundo físico de la motocicleta con la experiencia digital del usuario. |
+| **EP-005** | Gestión de relación entre motociclista y mecánico | Funcionalidades que involucren la creación y administración de una relación entre un usuario y su mecánico de preferencia. Permitiendo al usuario otorgarle acceso a un mecánico para visualizar las métricas de su motocicleta en tiempo real, y recibir notificaciones de este. Así mismo estas relaciones pueden romperse o cambiarse según las necesidades del usuario y/o del mecánico. |
+
+User Stories:
 
 
 ### 3.2 Impact Mapping
