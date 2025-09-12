@@ -523,6 +523,16 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 
 #### 2.3.3 User Journey Mapping
 
+En esta sección se presentan los User Journey Maps para los dos segmentos objetivo: mecánicos de motocicletas y usuarios finales de motocicletas. Estos mapas ilustran las etapas clave del viaje del usuario, sus acciones, pensamientos y emociones en cada fase, así como los puntos de contacto con la solución propuesta.
+
+**1. User Journey Map - Mecánico de Motocicletas**
+
+<img src="images/chapter-2/UJOURNEY1.png" alt="User1 Journey" />
+
+**2. User Journey Map - Usuario Final de Motocicleta**
+<img src="images/chapter-2/UJOURNEY2.png" alt="User2 Journey" />
+
+
 #### 2.3.4 Empathy Mapping
 
 ### 2.4 Big Picture EventStorming
