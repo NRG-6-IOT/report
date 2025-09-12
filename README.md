@@ -216,7 +216,14 @@ del ABET – EAC - Student Outcome 5.
 
 ### 3.1 User Stories
 
+
+
 ### 3.2 Impact Mapping
+
+<img src="./images/chapter-3/impact_mapping_1.png" alt="impact_mapping_1" width="400"/>
+<img src="./images/chapter-3/impact_mapping_2.png" alt="impact_mapping_2" width="400"/>
+<img src="./images/chapter-3/impact_mapping_3.png" alt="impact_mapping_3" width="400"/>
+<img src="./images/chapter-3/impact_mapping_4.png" alt="impact_mapping_4" width="400"/>
 
 ### 3.3 Product Backlog
 
