@@ -506,7 +506,7 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 | Fidelizar clientela mediante recordatorios de citas | Media      | Media     |
 | Usar herramientas de diagnóstico manual             | Alta       | Media     |
 | Implementar nuevas herramientas tecnológicas        | Baja       | Alta      |
-| Anticipar fallas comunes de motos de delivery       | Media      | Alta      |
+| Anticipar fallas comunes de motos                   | Media      | Alta      |
 
 
 **2. Segmento 2: Usuario Final de Motocicleta**
