@@ -335,6 +335,28 @@ Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y 
 
 ##### 4.1.1.3 Bounded Context Canvases
 
+En esta sección se desarrollan los Bounded Context Canvases correspondientes a los contextos delimitados previamente durante el proceso de Candidate Context Discovery. El objetivo principal de este apartado es detallar, para cada contexto, los criterios de diseño que permitan comprender su propósito, límites de responsabilidad, capacidades clave, dependencias y reglas de negocio asociadas.
+
+**Reportes**
+
+<img src="images/chapter-4/reports-bc-canvas.png" alt="Reportes Bounded Context Canvas">
+
+**Historiales**
+
+<img src="images/chapter-4/historial-bc-canvas.png" alt="Historiales Bounded Context Canvas">
+
+**Suscripción**
+
+<img src="images/chapter-4/subscription-bc-canvas.png" alt="Suscripción Bounded Context Canvas">
+
+**Bienestar de Vehículos**
+
+<img src="images/chapter-4/health-bc-canvas.png" alt="Bienestar de Vehículos Bounded Context Canvas">
+
+**Gestión de Vehículos**
+
+<img src="images/chapter-4/vehicle-management-bc-canvas.png" alt="Gestión de Vehículos Bounded Context Canvas">
+
 #### 4.1.2 Context Mapping
 
 #### 4.1.3 Software Architecture
