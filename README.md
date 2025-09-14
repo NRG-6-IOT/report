@@ -232,6 +232,59 @@ Para trasladar la estrategia al plano operativo, se utiliza EventStorming como t
 
 ##### 4.1.1.1 Candidate Context Discovery
 
+Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y look-for-pivotal-events, el equipo identificó y agrupó los principales eventos del dominio en bounded contexts candidatos. A continuación, se describen los bounded contexts definidos:
+
+**1. Reportes**
+
+* **Propósito:** Elaboración de reportes de métricas de las motos y análisis comparativo de su desempeño.
+* **Responsabilidades:**
+  * Generar reportes periódicos de métricas.
+  * Comparar métricas históricas y actuales.
+  * Producir reportes de métricas actualizadas en tiempo real.
+* **Eventos clave:** MetricasGeneradas, ReporteSolicitado, ReporteComparado.
+* **Valor para el negocio:** Provee visibilidad y soporte a la toma de decisiones del dueño de la moto y de los talleres.
+
+**2. Historiales**
+
+* **Propósito:** Mantener un registro consolidado de todas las actividades y gastos relacionados con la moto.
+* **Responsabilidades:**
+  * Historial de servicios de los mecánicos.
+  * Historial de gastos asociados.
+  * Historial de reparaciones realizadas.
+  * Historial de clientes atendidos (para mecánicos).
+* **Eventos clave:** ServicioRegistrado, GastoRegistrado, ReparacionFinalizada.
+* **Valor para el negocio:** Ofrece trazabilidad y respaldo de la información para usuarios y mecánicos.
+
+**3. Suscripción**
+
+* **Propósito:** Gestionar la relación contractual y de conexión entre dueños de motos y mecánicos.
+* **Responsabilidades:**
+  * Manejar las suscripciones activas.
+  * Administrar vínculos de servicio (mecánico ↔ dueño de moto).
+  * Controlar renovaciones o cancelaciones de suscripciones.
+* **Eventos clave:** SuscripcionCreada, SuscripcionCancelada, MecanicoAsignado.
+* **Valor para el negocio:** Garantiza un flujo de ingresos estable y facilita la conexión entre oferta (mecánicos) y demanda (dueños).
+
+**4. Bienestar de Vehículos**
+
+* **Propósito:** Monitorear y gestionar el estado general de la moto a partir de métricas técnicas.
+* **Responsabilidades:**
+  * Registrar y controlar métricas en tiempo real.
+  * Generar alertas preventivas de mantenimiento.
+  * Calcular el estado de salud general del vehículo.
+* **Eventos clave:** MetricaRegistrada, AlertaGenerada, EstadoActualizado.
+* **Valor para el negocio:** Permite anticipar fallas y garantizar mayor seguridad y durabilidad del vehículo.
+
+**5. Gestión de Vehículos**
+
+* **Propósito:** Administrar la información básica y de registro de cada moto en el sistema.
+* **Responsabilidades:**
+  * Registro de nuevas motos.
+  * Acceso a datos técnicos y de propiedad.
+  * Actualización de datos generales del vehículo.
+* **Eventos clave:** VehiculoRegistrado, DatosVehiculoActualizados.
+* **Valor para el negocio:** Provee la base de datos central sobre la cual interactúan los demás contextos.
+
 ##### 4.1.1.2 Domain Message Flows Modeling
 
 ##### 4.1.1.3 Bounded Context Canvases
