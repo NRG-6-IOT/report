@@ -530,6 +530,7 @@ En esta sección se presentan los User Journey Maps para los dos segmentos objet
 <img src="images/chapter-2/UJOURNEY1.png" alt="User1 Journey" />
 
 **2. User Journey Map - Usuario Final de Motocicleta**
+
 <img src="images/chapter-2/UJOURNEY2.png" alt="User2 Journey" />
 
 
