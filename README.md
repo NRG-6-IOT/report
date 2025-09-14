@@ -546,6 +546,30 @@ En esta sección se presentan los Empathy Mapping por cada segmento objetivo def
 
 ### 2.4 Big Picture EventStorming
 
+**1. Definir eventos:**
+
+<img src="images/chapter-2/event-storming-1.png" alt="Event Storming 1" />
+
+**2. Definir comandos y agentes**
+
+<img src="images/chapter-2/event-storming-2.png" alt="Event Storming 2" />
+
+**3. Definir políticas**
+
+<img src="images/chapter-2/event-storming-3.png" alt="Event Storming 3" />
+
+**4. Definir vistas**
+
+<img src="images/chapter-2/event-storming-4.png" alt="Event Storming 4" />
+
+**6. Agregados**
+
+<img src="images/chapter-2/event-storming-5.png" alt="Event Storming 5" />
+
+**7. Bounded context**
+
+<img src="images/chapter-2/event-storming-6.png" alt="Event Storming 6" />
+
 ### 2.5 Ubiquitous Language
 
 ## Capítulo III: Requirements Specification
