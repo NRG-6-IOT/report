@@ -101,7 +101,6 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
-- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
