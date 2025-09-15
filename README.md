@@ -450,6 +450,113 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.1 Domain Layer
 
+<hr>
+
+<h3>Aggregate: <code>VehicleWellness</code></h3>
+<p><strong>Descripción:</strong> Representa el bienestar general de una motocicleta, centralizando las métricas capturadas por el dispositivo IoT, generando alertas preventivas y diagnósticos asociados al estado del vehículo.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del registro de bienestar del vehículo.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador único de la moto asociada.</td></tr>
+    <tr><td>metrics</td><td>List&lt;Metric&gt;</td><td>Private</td><td>Lista de métricas recopiladas en tiempo real por el IoT.</td></tr>
+    <tr><td>alerts</td><td>List&lt;PreventiveAlert&gt;</td><td>Private</td><td>Alertas generadas automáticamente a partir de anomalías en las métricas.</td></tr>
+    <tr><td>diagnostics</td><td>List&lt;Diagnostic&gt;</td><td>Private</td><td>Diagnósticos calculados con base en la interpretación de métricas.</td></tr>
+    <tr><td>status</td><td>VehicleStatus (Enum)</td><td>Private</td><td>Estado general del vehículo (Óptimo, Regular, Crítico).</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del registro.</td></tr>
+    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Fecha de última actualización del registro.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Métodos</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador único del registro de bienestar.</td></tr>
+    <tr><td>getVehicleId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador de la moto asociada.</td></tr>
+    <tr><td>getMetrics()</td><td>List&lt;Metric&gt;</td><td>Public</td><td>Devuelve la lista de métricas registradas.</td></tr>
+    <tr><td>getAlerts()</td><td>List&lt;PreventiveAlert&gt;</td><td>Public</td><td>Devuelve las alertas generadas.</td></tr>
+    <tr><td>getDiagnostics()</td><td>List&lt;Diagnostic&gt;</td><td>Public</td><td>Devuelve los diagnósticos calculados.</td></tr>
+    <tr><td>getStatus()</td><td>VehicleStatus</td><td>Public</td><td>Devuelve el estado general actual del vehículo.</td></tr>
+    <tr><td>updateMetrics(Metric metric)</td><td>void</td><td>Public</td><td>Agrega una nueva métrica al registro y actualiza el estado del vehículo.</td></tr>
+    <tr><td>generateAlert(Metric metric)</td><td>PreventiveAlert</td><td>Private</td><td>Genera una alerta preventiva si la métrica sobrepasa un umbral crítico.</td></tr>
+    <tr><td>generateDiagnostic()</td><td>Diagnostic</td><td>Private</td><td>Genera un diagnóstico a partir de las métricas actuales.</td></tr>
+    <tr><td>updateStatus()</td><td>void</td><td>Private</td><td>Actualiza el estado general del vehículo según las métricas recientes.</td></tr>
+  </tbody>
+</table>
+
+---
+
+<h3>Entity: <code>Metric</code></h3>
+<p><strong>Descripción:</strong> Representa un dato capturado por el dispositivo IoT, asociado al estado de la moto (ejemplo: temperatura, velocidad, kilometraje, nivel de combustible).</p>
+
+<table>
+  <thead>
+    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la métrica.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador de la moto asociada.</td></tr>
+    <tr><td>type</td><td>String</td><td>Private</td><td>Tipo de métrica (temperatura, kilometraje, velocidad, combustible, etc.).</td></tr>
+    <tr><td>value</td><td>Double</td><td>Private</td><td>Valor registrado de la métrica.</td></tr>
+    <tr><td>unit</td><td>String</td><td>Private</td><td>Unidad de medida (°C, km, km/h, L, %).</td></tr>
+    <tr><td>capturedAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de captura.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>Métodos</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getType()</td><td>String</td><td>Public</td><td>Devuelve el tipo de métrica.</td></tr>
+    <tr><td>getValue()</td><td>Double</td><td>Public</td><td>Devuelve el valor de la métrica.</td></tr>
+    <tr><td>getUnit()</td><td>String</td><td>Public</td><td>Devuelve la unidad de medida de la métrica.</td></tr>
+    <tr><td>getCapturedAt()</td><td>Timestamp</td><td>Public</td><td>Devuelve la fecha y hora de la captura.</td></tr>
+  </tbody>
+</table>
+
+---
+
+<h3>Entity: <code>PreventiveAlert</code></h3>
+<p><strong>Descripción:</strong> Representa una alerta emitida automáticamente cuando una métrica sobrepasa los valores críticos establecidos.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la alerta.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador de la moto asociada.</td></tr>
+    <tr><td>metricType</td><td>String</td><td>Private</td><td>Tipo de métrica que generó la alerta.</td></tr>
+    <tr><td>message</td><td>String</td><td>Private</td><td>Mensaje descriptivo de la alerta.</td></tr>
+    <tr><td>severity</td><td>String</td><td>Private</td><td>Nivel de severidad (Alto, Medio, Bajo).</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de la alerta.</td></tr>
+  </tbody>
+</table>
+
+---
+
+<h3>Entity: <code>Diagnostic</code></h3>
+<p><strong>Descripción:</strong> Representa la interpretación de un conjunto de métricas para indicar posibles fallas, recomendaciones o el estado de la moto.</p>
+
+<table>
+  <thead>
+    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del diagnóstico.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador de la moto asociada.</td></tr>
+    <tr><td>summary</td><td>String</td><td>Private</td><td>Resumen breve del diagnóstico.</td></tr>
+    <tr><td>recommendations</td><td>String</td><td>Private</td><td>Recomendaciones para el usuario o mecánico.</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de generación del diagnóstico.</td></tr>
+  </tbody>
+</table>
+
 
 ##### 4.2.4.2 Interface Layer
 
