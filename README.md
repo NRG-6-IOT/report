@@ -597,6 +597,114 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.3.3 Application Layer
 
+<h3>Clase: <code>SubscriptionQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>SubscriptionQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con suscripciones</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles completos de una suscripción por su ID</td></tr>
+    <tr><td>handle(GetUserSubscriptionsQuery)</td><td>Lista todas las suscripciones activas e inactivas de un dueño de moto</td></tr>
+    <tr><td>handle(GetActiveSubscriptionsByMechanicQuery)</td><td>Recupera todas las suscripciones activas vinculadas a un mecánico</td></tr>
+    <tr><td>handle(GetVehicleSubscriptionQuery)</td><td>Obtiene la suscripción asociada a un vehículo específico</td></tr>
+    <tr><td>handle(CheckSubscriptionStatusQuery)</td><td>Verifica el estado actual de una suscripción</td></tr>
+    <tr><td>handle(ListExpiringSubscriptionsQuery)</td><td>Lista las suscripciones próximas a expirar en un rango de fechas</td></tr>
+    <tr><td>handle(GetPlanDetailsQuery)</td><td>Obtiene los detalles de un plan asociado a una suscripción</td></tr>
+    <tr><td>handle(GetPromotionByCodeQuery)</td><td>Recupera la promoción vigente asociada a un código</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>SubscriptionRepository</td><td>Repositorio para acceso a datos de suscripciones</td></tr>
+    <tr><td>PlanRepository</td><td>Repositorio para acceso a datos de planes</td></tr>
+    <tr><td>PromotionRepository</td><td>Repositorio para acceso a datos de promociones</td></tr>
+    <tr><td>GetSubscriptionByIdQuery</td><td>Query para obtener detalles de suscripción</td></tr>
+    <tr><td>GetUserSubscriptionsQuery</td><td>Query para listar suscripciones de un usuario</td></tr>
+    <tr><td>GetActiveSubscriptionsByMechanicQuery</td><td>Query para obtener suscripciones activas por mecánico</td></tr>
+    <tr><td>GetVehicleSubscriptionQuery</td><td>Query para recuperar suscripción de vehículo</td></tr>
+    <tr><td>CheckSubscriptionStatusQuery</td><td>Query para verificar estado de suscripción</td></tr>
+    <tr><td>ListExpiringSubscriptionsQuery</td><td>Query para listar suscripciones próximas a expirar</td></tr>
+    <tr><td>GetPlanDetailsQuery</td><td>Query para obtener detalles de plan</td></tr>
+    <tr><td>GetPromotionByCodeQuery</td><td>Query para obtener promoción por código</td></tr>
+  </tbody>
+</table>
+
+<hr>
+<h3>Clase: <code>SubscriptionCommandServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>SubscriptionCommandServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con suscripciones</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(CreateSubscriptionCommand)</td><td>Crea una nueva suscripción vinculando dueño, mecánico, vehículo y plan</td></tr>
+    <tr><td>handle(UpdateSubscriptionCommand)</td><td>Actualiza la información de una suscripción (ejemplo: cambio de plan o fechas)</td></tr>
+    <tr><td>handle(DeleteSubscriptionCommand)</td><td>Elimina una suscripción (soft delete o hard delete según reglas)</td></tr>
+    <tr><td>handle(ActivateSubscriptionCommand)</td><td>Activa una suscripción si cumple con las reglas de negocio</td></tr>
+    <tr><td>handle(SuspendSubscriptionCommand)</td><td>Suspende temporalmente una suscripción</td></tr>
+    <tr><td>handle(CancelSubscriptionCommand)</td><td>Cancela definitivamente una suscripción</td></tr>
+    <tr><td>handle(RenewSubscriptionCommand)</td><td>Renueva la suscripción al alcanzar la fecha de expiración</td></tr>
+    <tr><td>handle(ApplyPromotionCommand)</td><td>Aplica una promoción o descuento a una suscripción existente</td></tr>
+    <tr><td>handle(ChangePlanCommand)</td><td>Cambia el plan asociado a una suscripción</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>SubscriptionRepository</td><td>Repositorio para persistencia de suscripciones</td></tr>
+    <tr><td>PlanRepository</td><td>Repositorio para gestión de planes</td></tr>
+    <tr><td>PromotionRepository</td><td>Repositorio para gestión de promociones</td></tr>
+    <tr><td>NotificationService</td><td>Servicio para enviar notificaciones de activación, renovación o cancelación</td></tr>
+    <tr><td>CreateSubscriptionCommand</td><td>Comando para crear suscripciones</td></tr>
+    <tr><td>UpdateSubscriptionCommand</td><td>Comando para actualizar suscripciones</td></tr>
+    <tr><td>DeleteSubscriptionCommand</td><td>Comando para eliminar suscripciones</td></tr>
+    <tr><td>ActivateSubscriptionCommand</td><td>Comando para activar suscripciones</td></tr>
+    <tr><td>SuspendSubscriptionCommand</td><td>Comando para suspender suscripciones</td></tr>
+    <tr><td>CancelSubscriptionCommand</td><td>Comando para cancelar suscripciones</td></tr>
+    <tr><td>RenewSubscriptionCommand</td><td>Comando para renovar suscripciones</td></tr>
+    <tr><td>ApplyPromotionCommand</td><td>Comando para aplicar promociones</td></tr>
+    <tr><td>ChangePlanCommand</td><td>Comando para cambiar de plan</td></tr>
+  </tbody>
+</table>
+
 ##### 4.2.3.4 Infrastructure Layer
 
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
