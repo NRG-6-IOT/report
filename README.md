@@ -364,7 +364,7 @@ En esta sección se presenta el proceso de Context Mapping, cuyo propósito es i
 <img src="images/chapter-4/context-mapping.png" alt="Context Mapping">
 
 | **Contexto A**       | **Contexto B**         | **Relación (DDD)**          | **Justificación**                                                                                                  |
-| -------------------- | ---------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+|----------------------|------------------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Gestión de Vehículos | Bienestar de Vehículos | Customer/Supplier           | El estado de bienestar depende de la información estructural de los vehículos, como mantenimientos o revisiones.   |
 | Gestión de Vehículos | Suscripción            | Customer/Supplier           | Las suscripciones requieren la información base de los vehículos para activar planes y beneficios asociados.       |
 | Historiales          | Bienestar de Vehículos | Conformist                  | Historiales se adapta al modelo de Bienestar de Vehículos, siguiendo su esquema para registrar datos consistentes. |
@@ -373,6 +373,8 @@ En esta sección se presenta el proceso de Context Mapping, cuyo propósito es i
 | Reportes             | Suscripción            | Anti-Corruption Layer (ACL) | Se aísla el modelo de Reportes de la complejidad de Suscripción mediante una capa de traducción.                   |
 
 #### 4.1.3 Software Architecture
+
+La arquitectura de software de la solución se ha representado utilizando el modelo C4, el cual permite visualizar la estructura en diferentes niveles de abstracción. Se incluyen los diagramas de System Landscape, System Context y Container Level, con el fin de mostrar desde la visión global del ecosistema hasta la organización interna de la aplicación. Para su elaboración se empleó la herramienta Structurizr, que sigue los lineamientos de C4 Model.
 
 ##### 4.1.3.1 Software Architecture System Landscape Diagram
 
