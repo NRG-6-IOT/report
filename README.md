@@ -361,7 +361,7 @@ En esta sección se desarrollan los Bounded Context Canvases correspondientes a 
 
 En esta sección se presenta el proceso de Context Mapping, cuyo propósito es identificar, analizar y documentar las relaciones estructurales entre los bounded contexts previamente definidos. El objetivo es comprender cómo interactúan, cuáles son sus dependencias y qué patrones de integración de Domain-Driven Design son más adecuados.
 
-<img src="context-mapping.png" alt="Context Mapping">
+<img src="images/chapter-4/context-mapping.png" alt="Context Mapping">
 
 | **Contexto A**       | **Contexto B**         | **Relación (DDD)**          | **Justificación**                                                                                                  |
 | -------------------- | ---------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
