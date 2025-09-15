@@ -432,6 +432,118 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.3.1 Domain Layer
 
+<h3>Aggregate: <code>Subscription</code></h3>
+<p><strong>Descripción:</strong> Representa la relación formal entre un dueño de moto y un mecánico mediante un plan, vinculada a un vehículo y con un ciclo de vida definido (activa, suspendida, cancelada, expirada).</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la suscripción.</td></tr>
+    <tr><td>ownerId</td><td>Long</td><td>Private</td><td>ID del dueño de la moto asociado.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico vinculado.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo registrado en la suscripción.</td></tr>
+    <tr><td>plan</td><td>Plan</td><td>Private</td><td>Plan asociado a la suscripción (básico, premium, prueba).</td></tr>
+    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción (activa, suspendida, cancelada, expirada).</td></tr>
+    <tr><td>startDate</td><td>Timestamp</td><td>Private</td><td>Fecha de inicio de la suscripción.</td></tr>
+    <tr><td>endDate</td><td>Timestamp</td><td>Private</td><td>Fecha de finalización de la suscripción.</td></tr>
+    <tr><td>renewalDate</td><td>Timestamp</td><td>Private</td><td>Fecha programada para renovación (si aplica).</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del registro.</td></tr>
+    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>activate()</td><td>void</td><td>Public</td><td>Activa la suscripción si cumple con las reglas de negocio.</td></tr>
+    <tr><td>suspend()</td><td>void</td><td>Public</td><td>Suspende temporalmente la suscripción.</td></tr>
+    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela definitivamente la suscripción.</td></tr>
+    <tr><td>renew()</td><td>void</td><td>Public</td><td>Renueva la suscripción al alcanzar la fecha de expiración.</td></tr>
+    <tr><td>isActive()</td><td>boolean</td><td>Public</td><td>Verifica si la suscripción está activa.</td></tr>
+  </tbody>
+</table>
+
+<h3>Entidad: <code>Plan</code></h3>
+<p><strong>Descripción:</strong> Define el tipo de plan al que está suscrito el usuario, determinando beneficios, limitaciones y costo.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del plan.</td></tr>
+    <tr><td>name</td><td>String</td><td>Private</td><td>Nombre del plan (ejemplo: Básico, Premium).</td></tr>
+    <tr><td>description</td><td>String</td><td>Private</td><td>Descripción de beneficios y limitaciones.</td></tr>
+    <tr><td>price</td><td>BigDecimal</td><td>Private</td><td>Costo mensual/anual del plan.</td></tr>
+    <tr><td>duration</td><td>Integer</td><td>Private</td><td>Duración en días del plan.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>getName()</td><td>String</td><td>Public</td><td>Devuelve el nombre del plan.</td></tr>
+    <tr><td>getPrice()</td><td>BigDecimal</td><td>Public</td><td>Devuelve el precio del plan.</td></tr>
+    <tr><td>getDuration()</td><td>Integer</td><td>Public</td><td>Devuelve la duración en días.</td></tr>
+  </tbody>
+</table>
+
+<h3>Entidad: <code>Promotion</code></h3>
+<p><strong>Descripción:</strong> Representa promociones o pruebas piloto que pueden aplicarse a las suscripciones.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la promoción.</td></tr>
+    <tr><td>code</td><td>String</td><td>Private</td><td>Código de la promoción.</td></tr>
+    <tr><td>discount</td><td>BigDecimal</td><td>Private</td><td>Porcentaje o monto de descuento.</td></tr>
+    <tr><td>validFrom</td><td>Timestamp</td><td>Private</td><td>Fecha de inicio de la promoción.</td></tr>
+    <tr><td>validTo</td><td>Timestamp</td><td>Private</td><td>Fecha de fin de la promoción.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>isValid()</td><td>boolean</td><td>Public</td><td>Verifica si la promoción está vigente.</td></tr>
+    <tr><td>applyDiscount(BigDecimal price)</td><td>BigDecimal</td><td>Public</td><td>Aplica el descuento sobre el precio base.</td></tr>
+  </tbody>
+</table>
+
 ##### 4.2.3.2 Interface Layer
 
 ##### 4.2.3.3 Application Layer
