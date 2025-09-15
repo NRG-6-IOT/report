@@ -546,6 +546,55 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.3.2 Interface Layer
 
+<h3>Controlador: <code>SubscriptionController</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>SubscriptionController</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, así como su activación, renovación, suspensión y cancelación.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{id}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
+    <tr><td>getUserSubscriptions</td><td>GET /api/v1/subscriptions/user/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto.</td></tr>
+    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociada a un dueño, mecánico, vehículo y plan.</td></tr>
+    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan).</td></tr>
+    <tr><td>activateSubscription</td><td>POST /api/v1/subscriptions/{id}/activate</td><td>Activa una suscripción si cumple con las reglas de negocio.</td></tr>
+    <tr><td>renewSubscription</td><td>POST /api/v1/subscriptions/{id}/renew</td><td>Renueva una suscripción al alcanzar la fecha de expiración.</td></tr>
+    <tr><td>suspendSubscription</td><td>POST /api/v1/subscriptions/{id}/suspend</td><td>Suspende temporalmente una suscripción.</td></tr>
+    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{id}/cancel</td><td>Cancela definitivamente una suscripción.</td></tr>
+    <tr><td>deleteSubscription</td><td>DELETE /api/v1/subscriptions/{id}</td><td>Elimina una suscripción del sistema (soft delete o hard delete según reglas).</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones.</td></tr>
+    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de creación, actualización, renovación, suspensión y cancelación de suscripciones.</td></tr>
+    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones.</td></tr>
+    <tr><td>UpdateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de actualización de suscripciones.</td></tr>
+    <tr><td>DeleteSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de eliminación de suscripciones.</td></tr>
+    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta.</td></tr>
+  </tbody>
+</table>
+
 ##### 4.2.3.3 Application Layer
 
 ##### 4.2.3.4 Infrastructure Layer
