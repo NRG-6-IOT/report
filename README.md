@@ -392,7 +392,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ### 4.2 Tactical-Level Domain-Driven Design
 
-#### 4.2.1 Bounded Context: unnamed
+#### 4.2.1 Bounded Context: Gestión de Vehículos
 
 ##### 4.2.1.1 Domain Layer
 
@@ -409,6 +409,79 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
 
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
+
+#### 4.2.2 Bounded Context: Historiales
+
+##### 4.2.2.1 Domain Layer
+
+##### 4.2.2.2 Interface Layer
+
+##### 4.2.2.3 Application Layer
+
+##### 4.2.2.4 Infrastructure Layer
+
+##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 4.2.2.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.2.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 4.2.2.6.2 Bounded Context Database Design Diagram
+
+#### 4.2.3 Bounded Context: Suscripción
+
+##### 4.2.3.1 Domain Layer
+
+##### 4.2.3.2 Interface Layer
+
+##### 4.2.3.3 Application Layer
+
+##### 4.2.3.4 Infrastructure Layer
+
+##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 4.2.3.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 4.2.3.6.2 Bounded Context Database Design Diagram
+
+#### 4.2.4 Bounded Context: Bienestar de Vehículos
+
+##### 4.2.4.1 Domain Layer
+
+
+##### 4.2.4.2 Interface Layer
+
+##### 4.2.4.3 Application Layer
+
+##### 4.2.4.4 Infrastructure Layer
+
+##### 4.2.4.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 4.2.4.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.4.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 4.2.4.6.2 Bounded Context Database Design Diagram
+
+#### 4.2.5 Bounded Context: Reportes
+
+##### 4.2.5.1 Domain Layer
+
+##### 4.2.5.2 Interface Layer
+
+##### 4.2.5.3 Application Layer
+
+##### 4.2.5.4 Infrastructure Layer
+
+##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 4.2.5.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.5.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
 ## Conclusiones
 
