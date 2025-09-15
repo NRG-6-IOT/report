@@ -378,9 +378,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.1.3.1 Software Architecture System Landscape Diagram
 
+<img src="images/chapter-4/system-landscape-diagram.png" alt="System Landscape Diagram">
+
 ##### 4.1.3.2 Software Architecture Context Level Diagrams
 
+<img src="images/chapter-4/system-context-diagram.png" alt="System Context Diagram">
+
 ##### 4.1.3.3 Software Architecture Container Level Diagrams
+
+<img src="images/chapter-4/system-container-diagram.png" alt="System Context Diagram">
 
 ##### 4.1.3.4 Software Architecture Deployment Diagrams
 
