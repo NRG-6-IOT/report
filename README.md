@@ -557,8 +557,101 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-
 ##### 4.2.4.2 Interface Layer
+
+<hr>
+
+<h3>Controlador: <code>VehicleWellnessController</code></h3>
+
+<table>
+  <tr>
+    <th>Título</th>
+    <td>VehicleWellnessController</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que maneja las operaciones relacionadas con el monitoreo del bienestar del vehículo, incluyendo métricas, alertas y diagnósticos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getVehicleWellnessById</td>
+      <td>GET /api/v1/wellness/{vehicleId}</td>
+      <td>Obtiene el estado general del bienestar de un vehículo específico por su ID</td>
+    </tr>
+    <tr>
+      <td>getVehicleMetrics</td>
+      <td>GET /api/v1/wellness/{vehicleId}/metrics</td>
+      <td>Obtiene las métricas en tiempo real de un vehículo</td>
+    </tr>
+    <tr>
+      <td>getVehicleAlerts</td>
+      <td>GET /api/v1/wellness/{vehicleId}/alerts</td>
+      <td>Obtiene todas las alertas preventivas activas de un vehículo</td>
+    </tr>
+    <tr>
+      <td>generateDiagnosis</td>
+      <td>POST /api/v1/wellness/{vehicleId}/diagnosis</td>
+      <td>Genera un diagnóstico automático basado en las métricas actuales</td>
+    </tr>
+    <tr>
+      <td>updateMetric</td>
+      <td>PUT /api/v1/wellness/{vehicleId}/metrics</td>
+      <td>Actualiza las métricas de un vehículo enviadas por el dispositivo IoT</td>
+    </tr>
+    <tr>
+      <td>deleteWellnessData</td>
+      <td>DELETE /api/v1/wellness/{vehicleId}</td>
+      <td>Elimina los datos históricos de bienestar de un vehículo</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VehicleWellnessQueryService</td>
+      <td>Servicio para consultas y recuperación de datos sobre métricas, alertas y estado general del vehículo</td>
+    </tr>
+    <tr>
+      <td>VehicleWellnessCommandService</td>
+      <td>Servicio para ejecutar comandos de actualización de métricas y generación de diagnósticos</td>
+    </tr>
+    <tr>
+      <td>CreateDiagnosisCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de generación de diagnósticos</td>
+    </tr>
+    <tr>
+      <td>UpdateMetricCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de actualización de métricas</td>
+    </tr>
+    <tr>
+      <td>DeleteWellnessCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de eliminación de registros de bienestar</td>
+    </tr>
+    <tr>
+      <td>VehicleWellnessResourceFromEntityAssembler</td>
+      <td>Convierte entidades de bienestar del vehículo en recursos REST para la respuesta</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 4.2.4.3 Application Layer
 
