@@ -1539,7 +1539,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.3 Application Layer
 
-<hr>
 <h3>Clase: <code>VehicleWellnessQueryServiceImpl</code></h3>
 <table>
   <tr>
@@ -1548,7 +1547,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con el bienestar del vehículo</td>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con el bienestar de los vehículos, incluyendo métricas, alertas y diagnósticos históricos.</td>
   </tr>
 </table>
 <table>
@@ -1561,19 +1560,19 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>handle(GetVehicleWellnessByIdQuery)</td>
-      <td>Obtiene el estado general del bienestar de un vehículo por su ID</td>
+      <td>Obtiene el estado general de bienestar de un vehículo por su ID.</td>
     </tr>
     <tr>
       <td>handle(GetVehicleMetricsQuery)</td>
-      <td>Devuelve la lista de métricas asociadas a un vehículo</td>
+      <td>Devuelve las métricas en tiempo real e históricas asociadas a un vehículo.</td>
     </tr>
     <tr>
       <td>handle(GetVehicleAlertsQuery)</td>
-      <td>Obtiene todas las alertas preventivas activas de un vehículo</td>
+      <td>Recupera todas las alertas preventivas activas de un vehículo.</td>
     </tr>
     <tr>
       <td>handle(GetVehicleDiagnosticsQuery)</td>
-      <td>Devuelve todos los diagnósticos históricos de un vehículo</td>
+      <td>Devuelve los diagnósticos históricos generados para un vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1588,23 +1587,23 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>VehicleWellnessRepository</td>
-      <td>Repositorio para acceso a datos de bienestar de vehículos</td>
+      <td>Repositorio para acceso y consulta de datos de bienestar de vehículos.</td>
     </tr>
     <tr>
       <td>GetVehicleWellnessByIdQuery</td>
-      <td>Query para obtener el estado de un vehículo</td>
+      <td>Query para obtener el estado general del vehículo.</td>
     </tr>
     <tr>
       <td>GetVehicleMetricsQuery</td>
-      <td>Query para recuperar métricas de un vehículo</td>
+      <td>Query para recuperar métricas asociadas a un vehículo.</td>
     </tr>
     <tr>
       <td>GetVehicleAlertsQuery</td>
-      <td>Query para recuperar alertas preventivas</td>
+      <td>Query para recuperar alertas preventivas activas.</td>
     </tr>
     <tr>
       <td>GetVehicleDiagnosticsQuery</td>
-      <td>Query para recuperar diagnósticos del vehículo</td>
+      <td>Query para recuperar diagnósticos históricos del vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1617,7 +1616,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con el bienestar del vehículo</td>
+    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con el bienestar del vehículo, como actualización de métricas, generación de diagnósticos y gestión de alertas.</td>
   </tr>
 </table>
 <table>
@@ -1629,20 +1628,20 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(UpdateMetricCommand)</td>
-      <td>Agrega o actualiza una métrica en el registro de bienestar del vehículo</td>
+      <td>handle(UpdateMetricsCommand)</td>
+      <td>Agrega o actualiza métricas en el registro de bienestar del vehículo.</td>
     </tr>
     <tr>
       <td>handle(GenerateDiagnosisCommand)</td>
-      <td>Genera un diagnóstico basado en las métricas actuales del vehículo</td>
+      <td>Genera un diagnóstico automático basado en las métricas actuales del vehículo.</td>
     </tr>
     <tr>
       <td>handle(CreateAlertCommand)</td>
-      <td>Genera una alerta preventiva si se detecta una anomalía en las métricas</td>
+      <td>Crea una alerta preventiva si se detecta una anomalía en las métricas.</td>
     </tr>
     <tr>
       <td>handle(DeleteWellnessDataCommand)</td>
-      <td>Elimina los datos históricos de bienestar de un vehículo</td>
+      <td>Elimina los datos históricos de bienestar asociados a un vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1657,27 +1656,27 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>VehicleWellnessRepository</td>
-      <td>Repositorio para acceso y persistencia de bienestar de vehículos</td>
+      <td>Repositorio para acceso y persistencia de datos de bienestar de vehículos.</td>
     </tr>
     <tr>
       <td>NotificationService</td>
-      <td>Servicio para enviar notificaciones relacionadas con alertas preventivas</td>
+      <td>Servicio para enviar notificaciones cuando se generan alertas preventivas.</td>
     </tr>
     <tr>
-      <td>UpdateMetricCommand</td>
-      <td>Comando para actualizar o agregar métricas</td>
+      <td>UpdateMetricsCommand</td>
+      <td>Comando para actualizar o agregar métricas de un vehículo.</td>
     </tr>
     <tr>
       <td>GenerateDiagnosisCommand</td>
-      <td>Comando para generar diagnósticos</td>
+      <td>Comando para generar diagnósticos automáticos.</td>
     </tr>
     <tr>
       <td>CreateAlertCommand</td>
-      <td>Comando para generar alertas preventivas</td>
+      <td>Comando para generar alertas preventivas.</td>
     </tr>
     <tr>
       <td>DeleteWellnessDataCommand</td>
-      <td>Comando para eliminar registros de bienestar</td>
+      <td>Comando para eliminar registros históricos de bienestar.</td>
     </tr>
   </tbody>
 </table>
