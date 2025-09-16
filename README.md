@@ -2009,11 +2009,771 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.5.1 Domain Layer
 
+<h3>Aggregate: <code>Report</code></h3>
+<p><strong>Descripción:</strong>Representa la generación de reportes analíticos basados en métricas históricas y actuales de los vehículos, permitiendo comparativas y análisis de tendencias.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del reporte.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo asociado al reporte.</td></tr>
+    <tr><td>ownerId</td><td>Long</td><td>Private</td><td>ID del dueño de la moto.</td></tr>
+    <tr><td>reportType</td><td>ReportType</td><td>Private</td><td>Tipo de reporte (mensual, comparativo, de salud, de gastos).</td></tr>
+    <tr><td>periodStart</td><td>Timestamp</td><td>Private</td><td>Fecha de inicio del período del reporte.</td></tr>
+    <tr><td>periodEnd</td><td>Timestamp</td><td>Private</td><td>Fecha de fin del período del reporte.</td></tr>
+    <tr><td>generatedAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de generación del reporte.</td></tr>
+    <tr><td>metricsData</td><td>Map&lt;String, Object&gt;</td><td>Private</td><td>Datos de métricas calculadas para el reporte.</td></tr>
+    <tr><td>comparisonData</td><td>Map&lt;String, Object&gt;</td><td>Private</td><td>Datos comparativos con períodos anteriores.</td></tr>
+    <tr><td>status</td><td>ReportStatus</td><td>Private</td><td>Estado del reporte (generando, completado, error).</td></tr>
+    <tr><td>format</td><td>ReportFormat</td><td>Private</td><td>Formato del reporte (PDF, Excel, HTML).</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>generateReport()</td><td>void</td><td>Public</td><td>Genera el reporte con los datos actuales.</td></tr>
+    <tr><td>addMetric(String key, Object value)</td><td>void</td><td>Public</td><td>Agrega una métrica al reporte.</td></tr>
+    <tr><td>addComparison(String key, Object current, Object previous)</td><td>void</td><td>Public</td><td>Agrega datos comparativos al reporte.</td></tr>
+    <tr><td>calculateTrends()</td><td>Map&lt;String, Double&gt;</td><td>Public</td><td>Calcula tendencias basadas en datos históricos.</td></tr>
+    <tr><td>exportToFormat(ReportFormat format)</td><td>byte[]</td><td>Public</td><td>Exporta el reporte al formato especificado.</td></tr>
+  </tbody>
+</table>
+
+<h3>Entidad: <code>MetricDefinition</code></h3>
+<p><strong>Descripción:</strong>Define las métricas y cálculos que pueden ser incluidos en los reportes, con sus fórmulas y parámetros.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único de la definición de métrica.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Nombre de la métrica.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción de lo que mide la métrica.</td>
+    </tr>
+    <tr>
+      <td>formula</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Fórmula para calcular la métrica.</td>
+    </tr>
+    <tr>
+      <td>parameters</td>
+      <td>List&lt;String&gt;</td>
+      <td>Private</td>
+      <td>Parámetros requeridos para el cálculo.</td>
+    </tr>
+    <tr>
+      <td>unit</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Unidad de medida de la métrica.</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>MetricCategory</td>
+      <td>Private</td>
+      <td>Categoría de la métrica (rendimiento, costo, mantenimiento).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>calculate(Map&lt;String, Object&gt; parameters)</td>
+      <td>Object</td>
+      <td>Public</td>
+      <td>Calcula el valor de la métrica con los parámetros dados.</td>
+    </tr>
+    <tr>
+      <td>validateParameters(Map&lt;String, Object&gt; parameters)</td>
+      <td>boolean</td>
+      <td>Public</td>
+      <td>Valida que los parámetros sean correctos.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3>Entidad: <code>ReportTemplate</code></h3>
+<p><strong>Descripción:</strong>Plantilla predefinida para la generación de reportes, que define la estructura y métricas a incluir.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único de la plantilla.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Nombre de la plantilla.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción del propósito de la plantilla.</td>
+    </tr>
+    <tr>
+      <td>includedMetrics</td>
+      <td>List&lt;MetricDefinition&gt;</td>
+      <td>Private</td>
+      <td>Métricas incluidas en la plantilla.</td>
+    </tr>
+    <tr>
+      <td>defaultFormat</td>
+      <td>ReportFormat</td>
+      <td>Private</td>
+      <td>Formato por defecto para esta plantilla.</td>
+    </tr>
+    <tr>
+      <td>layoutConfig</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Configuración de diseño del reporte (JSON).</td>
+    </tr>
+    <tr>
+      <td>isDefault</td>
+      <td>boolean</td>
+      <td>Private</td>
+      <td>Indica si es la plantilla por defecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>addMetric(MetricDefinition metric)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Agrega una métrica a la plantilla.</td>
+    </tr>
+    <tr>
+      <td>removeMetric(MetricDefinition metric)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Remueve una métrica de la plantilla.</td>
+    </tr>
+    <tr>
+      <td>generateReport(Map&lt;String, Object&gt; data)</td>
+      <td>Report</td>
+      <td>Public</td>
+      <td>Genera un reporte basado en esta plantilla.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 4.2.5.2 Interface Layer
+
+<h3>Controlador:<code>ReportController</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ReportController</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que maneja la generación, consulta y descarga de reportes analíticos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>generateReport</td>
+      <td>POST /api/v1/reports/generate</td>
+      <td>Genera un nuevo reporte basado en los parámetros especificados.</td>
+    </tr>
+    <tr>
+      <td>getReportStatus</td>
+      <td>GET /api/v1/reports/{id}/status</td>
+      <td>Obtiene el estado de un reporte en generación.</td>
+    </tr>
+    <tr>
+      <td>downloadReport</td>
+      <td>GET /api/v1/reports/{id}/download</td>
+      <td>Descarga un reporte generado en el formato especificado.</td>
+    </tr>
+    <tr>
+      <td>getReportHistory</td>
+      <td>GET /api/v1/reports/history/{vehicleId}</td>
+      <td>Obtiene el historial de reportes generados para un vehículo.</td>
+    </tr>
+    <tr>
+      <td>getMonthlyReport</td>
+      <td>GET /api/v1/reports/monthly/{vehicleId}/{year}/{month}</td>
+      <td>Genera o obtiene el reporte mensual de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>getComparativeReport</td>
+      <td>GET /api/v1/reports/comparative/{vehicleId}</td>
+      <td>Genera un reporte comparativo con períodos anteriores.</td>
+    </tr>
+    <tr>
+      <td>getVehicleHealthReport</td>
+      <td>GET /api/v1/reports/health/{vehicleId}</td>
+      <td>Genera un reporte de salud del vehículo.</td>
+    </tr>
+    <tr>
+      <td>getExpenseReport</td>
+      <td>GET /api/v1/reports/expenses/{vehicleId}</td>
+      <td>Genera un reporte detallado de gastos.</td>
+    </tr>
+    <tr>
+      <td>getReportTemplates</td>
+      <td>GET /api/v1/reports/templates</td>
+      <td>Obtiene las plantillas de reporte disponibles.</td>
+    </tr>
+    <tr>
+      <td>createCustomReport</td>
+      <td>POST /api/v1/reports/custom</td>
+      <td>Crea un reporte personalizado con métricas específicas.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportQueryService</td>
+      <td>Servicio para consultas y recuperación de reportes.</td>
+    </tr>
+    <tr>
+      <td>ReportCommandService</td>
+      <td>Servicio para ejecutar comandos de generación de reportes.</td>
+    </tr>
+    <tr>
+      <td>GenerateReportCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de generación de reportes.</td>
+    </tr>
+    <tr>
+      <td>ReportResourceFromEntityAssembler</td>
+      <td>Convierte entidades de reporte en recursos REST para la respuesta.</td>
+    </tr>
+    <tr>
+      <td>ReportDownloadAssembler</td>
+      <td>Prepara reportes para descarga en diferentes formatos.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ##### 4.2.5.3 Application Layer
 
+<h3>Clase:<code>ReportQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ReportQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con reportes.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetReportByIdQuery)</td>
+      <td>Obtiene un reporte específico por su ID.</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportStatusQuery)</td>
+      <td>Obtiene el estado de un reporte en generación.</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportHistoryQuery)</td>
+      <td>Obtiene el historial de reportes de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMonthlyReportQuery)</td>
+      <td>Genera o obtiene el reporte mensual de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetComparativeReportQuery)</td>
+      <td>Genera un reporte comparativo con datos históricos.</td>
+    </tr>
+    <tr>
+      <td>handle(GetVehicleHealthReportQuery)</td>
+      <td>Genera un reporte de salud del vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetExpenseReportQuery)</td>
+      <td>Genera un reporte detallado de gastos.</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportTemplatesQuery)</td>
+      <td>Obtiene las plantillas de reporte disponibles.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricDefinitionsQuery)</td>
+      <td>Obtiene las definiciones de métricas disponibles.</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportTrendsQuery)</td>
+      <td>Calcula tendencias basadas en reportes históricos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportRepository</td>
+      <td>Repositorio para acceso a datos de reportes.</td>
+    </tr>
+    <tr>
+      <td>MetricDefinitionRepository</td>
+      <td>Repositorio para acceso a definiciones de métricas.</td>
+    </tr>
+    <tr>
+      <td>ReportTemplateRepository</td>
+      <td>Repositorio para acceso a plantillas de reporte.</td>
+    </tr>
+    <tr>
+      <td>HistoryQueryService</td>
+      <td>Servicio para consultar datos históricos.</td>
+    </tr>
+    <tr>
+      <td>VehicleQueryService</td>
+      <td>Servicio para consultar datos de vehículos.</td>
+    </tr>
+    <tr>
+      <td>GetReportByIdQuery</td>
+      <td>Query para obtener reporte por ID.</td>
+    </tr>
+    <tr>
+      <td>GetReportStatusQuery</td>
+      <td>Query para obtener estado de reporte.</td>
+    </tr>
+    <tr>
+      <td>GetReportHistoryQuery</td>
+      <td>Query para obtener historial de reportes.</td>
+    </tr>
+    <tr>
+      <td>GetMonthlyReportQuery</td>
+      <td>Query para obtener reporte mensual.</td>
+    </tr>
+    <tr>
+      <td>GetComparativeReportQuery</td>
+      <td>Query para obtener reporte comparativo.</td>
+    </tr>
+    <tr>
+      <td>GetVehicleHealthReportQuery</td>
+      <td>Query para obtener reporte de salud.</td>
+    </tr>
+    <tr>
+      <td>GetExpenseReportQuery</td>
+      <td>Query para obtener reporte de gastos.</td>
+    </tr>
+    <tr>
+      <td>GetReportTemplatesQuery</td>
+      <td>Query para obtener plantillas.</td>
+    </tr>
+    <tr>
+      <td>GetMetricDefinitionsQuery</td>
+      <td>Query para obtener definiciones de métricas.</td>
+    </tr>
+    <tr>
+      <td>GetReportTrendsQuery</td>
+      <td>Query para obtener tendencias.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase:<code>ReportCommandServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ReportCommandServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de comandos para operaciones de generación y gestión de reportes.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GenerateReportCommand)</td>
+      <td>Genera un nuevo reporte basado en los parámetros especificados.</td>
+    </tr>
+    <tr>
+      <td>handle(GenerateMonthlyReportCommand)</td>
+      <td>Genera el reporte mensual automático para un vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GenerateComparativeReportCommand)</td>
+      <td>Genera un reporte comparativo con períodos anteriores.</td>
+    </tr>
+    <tr>
+      <td>handle(GenerateVehicleHealthReportCommand)</td>
+      <td>Genera un reporte de salud del vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GenerateExpenseReportCommand)</td>
+      <td>Genera un reporte detallado de gastos.</td>
+    </tr>
+    <tr>
+      <td>handle(CreateCustomReportCommand)</td>
+      <td>Crea un reporte personalizado con métricas específicas.</td>
+    </tr>
+    <tr>
+      <td>handle(DeleteReportCommand)</td>
+      <td>Elimina un reporte existente.</td>
+    </tr>
+    <tr>
+      <td>handle(ExportReportCommand)</td>
+      <td>Exporta un reporte a un formato específico.</td>
+    </tr>
+    <tr>
+      <td>handle(ScheduleReportCommand)</td>
+      <td>Programa la generación automática de reportes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportRepository</td>
+      <td>Repositorio para persistencia de reportes.</td>
+    </tr>
+    <tr>
+      <td>MetricDefinitionRepository</td>
+      <td>Repositorio para gestión de definiciones de métricas.</td>
+    </tr>
+    <tr>
+      <td>ReportTemplateRepository</td>
+      <td>Repositorio para gestión de plantillas.</td>
+    </tr>
+    <tr>
+      <td>ReportGeneratorService</td>
+      <td>Servicio para la generación de reportes.</td>
+    </tr>
+    <tr>
+      <td>ReportExportService</td>
+      <td>Servicio para exportación de reportes.</td>
+    </tr>
+    <tr>
+      <td>SchedulingService</td>
+      <td>Servicio para programación de tareas.</td>
+    </tr>
+    <tr>
+      <td>GenerateReportCommand</td>
+      <td>Comando para generar reportes.</td>
+    </tr>
+    <tr>
+      <td>GenerateMonthlyReportCommand</td>
+      <td>Comando para generar reportes mensuales.</td>
+    </tr>
+    <tr>
+      <td>GenerateComparativeReportCommand</td>
+      <td>Comando para generar reportes comparativos.</td>
+    </tr>
+    <tr>
+      <td>GenerateVehicleHealthReportCommand</td>
+      <td>Comando para generar reportes de salud.</td>
+    </tr>
+    <tr>
+      <td>GenerateExpenseReportCommand</td>
+      <td>Comando para generar reportes de gastos.</td>
+    </tr>
+    <tr>
+      <td>CreateCustomReportCommand</td>
+      <td>Comando para crear reportes personalizados.</td>
+    </tr>
+    <tr>
+      <td>DeleteReportCommand</td>
+      <td>Comando para eliminar reportes.</td>
+    </tr>
+    <tr>
+      <td>ExportReportCommand</td>
+      <td>Comando para exportar reportes.</td>
+    </tr>
+    <tr>
+      <td>ScheduleReportCommand</td>
+      <td>Comando para programar reportes.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 4.2.5.4 Infrastructure Layer
+
+<h3>Clase:<code>ReportRepository</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ReportRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de reportes.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>save(ReportEntity)</td>
+      <td>Persiste un nuevo reporte o actualiza uno existente.</td>
+    </tr>
+    <tr>
+      <td>deleteById(Long)</td>
+      <td>Elimina un reporte por su ID.</td>
+    </tr>
+    <tr>
+      <td>findById(Long)</td>
+      <td>Recupera los detalles de un reporte por su ID.</td>
+    </tr>
+    <tr>
+      <td>existsById(Long)</td>
+      <td>Verifica si existe un reporte por su ID.</td>
+    </tr>
+    <tr>
+      <td>findByVehicleId(Long, Pageable)</td>
+      <td>Obtiene todos los reportes asociados a un vehículo con paginación.</td>
+    </tr>
+    <tr>
+      <td>findByOwnerId(Long, Pageable)</td>
+      <td>Obtiene todos los reportes asociados a un dueño.</td>
+    </tr>
+    <tr>
+      <td>findByReportTypeAndVehicleId(ReportType, Long)</td>
+      <td>Filtra reportes por tipo y vehículo.</td>
+    </tr>
+    <tr>
+      <td>findByDateRangeAndVehicleId(Timestamp, Timestamp, Long)</td>
+      <td>Obtiene reportes dentro de un rango de fechas para un vehículo.</td>
+    </tr>
+    <tr>
+      <td>findLatestReportByVehicleId(Long, ReportType)</td>
+      <td>Obtiene el reporte más reciente de un tipo específico para un vehículo.</td>
+    </tr>
+    <tr>
+      <td>updateReportStatus(Long, ReportStatus)</td>
+      <td>Actualiza el estado de un reporte.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase:<code>MetricDefinitionRepository</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>MetricDefinitionRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para operaciones CRUD y consultas relacionadas con definiciones de métricas.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>save(MetricDefinitionEntity)</td>
+      <td>Persiste una nueva definición de métrica o actualiza una existente.</td>
+    </tr>
+    <tr>
+      <td>deleteById(Long)</td>
+      <td>Elimina una definición de métrica por su ID.</td>
+    </tr>
+    <tr>
+      <td>findById(Long)</td>
+      <td>Obtiene los detalles de una definición de métrica por su ID.</td>
+    </tr>
+    <tr>
+      <td>existsById(Long)</td>
+      <td>Verifica si existe una definición de métrica por su ID.</td>
+    </tr>
+    <tr>
+      <td>findByName(String)</td>
+      <td>Busca una definición de métrica por su nombre.</td>
+    </tr>
+    <tr>
+      <td>findByCategory(MetricCategory)</td>
+      <td>Filtra definiciones de métricas por categoría.</td>
+    </tr>
+    <tr>
+      <td>findAll(Pageable)</td>
+      <td>Lista todas las definiciones de métricas disponibles con paginación.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase:<code>ReportTemplateRepository</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ReportTemplateRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para gestionar plantillas de reportes.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>save(ReportTemplateEntity)</td>
+      <td>Persiste una nueva plantilla de reporte o actualiza una existente.</td>
+    </tr>
+    <tr>
+      <td>deleteById(Long)</td>
+      <td>Elimina una plantilla de reporte por su ID.</td>
+    </tr>
+    <tr>
+      <td>findById(Long)</td>
+      <td>Obtiene los detalles de una plantilla de reporte por su ID.</td>
+    </tr>
+    <tr>
+      <td>existsById(Long)</td>
+      <td>Verifica si existe una plantilla de reporte por su ID.</td>
+    </tr>
+    <tr>
+      <td>findByName(String)</td>
+      <td>Busca una plantilla de reporte por su nombre.</td>
+    </tr>
+    <tr>
+      <td>findDefaultTemplates()</td>
+      <td>Obtiene las plantillas de reporte marcadas como predeterminadas.</td>
+    </tr>
+    <tr>
+      <td>findAll(Pageable)</td>
+      <td>Lista todas las plantillas de reporte disponibles con paginación.</td>
+    </tr>
+    <tr>
+      <td>updateDefaultStatus(Long, boolean)</td>
+      <td>Actualiza el estado predeterminado de una plantilla.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
 
