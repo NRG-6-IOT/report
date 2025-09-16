@@ -1157,7 +1157,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 </table>
 
 ##### 4.2.3.2 Interface Layer
-
 <h3>Controlador: <code>SubscriptionController</code></h3>
 <table>
   <tr>
@@ -1166,7 +1165,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, así como su activación, renovación, suspensión y cancelación.</td>
+    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, incluyendo su activación, renovación, suspensión y cancelación. Expone endpoints que vinculan explícitamente a dueños (<code>Owner</code>) y mecánicos (<code>Mechanic</code>), garantizando integridad en el ciclo de vida de la suscripción.</td>
   </tr>
 </table>
 <table>
@@ -1179,9 +1178,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{id}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getUserSubscriptions</td><td>GET /api/v1/subscriptions/user/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto.</td></tr>
-    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociada a un dueño, mecánico, vehículo y plan.</td></tr>
-    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan).</td></tr>
+    <tr><td>getOwnerSubscriptions</td><td>GET /api/v1/subscriptions/owners/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto (<code>Owner</code>).</td></tr>
+    <tr><td>getMechanicSubscriptions</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}</td><td>Lista todas las suscripciones en las que un mecánico (<code>Mechanic</code>) está involucrado.</td></tr>
+    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociando un <code>Owner</code>, un <code>Mechanic</code>, un vehículo y un <code>Plan</code>.</td></tr>
+    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan o reasignación de mecánico).</td></tr>
     <tr><td>activateSubscription</td><td>POST /api/v1/subscriptions/{id}/activate</td><td>Activa una suscripción si cumple con las reglas de negocio.</td></tr>
     <tr><td>renewSubscription</td><td>POST /api/v1/subscriptions/{id}/renew</td><td>Renueva una suscripción al alcanzar la fecha de expiración.</td></tr>
     <tr><td>suspendSubscription</td><td>POST /api/v1/subscriptions/{id}/suspend</td><td>Suspende temporalmente una suscripción.</td></tr>
@@ -1198,12 +1198,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones.</td></tr>
+    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones (por ID, dueño, mecánico).</td></tr>
     <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de creación, actualización, renovación, suspensión y cancelación de suscripciones.</td></tr>
-    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones.</td></tr>
+    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones (incluye validación de <code>Owner</code>, <code>Mechanic</code> y <code>Plan</code>).</td></tr>
     <tr><td>UpdateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de actualización de suscripciones.</td></tr>
     <tr><td>DeleteSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de eliminación de suscripciones.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta.</td></tr>
+    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción (con <code>Owner</code>, <code>Mechanic</code>, <code>Plan</code>) en recursos REST para la respuesta.</td></tr>
   </tbody>
 </table>
 
