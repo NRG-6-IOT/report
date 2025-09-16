@@ -1691,7 +1691,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas relacionadas con el bienestar del vehículo</td>
+    <td>Interfaz de persistencia principal para operaciones CRUD y consultas especializadas relacionadas con el bienestar de los vehículos</td>
   </tr>
 </table>
 <table>
@@ -1702,34 +1702,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(VehicleWellness)</td>
-      <td>Persiste un nuevo registro de bienestar del vehículo o actualiza uno existente</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina los registros de bienestar asociados a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene el estado general de bienestar de un vehículo específico</td>
-    </tr>
-    <tr>
-      <td>existsByVehicleId(Long vehicleId)</td>
-      <td>Verifica si existe un registro de bienestar para un vehículo</td>
-    </tr>
-    <tr>
-      <td>findMetricsByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findAlertsByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las alertas preventivas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findDiagnosticsByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todos los diagnósticos históricos de un vehículo</td>
-    </tr>
+    <tr><td>save(VehicleWellness wellness)</td><td>Persiste o actualiza el estado de bienestar de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina los registros de bienestar asociados a un vehículo</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene el estado general de bienestar de un vehículo</td></tr>
+    <tr><td>existsByVehicleId(Long vehicleId)</td><td>Verifica si existe un registro de bienestar para un vehículo</td></tr>
+    <tr><td>findMetricsByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas registradas asociadas a un vehículo</td></tr>
+    <tr><td>findAlertsByVehicleId(Long vehicleId)</td><td>Obtiene todas las alertas activas e históricas de un vehículo</td></tr>
+    <tr><td>findDiagnosticsByVehicleId(Long vehicleId)</td><td>Obtiene todos los diagnósticos históricos de un vehículo</td></tr>
   </tbody>
 </table>
 
@@ -1741,7 +1720,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD sobre métricas registradas por el dispositivo IoT</td>
+    <td>Interfaz de persistencia para métricas IoT que registran datos en tiempo real del estado del vehículo</td>
   </tr>
 </table>
 <table>
@@ -1752,26 +1731,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(Metric)</td>
-      <td>Persiste una nueva métrica o actualiza una existente</td>
-    </tr>
-    <tr>
-      <td>findById(Long id)</td>
-      <td>Recupera una métrica específica por su identificador</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findLatestByVehicleId(Long vehicleId)</td>
-      <td>Obtiene la última métrica registrada de un vehículo</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina todas las métricas asociadas a un vehículo</td>
-    </tr>
+    <tr><td>save(Metric metric)</td><td>Persiste una nueva métrica o actualiza una existente</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera una métrica específica por identificador</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas asociadas a un vehículo</td></tr>
+    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene la última métrica registrada de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las métricas históricas de un vehículo</td></tr>
   </tbody>
 </table>
 
@@ -1783,7 +1747,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para gestionar alertas preventivas generadas automáticamente a partir de métricas</td>
+    <td>Interfaz de persistencia para gestionar alertas preventivas derivadas del análisis de métricas y reglas de negocio</td>
   </tr>
 </table>
 <table>
@@ -1794,22 +1758,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(PreventiveAlert)</td>
-      <td>Persiste una nueva alerta preventiva</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las alertas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findActiveByVehicleId(Long vehicleId)</td>
-      <td>Obtiene únicamente las alertas activas de un vehículo</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina todas las alertas asociadas a un vehículo</td>
-    </tr>
+    <tr><td>save(PreventiveAlert alert)</td><td>Persiste una nueva alerta preventiva</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las alertas asociadas a un vehículo</td></tr>
+    <tr><td>findActiveByVehicleId(Long vehicleId)</td><td>Obtiene únicamente las alertas activas de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las alertas asociadas a un vehículo</td></tr>
   </tbody>
 </table>
 
@@ -1821,7 +1773,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD sobre diagnósticos generados a partir de métricas</td>
+    <td>Interfaz de persistencia para diagnósticos generados a partir de métricas y reglas de diagnóstico automático</td>
   </tr>
 </table>
 <table>
@@ -1832,26 +1784,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(Diagnostic)</td>
-      <td>Persiste un nuevo diagnóstico</td>
-    </tr>
-    <tr>
-      <td>findById(Long id)</td>
-      <td>Recupera un diagnóstico específico</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todos los diagnósticos asociados a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findLatestByVehicleId(Long vehicleId)</td>
-      <td>Obtiene el diagnóstico más reciente de un vehículo</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina todos los diagnósticos asociados a un vehículo</td>
-    </tr>
+    <tr><td>save(Diagnostic diagnostic)</td><td>Persiste un nuevo diagnóstico</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera un diagnóstico específico</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los diagnósticos asociados a un vehículo</td></tr>
+    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene el diagnóstico más reciente de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todos los diagnósticos asociados a un vehículo</td></tr>
   </tbody>
 </table>
 
