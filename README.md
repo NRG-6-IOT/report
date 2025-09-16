@@ -1450,7 +1450,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ##### 4.2.4.2 Interface Layer
 
 <h3>Controlador: <code>VehicleWellnessController</code></h3>
-
 <table>
   <tr>
     <th>Título</th>
@@ -1458,10 +1457,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones relacionadas con el monitoreo del bienestar del vehículo, incluyendo métricas, alertas y diagnósticos.</td>
+    <td>Controlador REST que gestiona las operaciones relacionadas con el bienestar de los vehículos, incluyendo la consulta de métricas, alertas preventivas, generación de diagnósticos y administración de datos históricos.</td>
   </tr>
 </table>
-
 <table>
   <thead>
     <tr>
@@ -1474,38 +1472,36 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr>
       <td>getVehicleWellnessById</td>
       <td>GET /api/v1/wellness/{vehicleId}</td>
-      <td>Obtiene el estado general del bienestar de un vehículo específico por su ID</td>
+      <td>Obtiene el estado general de bienestar de un vehículo específico por su ID.</td>
     </tr>
     <tr>
       <td>getVehicleMetrics</td>
       <td>GET /api/v1/wellness/{vehicleId}/metrics</td>
-      <td>Obtiene las métricas en tiempo real de un vehículo</td>
+      <td>Recupera las métricas en tiempo real y/o históricas de un vehículo.</td>
     </tr>
     <tr>
       <td>getVehicleAlerts</td>
       <td>GET /api/v1/wellness/{vehicleId}/alerts</td>
-      <td>Obtiene todas las alertas preventivas activas de un vehículo</td>
+      <td>Obtiene todas las alertas preventivas y activas de un vehículo.</td>
     </tr>
     <tr>
       <td>generateDiagnosis</td>
       <td>POST /api/v1/wellness/{vehicleId}/diagnosis</td>
-      <td>Genera un diagnóstico automático basado en las métricas actuales</td>
+      <td>Genera un diagnóstico automático basado en las métricas actuales del vehículo.</td>
     </tr>
     <tr>
-      <td>updateMetric</td>
+      <td>updateMetrics</td>
       <td>PUT /api/v1/wellness/{vehicleId}/metrics</td>
-      <td>Actualiza las métricas de un vehículo enviadas por el dispositivo IoT</td>
+      <td>Actualiza las métricas de un vehículo recibidas desde el dispositivo IoT.</td>
     </tr>
     <tr>
       <td>deleteWellnessData</td>
       <td>DELETE /api/v1/wellness/{vehicleId}</td>
-      <td>Elimina los datos históricos de bienestar de un vehículo</td>
+      <td>Elimina los datos históricos de bienestar asociados a un vehículo.</td>
     </tr>
   </tbody>
 </table>
-
 <h4>Dependencias:</h4>
-
 <table>
   <thead>
     <tr>
@@ -1516,27 +1512,27 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>VehicleWellnessQueryService</td>
-      <td>Servicio para consultas y recuperación de datos sobre métricas, alertas y estado general del vehículo</td>
+      <td>Servicio para consultas de estado general, métricas y alertas de los vehículos.</td>
     </tr>
     <tr>
       <td>VehicleWellnessCommandService</td>
-      <td>Servicio para ejecutar comandos de actualización de métricas y generación de diagnósticos</td>
+      <td>Servicio para ejecutar comandos relacionados con la actualización de métricas, generación de diagnósticos y eliminación de datos.</td>
     </tr>
     <tr>
       <td>CreateDiagnosisCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de generación de diagnósticos</td>
+      <td>Convierte recursos REST en comandos de generación de diagnósticos de vehículos.</td>
     </tr>
     <tr>
-      <td>UpdateMetricCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de actualización de métricas</td>
+      <td>UpdateMetricsCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de actualización de métricas.</td>
     </tr>
     <tr>
-      <td>DeleteWellnessCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de eliminación de registros de bienestar</td>
+      <td>DeleteWellnessDataCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de eliminación de datos históricos de bienestar.</td>
     </tr>
     <tr>
       <td>VehicleWellnessResourceFromEntityAssembler</td>
-      <td>Convierte entidades de bienestar del vehículo en recursos REST para la respuesta</td>
+      <td>Convierte entidades de bienestar del vehículo en recursos REST para la respuesta de la API.</td>
     </tr>
   </tbody>
 </table>
