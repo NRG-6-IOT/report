@@ -1264,7 +1264,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de suscripciones.</td>
+    <td>Interfaz de persistencia para operaciones de acceso y gestión de <code>Subscription</code> en la base de datos. Extiende de un repositorio genérico para CRUD y define consultas específicas.</td>
   </tr>
 </table>
 <table>
@@ -1275,20 +1275,17 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(SubscriptionEntity)</td><td>Persiste una nueva suscripción o actualiza una existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una suscripción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Recupera los detalles de una suscripción por su ID.</td></tr>
+    <tr><td>save(Subscription)</td><td>Guarda o actualiza una suscripción en la base de datos.</td></tr>
+    <tr><td>deleteById(Long)</td><td>Elimina (soft delete o hard delete) una suscripción por su ID.</td></tr>
+    <tr><td>findById(Long)</td><td>Recupera una suscripción por su ID.</td></tr>
     <tr><td>existsById(Long)</td><td>Verifica si existe una suscripción por su ID.</td></tr>
-    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones asociadas a un dueño con paginación.</td></tr>
-    <tr><td>findByMechanicIdAndStatus(Long, SubscriptionStatus)</td><td>Lista suscripciones activas de un mecánico.</td></tr>
+    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones de un dueño de vehículo, paginadas.</td></tr>
+    <tr><td>findByMechanicIdAndStatus(Long, SubscriptionStatus)</td><td>Lista suscripciones filtradas por mecánico y estado.</td></tr>
     <tr><td>findByVehicleId(Long)</td><td>Obtiene la suscripción vinculada a un vehículo.</td></tr>
-    <tr><td>findExpiringBetween(Timestamp start, Timestamp end)</td><td>Lista las suscripciones próximas a expirar en un rango de fechas.</td></tr>
-    <tr><td>updateStatus(Long, SubscriptionStatus)</td><td>Actualiza el estado de una suscripción.</td></tr>
-    <tr><td>updatePlan(Long, Long)</td><td>Actualiza el plan asociado a una suscripción.</td></tr>
+    <tr><td>findExpiringBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista suscripciones que expiran en un rango de fechas.</td></tr>
   </tbody>
 </table>
 
-<hr>
 <h3>Clase: <code>PlanRepository</code></h3>
 <table>
   <tr>
@@ -1297,7 +1294,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas relacionadas con planes de suscripción.</td>
+    <td>Interfaz de persistencia para la entidad <code>Plan</code>, que representa los planes de suscripción disponibles.</td>
   </tr>
 </table>
 <table>
@@ -1308,17 +1305,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(PlanEntity)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
+    <tr><td>save(Plan)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
     <tr><td>deleteById(Long)</td><td>Elimina un plan por su ID.</td></tr>
     <tr><td>findById(Long)</td><td>Obtiene los detalles de un plan por su ID.</td></tr>
     <tr><td>existsById(Long)</td><td>Verifica si existe un plan por su ID.</td></tr>
     <tr><td>findByName(String)</td><td>Busca un plan por su nombre.</td></tr>
-    <tr><td>findAll(Pageable)</td><td>Lista todos los planes disponibles con paginación.</td></tr>
-    <tr><td>updatePrice(Long, BigDecimal)</td><td>Actualiza el precio de un plan específico.</td></tr>
+    <tr><td>findAll(Pageable)</td><td>Lista todos los planes con paginación.</td></tr>
   </tbody>
 </table>
 
-<hr>
 <h3>Clase: <code>PromotionRepository</code></h3>
 <table>
   <tr>
@@ -1327,7 +1322,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para gestionar promociones y descuentos aplicables a las suscripciones.</td>
+    <td>Interfaz de persistencia para la entidad <code>Promotion</code>, usada en la aplicación de descuentos y campañas de suscripciones.</td>
   </tr>
 </table>
 <table>
@@ -1338,16 +1333,14 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(PromotionEntity)</td><td>Persiste una nueva promoción o actualiza una existente.</td></tr>
+    <tr><td>save(Promotion)</td><td>Guarda o actualiza una promoción.</td></tr>
     <tr><td>deleteById(Long)</td><td>Elimina una promoción por su ID.</td></tr>
     <tr><td>findById(Long)</td><td>Obtiene los detalles de una promoción por su ID.</td></tr>
     <tr><td>existsByCode(String)</td><td>Verifica si existe una promoción con un código específico.</td></tr>
-    <tr><td>findByCode(String)</td><td>Recupera una promoción vigente asociada a un código.</td></tr>
-    <tr><td>findValidPromotions(Timestamp now)</td><td>Lista todas las promociones vigentes en un momento dado.</td></tr>
-    <tr><td>updateValidity(Long, Timestamp, Timestamp)</td><td>Actualiza el rango de validez de una promoción.</td></tr>
+    <tr><td>findByCode(String)</td><td>Recupera una promoción por su código.</td></tr>
+    <tr><td>findValidPromotions(LocalDateTime now)</td><td>Lista las promociones vigentes en un momento dado.</td></tr>
   </tbody>
 </table>
-
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
 ##### 4.2.3.6 Bounded Context Software Architecture Code Level Diagrams
