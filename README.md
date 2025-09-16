@@ -414,11 +414,679 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.2.1 Domain Layer
 
+<h3>Aggregate: <code>ServiceHistory</code></h3>
+<p><strong>Descripción:</strong> Representa el registro histórico de servicios de mantenimiento y reparaciones realizadas a un vehículo, incluyendo detalles de gastos, repuestos utilizados y mecánicos involucrados.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del registro de servicio.</td>
+    </tr>
+    <tr>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>ID del vehículo al que se le realizó el servicio.</td>
+    </tr>
+    <tr>
+      <td>ownerId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>ID del dueño de la moto.</td>
+    </tr>
+    <tr>
+      <td>mechanicId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>ID del mecánico que realizó el servicio.</td>
+    </tr>
+    <tr>
+      <td>serviceType</td>
+      <td>ServiceType</td>
+      <td>Private</td>
+      <td>Tipo de servicio realizado (mantenimiento, reparación, revisión).</td>
+    </tr>
+    <tr>
+      <td>serviceDate</td>
+      <td>Timestamp</td>
+      <td>Private</td>
+      <td>Fecha en que se realizó el servicio.</td>
+    </tr>
+    <tr>
+      <td>mileage</td>
+      <td>Integer</td>
+      <td>Private</td>
+      <td>Kilometraje del vehículo al momento del servicio.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción detallada del servicio realizado.</td>
+    </tr>
+    <tr>
+      <td>totalCost</td>
+      <td>BigDecimal</td>
+      <td>Private</td>
+      <td>Costo total del servicio.</td>
+    </tr>
+    <tr>
+      <td>createdAt</td>
+      <td>Timestamp</td>
+      <td>Private</td>
+      <td>Fecha de creación del registro.</td>
+    </tr>
+    <tr>
+      <td>updatedAt</td>
+      <td>Timestamp</td>
+      <td>Private</td>
+      <td>Última fecha de actualización.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>addServiceItem(ServiceItem)</td>
+      <td>void</td>
+      <td>Public</td>
+      <td>Agrega un ítem de servicio al historial.</td>
+    </tr>
+    <tr>
+      <td>calculateTotalCost()</td>
+      <td>BigDecimal</td>
+      <td>Public</td>
+      <td>Calcula el costo total sumando todos los ítems.</td>
+    </tr>
+    <tr>
+      <td>getServicesByDateRange(Date, Date)</td>
+      <td>List&lt;ServiceHistory&gt;</td>
+      <td>Public</td>
+      <td>Obtiene servicios dentro de un rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>getServicesByType(ServiceType)</td>
+      <td>List&lt;ServiceHistory&gt;</td>
+      <td>Public</td>
+      <td>Filtra servicios por tipo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Entidad: <code>ServiceItem</code></h3>
+<p><strong>Descripción:</strong> Representa un ítem específico dentro de un servicio, que puede ser un repuesto, mano de obra u otro concepto facturable.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del ítem.</td>
+    </tr>
+    <tr>
+      <td>serviceHistoryId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>ID del historial de servicio al que pertenece.</td>
+    </tr>
+    <tr>
+      <td>itemType</td>
+      <td>ItemType</td>
+      <td>Private</td>
+      <td>Tipo de ítem (repuesto, mano de obra, otros).</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción del ítem.</td>
+    </tr>
+    <tr>
+      <td>quantity</td>
+      <td>Integer</td>
+      <td>Private</td>
+      <td>Cantidad del ítem.</td>
+    </tr>
+    <tr>
+      <td>unitPrice</td>
+      <td>BigDecimal</td>
+      <td>Private</td>
+      <td>Precio unitario del ítem.</td>
+    </tr>
+    <tr>
+      <td>totalPrice</td>
+      <td>BigDecimal</td>
+      <td>Private</td>
+      <td>Precio total (cantidad * precio unitario).</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>calculateTotal()</td>
+      <td>BigDecimal</td>
+      <td>Public</td>
+      <td>Calcula el precio total del ítem.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Entidad: <code>ExpenseHistory</code></h3>
+<p><strong>Descripción:</strong>Registra todos los gastos asociados a un vehículo, no necesariamente relacionados con servicios de mantenimiento.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del gasto.</td>
+    </tr>
+    <tr>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>ID del vehículo asociado.</td>
+    </tr>
+    <tr>
+      <td>ownerId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>ID del dueño de la moto.</td>
+    </tr>
+    <tr>
+      <td>expenseType</td>
+      <td>ExpenseType</td>
+      <td>Private</td>
+      <td>Tipo de gasto (combustible, seguro, impuestos, otros).</td>
+    </tr>
+    <tr>
+      <td>expenseDate</td>
+      <td>Timestamp</td>
+      <td>Private</td>
+      <td>Fecha del gasto.</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción del gasto.</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>BigDecimal</td>
+      <td>Private</td>
+      <td>Monto del gasto.</td>
+    </tr>
+    <tr>
+      <td>mileage</td>
+      <td>Integer</td>
+      <td>Private</td>
+      <td>Kilometraje al momento del gasto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Métodos</th>
+      <th>Tipo de retorno</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getExpensesByType(ExpenseType)</td>
+      <td>List&lt;ExpenseHistory&gt;</td>
+      <td>Public</td>
+      <td>Filtra gastos por tipo.</td>
+    </tr>
+    <tr>
+      <td>getExpensesByDateRange(Date, Date)</td>
+      <td>List&lt;ExpenseHistory&gt;</td>
+      <td>Public</td>
+      <td>Obtiene gastos dentro de un rango de fechas.</td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 4.2.2.2 Interface Layer
+
+<h3>Controlador:<code>HistoryController</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>HistoryController</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios, gastos y reparaciones de vehículos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getServiceHistory</td>
+      <td>GET /api/v1/history/service/{vehicleId}</td>
+      <td>Obtiene el historial completo de servicios de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>getServiceHistoryById</td>
+      <td>GET /api/v1/history/service/{id}</td>
+      <td>Obtiene un servicio específico por su ID.</td>
+    </tr>
+    <tr>
+      <td>addServiceHistory</td>
+      <td>POST /api/v1/history/service</td>
+      <td>Agrega un nuevo registro de servicio al historial.</td>
+    </tr>
+    <tr>
+      <td>updateServiceHistory</td>
+      <td>PUT /api/v1/history/service/{id}</td>
+      <td>Actualiza un registro de servicio existente.</td>
+    </tr>
+    <tr>
+      <td>deleteServiceHistory</td>
+      <td>DELETE /api/v1/history/service/{id}</td>
+      <td>Elimina un registro de servicio.</td>
+    </tr>
+    <tr>
+      <td>getExpenseHistory</td>
+      <td>GET /api/v1/history/expense/{vehicleId}</td>
+      <td>Obtiene el historial completo de gastos de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>addExpenseHistory</td>
+      <td>POST /api/v1/history/expense</td>
+      <td>Agrega un nuevo registro de gasto al historial.</td>
+    </tr>
+    <tr>
+      <td>getMonthlySummary</td>
+      <td>GET /api/v1/history/summary/{vehicleId}/{year}/{month}</td>
+      <td>Obtiene un resumen mensual de servicios y gastos.</td>
+    </tr>
+    <tr>
+      <td>getMaintenanceTimeline</td>
+      <td>GET /api/v1/history/timeline/{vehicleId}</td>
+      <td>Obtiene una línea de tiempo de todos los mantenimientos.</td>
+    </tr>
+    <tr>
+      <td>exportHistoryReport</td>
+      <td>GET /api/v1/history/export/{vehicleId}</td>
+      <td>Exporta el historial completo a formato PDF/Excel.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HistoryQueryService</td>
+      <td>Servicio para consultas y recuperación de datos de historiales.</td>
+    </tr>
+    <tr>
+      <td>HistoryCommandService</td>
+      <td>Servicio para ejecutar comandos de creación, actualización y eliminación de registros históricos.</td>
+    </tr>
+    <tr>
+      <td>CreateServiceHistoryCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de creación de historiales de servicio.</td>
+    </tr>
+    <tr>
+      <td>CreateExpenseHistoryCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de creación de historiales de gastos.</td>
+    </tr>
+    <tr>
+      <td>HistoryResourceFromEntityAssembler</td>
+      <td>Convierte entidades de historial en recursos REST para la respuesta.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 4.2.2.3 Application Layer
 
+<h3>Clase: <code>HistoryQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>HistoryQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de servicios y gastos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetServiceHistoryByVehicleQuery)</td>
+      <td>Obtiene el historial completo de servicios de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetServiceHistoryByIdQuery)</td>
+      <td>Obtiene un servicio específico por su ID.</td>
+    </tr>
+    <tr>
+      <td>handle(GetExpenseHistoryByVehicleQuery)</td>
+      <td>Obtiene el historial completo de gastos de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMonthlySummaryQuery)</td>
+      <td>Obtiene un resumen mensual de servicios y gastos.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMaintenanceTimelineQuery)</td>
+      <td>Obtiene una línea de tiempo de todos los mantenimientos.</td>
+    </tr>
+    <tr>
+      <td>handle(GetServicesByTypeQuery)</td>
+      <td>Filtra servicios por tipo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetServicesByDateRangeQuery)</td>
+      <td>Obtiene servicios dentro de un rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>handle(GetExpensesByTypeQuery)</td>
+      <td>Filtra gastos por tipo.</td>
+    </tr>
+    <tr>
+      <td>handle(GetExpensesByDateRangeQuery)</td>
+      <td>Obtiene gastos dentro de un rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>handle(GetTotalInvestmentQuery)</td>
+      <td>Calcula la inversión total en un vehículo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ServiceHistoryRepository</td>
+      <td>Repositorio para acceso a datos de historiales de servicio.</td>
+    </tr>
+    <tr>
+      <td>ExpenseHistoryRepository</td>
+      <td>Repositorio para acceso a datos de historiales de gastos.</td>
+    </tr>
+    <tr>
+      <td>ServiceItemRepository</td>
+      <td>Repositorio para acceso a datos de ítems de servicio.</td>
+    </tr>
+    <tr>
+      <td>GetServiceHistoryByVehicleQuery</td>
+      <td>Query para obtener historial de servicios por vehículo.</td>
+    </tr>
+    <tr>
+      <td>GetServiceHistoryByIdQuery</td>
+      <td>Query para obtener servicio por ID.</td>
+    </tr>
+    <tr>
+      <td>GetExpenseHistoryByVehicleQuery</td>
+      <td>Query para obtener historial de gastos por vehículo.</td>
+    </tr>
+    <tr>
+      <td>GetMonthlySummaryQuery</td>
+      <td>Query para obtener resumen mensual.</td>
+    </tr>
+    <tr>
+      <td>GetMaintenanceTimelineQuery</td>
+      <td>Query para obtener línea de tiempo de mantenimientos.</td>
+    </tr>
+    <tr>
+      <td>GetServicesByTypeQuery</td>
+      <td>Query para filtrar servicios por tipo.</td>
+    </tr>
+    <tr>
+      <td>GetServicesByDateRangeQuery</td>
+      <td>Query para obtener servicios por rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>GetExpensesByTypeQuery</td>
+      <td>Query para filtrar gastos por tipo.</td>
+    </tr>
+    <tr>
+      <td>GetExpensesByDateRangeQuery</td>
+      <td>Query para obtener gastos por rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>GetTotalInvestmentQuery</td>
+      <td>Query para calcular inversión total.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase: <code>HistoryCommandServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>HistoryCommandServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de servicios y gastos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(CreateServiceHistoryCommand)</td><td>Crea un nuevo registro de servicio en el historial.</td></tr>
+    <tr><td>handle(UpdateServiceHistoryCommand)</td><td>Actualiza un registro de servicio existente.</td></tr>
+    <tr><td>handle(DeleteServiceHistoryCommand)</td><td>Elimina un registro de servicio.</td></tr>
+    <tr><td>handle(CreateExpenseHistoryCommand)</td><td>Crea un nuevo registro de gasto en el historial.</td></tr>
+    <tr><td>handle(UpdateExpenseHistoryCommand)</td><td>Actualiza un registro de gasto existente.</td></tr>
+    <tr><td>handle(DeleteExpenseHistoryCommand)</td><td>Elimina un registro de gasto.</td></tr>
+    <tr><td>handle(AddServiceItemCommand)</td><td>Agrega un ítem de servicio a un registro existente.</td></tr>
+    <tr><td>handle(RemoveServiceItemCommand)</td><td>Elimina un ítem de servicio de un registro existente.</td></tr>
+    <tr><td>handle(GenerateHistoryReportCommand)</td><td>Genera un reporte del historial completo.</td></tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>ServiceHistoryRepository</td><td>Repositorio para persistencia de historiales de servicio.</td></tr>
+    <tr><td>ExpenseHistoryRepository</td><td>Repositorio para persistencia de historiales de gastos.</td></tr>
+    <tr><td>ServiceItemRepository</td><td>Repositorio para persistencia de ítems de servicio.</td></tr>
+    <tr><td>ReportService</td><td>Servicio para generación de reportes en diferentes formatos.</td></tr>
+    <tr><td>CreateServiceHistoryCommand</td><td>Comando para crear historiales de servicio.</td></tr>
+    <tr><td>UpdateServiceHistoryCommand</td><td>Comando para actualizar historiales de servicio.</td></tr>
+    <tr><td>DeleteServiceHistoryCommand</td><td>Comando para eliminar historiales de servicio.</td></tr>
+    <tr><td>CreateExpenseHistoryCommand</td><td>Comando para crear historiales de gastos.</td></tr>
+    <tr><td>UpdateExpenseHistoryCommand</td><td>Comando para actualizar historiales de gastos.</td></tr>
+    <tr><td>DeleteExpenseHistoryCommand</td><td>Comando para eliminar historiales de gastos.</td></tr>
+    <tr><td>AddServiceItemCommand</td><td>Comando para agregar ítems de servicio.</td></tr>
+    <tr><td>RemoveServiceItemCommand</td><td>Comando para eliminar ítems de servicio.</td></tr>
+    <tr><td>GenerateHistoryReportCommand</td><td>Comando para generar reportes de historial.</td></tr>
+  </tbody>
+</table>
+
 ##### 4.2.2.4 Infrastructure Layer
+
+<h3>Clase:<code>ServiceHistoryRepository</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ServiceHistoryRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de historiales de servicio.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>save(ServiceHistoryEntity)</td><td>Persiste un nuevo historial de servicio o actualiza uno existente.</td></tr>
+    <tr><td>deleteById(Long)</td><td>Elimina un historial de servicio por su ID.</td></tr>
+    <tr><td>findById(Long)</td><td>Recupera los detalles de un historial de servicio por su ID.</td></tr>
+    <tr><td>existsById(Long)</td><td>Verifica si existe un historial de servicio por su ID.</td></tr>
+    <tr><td>findByVehicleId(Long, Pageable)</td><td>Obtiene todos los historiales de servicio asociados a un vehículo con paginación.</td></tr>
+    <tr><td>findByMechanicId(Long, Pageable)</td><td>Obtiene todos los historiales de servicio realizados por un mecánico.</td></tr>
+    <tr><td>findByServiceTypeAndVehicleId(ServiceType, Long)</td><td>Filtra historiales por tipo de servicio y vehículo.</td></tr>
+    <tr><td>findByDateRangeAndVehicleId(Timestamp, Timestamp, Long)</td><td>Obtiene historiales dentro de un rango de fechas para un vehículo.</td></tr>
+    <tr><td>findLatestServiceByVehicleId(Long)</td><td>Obtiene el servicio más reciente de un vehículo.</td></tr>
+    <tr><td>calculateTotalSpentByVehicleId(Long)</td><td>Calcula el total gastado en servicios para un vehículo.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase:<code>ExpenseHistoryRepository</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ExpenseHistoryRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para operaciones CRUD y consultas relacionadas con historiales de gastos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>save(ExpenseHistoryEntity)</td><td>Persiste un nuevo historial de gasto o actualiza uno existente.</td></tr>
+    <tr><td>deleteById(Long)</td><td>Elimina un historial de gasto por su ID.</td></tr>
+    <tr><td>findById(Long)</td><td>Obtiene los detalles de un historial de gasto por su ID.</td></tr>
+    <tr><td>existsById(Long)</td><td>Verifica si existe un historial de gasto por su ID.</td></tr>
+    <tr><td>findByVehicleId(Long, Pageable)</td><td>Obtiene todos los historiales de gasto asociados a un vehículo con paginación.</td></tr>
+    <tr><td>findByExpenseTypeAndVehicleId(ExpenseType, Long)</td><td>Filtra gastos por tipo y vehículo.</td></tr>
+    <tr><td>findByDateRangeAndVehicleId(Timestamp, Timestamp, Long)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
+    <tr><td>calculateTotalExpensesByVehicleId(Long)</td><td>Calcula el total gastado para un vehículo.</td></tr>
+    <tr><td>calculateExpensesByTypeAndVehicleId(ExpenseType, Long)</td><td>Calcula el gasto por tipo para un vehículo.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase:<code>ServiceItemRepository</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ServiceItemRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para gestionar ítems de servicio dentro de los historiales.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>save(ServiceItemEntity)</td><td>Persiste un nuevo ítem de servicio o actualiza uno existente.</td></tr>
+    <tr><td>deleteById(Long)</td><td>Elimina un ítem de servicio por su ID.</td></tr>
+    <tr><td>findById(Long)</td><td>Obtiene los detalles de un ítem de servicio por su ID.</td></tr>
+    <tr><td>existsById(Long)</td><td>Verifica si existe un ítem de servicio por su ID.</td></tr>
+    <tr><td>findByServiceHistoryId(Long)</td><td>Obtiene todos los ítems asociados a un historial de servicio.</td></tr>
+    <tr><td>findByItemTypeAndServiceHistoryId(ItemType, Long)</td><td>Filtra ítems por tipo dentro de un historial de servicio.</td></tr>
+    <tr><td>calculateTotalByServiceHistoryId(Long)</td><td>Calcula el total de todos los ítems de un historial de servicio.</td></tr>
+  </tbody>
+</table>
 
 ##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
 
