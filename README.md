@@ -293,6 +293,8 @@ Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y 
 3. El contexto de Historiales actualiza el historial del vehículo con el nuevo gasto.
 4. El contexto de Reportes genera un reporte actualizado con el nuevo gasto.
 
+<img src="images/chapter-4/storytelling/storytelling_caso1.png" alt="Domain Storytelling Caso 1">
+
 **Caso 2: Conexión entre dueño y mecánico**
 1. El dueño de la moto solicita una suscripción a un mecánico.
 2. El contexto de Suscripción crea una nueva suscripción y emite el evento SuscripcionCreada.
@@ -300,17 +302,23 @@ Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y 
 4. El contexto de Bienestar de Vehículos comienza a monitorear el vehículo bajo la nueva suscripción.
 5. El Historial registra al nuevo mecánico en la cuenta del dueño.
 
+<img src="images/chapter-4/storytelling/storytelling_caso2.png" alt="Domain Storytelling Caso 2">
+
 **Caso 3: Alerta preventiva de mantenimiento**
 1. El contexto de Bienestar de Vehículos detecta una métrica crítica y genera el evento AlertaGenerada.
 2. El contexto de Gestión de Vehículos recibe la alerta y notifica al dueño de la moto.
 3. El contexto de Historiales registra la alerta en el historial del vehículo.
 4. El contexto de Reportes actualiza los reportes con la nueva alerta.
 
+<img src="images/chapter-4/storytelling/storytelling_caso3.png" alt="Domain Storytelling Caso 3">
+
 **Caso 4: Generar reporte de métricas**
 1. El dueño de la moto solicita un reporte de métricas.
 2. El contexto de Reportes recibe la solicitud y genera el reporte basado en las métricas actuales.
 3. El contexto de Bienestar de Vehículos proporciona las métricas necesarias para el reporte.
 4. El reporte es entregado al dueño de la moto.
+
+<img src="images/chapter-4/storytelling/storytelling_caso4.png" alt="Domain Storytelling Caso 4">
 
 **Caso 5: Agendar servicio con mecánico**
 1. El dueño de la moto agenda un servicio con su mecánico a través de la aplicación.
@@ -319,6 +327,8 @@ Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y 
 4. El contexto de Gestión de Vehículos actualiza el estado del vehículo con la información del servicio.
 5. El mecánico recibe la notificación del servicio agendado.
 
+<img src="images/chapter-4/storytelling/storytelling_caso5.png" alt="Domain Storytelling Caso 5">
+
 **Caso 6: Recomendación de cita**
 1. El contexto de Bienestar de Vehículos detecta que una métrica ha alcanzado un umbral crítico y genera el evento RecomendacionCitaGenerada.
 2. El contexto de Gestión de Vehículos recibe la recomendación y notifica al dueño de la moto.
@@ -326,12 +336,16 @@ Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y 
 4. El Historial registra la recomendación en el historial del vehículo.
 5. El dueño de la moto agenda la cita a través de la aplicación.
 
+<img src="images/chapter-4/storytelling/storytelling_caso6.png" alt="Domain Storytelling Caso 6">
+
 **Caso 7: Actualización de datos del vehículo**
 1. El dueño de la moto actualiza los datos técnicos o de propiedad del vehículo en la aplicación.
 2. El contexto de Gestión de Vehículos recibe la actualización y emite el evento DatosVehiculoActualizados.
 3. El contexto de Historiales actualiza el historial del vehículo con los nuevos datos.
 4. El contexto de Reportes genera un reporte actualizado con la nueva información del vehículo.
 5. El contexto de Bienestar de Vehículos ajusta sus parámetros de monitoreo según los nuevos datos.
+
+<img src="images/chapter-4/storytelling/storytelling_caso7.png" alt="Domain Storytelling Caso 7">
 
 ##### 4.1.1.3 Bounded Context Canvases
 
