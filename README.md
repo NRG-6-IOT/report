@@ -1152,11 +1152,17 @@ Descripción: Representa al mecánico que es propietario de un taller. Se le pue
 
 ##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
 
+
+
 ##### 4.2.2.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.2.6.1 Bounded Context Domain Layer Class Diagrams
 
+![histories-class-diagram.png](images/chapter-4/histories-class-diagram.png)
+
 ###### 4.2.2.6.2 Bounded Context Database Design Diagram
+
+
 
 #### 4.2.3 Bounded Context: Suscripción
 
