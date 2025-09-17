@@ -59,63 +59,111 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
 
 ## Contenido
 
-- [Student Outcome](#student-outcome)
-- [Capítulo I: Introducción](#capítulo-i-introducción)
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**NRC**: 3443](#nrc-3443)
+    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
+    - [**Ingeniería de software**](#ingeniería-de-software)
+  - [Informe de -](#informe-de--)
+    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
+    - [**Nombre del producto:** -](#nombre-del-producto--)
+  - [**Integrantes**](#integrantes)
+  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
+  - [Contenido](#contenido)
+  - [Student Outcome](#student-outcome)
+  - [Capítulo I: Introducción](#capítulo-i-introducción)
     - [1.1 Startup Profile](#11-startup-profile)
-        - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-        - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+      - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+      - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
-        - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [1.2.2 Lean UX Process](#122-lean-ux-process)
-            - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-            - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-            - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-            - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
+      - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+      - [1.2.2 Lean UX Process](#122-lean-ux-process)
+        - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+        - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
+        - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+        - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
-        - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-        - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+      - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
+      - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
     - [2.2 Entrevistas](#22-entrevistas)
-        - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-        - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-        - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
+      - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
+      - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
+      - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
     - [2.3 Needfinding](#23-needfinding)
-        - [2.3.1 User Personas](#231-user-personas)
-        - [2.3.2 User Task Matrix](#232-user-task-matrix)
-        - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-        - [2.3.4 Empathy Mapping](#234-empathy-mapping)
+      - [2.3.1 User Personas](#231-user-personas)
+      - [2.3.2 User Task Matrix](#232-user-task-matrix)
+      - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
+      - [2.3.4 Empathy Mapping](#234-empathy-mapping)
     - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+  - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
     - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
-        - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
-            - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
-            - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
-        - [4.1.2 Context Mapping](#412-context-mapping)
-        - [4.1.3 Software Architecture](#413-software-architecture)
-            - [4.1.3.1 Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-            - [4.1.3.2 Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-            - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-            - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+      - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
+        - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
+        - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+        - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
+      - [4.1.2 Context Mapping](#412-context-mapping)
+      - [4.1.3 Software Architecture](#413-software-architecture)
+        - [4.1.3.1 Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+        - [4.1.3.2 Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+        - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+        - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        - [4.2.1 Bounded Context: unnamed](#421-bounded-context-unnamed)
-            - [4.2.1.1 Domain Layer](#4211-domain-layer)
-            - [4.2.1.2 Interface Layer](#4212-interface-layer)
-            - [4.2.1.3 Application Layer](#4213-application-layer)
-            - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-                - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-- [Conclusiones](#conclusiones)
-- [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
+      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
+        - [4.2.1.1 Domain Layer](#4211-domain-layer)
+        - [4.2.1.2 Interface Layer](#4212-interface-layer)
+        - [4.2.1.3 Application Layer](#4213-application-layer)
+        - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+        - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+        - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+          - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+          - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+      - [4.2.2 Bounded Context: Historiales](#422-bounded-context-historiales)
+        - [4.2.2.1 Domain Layer](#4221-domain-layer)
+        - [4.2.2.2 Interface Layer](#4222-interface-layer)
+        - [4.2.2.3 Application Layer](#4223-application-layer)
+        - [4.2.2.4 Infrastructure Layer](#4224-infrastructure-layer)
+        - [4.2.2.5 Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+        - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
+          - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
+          - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
+      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-suscripción)
+        - [4.2.3.1 Domain Layer](#4231-domain-layer)
+        - [4.2.3.2 Interface Layer](#4232-interface-layer)
+        - [4.2.3.3 Application Layer](#4233-application-layer)
+        - [4.2.3.4 Infrastructure Layer](#4234-infrastructure-layer)
+        - [4.2.3.5 Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+        - [4.2.3.6 Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+          - [4.2.3.6.1 Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+          - [4.2.3.6.2 Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+      - [4.2.4 Bounded Context: Bienestar de Vehículos](#424-bounded-context-bienestar-de-vehículos)
+        - [4.2.4.1 Domain Layer](#4241-domain-layer)
+        - [4.2.4.2 Interface Layer](#4242-interface-layer)
+        - [4.2.4.3 Application Layer](#4243-application-layer)
+        - [4.2.4.4 Infrastructure Layer](#4244-infrastructure-layer)
+        - [4.2.4.5 Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+        - [4.2.4.6 Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
+          - [4.2.4.6.1 Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
+          - [4.2.4.6.2 Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
+      - [4.2.5 Bounded Context: Reportes](#425-bounded-context-reportes)
+        - [4.2.5.1 Domain Layer](#4251-domain-layer)
+        - [4.2.5.2 Interface Layer](#4252-interface-layer)
+        - [4.2.5.3 Application Layer](#4253-application-layer)
+        - [4.2.5.4 Infrastructure Layer](#4254-infrastructure-layer)
+        - [4.2.5.5 Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+        - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+          - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+          - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+  - [Conclusiones](#conclusiones)
+  - [Bibliografía](#bibliografía)
+  - [Anexos](#anexos)
 
 ## Student Outcome
 
@@ -1113,9 +1161,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 #### 4.2.3 Bounded Context: Suscripción
 
 ##### 4.2.3.1 Domain Layer
-
 <h3>Aggregate: <code>Subscription</code></h3>
-<p><strong>Descripción:</strong> Representa la relación formal entre un dueño de moto y un mecánico mediante un plan, vinculada a un vehículo y con un ciclo de vida definido (activa, suspendida, cancelada, expirada).</p>
+<p><strong>Descripción:</strong> Representa la relación formal entre un <code>Owner</code> (dueño de moto) y un <code>Mechanic</code> mediante un <code>Plan</code>, vinculada a un vehículo y con un ciclo de vida definido (activa, suspendida, cancelada, expirada).</p>
 <table>
   <thead>
     <tr>
@@ -1127,8 +1174,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la suscripción.</td></tr>
-    <tr><td>ownerId</td><td>Long</td><td>Private</td><td>ID del dueño de la moto asociado.</td></tr>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico vinculado.</td></tr>
+    <tr><td>owner</td><td>Owner</td><td>Private</td><td>Dueño de la moto vinculado a la suscripción.</td></tr>
+    <tr><td>mechanic</td><td>Mechanic</td><td>Private</td><td>Mecánico vinculado a la suscripción.</td></tr>
     <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo registrado en la suscripción.</td></tr>
     <tr><td>plan</td><td>Plan</td><td>Private</td><td>Plan asociado a la suscripción (básico, premium, prueba).</td></tr>
     <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción (activa, suspendida, cancelada, expirada).</td></tr>
@@ -1157,77 +1204,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Entidad: <code>Plan</code></h3>
-<p><strong>Descripción:</strong> Define el tipo de plan al que está suscrito el usuario, determinando beneficios, limitaciones y costo.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del plan.</td></tr>
-    <tr><td>name</td><td>String</td><td>Private</td><td>Nombre del plan (ejemplo: Básico, Premium).</td></tr>
-    <tr><td>description</td><td>String</td><td>Private</td><td>Descripción de beneficios y limitaciones.</td></tr>
-    <tr><td>price</td><td>BigDecimal</td><td>Private</td><td>Costo mensual/anual del plan.</td></tr>
-    <tr><td>duration</td><td>Integer</td><td>Private</td><td>Duración en días del plan.</td></tr>
-  </tbody>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>getName()</td><td>String</td><td>Public</td><td>Devuelve el nombre del plan.</td></tr>
-    <tr><td>getPrice()</td><td>BigDecimal</td><td>Public</td><td>Devuelve el precio del plan.</td></tr>
-    <tr><td>getDuration()</td><td>Integer</td><td>Public</td><td>Devuelve la duración en días.</td></tr>
-  </tbody>
-</table>
-
-<h3>Entidad: <code>Promotion</code></h3>
-<p><strong>Descripción:</strong> Representa promociones o pruebas piloto que pueden aplicarse a las suscripciones.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la promoción.</td></tr>
-    <tr><td>code</td><td>String</td><td>Private</td><td>Código de la promoción.</td></tr>
-    <tr><td>discount</td><td>BigDecimal</td><td>Private</td><td>Porcentaje o monto de descuento.</td></tr>
-    <tr><td>validFrom</td><td>Timestamp</td><td>Private</td><td>Fecha de inicio de la promoción.</td></tr>
-    <tr><td>validTo</td><td>Timestamp</td><td>Private</td><td>Fecha de fin de la promoción.</td></tr>
-  </tbody>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>isValid()</td><td>boolean</td><td>Public</td><td>Verifica si la promoción está vigente.</td></tr>
-    <tr><td>applyDiscount(BigDecimal price)</td><td>BigDecimal</td><td>Public</td><td>Aplica el descuento sobre el precio base.</td></tr>
-  </tbody>
-</table>
-
 ##### 4.2.3.2 Interface Layer
-
 <h3>Controlador: <code>SubscriptionController</code></h3>
 <table>
   <tr>
@@ -1236,7 +1213,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, así como su activación, renovación, suspensión y cancelación.</td>
+    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, incluyendo su activación, renovación, suspensión y cancelación. Expone endpoints que vinculan explícitamente a dueños (<code>Owner</code>) y mecánicos (<code>Mechanic</code>), garantizando integridad en el ciclo de vida de la suscripción.</td>
   </tr>
 </table>
 <table>
@@ -1249,9 +1226,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{id}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getUserSubscriptions</td><td>GET /api/v1/subscriptions/user/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto.</td></tr>
-    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociada a un dueño, mecánico, vehículo y plan.</td></tr>
-    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan).</td></tr>
+    <tr><td>getOwnerSubscriptions</td><td>GET /api/v1/subscriptions/owners/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto (<code>Owner</code>).</td></tr>
+    <tr><td>getMechanicSubscriptions</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}</td><td>Lista todas las suscripciones en las que un mecánico (<code>Mechanic</code>) está involucrado.</td></tr>
+    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociando un <code>Owner</code>, un <code>Mechanic</code>, un vehículo y un <code>Plan</code>.</td></tr>
+    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan o reasignación de mecánico).</td></tr>
     <tr><td>activateSubscription</td><td>POST /api/v1/subscriptions/{id}/activate</td><td>Activa una suscripción si cumple con las reglas de negocio.</td></tr>
     <tr><td>renewSubscription</td><td>POST /api/v1/subscriptions/{id}/renew</td><td>Renueva una suscripción al alcanzar la fecha de expiración.</td></tr>
     <tr><td>suspendSubscription</td><td>POST /api/v1/subscriptions/{id}/suspend</td><td>Suspende temporalmente una suscripción.</td></tr>
@@ -1268,12 +1246,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones.</td></tr>
+    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones (por ID, dueño, mecánico).</td></tr>
     <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de creación, actualización, renovación, suspensión y cancelación de suscripciones.</td></tr>
-    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones.</td></tr>
+    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones (incluye validación de <code>Owner</code>, <code>Mechanic</code> y <code>Plan</code>).</td></tr>
     <tr><td>UpdateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de actualización de suscripciones.</td></tr>
     <tr><td>DeleteSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de eliminación de suscripciones.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta.</td></tr>
+    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción (con <code>Owner</code>, <code>Mechanic</code>, <code>Plan</code>) en recursos REST para la respuesta.</td></tr>
   </tbody>
 </table>
 
@@ -1287,7 +1265,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con suscripciones</td>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con suscripciones, dueños, mecánicos, vehículos y planes.</td>
   </tr>
 </table>
 <table>
@@ -1298,14 +1276,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles completos de una suscripción por su ID</td></tr>
-    <tr><td>handle(GetUserSubscriptionsQuery)</td><td>Lista todas las suscripciones activas e inactivas de un dueño de moto</td></tr>
-    <tr><td>handle(GetActiveSubscriptionsByMechanicQuery)</td><td>Recupera todas las suscripciones activas vinculadas a un mecánico</td></tr>
-    <tr><td>handle(GetVehicleSubscriptionQuery)</td><td>Obtiene la suscripción asociada a un vehículo específico</td></tr>
-    <tr><td>handle(CheckSubscriptionStatusQuery)</td><td>Verifica el estado actual de una suscripción</td></tr>
-    <tr><td>handle(ListExpiringSubscriptionsQuery)</td><td>Lista las suscripciones próximas a expirar en un rango de fechas</td></tr>
-    <tr><td>handle(GetPlanDetailsQuery)</td><td>Obtiene los detalles de un plan asociado a una suscripción</td></tr>
-    <tr><td>handle(GetPromotionByCodeQuery)</td><td>Recupera la promoción vigente asociada a un código</td></tr>
+    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles completos de una suscripción por su ID.</td></tr>
+    <tr><td>handle(GetOwnerSubscriptionsQuery)</td><td>Lista todas las suscripciones activas e inactivas de un <code>Owner</code>.</td></tr>
+    <tr><td>handle(GetMechanicSubscriptionsQuery)</td><td>Lista todas las suscripciones en las que participa un <code>Mechanic</code>.</td></tr>
+    <tr><td>handle(GetVehicleSubscriptionQuery)</td><td>Obtiene la suscripción asociada a un vehículo específico (<code>Vehicle</code>).</td></tr>
+    <tr><td>handle(CheckSubscriptionStatusQuery)</td><td>Verifica el estado actual de una suscripción (activa, suspendida, cancelada, expirada).</td></tr>
+    <tr><td>handle(ListExpiringSubscriptionsQuery)</td><td>Lista las suscripciones próximas a expirar dentro de un rango de fechas.</td></tr>
+    <tr><td>handle(GetPlanBySubscriptionQuery)</td><td>Obtiene los detalles del <code>Plan</code> asociado a una suscripción.</td></tr>
   </tbody>
 </table>
 <h4>Dependencias:</h4>
@@ -1317,73 +1294,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio para acceso a datos de suscripciones</td></tr>
-    <tr><td>PlanRepository</td><td>Repositorio para acceso a datos de planes</td></tr>
-    <tr><td>PromotionRepository</td><td>Repositorio para acceso a datos de promociones</td></tr>
-    <tr><td>GetSubscriptionByIdQuery</td><td>Query para obtener detalles de suscripción</td></tr>
-    <tr><td>GetUserSubscriptionsQuery</td><td>Query para listar suscripciones de un usuario</td></tr>
-    <tr><td>GetActiveSubscriptionsByMechanicQuery</td><td>Query para obtener suscripciones activas por mecánico</td></tr>
-    <tr><td>GetVehicleSubscriptionQuery</td><td>Query para recuperar suscripción de vehículo</td></tr>
-    <tr><td>CheckSubscriptionStatusQuery</td><td>Query para verificar estado de suscripción</td></tr>
-    <tr><td>ListExpiringSubscriptionsQuery</td><td>Query para listar suscripciones próximas a expirar</td></tr>
-    <tr><td>GetPlanDetailsQuery</td><td>Query para obtener detalles de plan</td></tr>
-    <tr><td>GetPromotionByCodeQuery</td><td>Query para obtener promoción por código</td></tr>
-  </tbody>
-</table>
-
-<hr>
-<h3>Clase: <code>SubscriptionCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con suscripciones</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(CreateSubscriptionCommand)</td><td>Crea una nueva suscripción vinculando dueño, mecánico, vehículo y plan</td></tr>
-    <tr><td>handle(UpdateSubscriptionCommand)</td><td>Actualiza la información de una suscripción (ejemplo: cambio de plan o fechas)</td></tr>
-    <tr><td>handle(DeleteSubscriptionCommand)</td><td>Elimina una suscripción (soft delete o hard delete según reglas)</td></tr>
-    <tr><td>handle(ActivateSubscriptionCommand)</td><td>Activa una suscripción si cumple con las reglas de negocio</td></tr>
-    <tr><td>handle(SuspendSubscriptionCommand)</td><td>Suspende temporalmente una suscripción</td></tr>
-    <tr><td>handle(CancelSubscriptionCommand)</td><td>Cancela definitivamente una suscripción</td></tr>
-    <tr><td>handle(RenewSubscriptionCommand)</td><td>Renueva la suscripción al alcanzar la fecha de expiración</td></tr>
-    <tr><td>handle(ApplyPromotionCommand)</td><td>Aplica una promoción o descuento a una suscripción existente</td></tr>
-    <tr><td>handle(ChangePlanCommand)</td><td>Cambia el plan asociado a una suscripción</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio para persistencia de suscripciones</td></tr>
-    <tr><td>PlanRepository</td><td>Repositorio para gestión de planes</td></tr>
-    <tr><td>PromotionRepository</td><td>Repositorio para gestión de promociones</td></tr>
-    <tr><td>NotificationService</td><td>Servicio para enviar notificaciones de activación, renovación o cancelación</td></tr>
-    <tr><td>CreateSubscriptionCommand</td><td>Comando para crear suscripciones</td></tr>
-    <tr><td>UpdateSubscriptionCommand</td><td>Comando para actualizar suscripciones</td></tr>
-    <tr><td>DeleteSubscriptionCommand</td><td>Comando para eliminar suscripciones</td></tr>
-    <tr><td>ActivateSubscriptionCommand</td><td>Comando para activar suscripciones</td></tr>
-    <tr><td>SuspendSubscriptionCommand</td><td>Comando para suspender suscripciones</td></tr>
-    <tr><td>CancelSubscriptionCommand</td><td>Comando para cancelar suscripciones</td></tr>
-    <tr><td>RenewSubscriptionCommand</td><td>Comando para renovar suscripciones</td></tr>
-    <tr><td>ApplyPromotionCommand</td><td>Comando para aplicar promociones</td></tr>
-    <tr><td>ChangePlanCommand</td><td>Comando para cambiar de plan</td></tr>
+    <tr><td>SubscriptionRepository</td><td>Repositorio para acceso a datos de suscripciones.</td></tr>
+    <tr><td>PlanRepository</td><td>Repositorio para acceso a datos de planes.</td></tr>
+    <tr><td>OwnerRepository</td><td>Repositorio para acceso a datos de dueños (<code>Owner</code>).</td></tr>
+    <tr><td>MechanicRepository</td><td>Repositorio para acceso a datos de mecánicos (<code>Mechanic</code>).</td></tr>
+    <tr><td>VehicleRepository</td><td>Repositorio para acceso a datos de vehículos (<code>Vehicle</code>).</td></tr>
   </tbody>
 </table>
 
@@ -1397,7 +1312,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de suscripciones.</td>
+    <td>Interfaz de persistencia para operaciones de acceso y gestión de <code>Subscription</code> en la base de datos. Extiende de un repositorio genérico para CRUD y define consultas específicas.</td>
   </tr>
 </table>
 <table>
@@ -1408,20 +1323,17 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(SubscriptionEntity)</td><td>Persiste una nueva suscripción o actualiza una existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una suscripción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Recupera los detalles de una suscripción por su ID.</td></tr>
+    <tr><td>save(Subscription)</td><td>Guarda o actualiza una suscripción en la base de datos.</td></tr>
+    <tr><td>deleteById(Long)</td><td>Elimina (soft delete o hard delete) una suscripción por su ID.</td></tr>
+    <tr><td>findById(Long)</td><td>Recupera una suscripción por su ID.</td></tr>
     <tr><td>existsById(Long)</td><td>Verifica si existe una suscripción por su ID.</td></tr>
-    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones asociadas a un dueño con paginación.</td></tr>
-    <tr><td>findByMechanicIdAndStatus(Long, SubscriptionStatus)</td><td>Lista suscripciones activas de un mecánico.</td></tr>
+    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones de un dueño de vehículo, paginadas.</td></tr>
+    <tr><td>findByMechanicIdAndStatus(Long, SubscriptionStatus)</td><td>Lista suscripciones filtradas por mecánico y estado.</td></tr>
     <tr><td>findByVehicleId(Long)</td><td>Obtiene la suscripción vinculada a un vehículo.</td></tr>
-    <tr><td>findExpiringBetween(Timestamp start, Timestamp end)</td><td>Lista las suscripciones próximas a expirar en un rango de fechas.</td></tr>
-    <tr><td>updateStatus(Long, SubscriptionStatus)</td><td>Actualiza el estado de una suscripción.</td></tr>
-    <tr><td>updatePlan(Long, Long)</td><td>Actualiza el plan asociado a una suscripción.</td></tr>
+    <tr><td>findExpiringBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista suscripciones que expiran en un rango de fechas.</td></tr>
   </tbody>
 </table>
 
-<hr>
 <h3>Clase: <code>PlanRepository</code></h3>
 <table>
   <tr>
@@ -1430,7 +1342,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas relacionadas con planes de suscripción.</td>
+    <td>Interfaz de persistencia para la entidad <code>Plan</code>, que representa los planes de suscripción disponibles.</td>
   </tr>
 </table>
 <table>
@@ -1441,17 +1353,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(PlanEntity)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
+    <tr><td>save(Plan)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
     <tr><td>deleteById(Long)</td><td>Elimina un plan por su ID.</td></tr>
     <tr><td>findById(Long)</td><td>Obtiene los detalles de un plan por su ID.</td></tr>
     <tr><td>existsById(Long)</td><td>Verifica si existe un plan por su ID.</td></tr>
     <tr><td>findByName(String)</td><td>Busca un plan por su nombre.</td></tr>
-    <tr><td>findAll(Pageable)</td><td>Lista todos los planes disponibles con paginación.</td></tr>
-    <tr><td>updatePrice(Long, BigDecimal)</td><td>Actualiza el precio de un plan específico.</td></tr>
+    <tr><td>findAll(Pageable)</td><td>Lista todos los planes con paginación.</td></tr>
   </tbody>
 </table>
 
-<hr>
 <h3>Clase: <code>PromotionRepository</code></h3>
 <table>
   <tr>
@@ -1460,7 +1370,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para gestionar promociones y descuentos aplicables a las suscripciones.</td>
+    <td>Interfaz de persistencia para la entidad <code>Promotion</code>, usada en la aplicación de descuentos y campañas de suscripciones.</td>
   </tr>
 </table>
 <table>
@@ -1471,137 +1381,129 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(PromotionEntity)</td><td>Persiste una nueva promoción o actualiza una existente.</td></tr>
+    <tr><td>save(Promotion)</td><td>Guarda o actualiza una promoción.</td></tr>
     <tr><td>deleteById(Long)</td><td>Elimina una promoción por su ID.</td></tr>
     <tr><td>findById(Long)</td><td>Obtiene los detalles de una promoción por su ID.</td></tr>
     <tr><td>existsByCode(String)</td><td>Verifica si existe una promoción con un código específico.</td></tr>
-    <tr><td>findByCode(String)</td><td>Recupera una promoción vigente asociada a un código.</td></tr>
-    <tr><td>findValidPromotions(Timestamp now)</td><td>Lista todas las promociones vigentes en un momento dado.</td></tr>
-    <tr><td>updateValidity(Long, Timestamp, Timestamp)</td><td>Actualiza el rango de validez de una promoción.</td></tr>
+    <tr><td>findByCode(String)</td><td>Recupera una promoción por su código.</td></tr>
+    <tr><td>findValidPromotions(LocalDateTime now)</td><td>Lista las promociones vigentes en un momento dado.</td></tr>
   </tbody>
 </table>
 
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
+<img src="./images/chapter-4/subscription_component_level_diagrams.png" alt="subscription_component_level_diagrams" width="600"/>
+
 ##### 4.2.3.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
+<img src="./images/chapter-4/subscription_bounded_context_domain_layer_class_diagrams.png" alt="subscription_bounded_context_domain_layer_class_diagrams" width="600"/>
+
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
+
+<img src="./images/chapter-4/subscription_bounded_context_database_design_diagram.png" alt="subscription_bounded_context_database_design_diagram" width="600"/>
 
 #### 4.2.4 Bounded Context: Bienestar de Vehículos
 
 ##### 4.2.4.1 Domain Layer
 
 <h3>Aggregate: <code>VehicleWellness</code></h3>
-<p><strong>Descripción:</strong> Representa el bienestar general de una motocicleta, centralizando las métricas capturadas por el dispositivo IoT, generando alertas preventivas y diagnósticos asociados al estado del vehículo.</p>
+<p><strong>Descripción:</strong> Agregado raíz que representa el bienestar general de una motocicleta. Centraliza métricas capturadas por el dispositivo IoT, genera alertas preventivas y diagnósticos asociados al estado del vehículo.</p>
 
 <table>
   <thead>
     <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del registro de bienestar del vehículo.</td></tr>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del registro de bienestar.</td></tr>
     <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador único de la moto asociada.</td></tr>
-    <tr><td>metrics</td><td>List&lt;Metric&gt;</td><td>Private</td><td>Lista de métricas recopiladas en tiempo real por el IoT.</td></tr>
-    <tr><td>alerts</td><td>List&lt;PreventiveAlert&gt;</td><td>Private</td><td>Alertas generadas automáticamente a partir de anomalías en las métricas.</td></tr>
-    <tr><td>diagnostics</td><td>List&lt;Diagnostic&gt;</td><td>Private</td><td>Diagnósticos calculados con base en la interpretación de métricas.</td></tr>
+    <tr><td>metrics</td><td>List&lt;Metric&gt;</td><td>Private</td><td>Lista de métricas recopiladas por el dispositivo IoT.</td></tr>
+    <tr><td>alerts</td><td>List&lt;PreventiveAlert&gt;</td><td>Private</td><td>Alertas generadas automáticamente a partir de anomalías.</td></tr>
+    <tr><td>diagnostics</td><td>List&lt;Diagnostic&gt;</td><td>Private</td><td>Diagnósticos obtenidos a partir de la interpretación de métricas.</td></tr>
     <tr><td>status</td><td>VehicleStatus (Enum)</td><td>Private</td><td>Estado general del vehículo (Óptimo, Regular, Crítico).</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del registro.</td></tr>
-    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Fecha de última actualización del registro.</td></tr>
+    <tr><td>createdAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha de creación del registro.</td></tr>
+    <tr><td>updatedAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha de última actualización.</td></tr>
   </tbody>
 </table>
 
 <table>
   <thead>
-    <tr><th>Métodos</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador único del registro de bienestar.</td></tr>
+    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador único del registro.</td></tr>
     <tr><td>getVehicleId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador de la moto asociada.</td></tr>
-    <tr><td>getMetrics()</td><td>List&lt;Metric&gt;</td><td>Public</td><td>Devuelve la lista de métricas registradas.</td></tr>
+    <tr><td>getMetrics()</td><td>List&lt;Metric&gt;</td><td>Public</td><td>Devuelve las métricas registradas.</td></tr>
     <tr><td>getAlerts()</td><td>List&lt;PreventiveAlert&gt;</td><td>Public</td><td>Devuelve las alertas generadas.</td></tr>
     <tr><td>getDiagnostics()</td><td>List&lt;Diagnostic&gt;</td><td>Public</td><td>Devuelve los diagnósticos calculados.</td></tr>
-    <tr><td>getStatus()</td><td>VehicleStatus</td><td>Public</td><td>Devuelve el estado general actual del vehículo.</td></tr>
-    <tr><td>updateMetrics(Metric metric)</td><td>void</td><td>Public</td><td>Agrega una nueva métrica al registro y actualiza el estado del vehículo.</td></tr>
-    <tr><td>generateAlert(Metric metric)</td><td>PreventiveAlert</td><td>Private</td><td>Genera una alerta preventiva si la métrica sobrepasa un umbral crítico.</td></tr>
-    <tr><td>generateDiagnostic()</td><td>Diagnostic</td><td>Private</td><td>Genera un diagnóstico a partir de las métricas actuales.</td></tr>
-    <tr><td>updateStatus()</td><td>void</td><td>Private</td><td>Actualiza el estado general del vehículo según las métricas recientes.</td></tr>
+    <tr><td>getStatus()</td><td>VehicleStatus</td><td>Public</td><td>Devuelve el estado actual del vehículo.</td></tr>
+    <tr><td>updateMetrics(Metric metric)</td><td>void</td><td>Public</td><td>Agrega una métrica y recalcula el estado.</td></tr>
+    <tr><td>evaluateAlerts(Metric metric)</td><td>PreventiveAlert</td><td>Private</td><td>Genera alerta si la métrica supera un umbral.</td></tr>
+    <tr><td>generateDiagnostic()</td><td>Diagnostic</td><td>Private</td><td>Genera diagnóstico a partir de las métricas.</td></tr>
+    <tr><td>refreshStatus()</td><td>void</td><td>Private</td><td>Actualiza el estado del vehículo según métricas recientes.</td></tr>
   </tbody>
 </table>
 
 ---
 
 <h3>Entity: <code>Metric</code></h3>
-<p><strong>Descripción:</strong> Representa un dato capturado por el dispositivo IoT, asociado al estado de la moto (ejemplo: temperatura, velocidad, kilometraje, nivel de combustible).</p>
+<p><strong>Descripción:</strong> Representa un dato capturado por el dispositivo IoT asociado al estado de la moto (ejemplo: temperatura, kilometraje, velocidad, nivel de combustible).</p>
 
 <table>
   <thead>
-    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
     <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la métrica.</td></tr>
     <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador de la moto asociada.</td></tr>
-    <tr><td>type</td><td>String</td><td>Private</td><td>Tipo de métrica (temperatura, kilometraje, velocidad, combustible, etc.).</td></tr>
-    <tr><td>value</td><td>Double</td><td>Private</td><td>Valor registrado de la métrica.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Private</td><td>Unidad de medida (°C, km, km/h, L, %).</td></tr>
-    <tr><td>capturedAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de captura.</td></tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr><th>Métodos</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>getType()</td><td>String</td><td>Public</td><td>Devuelve el tipo de métrica.</td></tr>
-    <tr><td>getValue()</td><td>Double</td><td>Public</td><td>Devuelve el valor de la métrica.</td></tr>
-    <tr><td>getUnit()</td><td>String</td><td>Public</td><td>Devuelve la unidad de medida de la métrica.</td></tr>
-    <tr><td>getCapturedAt()</td><td>Timestamp</td><td>Public</td><td>Devuelve la fecha y hora de la captura.</td></tr>
+    <tr><td>type</td><td>String</td><td>Private</td><td>Tipo de métrica (ej. temperatura, velocidad, etc.).</td></tr>
+    <tr><td>value</td><td>Double</td><td>Private</td><td>Valor de la métrica.</td></tr>
+    <tr><td>unit</td><td>String</td><td>Private</td><td>Unidad de medida (°C, km/h, L, %).</td></tr>
+    <tr><td>capturedAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de captura.</td></tr>
   </tbody>
 </table>
 
 ---
 
 <h3>Entity: <code>PreventiveAlert</code></h3>
-<p><strong>Descripción:</strong> Representa una alerta emitida automáticamente cuando una métrica sobrepasa los valores críticos establecidos.</p>
+<p><strong>Descripción:</strong> Representa una alerta emitida automáticamente cuando una métrica supera valores críticos establecidos.</p>
 
 <table>
   <thead>
-    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
     <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la alerta.</td></tr>
     <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador de la moto asociada.</td></tr>
     <tr><td>metricType</td><td>String</td><td>Private</td><td>Tipo de métrica que generó la alerta.</td></tr>
     <tr><td>message</td><td>String</td><td>Private</td><td>Mensaje descriptivo de la alerta.</td></tr>
-    <tr><td>severity</td><td>String</td><td>Private</td><td>Nivel de severidad (Alto, Medio, Bajo).</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de la alerta.</td></tr>
+    <tr><td>severity</td><td>SeverityLevel (Enum)</td><td>Private</td><td>Nivel de severidad (ALTO, MEDIO, BAJO).</td></tr>
+    <tr><td>createdAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de creación de la alerta.</td></tr>
   </tbody>
 </table>
 
 ---
 
 <h3>Entity: <code>Diagnostic</code></h3>
-<p><strong>Descripción:</strong> Representa la interpretación de un conjunto de métricas para indicar posibles fallas, recomendaciones o el estado de la moto.</p>
+<p><strong>Descripción:</strong> Representa la interpretación de un conjunto de métricas para indicar posibles fallas, recomendaciones o el estado general de la moto.</p>
 
 <table>
   <thead>
-    <tr><th>Atributos</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
     <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del diagnóstico.</td></tr>
     <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador de la moto asociada.</td></tr>
     <tr><td>summary</td><td>String</td><td>Private</td><td>Resumen breve del diagnóstico.</td></tr>
     <tr><td>recommendations</td><td>String</td><td>Private</td><td>Recomendaciones para el usuario o mecánico.</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha y hora de generación del diagnóstico.</td></tr>
+    <tr><td>createdAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de generación.</td></tr>
   </tbody>
 </table>
 
 ##### 4.2.4.2 Interface Layer
 
 <h3>Controlador: <code>VehicleWellnessController</code></h3>
-
 <table>
   <tr>
     <th>Título</th>
@@ -1609,10 +1511,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones relacionadas con el monitoreo del bienestar del vehículo, incluyendo métricas, alertas y diagnósticos.</td>
+    <td>Controlador REST que gestiona las operaciones relacionadas con el bienestar de los vehículos, incluyendo la consulta de métricas, alertas preventivas, generación de diagnósticos y administración de datos históricos.</td>
   </tr>
 </table>
-
 <table>
   <thead>
     <tr>
@@ -1625,38 +1526,36 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr>
       <td>getVehicleWellnessById</td>
       <td>GET /api/v1/wellness/{vehicleId}</td>
-      <td>Obtiene el estado general del bienestar de un vehículo específico por su ID</td>
+      <td>Obtiene el estado general de bienestar de un vehículo específico por su ID.</td>
     </tr>
     <tr>
       <td>getVehicleMetrics</td>
       <td>GET /api/v1/wellness/{vehicleId}/metrics</td>
-      <td>Obtiene las métricas en tiempo real de un vehículo</td>
+      <td>Recupera las métricas en tiempo real y/o históricas de un vehículo.</td>
     </tr>
     <tr>
       <td>getVehicleAlerts</td>
       <td>GET /api/v1/wellness/{vehicleId}/alerts</td>
-      <td>Obtiene todas las alertas preventivas activas de un vehículo</td>
+      <td>Obtiene todas las alertas preventivas y activas de un vehículo.</td>
     </tr>
     <tr>
       <td>generateDiagnosis</td>
       <td>POST /api/v1/wellness/{vehicleId}/diagnosis</td>
-      <td>Genera un diagnóstico automático basado en las métricas actuales</td>
+      <td>Genera un diagnóstico automático basado en las métricas actuales del vehículo.</td>
     </tr>
     <tr>
-      <td>updateMetric</td>
+      <td>updateMetrics</td>
       <td>PUT /api/v1/wellness/{vehicleId}/metrics</td>
-      <td>Actualiza las métricas de un vehículo enviadas por el dispositivo IoT</td>
+      <td>Actualiza las métricas de un vehículo recibidas desde el dispositivo IoT.</td>
     </tr>
     <tr>
       <td>deleteWellnessData</td>
       <td>DELETE /api/v1/wellness/{vehicleId}</td>
-      <td>Elimina los datos históricos de bienestar de un vehículo</td>
+      <td>Elimina los datos históricos de bienestar asociados a un vehículo.</td>
     </tr>
   </tbody>
 </table>
-
 <h4>Dependencias:</h4>
-
 <table>
   <thead>
     <tr>
@@ -1667,34 +1566,33 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>VehicleWellnessQueryService</td>
-      <td>Servicio para consultas y recuperación de datos sobre métricas, alertas y estado general del vehículo</td>
+      <td>Servicio para consultas de estado general, métricas y alertas de los vehículos.</td>
     </tr>
     <tr>
       <td>VehicleWellnessCommandService</td>
-      <td>Servicio para ejecutar comandos de actualización de métricas y generación de diagnósticos</td>
+      <td>Servicio para ejecutar comandos relacionados con la actualización de métricas, generación de diagnósticos y eliminación de datos.</td>
     </tr>
     <tr>
       <td>CreateDiagnosisCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de generación de diagnósticos</td>
+      <td>Convierte recursos REST en comandos de generación de diagnósticos de vehículos.</td>
     </tr>
     <tr>
-      <td>UpdateMetricCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de actualización de métricas</td>
+      <td>UpdateMetricsCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de actualización de métricas.</td>
     </tr>
     <tr>
-      <td>DeleteWellnessCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de eliminación de registros de bienestar</td>
+      <td>DeleteWellnessDataCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de eliminación de datos históricos de bienestar.</td>
     </tr>
     <tr>
       <td>VehicleWellnessResourceFromEntityAssembler</td>
-      <td>Convierte entidades de bienestar del vehículo en recursos REST para la respuesta</td>
+      <td>Convierte entidades de bienestar del vehículo en recursos REST para la respuesta de la API.</td>
     </tr>
   </tbody>
 </table>
 
 ##### 4.2.4.3 Application Layer
 
-<hr>
 <h3>Clase: <code>VehicleWellnessQueryServiceImpl</code></h3>
 <table>
   <tr>
@@ -1703,7 +1601,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con el bienestar del vehículo</td>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con el bienestar de los vehículos, incluyendo métricas, alertas y diagnósticos históricos.</td>
   </tr>
 </table>
 <table>
@@ -1716,19 +1614,19 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>handle(GetVehicleWellnessByIdQuery)</td>
-      <td>Obtiene el estado general del bienestar de un vehículo por su ID</td>
+      <td>Obtiene el estado general de bienestar de un vehículo por su ID.</td>
     </tr>
     <tr>
       <td>handle(GetVehicleMetricsQuery)</td>
-      <td>Devuelve la lista de métricas asociadas a un vehículo</td>
+      <td>Devuelve las métricas en tiempo real e históricas asociadas a un vehículo.</td>
     </tr>
     <tr>
       <td>handle(GetVehicleAlertsQuery)</td>
-      <td>Obtiene todas las alertas preventivas activas de un vehículo</td>
+      <td>Recupera todas las alertas preventivas activas de un vehículo.</td>
     </tr>
     <tr>
       <td>handle(GetVehicleDiagnosticsQuery)</td>
-      <td>Devuelve todos los diagnósticos históricos de un vehículo</td>
+      <td>Devuelve los diagnósticos históricos generados para un vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1743,23 +1641,23 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>VehicleWellnessRepository</td>
-      <td>Repositorio para acceso a datos de bienestar de vehículos</td>
+      <td>Repositorio para acceso y consulta de datos de bienestar de vehículos.</td>
     </tr>
     <tr>
       <td>GetVehicleWellnessByIdQuery</td>
-      <td>Query para obtener el estado de un vehículo</td>
+      <td>Query para obtener el estado general del vehículo.</td>
     </tr>
     <tr>
       <td>GetVehicleMetricsQuery</td>
-      <td>Query para recuperar métricas de un vehículo</td>
+      <td>Query para recuperar métricas asociadas a un vehículo.</td>
     </tr>
     <tr>
       <td>GetVehicleAlertsQuery</td>
-      <td>Query para recuperar alertas preventivas</td>
+      <td>Query para recuperar alertas preventivas activas.</td>
     </tr>
     <tr>
       <td>GetVehicleDiagnosticsQuery</td>
-      <td>Query para recuperar diagnósticos del vehículo</td>
+      <td>Query para recuperar diagnósticos históricos del vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1772,7 +1670,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con el bienestar del vehículo</td>
+    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con el bienestar del vehículo, como actualización de métricas, generación de diagnósticos y gestión de alertas.</td>
   </tr>
 </table>
 <table>
@@ -1784,20 +1682,20 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(UpdateMetricCommand)</td>
-      <td>Agrega o actualiza una métrica en el registro de bienestar del vehículo</td>
+      <td>handle(UpdateMetricsCommand)</td>
+      <td>Agrega o actualiza métricas en el registro de bienestar del vehículo.</td>
     </tr>
     <tr>
       <td>handle(GenerateDiagnosisCommand)</td>
-      <td>Genera un diagnóstico basado en las métricas actuales del vehículo</td>
+      <td>Genera un diagnóstico automático basado en las métricas actuales del vehículo.</td>
     </tr>
     <tr>
       <td>handle(CreateAlertCommand)</td>
-      <td>Genera una alerta preventiva si se detecta una anomalía en las métricas</td>
+      <td>Crea una alerta preventiva si se detecta una anomalía en las métricas.</td>
     </tr>
     <tr>
       <td>handle(DeleteWellnessDataCommand)</td>
-      <td>Elimina los datos históricos de bienestar de un vehículo</td>
+      <td>Elimina los datos históricos de bienestar asociados a un vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1812,27 +1710,27 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>VehicleWellnessRepository</td>
-      <td>Repositorio para acceso y persistencia de bienestar de vehículos</td>
+      <td>Repositorio para acceso y persistencia de datos de bienestar de vehículos.</td>
     </tr>
     <tr>
       <td>NotificationService</td>
-      <td>Servicio para enviar notificaciones relacionadas con alertas preventivas</td>
+      <td>Servicio para enviar notificaciones cuando se generan alertas preventivas.</td>
     </tr>
     <tr>
-      <td>UpdateMetricCommand</td>
-      <td>Comando para actualizar o agregar métricas</td>
+      <td>UpdateMetricsCommand</td>
+      <td>Comando para actualizar o agregar métricas de un vehículo.</td>
     </tr>
     <tr>
       <td>GenerateDiagnosisCommand</td>
-      <td>Comando para generar diagnósticos</td>
+      <td>Comando para generar diagnósticos automáticos.</td>
     </tr>
     <tr>
       <td>CreateAlertCommand</td>
-      <td>Comando para generar alertas preventivas</td>
+      <td>Comando para generar alertas preventivas.</td>
     </tr>
     <tr>
       <td>DeleteWellnessDataCommand</td>
-      <td>Comando para eliminar registros de bienestar</td>
+      <td>Comando para eliminar registros históricos de bienestar.</td>
     </tr>
   </tbody>
 </table>
@@ -1847,7 +1745,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas relacionadas con el bienestar del vehículo</td>
+    <td>Interfaz de persistencia principal para operaciones CRUD y consultas especializadas relacionadas con el bienestar de los vehículos</td>
   </tr>
 </table>
 <table>
@@ -1858,34 +1756,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(VehicleWellness)</td>
-      <td>Persiste un nuevo registro de bienestar del vehículo o actualiza uno existente</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina los registros de bienestar asociados a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene el estado general de bienestar de un vehículo específico</td>
-    </tr>
-    <tr>
-      <td>existsByVehicleId(Long vehicleId)</td>
-      <td>Verifica si existe un registro de bienestar para un vehículo</td>
-    </tr>
-    <tr>
-      <td>findMetricsByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findAlertsByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las alertas preventivas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findDiagnosticsByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todos los diagnósticos históricos de un vehículo</td>
-    </tr>
+    <tr><td>save(VehicleWellness wellness)</td><td>Persiste o actualiza el estado de bienestar de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina los registros de bienestar asociados a un vehículo</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene el estado general de bienestar de un vehículo</td></tr>
+    <tr><td>existsByVehicleId(Long vehicleId)</td><td>Verifica si existe un registro de bienestar para un vehículo</td></tr>
+    <tr><td>findMetricsByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas registradas asociadas a un vehículo</td></tr>
+    <tr><td>findAlertsByVehicleId(Long vehicleId)</td><td>Obtiene todas las alertas activas e históricas de un vehículo</td></tr>
+    <tr><td>findDiagnosticsByVehicleId(Long vehicleId)</td><td>Obtiene todos los diagnósticos históricos de un vehículo</td></tr>
   </tbody>
 </table>
 
@@ -1897,7 +1774,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD sobre métricas registradas por el dispositivo IoT</td>
+    <td>Interfaz de persistencia para métricas IoT que registran datos en tiempo real del estado del vehículo</td>
   </tr>
 </table>
 <table>
@@ -1908,26 +1785,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(Metric)</td>
-      <td>Persiste una nueva métrica o actualiza una existente</td>
-    </tr>
-    <tr>
-      <td>findById(Long id)</td>
-      <td>Recupera una métrica específica por su identificador</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findLatestByVehicleId(Long vehicleId)</td>
-      <td>Obtiene la última métrica registrada de un vehículo</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina todas las métricas asociadas a un vehículo</td>
-    </tr>
+    <tr><td>save(Metric metric)</td><td>Persiste una nueva métrica o actualiza una existente</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera una métrica específica por identificador</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas asociadas a un vehículo</td></tr>
+    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene la última métrica registrada de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las métricas históricas de un vehículo</td></tr>
   </tbody>
 </table>
 
@@ -1939,7 +1801,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para gestionar alertas preventivas generadas automáticamente a partir de métricas</td>
+    <td>Interfaz de persistencia para gestionar alertas preventivas derivadas del análisis de métricas y reglas de negocio</td>
   </tr>
 </table>
 <table>
@@ -1950,22 +1812,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(PreventiveAlert)</td>
-      <td>Persiste una nueva alerta preventiva</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todas las alertas asociadas a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findActiveByVehicleId(Long vehicleId)</td>
-      <td>Obtiene únicamente las alertas activas de un vehículo</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina todas las alertas asociadas a un vehículo</td>
-    </tr>
+    <tr><td>save(PreventiveAlert alert)</td><td>Persiste una nueva alerta preventiva</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las alertas asociadas a un vehículo</td></tr>
+    <tr><td>findActiveByVehicleId(Long vehicleId)</td><td>Obtiene únicamente las alertas activas de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las alertas asociadas a un vehículo</td></tr>
   </tbody>
 </table>
 
@@ -1977,7 +1827,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD sobre diagnósticos generados a partir de métricas</td>
+    <td>Interfaz de persistencia para diagnósticos generados a partir de métricas y reglas de diagnóstico automático</td>
   </tr>
 </table>
 <table>
@@ -1988,36 +1838,27 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(Diagnostic)</td>
-      <td>Persiste un nuevo diagnóstico</td>
-    </tr>
-    <tr>
-      <td>findById(Long id)</td>
-      <td>Recupera un diagnóstico específico</td>
-    </tr>
-    <tr>
-      <td>findByVehicleId(Long vehicleId)</td>
-      <td>Obtiene todos los diagnósticos asociados a un vehículo</td>
-    </tr>
-    <tr>
-      <td>findLatestByVehicleId(Long vehicleId)</td>
-      <td>Obtiene el diagnóstico más reciente de un vehículo</td>
-    </tr>
-    <tr>
-      <td>deleteByVehicleId(Long vehicleId)</td>
-      <td>Elimina todos los diagnósticos asociados a un vehículo</td>
-    </tr>
+    <tr><td>save(Diagnostic diagnostic)</td><td>Persiste un nuevo diagnóstico</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera un diagnóstico específico</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los diagnósticos asociados a un vehículo</td></tr>
+    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene el diagnóstico más reciente de un vehículo</td></tr>
+    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todos los diagnósticos asociados a un vehículo</td></tr>
   </tbody>
 </table>
 
 ##### 4.2.4.5 Bounded Context Software Architecture Component Level Diagrams
 
+<img src="./images/chapter-4/vehicle_wellness_component_level_diagrams.png" alt="vehicle_wellness_component_level_diagrams" width="600"/>
+
 ##### 4.2.4.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.4.6.1 Bounded Context Domain Layer Class Diagrams
 
+<img src="./images/chapter-4/vehicle_wellness_bounded_context_domain_layer_class_diagrams.png" alt="vehicle_wellness_component_level_diagrams" width="600"/>
+
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
+
+<img src="./images/chapter-4/vehicle_wellness_bounded_context_database_design_diagram.png" alt="vehicle_wellness_bounded_context_database_design_diagram" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
