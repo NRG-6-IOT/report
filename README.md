@@ -457,6 +457,52 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 #### 4.2.1 Bounded Context: Gestión de Vehículos
 
 ##### 4.2.1.1 Domain Layer
+Aggregate: `Vehicle`
+Descripción: Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
+
+| Atributos           | Tipo de dato  | Visibilidad | Descripción                                  |
+|---------------------|---------------|-------------|----------------------------------------------|
+| id                  | Long          | Private     | Identificador único del vehículo.            |
+| ownerId             | Long          | Private     | ID del dueño de la moto.                     |
+| vin                 | String        | Private     | Número de identificación del vehículo (VIN). |
+| plateNumber         | String        | Private     | Número de placa del vehículo.                |
+| model               | String        | Private     | Modelo del vehículo.                         |
+| brand               | String        | Private     | Marca del vehículo.                          |
+| status              | VehicleStatus | Private     | Estado actual del vehículo.                  |
+| year                | Integer       | Private     | Año de fabricación del vehículo.             |
+| color               | String        | Private     | Color del vehículo.                          |
+| authorizedMecanicId | Long          | Private     | ID del mecánico autorizado para el vehículo. |
+
+| Métodos                    | Tipo de retorno | Visibilidad | Descripción                                 |
+|----------------------------|-----------------|-------------|---------------------------------------------|
+| registerVehicle()          | void            | Public      | Registra un nuevo vehículo en el sistema.   |
+| updateVehicleDetails()     | void            | Public      | Actualiza los detalles del vehículo.        |
+| getVehicleStatus()         | VehicleStatus   | Public      | Obtiene el estado actual del vehículo.      |
+| assignAuthorizedMechanic() | void            | Public      | Asigna un mecánico autorizado al vehículo.  |
+| assignNewOwner()           | void            | Public      | Cambia el dueño del vehículo.               |
+| revokeAuthorizedMechanic() | void            | Public      | Revoca el mecánico autorizado del vehículo. |
+
+Entidad: `Owner`
+Descripción: Representa al usuario dueño de una motocicleta.
+
+| Atributos   | Tipo de dato | Visibilidad | Descripción                      |
+|-------------|--------------|-------------|----------------------------------|
+| id          | Long         | Private     | Identificador único del dueño.   |
+| name        | String       | Private     | Nombre completo del dueño.       |
+| email       | String       | Private     | Correo electrónico del dueño.    |
+
+| Métodos             | Tipo de retorno | Visibilidad | Descripción                       |
+|---------------------|-----------------|-------------|-----------------------------------|
+| validateOwnership() | boolean         | Public      | Valida la propiedad del vehículo. |
+
+Entidad: `Mechanic`
+Descripción: Representa al mecánico que es propietario de un taller. Se le pueden asignar vehículos de dueños para su seguimiento y mantenimiento.
+
+| Atributos   | Tipo de dato | Visibilidad | Descripción                      |
+|-------------|--------------|-------------|----------------------------------|
+| id          | Long         | Private     | Identificador único del mecánico. |
+| name        | String       | Private     | Nombre completo del mecánico.     |
+| email       | String       | Private     | Correo electrónico del mecánico.  |
 
 ##### 4.2.1.2 Interface Layer
 
