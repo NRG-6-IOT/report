@@ -734,52 +734,52 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>getServiceHistory</td>
+      <td>getServiceHistory(Long vehicleId)</td>
       <td>GET /api/v1/history/service/{vehicleId}</td>
       <td>Obtiene el historial completo de servicios de un vehículo.</td>
     </tr>
     <tr>
-      <td>getServiceHistoryById</td>
+      <td>getServiceHistoryById(Long id)</td>
       <td>GET /api/v1/history/service/{id}</td>
       <td>Obtiene un servicio específico por su ID.</td>
     </tr>
     <tr>
-      <td>addServiceHistory</td>
+      <td>addServiceHistory(ServiceHistory history)</td>
       <td>POST /api/v1/history/service</td>
       <td>Agrega un nuevo registro de servicio al historial.</td>
     </tr>
     <tr>
-      <td>updateServiceHistory</td>
+      <td>updateServiceHistory(Long id, ServiceHistory history)</td>
       <td>PUT /api/v1/history/service/{id}</td>
       <td>Actualiza un registro de servicio existente.</td>
     </tr>
     <tr>
-      <td>deleteServiceHistory</td>
+      <td>deleteServiceHistory(Long id)</td>
       <td>DELETE /api/v1/history/service/{id}</td>
       <td>Elimina un registro de servicio.</td>
     </tr>
     <tr>
-      <td>getExpenseHistory</td>
+      <td>getExpenseHistory(Long vehicleId)</td>
       <td>GET /api/v1/history/expense/{vehicleId}</td>
       <td>Obtiene el historial completo de gastos de un vehículo.</td>
     </tr>
     <tr>
-      <td>addExpenseHistory</td>
+      <td>addExpenseHistory(ExpenseHistory history)</td>
       <td>POST /api/v1/history/expense</td>
       <td>Agrega un nuevo registro de gasto al historial.</td>
     </tr>
     <tr>
-      <td>getMonthlySummary</td>
+      <td>getMonthlySummary(Long vehicleId)</td>
       <td>GET /api/v1/history/summary/{vehicleId}/{year}/{month}</td>
       <td>Obtiene un resumen mensual de servicios y gastos.</td>
     </tr>
     <tr>
-      <td>getMaintenanceTimeline</td>
+      <td>getMaintenanceTimeline(Long vehicleId)</td>
       <td>GET /api/v1/history/timeline/{vehicleId}</td>
       <td>Obtiene una línea de tiempo de todos los mantenimientos.</td>
     </tr>
     <tr>
-      <td>exportHistoryReport</td>
+      <td>exportHistoryReport(Long vehicleId)</td>
       <td>GET /api/v1/history/export/{vehicleId}</td>
       <td>Exporta el historial completo a formato PDF/Excel.</td>
     </tr>
