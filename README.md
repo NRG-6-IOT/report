@@ -2057,42 +2057,42 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>generateReport</td>
+      <td>generateReport(Report report)</td>
       <td>POST /api/v1/reports/generate</td>
       <td>Genera un nuevo reporte basado en los parámetros especificados.</td>
     </tr>
     <tr>
-      <td>getReportStatus</td>
+      <td>getReportStatus(Long id)</td>
       <td>GET /api/v1/reports/{id}/status</td>
       <td>Obtiene el estado de un reporte en generación.</td>
     </tr>
     <tr>
-      <td>downloadReport</td>
+      <td>downloadReport(Long id)</td>
       <td>GET /api/v1/reports/{id}/download</td>
       <td>Descarga un reporte generado en el formato especificado.</td>
     </tr>
     <tr>
-      <td>getReportHistory</td>
+      <td>getReportHistory(Long vehicleId)</td>
       <td>GET /api/v1/reports/history/{vehicleId}</td>
       <td>Obtiene el historial de reportes generados para un vehículo.</td>
     </tr>
     <tr>
-      <td>getMonthlyReport</td>
+      <td>getMonthlyReport(Long vehicleId)</td>
       <td>GET /api/v1/reports/monthly/{vehicleId}/{year}/{month}</td>
       <td>Genera o obtiene el reporte mensual de un vehículo.</td>
     </tr>
     <tr>
-      <td>getComparativeReport</td>
+      <td>getComparativeReport(Long vehicleId)</td>
       <td>GET /api/v1/reports/comparative/{vehicleId}</td>
       <td>Genera un reporte comparativo con períodos anteriores.</td>
     </tr>
     <tr>
-      <td>getVehicleHealthReport</td>
+      <td>getVehicleHealthReport(Long vehicleId)</td>
       <td>GET /api/v1/reports/health/{vehicleId}</td>
       <td>Genera un reporte de salud del vehículo.</td>
     </tr>
     <tr>
-      <td>getExpenseReport</td>
+      <td>getExpenseReport(Long vehicleId)</td>
       <td>GET /api/v1/reports/expenses/{vehicleId}</td>
       <td>Genera un reporte detallado de gastos.</td>
     </tr>
@@ -2102,7 +2102,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>Obtiene las plantillas de reporte disponibles.</td>
     </tr>
     <tr>
-      <td>createCustomReport</td>
+      <td>createCustomReport(Report report)</td>
       <td>POST /api/v1/reports/custom</td>
       <td>Crea un reporte personalizado con métricas específicas.</td>
     </tr>
@@ -2434,43 +2434,43 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>save(ReportEntity)</td>
+      <td>save(Report report)</td>
       <td>Persiste un nuevo reporte o actualiza uno existente.</td>
     </tr>
     <tr>
-      <td>deleteById(Long)</td>
+      <td>deleteById(Long id)</td>
       <td>Elimina un reporte por su ID.</td>
     </tr>
     <tr>
-      <td>findById(Long)</td>
+      <td>findById(Long id)</td>
       <td>Recupera los detalles de un reporte por su ID.</td>
     </tr>
     <tr>
-      <td>existsById(Long)</td>
+      <td>existsById(Long id)</td>
       <td>Verifica si existe un reporte por su ID.</td>
     </tr>
     <tr>
-      <td>findByVehicleId(Long, Pageable)</td>
-      <td>Obtiene todos los reportes asociados a un vehículo con paginación.</td>
+      <td>findByVehicleId(Long vehicleId)</td>
+      <td>Obtiene todos los reportes asociados a un vehículo.</td>
     </tr>
     <tr>
-      <td>findByOwnerId(Long, Pageable)</td>
+      <td>findByOwnerId(Long ownerId)</td>
       <td>Obtiene todos los reportes asociados a un dueño.</td>
     </tr>
     <tr>
-      <td>findByReportTypeAndVehicleId(ReportType, Long)</td>
+      <td>findByReportTypeAndVehicleId(ReportType type, Long vehicleId)</td>
       <td>Filtra reportes por tipo y vehículo.</td>
     </tr>
     <tr>
-      <td>findByDateRangeAndVehicleId(Timestamp, Timestamp, Long)</td>
+      <td>findByDateRangeAndVehicleId(Timestamp start, Timestamp end, Long vehicleId)</td>
       <td>Obtiene reportes dentro de un rango de fechas para un vehículo.</td>
     </tr>
     <tr>
-      <td>findLatestReportByVehicleId(Long, ReportType)</td>
-      <td>Obtiene el reporte más reciente de un tipo específico para un vehículo.</td>
+      <td>findLatestReportByVehicleId(Long vehicleId)</td>
+      <td>Obtiene el reporte más reciente para un vehículo.</td>
     </tr>
     <tr>
-      <td>updateReportStatus(Long, ReportStatus)</td>
+      <td>updateReportStatus(Long id, ReportStatus status)</td>
       <td>Actualiza el estado de un reporte.</td>
     </tr>
   </tbody>
@@ -2498,32 +2498,32 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>save(MetricDefinitionEntity)</td>
+      <td>save(MetricDefinition metric)</td>
       <td>Persiste una nueva definición de métrica o actualiza una existente.</td>
     </tr>
     <tr>
-      <td>deleteById(Long)</td>
+      <td>deleteById(Long id)</td>
       <td>Elimina una definición de métrica por su ID.</td>
     </tr>
     <tr>
-      <td>findById(Long)</td>
+      <td>findById(Long id)</td>
       <td>Obtiene los detalles de una definición de métrica por su ID.</td>
     </tr>
     <tr>
-      <td>existsById(Long)</td>
+      <td>existsById(Long id)</td>
       <td>Verifica si existe una definición de métrica por su ID.</td>
     </tr>
     <tr>
-      <td>findByName(String)</td>
+      <td>findByName(String name)</td>
       <td>Busca una definición de métrica por su nombre.</td>
     </tr>
     <tr>
-      <td>findByCategory(MetricCategory)</td>
+      <td>findByCategory(MetricCategory category)</td>
       <td>Filtra definiciones de métricas por categoría.</td>
     </tr>
     <tr>
-      <td>findAll(Pageable)</td>
-      <td>Lista todas las definiciones de métricas disponibles con paginación.</td>
+      <td>findAll</td>
+      <td>Lista todas las definiciones de métricas disponibles.</td>
     </tr>
   </tbody>
 </table>
@@ -2550,35 +2550,35 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>save(ReportTemplateEntity)</td>
+      <td>save(ReportTemplate template)</td>
       <td>Persiste una nueva plantilla de reporte o actualiza una existente.</td>
     </tr>
     <tr>
-      <td>deleteById(Long)</td>
+      <td>deleteById(Long id)</td>
       <td>Elimina una plantilla de reporte por su ID.</td>
     </tr>
     <tr>
-      <td>findById(Long)</td>
+      <td>findById(Long id)</td>
       <td>Obtiene los detalles de una plantilla de reporte por su ID.</td>
     </tr>
     <tr>
-      <td>existsById(Long)</td>
+      <td>existsById(Long id)</td>
       <td>Verifica si existe una plantilla de reporte por su ID.</td>
     </tr>
     <tr>
-      <td>findByName(String)</td>
+      <td>findByName(String name)</td>
       <td>Busca una plantilla de reporte por su nombre.</td>
     </tr>
     <tr>
-      <td>findDefaultTemplates()</td>
+      <td>findDefaultTemplates</td>
       <td>Obtiene las plantillas de reporte marcadas como predeterminadas.</td>
     </tr>
     <tr>
-      <td>findAll(Pageable)</td>
-      <td>Lista todas las plantillas de reporte disponibles con paginación.</td>
+      <td>findAll</td>
+      <td>Lista todas las plantillas de reporte disponibles.</td>
     </tr>
     <tr>
-      <td>updateDefaultStatus(Long, boolean)</td>
+      <td>updateDefaultStatus(Long id, ReportStatus status)</td>
       <td>Actualiza el estado predeterminado de una plantilla.</td>
     </tr>
   </tbody>
