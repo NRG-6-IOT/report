@@ -579,18 +579,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>Public</td>
       <td>Calcula el costo total sumando todos los ítems.</td>
     </tr>
-    <tr>
-      <td>getServicesByDateRange(Date, Date)</td>
-      <td>List&lt;ServiceHistory&gt;</td>
-      <td>Public</td>
-      <td>Obtiene servicios dentro de un rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>getServicesByType(ServiceType)</td>
-      <td>List&lt;ServiceHistory&gt;</td>
-      <td>Public</td>
-      <td>Filtra servicios por tipo.</td>
-    </tr>
   </tbody>
 </table>
 
@@ -641,12 +629,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>BigDecimal</td>
       <td>Private</td>
       <td>Precio unitario del ítem.</td>
-    </tr>
-    <tr>
-      <td>totalPrice</td>
-      <td>BigDecimal</td>
-      <td>Private</td>
-      <td>Precio total (cantidad * precio unitario).</td>
     </tr>
   </tbody>
 </table>
@@ -733,31 +715,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<table>
-  <thead>
-    <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getExpensesByType(ExpenseType)</td>
-      <td>List&lt;ExpenseHistory&gt;</td>
-      <td>Public</td>
-      <td>Filtra gastos por tipo.</td>
-    </tr>
-    <tr>
-      <td>getExpensesByDateRange(Date, Date)</td>
-      <td>List&lt;ExpenseHistory&gt;</td>
-      <td>Public</td>
-      <td>Obtiene gastos dentro de un rango de fechas.</td>
-    </tr>
-  </tbody>
-</table>
-
 ##### 4.2.2.2 Interface Layer
 
 <h3>Controlador:<code>HistoryController</code></h3>
@@ -817,7 +774,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>Agrega un nuevo registro de gasto al historial.</td>
     </tr>
     <tr>
-      <td>getMonthlySummary(Long vehicleId)</td>
+      <td>getMonthlySummary(Long vehicleId, int year, string month)</td>
       <td>GET /api/v1/history/summary/{vehicleId}/{year}/{month}</td>
       <td>Obtiene un resumen mensual de servicios y gastos.</td>
     </tr>
@@ -1024,7 +981,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>handle(DeleteExpenseHistoryCommand)</td><td>Elimina un registro de gasto.</td></tr>
     <tr><td>handle(AddServiceItemCommand)</td><td>Agrega un ítem de servicio a un registro existente.</td></tr>
     <tr><td>handle(RemoveServiceItemCommand)</td><td>Elimina un ítem de servicio de un registro existente.</td></tr>
-    <tr><td>handle(GenerateHistoryReportCommand)</td><td>Genera un reporte del historial completo.</td></tr>
   </tbody>
 </table>
 
@@ -1040,7 +996,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>ServiceHistoryRepository</td><td>Repositorio para persistencia de historiales de servicio.</td></tr>
     <tr><td>ExpenseHistoryRepository</td><td>Repositorio para persistencia de historiales de gastos.</td></tr>
     <tr><td>ServiceItemRepository</td><td>Repositorio para persistencia de ítems de servicio.</td></tr>
-    <tr><td>ReportService</td><td>Servicio para generación de reportes en diferentes formatos.</td></tr>
     <tr><td>CreateServiceHistoryCommand</td><td>Comando para crear historiales de servicio.</td></tr>
     <tr><td>UpdateServiceHistoryCommand</td><td>Comando para actualizar historiales de servicio.</td></tr>
     <tr><td>DeleteServiceHistoryCommand</td><td>Comando para eliminar historiales de servicio.</td></tr>
@@ -1049,7 +1004,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>DeleteExpenseHistoryCommand</td><td>Comando para eliminar historiales de gastos.</td></tr>
     <tr><td>AddServiceItemCommand</td><td>Comando para agregar ítems de servicio.</td></tr>
     <tr><td>RemoveServiceItemCommand</td><td>Comando para eliminar ítems de servicio.</td></tr>
-    <tr><td>GenerateHistoryReportCommand</td><td>Comando para generar reportes de historial.</td></tr>
   </tbody>
 </table>
 
@@ -1075,16 +1029,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(ServiceHistoryEntity)</td><td>Persiste un nuevo historial de servicio o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina un historial de servicio por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Recupera los detalles de un historial de servicio por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe un historial de servicio por su ID.</td></tr>
-    <tr><td>findByVehicleId(Long, Pageable)</td><td>Obtiene todos los historiales de servicio asociados a un vehículo con paginación.</td></tr>
-    <tr><td>findByMechanicId(Long, Pageable)</td><td>Obtiene todos los historiales de servicio realizados por un mecánico.</td></tr>
-    <tr><td>findByServiceTypeAndVehicleId(ServiceType, Long)</td><td>Filtra historiales por tipo de servicio y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp, Timestamp, Long)</td><td>Obtiene historiales dentro de un rango de fechas para un vehículo.</td></tr>
-    <tr><td>findLatestServiceByVehicleId(Long)</td><td>Obtiene el servicio más reciente de un vehículo.</td></tr>
-    <tr><td>calculateTotalSpentByVehicleId(Long)</td><td>Calcula el total gastado en servicios para un vehículo.</td></tr>
+    <tr><td>save(ServiceHistory history)</td><td>Persiste un nuevo historial de servicio o actualiza uno existente.</td></tr>
+    <tr><td>deleteById(Long id)</td><td>Elimina un historial de servicio por su ID.</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera los detalles de un historial de servicio por su ID.</td></tr>
+    <tr><td>existsById(Long id)</td><td>Verifica si existe un historial de servicio por su ID.</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de servicio asociados a un vehículo.</td></tr>
+    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todos los historiales de servicio realizados por un mecánico.</td></tr>
+    <tr><td>findByServiceTypeAndVehicleId(ServiceType type, Long vehicleId)</td><td>Filtra historiales por tipo de servicio y vehículo.</td></tr>
+    <tr><td>findByDateRangeAndVehicleId(Timestamp start, Timestamp end, Long vehicleId)</td><td>Obtiene historiales dentro de un rango de fechas para un vehículo.</td></tr>
+    <tr><td>findLatestServiceByVehicleId(Long vehicleId)</td><td>Obtiene el servicio más reciente de un vehículo.</td></tr>
+    <tr><td>calculateTotalSpentByVehicleId(Long vehicleId)</td><td>Calcula el total gastado en servicios para un vehículo.</td></tr>
   </tbody>
 </table>
 
@@ -1108,15 +1062,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(ExpenseHistoryEntity)</td><td>Persiste un nuevo historial de gasto o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina un historial de gasto por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de un historial de gasto por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe un historial de gasto por su ID.</td></tr>
-    <tr><td>findByVehicleId(Long, Pageable)</td><td>Obtiene todos los historiales de gasto asociados a un vehículo con paginación.</td></tr>
-    <tr><td>findByExpenseTypeAndVehicleId(ExpenseType, Long)</td><td>Filtra gastos por tipo y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp, Timestamp, Long)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
-    <tr><td>calculateTotalExpensesByVehicleId(Long)</td><td>Calcula el total gastado para un vehículo.</td></tr>
-    <tr><td>calculateExpensesByTypeAndVehicleId(ExpenseType, Long)</td><td>Calcula el gasto por tipo para un vehículo.</td></tr>
+    <tr><td>save(ExpenseHistory history)</td><td>Persiste un nuevo historial de gasto o actualiza uno existente.</td></tr>
+    <tr><td>deleteById(Long id)</td><td>Elimina un historial de gasto por su ID.</td></tr>
+    <tr><td>findById(Long id)</td><td>Obtiene los detalles de un historial de gasto por su ID.</td></tr>
+    <tr><td>existsById(Long id)</td><td>Verifica si existe un historial de gasto por su ID.</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de gasto asociados a un vehículo.</td></tr>
+    <tr><td>findByExpenseTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Filtra gastos por tipo y vehículo.</td></tr>
+    <tr><td>findByDateRangeAndVehicleId(Timestamp start, Timestamp end, Long vehicleId)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
+    <tr><td>calculateTotalExpensesByVehicleId(Long vehicleId)</td><td>Calcula el total gastado para un vehículo.</td></tr>
+    <tr><td>calculateExpensesByTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Calcula el gasto por tipo para un vehículo.</td></tr>
   </tbody>
 </table>
 
@@ -1140,13 +1094,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(ServiceItemEntity)</td><td>Persiste un nuevo ítem de servicio o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina un ítem de servicio por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de un ítem de servicio por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe un ítem de servicio por su ID.</td></tr>
-    <tr><td>findByServiceHistoryId(Long)</td><td>Obtiene todos los ítems asociados a un historial de servicio.</td></tr>
-    <tr><td>findByItemTypeAndServiceHistoryId(ItemType, Long)</td><td>Filtra ítems por tipo dentro de un historial de servicio.</td></tr>
-    <tr><td>calculateTotalByServiceHistoryId(Long)</td><td>Calcula el total de todos los ítems de un historial de servicio.</td></tr>
+    <tr><td>save(ServiceItem item)</td><td>Persiste un nuevo ítem de servicio o actualiza uno existente.</td></tr>
+    <tr><td>deleteById(Long id)</td><td>Elimina un ítem de servicio por su ID.</td></tr>
+    <tr><td>findById(Long id)</td><td>Obtiene los detalles de un ítem de servicio por su ID.</td></tr>
+    <tr><td>existsById(Long id)</td><td>Verifica si existe un ítem de servicio por su ID.</td></tr>
+    <tr><td>findByServiceHistoryId(Long, historyId)</td><td>Obtiene todos los ítems asociados a un historial de servicio.</td></tr>
+    <tr><td>findByItemTypeAndServiceHistoryId(ItemType type, Long historyId)</td><td>Filtra ítems por tipo dentro de un historial de servicio.</td></tr>
+    <tr><td>calculateTotalByServiceHistoryId(Long historyId)</td><td>Calcula el total de todos los ítems de un historial de servicio.</td></tr>
   </tbody>
 </table>
 
