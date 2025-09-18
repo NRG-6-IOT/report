@@ -516,8 +516,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | updateVehicleOwner() | PATCH /api/v1/vehicles/{vehicleId}/owner                  | Cambia el dueño del vehículo.               |
 | authorizeMechanic()  | POST /api/v1/vehicles/{vehicleId}/mechanic                | Asigna un mecánico autorizado al vehículo.  |
 | revokeMechanic()     | DELETE /api/v1/vehicles/{vehicleId}/mechanic/{mechanicId} | Revoca el mecánico autorizado del vehículo. |
-| getVehicle()         | GET /api/v1/vehicles/{vehicleId}                          | Obtiene los detalles de un vehículo.        |
-| getMechanic()        | GET /api/v1/mechanics/{mechanicId}                        | Obtiene los detalles de un mecánico.        |
+| getVehicle()         | GET /api/v1/vehicles/{vehicleId}                          | Consulta los detalles de un vehículo.       |
+| getMechanic()        | GET /api/v1/mechanics/{mechanicId}                        | Consulta los detalles de un mecánico.       |
 
 **Dependencias:**
 
@@ -547,9 +547,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 | Dependencia                      | Descripción                                      |
 |----------------------------------|--------------------------------------------------|
-| VehicleRepository                | Repositorio para recuperar datos de vehículos.   |
-| OwnerRepository                  | Repositorio para recuperar datos de dueños.      |
-| MechanicRepository               | Repositorio para recuperar datos de mecánicos.   |
+| VehicleRepository                | Repositorio para consultar datos de vehículos.   |
+| OwnerRepository                  | Repositorio para consultar datos de dueños.      |
+| MechanicRepository               | Repositorio para consultar datos de mecánicos.   |
 | CreateVehicleCommand             | Comando para crear un vehículo.                  |
 | UpdateVehicleCommand             | Comando para actualizar un vehículo.             |
 | UpdateVehicleOwnerCommand        | Comando para actualizar el dueño de un vehículo. |
@@ -583,6 +583,35 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
 
 ##### 4.2.1.4 Infrastructure Layer
+
+### Clase: `VehicleRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de vehículos.
+
+| Método                            | Descripción                                |
+|-----------------------------------|--------------------------------------------|
+| save(Vehicle vehicle)             | Guarda o actualiza un vehículo.            |
+| findById(Long id)                 | Busca un vehículo por su ID.               |
+| findByVin(String vin)             | Busca un vehículo por su VIN.              |
+| findByOwnerId(Long ownerId)       | Busca vehículos por ID de dueño.           |
+| findByMechanicId(Long mechanicId) | Busca vehículos por ID de mecánico.        |
+| existsByVin(String vin)           | Verifica si un vehículo existe por su VIN. |
+| deleteById(Long id)               | Elimina un vehículo por su ID.             |
+
+### Clase: `OwnerRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de dueños.
+
+| Método            | Descripción                     |
+|-------------------|---------------------------------|
+| save(Owner owner) | Guarda o actualiza un dueño.    |
+| findById(Long id) | Busca un dueño por su ID.       |
+
+### Clase: `MechanicRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de mecánicos.
+
+| Método                  | Descripción                     |
+|-------------------------|---------------------------------|
+| save(Mechanic mechanic) | Guarda o actualiza un mecánico. |
+| findById(Long id)       | Busca un mecánico por su ID.    |
 
 ##### 4.2.1.5 Bounded Context Software Architecture Component Level Diagrams
 
