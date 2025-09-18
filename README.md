@@ -457,8 +457,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 #### 4.2.1 Bounded Context: Gestión de Vehículos
 
 ##### 4.2.1.1 Domain Layer
-Aggregate: `Vehicle`
-Descripción: Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
+### Aggregate: `Vehicle`
+**Descripción**: Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
 
 | Atributos           | Tipo de dato  | Visibilidad | Descripción                                  |
 |---------------------|---------------|-------------|----------------------------------------------|
@@ -482,8 +482,8 @@ Descripción: Representa la moto registrada por el dueño en el sistema. Contien
 | assignNewOwner()           | void            | Public      | Cambia el dueño del vehículo.               |
 | revokeAuthorizedMechanic() | void            | Public      | Revoca el mecánico autorizado del vehículo. |
 
-Entidad: `Owner`
-Descripción: Representa al usuario dueño de una motocicleta.
+### Entidad: `Owner`
+**Descripción:** Representa al usuario dueño de una motocicleta.
 
 | Atributos   | Tipo de dato | Visibilidad | Descripción                      |
 |-------------|--------------|-------------|----------------------------------|
@@ -495,18 +495,92 @@ Descripción: Representa al usuario dueño de una motocicleta.
 |---------------------|-----------------|-------------|-----------------------------------|
 | validateOwnership() | boolean         | Public      | Valida la propiedad del vehículo. |
 
-Entidad: `Mechanic`
-Descripción: Representa al mecánico que es propietario de un taller. Se le pueden asignar vehículos de dueños para su seguimiento y mantenimiento.
+### Entidad: `Mechanic`
+**Descripción:** Representa al mecánico que es propietario de un taller. Se le pueden asignar vehículos de dueños para su seguimiento y mantenimiento.
 
-| Atributos   | Tipo de dato | Visibilidad | Descripción                      |
-|-------------|--------------|-------------|----------------------------------|
-| id          | Long         | Private     | Identificador único del mecánico. |
-| name        | String       | Private     | Nombre completo del mecánico.     |
-| email       | String       | Private     | Correo electrónico del mecánico.  |
+| Atributos | Tipo de dato | Visibilidad | Descripción                       |
+|-----------|--------------|-------------|-----------------------------------|
+| id        | Long         | Private     | Identificador único del mecánico. |
+| name      | String       | Private     | Nombre completo del mecánico.     |
+| email     | String       | Private     | Correo electrónico del mecánico.  |
 
 ##### 4.2.1.2 Interface Layer
 
+### Controlador: `VehicleController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de vehículos.
+
+| Método               | Ruta                                                      | Descripción                                 |
+|----------------------|-----------------------------------------------------------|---------------------------------------------|
+| addVehicle()         | POST /api/v1/vehicles/                                    | Registra un nuevo vehículo.                 |
+| updateVehicle()      | PUT /api/v1/vehicles/{vehicleId}                          | Actualiza los detalles de un vehículo.      |
+| updateVehicleOwner() | PATCH /api/v1/vehicles/{vehicleId}/owner                  | Cambia el dueño del vehículo.               |
+| authorizeMechanic()  | POST /api/v1/vehicles/{vehicleId}/mechanic                | Asigna un mecánico autorizado al vehículo.  |
+| revokeMechanic()     | DELETE /api/v1/vehicles/{vehicleId}/mechanic/{mechanicId} | Revoca el mecánico autorizado del vehículo. |
+| getVehicle()         | GET /api/v1/vehicles/{vehicleId}                          | Obtiene los detalles de un vehículo.        |
+| getMechanic()        | GET /api/v1/mechanics/{mechanicId}                        | Obtiene los detalles de un mecánico.        |
+
+**Dependencias:**
+
+| Dependencia                                    | Descripción                                                                          |
+|------------------------------------------------|--------------------------------------------------------------------------------------|
+| VehicleCommandService                          | Servicio para manejar comandos relacionados con vehículos.                           |
+| VehicleQueryService                            | Servicio para manejar consultas relacionadas con vehículos.                          |
+| CreateVehicleCommandFromResourceAssembler      | Ensamblador para convertir recursos REST a comandos para creación de vehículos.      |
+| UpdateVehicleCommandFromResourceAssembler      | Ensamblador para convertir recursos REST a comandos para actualización de vehículos. |
+| UpdateVehicleOwnerCommandFromResourceAssembler | Ensamblador para convertir recursos REST a comandos para actualización de dueños.    |
+| VehicleResourceFromEntityAssembler             | Ensamblador para convertir entidades de vehículos a recursos REST.                   |
+
 ##### 4.2.1.3 Application Layer
+
+### Clase: `VehicleCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos para la gestión de vehículos.
+
+| Método                                   | Descripción                                 |
+|------------------------------------------|---------------------------------------------|
+| handle(CreateVehicleCommand)             | Crea un nuevo vehículo.                     |
+| handle(UpdateVehicleCommand)             | Actualiza los detalles de un vehículo.      |
+| handle(UpdateVehicleOwnerCommand)        | Cambia el dueño del vehículo.               |
+| handle(AddMechanicToVehicleCommand)      | Asigna un mecánico autorizado al vehículo.  |
+| handle(RemoveMechanicFromVehicleCommand) | Revoca el mecánico autorizado del vehículo. |
+
+**Dependencias:**
+
+| Dependencia                      | Descripción                                      |
+|----------------------------------|--------------------------------------------------|
+| VehicleRepository                | Repositorio para recuperar datos de vehículos.   |
+| OwnerRepository                  | Repositorio para recuperar datos de dueños.      |
+| MechanicRepository               | Repositorio para recuperar datos de mecánicos.   |
+| CreateVehicleCommand             | Comando para crear un vehículo.                  |
+| UpdateVehicleCommand             | Comando para actualizar un vehículo.             |
+| UpdateVehicleOwnerCommand        | Comando para actualizar el dueño de un vehículo. |
+| AddMechanicToVehicleCommand      | Comando para asignar un mecánico a un vehículo.  |
+| RemoveMechanicFromVehicleCommand | Comando para revocar un mecánico de un vehículo. |
+
+### Clase: `VehicleQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para la gestión de vehículos.
+
+| Método                               | Descripción                                           |
+|--------------------------------------|-------------------------------------------------------|
+| handle(GetVehicleByIdQuery)          | Obtiene un vehículo por su ID.                        |
+| handle(GetOwnerByIdQuery)            | Obtiene un dueño por su ID.                           |
+| handle(GetMechanicByIdQuery)         | Obtiene un mecánico por su ID.                        |
+| handle(GetVehiclesByOwnerIdQuery)    | Obtiene todos los vehículos de un dueño               |
+| handle(GetVehiclesByMechanicIdQuery) | Obtiene todos los vehículos vinculados a un mecánico. |
+| handle(GetVehicleByVinQuery)         | Obtiene un vehículo por su VIN.                       |
+
+**Dependencias:**
+
+| Dependencia                  | Descripción                                           |
+|------------------------------|-------------------------------------------------------|
+| VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
+| OwnerRepository              | Repositorio para acceder a datos de dueños.           |
+| MechanicRepository           | Repositorio para acceder a datos de mecánicos.        |
+| GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
+| GetOwnerByIdQuery            | Obtiene un dueño por su ID.                           |
+| GetMechanicByIdQuery         | Obtiene un mecánico por su ID.                        |
+| GetVehiclesByOwnerIdQuery    | Obtiene todos los vehículos de un dueño.              |
+| GetVehiclesByMechanicIdQuery | Obtiene todos los vehículos vinculados a un mecánico. |
+| GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
 
 ##### 4.2.1.4 Infrastructure Layer
 
