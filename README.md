@@ -650,12 +650,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>ID del vehículo al que se le realizó el servicio.</td>
     </tr>
     <tr>
-      <td>ownerId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del dueño de la moto.</td>
-    </tr>
-    <tr>
       <td>mechanicId</td>
       <td>Long</td>
       <td>Private</td>
@@ -669,13 +663,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
     <tr>
       <td>serviceDate</td>
-      <td>Timestamp</td>
+      <td>Date</td>
       <td>Private</td>
       <td>Fecha en que se realizó el servicio.</td>
     </tr>
     <tr>
       <td>mileage</td>
-      <td>Integer</td>
+      <td>double</td>
       <td>Private</td>
       <td>Kilometraje del vehículo al momento del servicio.</td>
     </tr>
@@ -687,122 +681,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
     <tr>
       <td>totalCost</td>
-      <td>BigDecimal</td>
+      <td>double</td>
       <td>Private</td>
       <td>Costo total del servicio.</td>
     </tr>
-    <tr>
-      <td>createdAt</td>
-      <td>Timestamp</td>
-      <td>Private</td>
-      <td>Fecha de creación del registro.</td>
-    </tr>
-    <tr>
-      <td>updatedAt</td>
-      <td>Timestamp</td>
-      <td>Private</td>
-      <td>Última fecha de actualización.</td>
-    </tr>
   </tbody>
 </table>
 
-<table>
-  <thead>
-    <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>addServiceItem(ServiceItem)</td>
-      <td>void</td>
-      <td>Public</td>
-      <td>Agrega un ítem de servicio al historial.</td>
-    </tr>
-    <tr>
-      <td>calculateTotalCost()</td>
-      <td>BigDecimal</td>
-      <td>Public</td>
-      <td>Calcula el costo total sumando todos los ítems.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Entidad: <code>ServiceItem</code></h3>
-<p><strong>Descripción:</strong> Representa un ítem específico dentro de un servicio, que puede ser un repuesto, mano de obra u otro concepto facturable.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>Identificador único del ítem.</td>
-    </tr>
-    <tr>
-      <td>serviceHistoryId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del historial de servicio al que pertenece.</td>
-    </tr>
-    <tr>
-      <td>itemType</td>
-      <td>ItemType</td>
-      <td>Private</td>
-      <td>Tipo de ítem (repuesto, mano de obra, otros).</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String</td>
-      <td>Private</td>
-      <td>Descripción del ítem.</td>
-    </tr>
-    <tr>
-      <td>quantity</td>
-      <td>Integer</td>
-      <td>Private</td>
-      <td>Cantidad del ítem.</td>
-    </tr>
-    <tr>
-      <td>unitPrice</td>
-      <td>BigDecimal</td>
-      <td>Private</td>
-      <td>Precio unitario del ítem.</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>calculateTotal()</td>
-      <td>BigDecimal</td>
-      <td>Public</td>
-      <td>Calcula el precio total del ítem.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Entidad: <code>ExpenseHistory</code></h3>
-<p><strong>Descripción:</strong>Registra todos los gastos asociados a un vehículo, no necesariamente relacionados con servicios de mantenimiento.</p>
+<h3>Aggregate:<code>ExpenseHistory</code></h3>
+<p><strong>Descripción:</strong>Registra todos los gastos asociados a un vehículo por un usuario</p>
 <table>
   <thead>
     <tr>
@@ -826,22 +713,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>ID del vehículo asociado.</td>
     </tr>
     <tr>
-      <td>ownerId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del dueño de la moto.</td>
-    </tr>
-    <tr>
       <td>expenseType</td>
       <td>ExpenseType</td>
       <td>Private</td>
-      <td>Tipo de gasto (combustible, seguro, impuestos, otros).</td>
-    </tr>
-    <tr>
-      <td>expenseDate</td>
-      <td>Timestamp</td>
-      <td>Private</td>
-      <td>Fecha del gasto.</td>
+      <td>Tipo de gasto.</td>
     </tr>
     <tr>
       <td>description</td>
@@ -851,17 +726,57 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
     <tr>
       <td>amount</td>
-      <td>BigDecimal</td>
+      <td>double</td>
       <td>Private</td>
       <td>Monto del gasto.</td>
     </tr>
     <tr>
       <td>mileage</td>
-      <td>Integer</td>
+      <td>double</td>
       <td>Private</td>
       <td>Kilometraje al momento del gasto.</td>
     </tr>
   </tbody>
+</table>
+
+<h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
+
+<h3>Interfaz:<code>ServiceHistoryQueryService</code></h3>
+
+<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
+
+<h3>Interfaz:<code>ExpenseHistoryQueryService</code></h3>
+
+<h3>Value Object:<code>ServiceType</code></h3>
+
+<h3>Value Object:<code>ExpenseType</code></h3>
+
+<table>
+    <thead>
+        <tr>
+            <td>Commands</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <td>Queries</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
 </table>
 
 ##### 4.2.2.2 Interface Layer
@@ -1158,7 +1073,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.2.4 Infrastructure Layer
 
-<h3>Clase:<code>ServiceHistoryRepository</code></h3>
+<h3>Interfaz:<code>ServiceHistoryRepository</code></h3>
 <table>
   <tr>
     <th>Título</th>
@@ -1178,10 +1093,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(ServiceHistory history)</td><td>Persiste un nuevo historial de servicio o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long id)</td><td>Elimina un historial de servicio por su ID.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera los detalles de un historial de servicio por su ID.</td></tr>
-    <tr><td>existsById(Long id)</td><td>Verifica si existe un historial de servicio por su ID.</td></tr>
     <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de servicio asociados a un vehículo.</td></tr>
     <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todos los historiales de servicio realizados por un mecánico.</td></tr>
     <tr><td>findByServiceTypeAndVehicleId(ServiceType type, Long vehicleId)</td><td>Filtra historiales por tipo de servicio y vehículo.</td></tr>
@@ -1191,7 +1102,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Clase:<code>ExpenseHistoryRepository</code></h3>
+<h3>Interfaz:<code>ExpenseHistoryRepository</code></h3>
 <table>
   <tr>
     <th>Título</th>
@@ -1211,45 +1122,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(ExpenseHistory history)</td><td>Persiste un nuevo historial de gasto o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long id)</td><td>Elimina un historial de gasto por su ID.</td></tr>
-    <tr><td>findById(Long id)</td><td>Obtiene los detalles de un historial de gasto por su ID.</td></tr>
-    <tr><td>existsById(Long id)</td><td>Verifica si existe un historial de gasto por su ID.</td></tr>
     <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de gasto asociados a un vehículo.</td></tr>
     <tr><td>findByExpenseTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Filtra gastos por tipo y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp start, Timestamp end, Long vehicleId)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
+    <tr><td>findByDateRangeAndVehicleId(Date start, Date end, Long vehicleId)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
     <tr><td>calculateTotalExpensesByVehicleId(Long vehicleId)</td><td>Calcula el total gastado para un vehículo.</td></tr>
     <tr><td>calculateExpensesByTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Calcula el gasto por tipo para un vehículo.</td></tr>
-  </tbody>
-</table>
-
-<h3>Clase:<code>ServiceItemRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ServiceItemRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para gestionar ítems de servicio dentro de los historiales.</td>
-  </tr>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(ServiceItem item)</td><td>Persiste un nuevo ítem de servicio o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long id)</td><td>Elimina un ítem de servicio por su ID.</td></tr>
-    <tr><td>findById(Long id)</td><td>Obtiene los detalles de un ítem de servicio por su ID.</td></tr>
-    <tr><td>existsById(Long id)</td><td>Verifica si existe un ítem de servicio por su ID.</td></tr>
-    <tr><td>findByServiceHistoryId(Long, historyId)</td><td>Obtiene todos los ítems asociados a un historial de servicio.</td></tr>
-    <tr><td>findByItemTypeAndServiceHistoryId(ItemType type, Long historyId)</td><td>Filtra ítems por tipo dentro de un historial de servicio.</td></tr>
-    <tr><td>calculateTotalByServiceHistoryId(Long historyId)</td><td>Calcula el total de todos los ítems de un historial de servicio.</td></tr>
   </tbody>
 </table>
 
