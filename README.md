@@ -482,28 +482,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | assignNewOwner()           | void            | Public      | Cambia el dueño del vehículo.               |
 | revokeAuthorizedMechanic() | void            | Public      | Revoca el mecánico autorizado del vehículo. |
 
-### Entidad: `Owner`
-**Descripción:** Representa al usuario dueño de una motocicleta.
-
-| Atributos   | Tipo de dato | Visibilidad | Descripción                      |
-|-------------|--------------|-------------|----------------------------------|
-| id          | Long         | Private     | Identificador único del dueño.   |
-| name        | String       | Private     | Nombre completo del dueño.       |
-| email       | String       | Private     | Correo electrónico del dueño.    |
-
-| Métodos             | Tipo de retorno | Visibilidad | Descripción                       |
-|---------------------|-----------------|-------------|-----------------------------------|
-| validateOwnership() | boolean         | Public      | Valida la propiedad del vehículo. |
-
-### Entidad: `Mechanic`
-**Descripción:** Representa al mecánico que es propietario de un taller. Se le pueden asignar vehículos de dueños para su seguimiento y mantenimiento.
-
-| Atributos | Tipo de dato | Visibilidad | Descripción                       |
-|-----------|--------------|-------------|-----------------------------------|
-| id        | Long         | Private     | Identificador único del mecánico. |
-| name      | String       | Private     | Nombre completo del mecánico.     |
-| email     | String       | Private     | Correo electrónico del mecánico.  |
-
 ##### 4.2.1.2 Interface Layer
 
 ### Controlador: `VehicleController`
@@ -548,8 +526,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | Dependencia                      | Descripción                                      |
 |----------------------------------|--------------------------------------------------|
 | VehicleRepository                | Repositorio para consultar datos de vehículos.   |
-| OwnerRepository                  | Repositorio para consultar datos de dueños.      |
-| MechanicRepository               | Repositorio para consultar datos de mecánicos.   |
 | CreateVehicleCommand             | Comando para crear un vehículo.                  |
 | UpdateVehicleCommand             | Comando para actualizar un vehículo.             |
 | UpdateVehicleOwnerCommand        | Comando para actualizar el dueño de un vehículo. |
@@ -573,8 +549,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | Dependencia                  | Descripción                                           |
 |------------------------------|-------------------------------------------------------|
 | VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
-| OwnerRepository              | Repositorio para acceder a datos de dueños.           |
-| MechanicRepository           | Repositorio para acceder a datos de mecánicos.        |
 | GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
 | GetOwnerByIdQuery            | Obtiene un dueño por su ID.                           |
 | GetMechanicByIdQuery         | Obtiene un mecánico por su ID.                        |
@@ -596,22 +570,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | findByMechanicId(Long mechanicId) | Busca vehículos por ID de mecánico.        |
 | existsByVin(String vin)           | Verifica si un vehículo existe por su VIN. |
 | deleteById(Long id)               | Elimina un vehículo por su ID.             |
-
-### Clase: `OwnerRepository`
-**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de dueños.
-
-| Método            | Descripción                     |
-|-------------------|---------------------------------|
-| save(Owner owner) | Guarda o actualiza un dueño.    |
-| findById(Long id) | Busca un dueño por su ID.       |
-
-### Clase: `MechanicRepository`
-**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de mecánicos.
-
-| Método                  | Descripción                     |
-|-------------------------|---------------------------------|
-| save(Mechanic mechanic) | Guarda o actualiza un mecánico. |
-| findById(Long id)       | Busca un mecánico por su ID.    |
 
 ##### 4.2.1.5 Bounded Context Software Architecture Component Level Diagrams
 
