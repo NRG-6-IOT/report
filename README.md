@@ -182,6 +182,58 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
 
 #### 1.1.2 Perfiles de integrantes del equipo
 
+<table>
+  <tr>
+    <th colspan="2"> Juan Diego Astonitas </th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/JuanAstonitas-pfp.png" alt="Juan Astonitas" style="width: 500px; height: auto;" > </td>
+    <td> Mi nombre es Juan Diego Astonitas Diaz, mi código de estudiante es u202110237 ,tengo 21 años, actualmente curso el 6to ciclo de la carrera de Ingeniería de Software, en la UPC en la sede San Miguel. Mis principales cualidades son el liderazgo y el dominio de NextJS. Haré todo lo que esté a mi alcance para respaldar al equipo en la finalización oportuna y efectiva de las tareas asignadas. </td>
+  </tr>
+  <tr>
+    <th colspan="2"> Casas Sanchez Gabriel Alexander </th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
+    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
+  </tr>
+  <tr>
+    <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/gianluca-pfp.jpg" alt="Gianluca Pasquale" style="width: 500px; height: auto;"> </td>
+    <td> Me llamo Gianluca Santino Pasquale Barrenechea, estudiante de Ingeniería de Software (código u202112078). En nuestra Startup, me enfoco en el desarrollo frontend y backend, utilizando C++, C#, Python, Java, HTML y JavaScript. Mi objetivo es crear soluciones escalables y eficientes, mejorando la experiencia del usuario y optimizando la operación de la plataforma, siempre aplicando metodologías ágiles como Scrum. </td>
+  </tr>
+  <tr>
+    <th colspan="2">Jose Antonio Alejo Cardenas</th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/jose-pfp.jpg" alt="Jose Alejo" style="width: 500px; height: auto;"> </td>
+    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
+  </tr>
+  <tr>
+    <th colspan="2">Sebastian Pacheco Astiguetta</th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/Sebastian-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
+    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
+  </tr>
+  <tr>
+    <th colspan="2">Sebatian Omar Real Calderon</th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/sebastian-real-pfp.png" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
+    <td>  </td>
+  </tr>
+    <tr>
+    <th colspan="2">Max Anthony Paitan Pumachuca</th>
+  </tr>
+  <tr>
+    <td> <img src="images/chapter-1/max-pfp.png" alt="Max Paitan" style="width: 500px; height: auto;"> </td>
+    <td>  </td>
+  </tr>
+</table>
+
 ### 1.2 Solution Profile
 #### Problema identificado  
 En el contexto urbano, los dueños de motos suelen carecer de herramientas digitales que les permitan monitorear el estado de sus vehículos y llevar un control de sus costos de uso y mantenimiento. Esto ocasiona un uso ineficiente del combustible (monetario y rendimiento), fallas mecánicas inesperadas, gastos imprevistos y dificultades para planificar el cuidado preventivo de la moto.  
