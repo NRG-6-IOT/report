@@ -573,6 +573,29 @@ En esta sección se presentan los Empathy Mapping por cada segmento objetivo def
 
 ### 2.5 Ubiquitous Language
 
+| Término(inglés)      | Término(español)     | Definición(español)                                                                       |
+|----------------------|----------------------|-------------------------------------------------------------------------------------------|
+| Metric               | Métrica              | Dato cuantitativo sobre el estado o desempeño de la moto.                                 |
+| Report               | Report               | Conjunto estructurado de métricas procesadas y visualizadas.                              |
+| Comparison           | Comparación          | Análisis de diferencias entre métricas en distintos períodos o vehículos.                 |
+| Alert                | Alerta               | Notificación preventiva generada a partir de una métrica crítica o fuera de rango.        |
+| Historial            | Historial            | Registro acumulativo de eventos pasados relacionados con vehículos, servicios y clientes. |
+| Service              | Servicio             | Intervención realizada por un mecánico.                                                   |
+| Repair               | Reparación           | Acción específica para corregir un problema en la moto.                                   |
+| Spent                | Gasto                | Desembolso económico relacionado con el vehículo.                                         |
+| Client               | Cliente              | Dueño de moto asociado al historial.                                                      |
+| Subscription         | Suscripción          | Vínculo activo entre mecánico y dueño de moto.                                            |
+| Plan                 | Plan                 | Conjunto de beneficios y limitaciones (ejemplo: básico, premium).                         |
+| State                | Estado               | Condición de la suscripción (activa, suspendida, cancelada).                              |
+| Renewal              | Renovación           | Acción de extender la suscripción al vencer.                                              |
+| Preventive alert     | Alerta preventiva    | Notificación emitida al detectar un valor fuera de rango normal.                          |
+| Vehicle status       | Estado del vehículo  | Resumen general del bienestar (óptimo, regular, crítico).                                 |
+| Diagnosis            | Diagnóstico          | Interpretación de métricas para indicar posibles fallas o recomendaciones.                |
+| Vehicle              | Vehículo             | Moto registrada en la plataforma.                                                         |
+| Owner                | Dueño                | Usuario principal que gestiona el vehículo.                                               |
+| Authorized Mechanic  | Mecánico autorizado  | Usuario con acceso limitado al vehículo para servicios o diagnósticos.                    |
+| Vehicle registration | Registro de vehículo | Proceso de alta inicial en el sistema.                                                    |
+
 ## Capítulo III: Requirements Specification
 
 ### 3.1 User Stories
