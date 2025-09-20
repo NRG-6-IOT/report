@@ -252,8 +252,8 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
     <th colspan="2">Sebatian Omar Real Calderon</th>
   </tr>
   <tr>
-    <td> <img src="images/chapter-1/sebastian-real-pfp.png" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
-    <td>  </td>
+    <td> <img src="images/chapter-1/sebastian_real_pfp.jpeg" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
+    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
   </tr>
     <tr>
     <th colspan="2">Max Anthony Paitan Pumachuca</th>
