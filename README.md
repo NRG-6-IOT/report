@@ -1104,6 +1104,8 @@ User Stories:
 
 ## Conclusiones
 
+**TB1**: Durante el desarrollo del TB1, el equipo de trabajo logró definir claramente el problema a resolver y los objetivos del proyecto, estableciendo una base sólida para las siguientes fases del desarrollo. Usando metodologías ágiles, modelado estratégico y diseño centrado en el usuario, además del Lean UX, event storming, mapping y desarrollo de user stories, se sentaron las bases para un desarrollo iterativo y centrado en las necesidades del usuario final. Además, el proceso promovió la colaboración efectiva entre los miembros del equipo, facilitando la comunicación y la toma de decisiones informadas.
+
 ## Bibliografía
 
 ## Anexos
