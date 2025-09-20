@@ -747,8 +747,39 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <h3>Interfaz:<code>ExpenseHistoryQueryService</code></h3>
 
 <h3>Value Object:<code>ServiceType</code></h3>
+<table>
+  <thead>
+    <tr>
+      <th>ServiceType</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAINTENANCE</td>
+      <td>REPAIR</td>
+      <td>INSPECTION</td>
+      <td>INSTALLATION</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3>Value Object:<code>ExpenseType</code></h3>
+<table>
+  <thead>
+  <tr>
+    <th>ServiceType</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>MAINTENANCE</td>
+    <td>FUEL</td>
+    <td>INSURANCE</td>
+    <td>PROCEDURE</td>
+    <td>AESTHETIC</td>
+  </tr>
+  </tbody>
+</table>
 
 <table>
     <thead>
@@ -759,23 +790,73 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </thead>
     <tbody>
         <tr>
-            <td></td>
+          <td>CreateHistoryCommand</td>
+          <td>Crea una historia de servicio.</td>
+        </tr>
+        <tr>
+          <td>UpdateServiceHistoryCommand</td>
+          <td>Actualiza una historia de servicio.</td>
+        </tr>
+        <tr>
+          <td>DeleteServiceHistoryCommand</td>
+          <td>Elimina una historia de servicio.</td>
+        </tr>
+        <tr>
+          <td>CreateExpenseHistoryCommand</td>
+          <td>Crea una historia de gasto.</td>
+        </tr>
+        <tr>
+          <td>DeleteExpenseHistoryCommand</td>
+          <td>Elimina una historia de gasto.</td>
+        </tr>
+        <tr>
+          <td>UpdateExpenseHistoryCommand</td>
+          <td>Actualiza una historia de gasto.</td>
         </tr>
     </tbody>
 </table>
 
 <table>
-    <thead>
-        <tr>
-            <td>Queries</td>
-            <td>Description</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-        </tr>
-    </tbody>
+  <thead>
+  <tr>
+    <td>Queries</td>
+    <td>Description</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>GetServiceHistoriesByVehicleQuery</td>
+    <td>Obtiene las historias de servicios realizados a un vehículo específico.</td>
+  </tr>
+  <tr>
+    <td>GetServiceHistoryByIdQuery</td>
+    <td>Recupera el detalle de un servicio en particular a partir de su identificador único.</td>
+  </tr>
+  <tr>
+    <td>GetServicesByTypeQuery</td>
+    <td>Filtra y devuelve los servicios de un vehículo según el tipo de servicio solicitado.</td>
+  </tr>
+  <tr>
+    <td>GetServicesByDateRangeQuery</td>
+    <td>Obtiene todos los servicios realizados a un vehículo dentro de un rango de fechas específico.</td>
+  </tr>
+  <tr>
+    <td>GetExpenseHistoryByVehicleQuery</td>
+    <td>Recupera el historial de gastos relacionados a un vehículo a lo largo del tiempo.</td>
+  </tr>
+  <tr>
+    <td>GetExpenseByTypeQuery</td>
+    <td>Devuelve los gastos de un vehículo clasificados por un tipo de gasto específico.</td>
+  </tr>
+  <tr>
+    <td>GetExpensesByDateRangeQuery</td>
+    <td>Obtiene todos los gastos de un vehículo registrados dentro de un rango de fechas definido.</td>
+  </tr>
+  <tr>
+    <td>GetTotalInvestmentQuery</td>
+    <td>Calcula el monto total invertido en un vehículo, sumando servicios y gastos registrados.</td>
+  </tr>
+  </tbody>
 </table>
 
 ##### 4.2.2.2 Interface Layer
