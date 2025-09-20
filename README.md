@@ -87,6 +87,15 @@
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG-8-IOT/report](https://github.com/NRG-8-IOT/report).
 
+Distribución de commits:
+* Alejo Cardenas Jose Antonio (Firtness): commits.
+* Astonitas Díaz Juan Diego (NeorRise456): commits.
+* Casas Sanchez Gabriel Alexander (Al3xiel): commits.
+* Pasquale Barrenechea Gianluca Santino (cwassointt): commits.
+* Pacheco Astiguetta Sebastian (Pachieeee): commits.
+* Paitan Pumachuca Max Anthony (MaxPaitanP): commits.
+* Real Calderon Sebastian Omar (sebastianrealcalderon): commits.
+
 ## Contenido
 
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
