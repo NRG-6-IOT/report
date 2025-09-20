@@ -3313,23 +3313,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Clase: <code>SecurityConfig</code></h3>
-<p><strong>Descripción:</strong> Clase de configuración de seguridad de Spring Boot que define reglas de autenticación/autorización.</p>
-<ul>
-  <li>Configura filtros JWT.</li>
-  <li>Define rutas públicas (<code>/api/iam/auth/**</code>) y rutas protegidas.</li>
-  <li>Integra <code>PasswordHashingServiceImpl</code> y <code>TokenProviderServiceImpl</code>.</li>
-</ul>
-
-<h3>Clase: <code>UserEntity</code></h3>
-<p><strong>Descripción:</strong> Mapeada a la tabla <code>users</code>. Contiene atributos persistentes de usuario.</p>
-<ul>
-  <li>Atributos: id, username, email, displayName, password, role (varchar), status.</li>
-</ul>
-
-<h3>Clase: <code>RoleEntity</code></h3>
-<p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
-
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
 ##### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
