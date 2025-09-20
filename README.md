@@ -3214,6 +3214,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.6.6.2 Bounded Context Database Design Diagram
 
+![IAM-database.png](images/chapter-4/IAM-database.png)
+
 ## Conclusiones
 
 ## Bibliografía
