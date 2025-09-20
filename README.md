@@ -723,28 +723,119 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>handle(GetServiceHistoryByVehicleIdQuery)</td>
+    <td>handle(GetServiceHistoryByVehicleQuery)</td>
     <td>Público</td>
-    <td>Recupera las historias de servicio </td>
+    <td></td>
   </tr>
   <tr>
-    <td>handle(GetReportByVehicleIdQuery)</td>
+    <td>handle(GetServiceHistoryByIdQuery)</td>
     <td>Público</td>
-    <td>Recupera todos los reportes pertenecientes a un vehículo.</td>
+    <td></td>
   </tr>
   <tr>
-    <td>handle(GetMetricsByReportIdQuery)</td>
+    <td>handle(GetServicesByIdQuery)</td>
     <td>Público</td>
-    <td>Recupera todas las métricas de un reporte específico.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetServicesByDateRange)</td>
+    <td>Público</td>
+    <td></td>
   </tr>
   </tbody>
 </table>
 
 <h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
-
-<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
+<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de servicio.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(CreateServiceHistory)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(UpdateServiceHistory)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(DeleteServiceHistory)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 
 <h3>Interfaz:<code>ExpenseHistoryQueryService</code></h3>
+<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de gastos.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetExpensesByTypeQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetExpensesByDateRangeQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetTotalInvestmentQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
+<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de gastos.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(CreateExpenseHistoryCommand)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(UpdateExpenseHistoryCommand)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(DeleteExpenseHistoryCommand)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 
 <h3>Value Object:<code>ServiceType</code></h3>
 <table>
