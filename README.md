@@ -593,7 +593,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
 
-![Database Design Diagram](images/chapter-4/vehicle_management_bounded_context_database_design_diagram.png)
+<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.2 Bounded Context: Historiales
 
@@ -2853,7 +2853,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
-#### 4.2.6. Bounded Context: IAM
+##### 4.2.6. Bounded Context: IAM
 
 ###### 4.2.6.1 Domain Layer
 
