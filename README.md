@@ -2852,6 +2852,174 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <li><code>AuthenticationResourceAssembler</code>: Convierte resultados de autenticación en <code>AuthenticatedUserResource</code>.</li>
 </ul>
 
+#### 4.2.6.3 Application Layer
+
+<h3>Clase: <code>UserCommandServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>UserCommandServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones relacionadas con usuarios.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(CreateUserLeaderCommand)</td><td>Crea un nuevo usuario con rol de Líder (ej. mecánico).</td></tr>
+    <tr><td>handle(CreateUserMemberCommand)</td><td>Crea un nuevo usuario con rol de Miembro (ej. motociclista).</td></tr>
+    <tr><td>handle(SignUpCommand)</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
+    <tr><td>handle(UpdateUserInfoCommand)</td><td>Actualiza la información de un usuario existente.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>UserRepository</td><td>Repositorio encargado de la persistencia de usuarios.</td></tr>
+    <tr><td>RoleRepository</td><td>Repositorio encargado de la gestión de roles asociados a usuarios.</td></tr>
+    <tr><td>PasswordHashingService</td><td>Servicio de encriptación de contraseñas.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>RoleCommandServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>RoleCommandServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de comandos para la gestión de roles.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand)</td><td>Inicializa los roles básicos de la aplicación (ej. Admin, Mecánico, Motociclista).</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>RoleRepository</td><td>Repositorio encargado de la persistencia y gestión de roles.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>AuthenticationCommandServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>AuthenticationCommandServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones de autenticación.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SignInCommand)</td><td>Autentica a un usuario y devuelve un token JWT válido.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>UserRepository</td><td>Repositorio de usuarios para verificar credenciales.</td></tr>
+    <tr><td>PasswordHashingService</td><td>Servicio de verificación de contraseñas encriptadas.</td></tr>
+    <tr><td>TokenProviderService</td><td>Servicio encargado de la generación de tokens JWT.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>UserQueryServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>UserQueryServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de consultas para obtener información de usuarios.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllUsersQuery)</td><td>Obtiene la lista completa de usuarios registrados.</td></tr>
+    <tr><td>handle(GetUserByIdQuery)</td><td>Recupera los detalles de un usuario por su ID.</td></tr>
+    <tr><td>handle(GetUserByLeaderId)</td><td>Obtiene el usuario asociado a un mecánico específico.</td></tr>
+    <tr><td>handle(GetUserByMemberId)</td><td>Obtiene el usuario asociado a un motociclista específico.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery)</td><td>Busca un usuario por su nombre de usuario.</td></tr>
+    <tr><td>handle(GetUsersByGroupIdQuery)</td><td>Lista todos los usuarios vinculados a un grupo específico.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>UserRepository</td><td>Repositorio encargado de consultas de usuarios.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>RoleQueryServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>RoleQueryServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de consultas para roles.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery)</td><td>Obtiene todos los roles disponibles en el sistema.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery)</td><td>Recupera un rol específico por su nombre.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>RoleRepository</td><td>Repositorio encargado de consultas de roles.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>ApplicationReadyEventHandler</code></h3>
+<table>
+  <tr><th>Título</th><td>ApplicationReadyEventHandler</td></tr>
+  <tr><th>Descripción</th><td>Manejador de eventos que inicializa los roles base al iniciar la aplicación.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Evento</th><th>Acción</th></tr></thead>
+  <tbody>
+    <tr><td>ApplicationReadyEvent</td><td>Ejecuta el <code>SeedRolesCommand</code> para poblar roles iniciales.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>RoleCommandServiceImpl</td><td>Servicio de comandos encargado de sembrar los roles iniciales.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>PasswordHashingService</code></h3>
+<table>
+  <tr><th>Título</th><td>PasswordHashingService</td></tr>
+  <tr><th>Descripción</th><td>Servicio encargado de encriptar y verificar contraseñas.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>hashPassword(String plainPassword)</td><td>Genera un hash seguro de una contraseña en texto plano.</td></tr>
+    <tr><td>verifyPassword(String plainPassword, String hashedPassword)</td><td>Valida si una contraseña en texto plano coincide con su hash almacenado.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>TokenProviderService</code></h3>
+<table>
+  <tr><th>Título</th><td>TokenProviderService</td></tr>
+  <tr><th>Descripción</th><td>Servicio encargado de generar y validar tokens JWT para la autenticación.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>generateToken(User user)</td><td>Genera un token JWT a partir de la información de un usuario.</td></tr>
+    <tr><td>validateToken(String token)</td><td>Valida la autenticidad y vigencia de un token JWT.</td></tr>
+  </tbody>
+</table>
 
 
 
