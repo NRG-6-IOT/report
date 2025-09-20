@@ -166,15 +166,13 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
         - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
           - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-      - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
-        - [4.2.6.1 Domain Layer](#4261-domain-layer)
+        - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
+          - [4.2.6.1 Domain Layer](#4261-domain-layer)
         - [4.2.6.2 Interface Layer](#4262-interface-layer)
         - [4.2.6.3 Application Layer](#4263-application-layer)
-        - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
-        - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-          - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+          - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
+          - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+          - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
   - [Conclusiones](#conclusiones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
@@ -593,7 +591,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
 
-![Database Design Diagram](images/chapter-4/vehicle_management_bounded_context_database_design_diagram.png)
+<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.2 Bounded Context: Historiales
 
@@ -1338,7 +1336,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.2.6.2 Bounded Context Database Design Diagram
 
-
+<img src="./images/chapter-4/history_db.png" alt="history_db" width="600"/>
 
 #### 4.2.3 Bounded Context: Suscripción
 
@@ -1768,7 +1766,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/subscription_erd.png" alt="subscription_erd" width="600"/>
+<img src="./images/chapter-4/subscription_db.png" alt="subscription_db" width="600"/>
 
 #### 4.2.4 Bounded Context: Bienestar de Vehículos
 
@@ -2290,7 +2288,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_wellness_erd.png" alt="vehicle_wellness_erd" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
@@ -2852,6 +2850,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ![report-class-diagram.png](images/chapter-4/report-class-diagram.png)
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
+
+<img src="./images/chapter-4/report_db.png" alt="report_db" width="600"/>
 
 ##### 4.2.6. Bounded Context: IAM
 
