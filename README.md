@@ -2853,9 +2853,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
-##### 4.2.6. Bounded Context: IAM
+#### 4.2.6. Bounded Context: IAM
 
-###### 4.2.6.1 Domain Layer
+##### 4.2.6.1 Domain Layer
 
 <h3>Aggregate: <code>User</code></h3>
 <p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales, roles y relaciones entre usuarios (por ejemplo la relación propietario — mecánico).</p>
