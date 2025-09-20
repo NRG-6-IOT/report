@@ -716,9 +716,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>handle(GetReportByIdQuery)</td>
+    <td>handle(GetServiceHistoryByVehicleIdQuery)</td>
     <td>Público</td>
-    <td>Recupera un reporte.</td>
+    <td>Recupera las historias de servicio </td>
   </tr>
   <tr>
     <td>handle(GetReportByVehicleIdQuery)</td>
@@ -2277,50 +2277,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Interfaz: <code>MetricsDefinitionQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de definiciones de métricas.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetAllMetricTypesQuery)</td>
-    <td>Público</td>
-    <td>Recupera todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>handle(GetMetricTypeByIdQuery)</td>
-    <td>Público</td>
-    <td>Recupera una definición de métrica por identificador.</td>
-  </tr>
-  </tbody>
-</table>
-
-<h4>Queries:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Query</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>GetAllMetricTypesQuery()</td>
-    <td>Consulta de todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>GetMetricTypeByIdQuery</td>
-    <td>Consulta de una definición de métrica por identificador.</td>
-  </tr>
-  </tbody>
-</table>
-
 <h3>Interfaz: <code>MetricTypeCommandService</code></h3>
 <p><strong>Descripción:</strong>Servicio de comandos para controlar definiciones de métricas.</p>
 <table>
@@ -2488,6 +2444,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <td>ReportRepository</td>
     <td>Repositorio para persistencia de reportes.</td>
   </tr>
+  <tr>
+    <td>MetricTypeRepository</td>
+    <td>Repositorio para persistencia de tipos de métricas.</td>
+  </tr>
   </tbody>
 </table>
 <hr>
@@ -2535,55 +2495,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>ReportRepository</td>
       <td>Repositorio para persistencia de reportes.</td>
     </tr>
+    <tr>
+      <td>MetricTypeRepository</td>
+      <td>Repositorio para persistencia de tipos de métricas.</td>
+    </tr>
   </tbody>
 </table>
-
-<h3>Clase:<code>MetricTypeQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricTypeQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con definiciones de métrica.</td>
-  </tr>
-</table>
-
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetAllMetricTypesQuery)</td>
-    <td>Recupera todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>handle(GetMetricTypeByIdQuery)</td>
-    <td>Recupera una definición de métrica por identificador.</td>
-  </tr>
-</table>
-
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>MetricTypeRepository</td>
-    <td>Repositorio para persistencia de definiciones de métricas.</td>
-  </tr>
-  </tbody>
-</table>
-<hr>
 
 <h3>Clase:<code>MetricTypeCommandServiceImpl</code></h3>
 <table>
@@ -2606,7 +2523,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>SeedMetricTypesCommand</td>
+    <td>handle(SeedMetricTypesCommand)</td>
     <td>Inicializa las definiciones de métricas a nivel interno.</td>
   </tr>
 </table>
@@ -2623,6 +2540,56 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tr>
     <td>MetricTypeRepository</td>
     <td>Repositorio para persistencia de definiciones de métricas.</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>Clase:<code>ApplicationReadyEventHandler</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ApplicationReadyEventHandler</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Clase de manejo de configuraciones iniciales de la aplicación</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>on(ApplicationReadyEvent event)</td>
+    <td>Manejo de las acciones ejecutadas al recibir el evento ApplicationReadyEvent</td>
+  </tr>
+  <tr>
+    <td>currentTimestamp()</td>
+    <td>Obtiene el tiempo de ejecución de la aplicación en milisegundos.</td>
+  </tr>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+  <tr>
+    <th>Dependencia</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>MetricTypeRepository</td>
+    <td>Repositorio para persistencia de definiciones de métricas.</td>
+  </tr>
+  <tr>
+    <td>LOGGER</td>
+    <td>Atributo para imprimir eventos.</td>
   </tr>
   </tbody>
 </table>
