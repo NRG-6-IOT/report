@@ -211,6 +211,7 @@ del ABET – EAC - Student Outcome 5.
         <br>Alejo Cardenas, Jose Antonio: Asumí un liderazgo compartido junto a mis compañeros en la elaboración de User Stories, Impact Mapping y Bounded Contexts, valorando cada aporte y llegando a consensos que guiaron nuestro trabajo.
         <br> Pasquale Barrenechea, Gianluca Santino: A través de la investigación y análisis colaborativo, contribuí en el diseño detallado de los bounded context Suscripciones, Bienestar del Vehículo e IAM, asegurando la coherencia entre capas de dominio y aplicación, además de mantener la alineación con las relaciones entre mecánicos y usuarios.
         <br>Pacheco Astiguetta, Sebastian: Al analizar la información recopilada, se logró definir claramente los límites y responsabilidades de cada bounded context, facilitando la integración y comunicación entre ellos.
+        <br>Real Calderón, Sebastián Omar: Colaboré activamente con mis compañeros, aportando ideas y asumiendo un liderazgo compartido para alcanzar consensos y mantener la coherencia del trabajo en equipo.
       </td>
       <td>
         Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades (User Stories, Impact Mapping, Domain Storytelling, Eventstorming, Context Mapping y definición de Bounded Contexts), donde cada integrante asumió responsabilidades específicas y se promovió la toma de decisiones consensuada que permitió avanzar de manera organizada en cada etapa del trabajo.
@@ -223,6 +224,7 @@ del ABET – EAC - Student Outcome 5.
         <br>Alejo Cardenas, Jose Antonio: Fomenté un entorno inclusivo de colaboración durante el event storming, establecí metas claras con el equipo, planificamos tareas de forma organizada y logramos cumplir con los objetivos propuestos.
         <br> Pasquale Barrenchea, Gianluca Santino: Organicé las tareas del equipo para garantizar la correcta integración de los bounded contexts, promoví la comunicación constante y aseguré que cada entregable estuviera alineado con los objetivos definidos en el proyecto.
         <br>Pacheco Astiguetta, Sebastian: Fomenté un ambiente de trabajo inclusivo y colaborativo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar el cumplimiento de los objetivos del proyecto.
+        <br>Real Calderón, Sebastián Omar: Ayudé a fomentar un ambiente de colaboración e inclusión, participando en la planificación de tareas y en el cumplimiento de los objetivos del proyecto.
       </td>
       <td>
         Generamos un entorno inclusivo que facilitó la participación activa de todos los miembros, definiendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de presentaciones, mapeos de contexto, análisis competitivo y construcción del lenguaje ubicuo. Gracias a esta coordinación, logramos cumplir con los objetivos planteados en cada entrega de manera eficiente y colaborativa.
