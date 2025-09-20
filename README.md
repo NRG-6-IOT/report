@@ -1105,8 +1105,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 #### 4.2.3 Bounded Context: Suscripción
 
 ##### 4.2.3.1 Domain Layer
-<h3>Aggregate: <code>Subscription</code></h3>
-<p><strong>Descripción:</strong> Representa la relación formal entre un <code>Owner</code> (dueño de moto) y un <code>Mechanic</code> mediante un <code>Plan</code>, vinculada a un vehículo y con un ciclo de vida definido (activa, suspendida, cancelada, expirada).</p>
+
+<h3>Aggregate: <code>Appointment</code></h3>
+<p><strong>Descripción:</strong> Representa una cita programada entre un <code>Mechanic</code> y un vehículo específico, con fecha y hora definidas.</p>
 <table>
   <thead>
     <tr>
@@ -1117,36 +1118,83 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la suscripción.</td></tr>
-    <tr><td>owner</td><td>Owner</td><td>Private</td><td>Dueño de la moto vinculado a la suscripción.</td></tr>
-    <tr><td>mechanic</td><td>Mechanic</td><td>Private</td><td>Mecánico vinculado a la suscripción.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo registrado en la suscripción.</td></tr>
-    <tr><td>plan</td><td>Plan</td><td>Private</td><td>Plan asociado a la suscripción (básico, premium, prueba).</td></tr>
-    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción (activa, suspendida, cancelada, expirada).</td></tr>
-    <tr><td>startDate</td><td>Timestamp</td><td>Private</td><td>Fecha de inicio de la suscripción.</td></tr>
-    <tr><td>endDate</td><td>Timestamp</td><td>Private</td><td>Fecha de finalización de la suscripción.</td></tr>
-    <tr><td>renewalDate</td><td>Timestamp</td><td>Private</td><td>Fecha programada para renovación (si aplica).</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del registro.</td></tr>
-    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>Identificador único del mecánico asignado.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador único del vehículo asociado.</td></tr>
+    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de la cita.</td></tr>
   </tbody>
 </table>
+
+<h3>Aggregate: <code>Subscription</code></h3>
+<p><strong>Descripción:</strong> Representa la relación entre un <code>User</code> (motociclista) y un <code>Mechanic</code>, establecida mediante una suscripción con código de invitación.</p>
 <table>
   <thead>
     <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
       <th>Visibilidad</th>
       <th>Descripción</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>activate()</td><td>void</td><td>Public</td><td>Activa la suscripción si cumple con las reglas de negocio.</td></tr>
-    <tr><td>suspend()</td><td>void</td><td>Public</td><td>Suspende temporalmente la suscripción.</td></tr>
-    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela definitivamente la suscripción.</td></tr>
-    <tr><td>renew()</td><td>void</td><td>Public</td><td>Renueva la suscripción al alcanzar la fecha de expiración.</td></tr>
-    <tr><td>isActive()</td><td>boolean</td><td>Public</td><td>Verifica si la suscripción está activa.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico vinculado.</td></tr>
+    <tr><td>userId</td><td>Long</td><td>Private</td><td>ID del usuario (motociclista).</td></tr>
+    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción.</td></tr>
+    <tr><td>invitationCode</td><td>String</td><td>Private</td><td>Código de invitación generado para vincular al usuario.</td></tr>
   </tbody>
 </table>
+
+<h3>Value Objects</h3>
+<h4><code>AppointmentStatus</code> (Enum)</h4>
+<ul>
+  <li>SCHEDULED</li>
+  <li>COMPLETED</li>
+  <li>CANCELED</li>
+</ul>
+<h4><code>SubscriptionStatus</code> (Enum)</h4>
+<ul>
+  <li>ACTIVATED</li>
+  <li>CANCELED</li>
+</ul>
+
+<h3>Commands</h3>
+<ul>
+  <li>ScheduleAppointmentCommand &lt;&lt;Record&gt;&gt;</li>
+  <li>GenerateInvitationCodeCommand &lt;&lt;Record&gt;&gt;</li>
+  <li>CancelSubscriptionCommand &lt;&lt;Record&gt;&gt;</li>
+  <li>LinkMotorcyclistToMechanicCommand &lt;&lt;Record&gt;&gt;</li>
+</ul>
+
+<h3>Queries</h3>
+<ul>
+  <li>GetAppointmentByIdQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetAppointmentByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetAppointmentsByDateRangeQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetUsersByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetSubscriptionByIdQuery &lt;&lt;Record&gt;&gt;</li>
+</ul>
+
+<h3>Services</h3>
+<h4><code>AppointmentCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(ScheduleAppointmentCommand)</li>
+</ul>
+<h4><code>AppointmentQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(GetAppointmentByIdQuery)</li>
+  <li>+handle(GetAppointmentsByMechanicQuery)</li>
+  <li>+handle(GetAppointmentsByDateRangeQuery)</li>
+</ul>
+<h4><code>SubscriptionCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(GenerateInvitationCodeCommand)</li>
+  <li>+handle(CancelSubscriptionCommand)</li>
+  <li>+handle(LinkMotorcyclistToMechanicCommand)</li>
+</ul>
+<h4><code>SubscriptionQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(GetSubscriptionByIdQuery)</li>
+  <li>+handle(GetUsersByMechanicQuery)</li>
+</ul>
 
 ##### 4.2.3.2 Interface Layer
 <h3>Controlador: <code>SubscriptionController</code></h3>
