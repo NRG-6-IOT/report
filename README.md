@@ -2788,7 +2788,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-#### 4.2.6.2 Interface Layer  
+#### 4.2.6.2 Interface Layer
 
 <h3>Clase: <code>AuthenticationController</code></h3>
 <p><strong>Descripción:</strong> Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma.</p>
@@ -2824,7 +2824,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr><td>/api/iam/users</td><td>GET</td><td>Lista todos los usuarios registrados.</td></tr>
     <tr><td>/api/iam/users/{id}</td><td>GET</td><td>Obtiene los detalles de un usuario por su ID.</td></tr>
-    <tr><td>/api/iam/users/leader/{leaderId}</td><td>GET</td><td>Obtiene el usuario vinculado a un líder/mecánico específico.</td></tr>
+    <tr><td>/api/iam/users/mechanic/{mechanicId}</td><td>GET</td><td>Obtiene el usuario vinculado a un mecánico específico.</td></tr>
     <tr><td>/api/iam/users/member/{memberId}</td><td>GET</td><td>Obtiene el usuario vinculado a un miembro/owner específico.</td></tr>
     <tr><td>/api/iam/users/group/{groupId}</td><td>GET</td><td>Obtiene todos los usuarios pertenecientes a un grupo determinado.</td></tr>
     <tr><td>/api/iam/users/{id}</td><td>PUT</td><td>Actualiza información de un usuario (displayName, email, roles).</td></tr>
@@ -2839,7 +2839,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <li><code>RoleResource</code>: Representa un rol con su nombre y permisos.</li>
   <li><code>SignInResource</code>: Contiene credenciales de acceso (username/email + password).</li>
   <li><code>SignUpResource</code>: Contiene la información necesaria para registrar un nuevo usuario.</li>
-  <li><code>UserLeaderResource</code>: Representa un usuario con rol de mecánico/líder y sus miembros asociados.</li>
+  <li><code>UserMechanicResource</code>: Representa un usuario con rol de mecánico y sus miembros asociados.</li>
   <li><code>UserMemberResource</code>: Representa un usuario con rol de dueño/miembro y su mecánico vinculado.</li>
   <li><code>UserResource</code>: DTO genérico para exponer información común de un usuario (id, username, email, displayName, roles, estado).</li>
 </ul>
@@ -2862,8 +2862,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <table>
   <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
   <tbody>
-    <tr><td>handle(CreateUserLeaderCommand)</td><td>Crea un nuevo usuario con rol de Líder (ej. mecánico).</td></tr>
-    <tr><td>handle(CreateUserMemberCommand)</td><td>Crea un nuevo usuario con rol de Miembro (ej. motociclista).</td></tr>
+    <tr><td>handle(CreateUserMechanicCommand)</td><td>Crea un nuevo usuario con rol de Mecánico.</td></tr>
+    <tr><td>handle(CreateUserMemberCommand)</td><td>Crea un nuevo usuario con rol de Motociclista.</td></tr>
     <tr><td>handle(SignUpCommand)</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
     <tr><td>handle(UpdateUserInfoCommand)</td><td>Actualiza la información de un usuario existente.</td></tr>
   </tbody>
@@ -2934,7 +2934,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr><td>handle(GetAllUsersQuery)</td><td>Obtiene la lista completa de usuarios registrados.</td></tr>
     <tr><td>handle(GetUserByIdQuery)</td><td>Recupera los detalles de un usuario por su ID.</td></tr>
-    <tr><td>handle(GetUserByLeaderId)</td><td>Obtiene el usuario asociado a un mecánico específico.</td></tr>
+    <tr><td>handle(GetUserByMechanicId)</td><td>Obtiene el usuario asociado a un mecánico específico.</td></tr>
     <tr><td>handle(GetUserByMemberId)</td><td>Obtiene el usuario asociado a un motociclista específico.</td></tr>
     <tr><td>handle(GetUserByUsernameQuery)</td><td>Busca un usuario por su nombre de usuario.</td></tr>
     <tr><td>handle(GetUsersByGroupIdQuery)</td><td>Lista todos los usuarios vinculados a un grupo específico.</td></tr>
@@ -3020,6 +3020,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>validateToken(String token)</td><td>Valida la autenticidad y vigencia de un token JWT.</td></tr>
   </tbody>
 </table>
+
+##### 4.2.6.4 Infrastructure Layer
+
 
 
 
