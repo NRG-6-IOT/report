@@ -3098,38 +3098,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h4>Resources:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Resource</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>AuthenticatedUserResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Representa un usuario autenticado y su token JWT.</td>
-    </tr>
-    <tr>
-      <td>RoleResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso para exponer información de roles (nombre y permisos).</td>
-    </tr>
-    <tr>
-      <td>SignInResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Credenciales de acceso para autenticación (username/email + password).</td>
-    </tr>
-    <tr>
-      <td>SignUpResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Información necesaria para registrar un nuevo usuario.</td>
-    </tr>
-    <tr>
-      <td>UserResource &lt;&lt;Record&gt;&gt;</td>
-      <td>DTO para exponer información de un usuario (id, username, email, displayName, role, status).</td>
-    </tr>
-  </tbody>
-</table>
-
 ##### 4.2.6.3 Application Layer
 
 <h3>Clase: <code>UserCommandServiceImpl</code></h3>
@@ -3348,28 +3316,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Clase: <code>SecurityConfig</code></h3>
-<p><strong>Descripción:</strong> Clase de configuración de seguridad de Spring Boot que define reglas de autenticación/autorización.</p>
-<ul>
-  <li>Configura filtros JWT.</li>
-  <li>Define rutas públicas (<code>/api/iam/auth/**</code>) y rutas protegidas.</li>
-  <li>Integra <code>PasswordHashingServiceImpl</code> y <code>TokenProviderServiceImpl</code>.</li>
-</ul>
-
-<h3>Clase: <code>UserEntity</code></h3>
-<p><strong>Descripción:</strong> Mapeada a la tabla <code>users</code>. Contiene atributos persistentes de usuario.</p>
-<ul>
-  <li>Atributos: id, username, email, displayName, password, role (varchar), status.</li>
-</ul>
-
-<h3>Clase: <code>RoleEntity</code></h3>
-<p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
-
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
+
+![IAM Class Diagram](images/chapter-4/iam_class_diagram.png)
 
 ###### 4.2.6.6.2 Bounded Context Database Design Diagram
 
