@@ -1469,15 +1469,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.2 Interface Layer
 
-<h3>Controlador: <code>VehicleWellnessController</code></h3>
+<h3>Controlador: <code>MetricController</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>VehicleWellnessController</td>
+    <td>MetricController</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que gestiona las operaciones relacionadas con el bienestar de los vehículos, incluyendo la consulta de métricas, alertas preventivas, generación de diagnósticos y administración de datos históricos.</td>
+    <td>Controlador REST que gestiona las operaciones de creación, consulta y recuperación de métricas de bienestar de los vehículos.</td>
   </tr>
 </table>
 <table>
@@ -1490,34 +1490,24 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>getVehicleWellnessById</td>
-      <td>GET /api/v1/wellness/{vehicleId}</td>
-      <td>Obtiene el estado general de bienestar de un vehículo específico por su ID.</td>
+      <td>createMetric</td>
+      <td>POST /api/v1/metrics</td>
+      <td>Crea una nueva métrica asociada a un vehículo.</td>
     </tr>
     <tr>
-      <td>getVehicleMetrics</td>
-      <td>GET /api/v1/wellness/{vehicleId}/metrics</td>
-      <td>Recupera las métricas en tiempo real y/o históricas de un vehículo.</td>
+      <td>getMetricsByVehicle</td>
+      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
+      <td>Obtiene todas las métricas registradas para un vehículo específico.</td>
     </tr>
     <tr>
-      <td>getVehicleAlerts</td>
-      <td>GET /api/v1/wellness/{vehicleId}/alerts</td>
-      <td>Obtiene todas las alertas preventivas y activas de un vehículo.</td>
+      <td>getMetricsByDateRange</td>
+      <td>GET /api/v1/metrics/vehicle/{vehicleId}/range?from={from}&to={to}</td>
+      <td>Recupera las métricas de un vehículo dentro de un rango de fechas específico.</td>
     </tr>
     <tr>
-      <td>generateDiagnosis</td>
-      <td>POST /api/v1/wellness/{vehicleId}/diagnosis</td>
-      <td>Genera un diagnóstico automático basado en las métricas actuales del vehículo.</td>
-    </tr>
-    <tr>
-      <td>updateMetrics</td>
-      <td>PUT /api/v1/wellness/{vehicleId}/metrics</td>
-      <td>Actualiza las métricas de un vehículo recibidas desde el dispositivo IoT.</td>
-    </tr>
-    <tr>
-      <td>deleteWellnessData</td>
-      <td>DELETE /api/v1/wellness/{vehicleId}</td>
-      <td>Elimina los datos históricos de bienestar asociados a un vehículo.</td>
+      <td>getMetricById</td>
+      <td>GET /api/v1/metrics/{id}</td>
+      <td>Obtiene una métrica específica por su ID.</td>
     </tr>
   </tbody>
 </table>
@@ -1531,28 +1521,55 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>VehicleWellnessQueryService</td>
-      <td>Servicio para consultas de estado general, métricas y alertas de los vehículos.</td>
+      <td>MetricQueryService</td>
+      <td>Servicio para consultas relacionadas con métricas de vehículos.</td>
     </tr>
     <tr>
-      <td>VehicleWellnessCommandService</td>
-      <td>Servicio para ejecutar comandos relacionados con la actualización de métricas, generación de diagnósticos y eliminación de datos.</td>
+      <td>MetricCommandService</td>
+      <td>Servicio para ejecutar comandos relacionados con la creación y gestión de métricas.</td>
     </tr>
     <tr>
-      <td>CreateDiagnosisCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de generación de diagnósticos de vehículos.</td>
+      <td>CreateMetricCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de creación de métricas.</td>
     </tr>
     <tr>
-      <td>UpdateMetricsCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de actualización de métricas.</td>
+      <td>MetricResourceFromEntityAssembler</td>
+      <td>Convierte entidades de métricas en recursos REST para la respuesta.</td>
     </tr>
     <tr>
-      <td>DeleteWellnessDataCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de eliminación de datos históricos de bienestar.</td>
+      <td>CreateNotificationCommandFromResourceAssembler</td>
+      <td>Convierte recursos REST en comandos de creación de notificaciones preventivas relacionadas con métricas.</td>
     </tr>
     <tr>
-      <td>VehicleWellnessResourceFromEntityAssembler</td>
-      <td>Convierte entidades de bienestar del vehículo en recursos REST para la respuesta de la API.</td>
+      <td>NotificationResourceFromEntityAssembler</td>
+      <td>Convierte entidades de notificación en recursos REST para la respuesta.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Resources:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CreateMetricResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Recurso usado para la creación de métricas.</td>
+    </tr>
+    <tr>
+      <td>MetricResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Recurso usado para exponer métricas en las respuestas REST.</td>
+    </tr>
+    <tr>
+      <td>CreateNotificationResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Recurso usado para la creación de notificaciones asociadas al bienestar vehicular.</td>
+    </tr>
+    <tr>
+      <td>NotificationResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Recurso usado para exponer notificaciones en las respuestas REST.</td>
     </tr>
   </tbody>
 </table>
