@@ -699,9 +699,36 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
-
 <h3>Interfaz:<code>ServiceHistoryQueryService</code></h3>
+<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de servicio.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(GetReportByIdQuery)</td>
+    <td>Público</td>
+    <td>Recupera un reporte.</td>
+  </tr>
+  <tr>
+    <td>handle(GetReportByVehicleIdQuery)</td>
+    <td>Público</td>
+    <td>Recupera todos los reportes pertenecientes a un vehículo.</td>
+  </tr>
+  <tr>
+    <td>handle(GetMetricsByReportIdQuery)</td>
+    <td>Público</td>
+    <td>Recupera todas las métricas de un reporte específico.</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
 
 <h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
 
@@ -2072,9 +2099,28 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>reportId</td><td>Long</td><td>Private</td><td>Identificador único del reporte.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador del vehículo asociado al reporte.</td></tr>
-    <tr><td>reportDate</td><td>Date</td><td>Private</td><td>Fecha de inicio del periodo mensual cubierto por el reporte.</td></tr>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del reporte.</td>
+    </tr>
+    <tr>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador del vehículo asociado al reporte.</td>
+    </tr>
+    <tr>
+      <td>metrics</td>
+      <td>List&lt;Metric&gt;</td>
+    </tr>
+    <tr>
+      <td>reportDate</td>
+      <td>Date</td>
+      <td>Private</td>
+      <td>Fecha de inicio del periodo mensual cubierto por el reporte.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -2097,18 +2143,17 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>Identificador único de la métrica.</td>
     </tr>
     <tr>
-      <td>reportId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>Identificador del reporte al que le pertenece la métrica.</td>
-    </tr>
-    <tr>
-      <td>metricTypeId</td>
-      <td>Long</td>
+      <td>type</td>
+      <td>Metric</td>
       <td>Private</td>
       <td>Identificador de la definición de la métrica.</td>
     </tr>
-    <tr><td>metricValue</td><td>String</td><td>Private</td><td>Valor de la métrica.</td></tr>
+    <tr>
+      <td>metricValue</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Valor de la métrica.</td>
+    </tr>
   </tbody>
 </table>
 
