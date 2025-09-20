@@ -176,6 +176,10 @@ del ABET – EAC - Student Outcome 5.
 
 #### 1.1.1 Descripción de la Startup
 
+NRG6 es una startup tecnológica enfocada en la innovación para el sector de movilidad inteligente. Su misión es transformar la manera en que propietarios, mecánicos y empresas gestionan el estado, uso y bienestar de motocicletas y vehículos, combinando IoT, análisis de datos y experiencia digital en una sola plataforma integral.
+
+BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicaciones web y móviles para brindar a los usuarios una visión completa de su moto: métricas en tiempo real, historial de mantenimientos, alertas preventivas, reportes personalizados y beneficios a través de planes de suscripción.
+
 #### 1.1.2 Perfiles de integrantes del equipo
 
 ### 1.2 Solution Profile
