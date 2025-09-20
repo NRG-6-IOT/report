@@ -166,10 +166,10 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
         - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
           - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-        - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
+      - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
         - [4.2.6.1 Domain Layer](#4261-domain-layer)
-      - [4.2.6.2 Interface Layer](#4262-interface-layer)
-      - [4.2.6.3 Application Layer](#4263-application-layer)
+        - [4.2.6.2 Interface Layer](#4262-interface-layer)
+        - [4.2.6.3 Application Layer](#4263-application-layer)
         - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
         - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
@@ -2855,7 +2855,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.6. Bounded Context: IAM
 
-##### 4.2.6.1 Domain Layer
+###### 4.2.6.1 Domain Layer
 
 <h3>Aggregate: <code>User</code></h3>
 <p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales, roles y relaciones entre usuarios (por ejemplo la relación propietario — mecánico).</p>
@@ -2923,7 +2923,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-#### 4.2.6.2 Interface Layer
+##### 4.2.6.2 Interface Layer
 
 <h3>Clase: <code>AuthenticationController</code></h3>
 <p><strong>Descripción:</strong> Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma.</p>
@@ -2982,7 +2982,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <li><code>AuthenticationResourceAssembler</code>: Convierte resultados de autenticación en <code>AuthenticatedUserResource</code>.</li>
 </ul>
 
-#### 4.2.6.3 Application Layer
+##### 4.2.6.3 Application Layer
 
 <h3>Clase: <code>UserCommandServiceImpl</code></h3>
 <table>
@@ -3145,7 +3145,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-##### 4.2.6.4 Infrastructure Layer
+###### 4.2.6.4 Infrastructure Layer
 
 <h3>Clase: <code>UserRepositoryImpl</code></h3>
 <p><strong>Descripción:</strong> Implementación de <code>UserRepository</code> usando JPA/Hibernate para persistir y consultar usuarios.</p>
@@ -3217,13 +3217,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <h3>Clase: <code>RoleEntity</code></h3>
 <p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
 
-##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
+###### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
-##### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
 
-###### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
+####### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
 
-###### 4.2.6.6.2 Bounded Context Database Design Diagram
+####### 4.2.6.6.2 Bounded Context Database Design Diagram
 
 ![IAM-database.png](images/chapter-4/IAM-database.png)
 
