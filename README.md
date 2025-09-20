@@ -552,8 +552,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | Método                               | Descripción                                           |
 |--------------------------------------|-------------------------------------------------------|
 | handle(GetVehicleByIdQuery)          | Obtiene un vehículo por su ID.                        |
-| handle(GetOwnerByIdQuery)            | Obtiene un dueño por su ID.                           |
-| handle(GetMechanicByIdQuery)         | Obtiene un mecánico por su ID.                        |
 | handle(GetVehiclesByOwnerIdQuery)    | Obtiene todos los vehículos de un dueño               |
 | handle(GetVehiclesByMechanicIdQuery) | Obtiene todos los vehículos vinculados a un mecánico. |
 | handle(GetVehicleByVinQuery)         | Obtiene un vehículo por su VIN.                       |
@@ -564,8 +562,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 |------------------------------|-------------------------------------------------------|
 | VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
 | GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
-| GetOwnerByIdQuery            | Obtiene un dueño por su ID.                           |
-| GetMechanicByIdQuery         | Obtiene un mecánico por su ID.                        |
 | GetVehiclesByOwnerIdQuery    | Obtiene todos los vehículos de un dueño.              |
 | GetVehiclesByMechanicIdQuery | Obtiene todos los vehículos vinculados a un mecánico. |
 | GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
@@ -593,7 +589,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
 
+![Class Diagram](images/chapter-4/vehicle_management_bounded_context_domain_layer_class_diagram.png)
+
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
+
+![Database Design Diagram](images/chapter-4/vehicle_management_bounded_context_database_design_diagram.png)
 
 #### 4.2.2 Bounded Context: Historiales
 
@@ -725,32 +725,154 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>handle(GetReportByIdQuery)</td>
+    <td>handle(GetServiceHistoryByVehicleQuery)</td>
     <td>Público</td>
-    <td>Recupera un reporte.</td>
+    <td></td>
   </tr>
   <tr>
-    <td>handle(GetReportByVehicleIdQuery)</td>
+    <td>handle(GetServiceHistoryByIdQuery)</td>
     <td>Público</td>
-    <td>Recupera todos los reportes pertenecientes a un vehículo.</td>
+    <td></td>
   </tr>
   <tr>
-    <td>handle(GetMetricsByReportIdQuery)</td>
+    <td>handle(GetServicesByIdQuery)</td>
     <td>Público</td>
-    <td>Recupera todas las métricas de un reporte específico.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetServicesByDateRange)</td>
+    <td>Público</td>
+    <td></td>
   </tr>
   </tbody>
 </table>
 
 <h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
-
-<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
+<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de servicio.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(CreateServiceHistory)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(UpdateServiceHistory)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(DeleteServiceHistory)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 
 <h3>Interfaz:<code>ExpenseHistoryQueryService</code></h3>
+<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de gastos.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetExpensesByTypeQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetExpensesByDateRangeQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(GetTotalInvestmentQuery)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
+<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de gastos.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Visibilidad</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(CreateExpenseHistoryCommand)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(UpdateExpenseHistoryCommand)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>handle(DeleteExpenseHistoryCommand)</td>
+    <td>Público</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 
 <h3>Value Object:<code>ServiceType</code></h3>
+<table>
+  <thead>
+    <tr>
+      <th>ServiceType</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAINTENANCE</td>
+      <td>REPAIR</td>
+      <td>INSPECTION</td>
+      <td>INSTALLATION</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3>Value Object:<code>ExpenseType</code></h3>
+<table>
+  <thead>
+  <tr>
+    <th>ServiceType</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>MAINTENANCE</td>
+    <td>FUEL</td>
+    <td>INSURANCE</td>
+    <td>PROCEDURE</td>
+    <td>AESTHETIC</td>
+  </tr>
+  </tbody>
+</table>
 
 <table>
     <thead>
@@ -761,23 +883,73 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </thead>
     <tbody>
         <tr>
-            <td></td>
+          <td>CreateHistoryCommand</td>
+          <td>Crea una historia de servicio.</td>
+        </tr>
+        <tr>
+          <td>UpdateServiceHistoryCommand</td>
+          <td>Actualiza una historia de servicio.</td>
+        </tr>
+        <tr>
+          <td>DeleteServiceHistoryCommand</td>
+          <td>Elimina una historia de servicio.</td>
+        </tr>
+        <tr>
+          <td>CreateExpenseHistoryCommand</td>
+          <td>Crea una historia de gasto.</td>
+        </tr>
+        <tr>
+          <td>DeleteExpenseHistoryCommand</td>
+          <td>Elimina una historia de gasto.</td>
+        </tr>
+        <tr>
+          <td>UpdateExpenseHistoryCommand</td>
+          <td>Actualiza una historia de gasto.</td>
         </tr>
     </tbody>
 </table>
 
 <table>
-    <thead>
-        <tr>
-            <td>Queries</td>
-            <td>Description</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-        </tr>
-    </tbody>
+  <thead>
+  <tr>
+    <td>Queries</td>
+    <td>Description</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>GetServiceHistoriesByVehicleQuery</td>
+    <td>Obtiene las historias de servicios realizados a un vehículo específico.</td>
+  </tr>
+  <tr>
+    <td>GetServiceHistoryByIdQuery</td>
+    <td>Recupera el detalle de un servicio en particular a partir de su identificador único.</td>
+  </tr>
+  <tr>
+    <td>GetServicesByTypeQuery</td>
+    <td>Filtra y devuelve los servicios de un vehículo según el tipo de servicio solicitado.</td>
+  </tr>
+  <tr>
+    <td>GetServicesByDateRangeQuery</td>
+    <td>Obtiene todos los servicios realizados a un vehículo dentro de un rango de fechas específico.</td>
+  </tr>
+  <tr>
+    <td>GetExpenseHistoryByVehicleQuery</td>
+    <td>Recupera el historial de gastos relacionados a un vehículo a lo largo del tiempo.</td>
+  </tr>
+  <tr>
+    <td>GetExpenseByTypeQuery</td>
+    <td>Devuelve los gastos de un vehículo clasificados por un tipo de gasto específico.</td>
+  </tr>
+  <tr>
+    <td>GetExpensesByDateRangeQuery</td>
+    <td>Obtiene todos los gastos de un vehículo registrados dentro de un rango de fechas definido.</td>
+  </tr>
+  <tr>
+    <td>GetTotalInvestmentQuery</td>
+    <td>Calcula el monto total invertido en un vehículo, sumando servicios y gastos registrados.</td>
+  </tr>
+  </tbody>
 </table>
 
 ##### 4.2.2.2 Interface Layer
@@ -790,7 +962,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios, gastos y reparaciones de vehículos.</td>
+    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios y gastos de vehículos.</td>
   </tr>
 </table>
 
@@ -816,7 +988,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr>
       <td>addServiceHistory(ServiceHistory history)</td>
       <td>POST /api/v1/history/service</td>
-      <td>Agrega un nuevo registro de servicio al historial.</td>
+      <td>Agrega un nuevo registro de servicio.</td>
     </tr>
     <tr>
       <td>updateServiceHistory(Long id, ServiceHistory history)</td>
@@ -865,6 +1037,18 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>HistoryResource</td>
+      <td>Recurso REST representante de un elemento de historial</td>
+    </tr>
+    <tr>
+      <td>CreateServiceHistoryResource</td>
+      <td>Recurso REST representante de la creación de un elemento de historial de servicios</td>
+    </tr>
+    <tr>
+      <td>CreateExpenseHistoryResource</td>
+      <td>Recurso REST representante de la creación de un elemento de historial de gastos</td>
+    </tr>
     <tr>
       <td>HistoryQueryService</td>
       <td>Servicio para consultas y recuperación de datos de historiales.</td>
@@ -2286,50 +2470,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Interfaz: <code>MetricsDefinitionQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de definiciones de métricas.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetAllMetricTypesQuery)</td>
-    <td>Público</td>
-    <td>Recupera todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>handle(GetMetricTypeByIdQuery)</td>
-    <td>Público</td>
-    <td>Recupera una definición de métrica por identificador.</td>
-  </tr>
-  </tbody>
-</table>
-
-<h4>Queries:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Query</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>GetAllMetricTypesQuery()</td>
-    <td>Consulta de todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>GetMetricTypeByIdQuery</td>
-    <td>Consulta de una definición de métrica por identificador.</td>
-  </tr>
-  </tbody>
-</table>
-
 <h3>Interfaz: <code>MetricTypeCommandService</code></h3>
 <p><strong>Descripción:</strong>Servicio de comandos para controlar definiciones de métricas.</p>
 <table>
@@ -2497,6 +2637,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <td>ReportRepository</td>
     <td>Repositorio para persistencia de reportes.</td>
   </tr>
+  <tr>
+    <td>MetricTypeRepository</td>
+    <td>Repositorio para persistencia de tipos de métricas.</td>
+  </tr>
   </tbody>
 </table>
 <hr>
@@ -2544,55 +2688,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>ReportRepository</td>
       <td>Repositorio para persistencia de reportes.</td>
     </tr>
+    <tr>
+      <td>MetricTypeRepository</td>
+      <td>Repositorio para persistencia de tipos de métricas.</td>
+    </tr>
   </tbody>
 </table>
-
-<h3>Clase:<code>MetricTypeQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricTypeQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con definiciones de métrica.</td>
-  </tr>
-</table>
-
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetAllMetricTypesQuery)</td>
-    <td>Recupera todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>handle(GetMetricTypeByIdQuery)</td>
-    <td>Recupera una definición de métrica por identificador.</td>
-  </tr>
-</table>
-
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>MetricTypeRepository</td>
-    <td>Repositorio para persistencia de definiciones de métricas.</td>
-  </tr>
-  </tbody>
-</table>
-<hr>
 
 <h3>Clase:<code>MetricTypeCommandServiceImpl</code></h3>
 <table>
@@ -2615,7 +2716,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>SeedMetricTypesCommand</td>
+    <td>handle(SeedMetricTypesCommand)</td>
     <td>Inicializa las definiciones de métricas a nivel interno.</td>
   </tr>
 </table>
@@ -2632,6 +2733,56 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tr>
     <td>MetricTypeRepository</td>
     <td>Repositorio para persistencia de definiciones de métricas.</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>Clase:<code>ApplicationReadyEventHandler</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ApplicationReadyEventHandler</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Clase de manejo de configuraciones iniciales de la aplicación</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>on(ApplicationReadyEvent event)</td>
+    <td>Manejo de las acciones ejecutadas al recibir el evento ApplicationReadyEvent</td>
+  </tr>
+  <tr>
+    <td>currentTimestamp()</td>
+    <td>Obtiene el tiempo de ejecución de la aplicación en milisegundos.</td>
+  </tr>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+  <tr>
+    <th>Dependencia</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>MetricTypeRepository</td>
+    <td>Repositorio para persistencia de definiciones de métricas.</td>
+  </tr>
+  <tr>
+    <td>LOGGER</td>
+    <td>Atributo para imprimir eventos.</td>
   </tr>
   </tbody>
 </table>
@@ -2733,35 +2884,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>linkMechanic(Long mechanicId)</td><td>void</td><td>Public</td><td>Si es owner, vincula el mecánico asignado.</td></tr>
     <tr><td>updateInfo(UpdateUserInfoData)</td><td>void</td><td>Public</td><td>Actualiza información editable del usuario.</td></tr>
     <tr><td>authenticate(Credentials)</td><td>AuthenticationResult</td><td>Public</td><td>Verifica credenciales y devuelve resultado de autenticación.</td></tr>
-  </tbody>
-</table>
-<hr>
-<h3>Aggregate: <code>Appointment</code></h3>
-<p><strong>Descripción:</strong> Representa una cita/agendamiento entre <code>Mechanic</code> y <code>Owner</code>.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador de la cita.</td></tr>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico que atenderá.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo asociado a la cita.</td></tr>
-    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora programada.</td></tr>
-    <tr><td>status</td><td>AppointmentStatus (Enum)</td><td>Private</td><td>Estado de la cita (SCHEDULED, COMPLETED, CANCELED).</td></tr>
-    <tr><td>notes</td><td>String</td><td>Private</td><td>Notas o instrucciones asociadas a la cita.</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación.</td></tr>
-  </tbody>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el ID de la cita.</td></tr>
-    <tr><td>getMechanicId()</td><td>Long</td><td>Public</td><td>Devuelve el ID del mecánico.</td></tr>
-    <tr><td>getScheduleAt()</td><td>LocalDateTime</td><td>Public</td><td>Devuelve la fecha/ hora programada.</td></tr>
-    <tr><td>reschedule(LocalDateTime)</td><td>void</td><td>Public</td><td>Reprograma la cita si las reglas lo permiten.</td></tr>
-    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela la cita.</td></tr>
   </tbody>
 </table>
 <hr>
