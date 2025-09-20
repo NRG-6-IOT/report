@@ -182,7 +182,7 @@ del ABET – EAC - Student Outcome 5.
     <tr>
       <td><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
       <td>
-        -
+        <br> TB1: <br>Astonitas Díaz Juan Diego: Mediatnte fomentar la ayuda mutua, se logro que todos los integrantes implementaran correctamente los diagramas de sus bounded context
       </td>
       <td>
         -
@@ -191,7 +191,7 @@ del ABET – EAC - Student Outcome 5.
     <tr>
       <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
       <td>
-        -
+        <br> TB1: <br>Astonitas Díaz Juan Diego: Dirigi la construccion y la organizacion del grupo para la correcta ejecucion y documentacion de los bounded context
       </td>
       <td>
         -
