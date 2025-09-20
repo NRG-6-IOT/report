@@ -573,6 +573,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.1.5 Bounded Context Software Architecture Component Level Diagrams
 
+![Component Diagram](images/chapter-4/system-component-diagram.png)
+
 ##### 4.2.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
@@ -1090,7 +1092,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
 
-
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.2.6 Bounded Context Software Architecture Code Level Diagrams
 
@@ -1105,8 +1107,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 #### 4.2.3 Bounded Context: Suscripción
 
 ##### 4.2.3.1 Domain Layer
-<h3>Aggregate: <code>Subscription</code></h3>
-<p><strong>Descripción:</strong> Representa la relación formal entre un <code>Owner</code> (dueño de moto) y un <code>Mechanic</code> mediante un <code>Plan</code>, vinculada a un vehículo y con un ciclo de vida definido (activa, suspendida, cancelada, expirada).</p>
+
+<h3>Aggregate: <code>Appointment</code></h3>
+<p><strong>Descripción:</strong> Representa una cita programada entre un <code>Mechanic</code> y un vehículo específico, con fecha y hora definidas.</p>
 <table>
   <thead>
     <tr>
@@ -1117,38 +1120,121 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único de la suscripción.</td></tr>
-    <tr><td>owner</td><td>Owner</td><td>Private</td><td>Dueño de la moto vinculado a la suscripción.</td></tr>
-    <tr><td>mechanic</td><td>Mechanic</td><td>Private</td><td>Mecánico vinculado a la suscripción.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo registrado en la suscripción.</td></tr>
-    <tr><td>plan</td><td>Plan</td><td>Private</td><td>Plan asociado a la suscripción (básico, premium, prueba).</td></tr>
-    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción (activa, suspendida, cancelada, expirada).</td></tr>
-    <tr><td>startDate</td><td>Timestamp</td><td>Private</td><td>Fecha de inicio de la suscripción.</td></tr>
-    <tr><td>endDate</td><td>Timestamp</td><td>Private</td><td>Fecha de finalización de la suscripción.</td></tr>
-    <tr><td>renewalDate</td><td>Timestamp</td><td>Private</td><td>Fecha programada para renovación (si aplica).</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del registro.</td></tr>
-    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>Identificador único del mecánico asignado.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador único del vehículo asociado.</td></tr>
+    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de la cita.</td></tr>
   </tbody>
 </table>
+
+<h3>Aggregate: <code>Subscription</code></h3>
+<p><strong>Descripción:</strong> Representa la relación entre un <code>User</code> (motociclista) y un <code>Mechanic</code>, establecida mediante una suscripción con código de invitación.</p>
 <table>
   <thead>
     <tr>
-      <th>Métodos</th>
-      <th>Tipo de retorno</th>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
       <th>Visibilidad</th>
       <th>Descripción</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>activate()</td><td>void</td><td>Public</td><td>Activa la suscripción si cumple con las reglas de negocio.</td></tr>
-    <tr><td>suspend()</td><td>void</td><td>Public</td><td>Suspende temporalmente la suscripción.</td></tr>
-    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela definitivamente la suscripción.</td></tr>
-    <tr><td>renew()</td><td>void</td><td>Public</td><td>Renueva la suscripción al alcanzar la fecha de expiración.</td></tr>
-    <tr><td>isActive()</td><td>boolean</td><td>Public</td><td>Verifica si la suscripción está activa.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico vinculado.</td></tr>
+    <tr><td>userId</td><td>Long</td><td>Private</td><td>ID del usuario (motociclista).</td></tr>
+    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción.</td></tr>
+    <tr><td>invitationCode</td><td>String</td><td>Private</td><td>Código de invitación generado para vincular al usuario.</td></tr>
   </tbody>
 </table>
 
+<h3>Value Objects</h3>
+<h4><code>AppointmentStatus</code> (Enum)</h4>
+<ul>
+  <li>SCHEDULED</li>
+  <li>COMPLETED</li>
+  <li>CANCELED</li>
+</ul>
+<h4><code>SubscriptionStatus</code> (Enum)</h4>
+<ul>
+  <li>ACTIVATED</li>
+  <li>CANCELED</li>
+</ul>
+
+<h3>Commands</h3>
+<ul>
+  <li>ScheduleAppointmentCommand &lt;&lt;Record&gt;&gt;</li>
+  <li>GenerateInvitationCodeCommand &lt;&lt;Record&gt;&gt;</li>
+  <li>CancelSubscriptionCommand &lt;&lt;Record&gt;&gt;</li>
+  <li>LinkMotorcyclistToMechanicCommand &lt;&lt;Record&gt;&gt;</li>
+</ul>
+
+<h3>Queries</h3>
+<ul>
+  <li>GetAppointmentByIdQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetAppointmentByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetAppointmentsByDateRangeQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetUsersByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
+  <li>GetSubscriptionByIdQuery &lt;&lt;Record&gt;&gt;</li>
+</ul>
+
+<h3>Services</h3>
+<h4><code>AppointmentCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(ScheduleAppointmentCommand)</li>
+</ul>
+<h4><code>AppointmentQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(GetAppointmentByIdQuery)</li>
+  <li>+handle(GetAppointmentsByMechanicQuery)</li>
+  <li>+handle(GetAppointmentsByDateRangeQuery)</li>
+</ul>
+<h4><code>SubscriptionCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(GenerateInvitationCodeCommand)</li>
+  <li>+handle(CancelSubscriptionCommand)</li>
+  <li>+handle(LinkMotorcyclistToMechanicCommand)</li>
+</ul>
+<h4><code>SubscriptionQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
+<ul>
+  <li>+handle(GetSubscriptionByIdQuery)</li>
+  <li>+handle(GetUsersByMechanicQuery)</li>
+</ul>
+
 ##### 4.2.3.2 Interface Layer
+
+<h3>Controlador: <code>AppointmentController</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>AppointmentController</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las citas (<code>Appointment</code>), incluyendo su creación y consultas por ID, mecánico o rango de fechas.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>createAppointment</td><td>POST /api/v1/appointments</td><td>Crea una nueva cita a partir de los datos enviados en el recurso.</td></tr>
+    <tr><td>getAppointmentById</td><td>GET /api/v1/appointments/{appointmentId}</td><td>Obtiene los detalles de una cita específica por su ID.</td></tr>
+    <tr><td>getAppointmentsByMechanic</td><td>GET /api/v1/appointments/mechanics/{mechanicId}</td><td>Lista todas las citas asociadas a un mecánico en particular.</td></tr>
+    <tr><td>getAppointmentsByDateRange</td><td>GET /api/v1/appointments?start={start}&end={end}</td><td>Obtiene todas las citas registradas dentro de un rango de fechas.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AppointmentQueryService</td><td>Servicio para consultas de citas por ID, mecánico o rango de fechas.</td></tr>
+    <tr><td>AppointmentCommandService</td><td>Servicio para ejecutar comandos relacionados con la creación de citas.</td></tr>
+    <tr><td>GenerateAppointmentCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de citas.</td></tr>
+    <tr><td>AppointmentResourceFromEntityAssembler</td><td>Convierte entidades de cita en recursos REST para la respuesta de la API.</td></tr>
+  </tbody>
+</table>
+
 <h3>Controlador: <code>SubscriptionController</code></h3>
 <table>
   <tr>
@@ -1157,49 +1243,134 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, incluyendo su activación, renovación, suspensión y cancelación. Expone endpoints que vinculan explícitamente a dueños (<code>Owner</code>) y mecánicos (<code>Mechanic</code>), garantizando integridad en el ciclo de vida de la suscripción.</td>
+    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las suscripciones (<code>Subscription</code>), incluyendo la generación de códigos de invitación, cancelación, vinculación de motociclistas y consultas por ID o mecánico.</td>
   </tr>
 </table>
 <table>
   <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
+    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{id}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getOwnerSubscriptions</td><td>GET /api/v1/subscriptions/owners/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto (<code>Owner</code>).</td></tr>
-    <tr><td>getMechanicSubscriptions</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}</td><td>Lista todas las suscripciones en las que un mecánico (<code>Mechanic</code>) está involucrado.</td></tr>
-    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociando un <code>Owner</code>, un <code>Mechanic</code>, un vehículo y un <code>Plan</code>.</td></tr>
-    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan o reasignación de mecánico).</td></tr>
-    <tr><td>activateSubscription</td><td>POST /api/v1/subscriptions/{id}/activate</td><td>Activa una suscripción si cumple con las reglas de negocio.</td></tr>
-    <tr><td>renewSubscription</td><td>POST /api/v1/subscriptions/{id}/renew</td><td>Renueva una suscripción al alcanzar la fecha de expiración.</td></tr>
-    <tr><td>suspendSubscription</td><td>POST /api/v1/subscriptions/{id}/suspend</td><td>Suspende temporalmente una suscripción.</td></tr>
-    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{id}/cancel</td><td>Cancela definitivamente una suscripción.</td></tr>
-    <tr><td>deleteSubscription</td><td>DELETE /api/v1/subscriptions/{id}</td><td>Elimina una suscripción del sistema (soft delete o hard delete según reglas).</td></tr>
+    <tr><td>generateInvitationCode</td><td>POST /api/v1/subscriptions/invitations</td><td>Genera un nuevo código de invitación para vincular un motociclista con un mecánico.</td></tr>
+    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{subscriptionId}/cancel</td><td>Cancela una suscripción específica por su ID.</td></tr>
+    <tr><td>linkMotorcyclist</td><td>POST /api/v1/subscriptions/link</td><td>Vincula un motociclista a un mecánico utilizando un código de invitación.</td></tr>
+    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{subscriptionId}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
+    <tr><td>getUsersByMechanic</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}/users</td><td>Lista los motociclistas vinculados a un mecánico.</td></tr>
   </tbody>
 </table>
 <h4>Dependencias:</h4>
 <table>
   <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones (por ID, dueño, mecánico).</td></tr>
-    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de creación, actualización, renovación, suspensión y cancelación de suscripciones.</td></tr>
-    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones (incluye validación de <code>Owner</code>, <code>Mechanic</code> y <code>Plan</code>).</td></tr>
-    <tr><td>UpdateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de actualización de suscripciones.</td></tr>
-    <tr><td>DeleteSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de eliminación de suscripciones.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción (con <code>Owner</code>, <code>Mechanic</code>, <code>Plan</code>) en recursos REST para la respuesta.</td></tr>
+    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas de suscripciones por ID y usuarios vinculados a mecánicos.</td></tr>
+    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de generación de códigos de invitación, cancelación y vinculación.</td></tr>
+    <tr><td>GenerateInvitationCodeCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de generación de códigos de invitación.</td></tr>
+    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta de la API.</td></tr>
   </tbody>
 </table>
 
+<h3>Resources</h3>
+<ul>
+  <li><code>CreateAppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
+  <li><code>AppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
+  <li><code>GenerateInvitationCodeResource</code> &lt;&lt;Record&gt;&gt;</li>
+  <li><code>SubscriptionResource</code> &lt;&lt;Record&gt;&gt;</li>
+</ul>
+
 ##### 4.2.3.3 Application Layer
+
+<h3>Clase: <code>AppointmentCommandServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>AppointmentCommandServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de comandos para operaciones relacionadas con citas de suscripción.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(ScheduleAppointmentCommand)</td><td>Programa una nueva cita entre un Owner y un Mechanic.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AppointmentRepository</td><td>Repositorio encargado de gestionar la persistencia de citas.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>SubscriptionCommandServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>SubscriptionCommandServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de comandos para operaciones de creación, cancelación y vinculación de suscripciones.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GenerateInvitationCodeCommand)</td><td>Genera un código de invitación para que un Owner pueda invitar a un Mechanic o Motorcyclist.</td></tr>
+    <tr><td>handle(CancelSubscriptionCommand)</td><td>Cancela una suscripción activa.</td></tr>
+    <tr><td>handle(LinkMotorcyclistToMechanicCommand)</td><td>Vincula un motociclista con un mecánico dentro de una suscripción.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de la persistencia de suscripciones.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>AppointmentQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>AppointmentQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas para obtener información de citas.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetAppointmentByIdQuery)</td><td>Obtiene una cita específica por su ID.</td></tr>
+    <tr><td>handle(GetAppointmentsByMechanicQuery)</td><td>Lista todas las citas programadas para un mecánico específico.</td></tr>
+    <tr><td>handle(GetAppointmentsByDateRangeQuery)</td><td>Obtiene todas las citas dentro de un rango de fechas.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AppointmentRepository</td><td>Repositorio encargado de consultas de citas.</td></tr>
+  </tbody>
+</table>
 
 <h3>Clase: <code>SubscriptionQueryServiceImpl</code></h3>
 <table>
@@ -1209,7 +1380,39 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con suscripciones, dueños, mecánicos, vehículos y planes.</td>
+    <td>Implementación del servicio de consultas relacionadas con suscripciones.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles de una suscripción por su ID.</td></tr>
+    <tr><td>handle(GetUsersByMechanicQuery)</td><td>Lista todos los Owners y Motorcyclists vinculados a un mecánico a través de suscripciones.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de consultas de suscripciones.</td></tr>
+  </tbody>
+</table>
+
+##### 4.2.3.4 Infrastructure Layer
+
+<h3>Clase: <code>AppointmentRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>AppointmentRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz de persistencia para la entidad <code>Appointment</code>, que gestiona las operaciones de acceso a datos de citas de suscripción.</td>
   </tr>
 </table>
 <table>
@@ -1220,35 +1423,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles completos de una suscripción por su ID.</td></tr>
-    <tr><td>handle(GetOwnerSubscriptionsQuery)</td><td>Lista todas las suscripciones activas e inactivas de un <code>Owner</code>.</td></tr>
-    <tr><td>handle(GetMechanicSubscriptionsQuery)</td><td>Lista todas las suscripciones en las que participa un <code>Mechanic</code>.</td></tr>
-    <tr><td>handle(GetVehicleSubscriptionQuery)</td><td>Obtiene la suscripción asociada a un vehículo específico (<code>Vehicle</code>).</td></tr>
-    <tr><td>handle(CheckSubscriptionStatusQuery)</td><td>Verifica el estado actual de una suscripción (activa, suspendida, cancelada, expirada).</td></tr>
-    <tr><td>handle(ListExpiringSubscriptionsQuery)</td><td>Lista las suscripciones próximas a expirar dentro de un rango de fechas.</td></tr>
-    <tr><td>handle(GetPlanBySubscriptionQuery)</td><td>Obtiene los detalles del <code>Plan</code> asociado a una suscripción.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio para acceso a datos de suscripciones.</td></tr>
-    <tr><td>PlanRepository</td><td>Repositorio para acceso a datos de planes.</td></tr>
-    <tr><td>OwnerRepository</td><td>Repositorio para acceso a datos de dueños (<code>Owner</code>).</td></tr>
-    <tr><td>MechanicRepository</td><td>Repositorio para acceso a datos de mecánicos (<code>Mechanic</code>).</td></tr>
-    <tr><td>VehicleRepository</td><td>Repositorio para acceso a datos de vehículos (<code>Vehicle</code>).</td></tr>
+    <tr><td>save(Appointment)</td><td>Guarda o actualiza una cita en la base de datos.</td></tr>
+    <tr><td>deleteById(Long)</td><td>Elimina una cita por su ID.</td></tr>
+    <tr><td>findById(Long)</td><td>Obtiene los detalles de una cita por su ID.</td></tr>
+    <tr><td>existsById(Long)</td><td>Verifica si existe una cita por su ID.</td></tr>
+    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todas las citas asociadas a un mecánico específico.</td></tr>
+    <tr><td>findByScheduleAtBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista todas las citas programadas dentro de un rango de fechas.</td></tr>
   </tbody>
 </table>
 
-##### 4.2.3.4 Infrastructure Layer
-
-<h3>Clase: <code>SubscriptionRepository</code></h3>
+<h3>Clase: <code>SubscriptionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
 <table>
   <tr>
     <th>Título</th>
@@ -1272,13 +1456,14 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>findById(Long)</td><td>Recupera una suscripción por su ID.</td></tr>
     <tr><td>existsById(Long)</td><td>Verifica si existe una suscripción por su ID.</td></tr>
     <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones de un dueño de vehículo, paginadas.</td></tr>
-    <tr><td>findByMechanicIdAndStatus(Long, SubscriptionStatus)</td><td>Lista suscripciones filtradas por mecánico y estado.</td></tr>
+    <tr><td>findByMechanicId(Long mechanicId)</td><td>Lista todas las suscripciones asociadas a un mecánico específico.</td></tr>
+    <tr><td>findByInvitationCode(String code)</td><td>Recupera una suscripción a partir de un código de invitación.</td></tr>
     <tr><td>findByVehicleId(Long)</td><td>Obtiene la suscripción vinculada a un vehículo.</td></tr>
     <tr><td>findExpiringBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista suscripciones que expiran en un rango de fechas.</td></tr>
   </tbody>
 </table>
 
-<h3>Clase: <code>PlanRepository</code></h3>
+<h3>Clase: <code>PlanRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
 <table>
   <tr>
     <th>Título</th>
@@ -1306,7 +1491,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Clase: <code>PromotionRepository</code></h3>
+<h3>Clase: <code>PromotionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
 <table>
   <tr>
     <th>Título</th>
@@ -1334,9 +1519,10 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
+
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
-<img src="./images/chapter-4/subscription_component_level_diagrams.png" alt="subscription_component_level_diagrams" width="600"/>
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.3.6 Bounded Context Software Architecture Code Level Diagrams
 
@@ -1858,7 +2044,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.5 Bounded Context Software Architecture Component Level Diagrams
 
-<img src="./images/chapter-4/vehicle_wellness_component_level_diagrams.png" alt="vehicle_wellness_component_level_diagrams" width="600"/>
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.4.6 Bounded Context Software Architecture Code Level Diagrams
 
@@ -2435,6 +2621,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <hr>
 
 ##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
+
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.5.6 Bounded Context Software Architecture Code Level Diagrams
 
