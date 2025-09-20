@@ -2853,7 +2853,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
-##### 4.2.6. Bounded Context: IAM
+#### 4.2.6. Bounded Context: IAM
 
 ###### 4.2.6.1 Domain Layer
 
