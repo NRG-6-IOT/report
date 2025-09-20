@@ -2853,19 +2853,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del usuario.</td></tr>
-    <tr><td>username</td><td>String</td><td>Private</td><td>Nombre de usuario único (para login).</td></tr>
-    <tr><td>email</td><td>String</td><td>Private</td><td>Correo electrónico verificado o por verificar.</td></tr>
-    <tr><td>password</td><td>String</td><td>Private</td><td>Contraseña para cada cuenta creada.</td></tr>
-    <tr><td>displayName</td><td>String</td><td>Private</td><td>Nombre visible en la plataforma.</td></tr>
-    <tr><td>userType</td><td>UserType (Enum)</td><td>Private</td><td>Tipo de usuario (OWNER, MECHANIC, ADMIN, etc.).</td></tr>
-    <tr><td>roles</td><td>List&lt;Role&gt;</td><td>Private</td><td>Roles y permisos asignados al usuario.</td></tr>
-    <tr><td>linkedVehicleIds</td><td>List&lt;Long&gt;</td><td>Private</td><td>IDs de vehículos asociados (propiedad o autorización).</td></tr>
-    <tr><td>linkedMembers</td><td>List&lt;Long&gt;</td><td>Private</td><td>Si es <code>Mechanic</code>, lista de <code>Owner</code> (userId) vinculados.</td></tr>
-    <tr><td>linkedMechanicId</td><td>Long</td><td>Private</td><td>Si es <code>Owner</code>, id del <code>Mechanic</code> al que está vinculado (opcional).</td></tr>
+    <tr><td>id</td><td>int</td><td>Private</td><td>Identificador único del usuario.</td></tr>
+    <tr><td>username</td><td>varchar</td><td>Private</td><td>Nombre de usuario único (para login).</td></tr>
+    <tr><td>email</td><td>varchar</td><td>Private</td><td>Correo electrónico verificado o por verificar.</td></tr>
+    <tr><td>password</td><td>varchar</td><td>Private</td><td>Contraseña para cada cuenta creada.</td></tr>
+    <tr><td>displayName</td><td>varchar</td><td>Private</td><td>Nombre visible en la plataforma.</td></tr>
+    <tr><td>role</td><td>varchar</td><td>Private</td><td>Roles y permisos asignados al usuario.</td></tr>
     <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del usuario.</td></tr>
     <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización del usuario.</td></tr>
-    <tr><td>status</td><td>UserStatus (Enum)</td><td>Private</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
+    <tr><td>status</td><td>varchar</td><td>Private</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
   </tbody>
 </table>
 <table>
@@ -2873,15 +2869,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador del usuario.</td></tr>
+    <tr><td>getId()</td><td>int</td><td>Public</td><td>Devuelve el identificador del usuario.</td></tr>
     <tr><td>getUsername()</td><td>String</td><td>Public</td><td>Devuelve el nombre de usuario.</td></tr>
     <tr><td>getEmail()</td><td>String</td><td>Public</td><td>Devuelve el correo electrónico.</td></tr>
-    <tr><td>getRoles()</td><td>List&lt;Role&gt;</td><td>Public</td><td>Devuelve los roles asignados.</td></tr>
-    <tr><td>assignRole(Role)</td><td>void</td><td>Public</td><td>Asigna un rol al usuario (valida duplicados).</td></tr>
-    <tr><td>removeRole(Role)</td><td>void</td><td>Public</td><td>Remueve un rol del usuario.</td></tr>
-    <tr><td>linkVehicle(Long vehicleId)</td><td>void</td><td>Public</td><td>Vincula un vehículo al usuario.</td></tr>
-    <tr><td>linkMember(Long ownerId)</td><td>void</td><td>Public</td><td>Si es mecánico, agrega un dueño vinculado.</td></tr>
-    <tr><td>linkMechanic(Long mechanicId)</td><td>void</td><td>Public</td><td>Si es owner, vincula el mecánico asignado.</td></tr>
+    <tr><td>getRole()</td><td>String</td><td>Public</td><td>Devuelve el rol asignado.</td></tr>
+    <tr><td>assignRole(String)</td><td>void</td><td>Public</td><td>Asigna un rol al usuario (valida duplicados).</td></tr>
+    <tr><td>removeRole(String)</td><td>void</td><td>Public</td><td>Remueve un rol del usuario.</td></tr>
     <tr><td>updateInfo(UpdateUserInfoData)</td><td>void</td><td>Public</td><td>Actualiza información editable del usuario.</td></tr>
     <tr><td>authenticate(Credentials)</td><td>AuthenticationResult</td><td>Public</td><td>Verifica credenciales y devuelve resultado de autenticación.</td></tr>
   </tbody>
@@ -2915,9 +2908,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Nombre</th><th>Tipo</th><th>Valores / Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>UserType</td><td>Enum</td><td>OWNER, MECHANIC, ADMIN</td></tr>
     <tr><td>UserStatus</td><td>Enum</td><td>ACTIVE, SUSPENDED, DELETED</td></tr>
-    <tr><td>AppointmentStatus</td><td>Enum</td><td>SCHEDULED, COMPLETED, CANCELED</td></tr>
   </tbody>
 </table>
 
@@ -2931,7 +2922,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr><td>/api/iam/auth/signin</td><td>POST</td><td>Autentica a un usuario en el sistema y devuelve un token JWT.</td></tr>
-    <tr><td>/api/iam/auth/signup</td><td>POST</td><td>Registra un nuevo usuario (Owner o Mechanic) en la plataforma.</td></tr>
+    <tr><td>/api/iam/auth/signup</td><td>POST</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
   </tbody>
 </table>
 
@@ -2949,7 +2940,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 </table>
 
 <h3>Clase: <code>UsersController</code></h3>
-<p><strong>Descripción:</strong> Controlador REST encargado de operaciones CRUD y consultas sobre usuarios (Owner, Mechanic, Admin).</p>
+<p><strong>Descripción:</strong> Controlador REST encargado de operaciones CRUD y consultas sobre usuarios.</p>
 <table>
   <thead>
     <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
@@ -2957,10 +2948,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr><td>/api/iam/users</td><td>GET</td><td>Lista todos los usuarios registrados.</td></tr>
     <tr><td>/api/iam/users/{id}</td><td>GET</td><td>Obtiene los detalles de un usuario por su ID.</td></tr>
-    <tr><td>/api/iam/users/mechanic/{mechanicId}</td><td>GET</td><td>Obtiene el usuario vinculado a un mecánico específico.</td></tr>
-    <tr><td>/api/iam/users/member/{memberId}</td><td>GET</td><td>Obtiene el usuario vinculado a un miembro/owner específico.</td></tr>
-    <tr><td>/api/iam/users/group/{groupId}</td><td>GET</td><td>Obtiene todos los usuarios pertenecientes a un grupo determinado.</td></tr>
-    <tr><td>/api/iam/users/{id}</td><td>PUT</td><td>Actualiza información de un usuario (displayName, email, roles).</td></tr>
+    <tr><td>/api/iam/users/{id}</td><td>PUT</td><td>Actualiza información de un usuario (displayName, email, role, status).</td></tr>
   </tbody>
 </table>
 <hr>
@@ -2972,16 +2960,14 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <li><code>RoleResource</code>: Representa un rol con su nombre y permisos.</li>
   <li><code>SignInResource</code>: Contiene credenciales de acceso (username/email + password).</li>
   <li><code>SignUpResource</code>: Contiene la información necesaria para registrar un nuevo usuario.</li>
-  <li><code>UserMechanicResource</code>: Representa un usuario con rol de mecánico y sus miembros asociados.</li>
-  <li><code>UserMemberResource</code>: Representa un usuario con rol de dueño/miembro y su mecánico vinculado.</li>
-  <li><code>UserResource</code>: DTO genérico para exponer información común de un usuario (id, username, email, displayName, roles, estado).</li>
+  <li><code>UserResource</code>: DTO genérico para exponer información común de un usuario (id, username, email, displayName, role, status).</li>
 </ul>
 
 <h3>Transformadores</h3>
 <p><strong>Descripción:</strong> Clases encargadas de convertir entre entidades del dominio y recursos de la API.</p>
 <ul>
   <li><code>RoleResourceAssembler</code>: Convierte objetos <code>Role</code> en <code>RoleResource</code>.</li>
-  <li><code>UserResourceAssembler</code>: Convierte objetos <code>User</code> en <code>UserResource</code>, incluyendo relaciones Owner–Mechanic.</li>
+  <li><code>UserResourceAssembler</code>: Convierte objetos <code>User</code> en <code>UserResource</code>.</li>
   <li><code>AuthenticationResourceAssembler</code>: Convierte resultados de autenticación en <code>AuthenticatedUserResource</code>.</li>
 </ul>
 
@@ -2995,8 +2981,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <table>
   <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
   <tbody>
-    <tr><td>handle(CreateUserMechanicCommand)</td><td>Crea un nuevo usuario con rol de Mecánico.</td></tr>
-    <tr><td>handle(CreateUserMemberCommand)</td><td>Crea un nuevo usuario con rol de Motociclista.</td></tr>
     <tr><td>handle(SignUpCommand)</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
     <tr><td>handle(UpdateUserInfoCommand)</td><td>Actualiza la información de un usuario existente.</td></tr>
   </tbody>
@@ -3006,7 +2990,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
   <tbody>
     <tr><td>UserRepository</td><td>Repositorio encargado de la persistencia de usuarios.</td></tr>
-    <tr><td>RoleRepository</td><td>Repositorio encargado de la gestión de roles asociados a usuarios.</td></tr>
     <tr><td>PasswordHashingService</td><td>Servicio de encriptación de contraseñas.</td></tr>
   </tbody>
 </table>
@@ -3067,10 +3050,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr><td>handle(GetAllUsersQuery)</td><td>Obtiene la lista completa de usuarios registrados.</td></tr>
     <tr><td>handle(GetUserByIdQuery)</td><td>Recupera los detalles de un usuario por su ID.</td></tr>
-    <tr><td>handle(GetUserByMechanicId)</td><td>Obtiene el usuario asociado a un mecánico específico.</td></tr>
-    <tr><td>handle(GetUserByMemberId)</td><td>Obtiene el usuario asociado a un motociclista específico.</td></tr>
     <tr><td>handle(GetUserByUsernameQuery)</td><td>Busca un usuario por su nombre de usuario.</td></tr>
-    <tr><td>handle(GetUsersByGroupIdQuery)</td><td>Lista todos los usuarios vinculados a un grupo específico.</td></tr>
   </tbody>
 </table>
 <h4>Dependencias:</h4>
@@ -3167,9 +3147,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>findById(Long id)</td><td>Recupera un usuario por ID.</td></tr>
     <tr><td>findByUsername(String username)</td><td>Recupera un usuario por su nombre de usuario.</td></tr>
     <tr><td>findByEmail(String email)</td><td>Recupera un usuario por email.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Recupera un usuario vinculado a un mecánico.</td></tr>
-    <tr><td>findByMemberId(Long memberId)</td><td>Recupera un usuario vinculado a un motociclista.</td></tr>
-    <tr><td>findByGroupId(Long groupId)</td><td>Recupera todos los usuarios asociados a un grupo.</td></tr>
+    <tr><td>findAll()</td><td>Lista todos los usuarios registrados.</td></tr>
   </tbody>
 </table>
 
@@ -3222,16 +3200,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <h3>Clase: <code>UserEntity</code></h3>
 <p><strong>Descripción:</strong> Mapeada a la tabla <code>users</code>. Contiene atributos persistentes de usuario.</p>
 <ul>
-  <li>Relación uno a muchos con <code>RoleEntity</code>.</li>
-  <li>Relación uno a muchos con <code>AppointmentEntity</code>.</li>
-  <li>Relaciones con vehículos vía IDs.</li>
+  <li>Atributos: id, username, email, displayName, password, role (varchar), status.</li>
 </ul>
 
 <h3>Clase: <code>RoleEntity</code></h3>
 <p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
-
-<h3>Clase: <code>AppointmentEntity</code></h3>
-<p><strong>Descripción:</strong> Mapeada a la tabla <code>appointments</code>. Contiene mecánico, vehículo, fecha y estado.</p>
 
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
