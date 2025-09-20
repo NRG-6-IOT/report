@@ -118,9 +118,14 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
       - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
+    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
+    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
+    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
+    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
@@ -1555,11 +1560,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/subscription_bounded_context_domain_layer_class_diagrams.png" alt="subscription_bounded_context_domain_layer_class_diagrams" width="600"/>
+<img src="./images/chapter-4/subscription_code_level" alt="subscription_code_level" width="600"/>
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/subscription_bounded_context_database_design_diagram.png" alt="subscription_bounded_context_database_design_diagram" width="600"/>
+<img src="./images/chapter-4/subscription_erd.png" alt="subscription_erd" width="600"/>
 
 #### 4.2.4 Bounded Context: Bienestar de Vehículos
 
@@ -2077,11 +2082,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.4.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/vehicle_wellness_bounded_context_domain_layer_class_diagrams.png" alt="vehicle_wellness_component_level_diagrams" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_code_level.png" alt="vehicle_wellness_code_level" width="600"/>
 
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_wellness_bounded_context_database_design_diagram.png" alt="vehicle_wellness_bounded_context_database_design_diagram" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_erd.png" alt="vehicle_wellness_erd" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
