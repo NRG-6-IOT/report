@@ -3095,38 +3095,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h4>Resources:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Resource</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>AuthenticatedUserResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Representa un usuario autenticado y su token JWT.</td>
-    </tr>
-    <tr>
-      <td>RoleResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso para exponer información de roles (nombre y permisos).</td>
-    </tr>
-    <tr>
-      <td>SignInResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Credenciales de acceso para autenticación (username/email + password).</td>
-    </tr>
-    <tr>
-      <td>SignUpResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Información necesaria para registrar un nuevo usuario.</td>
-    </tr>
-    <tr>
-      <td>UserResource &lt;&lt;Record&gt;&gt;</td>
-      <td>DTO para exponer información de un usuario (id, username, email, displayName, role, status).</td>
-    </tr>
-  </tbody>
-</table>
-
 ##### 4.2.6.3 Application Layer
 
 <h3>Clase: <code>UserCommandServiceImpl</code></h3>
