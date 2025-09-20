@@ -59,15 +59,6 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
 
 ## Contenido
 
-- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
-    - [**NRC**: 3443](#nrc-3443)
-    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
-    - [**Ingeniería de software**](#ingeniería-de-software)
-  - [Informe de -](#informe-de--)
-    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
-    - [**Nombre del producto:** -](#nombre-del-producto--)
-  - [**Integrantes**](#integrantes)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
   - [Project Report Collaboration Insights](#project-report-collaboration-insights)
   - [Contenido](#contenido)
