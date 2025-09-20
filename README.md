@@ -1917,7 +1917,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>Identificador del reporte al que le pertenece la métrica.</td>
     </tr>
     <tr>
-      <td>metricDefinitionId</td>
+      <td>metricTypeId</td>
       <td>Long</td>
       <td>Private</td>
       <td>Identificador de la definición de la métrica.</td>
@@ -1926,7 +1926,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Entity: <code>MetricDefinition</code></h3>
+<h3>Entity: <code>MetricType</code></h3>
 <p><strong>Descripción:</strong>Representa una métrica perteneciente a un reporte.</p>
 <table>
   <thead>
@@ -1938,7 +1938,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   </thead>
   <tbody>
-  <tr><td>metricDefinitionId</td><td>Long</td><td>Private</td><td>Identificador único de la métrica.</td></tr>
+  <tr><td>metricTypeId</td><td>Long</td><td>Private</td><td>Identificador único de la métrica.</td></tr>
   <tr><td>metricName</td><td>String</td><td>Private</td><td>Nombre de la métrica.</td></tr>
   <tr><td>metricDescription</td><td>String</td><td>Private</td><td>Descripción de la métrica.</td></tr>
   </tbody>
@@ -2053,12 +2053,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>handle(GetAllMetricDefinitionsQuery)</td>
+    <td>handle(GetAllMetricTypesQuery)</td>
     <td>Público</td>
     <td>Recupera todas las definiciones de métricas.</td>
   </tr>
   <tr>
-    <td>handle(GetMetricDefinitionByIdQuery)</td>
+    <td>handle(GetMetricTypeByIdQuery)</td>
     <td>Público</td>
     <td>Recupera una definición de métrica por identificador.</td>
   </tr>
@@ -2075,17 +2075,17 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>GetAllMetricDefinitionsQuery()</td>
+    <td>GetAllMetricTypesQuery()</td>
     <td>Consulta de todas las definiciones de métricas.</td>
   </tr>
   <tr>
-    <td>GetMetricDefinitionByIdQuery</td>
+    <td>GetMetricTypeByIdQuery</td>
     <td>Consulta de una definición de métrica por identificador.</td>
   </tr>
   </tbody>
 </table>
 
-<h3>Interfaz: <code>MetricDefinitionCommandService</code></h3>
+<h3>Interfaz: <code>MetricTypeCommandService</code></h3>
 <p><strong>Descripción:</strong>Servicio de comandos para controlar definiciones de métricas.</p>
 <table>
   <thead>
@@ -2097,7 +2097,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>handle(SeedMetricDefinitionsCommand)</td>
+    <td>handle(SeedMetricTypesCommand)</td>
     <td>Público</td>
     <td>Inicializa las definiciones de métrica.</td>
   </tr>
@@ -2114,7 +2114,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>SeedMetricDefinitionsCommand</td>
+    <td>SeedMetricTypesCommand</td>
     <td>Inicializa las definiciones de métricas a nivel interno.</td>
   </tr>
   </tbody>
@@ -2302,11 +2302,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Clase:<code>MetricDefinitionQueryServiceImpl</code></h3>
+<h3>Clase:<code>MetricTypeQueryServiceImpl</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricDefinitionQueryServiceImpl</td>
+    <td>MetricTypeQueryServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
@@ -2323,11 +2323,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>handle(GetAllMetricDefinitionsQuery)</td>
+    <td>handle(GetAllMetricTypesQuery)</td>
     <td>Recupera todas las definiciones de métricas.</td>
   </tr>
   <tr>
-    <td>handle(GetMetricDefinitionByIdQuery)</td>
+    <td>handle(GetMetricTypeByIdQuery)</td>
     <td>Recupera una definición de métrica por identificador.</td>
   </tr>
 </table>
@@ -2342,18 +2342,18 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>MetricDefinitionRepository</td>
+    <td>MetricTypeRepository</td>
     <td>Repositorio para persistencia de definiciones de métricas.</td>
   </tr>
   </tbody>
 </table>
 <hr>
 
-<h3>Clase:<code>MetricDefinitionCommandServiceImpl</code></h3>
+<h3>Clase:<code>MetricTypeCommandServiceImpl</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricDefinitionCommandServiceImpl</td>
+    <td>MetricTypeCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
@@ -2370,7 +2370,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>SeedMetricDefinitionsCommand</td>
+    <td>SeedMetricTypesCommand</td>
     <td>Inicializa las definiciones de métricas a nivel interno.</td>
   </tr>
 </table>
@@ -2385,7 +2385,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
   <tr>
-    <td>MetricDefinitionRepository</td>
+    <td>MetricTypeRepository</td>
     <td>Repositorio para persistencia de definiciones de métricas.</td>
   </tr>
   </tbody>
@@ -2420,11 +2420,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 </table>
 <hr>
 
-<h3>Clase:<code>MetricDefinitionRepository</code></h3>
+<h3>Clase:<code>MetricTypeRepository</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricDefinitionRepository</td>
+    <td>MetricTypeRepository</td>
   </tr>
   <tr>
     <th>Descripción</th>
