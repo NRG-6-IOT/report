@@ -3023,7 +3023,82 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.6.4 Infrastructure Layer
 
+<h3>Clase: <code>UserRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>UserRepository</code> usando JPA/Hibernate para persistir y consultar usuarios.</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>save(User user)</td><td>Persiste o actualiza un usuario.</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera un usuario por ID.</td></tr>
+    <tr><td>findByUsername(String username)</td><td>Recupera un usuario por su nombre de usuario.</td></tr>
+    <tr><td>findByEmail(String email)</td><td>Recupera un usuario por email.</td></tr>
+    <tr><td>findByMechanicId(Long mechanicId)</td><td>Recupera un usuario vinculado a un mecánico.</td></tr>
+    <tr><td>findByMemberId(Long memberId)</td><td>Recupera un usuario vinculado a un motociclista.</td></tr>
+    <tr><td>findByGroupId(Long groupId)</td><td>Recupera todos los usuarios asociados a un grupo.</td></tr>
+  </tbody>
+</table>
 
+<h3>Clase: <code>RoleRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>RoleRepository</code> usando JPA/Hibernate para manejar roles y permisos.</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>save(Role role)</td><td>Persiste un rol.</td></tr>
+    <tr><td>findByName(String name)</td><td>Busca un rol por nombre.</td></tr>
+    <tr><td>findAll()</td><td>Lista todos los roles disponibles.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>PasswordHashingServiceImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>PasswordHashingService</code> que maneja el hash seguro de contraseñas usando BCrypt.</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>hashPassword(String rawPassword)</td><td>Devuelve el hash de la contraseña.</td></tr>
+    <tr><td>verifyPassword(String rawPassword, String hashedPassword)</td><td>Verifica una contraseña contra su hash.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>TokenProviderServiceImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>TokenProviderService</code> para generar y validar tokens JWT (usando jjwt o Spring Security JWT).</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>generateToken(User user)</td><td>Genera un token JWT con datos del usuario.</td></tr>
+    <tr><td>validateToken(String token)</td><td>Valida un token y devuelve si es válido.</td></tr>
+    <tr><td>extractUsername(String token)</td><td>Obtiene el username desde el token.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>SecurityConfig</code></h3>
+<p><strong>Descripción:</strong> Clase de configuración de seguridad de Spring Boot que define reglas de autenticación/autorización.</p>
+<ul>
+  <li>Configura filtros JWT.</li>
+  <li>Define rutas públicas (<code>/api/iam/auth/**</code>) y rutas protegidas.</li>
+  <li>Integra <code>PasswordHashingServiceImpl</code> y <code>TokenProviderServiceImpl</code>.</li>
+</ul>
+
+<h3>Clase: <code>UserEntity</code></h3>
+<p><strong>Descripción:</strong> Mapeada a la tabla <code>users</code>. Contiene atributos persistentes de usuario.</p>
+<ul>
+  <li>Relación uno a muchos con <code>RoleEntity</code>.</li>
+  <li>Relación uno a muchos con <code>AppointmentEntity</code>.</li>
+  <li>Relaciones con vehículos vía IDs.</li>
+</ul>
+
+<h3>Clase: <code>RoleEntity</code></h3>
+<p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
+
+<h3>Clase: <code>AppointmentEntity</code></h3>
+<p><strong>Descripción:</strong> Mapeada a la tabla <code>appointments</code>. Contiene mecánico, vehículo, fecha y estado.</p>
 
 
 ## Conclusiones
