@@ -10,11 +10,11 @@
 
 ### **Ingeniería de software**
 
-## Informe de -
+## Informe del trabajo Final
 
 ### **Nombre del startup:** NRG8
 
-### **Nombre del producto:** -
+### **Nombre del producto:** BykerZ
 
 ## **Integrantes**
 
@@ -30,7 +30,7 @@
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 
 
-**Agosto 2025**
+**Septiembre 2025**
 
 ## Registro de Versiones del Informe
 
@@ -45,10 +45,40 @@
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>0.1</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del solution profile, lean ux process, segmentos objetivos y análisis de competidores</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>08/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
+      <td>Diseño, registro y análisis de entrevistas y needfinding</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>13/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
+      <td>User stories, impact mapping, product backlog</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>14/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
+      <td>Big Pictures Eventstorming</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Domain message flows modeling, bounded context canvases, context mapping, software architecture</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>20/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
+      <td>Tactical-level Domain-Driven Design</td>
     </tr>
   </tbody>
 </table>
