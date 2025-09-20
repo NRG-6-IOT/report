@@ -552,8 +552,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | Método                               | Descripción                                           |
 |--------------------------------------|-------------------------------------------------------|
 | handle(GetVehicleByIdQuery)          | Obtiene un vehículo por su ID.                        |
-| handle(GetOwnerByIdQuery)            | Obtiene un dueño por su ID.                           |
-| handle(GetMechanicByIdQuery)         | Obtiene un mecánico por su ID.                        |
 | handle(GetVehiclesByOwnerIdQuery)    | Obtiene todos los vehículos de un dueño               |
 | handle(GetVehiclesByMechanicIdQuery) | Obtiene todos los vehículos vinculados a un mecánico. |
 | handle(GetVehicleByVinQuery)         | Obtiene un vehículo por su VIN.                       |
@@ -564,8 +562,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 |------------------------------|-------------------------------------------------------|
 | VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
 | GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
-| GetOwnerByIdQuery            | Obtiene un dueño por su ID.                           |
-| GetMechanicByIdQuery         | Obtiene un mecánico por su ID.                        |
 | GetVehiclesByOwnerIdQuery    | Obtiene todos los vehículos de un dueño.              |
 | GetVehiclesByMechanicIdQuery | Obtiene todos los vehículos vinculados a un mecánico. |
 | GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
