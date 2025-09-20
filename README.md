@@ -573,6 +573,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.1.5 Bounded Context Software Architecture Component Level Diagrams
 
+![Component Diagram](images/chapter-4/system-component-diagram.png)
+
 ##### 4.2.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
@@ -1090,7 +1092,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
 
-
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.2.6 Bounded Context Software Architecture Code Level Diagrams
 
@@ -1520,7 +1522,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
-<img src="./images/chapter-4/subscription_component_level_diagrams.png" alt="subscription_component_level_diagrams" width="600"/>
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.3.6 Bounded Context Software Architecture Code Level Diagrams
 
@@ -2042,7 +2044,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.5 Bounded Context Software Architecture Component Level Diagrams
 
-<img src="./images/chapter-4/vehicle_wellness_component_level_diagrams.png" alt="vehicle_wellness_component_level_diagrams" width="600"/>
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.4.6 Bounded Context Software Architecture Code Level Diagrams
 
@@ -2619,6 +2621,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <hr>
 
 ##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
+
+![Component Diagram](images/chapter-4/system-component-diagram.png)
 
 ##### 4.2.5.6 Bounded Context Software Architecture Code Level Diagrams
 
