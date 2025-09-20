@@ -2701,35 +2701,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 <hr>
-<h3>Aggregate: <code>Appointment</code></h3>
-<p><strong>Descripción:</strong> Representa una cita/agendamiento entre <code>Mechanic</code> y <code>Owner</code>.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador de la cita.</td></tr>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico que atenderá.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo asociado a la cita.</td></tr>
-    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora programada.</td></tr>
-    <tr><td>status</td><td>AppointmentStatus (Enum)</td><td>Private</td><td>Estado de la cita (SCHEDULED, COMPLETED, CANCELED).</td></tr>
-    <tr><td>notes</td><td>String</td><td>Private</td><td>Notas o instrucciones asociadas a la cita.</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación.</td></tr>
-  </tbody>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el ID de la cita.</td></tr>
-    <tr><td>getMechanicId()</td><td>Long</td><td>Public</td><td>Devuelve el ID del mecánico.</td></tr>
-    <tr><td>getScheduleAt()</td><td>LocalDateTime</td><td>Public</td><td>Devuelve la fecha/ hora programada.</td></tr>
-    <tr><td>reschedule(LocalDateTime)</td><td>void</td><td>Public</td><td>Reprograma la cita si las reglas lo permiten.</td></tr>
-    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela la cita.</td></tr>
-  </tbody>
-</table>
-<hr>
 <h3>Value Object / Entity: <code>Role</code></h3>
 <p><strong>Descripción:</strong> Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
 <table>
