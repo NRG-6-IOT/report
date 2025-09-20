@@ -2857,130 +2857,275 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.6.1 Domain Layer
 
-<h3>Aggregate: <code>User</code></h3>
-<p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales, roles y relaciones entre usuarios (por ejemplo la relación propietario — mecánico).</p>
+<h3>Aggregates</h3>
+<h4><code>User</code></h4>
+<p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales y rol.</p>
 <table>
   <thead>
-    <tr><th>Atributo</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>id</td><td>int</td><td>Private</td><td>Identificador único del usuario.</td></tr>
-    <tr><td>username</td><td>varchar</td><td>Private</td><td>Nombre de usuario único (para login).</td></tr>
-    <tr><td>email</td><td>varchar</td><td>Private</td><td>Correo electrónico verificado o por verificar.</td></tr>
-    <tr><td>password</td><td>varchar</td><td>Private</td><td>Contraseña para cada cuenta creada.</td></tr>
-    <tr><td>displayName</td><td>varchar</td><td>Private</td><td>Nombre visible en la plataforma.</td></tr>
-    <tr><td>role</td><td>varchar</td><td>Private</td><td>Roles y permisos asignados al usuario.</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del usuario.</td></tr>
-    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización del usuario.</td></tr>
-    <tr><td>status</td><td>varchar</td><td>Private</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
+    <tr><td>id</td><td>int</td><td>Identificador único del usuario.</td></tr>
+    <tr><td>username</td><td>varchar</td><td>Nombre de usuario único (para login).</td></tr>
+    <tr><td>email</td><td>varchar</td><td>Correo electrónico verificado o por verificar.</td></tr>
+    <tr><td>password</td><td>varchar</td><td>Contraseña del usuario (almacenada con hash).</td></tr>
+    <tr><td>displayName</td><td>varchar</td><td>Nombre visible en la plataforma.</td></tr>
+    <tr><td>role</td><td>varchar</td><td>Rol asignado al usuario (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Fecha de creación del usuario.</td></tr>
+    <tr><td>updatedAt</td><td>Timestamp</td><td>Última fecha de actualización del usuario.</td></tr>
+    <tr><td>status</td><td>UserStatus (Enum)</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
   </tbody>
 </table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>getId()</td><td>int</td><td>Public</td><td>Devuelve el identificador del usuario.</td></tr>
-    <tr><td>getUsername()</td><td>String</td><td>Public</td><td>Devuelve el nombre de usuario.</td></tr>
-    <tr><td>getEmail()</td><td>String</td><td>Public</td><td>Devuelve el correo electrónico.</td></tr>
-    <tr><td>getRole()</td><td>String</td><td>Public</td><td>Devuelve el rol asignado.</td></tr>
-    <tr><td>assignRole(String)</td><td>void</td><td>Public</td><td>Asigna un rol al usuario (valida duplicados).</td></tr>
-    <tr><td>removeRole(String)</td><td>void</td><td>Public</td><td>Remueve un rol del usuario.</td></tr>
-    <tr><td>updateInfo(UpdateUserInfoData)</td><td>void</td><td>Public</td><td>Actualiza información editable del usuario.</td></tr>
-    <tr><td>authenticate(Credentials)</td><td>AuthenticationResult</td><td>Public</td><td>Verifica credenciales y devuelve resultado de autenticación.</td></tr>
-  </tbody>
-</table>
-<hr>
-<h3>Value Object / Entity: <code>Role</code></h3>
+
+<h3>Value Objects</h3>
+<h4><code>Role</code></h4>
 <p><strong>Descripción:</strong> Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
 <table>
   <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador del rol (opcional).</td></tr>
-    <tr><td>name</td><td>String</td><td>Private</td><td>Nombre del rol (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
-    <tr><td>permissions</td><td>Set&lt;String&gt;</td><td>Private</td><td>Lista de permisos asociados al rol.</td></tr>
+    <tr><td>name</td><td>String</td><td>Nombre del rol (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
+    <tr><td>permissions</td><td>Set&lt;String&gt;</td><td>Lista de permisos asociados al rol.</td></tr>
   </tbody>
 </table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>getName()</td><td>String</td><td>Public</td><td>Devuelve el nombre del rol.</td></tr>
-    <tr><td>hasPermission(String)</td><td>boolean</td><td>Public</td><td>Verifica si el rol contiene un permiso específico.</td></tr>
-  </tbody>
-</table>
-<hr>
-<h3>Value Objects / Enums</h3>
-<table>
-  <thead>
-    <tr><th>Nombre</th><th>Tipo</th><th>Valores / Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>UserStatus</td><td>Enum</td><td>ACTIVE, SUSPENDED, DELETED</td></tr>
-  </tbody>
-</table>
+
+<h4><code>UserStatus</code> (Enum)</h4>
+<ul>
+  <li>ACTIVE</li>
+  <li>SUSPENDED</li>
+  <li>DELETED</li>
+</ul>
+
+<h3>Commands</h3>
+<ul>
+  <li><code>SignUpCommand</code> (Record)</li>
+  <li><code>SignInCommand</code> (Record)</li>
+  <li><code>UpdateUserInfoCommand</code> (Record)</li>
+  <li><code>SeedRolesCommand</code> (Record)</li>
+</ul>
+
+<h3>Queries</h3>
+<ul>
+  <li><code>GetAllRolesQuery</code> (Record)</li>
+  <li><code>GetAllUsersQuery</code> (Record)</li>
+  <li><code>GetRoleByNameQuery</code> (Record)</li>
+  <li><code>GetUserByIdQuery</code> (Record)</li>
+  <li><code>GetUserByUsernameQuery</code> (Record)</li>
+</ul>
+
+<h3>Services</h3>
+<h4><code>UserCommandService</code> (Interface)</h4>
+<ul>
+  <li>+ handle(SignUpCommand)</li>
+  <li>+ handle(SignInCommand)</li>
+  <li>+ handle(UpdateUserInfoCommand)</li>
+</ul>
+<h4><code>UserQueryService</code> (Interface)</h4>
+<ul>
+  <li>+ handle(GetAllUsersQuery)</li>
+  <li>+ handle(GetUserByIdQuery)</li>
+  <li>+ handle(GetUserByUsernameQuery)</li>
+</ul>
+<h4><code>RoleCommandService</code> (Interface)</h4>
+<ul>
+  <li>+ handle(SeedRolesCommand)</li>
+</ul>
+<h4><code>RoleQueryService</code> (Interface)</h4>
+<ul>
+  <li>+ handle(GetAllRolesQuery)</li>
+  <li>+ handle(GetRoleByNameQuery)</li>
+</ul>
 
 ##### 4.2.6.2 Interface Layer
 
-<h3>Clase: <code>AuthenticationController</code></h3>
-<p><strong>Descripción:</strong> Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma.</p>
+<h3>Controlador: <code>AuthenticationController</code></h3>
+<table>
+  <tr><th>Título</th><td>AuthenticationController</td></tr>
+  <tr><th>Descripción</th><td>Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma BykerZ.</td></tr>
+</table>
 <table>
   <thead>
-    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td>/api/iam/auth/signin</td><td>POST</td><td>Autentica a un usuario en el sistema y devuelve un token JWT.</td></tr>
-    <tr><td>/api/iam/auth/signup</td><td>POST</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
+    <tr>
+      <td>signIn(SignInResource credentials)</td>
+      <td>POST /api/iam/auth/signin</td>
+      <td>Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica.</td>
+    </tr>
+    <tr>
+      <td>signUp(SignUpResource data)</td>
+      <td>POST /api/iam/auth/signup</td>
+      <td>Registra un nuevo usuario en la plataforma con credenciales y rol inicial.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UserCommandService</td>
+      <td>Servicio encargado de manejar los comandos relacionados con usuarios.</td>
+    </tr>
+    <tr>
+      <td>AuthenticationResourceAssembler</td>
+      <td>Convierte entidades de autenticación en recursos REST para las respuestas.</td>
+    </tr>
   </tbody>
 </table>
 
-<h3>Clase: <code>RolesController</code></h3>
-<p><strong>Descripción:</strong> Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema.</p>
+<h3>Controlador: <code>RolesController</code></h3>
+<table>
+  <tr><th>Título</th><td>RolesController</td></tr>
+  <tr><th>Descripción</th><td>Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema.</td></tr>
+</table>
 <table>
   <thead>
-    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td>/api/iam/roles</td><td>GET</td><td>Lista todos los roles disponibles en el sistema.</td></tr>
-    <tr><td>/api/iam/roles/{name}</td><td>GET</td><td>Obtiene un rol por su nombre.</td></tr>
-    <tr><td>/api/iam/roles/seed</td><td>POST</td><td>Inicializa los roles base (ej. Owner, Mechanic, Admin).</td></tr>
+    <tr>
+      <td>getAllRoles()</td>
+      <td>GET /api/iam/roles</td>
+      <td>Lista todos los roles disponibles en el sistema.</td>
+    </tr>
+    <tr>
+      <td>getRoleByName(String name)</td>
+      <td>GET /api/iam/roles/{name}</td>
+      <td>Obtiene un rol específico por su nombre.</td>
+    </tr>
+    <tr>
+      <td>seedRoles()</td>
+      <td>POST /api/iam/roles/seed</td>
+      <td>Inicializa los roles base del sistema (ej. Owner, Mechanic, Admin).</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RoleQueryService</td>
+      <td>Servicio para consultas relacionadas con roles.</td>
+    </tr>
+    <tr>
+      <td>RoleCommandService</td>
+      <td>Servicio para comandos relacionados con la inicialización de roles.</td>
+    </tr>
+    <tr>
+      <td>RoleResourceAssembler</td>
+      <td>Convierte objetos <code>Role</code> en <code>RoleResource</code>.</td>
+    </tr>
   </tbody>
 </table>
 
-<h3>Clase: <code>UsersController</code></h3>
-<p><strong>Descripción:</strong> Controlador REST encargado de operaciones CRUD y consultas sobre usuarios.</p>
+<h3>Controlador: <code>UsersController</code></h3>
+<table>
+  <tr><th>Título</th><td>UsersController</td></tr>
+  <tr><th>Descripción</th><td>Controlador REST encargado de operaciones CRUD y consultas sobre usuarios en BykerZ.</td></tr>
+</table>
 <table>
   <thead>
-    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+    <tr>
+      <th>Método</th>
+      <th>Ruta</th>
+      <th>Descripción</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td>/api/iam/users</td><td>GET</td><td>Lista todos los usuarios registrados.</td></tr>
-    <tr><td>/api/iam/users/{id}</td><td>GET</td><td>Obtiene los detalles de un usuario por su ID.</td></tr>
-    <tr><td>/api/iam/users/{id}</td><td>PUT</td><td>Actualiza información de un usuario (displayName, email, role, status).</td></tr>
+    <tr>
+      <td>getAllUsers()</td>
+      <td>GET /api/iam/users</td>
+      <td>Lista todos los usuarios registrados en la plataforma.</td>
+    </tr>
+    <tr>
+      <td>getUserById(Long id)</td>
+      <td>GET /api/iam/users/{id}</td>
+      <td>Obtiene los detalles de un usuario por su identificador único.</td>
+    </tr>
+    <tr>
+      <td>updateUserInfo(Long id, UserResource user)</td>
+      <td>PUT /api/iam/users/{id}</td>
+      <td>Actualiza información de un usuario (displayName, email, role, status).</td>
+    </tr>
   </tbody>
 </table>
-<hr>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UserQueryService</td>
+      <td>Servicio encargado de consultas de usuarios.</td>
+    </tr>
+    <tr>
+      <td>UserCommandService</td>
+      <td>Servicio encargado de manejar los comandos relacionados con la gestión de usuarios.</td>
+    </tr>
+    <tr>
+      <td>UserResourceAssembler</td>
+      <td>Convierte entidades <code>User</code> en <code>UserResource</code>.</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3>Recursos (Resources)</h3>
-<p><strong>Descripción:</strong> Objetos DTO/Resource que se exponen en la API para representar datos de autenticación, roles y usuarios.</p>
-<ul>
-  <li><code>AuthenticatedUserResource</code>: Representa un usuario autenticado y su token JWT.</li>
-  <li><code>RoleResource</code>: Representa un rol con su nombre y permisos.</li>
-  <li><code>SignInResource</code>: Contiene credenciales de acceso (username/email + password).</li>
-  <li><code>SignUpResource</code>: Contiene la información necesaria para registrar un nuevo usuario.</li>
-  <li><code>UserResource</code>: DTO genérico para exponer información común de un usuario (id, username, email, displayName, role, status).</li>
-</ul>
-
-<h3>Transformadores</h3>
-<p><strong>Descripción:</strong> Clases encargadas de convertir entre entidades del dominio y recursos de la API.</p>
-<ul>
-  <li><code>RoleResourceAssembler</code>: Convierte objetos <code>Role</code> en <code>RoleResource</code>.</li>
-  <li><code>UserResourceAssembler</code>: Convierte objetos <code>User</code> en <code>UserResource</code>.</li>
-  <li><code>AuthenticationResourceAssembler</code>: Convierte resultados de autenticación en <code>AuthenticatedUserResource</code>.</li>
-</ul>
+<h4>Resources:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AuthenticatedUserResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Representa un usuario autenticado y su token JWT.</td>
+    </tr>
+    <tr>
+      <td>RoleResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Recurso para exponer información de roles (nombre y permisos).</td>
+    </tr>
+    <tr>
+      <td>SignInResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Credenciales de acceso para autenticación (username/email + password).</td>
+    </tr>
+    <tr>
+      <td>SignUpResource &lt;&lt;Record&gt;&gt;</td>
+      <td>Información necesaria para registrar un nuevo usuario.</td>
+    </tr>
+    <tr>
+      <td>UserResource &lt;&lt;Record&gt;&gt;</td>
+      <td>DTO para exponer información de un usuario (id, username, email, displayName, role, status).</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 4.2.6.3 Application Layer
 
@@ -3217,13 +3362,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <h3>Clase: <code>RoleEntity</code></h3>
 <p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
 
-###### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
-###### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
 
-####### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
+###### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
 
-####### 4.2.6.6.2 Bounded Context Database Design Diagram
+###### 4.2.6.6.2 Bounded Context Database Design Diagram
 
 ![IAM-database.png](images/chapter-4/IAM-database.png)
 
