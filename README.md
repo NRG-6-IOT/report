@@ -1197,6 +1197,42 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 </ul>
 
 ##### 4.2.3.2 Interface Layer
+
+<h3>Controlador: <code>AppointmentController</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>AppointmentController</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las citas (<code>Appointment</code>), incluyendo su creación y consultas por ID, mecánico o rango de fechas.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>createAppointment</td><td>POST /api/v1/appointments</td><td>Crea una nueva cita a partir de los datos enviados en el recurso.</td></tr>
+    <tr><td>getAppointmentById</td><td>GET /api/v1/appointments/{appointmentId}</td><td>Obtiene los detalles de una cita específica por su ID.</td></tr>
+    <tr><td>getAppointmentsByMechanic</td><td>GET /api/v1/appointments/mechanics/{mechanicId}</td><td>Lista todas las citas asociadas a un mecánico en particular.</td></tr>
+    <tr><td>getAppointmentsByDateRange</td><td>GET /api/v1/appointments?start={start}&end={end}</td><td>Obtiene todas las citas registradas dentro de un rango de fechas.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AppointmentQueryService</td><td>Servicio para consultas de citas por ID, mecánico o rango de fechas.</td></tr>
+    <tr><td>AppointmentCommandService</td><td>Servicio para ejecutar comandos relacionados con la creación de citas.</td></tr>
+    <tr><td>GenerateAppointmentCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de citas.</td></tr>
+    <tr><td>AppointmentResourceFromEntityAssembler</td><td>Convierte entidades de cita en recursos REST para la respuesta de la API.</td></tr>
+  </tbody>
+</table>
+
 <h3>Controlador: <code>SubscriptionController</code></h3>
 <table>
   <tr>
@@ -1205,47 +1241,41 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones CRUD de suscripciones, incluyendo su activación, renovación, suspensión y cancelación. Expone endpoints que vinculan explícitamente a dueños (<code>Owner</code>) y mecánicos (<code>Mechanic</code>), garantizando integridad en el ciclo de vida de la suscripción.</td>
+    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las suscripciones (<code>Subscription</code>), incluyendo la generación de códigos de invitación, cancelación, vinculación de motociclistas y consultas por ID o mecánico.</td>
   </tr>
 </table>
 <table>
   <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
+    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{id}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getOwnerSubscriptions</td><td>GET /api/v1/subscriptions/owners/{ownerId}</td><td>Obtiene todas las suscripciones activas e inactivas de un dueño de moto (<code>Owner</code>).</td></tr>
-    <tr><td>getMechanicSubscriptions</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}</td><td>Lista todas las suscripciones en las que un mecánico (<code>Mechanic</code>) está involucrado.</td></tr>
-    <tr><td>createSubscription</td><td>POST /api/v1/subscriptions</td><td>Crea una nueva suscripción asociando un <code>Owner</code>, un <code>Mechanic</code>, un vehículo y un <code>Plan</code>.</td></tr>
-    <tr><td>updateSubscription</td><td>PUT /api/v1/subscriptions/{id}</td><td>Actualiza información de una suscripción existente (ejemplo: cambio de plan o reasignación de mecánico).</td></tr>
-    <tr><td>activateSubscription</td><td>POST /api/v1/subscriptions/{id}/activate</td><td>Activa una suscripción si cumple con las reglas de negocio.</td></tr>
-    <tr><td>renewSubscription</td><td>POST /api/v1/subscriptions/{id}/renew</td><td>Renueva una suscripción al alcanzar la fecha de expiración.</td></tr>
-    <tr><td>suspendSubscription</td><td>POST /api/v1/subscriptions/{id}/suspend</td><td>Suspende temporalmente una suscripción.</td></tr>
-    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{id}/cancel</td><td>Cancela definitivamente una suscripción.</td></tr>
-    <tr><td>deleteSubscription</td><td>DELETE /api/v1/subscriptions/{id}</td><td>Elimina una suscripción del sistema (soft delete o hard delete según reglas).</td></tr>
+    <tr><td>generateInvitationCode</td><td>POST /api/v1/subscriptions/invitations</td><td>Genera un nuevo código de invitación para vincular un motociclista con un mecánico.</td></tr>
+    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{subscriptionId}/cancel</td><td>Cancela una suscripción específica por su ID.</td></tr>
+    <tr><td>linkMotorcyclist</td><td>POST /api/v1/subscriptions/link</td><td>Vincula un motociclista a un mecánico utilizando un código de invitación.</td></tr>
+    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{subscriptionId}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
+    <tr><td>getUsersByMechanic</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}/users</td><td>Lista los motociclistas vinculados a un mecánico.</td></tr>
   </tbody>
 </table>
 <h4>Dependencias:</h4>
 <table>
   <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
+    <tr><th>Dependencia</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas y recuperación de datos de suscripciones (por ID, dueño, mecánico).</td></tr>
-    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de creación, actualización, renovación, suspensión y cancelación de suscripciones.</td></tr>
-    <tr><td>CreateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de suscripciones (incluye validación de <code>Owner</code>, <code>Mechanic</code> y <code>Plan</code>).</td></tr>
-    <tr><td>UpdateSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de actualización de suscripciones.</td></tr>
-    <tr><td>DeleteSubscriptionCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de eliminación de suscripciones.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción (con <code>Owner</code>, <code>Mechanic</code>, <code>Plan</code>) en recursos REST para la respuesta.</td></tr>
+    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas de suscripciones por ID y usuarios vinculados a mecánicos.</td></tr>
+    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de generación de códigos de invitación, cancelación y vinculación.</td></tr>
+    <tr><td>GenerateInvitationCodeCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de generación de códigos de invitación.</td></tr>
+    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta de la API.</td></tr>
   </tbody>
 </table>
+
+<h3>Resources</h3>
+<ul>
+  <li><code>CreateAppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
+  <li><code>AppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
+  <li><code>GenerateInvitationCodeResource</code> &lt;&lt;Record&gt;&gt;</li>
+  <li><code>SubscriptionResource</code> &lt;&lt;Record&gt;&gt;</li>
+</ul>
 
 ##### 4.2.3.3 Application Layer
 
