@@ -1973,11 +1973,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h4>Consultas:</h4>
+<h4>Queries:</h4>
 <table>
   <thead>
   <tr>
-    <th>Consulta</th>
+    <th>Query</th>
     <th>Descripción</th>
   </tr>
   </thead>
@@ -2021,11 +2021,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h4>Comandos:</h4>
+<h4>Commands:</h4>
 <table>
   <thead>
   <tr>
-    <th>Comando</th>
+    <th>Command</th>
     <th>Descripción</th>
   </tr>
   </thead>
@@ -2065,11 +2065,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h4>Consultas:</h4>
+<h4>Queries:</h4>
 <table>
   <thead>
   <tr>
-    <th>Consulta</th>
+    <th>Query</th>
     <th>Descripción</th>
   </tr>
   </thead>
@@ -2104,11 +2104,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h4>Comandos:</h4>
+<h4>Commands:</h4>
 <table>
   <thead>
   <tr>
-    <th>Comando</th>
+    <th>Command</th>
     <th>Descripción</th>
   </tr>
   </thead>
@@ -2202,69 +2202,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </tbody>
 </table>
-
-<h3>Controlador:<code>MetricDefinitionController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricDefinitionController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST que maneja la consulta de definiciones de métricas.</td>
-  </tr>
-</table>
-
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Ruta</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>getAllMetricDefinitions</td>
-    <td>GET /api/v1/metricdefinitions/</td>
-    <td>Obtiene todas las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>getMetricDefinitionById</td>
-    <td>GET /api/v1/metricdefinitions</td>
-    <td>Obtiene una definición de métrica por identificador.</td>
-  </tr>
-  </tbody>
-</table>
-
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>MetricDefinitionRepository</td>
-    <td>Repositorio de las definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>MetricDefinitionResource</td>
-    <td>Recurso representante de una definición de métrica.</td>
-  </tr>
-  <tr>
-    <td>MetricDefinitionQueryService</td>
-    <td>Servicio de consultas de definiciones de métricas.</td>
-  </tr>
-  <tr>
-    <td>MetricDefinitionResourceFromEntityAssembler</td>
-    <td>Convierte entidades de definición de métrica en recursos REST para la respuesta.</td>
-  </tr>
-  </tbody>
-</table>
-
 
 ##### 4.2.5.3 Application Layer
 
@@ -2467,7 +2404,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de reportes.</td>
   </tr>
 </table>
-
 <table>
   <thead>
     <tr>
@@ -2476,22 +2412,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>save(Report report)</td>
-      <td>Persiste un nuevo reporte o actualiza uno existente.</td>
-    </tr>
-    <tr>
-      <td>deleteById(Long id)</td>
-      <td>Elimina un reporte por su ID.</td>
-    </tr>
-    <tr>
-      <td>findById(Long id)</td>
-      <td>Recupera los detalles de un reporte por su ID.</td>
-    </tr>
-    <tr>
-      <td>existsById(Long id)</td>
-      <td>Verifica si existe un reporte por su ID.</td>
-    </tr>
     <tr>
       <td>findByVehicleId(Long vehicleId)</td>
       <td>Obtiene todos los reportes asociados a un vehículo.</td>
@@ -2512,36 +2432,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
 </table>
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>save(MetricDefinition metricDefinition)</td>
-      <td>Persiste una nueva definición de métrica o actualiza una existente.</td>
-    </tr>
-    <tr>
-      <td>findAll</td>
-      <td>Lista todas las definiciones de métricas.</td>
-    </tr>
-    <tr>
-      <td>findById(Long id)</td>
-      <td>Obtiene los detalles de una definición de métrica por su identificador.</td>
-    </tr>
-    <tr>
-      <td>existsById(Long id)</td>
-      <td>Verifica si existe una definición de métrica por su identificador.</td>
-    </tr>
-    <tr>
-      <td>deleteById(Long id)</td>
-      <td>Elimina una definición de métrica por su identificador.</td>
-    </tr>
-  </tbody>
-</table>
 <hr>
 
 ##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
