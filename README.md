@@ -214,7 +214,7 @@ del ABET – EAC - Student Outcome 5.
         <br>Real Calderón, Sebastián Omar: Colaboré activamente con mis compañeros, aportando ideas y asumiendo un liderazgo compartido para alcanzar consensos y mantener la coherencia del trabajo en equipo.
       </td>
       <td>
-        -
+        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades (User Stories, Impact Mapping, Domain Storytelling, Eventstorming, Context Mapping y definición de Bounded Contexts), donde cada integrante asumió responsabilidades específicas y se promovió la toma de decisiones consensuada que permitió avanzar de manera organizada en cada etapa del trabajo.
       </td>
     </tr>
     <tr>
@@ -227,7 +227,7 @@ del ABET – EAC - Student Outcome 5.
         <br>Real Calderón, Sebastián Omar: Ayudé a fomentar un ambiente de colaboración e inclusión, participando en la planificación de tareas y en el cumplimiento de los objetivos del proyecto.
       </td>
       <td>
-        -
+        Generamos un entorno inclusivo que facilitó la participación activa de todos los miembros, definiendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de presentaciones, mapeos de contexto, análisis competitivo y construcción del lenguaje ubicuo. Gracias a esta coordinación, logramos cumplir con los objetivos planteados en cada entrega de manera eficiente y colaborativa.
       </td>
     </tr>
   </tbody>
