@@ -1766,11 +1766,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/subscription_code_level" alt="subscription_code_level" width="600"/>
+<img src="./images/chapter-4/subscription_code_level.png" alt="subscription_code_level" width="600"/>
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/subscription_erd.png" alt="subscription_erd" width="600"/>
+<img src="./images/chapter-4/subscription_db.png" alt="subscription_erd" width="600"/>
 
 #### 4.2.4 Bounded Context: Bienestar de Vehículos
 
@@ -2292,7 +2292,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_wellness_erd.png" alt="vehicle_wellness_erd" width="600"/>
+<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
