@@ -87,14 +87,26 @@
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG-8-IOT/report](https://github.com/NRG-8-IOT/report).
 
+<img src="images/insights/report-insights-tb1-1.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb1-2.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb1-3.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb1-4.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb1-5.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb1-6.png" alt="Repo Insights">
+
 Distribución de commits:
-* Alejo Cardenas Jose Antonio (Firtness): commits.
-* Astonitas Díaz Juan Diego (NeorRise456): commits.
-* Casas Sanchez Gabriel Alexander (Al3xiel): commits.
-* Pasquale Barrenechea Gianluca Santino (cwassointt): commits.
-* Pacheco Astiguetta Sebastian (Pachieeee): commits.
+* Alejo Cardenas Jose Antonio (Firtness): 15 commits.
+* Astonitas Díaz Juan Diego (NeorRise456): 8 commits.
+* Casas Sanchez Gabriel Alexander (Al3xiel): 24 commits.
+* Pasquale Barrenechea Gianluca Santino (cwassointt): 40 commits.
+* Pacheco Astiguetta Sebastian (Pachieeee): 14 commits.
 * Paitan Pumachuca Max Anthony (MaxPaitanP): commits.
-* Real Calderon Sebastian Omar (sebastianrealcalderon): commits.
+* Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
 ## Contenido
 
