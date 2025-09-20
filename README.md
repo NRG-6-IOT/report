@@ -3315,9 +3315,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
+![Component Diagram](images/chapter-4/system-component-diagram.png)
+
 ##### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
+
+![IAM Class Diagram](images/chapter-4/iam_class_diagram.png)
 
 ###### 4.2.6.6.2 Bounded Context Database Design Diagram
 
