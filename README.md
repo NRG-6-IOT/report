@@ -1576,15 +1576,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.3 Application Layer
 
-<h3>Clase: <code>VehicleWellnessQueryServiceImpl</code></h3>
+<h3>Clase: <code>MetricCommandServiceImpl</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>VehicleWellnessQueryServiceImpl</td>
+    <td>MetricCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con el bienestar de los vehículos, incluyendo métricas, alertas y diagnósticos históricos.</td>
+    <td>Implementación del servicio de comandos encargado de gestionar la creación y registro de métricas asociadas al bienestar de los vehículos.</td>
   </tr>
 </table>
 <table>
@@ -1596,20 +1596,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetVehicleWellnessByIdQuery)</td>
-      <td>Obtiene el estado general de bienestar de un vehículo por su ID.</td>
-    </tr>
-    <tr>
-      <td>handle(GetVehicleMetricsQuery)</td>
-      <td>Devuelve las métricas en tiempo real e históricas asociadas a un vehículo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetVehicleAlertsQuery)</td>
-      <td>Recupera todas las alertas preventivas activas de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetVehicleDiagnosticsQuery)</td>
-      <td>Devuelve los diagnósticos históricos generados para un vehículo.</td>
+      <td>handle(RegisterMetricCommand)</td>
+      <td>Registra una nueva métrica asociada a un vehículo en el repositorio.</td>
     </tr>
   </tbody>
 </table>
@@ -1623,37 +1611,26 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>VehicleWellnessRepository</td>
-      <td>Repositorio para acceso y consulta de datos de bienestar de vehículos.</td>
+      <td>MetricRepository</td>
+      <td>Repositorio encargado de la persistencia de métricas de vehículos.</td>
     </tr>
     <tr>
-      <td>GetVehicleWellnessByIdQuery</td>
-      <td>Query para obtener el estado general del vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetVehicleMetricsQuery</td>
-      <td>Query para recuperar métricas asociadas a un vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetVehicleAlertsQuery</td>
-      <td>Query para recuperar alertas preventivas activas.</td>
-    </tr>
-    <tr>
-      <td>GetVehicleDiagnosticsQuery</td>
-      <td>Query para recuperar diagnósticos históricos del vehículo.</td>
+      <td>RegisterMetricCommand</td>
+      <td>Comando para registrar nuevas métricas.</td>
     </tr>
   </tbody>
 </table>
 <hr>
-<h3>Clase: <code>VehicleWellnessCommandServiceImpl</code></h3>
+
+<h3>Clase: <code>NotificationCommandServiceImpl</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>VehicleWellnessCommandServiceImpl</td>
+    <td>NotificationCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con el bienestar del vehículo, como actualización de métricas, generación de diagnósticos y gestión de alertas.</td>
+    <td>Implementación del servicio de comandos encargado de la creación y gestión del ciclo de vida de las notificaciones asociadas a métricas vehiculares.</td>
   </tr>
 </table>
 <table>
@@ -1665,20 +1642,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(UpdateMetricsCommand)</td>
-      <td>Agrega o actualiza métricas en el registro de bienestar del vehículo.</td>
+      <td>handle(CreateNotificationCommand)</td>
+      <td>Crea una notificación asociada a un evento de bienestar vehicular.</td>
     </tr>
     <tr>
-      <td>handle(GenerateDiagnosisCommand)</td>
-      <td>Genera un diagnóstico automático basado en las métricas actuales del vehículo.</td>
-    </tr>
-    <tr>
-      <td>handle(CreateAlertCommand)</td>
-      <td>Crea una alerta preventiva si se detecta una anomalía en las métricas.</td>
-    </tr>
-    <tr>
-      <td>handle(DeleteWellnessDataCommand)</td>
-      <td>Elimina los datos históricos de bienestar asociados a un vehículo.</td>
+      <td>handle(AcknowledgeNotificationCommand)</td>
+      <td>Marca una notificación como reconocida por el usuario o sistema.</td>
     </tr>
   </tbody>
 </table>
@@ -1692,28 +1661,140 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>VehicleWellnessRepository</td>
-      <td>Repositorio para acceso y persistencia de datos de bienestar de vehículos.</td>
+      <td>NotificationRepository</td>
+      <td>Repositorio encargado de la persistencia de notificaciones.</td>
     </tr>
     <tr>
-      <td>NotificationService</td>
-      <td>Servicio para enviar notificaciones cuando se generan alertas preventivas.</td>
+      <td>CreateNotificationCommand</td>
+      <td>Comando para la creación de notificaciones.</td>
     </tr>
     <tr>
-      <td>UpdateMetricsCommand</td>
-      <td>Comando para actualizar o agregar métricas de un vehículo.</td>
+      <td>AcknowledgeNotificationCommand</td>
+      <td>Comando para reconocer y actualizar el estado de una notificación.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase: <code>MetricQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>MetricQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas encargado de recuperar información relacionada con notificaciones asociadas a métricas de los vehículos.</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetNotificationsByVehicleQuery)</td>
+      <td>Obtiene todas las notificaciones asociadas a un vehículo específico.</td>
     </tr>
     <tr>
-      <td>GenerateDiagnosisCommand</td>
-      <td>Comando para generar diagnósticos automáticos.</td>
+      <td>handle(GetNotificationsByTypeQuery)</td>
+      <td>Recupera notificaciones filtradas por tipo (ejemplo: alerta preventiva, advertencia crítica).</td>
     </tr>
     <tr>
-      <td>CreateAlertCommand</td>
-      <td>Comando para generar alertas preventivas.</td>
+      <td>handle(GetNotificationByIdQuery)</td>
+      <td>Obtiene una notificación específica a partir de su ID.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MetricRepository</td>
+      <td>Repositorio encargado de gestionar métricas y notificaciones asociadas.</td>
     </tr>
     <tr>
-      <td>DeleteWellnessDataCommand</td>
-      <td>Comando para eliminar registros históricos de bienestar.</td>
+      <td>GetNotificationsByVehicleQuery</td>
+      <td>Query para recuperar notificaciones de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>GetNotificationsByTypeQuery</td>
+      <td>Query para recuperar notificaciones filtradas por tipo.</td>
+    </tr>
+    <tr>
+      <td>GetNotificationByIdQuery</td>
+      <td>Query para obtener una notificación específica por su ID.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase: <code>NotificationQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>NotificationQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas encargado de recuperar métricas asociadas a un vehículo y exponerlas en diferentes vistas (por rango de fechas, por ID o por vehículo).</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetMetricsByVehicleQuery)</td>
+      <td>Obtiene todas las métricas asociadas a un vehículo específico.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricsByDateRangeQuery)</td>
+      <td>Recupera las métricas de un vehículo dentro de un rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricByIdQuery)</td>
+      <td>Obtiene una métrica específica a partir de su ID.</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NotificationRepository</td>
+      <td>Repositorio encargado de la persistencia y consulta de métricas asociadas a notificaciones.</td>
+    </tr>
+    <tr>
+      <td>GetMetricsByVehicleQuery</td>
+      <td>Query para recuperar todas las métricas de un vehículo.</td>
+    </tr>
+    <tr>
+      <td>GetMetricsByDateRangeQuery</td>
+      <td>Query para recuperar métricas dentro de un rango de fechas.</td>
+    </tr>
+    <tr>
+      <td>GetMetricByIdQuery</td>
+      <td>Query para obtener una métrica específica por su ID.</td>
     </tr>
   </tbody>
 </table>
