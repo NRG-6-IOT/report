@@ -98,6 +98,15 @@ Distribución de commits:
 
 ## Contenido
 
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**NRC**: 3443](#nrc-3443)
+    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
+    - [**Ingeniería de software**](#ingeniería-de-software)
+  - [Informe del trabajo Final](#informe-del-trabajo-final)
+    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
+    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
+  - [**Integrantes**](#integrantes)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
   - [Project Report Collaboration Insights](#project-report-collaboration-insights)
   - [Contenido](#contenido)
@@ -107,13 +116,28 @@ Distribución de commits:
       - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
       - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
+      - [Problema identificado](#problema-identificado)
+      - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [What](#what)
+        - [When](#when)
+        - [Where](#where)
+        - [Who](#who)
+        - [Why](#why)
+        - [How](#how)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
+          - [User Assumptions:](#user-assumptions)
+          - [Business Assumptions:](#business-assumptions)
+          - [Technical Assumptions (Suposiciones Técnicas)](#technical-assumptions-suposiciones-técnicas)
+          - [Market Assumptions (Suposiciones de Mercado)](#market-assumptions-suposiciones-de-mercado)
+          - [Design Assumptions](#design-assumptions)
         - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
         - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+      - [Segmento Objetivo #1: Usuarios de motos urbanas](#segmento-objetivo-1-usuarios-de-motos-urbanas)
+      - [Segmento Objetivo #2: Mecánicos y talleres de servicio](#segmento-objetivo-2-mecánicos-y-talleres-de-servicio)
   - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
       - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
@@ -131,6 +155,7 @@ Distribución de commits:
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
+- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -183,6 +208,7 @@ del ABET – EAC - Student Outcome 5.
       <td><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
       <td>
         <br> TB1: <br>Astonitas Díaz Juan Diego: Mediatnte fomentar la ayuda mutua, se logro que todos los integrantes implementaran correctamente los diagramas de sus bounded context
+        <br>Alejo Cardenas, Jose Antonio: Asumí un liderazgo compartido junto a mis compañeros en la elaboración de User Stories, Impact Mapping y Bounded Contexts, valorando cada aporte y llegando a consensos que guiaron nuestro trabajo.
       </td>
       <td>
         -
@@ -192,6 +218,7 @@ del ABET – EAC - Student Outcome 5.
       <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
       <td>
         <br> TB1: <br>Astonitas Díaz Juan Diego: Dirigi la construccion y la organizacion del grupo para la correcta ejecucion y documentacion de los bounded context
+        <br>Alejo Cardenas, Jose Antonio: Fomenté un entorno inclusivo de colaboración durante el event storming, establecí metas claras con el equipo, planificamos tareas de forma organizada y logramos cumplir con los objetivos propuestos.
       </td>
       <td>
         -
