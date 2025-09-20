@@ -1082,7 +1082,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de servicios y gastos.</td>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de servicios.</td>
   </tr>
 </table>
 
@@ -1103,36 +1103,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>Obtiene un servicio específico por su ID.</td>
     </tr>
     <tr>
-      <td>handle(GetExpenseHistoryByVehicleQuery)</td>
-      <td>Obtiene el historial completo de gastos de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetMonthlySummaryQuery)</td>
-      <td>Obtiene un resumen mensual de servicios y gastos.</td>
-    </tr>
-    <tr>
-      <td>handle(GetMaintenanceTimelineQuery)</td>
-      <td>Obtiene una línea de tiempo de todos los mantenimientos.</td>
-    </tr>
-    <tr>
       <td>handle(GetServicesByTypeQuery)</td>
       <td>Filtra servicios por tipo.</td>
     </tr>
     <tr>
       <td>handle(GetServicesByDateRangeQuery)</td>
       <td>Obtiene servicios dentro de un rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>handle(GetExpensesByTypeQuery)</td>
-      <td>Filtra gastos por tipo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetExpensesByDateRangeQuery)</td>
-      <td>Obtiene gastos dentro de un rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>handle(GetTotalInvestmentQuery)</td>
-      <td>Calcula la inversión total en un vehículo.</td>
     </tr>
   </tbody>
 </table>
@@ -1150,67 +1126,19 @@ La arquitectura de software de la solución se ha representado utilizando el mod
       <td>ServiceHistoryRepository</td>
       <td>Repositorio para acceso a datos de historiales de servicio.</td>
     </tr>
-    <tr>
-      <td>ExpenseHistoryRepository</td>
-      <td>Repositorio para acceso a datos de historiales de gastos.</td>
-    </tr>
-    <tr>
-      <td>ServiceItemRepository</td>
-      <td>Repositorio para acceso a datos de ítems de servicio.</td>
-    </tr>
-    <tr>
-      <td>GetServiceHistoryByVehicleQuery</td>
-      <td>Query para obtener historial de servicios por vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetServiceHistoryByIdQuery</td>
-      <td>Query para obtener servicio por ID.</td>
-    </tr>
-    <tr>
-      <td>GetExpenseHistoryByVehicleQuery</td>
-      <td>Query para obtener historial de gastos por vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetMonthlySummaryQuery</td>
-      <td>Query para obtener resumen mensual.</td>
-    </tr>
-    <tr>
-      <td>GetMaintenanceTimelineQuery</td>
-      <td>Query para obtener línea de tiempo de mantenimientos.</td>
-    </tr>
-    <tr>
-      <td>GetServicesByTypeQuery</td>
-      <td>Query para filtrar servicios por tipo.</td>
-    </tr>
-    <tr>
-      <td>GetServicesByDateRangeQuery</td>
-      <td>Query para obtener servicios por rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>GetExpensesByTypeQuery</td>
-      <td>Query para filtrar gastos por tipo.</td>
-    </tr>
-    <tr>
-      <td>GetExpensesByDateRangeQuery</td>
-      <td>Query para obtener gastos por rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>GetTotalInvestmentQuery</td>
-      <td>Query para calcular inversión total.</td>
-    </tr>
   </tbody>
 </table>
 <hr>
 
-<h3>Clase: <code>HistoryCommandServiceImpl</code></h3>
+<h3>Clase: <code>ServiceHistoryCommandServiceImpl</code></h3>
 <table>
   <tr>
     <th>Título</th>
-    <td>HistoryCommandServiceImpl</td>
+    <td>ServiceHistoryCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de servicios y gastos.</td>
+    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de servicios</td>
   </tr>
 </table>
 
@@ -1225,11 +1153,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>handle(CreateServiceHistoryCommand)</td><td>Crea un nuevo registro de servicio en el historial.</td></tr>
     <tr><td>handle(UpdateServiceHistoryCommand)</td><td>Actualiza un registro de servicio existente.</td></tr>
     <tr><td>handle(DeleteServiceHistoryCommand)</td><td>Elimina un registro de servicio.</td></tr>
-    <tr><td>handle(CreateExpenseHistoryCommand)</td><td>Crea un nuevo registro de gasto en el historial.</td></tr>
-    <tr><td>handle(UpdateExpenseHistoryCommand)</td><td>Actualiza un registro de gasto existente.</td></tr>
-    <tr><td>handle(DeleteExpenseHistoryCommand)</td><td>Elimina un registro de gasto.</td></tr>
-    <tr><td>handle(AddServiceItemCommand)</td><td>Agrega un ítem de servicio a un registro existente.</td></tr>
-    <tr><td>handle(RemoveServiceItemCommand)</td><td>Elimina un ítem de servicio de un registro existente.</td></tr>
   </tbody>
 </table>
 
@@ -1243,16 +1166,104 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr><td>ServiceHistoryRepository</td><td>Repositorio para persistencia de historiales de servicio.</td></tr>
-    <tr><td>ExpenseHistoryRepository</td><td>Repositorio para persistencia de historiales de gastos.</td></tr>
-    <tr><td>ServiceItemRepository</td><td>Repositorio para persistencia de ítems de servicio.</td></tr>
-    <tr><td>CreateServiceHistoryCommand</td><td>Comando para crear historiales de servicio.</td></tr>
-    <tr><td>UpdateServiceHistoryCommand</td><td>Comando para actualizar historiales de servicio.</td></tr>
-    <tr><td>DeleteServiceHistoryCommand</td><td>Comando para eliminar historiales de servicio.</td></tr>
-    <tr><td>CreateExpenseHistoryCommand</td><td>Comando para crear historiales de gastos.</td></tr>
-    <tr><td>UpdateExpenseHistoryCommand</td><td>Comando para actualizar historiales de gastos.</td></tr>
-    <tr><td>DeleteExpenseHistoryCommand</td><td>Comando para eliminar historiales de gastos.</td></tr>
-    <tr><td>AddServiceItemCommand</td><td>Comando para agregar ítems de servicio.</td></tr>
-    <tr><td>RemoveServiceItemCommand</td><td>Comando para eliminar ítems de servicio.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>ExpenseHistoryQueryServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ExpenseHistoryQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de gastos.</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
+    <td>Obtiene el historial completo de gastos de un vehículo.</td>
+  </tr>
+  <tr>
+    <td>handle(GetExpensesByTypeQuery)</td>
+    <td>Filtra gastos por tipo.</td>
+  </tr>
+  <tr>
+    <td>handle(GetExpensesByDateRangeQuery)</td>
+    <td>Obtiene gastos dentro de un rango de fechas.</td>
+  </tr>
+  <tr>
+    <td>handle(GetTotalInvestmentQuery)</td>
+    <td>Calcula la inversión total en un vehículo.</td>
+  </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+  <tr>
+    <th>Dependencia</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>ExpenseHistoryRepository</td>
+    <td>Repositorio para acceso a datos de historiales de gastos.</td>
+  </tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Clase: <code>ExpenseHistoryCommandServiceImpl</code></h3>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>ExpenseHistoryCommandServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de gastos</td>
+  </tr>
+</table>
+
+<table>
+  <thead>
+  <tr>
+    <th>Método</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><td>handle(CreateExpenseHistoryCommand)</td><td>Crea un nuevo registro de gasto en el historial.</td></tr>
+  <tr><td>handle(UpdateExpenseHistoryCommand)</td><td>Actualiza un registro de gasto existente.</td></tr>
+  <tr><td>handle(DeleteExpenseHistoryCommand)</td><td>Elimina un registro de gasto.</td></tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+  <tr>
+    <th>Dependencia</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>ExpenseHistoryRepository</td>
+    <td>Repositorio para persistencia de historiales de gastos.</td>
+  </tr>
   </tbody>
 </table>
 
