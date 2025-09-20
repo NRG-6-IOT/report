@@ -960,7 +960,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios, gastos y reparaciones de vehículos.</td>
+    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios y gastos de vehículos.</td>
   </tr>
 </table>
 
@@ -986,7 +986,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr>
       <td>addServiceHistory(ServiceHistory history)</td>
       <td>POST /api/v1/history/service</td>
-      <td>Agrega un nuevo registro de servicio al historial.</td>
+      <td>Agrega un nuevo registro de servicio.</td>
     </tr>
     <tr>
       <td>updateServiceHistory(Long id, ServiceHistory history)</td>
@@ -1035,6 +1035,18 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>HistoryResource</td>
+      <td>Recurso REST representante de un elemento de historial</td>
+    </tr>
+    <tr>
+      <td>CreateServiceHistoryResource</td>
+      <td>Recurso REST representante de la creación de un elemento de historial de servicios</td>
+    </tr>
+    <tr>
+      <td>CreateExpenseHistoryResource</td>
+      <td>Recurso REST representante de la creación de un elemento de historial de gastos</td>
+    </tr>
     <tr>
       <td>HistoryQueryService</td>
       <td>Servicio para consultas y recuperación de datos de historiales.</td>
