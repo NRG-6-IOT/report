@@ -2680,6 +2680,115 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
+##### 4.2.6. Bounded Context: IAM
+
+##### 4.2.6.1 Domain Layer
+
+<h3>Aggregate: <code>User</code></h3>
+<p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales, roles y relaciones entre usuarios (por ejemplo la relación propietario — mecánico).</p>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del usuario.</td></tr>
+    <tr><td>username</td><td>String</td><td>Private</td><td>Nombre de usuario único (para login).</td></tr>
+    <tr><td>email</td><td>String</td><td>Private</td><td>Correo electrónico verificado o por verificar.</td></tr>
+    <tr><td>password</td><td>String</td><td>Private</td><td>Contraseña para cada cuenta creada.</td></tr>
+    <tr><td>displayName</td><td>String</td><td>Private</td><td>Nombre visible en la plataforma.</td></tr>
+    <tr><td>userType</td><td>UserType (Enum)</td><td>Private</td><td>Tipo de usuario (OWNER, MECHANIC, ADMIN, etc.).</td></tr>
+    <tr><td>roles</td><td>List&lt;Role&gt;</td><td>Private</td><td>Roles y permisos asignados al usuario.</td></tr>
+    <tr><td>linkedVehicleIds</td><td>List&lt;Long&gt;</td><td>Private</td><td>IDs de vehículos asociados (propiedad o autorización).</td></tr>
+    <tr><td>linkedMembers</td><td>List&lt;Long&gt;</td><td>Private</td><td>Si es <code>Mechanic</code>, lista de <code>Owner</code> (userId) vinculados.</td></tr>
+    <tr><td>linkedMechanicId</td><td>Long</td><td>Private</td><td>Si es <code>Owner</code>, id del <code>Mechanic</code> al que está vinculado (opcional).</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del usuario.</td></tr>
+    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización del usuario.</td></tr>
+    <tr><td>status</td><td>UserStatus (Enum)</td><td>Private</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador del usuario.</td></tr>
+    <tr><td>getUsername()</td><td>String</td><td>Public</td><td>Devuelve el nombre de usuario.</td></tr>
+    <tr><td>getEmail()</td><td>String</td><td>Public</td><td>Devuelve el correo electrónico.</td></tr>
+    <tr><td>getRoles()</td><td>List&lt;Role&gt;</td><td>Public</td><td>Devuelve los roles asignados.</td></tr>
+    <tr><td>assignRole(Role)</td><td>void</td><td>Public</td><td>Asigna un rol al usuario (valida duplicados).</td></tr>
+    <tr><td>removeRole(Role)</td><td>void</td><td>Public</td><td>Remueve un rol del usuario.</td></tr>
+    <tr><td>linkVehicle(Long vehicleId)</td><td>void</td><td>Public</td><td>Vincula un vehículo al usuario.</td></tr>
+    <tr><td>linkMember(Long ownerId)</td><td>void</td><td>Public</td><td>Si es mecánico, agrega un dueño vinculado.</td></tr>
+    <tr><td>linkMechanic(Long mechanicId)</td><td>void</td><td>Public</td><td>Si es owner, vincula el mecánico asignado.</td></tr>
+    <tr><td>updateInfo(UpdateUserInfoData)</td><td>void</td><td>Public</td><td>Actualiza información editable del usuario.</td></tr>
+    <tr><td>authenticate(Credentials)</td><td>AuthenticationResult</td><td>Public</td><td>Verifica credenciales y devuelve resultado de autenticación.</td></tr>
+  </tbody>
+</table>
+<hr>
+<h3>Aggregate: <code>Appointment</code></h3>
+<p><strong>Descripción:</strong> Representa una cita/agendamiento entre <code>Mechanic</code> y <code>Owner</code>.</p>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador de la cita.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico que atenderá.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo asociado a la cita.</td></tr>
+    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora programada.</td></tr>
+    <tr><td>status</td><td>AppointmentStatus (Enum)</td><td>Private</td><td>Estado de la cita (SCHEDULED, COMPLETED, CANCELED).</td></tr>
+    <tr><td>notes</td><td>String</td><td>Private</td><td>Notas o instrucciones asociadas a la cita.</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el ID de la cita.</td></tr>
+    <tr><td>getMechanicId()</td><td>Long</td><td>Public</td><td>Devuelve el ID del mecánico.</td></tr>
+    <tr><td>getScheduleAt()</td><td>LocalDateTime</td><td>Public</td><td>Devuelve la fecha/ hora programada.</td></tr>
+    <tr><td>reschedule(LocalDateTime)</td><td>void</td><td>Public</td><td>Reprograma la cita si las reglas lo permiten.</td></tr>
+    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela la cita.</td></tr>
+  </tbody>
+</table>
+<hr>
+<h3>Value Object / Entity: <code>Role</code></h3>
+<p><strong>Descripción:</strong> Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador del rol (opcional).</td></tr>
+    <tr><td>name</td><td>String</td><td>Private</td><td>Nombre del rol (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
+    <tr><td>permissions</td><td>Set&lt;String&gt;</td><td>Private</td><td>Lista de permisos asociados al rol.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getName()</td><td>String</td><td>Public</td><td>Devuelve el nombre del rol.</td></tr>
+    <tr><td>hasPermission(String)</td><td>boolean</td><td>Public</td><td>Verifica si el rol contiene un permiso específico.</td></tr>
+  </tbody>
+</table>
+<hr>
+<h3>Value Objects / Enums</h3>
+<table>
+  <thead>
+    <tr><th>Nombre</th><th>Tipo</th><th>Valores / Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>UserType</td><td>Enum</td><td>OWNER, MECHANIC, ADMIN</td></tr>
+    <tr><td>UserStatus</td><td>Enum</td><td>ACTIVE, SUSPENDED, DELETED</td></tr>
+    <tr><td>AppointmentStatus</td><td>Enum</td><td>SCHEDULED, COMPLETED, CANCELED</td></tr>
+  </tbody>
+</table>
+
+
 ## Conclusiones
 
 ## Bibliografía
