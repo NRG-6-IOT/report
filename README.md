@@ -4150,4 +4150,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ## Bibliografía
 
+Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
+
 ## Anexos
