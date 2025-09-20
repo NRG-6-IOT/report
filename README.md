@@ -466,6 +466,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.1.3.4 Software Architecture Deployment Diagrams
 
+![deployment-model.png](images/chapter-4/deployment-model.png)
+
 ### 4.2 Tactical-Level Domain-Driven Design
 
 #### 4.2.1 Bounded Context: Gestión de Vehículos
@@ -3056,6 +3058,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>getAllUsers()</td>
+      <td>GET /api/iam/users</td>
       <td>GET /api/iam/users</td>
       <td>Lista todos los usuarios registrados en la plataforma.</td>
     </tr>
