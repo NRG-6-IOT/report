@@ -166,6 +166,15 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
         - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
           - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+      - [4.2.6 Bounded Context: IAM](#426-bounded-context-iam)
+        - [4.2.6.1 Domain Layer](#4261-domain-layer)
+        - [4.2.6.2 Interface Layer](#4262-interface-layer)
+        - [4.2.6.3 Application Layer](#4263-application-layer)
+        - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
+        - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+        - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
+            - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
+            - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
   - [Conclusiones](#conclusiones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
@@ -543,8 +552,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | Método                               | Descripción                                           |
 |--------------------------------------|-------------------------------------------------------|
 | handle(GetVehicleByIdQuery)          | Obtiene un vehículo por su ID.                        |
-| handle(GetOwnerByIdQuery)            | Obtiene un dueño por su ID.                           |
-| handle(GetMechanicByIdQuery)         | Obtiene un mecánico por su ID.                        |
 | handle(GetVehiclesByOwnerIdQuery)    | Obtiene todos los vehículos de un dueño               |
 | handle(GetVehiclesByMechanicIdQuery) | Obtiene todos los vehículos vinculados a un mecánico. |
 | handle(GetVehicleByVinQuery)         | Obtiene un vehículo por su VIN.                       |
@@ -555,8 +562,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 |------------------------------|-------------------------------------------------------|
 | VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
 | GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
-| GetOwnerByIdQuery            | Obtiene un dueño por su ID.                           |
-| GetMechanicByIdQuery         | Obtiene un mecánico por su ID.                        |
 | GetVehiclesByOwnerIdQuery    | Obtiene todos los vehículos de un dueño.              |
 | GetVehiclesByMechanicIdQuery | Obtiene todos los vehículos vinculados a un mecánico. |
 | GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
@@ -583,6 +588,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ##### 4.2.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
+
+![Class Diagram](images/chapter-4/vehicle_management_bounded_context_domain_layer_class_diagram.png)
 
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
 
@@ -2645,7 +2652,437 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.1 Bounded Context Domain Layer Class Diagrams
 
+![report-class-diagram.png](images/chapter-4/report-class-diagram.png)
+
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
+
+##### 4.2.6. Bounded Context: IAM
+
+##### 4.2.6.1 Domain Layer
+
+<h3>Aggregate: <code>User</code></h3>
+<p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales, roles y relaciones entre usuarios (por ejemplo la relación propietario — mecánico).</p>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo de dato</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador único del usuario.</td></tr>
+    <tr><td>username</td><td>String</td><td>Private</td><td>Nombre de usuario único (para login).</td></tr>
+    <tr><td>email</td><td>String</td><td>Private</td><td>Correo electrónico verificado o por verificar.</td></tr>
+    <tr><td>password</td><td>String</td><td>Private</td><td>Contraseña para cada cuenta creada.</td></tr>
+    <tr><td>displayName</td><td>String</td><td>Private</td><td>Nombre visible en la plataforma.</td></tr>
+    <tr><td>userType</td><td>UserType (Enum)</td><td>Private</td><td>Tipo de usuario (OWNER, MECHANIC, ADMIN, etc.).</td></tr>
+    <tr><td>roles</td><td>List&lt;Role&gt;</td><td>Private</td><td>Roles y permisos asignados al usuario.</td></tr>
+    <tr><td>linkedVehicleIds</td><td>List&lt;Long&gt;</td><td>Private</td><td>IDs de vehículos asociados (propiedad o autorización).</td></tr>
+    <tr><td>linkedMembers</td><td>List&lt;Long&gt;</td><td>Private</td><td>Si es <code>Mechanic</code>, lista de <code>Owner</code> (userId) vinculados.</td></tr>
+    <tr><td>linkedMechanicId</td><td>Long</td><td>Private</td><td>Si es <code>Owner</code>, id del <code>Mechanic</code> al que está vinculado (opcional).</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación del usuario.</td></tr>
+    <tr><td>updatedAt</td><td>Timestamp</td><td>Private</td><td>Última fecha de actualización del usuario.</td></tr>
+    <tr><td>status</td><td>UserStatus (Enum)</td><td>Private</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Tipo de retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el identificador del usuario.</td></tr>
+    <tr><td>getUsername()</td><td>String</td><td>Public</td><td>Devuelve el nombre de usuario.</td></tr>
+    <tr><td>getEmail()</td><td>String</td><td>Public</td><td>Devuelve el correo electrónico.</td></tr>
+    <tr><td>getRoles()</td><td>List&lt;Role&gt;</td><td>Public</td><td>Devuelve los roles asignados.</td></tr>
+    <tr><td>assignRole(Role)</td><td>void</td><td>Public</td><td>Asigna un rol al usuario (valida duplicados).</td></tr>
+    <tr><td>removeRole(Role)</td><td>void</td><td>Public</td><td>Remueve un rol del usuario.</td></tr>
+    <tr><td>linkVehicle(Long vehicleId)</td><td>void</td><td>Public</td><td>Vincula un vehículo al usuario.</td></tr>
+    <tr><td>linkMember(Long ownerId)</td><td>void</td><td>Public</td><td>Si es mecánico, agrega un dueño vinculado.</td></tr>
+    <tr><td>linkMechanic(Long mechanicId)</td><td>void</td><td>Public</td><td>Si es owner, vincula el mecánico asignado.</td></tr>
+    <tr><td>updateInfo(UpdateUserInfoData)</td><td>void</td><td>Public</td><td>Actualiza información editable del usuario.</td></tr>
+    <tr><td>authenticate(Credentials)</td><td>AuthenticationResult</td><td>Public</td><td>Verifica credenciales y devuelve resultado de autenticación.</td></tr>
+  </tbody>
+</table>
+<hr>
+<h3>Aggregate: <code>Appointment</code></h3>
+<p><strong>Descripción:</strong> Representa una cita/agendamiento entre <code>Mechanic</code> y <code>Owner</code>.</p>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador de la cita.</td></tr>
+    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico que atenderá.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>ID del vehículo asociado a la cita.</td></tr>
+    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora programada.</td></tr>
+    <tr><td>status</td><td>AppointmentStatus (Enum)</td><td>Private</td><td>Estado de la cita (SCHEDULED, COMPLETED, CANCELED).</td></tr>
+    <tr><td>notes</td><td>String</td><td>Private</td><td>Notas o instrucciones asociadas a la cita.</td></tr>
+    <tr><td>createdAt</td><td>Timestamp</td><td>Private</td><td>Fecha de creación.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getId()</td><td>Long</td><td>Public</td><td>Devuelve el ID de la cita.</td></tr>
+    <tr><td>getMechanicId()</td><td>Long</td><td>Public</td><td>Devuelve el ID del mecánico.</td></tr>
+    <tr><td>getScheduleAt()</td><td>LocalDateTime</td><td>Public</td><td>Devuelve la fecha/ hora programada.</td></tr>
+    <tr><td>reschedule(LocalDateTime)</td><td>void</td><td>Public</td><td>Reprograma la cita si las reglas lo permiten.</td></tr>
+    <tr><td>cancel()</td><td>void</td><td>Public</td><td>Cancela la cita.</td></tr>
+  </tbody>
+</table>
+<hr>
+<h3>Value Object / Entity: <code>Role</code></h3>
+<p><strong>Descripción:</strong> Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>id</td><td>Long</td><td>Private</td><td>Identificador del rol (opcional).</td></tr>
+    <tr><td>name</td><td>String</td><td>Private</td><td>Nombre del rol (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
+    <tr><td>permissions</td><td>Set&lt;String&gt;</td><td>Private</td><td>Lista de permisos asociados al rol.</td></tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Retorno</th><th>Visibilidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>getName()</td><td>String</td><td>Public</td><td>Devuelve el nombre del rol.</td></tr>
+    <tr><td>hasPermission(String)</td><td>boolean</td><td>Public</td><td>Verifica si el rol contiene un permiso específico.</td></tr>
+  </tbody>
+</table>
+<hr>
+<h3>Value Objects / Enums</h3>
+<table>
+  <thead>
+    <tr><th>Nombre</th><th>Tipo</th><th>Valores / Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>UserType</td><td>Enum</td><td>OWNER, MECHANIC, ADMIN</td></tr>
+    <tr><td>UserStatus</td><td>Enum</td><td>ACTIVE, SUSPENDED, DELETED</td></tr>
+    <tr><td>AppointmentStatus</td><td>Enum</td><td>SCHEDULED, COMPLETED, CANCELED</td></tr>
+  </tbody>
+</table>
+
+#### 4.2.6.2 Interface Layer
+
+<h3>Clase: <code>AuthenticationController</code></h3>
+<p><strong>Descripción:</strong> Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma.</p>
+<table>
+  <thead>
+    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>/api/iam/auth/signin</td><td>POST</td><td>Autentica a un usuario en el sistema y devuelve un token JWT.</td></tr>
+    <tr><td>/api/iam/auth/signup</td><td>POST</td><td>Registra un nuevo usuario (Owner o Mechanic) en la plataforma.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>RolesController</code></h3>
+<p><strong>Descripción:</strong> Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema.</p>
+<table>
+  <thead>
+    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>/api/iam/roles</td><td>GET</td><td>Lista todos los roles disponibles en el sistema.</td></tr>
+    <tr><td>/api/iam/roles/{name}</td><td>GET</td><td>Obtiene un rol por su nombre.</td></tr>
+    <tr><td>/api/iam/roles/seed</td><td>POST</td><td>Inicializa los roles base (ej. Owner, Mechanic, Admin).</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>UsersController</code></h3>
+<p><strong>Descripción:</strong> Controlador REST encargado de operaciones CRUD y consultas sobre usuarios (Owner, Mechanic, Admin).</p>
+<table>
+  <thead>
+    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>/api/iam/users</td><td>GET</td><td>Lista todos los usuarios registrados.</td></tr>
+    <tr><td>/api/iam/users/{id}</td><td>GET</td><td>Obtiene los detalles de un usuario por su ID.</td></tr>
+    <tr><td>/api/iam/users/mechanic/{mechanicId}</td><td>GET</td><td>Obtiene el usuario vinculado a un mecánico específico.</td></tr>
+    <tr><td>/api/iam/users/member/{memberId}</td><td>GET</td><td>Obtiene el usuario vinculado a un miembro/owner específico.</td></tr>
+    <tr><td>/api/iam/users/group/{groupId}</td><td>GET</td><td>Obtiene todos los usuarios pertenecientes a un grupo determinado.</td></tr>
+    <tr><td>/api/iam/users/{id}</td><td>PUT</td><td>Actualiza información de un usuario (displayName, email, roles).</td></tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Recursos (Resources)</h3>
+<p><strong>Descripción:</strong> Objetos DTO/Resource que se exponen en la API para representar datos de autenticación, roles y usuarios.</p>
+<ul>
+  <li><code>AuthenticatedUserResource</code>: Representa un usuario autenticado y su token JWT.</li>
+  <li><code>RoleResource</code>: Representa un rol con su nombre y permisos.</li>
+  <li><code>SignInResource</code>: Contiene credenciales de acceso (username/email + password).</li>
+  <li><code>SignUpResource</code>: Contiene la información necesaria para registrar un nuevo usuario.</li>
+  <li><code>UserMechanicResource</code>: Representa un usuario con rol de mecánico y sus miembros asociados.</li>
+  <li><code>UserMemberResource</code>: Representa un usuario con rol de dueño/miembro y su mecánico vinculado.</li>
+  <li><code>UserResource</code>: DTO genérico para exponer información común de un usuario (id, username, email, displayName, roles, estado).</li>
+</ul>
+
+<h3>Transformadores</h3>
+<p><strong>Descripción:</strong> Clases encargadas de convertir entre entidades del dominio y recursos de la API.</p>
+<ul>
+  <li><code>RoleResourceAssembler</code>: Convierte objetos <code>Role</code> en <code>RoleResource</code>.</li>
+  <li><code>UserResourceAssembler</code>: Convierte objetos <code>User</code> en <code>UserResource</code>, incluyendo relaciones Owner–Mechanic.</li>
+  <li><code>AuthenticationResourceAssembler</code>: Convierte resultados de autenticación en <code>AuthenticatedUserResource</code>.</li>
+</ul>
+
+#### 4.2.6.3 Application Layer
+
+<h3>Clase: <code>UserCommandServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>UserCommandServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones relacionadas con usuarios.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(CreateUserMechanicCommand)</td><td>Crea un nuevo usuario con rol de Mecánico.</td></tr>
+    <tr><td>handle(CreateUserMemberCommand)</td><td>Crea un nuevo usuario con rol de Motociclista.</td></tr>
+    <tr><td>handle(SignUpCommand)</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
+    <tr><td>handle(UpdateUserInfoCommand)</td><td>Actualiza la información de un usuario existente.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>UserRepository</td><td>Repositorio encargado de la persistencia de usuarios.</td></tr>
+    <tr><td>RoleRepository</td><td>Repositorio encargado de la gestión de roles asociados a usuarios.</td></tr>
+    <tr><td>PasswordHashingService</td><td>Servicio de encriptación de contraseñas.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>RoleCommandServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>RoleCommandServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de comandos para la gestión de roles.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SeedRolesCommand)</td><td>Inicializa los roles básicos de la aplicación (ej. Admin, Mecánico, Motociclista).</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>RoleRepository</td><td>Repositorio encargado de la persistencia y gestión de roles.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>AuthenticationCommandServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>AuthenticationCommandServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones de autenticación.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(SignInCommand)</td><td>Autentica a un usuario y devuelve un token JWT válido.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>UserRepository</td><td>Repositorio de usuarios para verificar credenciales.</td></tr>
+    <tr><td>PasswordHashingService</td><td>Servicio de verificación de contraseñas encriptadas.</td></tr>
+    <tr><td>TokenProviderService</td><td>Servicio encargado de la generación de tokens JWT.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>UserQueryServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>UserQueryServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de consultas para obtener información de usuarios.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllUsersQuery)</td><td>Obtiene la lista completa de usuarios registrados.</td></tr>
+    <tr><td>handle(GetUserByIdQuery)</td><td>Recupera los detalles de un usuario por su ID.</td></tr>
+    <tr><td>handle(GetUserByMechanicId)</td><td>Obtiene el usuario asociado a un mecánico específico.</td></tr>
+    <tr><td>handle(GetUserByMemberId)</td><td>Obtiene el usuario asociado a un motociclista específico.</td></tr>
+    <tr><td>handle(GetUserByUsernameQuery)</td><td>Busca un usuario por su nombre de usuario.</td></tr>
+    <tr><td>handle(GetUsersByGroupIdQuery)</td><td>Lista todos los usuarios vinculados a un grupo específico.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>UserRepository</td><td>Repositorio encargado de consultas de usuarios.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>RoleQueryServiceImpl</code></h3>
+<table>
+  <tr><th>Título</th><td>RoleQueryServiceImpl</td></tr>
+  <tr><th>Descripción</th><td>Implementación del servicio de consultas para roles.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>handle(GetAllRolesQuery)</td><td>Obtiene todos los roles disponibles en el sistema.</td></tr>
+    <tr><td>handle(GetRoleByNameQuery)</td><td>Recupera un rol específico por su nombre.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>RoleRepository</td><td>Repositorio encargado de consultas de roles.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>ApplicationReadyEventHandler</code></h3>
+<table>
+  <tr><th>Título</th><td>ApplicationReadyEventHandler</td></tr>
+  <tr><th>Descripción</th><td>Manejador de eventos que inicializa los roles base al iniciar la aplicación.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Evento</th><th>Acción</th></tr></thead>
+  <tbody>
+    <tr><td>ApplicationReadyEvent</td><td>Ejecuta el <code>SeedRolesCommand</code> para poblar roles iniciales.</td></tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>RoleCommandServiceImpl</td><td>Servicio de comandos encargado de sembrar los roles iniciales.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>PasswordHashingService</code></h3>
+<table>
+  <tr><th>Título</th><td>PasswordHashingService</td></tr>
+  <tr><th>Descripción</th><td>Servicio encargado de encriptar y verificar contraseñas.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>hashPassword(String plainPassword)</td><td>Genera un hash seguro de una contraseña en texto plano.</td></tr>
+    <tr><td>verifyPassword(String plainPassword, String hashedPassword)</td><td>Valida si una contraseña en texto plano coincide con su hash almacenado.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Clase: <code>TokenProviderService</code></h3>
+<table>
+  <tr><th>Título</th><td>TokenProviderService</td></tr>
+  <tr><th>Descripción</th><td>Servicio encargado de generar y validar tokens JWT para la autenticación.</td></tr>
+</table>
+<table>
+  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
+  <tbody>
+    <tr><td>generateToken(User user)</td><td>Genera un token JWT a partir de la información de un usuario.</td></tr>
+    <tr><td>validateToken(String token)</td><td>Valida la autenticidad y vigencia de un token JWT.</td></tr>
+  </tbody>
+</table>
+
+##### 4.2.6.4 Infrastructure Layer
+
+<h3>Clase: <code>UserRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>UserRepository</code> usando JPA/Hibernate para persistir y consultar usuarios.</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>save(User user)</td><td>Persiste o actualiza un usuario.</td></tr>
+    <tr><td>findById(Long id)</td><td>Recupera un usuario por ID.</td></tr>
+    <tr><td>findByUsername(String username)</td><td>Recupera un usuario por su nombre de usuario.</td></tr>
+    <tr><td>findByEmail(String email)</td><td>Recupera un usuario por email.</td></tr>
+    <tr><td>findByMechanicId(Long mechanicId)</td><td>Recupera un usuario vinculado a un mecánico.</td></tr>
+    <tr><td>findByMemberId(Long memberId)</td><td>Recupera un usuario vinculado a un motociclista.</td></tr>
+    <tr><td>findByGroupId(Long groupId)</td><td>Recupera todos los usuarios asociados a un grupo.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>RoleRepositoryImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>RoleRepository</code> usando JPA/Hibernate para manejar roles y permisos.</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>save(Role role)</td><td>Persiste un rol.</td></tr>
+    <tr><td>findByName(String name)</td><td>Busca un rol por nombre.</td></tr>
+    <tr><td>findAll()</td><td>Lista todos los roles disponibles.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>PasswordHashingServiceImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>PasswordHashingService</code> que maneja el hash seguro de contraseñas usando BCrypt.</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>hashPassword(String rawPassword)</td><td>Devuelve el hash de la contraseña.</td></tr>
+    <tr><td>verifyPassword(String rawPassword, String hashedPassword)</td><td>Verifica una contraseña contra su hash.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>TokenProviderServiceImpl</code></h3>
+<p><strong>Descripción:</strong> Implementación de <code>TokenProviderService</code> para generar y validar tokens JWT (usando jjwt o Spring Security JWT).</p>
+<table>
+  <thead>
+    <tr><th>Método</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>generateToken(User user)</td><td>Genera un token JWT con datos del usuario.</td></tr>
+    <tr><td>validateToken(String token)</td><td>Valida un token y devuelve si es válido.</td></tr>
+    <tr><td>extractUsername(String token)</td><td>Obtiene el username desde el token.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>SecurityConfig</code></h3>
+<p><strong>Descripción:</strong> Clase de configuración de seguridad de Spring Boot que define reglas de autenticación/autorización.</p>
+<ul>
+  <li>Configura filtros JWT.</li>
+  <li>Define rutas públicas (<code>/api/iam/auth/**</code>) y rutas protegidas.</li>
+  <li>Integra <code>PasswordHashingServiceImpl</code> y <code>TokenProviderServiceImpl</code>.</li>
+</ul>
+
+<h3>Clase: <code>UserEntity</code></h3>
+<p><strong>Descripción:</strong> Mapeada a la tabla <code>users</code>. Contiene atributos persistentes de usuario.</p>
+<ul>
+  <li>Relación uno a muchos con <code>RoleEntity</code>.</li>
+  <li>Relación uno a muchos con <code>AppointmentEntity</code>.</li>
+  <li>Relaciones con vehículos vía IDs.</li>
+</ul>
+
+<h3>Clase: <code>RoleEntity</code></h3>
+<p><strong>Descripción:</strong> Mapeada a la tabla <code>roles</code>. Contiene nombre y permisos (en JSON o tabla secundaria).</p>
+
+<h3>Clase: <code>AppointmentEntity</code></h3>
+<p><strong>Descripción:</strong> Mapeada a la tabla <code>appointments</code>. Contiene mecánico, vehículo, fecha y estado.</p>
+
+##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+##### 4.2.6.6 Bounded Context Software Architecture Code Level Diagrams
+
+###### 4.2.6.6.1 Bounded Context Domain Layer Class Diagrams
+
+###### 4.2.6.6.2 Bounded Context Database Design Diagram
 
 ## Conclusiones
 
