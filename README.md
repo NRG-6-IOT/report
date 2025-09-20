@@ -2788,6 +2788,72 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
+#### 4.2.6.2 Interface Layer  
+
+<h3>Clase: <code>AuthenticationController</code></h3>
+<p><strong>Descripción:</strong> Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma.</p>
+<table>
+  <thead>
+    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>/api/iam/auth/signin</td><td>POST</td><td>Autentica a un usuario en el sistema y devuelve un token JWT.</td></tr>
+    <tr><td>/api/iam/auth/signup</td><td>POST</td><td>Registra un nuevo usuario (Owner o Mechanic) en la plataforma.</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>RolesController</code></h3>
+<p><strong>Descripción:</strong> Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema.</p>
+<table>
+  <thead>
+    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>/api/iam/roles</td><td>GET</td><td>Lista todos los roles disponibles en el sistema.</td></tr>
+    <tr><td>/api/iam/roles/{name}</td><td>GET</td><td>Obtiene un rol por su nombre.</td></tr>
+    <tr><td>/api/iam/roles/seed</td><td>POST</td><td>Inicializa los roles base (ej. Owner, Mechanic, Admin).</td></tr>
+  </tbody>
+</table>
+
+<h3>Clase: <code>UsersController</code></h3>
+<p><strong>Descripción:</strong> Controlador REST encargado de operaciones CRUD y consultas sobre usuarios (Owner, Mechanic, Admin).</p>
+<table>
+  <thead>
+    <tr><th>Endpoint</th><th>Método HTTP</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>/api/iam/users</td><td>GET</td><td>Lista todos los usuarios registrados.</td></tr>
+    <tr><td>/api/iam/users/{id}</td><td>GET</td><td>Obtiene los detalles de un usuario por su ID.</td></tr>
+    <tr><td>/api/iam/users/leader/{leaderId}</td><td>GET</td><td>Obtiene el usuario vinculado a un líder/mecánico específico.</td></tr>
+    <tr><td>/api/iam/users/member/{memberId}</td><td>GET</td><td>Obtiene el usuario vinculado a un miembro/owner específico.</td></tr>
+    <tr><td>/api/iam/users/group/{groupId}</td><td>GET</td><td>Obtiene todos los usuarios pertenecientes a un grupo determinado.</td></tr>
+    <tr><td>/api/iam/users/{id}</td><td>PUT</td><td>Actualiza información de un usuario (displayName, email, roles).</td></tr>
+  </tbody>
+</table>
+<hr>
+
+<h3>Recursos (Resources)</h3>
+<p><strong>Descripción:</strong> Objetos DTO/Resource que se exponen en la API para representar datos de autenticación, roles y usuarios.</p>
+<ul>
+  <li><code>AuthenticatedUserResource</code>: Representa un usuario autenticado y su token JWT.</li>
+  <li><code>RoleResource</code>: Representa un rol con su nombre y permisos.</li>
+  <li><code>SignInResource</code>: Contiene credenciales de acceso (username/email + password).</li>
+  <li><code>SignUpResource</code>: Contiene la información necesaria para registrar un nuevo usuario.</li>
+  <li><code>UserLeaderResource</code>: Representa un usuario con rol de mecánico/líder y sus miembros asociados.</li>
+  <li><code>UserMemberResource</code>: Representa un usuario con rol de dueño/miembro y su mecánico vinculado.</li>
+  <li><code>UserResource</code>: DTO genérico para exponer información común de un usuario (id, username, email, displayName, roles, estado).</li>
+</ul>
+
+<h3>Transformadores</h3>
+<p><strong>Descripción:</strong> Clases encargadas de convertir entre entidades del dominio y recursos de la API.</p>
+<ul>
+  <li><code>RoleResourceAssembler</code>: Convierte objetos <code>Role</code> en <code>RoleResource</code>.</li>
+  <li><code>UserResourceAssembler</code>: Convierte objetos <code>User</code> en <code>UserResource</code>, incluyendo relaciones Owner–Mechanic.</li>
+  <li><code>AuthenticationResourceAssembler</code>: Convierte resultados de autenticación en <code>AuthenticatedUserResource</code>.</li>
+</ul>
+
+
+
 
 ## Conclusiones
 
