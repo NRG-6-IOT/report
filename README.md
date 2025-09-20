@@ -1926,7 +1926,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<h3>Aggregate: <code>MetricDefinition</code></h3>
+<h3>Entity: <code>MetricDefinition</code></h3>
 <p><strong>Descripción:</strong>Representa una métrica perteneciente a un reporte.</p>
 <table>
   <thead>
