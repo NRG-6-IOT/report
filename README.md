@@ -4313,6 +4313,44 @@ Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Gi
 
 #### 6.1.3. Source Code Style Guide & Conventions.
 
+Buenas prácticas para un código coherente y sostenible:
+
+**Android (Kotlin/Java)**
+- Clases: PascalCase
+- Funciones y variables: camelCase
+- Constantes: UPPER_SNAKE_CASE
+- Separar lógica de UI (ViewModel, UseCase).
+
+**Jetpack Compose**
+- Funciones: PascalCase (ej: `ButtonSubmit()`).
+- Estado manejado en ViewModel.
+- Evitar cálculos pesados en `@Composable`.
+
+**Spring Boot**
+- Paquetes por capa (controller, service, repository, model).
+- Clases en PascalCase.
+- Métodos en camelCase.
+
+**Next.js**
+- Rutas en snake_case o kebab-case.
+- API routes en `/pages/api/`.
+- CSS Modules, evitar estilos globales.
+
+**Shadcn/ui**
+- Extender estilos base, no sobrescribir CSS nativo.
+- Usar `clsx` o `tailwind-merge`.
+- Variables CSS en `:root` para theming.
+
+**Tailwind CSS**
+- Ordenar clases: Layout > Flex/Grid > Spacing > Typography > Colors > Effects.
+- Usar `md:`, `lg:` para responsive.
+- Evitar `@apply` en CSS.
+
+**General**
+- Comentarios en inglés.
+- Commits semánticos (`feat:`, `fix:`, `docs:`).
+- Lazy loading en imágenes y componentes.
+
 #### 6.1.4. Software Deployment Configuration.
 
 ### 6.2. Landing Page, Services & Applications Implementation.
