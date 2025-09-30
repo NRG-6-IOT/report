@@ -4226,8 +4226,54 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
 ### 6.1. Software Configuration Management.
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar BykerZ. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
 
 #### 6.1.1. Software Development Environment Configuration.
+
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de asignación de tareas, plataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto.
+
+**Herramientas:**
+- **Centro de organización de trabajo:** Github
+- **Planificación de tareas:** Trello
+- **Reuniones con el equipo:** Discord
+- **Coordinación grupal:** WhatsApp
+
+**Requirements Management**  
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+| Herramienta | Descripción                                                                                        | Enlace                                     |
+|-------------|----------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **Trello**  | Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | [https://trello.com/](https://trello.com/) |
+
+**Product UX/UI Design**  
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
+
+| Herramienta | Descripción                                                                                    | Enlace                                           |
+|-------------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| **Figma**   | Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App. | [https://www.figma.com/](https://www.figma.com/) |
+
+**Software Development**  
+Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos NextJS, Shadcn y Tailwind CSS.
+
+| Herramienta         | Descripción                                                                  | Enlace                                                                           |
+|---------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Android**         | Lenguaje de programación utilizado para la creación de la mobile application | [https://developer.android.com/](https://developer.android.com/)                 |
+| **Jetpack Compose** | Framework utilizado para la creación de la mobile application                | [https://developer.android.com/compose](https://developer.android.com/compose)   |
+| **Spring Boot**     | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
+| **NextJS**          | Framework utilizado para la creación de la landing page                      | [https://nextjs.org/](https://nextjs.org/)                                       |
+| **Shadcn**          | Framework utilizado para la creación de la landing page                      | [https://ui.shadcn.com/](https://ui.shadcn.com/)                                 |
+| **Tailwind CSS**    | Framework utilizado para la creación de la landing page                      | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
+| **Angular**         | Framework de desarrollo web open source                                      | [https://angular.dev/](https://angular.dev/)                                     |
+
+**Software Documentation**  
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+| Herramienta  | Descripción                                                      | Enlace                                                             |
+|--------------|------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Markdown** | Lenguaje de marcado utilizado para la documentación del proyecto | [https://www.markdownguide.org/](https://www.markdownguide.org/)   |
+| **Github**   | Para gestionar la documentación del proyecto                     | [https://github.com/NRG-4/report](https://github.com/NRG-4/report) |
 
 #### 6.1.2. Source Code Management.
 
