@@ -4353,6 +4353,33 @@ Buenas prácticas para un código coherente y sostenible:
 
 #### 6.1.4. Software Deployment Configuration.
 
+**Landing Page**
+1. Ejecutar `npm run build` localmente.
+2. Subir repositorio a GitHub (público).
+3. Crear servicio en Render → Web Service.
+4. Seleccionar repositorio y configurar.
+5. Deploy y verificación en la URL pública.
+
+**Mobile Application**
+1. Activar modo desarrollador y depuración USB en dispositivo.
+2. Conectar a la PC.
+3. Abrir proyecto en Android Studio.
+4. Seleccionar dispositivo y ejecutar.
+5. Verificar funcionamiento.
+
+**Web Application**
+1. Subir repositorio a GitHub (público).
+2. Crear Web Service en Render.
+3. Seleccionar repositorio y configurar.
+4. Deploy y verificación en la URL pública.
+
+**Backend**
+1. Configurar base de datos en Neontech.
+2. Crear `Dockerfile` para despliegue.
+3. Crear Web Service en Render.
+4. Importar repositorio backend.
+5. Deploy de la API.
+
 ### 6.2. Landing Page, Services & Applications Implementation.
 
 #### 6.2.1. Sprint n
