@@ -80,6 +80,12 @@
       <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
       <td>Tactical-level Domain-Driven Design</td>
     </tr>
+    <tr>
+        <td>1.1</td>
+        <td>03/10/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se añadieron los general style guidelines</td>
+    </tr>
   </tbody>
 </table>
 
