@@ -4295,7 +4295,7 @@ Responsive design:
 
 Componentes:
 
-* Botones: variantes primario, secundario y deshabilitado, con áreas táctiles amplias.
+* Botones: variantes primary y secondary deshabilitadas, con áreas táctiles amplias.
 * Formularios: campos de texto optimizados para teclado móvil, validaciones claras y selectores de fácil interacción.
 * Cards: diseño compacto para mostrar información de manera jerárquica y accesible.
 
@@ -4312,7 +4312,24 @@ Responsive Design
 
 ### 5.2. Information Architecture
 
+La arquitectura de la información establece la estructura, organización y jerarquía de los contenidos y funcionalidades dentro de la plataforma BykerZ. Su propósito es garantizar que los usuarios encuentren la información de manera clara, intuitiva y eficiente, optimizando la experiencia de navegación y reduciendo fricciones en el uso.
+
+A través de esta sección, se definen los flujos de interacción, los esquemas de navegación y la disposición lógica de los elementos, lo que permite mantener consistencia en la experiencia digital tanto en web como en dispositivos móviles. Una arquitectura de la información bien diseñada no solo facilita la usabilidad, sino que también refuerza la identidad y los objetivos estratégicos del producto.
+
 #### 5.2.1. Organization Systems
+
+Esquemas de organización aplicados:
+
+* Jerárquico: Al interactuar con cada card del sistema, el usuario accede a una vista detallada del elemento seleccionado. Esto refleja un esquema jerárquico donde se pasa de información general (card) a información específica (detalle).
+* Secuencial: Los procesos de registro siguen un flujo lineal. Para confirmar la información, el usuario debe completar y validar cada paso en orden, sin poder avanzar si falta uno.
+* Matricial: Algunos registros utilizan filtros dependientes, como en el caso del registro de una moto: los modelos se muestran en función de la marca seleccionada, permitiendo combinar criterios.
+
+Esquemas de categorización aplicados:
+
+* Cronológico: La información se organiza mostrando los registros más recientes primero, facilitando el acceso a la información actualizada.
+* Alfabético: Los listados se ordena por nombre, permitiendo búsquedas rápidas.
+* Tópicos: En cada vista, la información se divide en secciones cada una correspondiendo al nombre asignado en las barras de navegación.
+* Audiencia: Para la aplicación web, las secciones y funcionalidades se adaptan según el rol del usuario (motociclista, mecánico), mostrando solo lo relevante para cada perfil.
 
 #### 5.2.2. Labeling Systems
 
