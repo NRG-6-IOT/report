@@ -4376,6 +4376,10 @@ Estas etiquetas mejoran la accesibilidad, la comprensión del contenido por part
 
 #### 5.2.4. Searching Systems
 
+El sistema de búsqueda de BykerZ está diseñado para ofrecer una experiencia rápida, intuitiva y adaptada al perfil del usuario, permitiendo encontrar información relevante sin necesidad de recorrer múltiples secciones.
+
+Búsqueda local: En los selectores de formularios, se implementó una función de búsqueda local que filtra las opciones a medida que el usuario ecoge, facilitando la selección rápida de marcas, modelos y otros datos.
+
 #### 5.2.5. Navigation Systems
 
 ### 5.3. Landing Page UI Design
