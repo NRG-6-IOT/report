@@ -4329,9 +4329,25 @@ Esquemas de categorización aplicados:
 * Cronológico: La información se organiza mostrando los registros más recientes primero, facilitando el acceso a la información actualizada.
 * Alfabético: Los listados se ordena por nombre, permitiendo búsquedas rápidas.
 * Tópicos: En cada vista, la información se divide en secciones cada una correspondiendo al nombre asignado en las barras de navegación.
-* Audiencia: Para la aplicación web, las secciones y funcionalidades se adaptan según el rol del usuario (motociclista, mecánico), mostrando solo lo relevante para cada perfil.
+* Audiencia: Para la aplicación web, las secciones y funcionalidades se adaptan según el rol del usuario (dueño de moto o mecánico), mostrando solo lo relevante para cada perfil.
 
 #### 5.2.2. Labeling Systems
+
+El sistema de etiquetado se diseñó con enfoque en simplicidad y consistencia, utilizando palabras cortas y familiares para los usuarios. Se priorizó la claridad en la asociación entre etiqueta y contenido, evitando tecnicismos innecesarios.
+
+* **Menú principal (navbar superior – Dueños de moto):** Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+* **Menú principal (navbar superior – Mecánicos):** Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+* **Menú principal (sidebar lateral – Dueños de moto):** Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard, Monitoreo.
+
+Las etiquetas funcionan como puntos de entrada semánticos, permitiendo que los usuarios identifiquen rápidamente la funcionalidad:
+
+* **Vehículos:** Gestión de motos registradas.
+* **Comparativas:** Análisis y comparación de modelos.
+* **Gastos:** Registro y seguimiento de gastos asociados.
+* **Mantenimientos:** Historial y programación de servicios.
+* **Dashboard:** Vista general con métricas clave.
+* **Suscripciones:** Gestión vinculos entre mecánico y dueño.
+* **Membresía:** Información sobre planes y beneficios.
 
 #### 5.2.3. SEO Tags and Meta Tags
 
