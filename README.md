@@ -4260,6 +4260,50 @@ El diseño se regirá por los siguientes principios:
 
 #### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+Esta sección establece los estándares visuales e interactivos para los distintos canales digitales de BykerZ: interfaces web, aplicaciones móviles y aplicaciones de IoT. Cada uno presenta particularidades de interacción y diseño, pero todos comparten la misma identidad visual definida en los lineamientos generales.
+
+**Web style Guide:**
+
+Componentes:
+
+* Botones: se definen estilos primario, secundario y deshabilitado, con diferencias claras en color y contraste.
+* Formularios: incluyen campos de texto, validaciones visuales y selectores uniformes.
+* Cards: tarjetas utilizadas para mostrar información resumida, con variantes internas para resaltar datos clave.
+* Tablas: estilo simple con uso de bordes internos y jerarquía tipográfica para cabeceras.
+
+Comportamiento de componentes:
+
+* Estados de interacción (hover, active, focus) se encuentran deshabilitados, priorizando la simplicidad y evitando distracciones visuales.
+
+Responsive design:
+
+* Interfaces diseñadas principalmente para desktop, con adaptación proporcional según el tamaño de la ventana.
+* Se prioriza la legibilidad y la correcta distribución del contenido en resoluciones variables.
+
+Íconos e ilustraciones: 
+
+* No se utilizarán ilustraciones a color.
+* Los íconos serán siluetas simples y su presencia se limitará a indicadores funcionales.
+
+**Mobile Style guide:**
+
+Componentes:
+
+* Botones: variantes primario, secundario y deshabilitado, con áreas táctiles amplias.
+* Formularios: campos de texto optimizados para teclado móvil, validaciones claras y selectores de fácil interacción.
+* Cards: diseño compacto para mostrar información de manera jerárquica y accesible.
+
+Gestos:
+
+* Tap: gesto principal para interacción con botones y elementos táctiles.
+* Swipe vertical: navegación entre pantallas o listas.
+* Swipe horizontal: apertura del menú lateral (sidebar) o carruseles de contenido.
+
+Responsive Design
+
+* Adaptación automática a resoluciones de smartphones y tablets.
+* Se prioriza la usabilidad en pantallas pequeñas, con tipografía legible y espacios amplios para interacción táctil.
+
 ### 5.2. Information Architecture
 
 #### 5.2.1. Organization Systems
