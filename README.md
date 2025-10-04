@@ -4189,6 +4189,17 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ### 5.1. Style Guidelines
 
+La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de BykerZ. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web, móvil).
+
+Su objetivo principal es mantener una presentación uniforme y profesional, fortaleciendo la identidad visual de la startup y asegurando que cada interacción con el usuario transmita confianza, innovación y accesibilidad.
+
+Para lograr este objetivo esta sección se dividirá en dos sub-secciones:
+
+* General Style Guidelines: Se definiran los principios básicos de diseño incluyendo branding, tipografía, paleta de colores, espaciado y tono comunicacional.
+* Web Mobile and IoT Style Guidelines: Aquí se definen los estándares visuales especificos para cada plataforna.
+
+Estos lineamientos permiten mantener organizados y accesibles todos los artefactos de diseño, reduciendo inconsistencias y mejorando la eficiencia del equipo.
+
 #### 5.1.1. General Style Guidelines
 
 #### 5.1.2. Web, Mobile and IoT Style Guidelines
