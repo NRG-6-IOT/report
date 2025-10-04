@@ -4350,6 +4350,29 @@ Las etiquetas funcionan como puntos de entrada semánticos, permitiendo que los 
 * **Membresía:** Información sobre planes y beneficios.
 
 #### 5.2.3. SEO Tags and Meta Tags
+Con el objetivo de optimizar la visibilidad y posicionamiento de BykerZ en motores de búsqueda, se definieron etiquetas SEO y metaetiquetas específicas para las principales páginas del ecosistema digital: Landing Page, Web Application y Mobile App.
+Estas etiquetas mejoran la accesibilidad, la comprensión del contenido por parte de los buscadores y la coherencia de la identidad de marca en todos los canales digitales.
+
+**Landing Page**
+
+* _Title:_ BykerZ | Plataforma inteligente para monitoreo y mantenimiento de motocicletas
+* _Meta Description:_ BykerZ conecta propietarios y mecánicos en un ecosistema digital de mantenimiento preventivo y monitoreo vehicular. Optimiza tus servicios, controla gastos y cuida tu moto desde un solo lugar.
+* _Keywords:_ mantenimiento de motos, monitoreo vehicular, app para motociclistas, talleres mecánicos, control de gastos, alertas de mantenimiento
+* _Author:_ NRG6
+
+**Web Application**
+
+* _Title:_ BykerZ Control inteligente de vehículos y mantenimientos
+* _Meta Description:_ Accede al panel de control BykerZ para gestionar vehículos, registrar mantenimientos, visualizar métricas y recibir alertas en tiempo real.
+* _Keywords:_ dashboard de mantenimiento, métricas de vehículos, alertas de mantenimiento, gestión de motos, control vehicular
+* _Author:_ NRG6
+
+**Mobile App**
+
+* _App Title:_ BykerZ – Control y Mantenimiento de Motos
+* _App Subtitle:_ Tu moto, siempre bajo control
+* _App Description:_ BykerZ te permite registrar tus vehículos, controlar mantenimientos, recibir alertas y conectar con mecánicos verificados. Diseñada para simplificar la gestión y aumentar la seguridad en el mantenimiento de motocicletas.
+* _App Keywords:_ mantenimiento moto, mecánicos, control vehículo, alertas moto, app motociclistas
 
 #### 5.2.4. Searching Systems
 
