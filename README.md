@@ -4202,6 +4202,62 @@ Estos lineamientos permiten mantener organizados y accesibles todos los artefact
 
 #### 5.1.1. General Style Guidelines
 
+Los lineamientos generales de estilo definen los principios transversales de diseño que guiarán la identidad visual de BykerZ en todas sus plataformas digitales. Incluyen decisiones clave en torno al branding, paleta de colores, tipografía, tono comunicacional y principios de diseño.
+
+**Branding:** 
+
+El logotipo se empleará principalmente en su versión negra sobre fondos claros y en su versión blanca sobre fondos oscuros. Se debe mantener un área de seguridad alrededor del logotipo equivalente a la altura de la letra “B” de BykerZ para garantizar su visibilidad.
+
+* El logo completo se utilizará en la barra de navegación superior y en aplicaciones móviles.
+* El isotipo se aplicará únicamente en espacios reducidos, como íconos de aplicaciones móviles o pestañas del navegador.
+
+_Logos:_
+
+<img src="images/chapter-5/bykerz-logo.png" alt="logo"/>
+
+<img src="images/chapter-5/bykerz-logo-alt.png" alt="logo alt"/>
+
+_Isotipo:_
+
+<img src="images/chapter-5/bykerz-isotipo.png" alt="isotipo"/>
+
+**Paleta de colores:** 
+
+La identidad visual se basa en tonos naranjas y marrones, diseñados para transmitir energía, confianza y dinamismo.
+
+* Colores principales: tonos cálidos que refuerzan la personalidad de la marca.
+* Fondos y textos: blanco (#FFFFFF) para fondos y #130100 para tipografía principal, asegurando alta legibilidad.
+* Colores secundarios: tonos como #C84E00 y #380800 se reservan para acentos, componentes interactivos y llamadas a la acción.
+
+<img src="images/chapter-5/color-palette.png" alt="color palette"/>
+
+**Tipografía:** 
+
+La tipografía principal será Roboto, elegida por su legibilidad, modernidad y versatilidad.
+
+* Se aplicarán jerarquías tipográficas claras, diferenciando títulos, subtítulos y cuerpo de texto.
+* Se hará uso de negritas para destacar información clave.
+
+<img src="images/chapter-5/typography.png" alt="typography"/>
+
+**Tono y lenguaje:** 
+
+La comunicación seguirá un tono profesional pero accesible, evitando tecnicismos innecesarios.
+
+* Se priorizará la claridad y la brevedad en los textos.
+* El estilo de comunicación debe transmitir confianza, innovación y cercanía.
+
+**Principios de diseño:** 
+
+El diseño se regirá por los siguientes principios:
+
+* Consistencia: mantener coherencia visual en todos los elementos.
+* Simplicidad: evitar la saturación visual y priorizar lo esencial.
+* Accesibilidad: garantizar la legibilidad y usabilidad para todos los usuarios.
+* Espaciado adecuado: entre elementos para mejorar la experiencia visual.
+* Iconografía clara: símbolos simples y reconocibles que complementen el texto.
+* Uso de contrastes: para resaltar información y facilitar la navegación.
+
 #### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 ### 5.2. Information Architecture
