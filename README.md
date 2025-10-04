@@ -4382,6 +4382,29 @@ Búsqueda local: En los selectores de formularios, se implementó una función d
 
 #### 5.2.5. Navigation Systems
 
+El sistema de navegación de BykerZ se diseñó con el propósito de garantizar una experiencia fluida, predecible y centrada en las necesidades de cada tipo de usuario. Su estructura combina navegación jerárquica y contextual, adaptándose tanto al rol del usuario (Dueño o Mecánico) como al dispositivo (web o móvil).
+
+Estructura general de navegación
+
+La arquitectura de navegación se apoya en tres componentes principales:
+
+**1. Barra de navegación superior (navbar, desktop):**
+Visible en la versión web, permite acceder rápidamente a las secciones principales del sistema según el rol del usuario.
+* Dueños: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+* Mecánicos: Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+
+Estas opciones se mantienen siempre visibles para reforzar la orientación del usuario y evitar pérdida de contexto.
+
+**2. Barra lateral (sidebar, movil):**
+Presente en la vista de los dueños, proporciona un acceso complementario a módulos adicionales como Monitoreo, así como accesos rápidos a configuraciones o reportes.
+* Su función es profundizar la navegación sin abandonar la vista principal.
+* La jerarquía visual está marcada por íconos simples, etiquetas cortas y un sistema de resaltado para la sección activa.
+
+**3. Navegación interna (cards y botones de acción):**
+Dentro de cada módulo, la navegación se realiza mediante cards interactivas que enlazan con vistas detalladas.
+* Ejemplo: desde “Vehículos” se puede acceder a “Detalles del vehículo” → “Historial de mantenimientos” → “Comparativas”.
+* Esto permite mantener un flujo jerárquico descendente, donde cada nivel muestra más información específica.
+
 ### 5.3. Landing Page UI Design
 
 #### 5.3.1. Landing Page Wireframe
