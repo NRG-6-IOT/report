@@ -318,6 +318,10 @@ NRG6 es una startup tecnológica enfocada en la innovación para el sector de mo
 
 BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicaciones web y móviles para brindar a los usuarios una visión completa de su moto: métricas en tiempo real, historial de mantenimientos, alertas preventivas, reportes personalizados y beneficios a través de planes de suscripción.
 
+**Misión**: Transformar la gestión de motocicletas combinando tecnología IoT y análisis de datos para ofrecer seguridad, eficiencia y confianza a propietarios y mecánicos.
+
+**Visión**: Ser la plataforma líder en movilidad inteligente que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
+
 #### 1.1.2 Perfiles de integrantes del equipo
 
 <table>
