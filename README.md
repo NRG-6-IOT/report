@@ -4416,6 +4416,25 @@ Dentro de cada módulo, la navegación se realiza mediante cards interactivas qu
 #### 5.4.1. Applications Wireframes
 
 #### 5.4.2. Applications Wireflow Diagram
+En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
+
+##### Web Application
+La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas y mecánicos, con funcionalidades adaptadas a sus necesidades específicas.
+
+**Dueño - Registro de Motocicleta**: Este flujo permite al dueño registrar una o más motocicletas nuevas en su cuenta, especificando las características y modificables del vehículo, además del mecánico asociado a ésta.
+![Dueno - Registro de Motocicleta](images/chapter-5/web-wireflows-owner-vehicles.png)
+
+**Dueño - Gastos**: Este flujo permite al dueño gestionar los gastos realizados en visitas de mantenimiento, reparaciones o compras relacionadas con sus motocicletas.
+![Dueno - Gastos](images/chapter-5/web-wireflows-owner-expenses.png)
+
+**Dueño - Comparativas**: Este flujo permite al dueño comparar diferentes modelos de motocicletas, ayudándole en la toma de decisiones para futuras compras o cambios.
+![Dueno - Comparativas](images/chapter-5/web-wireflows-owner-compares.png)
+
+**Dueño - Mantenimientos**: Este flujo permite al dueño gestionar y programar los mantenimientos de sus motocicletas, asegurando que se realicen a tiempo y de manera adecuada.
+![Dueno - Mantenimientos](images/chapter-5/web-wireflows-owner-maintenances.png)
+
+
+
 
 #### 5.4.3. Applications Mock-ups
 
