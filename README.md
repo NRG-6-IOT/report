@@ -4419,7 +4419,7 @@ Dentro de cada módulo, la navegación se realiza mediante cards interactivas qu
 En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
 ##### Web Application
-La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas y mecánicos, con funcionalidades adaptadas a sus necesidades específicas.
+La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **Dueño - Registro de Motocicleta**: Este flujo permite al dueño registrar una o más motocicletas nuevas en su cuenta, especificando las características y modificables del vehículo, además del mecánico asociado a ésta.
 ![Dueno - Registro de Motocicleta](images/chapter-5/web-wireflows-owner-vehicles.png)
@@ -4433,7 +4433,17 @@ La aplicación web está diseñada para ambos User Persona, siendo dueños de mo
 **Dueño - Mantenimientos**: Este flujo permite al dueño gestionar y programar los mantenimientos de sus motocicletas, asegurando que se realicen a tiempo y de manera adecuada.
 ![Dueno - Mantenimientos](images/chapter-5/web-wireflows-owner-maintenances.png)
 
+**Mecánico - Suscripciones de clientes**: Este flujo permite al mecánico gestionar las suscripciones de los dueños de motocicletas, facilitando la administración de sus clientes y servicios.
+![Mecanico - Suscripciones de clientes](images/chapter-5/web-wireflows-mechanic-subscriptions.png)
 
+**Mecánico - Membresía**: Este flujo permite al mecánico gestionar su membresía en la plataforma, incluyendo la actualización de su perfil y la visualización de beneficios.
+![Mecanico - Membresía](images/chapter-5/web-wireflows-mechanic-membership.png)
+
+**Mecánico - Comparativas**: Este flujo permite al mecánico comparar diferentes modelos de motocicletas, ayudándole a ofrecer mejores recomendaciones a sus clientes.
+![Mecanico - Comparativas](images/chapter-5/web-wireflows-mechanic-compares.png)
+
+**Mecánico - Mantenimientos**: Este flujo permite al mecánico gestionar los mantenimientos realizados a las motocicletas de sus clientes.
+![Mecánico - Mantenimientos](images/chapter-5/web-wireflows-mechanic-maintenances.png)
 
 
 #### 5.4.3. Applications Mock-ups
