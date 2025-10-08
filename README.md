@@ -4407,9 +4407,19 @@ Dentro de cada módulo, la navegación se realiza mediante cards interactivas qu
 
 ### 5.3. Landing Page UI Design
 
+En esta sección se presenta la propuesta visual de la Landing Page, donde se traduce la arquitectura de información y las decisiones de diseño en una interfaz clara, atractiva y funcional que refleje la identidad visual y los objetivos de la startup.
+
 #### 5.3.1. Landing Page Wireframe
 
+Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
+
+<img src="images/chapter-5/landing-page-wireframe.png" alt="landing page wireframe desktop"/>
+
 #### 5.3.2. Landing Page Mock-up
+
+Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+
+<img src="images/chapter-5/landing-page-mockup.png" alt="landing page mockup desktop"/>
 
 ### 5.4. Applications UX/UI Design
 
