@@ -4423,7 +4423,35 @@ Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop 
 
 ### 5.4. Applications UX/UI Design
 
+En esta sección se desarrolla la propuesta de diseño visual e interactivo de las aplicaciones, mostrando cómo se materializan los principios de usabilidad, accesibilidad y consistencia visual para ofrecer una experiencia de usuario fluida y coherente con la identidad de la startup.
+
 #### 5.4.1. Applications Wireframes
+
+Esta sección presenta los wireframes de las aplicaciones móviles, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+<img src="images/chapter-5/wireframes/wireframes-1.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-2.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-3.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-4.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-5.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-6.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-7.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-8.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-9.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-10.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-11.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-12.png" alt="app wireframes"/>
 
 #### 5.4.2. Applications Wireflow Diagram
 En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
