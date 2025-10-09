@@ -4572,6 +4572,14 @@ Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https:
 
 ##### 6.2.1.9. Team Collaboration Insights during Sprint.
 
+En esta sección se presentan los insights de colaboración del equipo durante el Sprint, destacando cómo se desarrollaron las actividades de implementación y el nivel de participación de cada integrante en los diferentes productos: Landing Page, Backend y Web Application. Se incluyen capturas de los analíticos de colaboración y registros de commits en GitHub, acompañadas de una interpretación conjunta elaborada por el equipo. Este análisis permite evidenciar el grado de involucramiento, coordinación y contribución de los miembros en las tareas de desarrollo, reflejando el trabajo colaborativo y la dinámica del equipo a lo largo del Sprint.
+
+**Landing Page**
+
+**Web Application**
+
+**Backend**
+
 ### 6.3. Validation Interviews.
 
 #### 6.3.1. Diseño de Entrevistas.
