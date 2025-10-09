@@ -4455,7 +4455,18 @@ Esta sección describe el proceso de planificación del Sprint 1, donde el equip
 
 ##### 6.2.1.2. Aspect Leaders and Collaborators.
 
-##### 6.2.1.3. Sprint Backlog n.
+La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
+
+| Team Mmeber                           | Github Username       | Aspect Name 1                | Aspect Name 2            |
+|---------------------------------------|-----------------------|------------------------------|--------------------------|
+| Alejo Cardenas Jose Antonio           | Firtness              | Backend Development (C)      |                          |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Landing Page Development (L) | Frontend Development (C) |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Backend Development (L)      |                          |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | Frontend Development (C)     |                          |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Frontend Development (C)     |                          |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Frontend Development (C)     |                          |
+
+##### 6.2.1.3. Sprint Backlog 1.
 
 ##### 6.2.1.4. Development Evidence for Sprint Review.
 
