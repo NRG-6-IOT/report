@@ -4558,6 +4558,34 @@ El flujo de usuario inicia cuando el usuario presiona en la barra de navegación
 ![web-userflows-edit-vehicle.png](images/chapter-5/userflows-web/web-userflows-edit-vehicle.png)
 El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los datos del vehículo modificados correctamente.
 
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![userflow-gastos-registrados.png](images/chapter-5/userflows-web/userflow-gastos-registrados.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![userflow-comparativa-dueño.drawio.png](images/chapter-5/userflows-web/userflow-comparativa-due%C3%B1o.drawio.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Comparativas. Al acceder a la página, el sistema muestra en pantalla las comparativas disponibles entre los vehículos registrados del usuario, permitiéndole analizar y comparar las características y métricas de cada uno de manera clara y visual.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![userflow-mantenimientos-dueño.png](images/chapter-5/userflows-web/userflow-mantenimientos-due%C3%B1o.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Mantenimientos. Al acceder a la página, el sistema muestra en pantalla los mantenimientos programados y realizados de los vehículos registrados del usuario, permitiéndole revisar y gestionar las tareas de mantenimiento de manera clara y organizada.
+
+**User Goal: Como mecanico de motos, quiero visualizar las suscripciones activas.**
+![userflow-suscripciones-mecanico.png](images/chapter-5/userflows-web/userflow-suscripciones-mecanico.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Suscripciones. Al acceder a la página, el sistema muestra en pantalla las suscripciones activas de los dueños de motos vinculados al mecánico, permitiéndole gestionar y revisar la información correspondiente de manera clara y organizada.
+
+**User Goal: Como mecanico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![userflow--comparativa-mecanicos.png](images/chapter-5/userflows-web/userflow--comparativa-mecanicos.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Comparativas. Al acceder a la página, el sistema muestra en pantalla las comparativas disponibles entre los vehículos registrados por los dueños vinculados al mecánico, permitiéndole analizar y comparar las características y métricas de cada uno de manera clara y visual.
+
+**User Goal: Como mecanico de motos, quiero progamar un mantenmiento.**
+![userflow-programar-mantenimiento.png](images/chapter-5/userflows-web/userflow-programar-mantenimiento.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Mantenimientos. En la lista de motos registradas por los dueños vinculados, el mecánico presiona en el vehículo para acceder a los detalles del mismo. Dentro de esta vista, el mecánico presiona el botón Programar, completa los datos necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el mecánico observa el nuevo mantenimiento programado correctamente.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![Untitled Diagram.drawio.png](images/chapter-5/userflows-web/Untitled%20Diagram.drawio.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Membresía. Al acceder a la página, el sistema muestra en pantalla las opciones de membresía disponibles para el mecánico, permitiéndole revisar los planes y beneficios ofrecidos. Luego, el mecánico selecciona la membresía de su preferencia y confirma la acción al presionar el botón Adquirir. Finalmente, el sistema actualiza la interfaz y el mecánico observa que la membresía ha sido adquirida correctamente, reflejada mediante un cambio visual o mensaje de confirmación.
+
 
 ### Mobile Application
 
