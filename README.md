@@ -4528,6 +4528,32 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 #### 5.4.3. Applications Mock-ups
 
+En esta sección se presentan los mock-ups finales de las aplicaciones, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
+
+<img src="images/chapter-5/mockups/mockup-1.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-2.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-3.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-4.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-5.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-6.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-7.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-8.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-9.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-10.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-11.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
+
 #### 5.4.4. Applications User Flow Diagrams
 
 ### Mobile Application
