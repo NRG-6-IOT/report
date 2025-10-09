@@ -124,6 +124,12 @@
       <td>Casas Sanchez Gabriel Alexander</td>
       <td>Desarrollo del tactical-level domain-Driven design</td>
     </tr>
+    <tr>
+        <td>1.1</td>
+        <td>03/10/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se añadieron los general style guidelines</td>
+    </tr>
   </tbody>
 </table>
 
@@ -4303,37 +4309,439 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ### 5.1. Style Guidelines
 
+La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de BykerZ. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web, móvil).
+
+Su objetivo principal es mantener una presentación uniforme y profesional, fortaleciendo la identidad visual de la startup y asegurando que cada interacción con el usuario transmita confianza, innovación y accesibilidad.
+
+Para lograr este objetivo esta sección se dividirá en dos sub-secciones:
+
+* General Style Guidelines: Se definiran los principios básicos de diseño incluyendo branding, tipografía, paleta de colores, espaciado y tono comunicacional.
+* Web Mobile and IoT Style Guidelines: Aquí se definen los estándares visuales especificos para cada plataforna.
+
+Estos lineamientos permiten mantener organizados y accesibles todos los artefactos de diseño, reduciendo inconsistencias y mejorando la eficiencia del equipo.
+
 #### 5.1.1. General Style Guidelines
+
+Los lineamientos generales de estilo definen los principios transversales de diseño que guiarán la identidad visual de BykerZ en todas sus plataformas digitales. Incluyen decisiones clave en torno al branding, paleta de colores, tipografía, tono comunicacional y principios de diseño.
+
+**Branding:** 
+
+El logotipo se empleará principalmente en su versión negra sobre fondos claros y en su versión blanca sobre fondos oscuros. Se debe mantener un área de seguridad alrededor del logotipo equivalente a la altura de la letra “B” de BykerZ para garantizar su visibilidad.
+
+* El logo completo se utilizará en la barra de navegación superior y en aplicaciones móviles.
+* El isotipo se aplicará únicamente en espacios reducidos, como íconos de aplicaciones móviles o pestañas del navegador.
+
+_Logos:_
+
+<img src="images/chapter-5/bykerz-logo.png" alt="logo"/>
+
+<img src="images/chapter-5/bykerz-logo-alt.png" alt="logo alt"/>
+
+_Isotipo:_
+
+<img src="images/chapter-5/bykerz-isotipo.png" alt="isotipo"/>
+
+**Paleta de colores:** 
+
+La identidad visual se basa en tonos naranjas y marrones, diseñados para transmitir energía, confianza y dinamismo.
+
+* Colores principales: tonos cálidos que refuerzan la personalidad de la marca.
+* Fondos y textos: blanco (#FFFFFF) para fondos y #130100 para tipografía principal, asegurando alta legibilidad.
+* Colores secundarios: tonos como #C84E00 y #380800 se reservan para acentos, componentes interactivos y llamadas a la acción.
+
+<img src="images/chapter-5/color-palette.png" alt="color palette"/>
+
+**Tipografía:** 
+
+La tipografía principal será Roboto, elegida por su legibilidad, modernidad y versatilidad.
+
+* Se aplicarán jerarquías tipográficas claras, diferenciando títulos, subtítulos y cuerpo de texto.
+* Se hará uso de negritas para destacar información clave.
+
+<img src="images/chapter-5/typography.png" alt="typography"/>
+
+**Tono y lenguaje:** 
+
+La comunicación seguirá un tono profesional pero accesible, evitando tecnicismos innecesarios.
+
+* Se priorizará la claridad y la brevedad en los textos.
+* El estilo de comunicación debe transmitir confianza, innovación y cercanía.
+
+**Principios de diseño:** 
+
+El diseño se regirá por los siguientes principios:
+
+* Consistencia: mantener coherencia visual en todos los elementos.
+* Simplicidad: evitar la saturación visual y priorizar lo esencial.
+* Accesibilidad: garantizar la legibilidad y usabilidad para todos los usuarios.
+* Espaciado adecuado: entre elementos para mejorar la experiencia visual.
+* Iconografía clara: símbolos simples y reconocibles que complementen el texto.
+* Uso de contrastes: para resaltar información y facilitar la navegación.
 
 #### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+Esta sección establece los estándares visuales e interactivos para los distintos canales digitales de BykerZ: interfaces web, aplicaciones móviles y aplicaciones de IoT. Cada uno presenta particularidades de interacción y diseño, pero todos comparten la misma identidad visual definida en los lineamientos generales.
+
+**Web style Guide:**
+
+Componentes:
+
+* Botones: se definen estilos primario, secundario y deshabilitado, con diferencias claras en color y contraste.
+* Formularios: incluyen campos de texto, validaciones visuales y selectores uniformes.
+* Cards: tarjetas utilizadas para mostrar información resumida, con variantes internas para resaltar datos clave.
+* Tablas: estilo simple con uso de bordes internos y jerarquía tipográfica para cabeceras.
+
+Comportamiento de componentes:
+
+* Estados de interacción (hover, active, focus) se encuentran deshabilitados, priorizando la simplicidad y evitando distracciones visuales.
+
+Responsive design:
+
+* Interfaces diseñadas principalmente para desktop, con adaptación proporcional según el tamaño de la ventana.
+* Se prioriza la legibilidad y la correcta distribución del contenido en resoluciones variables.
+
+Íconos e ilustraciones: 
+
+* No se utilizarán ilustraciones a color.
+* Los íconos serán siluetas simples y su presencia se limitará a indicadores funcionales.
+
+**Mobile Style guide:**
+
+Componentes:
+
+* Botones: variantes primary y secondary deshabilitadas, con áreas táctiles amplias.
+* Formularios: campos de texto optimizados para teclado móvil, validaciones claras y selectores de fácil interacción.
+* Cards: diseño compacto para mostrar información de manera jerárquica y accesible.
+
+Gestos:
+
+* Tap: gesto principal para interacción con botones y elementos táctiles.
+* Swipe vertical: navegación entre pantallas o listas.
+* Swipe horizontal: apertura del menú lateral (sidebar) o carruseles de contenido.
+
+Responsive Design
+
+* Adaptación automática a resoluciones de smartphones y tablets.
+* Se prioriza la usabilidad en pantallas pequeñas, con tipografía legible y espacios amplios para interacción táctil.
+
 ### 5.2. Information Architecture
+
+La arquitectura de la información establece la estructura, organización y jerarquía de los contenidos y funcionalidades dentro de la plataforma BykerZ. Su propósito es garantizar que los usuarios encuentren la información de manera clara, intuitiva y eficiente, optimizando la experiencia de navegación y reduciendo fricciones en el uso.
+
+A través de esta sección, se definen los flujos de interacción, los esquemas de navegación y la disposición lógica de los elementos, lo que permite mantener consistencia en la experiencia digital tanto en web como en dispositivos móviles. Una arquitectura de la información bien diseñada no solo facilita la usabilidad, sino que también refuerza la identidad y los objetivos estratégicos del producto.
 
 #### 5.2.1. Organization Systems
 
+Esquemas de organización aplicados:
+
+* Jerárquico: Al interactuar con cada card del sistema, el usuario accede a una vista detallada del elemento seleccionado. Esto refleja un esquema jerárquico donde se pasa de información general (card) a información específica (detalle).
+* Secuencial: Los procesos de registro siguen un flujo lineal. Para confirmar la información, el usuario debe completar y validar cada paso en orden, sin poder avanzar si falta uno.
+* Matricial: Algunos registros utilizan filtros dependientes, como en el caso del registro de una moto: los modelos se muestran en función de la marca seleccionada, permitiendo combinar criterios.
+
+Esquemas de categorización aplicados:
+
+* Cronológico: La información se organiza mostrando los registros más recientes primero, facilitando el acceso a la información actualizada.
+* Alfabético: Los listados se ordena por nombre, permitiendo búsquedas rápidas.
+* Tópicos: En cada vista, la información se divide en secciones cada una correspondiendo al nombre asignado en las barras de navegación.
+* Audiencia: Para la aplicación web, las secciones y funcionalidades se adaptan según el rol del usuario (dueño de moto o mecánico), mostrando solo lo relevante para cada perfil.
+
 #### 5.2.2. Labeling Systems
 
+El sistema de etiquetado se diseñó con enfoque en simplicidad y consistencia, utilizando palabras cortas y familiares para los usuarios. Se priorizó la claridad en la asociación entre etiqueta y contenido, evitando tecnicismos innecesarios.
+
+* **Menú principal (navbar superior – Dueños de moto):** Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+* **Menú principal (navbar superior – Mecánicos):** Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+* **Menú principal (sidebar lateral – Dueños de moto):** Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard, Monitoreo.
+
+Las etiquetas funcionan como puntos de entrada semánticos, permitiendo que los usuarios identifiquen rápidamente la funcionalidad:
+
+* **Vehículos:** Gestión de motos registradas.
+* **Comparativas:** Análisis y comparación de modelos.
+* **Gastos:** Registro y seguimiento de gastos asociados.
+* **Mantenimientos:** Historial y programación de servicios.
+* **Dashboard:** Vista general con métricas clave.
+* **Suscripciones:** Gestión vinculos entre mecánico y dueño.
+* **Membresía:** Información sobre planes y beneficios.
+
 #### 5.2.3. SEO Tags and Meta Tags
+Con el objetivo de optimizar la visibilidad y posicionamiento de BykerZ en motores de búsqueda, se definieron etiquetas SEO y metaetiquetas específicas para las principales páginas del ecosistema digital: Landing Page, Web Application y Mobile App.
+Estas etiquetas mejoran la accesibilidad, la comprensión del contenido por parte de los buscadores y la coherencia de la identidad de marca en todos los canales digitales.
+
+**Landing Page**
+
+* _Title:_ BykerZ | Plataforma inteligente para monitoreo y mantenimiento de motocicletas
+* _Meta Description:_ BykerZ conecta propietarios y mecánicos en un ecosistema digital de mantenimiento preventivo y monitoreo vehicular. Optimiza tus servicios, controla gastos y cuida tu moto desde un solo lugar.
+* _Keywords:_ mantenimiento de motos, monitoreo vehicular, app para motociclistas, talleres mecánicos, control de gastos, alertas de mantenimiento
+* _Author:_ NRG6
+
+**Web Application**
+
+* _Title:_ BykerZ Control inteligente de vehículos y mantenimientos
+* _Meta Description:_ Accede al panel de control BykerZ para gestionar vehículos, registrar mantenimientos, visualizar métricas y recibir alertas en tiempo real.
+* _Keywords:_ dashboard de mantenimiento, métricas de vehículos, alertas de mantenimiento, gestión de motos, control vehicular
+* _Author:_ NRG6
+
+**Mobile App**
+
+* _App Title:_ BykerZ – Control y Mantenimiento de Motos
+* _App Subtitle:_ Tu moto, siempre bajo control
+* _App Description:_ BykerZ te permite registrar tus vehículos, controlar mantenimientos, recibir alertas y conectar con mecánicos verificados. Diseñada para simplificar la gestión y aumentar la seguridad en el mantenimiento de motocicletas.
+* _App Keywords:_ mantenimiento moto, mecánicos, control vehículo, alertas moto, app motociclistas
 
 #### 5.2.4. Searching Systems
 
+El sistema de búsqueda de BykerZ está diseñado para ofrecer una experiencia rápida, intuitiva y adaptada al perfil del usuario, permitiendo encontrar información relevante sin necesidad de recorrer múltiples secciones.
+
+Búsqueda local: En los selectores de formularios, se implementó una función de búsqueda local que filtra las opciones a medida que el usuario ecoge, facilitando la selección rápida de marcas, modelos y otros datos.
+
 #### 5.2.5. Navigation Systems
+
+El sistema de navegación de BykerZ se diseñó con el propósito de garantizar una experiencia fluida, predecible y centrada en las necesidades de cada tipo de usuario. Su estructura combina navegación jerárquica y contextual, adaptándose tanto al rol del usuario (Dueño o Mecánico) como al dispositivo (web o móvil).
+
+Estructura general de navegación
+
+La arquitectura de navegación se apoya en tres componentes principales:
+
+**1. Barra de navegación superior (navbar, desktop):**
+Visible en la versión web, permite acceder rápidamente a las secciones principales del sistema según el rol del usuario.
+* Dueños: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+* Mecánicos: Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+
+Estas opciones se mantienen siempre visibles para reforzar la orientación del usuario y evitar pérdida de contexto.
+
+**2. Barra lateral (sidebar, movil):**
+Presente en la vista de los dueños, proporciona un acceso complementario a módulos adicionales como Monitoreo, así como accesos rápidos a configuraciones o reportes.
+* Su función es profundizar la navegación sin abandonar la vista principal.
+* La jerarquía visual está marcada por íconos simples, etiquetas cortas y un sistema de resaltado para la sección activa.
+
+**3. Navegación interna (cards y botones de acción):**
+Dentro de cada módulo, la navegación se realiza mediante cards interactivas que enlazan con vistas detalladas.
+* Ejemplo: desde “Vehículos” se puede acceder a “Detalles del vehículo” → “Historial de mantenimientos” → “Comparativas”.
+* Esto permite mantener un flujo jerárquico descendente, donde cada nivel muestra más información específica.
 
 ### 5.3. Landing Page UI Design
 
+En esta sección se presenta la propuesta visual de la Landing Page, donde se traduce la arquitectura de información y las decisiones de diseño en una interfaz clara, atractiva y funcional que refleje la identidad visual y los objetivos de la startup.
+
 #### 5.3.1. Landing Page Wireframe
+
+Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
+
+<img src="images/chapter-5/landing-page-wireframe.png" alt="landing page wireframe desktop"/>
 
 #### 5.3.2. Landing Page Mock-up
 
+Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+
+<img src="images/chapter-5/landing-page-mockup.png" alt="landing page mockup desktop"/>
+
 ### 5.4. Applications UX/UI Design
+
+En esta sección se desarrolla la propuesta de diseño visual e interactivo de las aplicaciones, mostrando cómo se materializan los principios de usabilidad, accesibilidad y consistencia visual para ofrecer una experiencia de usuario fluida y coherente con la identidad de la startup.
 
 #### 5.4.1. Applications Wireframes
 
+Esta sección presenta los wireframes de las aplicaciones móviles, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+<img src="images/chapter-5/wireframes/wireframes-1.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-2.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-3.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-4.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-5.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-6.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-7.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-8.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-9.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-10.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-11.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes/wireframes-12.png" alt="app wireframes"/>
+
 #### 5.4.2. Applications Wireflow Diagram
+En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
+
+##### Web Application
+La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![web-wireflows-view-vehicles.png](images/chapter-5/wireflows-web/web-wireflows-view-vehicles.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un mecánico a mi motocicleta.**
+![web-wireflows-sync-mechanic.png](images/chapter-5/wireflows-web/web-wireflows-sync-mechanic.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los datos de un vehículo registrado.**
+![web-wireflows-edit-vehicle.png](images/chapter-5/wireflows-web/web-wireflows-edit-vehicle.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los datos del vehículo modificados correctamente.
+
+##### Mobile Application
+La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![wireflow-ver-dashboard.png](images/chapter-5/wireflows-mobile/wireflow-ver-dashboard.png)
+El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
+
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+![wireflow-ver-mantenimientos.png](images/chapter-5/wireflows-mobile/wireflow-ver-mantenimientos.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![wireflow-ver-mantenimiento.png](images/chapter-5/wireflows-mobile/wireflow-eliminar-gasto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![wireflow-monitorear-metricas.png](images/chapter-5/wireflows-mobile/wireflow-monitorear-metricas.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![wireflow-desvincular-moto.png](images/chapter-5/wireflows-mobile/wireflow-desvincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![wireflow-vincular-moto.png](images/chapter-5/wireflows-mobile/wireflow-vincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![wireflow-registrar-vehiculo.png](images/chapter-5/wireflows-mobile/wireflow-registrar-vehiculo.png)
+El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![wireflow-ver-vehiculos.png](images/chapter-5/wireflows-mobile/wireflow-ver-vehiculos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![wireflow-registrar-gastos.png](images/chapter-5/wireflows-mobile/wireflow-registrar-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![wireflow-ver-gastos.png](images/chapter-5/wireflows-mobile/wireflow-ver-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
 #### 5.4.3. Applications Mock-ups
 
+En esta sección se presentan los mock-ups finales de las aplicaciones, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
+
+<img src="images/chapter-5/mockups/mockup-1.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-2.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-3.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-4.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-5.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-6.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-7.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-8.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-9.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-10.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-11.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
+
 #### 5.4.4. Applications User Flow Diagrams
+
+##### Web Application
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![web-userflows-view-vehicles.png](images/chapter-5/userflows-web/web-userflows-view-vehicles.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un mecánico a mi motocicleta.**
+![web-userflows-sync-mechanic.png](images/chapter-5/userflows-web/web-userflows-sync-mechanic.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los datos de un vehículo registrado.**
+![web-userflows-edit-vehicle.png](images/chapter-5/userflows-web/web-userflows-edit-vehicle.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los datos del vehículo modificados correctamente.
+
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![userflow-gastos-registrados.png](images/chapter-5/userflows-web/userflow-gastos-registrados.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![userflow-comparativa-dueño.drawio.png](images/chapter-5/userflows-web/userflow-comparativa-due%C3%B1o.drawio.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Comparativas. Al acceder a la página, el sistema muestra en pantalla las comparativas disponibles entre los vehículos registrados del usuario, permitiéndole analizar y comparar las características y métricas de cada uno de manera clara y visual.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![userflow-mantenimientos-dueño.png](images/chapter-5/userflows-web/userflow-mantenimientos-due%C3%B1o.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Mantenimientos. Al acceder a la página, el sistema muestra en pantalla los mantenimientos programados y realizados de los vehículos registrados del usuario, permitiéndole revisar y gestionar las tareas de mantenimiento de manera clara y organizada.
+
+**User Goal: Como mecanico de motos, quiero visualizar las suscripciones activas.**
+![userflow-suscripciones-mecanico.png](images/chapter-5/userflows-web/userflow-suscripciones-mecanico.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Suscripciones. Al acceder a la página, el sistema muestra en pantalla las suscripciones activas de los dueños de motos vinculados al mecánico, permitiéndole gestionar y revisar la información correspondiente de manera clara y organizada.
+
+**User Goal: Como mecanico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![userflow--comparativa-mecanicos.png](images/chapter-5/userflows-web/userflow--comparativa-mecanicos.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Comparativas. Al acceder a la página, el sistema muestra en pantalla las comparativas disponibles entre los vehículos registrados por los dueños vinculados al mecánico, permitiéndole analizar y comparar las características y métricas de cada uno de manera clara y visual.
+
+**User Goal: Como mecanico de motos, quiero progamar un mantenmiento.**
+![userflow-programar-mantenimiento.png](images/chapter-5/userflows-web/userflow-programar-mantenimiento.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Mantenimientos. En la lista de motos registradas por los dueños vinculados, el mecánico presiona en el vehículo para acceder a los detalles del mismo. Dentro de esta vista, el mecánico presiona el botón Programar, completa los datos necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el mecánico observa el nuevo mantenimiento programado correctamente.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![Untitled Diagram.drawio.png](images/chapter-5/userflows-web/Untitled%20Diagram.drawio.png)
+El flujo de usuario inicia cuando el mecánico presiona en la barra de navegación superior desde el panel principal y selecciona la opción Membresía. Al acceder a la página, el sistema muestra en pantalla las opciones de membresía disponibles para el mecánico, permitiéndole revisar los planes y beneficios ofrecidos. Luego, el mecánico selecciona la membresía de su preferencia y confirma la acción al presionar el botón Adquirir. Finalmente, el sistema actualiza la interfaz y el mecánico observa que la membresía ha sido adquirida correctamente, reflejada mediante un cambio visual o mensaje de confirmación.
+
+
+### Mobile Application
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![userflow-ver-dashboard.png](images/chapter-5/userflows-mobile/userflow-ver-dashboard.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Dashboard, accediendo así a dicha vista. Una vez dentro, el usuario puede observar un resumen que muestra sus vehículos, los gastos recientes y los próximos mantenimientos, cumpliendo con el objetivo de visualizar de forma general la información más relevante relacionada con su actividad como motociclista.
+
+![userflow-ver-mantenimiento.png](images/chapter-5/userflows-mobile/userflow-ver-mantenimiento.png)
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Mantenimientos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el recuadro de su moto, tras lo cual el sistema muestra una lista con los mantenimientos programados, permitiéndole visualizar de manera clara las próximas tareas de servicio correspondientes a su vehículo.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![userflow-eliminar-gasto.png](images/chapter-5/userflows-mobile/userflow-eliminar-gasto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Gastos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el icono para borrar el gasto deseado y, tras la acción, el sistema elimina el registro correspondiente, mostrando que el gasto fue eliminado correctamente de su historial.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![userflow-monitorear-moto.png](images/chapter-5/userflows-mobile/userflow-monitorear-moto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Monitorear, tras lo cual el sistema muestra las métricas de la moto, permitiéndole visualizar información relevante sobre su rendimiento y estado actual.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![userflow-desvincular-moto.png](images/chapter-5/userflows-mobile/userflow-desvincular-moto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y muestra que la moto ha sido desvinculada correctamente del mecánico asociado.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![userflow-vincular-moto.png](images/chapter-5/userflows-mobile/userflow-vincular-moto.png)
+El flujo inicia cuando el usuario accede a la página de Vehículos, luego selecciona su vehículo y entra en los detalles del mismo. Una vez allí, el usuario presiona el botón Vincular, ingresa el código del mecánico y presiona el botón Solicitar. Finalmente, el sistema confirma la acción mostrando que la moto ha sido vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![userflow-registro-vehiculo.png](images/chapter-5/userflows-mobile/userflow-registro-vehiculo.png)
+El flujo inicia cuando el usuario accede a la página de Vehículos, luego presiona el botón “Añadir Vehículo”. A continuación, el usuario ingresa los datos de su moto y presiona el botón “Registrar”. Finalmente, el sistema confirma la acción mostrando que la moto ha sido registrada correctamente y aparece visible en la pantalla.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![userflow-ver-vehiculos.png](images/chapter-5/userflows-mobile/userflow-ver-vehiculos.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Vehículos, donde el sistema muestra los vehículos registrados en su cuenta, permitiéndole visualizar la información general de cada uno.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![userflow-registrar-gasto.png](images/chapter-5/userflows-mobile/userflow-registrar-gasto.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos y presiona el botón “Añadir Gasto”. A continuación, el usuario ingresa los datos del gasto en el formulario y presiona el botón “Registrar”. Finalmente, el sistema muestra el nuevo gasto añadido en la pantalla de gastos, confirmando que el registro se realizó correctamente.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![userflow-ver-gastos.png](images/chapter-5/userflows-mobile/userflow-ver-gastos.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos, donde el sistema muestra en pantalla los gastos registrados, permitiéndole visualizar la información correspondiente de forma clara y organizada.
 
 ### 5.5. Applications Prototyping
 
