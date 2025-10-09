@@ -4255,17 +4255,31 @@ Para el diseño de los wireframes y mockups, además de la realización del prot
 | **Figma**   | Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App. | [https://www.figma.com/](https://www.figma.com/) |
 
 **Software Development**  
-Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos NextJS, Shadcn y Tailwind CSS.
+Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
 
 | Herramienta         | Descripción                                                                  | Enlace                                                                           |
 |---------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | **Android**         | Lenguaje de programación utilizado para la creación de la mobile application | [https://developer.android.com/](https://developer.android.com/)                 |
 | **Jetpack Compose** | Framework utilizado para la creación de la mobile application                | [https://developer.android.com/compose](https://developer.android.com/compose)   |
 | **Spring Boot**     | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
-| **NextJS**          | Framework utilizado para la creación de la landing page                      | [https://nextjs.org/](https://nextjs.org/)                                       |
-| **Shadcn**          | Framework utilizado para la creación de la landing page                      | [https://ui.shadcn.com/](https://ui.shadcn.com/)                                 |
 | **Tailwind CSS**    | Framework utilizado para la creación de la landing page                      | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
 | **Angular**         | Framework de desarrollo web open source                                      | [https://angular.dev/](https://angular.dev/)                                     |
+
+**Software Testing**
+Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
+
+| Herramienta | Descripción                                            | Enlace                                                 |
+|-------------|--------------------------------------------------------|--------------------------------------------------------|
+| **JUnit**   | Framework de pruebas unitarias para Java               | [https://junit.org/](https://junit.org/)               |
+| **Mockito** | Framework de simulación para pruebas unitarias en Java | [https://site.mockito.org/](https://site.mockito.org/) |
+
+**Software Deployment**
+Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
+
+| Herramienta                   | Descripción                                                            | Enlace                                                                                                         |
+|-------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **Render**                    | Plataforma de despliegue en la nube                                    | [https://render.com/](https://render.com/)                                                                     |
+| **Firebase App Distribution** | Plataforma para distribuir versiones de prueba de aplicaciones móviles | [https://firebase.google.com/products/app-distribution](https://firebase.google.com/products/app-distribution) |
 
 **Software Documentation**  
 Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
