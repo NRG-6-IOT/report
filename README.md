@@ -4293,12 +4293,12 @@ Para la documentación del software utilizamos Markdown, y para el trabajo colab
 
 Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
-| Herramienta            | Descripción       | Enlace |
-|------------------------|-------------------|--------|
-| **Mobile Application** | bykerz-mobile-app |        |
-| **Backend**            | bykerz-backend    |        |
-| **Landing Page**       | bykerz-landing    |        |
-| **Web Application**    | bykerz-web-app    |        |
+| Herramienta            | Descripción               | Enlace                                                                                                                   |
+|------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Mobile Application** | BykerZ-Mobile-Application | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
+| **Backend**            | BykerZ-Backend            | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
+| **Landing Page**       | BykerZ-Landing-Page       | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
+| **Web Application**    | BykerZ-Web-Application    | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
 
 **Flujo de trabajo GitFlow**  
 Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Git branching model"* con los siguientes parámetros:
