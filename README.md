@@ -708,7 +708,7 @@ Sabremos que esto es cierto cuando veamos una alta interacción con los recordat
 
 
 ##### 1.2.2.4 Lean UX Canvas
-![Lean UX Canvas](images/chapter-1/lean-ux-canvas.png)
+![Lean UX Canvas](images/chapter-1/lean_ux_canvas.jpg)
 
 ### 1.3 Segmentos objetivo
 
