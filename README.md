@@ -49,38 +49,80 @@
     <tr>
       <td>0.1</td>
       <td>01/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
-      <td>Desarrollo del solution profile, lean ux process, segmentos objetivos y análisis de competidores</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del solution profile</td>
     </tr>
     <tr>
       <td>0.2</td>
-      <td>08/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
-      <td>Diseño, registro y análisis de entrevistas y needfinding</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del Lean ux process</td>
     </tr>
     <tr>
       <td>0.3</td>
-      <td>13/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>User stories, impact mapping, product backlog</td>
+      <td>01/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del Segmentos objetivos</td>
     </tr>
     <tr>
       <td>0.4</td>
-      <td>14/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>Big Pictures Eventstorming</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del Análisis de competidores</td>
     </tr>
     <tr>
       <td>0.5</td>
-      <td>15/09/2025</td>
+      <td>08/09/2025</td>
+      <td>Pasquale Barrenechea Gianluca Santino</td>
+      <td>Desarrollo del diseño, registro y análisis de entrevistas</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>08/09/2025</td>
+      <td>Astonitas Díaz Juan Diego</td>
+      <td>Desarrollo del Needfinding</td>
+    </tr>
+    <tr>
+      <td>0.7</td>
+      <td>13/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo de los User stories y product backlog</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>13/09/2025</td>
+      <td>Pacheco Astiguetta Sebastian</td>
+      <td>Desarrollo del impact mapping</td>
+    </tr>
+    <tr>
+      <td>0.9</td>
+      <td>14/09/2025</td>
       <td>Casas Sanchez Gabriel Alexander</td>
-      <td>Domain message flows modeling, bounded context canvases, context mapping, software architecture</td>
+      <td>Desarrollo del Big Pictures Eventstorming</td>
     </tr>
     <tr>
       <td>1.0</td>
-      <td>20/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>Tactical-level Domain-Driven Design</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del los Domain message flows modeling y bounded context canvases</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>15/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del context mapping</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>15/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del software architecture</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del tactical-level domain-Driven design</td>
     </tr>
   </tbody>
 </table>
@@ -110,8 +152,28 @@ Distribución de commits:
 * Paitan Pumachuca Max Anthony (MaxPaitanP): commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
+Explicacion del desarrollo de actividades de la primera entrega :<br>
+<br>Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
+
+<br>En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
+
+<br>Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
+
+<br>Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
+
+<br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
+
 ## Contenido
 
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**NRC**: 3443](#nrc-3443)
+    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
+    - [**Ingeniería de software**](#ingeniería-de-software)
+  - [Informe del trabajo Final](#informe-del-trabajo-final)
+    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
+    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
+  - [**Integrantes**](#integrantes)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
   - [Project Report Collaboration Insights](#project-report-collaboration-insights)
   - [Contenido](#contenido)
@@ -121,13 +183,24 @@ Distribución de commits:
       - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
       - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
+      - [Problema identificado](#problema-identificado)
+      - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [What](#what)
+        - [When](#when)
+        - [Where](#where)
+        - [Who](#who)
+        - [Why](#why)
+        - [How](#how)
+        - [How Much](#how-much)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
         - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
         - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+      - [Segmento Objetivo #1: Motociclistas](#segmento-objetivo-1-motociclistas)
+      - [Segmento Objetivo #2: Mecánicos](#segmento-objetivo-2-mecánicos)
   - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
       - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
@@ -145,6 +218,7 @@ Distribución de commits:
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
+- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -160,11 +234,16 @@ Distribución de commits:
         - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
         - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: unnamed](#421-bounded-context-unnamed)
+      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
+    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
+    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
+    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
+    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
@@ -214,47 +293,47 @@ Distribución de commits:
         - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
           - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-  - [Capitulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-    - [5.1 Style Guidelines](#51-style-guidelines)
-        - [5.1.1 General Style Guidelines](#511-general-style-guidelines)
-        - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+  - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+    - [5.1. Style Guidelines](#51-style-guidelines)
+      - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+      - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
     - [5.2. Information Architecture](#52-information-architecture)
-        - [5.2.1. Organization Systems](#521-organization-systems)
-        - [5.2.2. Labeling Systems](#522-labeling-systems)
-        - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-        - [5.2.4. Searching Systems](#524-searching-systems)
-        - [5.2.5. Navigation Systems](#525-navigation-systems)
+      - [5.2.1. Organization Systems](#521-organization-systems)
+      - [5.2.2. Labeling Systems](#522-labeling-systems)
+      - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+      - [5.2.4. Searching Systems](#524-searching-systems)
+      - [5.2.5. Navigation Systems](#525-navigation-systems)
     - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-        - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-        - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+      - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+      - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
     - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-        - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-        - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
-        - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-        - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+      - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+      - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+      - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
-  - [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
-    - [6.1. Software Configuration Management](#61-software-configuration-management)
-        - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-        - [6.1.2. Source Code Management](#612-source-code-management)
-        - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
-        - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
-    - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-        - [6.2.1. Sprint n](#621-sprint-n)
-            - [6.2.1.1. Sprint Planning n](#6211-sprint-planning-n)
-            - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
-            - [6.2.1.3. Sprint Backlog n](#6213-sprint-backlog-n)
-            - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
-            - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
-            - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
-            - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
-            - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
-            - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-    - [6.3. Validation Interviews](#63-validation-interviews)
-        - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-        - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-        - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-    - [6.4. Video About-the-Product]()
+  - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+    - [6.1. Software Configuration Management.](#61-software-configuration-management)
+      - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [6.1.2. Source Code Management.](#612-source-code-management)
+      - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+      - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+    - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+      - [6.2.1. Sprint n](#621-sprint-n)
+        - [6.2.1.1. Sprint Planning n.](#6211-sprint-planning-n)
+        - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+        - [6.2.1.3. Sprint Backlog n.](#6213-sprint-backlog-n)
+        - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+        - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+        - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+        - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+        - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+        - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+    - [6.3. Validation Interviews.](#63-validation-interviews)
+      - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+      - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+      - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+    - [6.4. Video About-the-Product.](#64-video-about-the-product)
   - [Conclusiones](#conclusiones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
@@ -282,29 +361,41 @@ del ABET – EAC - Student Outcome 5.
     <tr>
       <td><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
       <td>
-        <br> TB1: <br>Astonitas Díaz Juan Diego: Mediatnte fomentar la ayuda mutua, se logro que todos los integrantes implementaran correctamente los diagramas de sus bounded context
-        <br>Alejo Cardenas, Jose Antonio: Asumí un liderazgo compartido junto a mis compañeros en la elaboración de User Stories, Impact Mapping y Bounded Contexts, valorando cada aporte y llegando a consensos que guiaron nuestro trabajo.
-        <br> Pasquale Barrenechea, Gianluca Santino: A través de la investigación y análisis colaborativo, contribuí en el diseño detallado de los bounded context Suscripciones, Bienestar del Vehículo e IAM, asegurando la coherencia entre capas de dominio y aplicación, además de mantener la alineación con las relaciones entre mecánicos y usuarios.
-        <br>Pacheco Astiguetta, Sebastian: Al analizar la información recopilada, se logró definir claramente los límites y responsabilidades de cada bounded context, facilitando la integración y comunicación entre ellos.
-        <br>Real Calderón, Sebastián Omar: Colaboré activamente con mis compañeros, aportando ideas y asumiendo un liderazgo compartido para alcanzar consensos y mantener la coherencia del trabajo en equipo.
-        <br>Casas Sanchez, Gabriel Alexander: Asumí un rol de liderazgo compartido en la definición y diseño de los bounded contexts, promoviendo la colaboración y el consenso entre los miembros del equipo para asegurar una visión unificada del proyecto.
-    /td>
+        <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
+        <strong>TB1:</strong> Asumí un rol de liderazgo compartido en la definición de los modelos del dominio y en la elaboración del <em>Solution Profile</em>, <em>Big Picture Eventstorming</em>, <em>Domain Message Flows Modeling</em> y los <em>Bounded Context Canvases</em>. Promoví la colaboración entre los miembros del equipo para mantener coherencia entre los diferentes modelos y asegurar una visión unificada del sistema.<br><br>
+        <strong>Real Calderon Sebastian Omar</strong><br>
+        <strong>TB1:</strong> Participé activamente en la elaboración de los <em>Segmentos Objetivos</em>, los <em>User Stories</em>, el <em>Product Backlog</em> y el <em>Context Mapping</em>. Coordiné la integración de estos artefactos con el resto del equipo, fomentando la comunicación constante y asegurando que las definiciones del dominio se mantuvieran alineadas con los objetivos del proyecto.<br><br>
+        <strong>Alejo Cardenas Jose Antonio</strong><br>
+        <strong>TB1:</strong> Lideré la elaboración del <em>Lean UX Process</em>, el <em>Análisis de Competidores</em> y la <em>Arquitectura de Software</em>. Trabajé de manera conjunta con mis compañeros para definir estrategias de diseño y establecer lineamientos técnicos que respondieran a las necesidades del proyecto, priorizando siempre la coherencia y el consenso en las decisiones tomadas.<br><br>
+        <strong>Pacheco Astiguetta Sebastian</strong><br>
+        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br><br>
+        <strong>Astonitas Díaz Juan Diego</strong><br>
+        <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
+        <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
+        <strong>TB1:</strong> Elaboré el <em>Diseño, registro y análisis de entrevistas</em>, organizando la información obtenida de los usuarios para orientar las decisiones del diseño del sistema. Participé en la coordinación del grupo para integrar los resultados de las entrevistas con los artefactos posteriores, fortaleciendo la coherencia entre las etapas del informe.
+      </td>
       <td>
-        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades (User Stories, Impact Mapping, Domain Storytelling, Eventstorming, Context Mapping y definición de Bounded Contexts), donde cada integrante asumió responsabilidades específicas y se promovió la toma de decisiones consensuada que permitió avanzar de manera organizada en cada etapa del trabajo.
+        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades del informe (User Stories, Impact Mapping, Eventstorming, Context Mapping y definición de Bounded Contexts). Cada integrante asumió responsabilidades específicas y participó en la toma de decisiones conjuntas, lo que permitió mantener la coherencia del proyecto y avanzar de manera organizada en cada etapa del trabajo.
       </td>
     </tr>
     <tr>
-      <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
+      <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</strong></td>
       <td>
-        <br> TB1: <br>Astonitas Díaz Juan Diego: Dirigi la construccion y la organizacion del grupo para la correcta ejecucion y documentacion de los bounded context
-        <br>Alejo Cardenas, Jose Antonio: Fomenté un entorno inclusivo de colaboración durante el event storming, establecí metas claras con el equipo, planificamos tareas de forma organizada y logramos cumplir con los objetivos propuestos.
-        <br> Pasquale Barrenchea, Gianluca Santino: Organicé las tareas del equipo para garantizar la correcta integración de los bounded contexts, promoví la comunicación constante y aseguré que cada entregable estuviera alineado con los objetivos definidos en el proyecto.
-        <br>Pacheco Astiguetta, Sebastian: Fomenté un ambiente de trabajo inclusivo y colaborativo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar el cumplimiento de los objetivos del proyecto.
-        <br>Real Calderón, Sebastián Omar: Ayudé a fomentar un ambiente de colaboración e inclusión, participando en la planificación de tareas y en el cumplimiento de los objetivos del proyecto.
-        <br>Casas Sanchez, Gabriel Alexander: Promoví un entorno de trabajo colaborativo e inclusivo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar que el equipo cumpliera con los objetivos del proyecto.
+        <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
+        <strong>TB1:</strong> Promoví un entorno colaborativo e inclusivo al coordinar la definición de los artefactos de modelado del dominio. Establecí metas claras junto al equipo y organicé las tareas relacionadas con la arquitectura y el diseño del sistema, asegurando la integración entre todas las secciones del informe.<br><br>
+        <strong>Real Calderon Sebastian Omar</strong><br>
+        <strong>TB1:</strong> Contribuí a la planificación de tareas y organización del equipo, promoviendo la colaboración en el desarrollo de los artefactos funcionales y de dominio. Aporté en la definición de objetivos comunes y verifiqué la coherencia entre los entregables del grupo.<br><br>
+        <strong>Alejo Cardenas Jose Antonio</strong><br>
+        <strong>TB1:</strong> Fomenté un entorno de trabajo inclusivo durante la elaboración del Lean UX Process, Análisis de Competidores y Arquitectura de Software. Planifiqué las tareas de manera organizada junto al grupo, asegurando que cada entregable se alineara con los objetivos generales del proyecto.<br><br>
+        <strong>Pacheco Astiguetta Sebastian</strong><br>
+        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br><br>
+        <strong>Astonitas Díaz Juan Diego</strong><br>
+        <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
+        <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
+        <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.
       </td>
       <td>
-        Generamos un entorno inclusivo que facilitó la participación activa de todos los miembros, definiendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de presentaciones, mapeos de contexto, análisis competitivo y construcción del lenguaje ubicuo. Gracias a esta coordinación, logramos cumplir con los objetivos planteados en cada entrega de manera eficiente y colaborativa.
+        Se generó un entorno inclusivo que facilitó la participación activa de todos los integrantes. Cada miembro contribuyó desde su especialidad, estableciendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de artefactos, análisis competitivo y construcción del lenguaje ubicuo. Gracias a la coordinación del grupo, se cumplieron los objetivos establecidos en cada etapa del proyecto.
       </td>
     </tr>
   </tbody>
@@ -319,6 +410,10 @@ del ABET – EAC - Student Outcome 5.
 NRG6 es una startup tecnológica enfocada en la innovación para el sector de movilidad inteligente. Su misión es transformar la manera en que propietarios, mecánicos y empresas gestionan el estado, uso y bienestar de motocicletas y vehículos, combinando IoT, análisis de datos y experiencia digital en una sola plataforma integral.
 
 BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicaciones web y móviles para brindar a los usuarios una visión completa de su moto: métricas en tiempo real, historial de mantenimientos, alertas preventivas, reportes personalizados y beneficios a través de planes de suscripción.
+
+**Misión**: Transformar la gestión de motocicletas combinando tecnología IoT y análisis de datos para ofrecer seguridad, eficiencia y confianza a propietarios y mecánicos.
+
+**Visión**: Ser la plataforma líder en movilidad inteligente que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
 
 #### 1.1.2 Perfiles de integrantes del equipo
 
@@ -335,7 +430,7 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
   </tr>
   <tr>
     <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
-    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
+    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión, código u202220033. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
   </tr>
   <tr>
     <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
@@ -349,28 +444,21 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
   </tr>
   <tr>
     <td> <img src="images/chapter-1/jose-pfp.jpg" alt="Jose Alejo" style="width: 500px; height: auto;"> </td>
-    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
+    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo, código u202122484. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
   </tr>
   <tr>
     <th colspan="2">Sebastian Pacheco Astiguetta</th>
   </tr>
   <tr>
     <td> <img src="images/chapter-1/Sebastian-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
-    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
+    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC, código u202110291. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
   </tr>
   <tr>
     <th colspan="2">Sebatian Omar Real Calderon</th>
   </tr>
   <tr>
     <td> <img src="images/chapter-1/sebastian_real_pfp.jpeg" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
-    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
-  </tr>
-    <tr>
-    <th colspan="2">Max Anthony Paitan Pumachuca</th>
-  </tr>
-  <tr>
-    <td> <img src="images/chapter-1/max-pfp.png" alt="Max Paitan" style="width: 500px; height: auto;"> </td>
-    <td>  </td>
+    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software, código u20221D964. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
   </tr>
 </table>
 
@@ -388,11 +476,12 @@ La plataforma IoT para motos urbanas BykerZ ofrece un ecosistema digital compues
     - Sugerencias para próximos mantenimientos.
 - Desde el rol de mecánico o taller: 
     - Comparación de métricas entre motos similares  
-    - Generación de reportes de salud del vehículo  
+    - Agendar citas para el usuario de la moto.  
     - La consulta del historial de servicios  
     - La emisión de recordatorios para próximos mantenimientos.  
 
 Gracias a sus funcionalidades, la plataforma impulsa un uso más seguro, económico y sostenible de las motos, al mismo tiempo que fortalece la relación entre usuarios y mecánicos mediante datos objetivos y accesibles en tiempo real.
+
 #### 1.2.1 Antecedentes y problemática
 
 ##### What
@@ -431,7 +520,7 @@ El problema surge en la propia motocicleta durante su operación diaria, donde o
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los talleres mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos y talleres se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
+El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
 
 ##### Why
 
@@ -445,157 +534,175 @@ Las causas del problema se deben en mayor parte a la falta de datos actualizados
 
 Los clientes utilizan nuestro producto en condiciones de movilidad, accediendo a los datos de su moto en tiempo real durante sus trayectos o de manera remota para planificar mantenimientos. La plataforma es utilizada principalmente a través de dispositivos móviles con conectividad a internet, permitiendo interacciones tanto preventivas como reactivas ante alertas generadas por el sistema.
 
+##### How Much
+
+El impacto de la problemática es considerable y puede observarse en las estadísticas de seguridad vial actuales. Según un informe publicado por Freitas (2025) en Infobae, Lima registra 1.668 muertes por accidentes de tránsito en lo que va del año 2025, siendo los motociclistas quienes lideran la lista de víctimas, de acuerdo con datos del Ministerio de Transportes y Comunicaciones (MTC). Esta cifra evidencia la alta vulnerabilidad de los conductores de motocicletas y la falta de mecanismos preventivos eficaces que permitan detectar a tiempo posibles fallas mecánicas o comportamientos de riesgo durante la conducción.
+
+Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma BykerZ contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los motociclistas urbanos.
+
 #### 1.2.2 Lean UX Process
 
 ##### 1.2.2.1 Lean UX Problem Statements
 
-En el panorama actual de la movilidad urbana, los propietarios de motocicletas operan con una constante incertidumbre respecto al estado de sus vehículos al carecer de visibilidad sobre su condición interna, lo que los expone al riesgo de fallas sorpresivas, reparaciones costosas o incluso accidentes fatales. Paralelamente, los talleres mecánicos se ven limitados por un modelo de servicio reactivo; solo pueden intervenir cuando el problema ya ha ocurrido, lo que se agrava al recibir descripciones vagas e incompletas de los usuarios. Esta falta de datos técnicos específicos complica el diagnóstico, prolonga los tiempos de reparación, reduce la eficiencia del servicio y finalmente erosiona la confianza del cliente.
+El estado actual del sector de mantenimiento de motocicletas se ha centrado principalmente en modelos de servicio reactivos, donde los propietarios carecen de visibilidad sobre el estado de sus vehículos y los talleres mecánicos dependen de diagnósticos manuales basados en información limitada.
 
-Para cubrir esta necesidad crítica, surge BykerZ como una herramienta integral que transforma este ecosistema. Se trata de una plataforma digital que monitorea el vehículo en tiempo real y recopila datos históricos de su desempeño de forma automática. Al analizar esta información, BykerZ genera métricas precisas y alertas oportunas sobre anomalías o patrones de desgaste, notificando tanto al motociclista como al mecánico. Esto permite a los usuarios actuar de manera preventiva y empodera a los talleres con información técnica precisa, optimizando sus diagnósticos, permitiendo un mantenimiento proactivo y restaurando así la confianza en los resultados del servicio.
+Lo que los servicios existentes no logran abordar es el monitoreo continuo que permitan anticipar fallos mecánicos y optimizar la relación entre usuarios y talleres.
+
+Nuestro producto abordará esta brecha mediante una plataforma que facilite el monitoreo proactivo y la comunicación basada en datos.
+
+Nuestro enfoque inicial serán los propietarios de motocicletas urbanas y los talleres mecánicos independientes.
+
+Sabremos que tenemos éxito cuando observemos un aumento del 30% en mantenimientos preventivos programados a través de la plataforma y una reducción del 25% en reparaciones de emergencia reportadas por los talleres asociados durante los primeros seis meses de implementación.
 
 ##### 1.2.2.2 Lean UX Assumptions
-###### User Assumptions:  
-- **¿Quién es el usuario?:** El usuario es un motociclista que busca una manera confiable de conocer el estado actual de su vehículo, así como un mecánico que necesito mayor precisión en la información técnica de la motocicleta para realizar diagnósticos y reparaciones eficientes.  
-- **¿Dónde encaja nuestro producto en su trabajo o vida?:** Nuestro producto encaja en el uso cotidiano de la motocicleta para los conductores, así como en el diagnóstico y reparación dentro del taller para los mecánicos.  
-- **¿Qué problemas resuelve nuestro producto?:** Nuestro producto resuelve la falta de información confiable sobre el estado de la moto para los conductores. Mientras que, para los mecánicos, resuelve el problema con diagnósticos lentos y/o imprecisos, así como la naturaleza reactiva de su negocio.  
-- **¿Cuándo y cómo se usa nuestro producto?:** Se utiliza de forma pasiva durante la conducción del usuario, y de forma activa al recibir las alertas para revisar el estado de su moto. El mecánico lo utiliza diariamente para revisar el estado de las motos de sus clientes suscritos.  
-- **¿Qué características son importantes?:** Para el usuario, son importantes las alertas, las métricas sencillas y fáciles de entender, un historial de mantenimiento y una forma de integrar su relación con un taller de confianza. Para el mecánico, es importante tener un dashboard con el estado de las motos de los clientes suscritos, una función de alertas prioritarias, una herramienta de comunicación integrada, y gestión de citas.  
-- **¿Cómo debe verse y comportarse nuestro producto?:** Debe tener una interfaz clara y minimalista para el usuario final, priorizando la visualización de datos de salud del vehículo de una manera sencilla (Colores de Semáforo: Verde/Amarillo/Rojo). Para el mecánico, la interfaz debe ser más compleja, pero igualmente intuitiva, priorizando la visualización de problemas críticos y la gestión de clientes.  
-###### Business Assumptions:
-- **Necesidades y problemas:** Creemos que los motociclistas necesitan una forma confiable de conocer el estado de sus vehículos y así poder anticipar fallas, mientras que los mecánicos requieren datos más técnicos y claros que les faciliten diagnósticos más rápidos y precisos.  
-- **Plataforma:** Estas necesidades se pueden resolver a través de un ecosistema que combine un hardware IoT, una aplicación móvil para el usuario y una plataforma web SaaS para los talleres.  
-- **Segmentación:** Los usuarios principales serán motociclistas que buscan seguridad y control sobre el estado de su vehículo, y nuestros clientes directos son los talleres o mecánicos interesados en contar con información detallada y quieren adoptar la tecnología necesaria para mejorar su servicio.  
-- **Comportamientos:** El valor que los usuarios esperan obtener de nuestro servicio es la tranquilidad de anticipar problemas, evitar gastos inesperados y acceder a reportes confiables que respalden decisiones de mantenimiento.  
-- **Beneficios:** Los usuarios obtendrán seguridad y un ahorro en costos de reparación a largo plazo. Los mecánicos se beneficiarán con diagnósticos más eficientes, mayor confianza del cliente y la optimización de su trabajo.
-- **Captación de clientes:** Adquiriremos talleres socios a través de ventas directas y referencias del sector, además de realizar campañas digitales enfocadas en las comunidades de motociclistas, atrayendo más clientes potenciales.  
-- **Modelo de ingresos:** Generaremos ingresos mediante la venta de los dispositivos IoT, planes de suscripción para el acceso de los mecánicos a los reportes avanzados y acuerdos comerciales con talleres para el uso de la plataforma.
-- **Competencia:** Nuestra competencia directa son los scanners OBD2 genéricos y apps como "Bike Scanner". La competencia indirecta son los servicios de mantenimiento tradicionales.  
-- **Ventaja competitiva:** Superaremos a la competencia gracias a la integración perfecta taller-cliente, la interpretación automatizada de datos y el enfoque en el mantenimiento predictivo y la experiencia completa, no solo en la lectura de datos.  
-###### Technical Assumptions (Suposiciones Técnicas)  
-- **Tecnología utilizada:** Podemos desarrollar un dispositivo IoT confiable, de bajo consumo y conectividad estable para instalarse en la moto. La app móvil se puede desarrollar con un framework cross-platform, como Flutter y el backend con tecnologías escalables como Spring Boot o Node.js.  
-- **Integraciones:** La plataforma del taller debería integrarse potencialmente con software de gestión de talleres existente y con pasarelas de pago para manejar las suscripciones.  
-- **Escalabilidad:** La arquitectura en la nube podrá escalar para soportar el procesamiento de datos en tiempo real de miles de dispositivos y usuarios simultáneos.  
-###### Market Assumptions (Suposiciones de Mercado)  
-- **Tamaño del mercado:** Existe un mercado significativo y en crecimiento de motociclistas que priorizan la seguridad y el cuidado de su vehículo, y talleres que buscan digitalizarse. Este también es poco explorado, por lo que existe la oportunidad de llenar un nicho con nuestro producto.  
-- **Competencia:** El mercado no está saturado con soluciones integrales que conecten directamente al usuario con el taller; la mayoría son herramientas genéricas o desconectadas del servicio profesional.  
-- **Tendencias:** Las tendencias de IoT, la movilidad inteligente y la economía de suscripción están en crecimiento, lo que crea un terreno fértil para nuestra solución.  
-###### Design Assumptions  
-- **Interacción del usuario:** Los usuarios tendrán una mejor interacción con las aplicaciones web y móvil si es que pueden consultar de forma inmediata los indicadores esenciales de su moto y recibir notificaciones oportunas sobre posibles fallas. Mientras que los mecánicos, además de una fácil interacción con las aplicaciones, podrán tener acceso a una mayor cantidad de información técnica y así poder realizar diagnósticos más precisos.  
-- **Experiencia del usuario:** Los usuarios tendrán una interfaz intuitiva y confiable que entregue información práctica y transmita tranquilidad, con datos presentados de forma simple y no con términos técnicos crudos, lo que mejorará la percepción de seguridad y control sobre el vehículo.  
-- **Colores y la tipografía:** Utilizaremos una paleta de colores que transmita seguridad (azules, verdes) y alerta (rojos, naranjas) cuando sea necesario. La tipografía debe ser marcada y muy legible incluso en movimiento.  
-- **Preferencias visuales:** Los usuarios considerarán atractivo un diseño que se asemeje a otros dashboards de vehículos modernos: limpio, con gráficos simples e íconos universalmente reconocibles, y resúmenes visuales fáciles de interpretar.  
-- **Prototipos y pruebas:** Las pruebas con motociclistas y mecánicos son necesarias para verificar la facilidad de uso del producto, así como del diseño; todo ello será a través de pruebas de usabilidad. 
+
+En el Lean UX Assumptions, se identificaron y documentaron las principales suposiciones del proyecto BykerZ en torno al negocio, los usuarios, los resultados esperados y las características del producto.
+
+- Business Assumptions
+
+1. Suponemos que nuestros clientes tienen la necesidad de mantener sus motocicletas en óptimo estado, evitando fallas inesperadas y reduciendo gastos de mantenimiento.
+
+2. Suponemos que estas necesidades pueden resolverse con una plataforma digital conectada a un dispositivo IoT que monitoree el estado mecánico de la moto y alerte sobre posibles averías.
+
+3. Suponemos que mis clientes iniciales serán motociclistas urbanos que utilizan su vehículo a diario y mecánicos que buscan digitalizar sus servicios.
+
+4. Suponemos que el principal valor que el cliente desea obtener de mi servicio es seguridad y confianza al conducir, al saber que su motocicleta se encuentra en buenas condiciones.
+
+5. Suponemos que el cliente se beneficiara al ahorrar por mantenimientos preventivos, conexión directa con talleres y acceso a un historial de servicios.
+
+6. Suponemos que adquiriremos la mayoría de mis clientes a través de alianzas estratégicas con talleres mecánicos, marketing digital en redes sociales y recomendaciones entre motociclistas.
+
+7. Suponemos que generaremos ingresos mediante una suscripción mensual de talleres que utilicen la plataforma para gestionar sus servicios y clientes.
+
+8. Suponemos que nuestra competencia principal en el mercado será las aplicaciones de mantenimiento genéricas y los scanners automotrices tradicionales sin integración digital.
+
+9. Suponemos que los superaremos gracias a la integración completa entre el motociclista y el taller, la facilidad de uso y la analítica predictiva en tiempo real.
+
+10. Suponemos que nuestro mayor riesgo de producto es que los usuarios no perciban suficiente valor práctico en los primeros usos de la aplicación o que la instalación del IoT sea compleja.
+
+11. Suponemos que resolveremos esto mediante una experiencia de usuario simple, tutoriales de instalación guiados y soporte técnico personalizado durante la adopción inicial.
+
+12. Suponemos que si los datos recolectados por el IoT no son precisos o confiables, la propuesta de valor del producto se vería seriamente comprometida.
+
+- Business Outcomes Assumptions
+
+1. Suponemos que la empresa incrementará su base de usuarios activos mediante recomendaciones y alianzas con talleres locales.
+
+2. Suponemos que la empresa aumentará sus ingresos por suscripciones al ofrecer herramientas avanzadas de análisis y mantenimiento predictivo.
+
+3. Suponemos que la empresa reducirá costos de soporte al automatizar alertas y reportes para usuarios y mecánicos.
+
+4. Suponemos que la empresa obtendrá datos valiosos sobre patrones de uso y fallas que permitirán mejorar el producto continuamente.
+
+5. Suponemos que la marca se posicionará como referente en movilidad inteligente y mantenimiento preventivo para motociclistas urbanos.
+
+
+- User Assumptions
+
+A. Motociclista urbano
+
+1. Suponemos que el usuario es un conductor de motocicleta que depende de su vehículo para movilizarse o trabajar diariamente y busca evitar fallas imprevistas.
+
+2. Suponemos que nuestro producto encaja en su vida como una herramienta de monitoreo constante y seguridad que lo acompaña en cada trayecto y le ayuda a cuidar su moto de forma inteligente.
+
+3. Suponemos que el producto resuelve los problemas de desconocimiento del estado del vehículo, mantenimiento reactivo, y altos gastos por reparaciones sorpresivas.
+
+4. Suponemos que el producto se utiliza de manera pasiva durante los trayectos (recolección automática de datos IoT) y de forma activa al revisar métricas, recibir alertas o agendar servicios con su mecánico.
+
+5. Suponemos que las funciones más importantes para este usuario son alertas preventivas, métricas de consumo, historial de mantenimiento, y conexión directa con el taller de confianza.
+
+6. Suponemos que el producto debe tener una interfaz móvil intuitiva, visualmente clara y confiable, con notificaciones comprensibles y una navegación ágil adaptada al uso diario.
+
+7. Suponemos que el usuario tambien puede ser un mecánico o propietario de taller que ofrece servicios de mantenimiento y busca mejorar la precisión de sus diagnósticos y la fidelización de sus clientes.
+
+8. Suponemos que nuestro producto encaja en su trabajo como una herramienta de gestión técnica que le permite acceder a métricas en tiempo real del vehículo del cliente, planificar mantenimientos y ofrecer servicios proactivos.
+
+9. Suponemos que el producto resuelve los problemas de falta de historial confiable, diagnósticos lentos y dificultad para mantener contacto constante con los clientes.
+
+10. Suponemos que el producto se utiliza durante el diagnóstico en el taller, para analizar datos de telemetría, y entre visitas, para monitorear remotamente el estado de las motos de los clientes.
+
+11. Suponemos que las funciones más importantes para este usuario son acceso a historial completo del vehículo, comparación de métricas entre motos, recordatorios automáticos y agendamiento de citas.
+
+12. Suponemos que el producto debe presentar una interfaz web profesional, con paneles de análisis claros, filtros por cliente y reportes automáticos de rendimiento y mantenimiento.
+
+- User Outcomes Assumptions
+
+1. Suponemos que los motociclistas se sentirán más seguros y tranquilos al recibir alertas tempranas sobre fallas o mantenimientos necesarios.
+
+2. Suponemos que los motociclistas reducirán sus gastos de mantenimiento gracias a un uso más eficiente y preventivo de su moto.
+
+3. Suponemos que los mecánicos mejorarán la precisión de sus diagnósticos y aumentarán la satisfacción del cliente al ofrecer un servicio proactivo.
+
+4. Suponemos que ambos usuarios experimentarán una relación más cercana y basada en datos, lo que aumentará la confianza y fidelización.
+
+5. Suponemos que los usuarios recomendarán el sistema a otros motociclistas o talleres si perciben beneficios reales en los primeros meses de uso.
+
+- Features Assumptions
+
+1. Suponemos que los usuarios usarán con frecuencia las alertas preventivas y el monitoreo de telemetría en tiempo real.
+
+2. Suponemos que los usuarios consultarán regularmente el historial de mantenimiento para planificar sus servicios.
+
+3. Suponemos que los mecánicos usarán los paneles comparativos para detectar anomalías y optimizar diagnósticos.
+
+4. Suponemos que la integración entre app móvil (motociclista) y panel web (taller) será clave para el éxito del ecosistema.
+
+5. Suponemos que una interfaz simple, moderna y confiable impulsará la adopción del sistema.
+
+6. Suponemos que las notificaciones automáticas y recordatorios personalizados serán una de las funciones más valoradas.
 
 ##### 1.2.2.3 Lean UX Hypothesis Statements
 
-**Hypothesis Statement 01:**
+1. Alertas preventivas y monitoreo de telemetría en tiempo real
 
-- Creemos que los motociclistas necesitan una forma sencilla y confiable de monitorear el estado de su moto en tiempo real.
-- Sabremos que estamos en lo correcto cuando observemos que los clientes consultan frecuentemente la aplicación para revisar métricas de su vehículo.
+Creemos que implementar alertas preventivas y monitoreo de telemetría en tiempo real
+para motociclistas y mecánicos
+logrará una mejor planificación del mantenimiento y una reducción de fallas inesperadas.
+Sabremos que esto es cierto cuando veamos un uso frecuente de las alertas, comentarios positivos sobre la confiabilidad y una disminución en las visitas no planificadas al taller.
 
-**Hypothesis Statement 02:**
+2. Historial de mantenimiento
 
-- Creemos que los mecánicos requieren información temprana sobre fallos potenciales para brindar un servicio más proactivo.
-- Sabremos que estamos en lo correcto cuando los mecánicos reporten menor número de reparaciones de emergencia y mayor número de mantenimientos preventivos.
+Creemos que ofrecer un historial detallado de mantenimiento y herramientas de visualización
+para motociclistas
+logrará una mejor organización de los servicios y un seguimiento más preciso del rendimiento de sus vehículos.
+Sabremos que esto es cierto cuando veamos un uso repetido del historial y una mejora en los niveles de satisfacción de los usuarios.
 
-**Hypothesis Statement 03:**
+3. Paneles comparativos para mecánicos
 
-- Creemos que centralizar la comunicación entre cliente y taller dentro de la plataforma reducirá la fricción y mejorará la coordinación.
-- Sabremos que estamos en lo correcto cuando los clientes usen la mensajería o notificaciones de la app en lugar de llamadas o visitas imprevistas.
+Creemos que desarrollar paneles comparativos basados en datos de IoT
+para mecánicos
+logrará diagnósticos más rápidos y recomendaciones de mantenimiento más precisas.
+Sabremos que esto es cierto cuando veamos una mejora en la eficiencia de los diagnósticos y retroalimentación positiva de los mecánicos.
 
-**Hypothesis Statement 04:**
+4. Integración entre la app móvil y el panel web
 
-- Creemos que la creación de un historial de servicios será clave para que los motociclistas planifiquen mantenimientos futuros.
-- Sabremos que estamos en lo correcto cuando los usuarios registren y consulten con frecuencia los mantenimientos realizados en su moto.
+Creemos que integrar la aplicación móvil para motociclistas con el panel web para talleres
+logrará una comunicación fluida y una gestión sincronizada de los servicios.
+Sabremos que esto es cierto cuando veamos un intercambio activo de datos entre ambas plataformas y un aumento en el uso conjunto de los sistemas.
 
-**Hypothesis Statement 05:**
+5. Interfaz simple, moderna y confiable
 
-- Creemos que ofrecer una suscripción con acceso a datos en tiempo real dará valor suficiente para retener clientes.
-- Sabremos que estamos en lo correcto cuando observemos baja tasa de cancelación y renovaciones recurrentes de la suscripción.
+Creemos que diseñar una interfaz limpia, intuitiva y visualmente atractiva
+para motociclistas y mecánicos
+logrará una mayor adopción del sistema y un uso continuo de la plataforma.
+Sabremos que esto es cierto cuando veamos resultados positivos en pruebas de usabilidad y altas tasas de retención de usuarios.
 
-**Hypothesis Statement 06:**
+6. Notificaciones automáticas y recordatorios personalizados
 
-- Creemos que los usuarios percibirán a BykerZ como una forma de manejar con mayor seguridad y confianza.
-- Sabremos que estamos en lo correcto cuando recibamos comentarios positivos en encuestas y reseñas sobre la sensación de seguridad brindada por el uso de la aplicación.
+Creemos que implementar notificaciones inteligentes y recordatorios personalizados
+para motociclistas
+logrará un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria.
+Sabremos que esto es cierto cuando veamos una alta interacción con los recordatorios y una reducción en los servicios atrasados.
 
-**Hypothesis Statement 07:**
-
-- Creemos que las notificaciones deben ser escuetas y fáciles de entender para que los motociclistas no las ignoren.
-- Sabremos que estamos en lo correcto cuando las pruebas de usabilidad muestren que los usuarios entienden y siguen las alertas que reciban.
-
-**Hypothesis Statement 08:**
-
-- Creemos que una interfaz simple con información precisa facilitará la adopción de la aplicación por los motociclistas.
-- Sabremos que estamos en lo correcto cuando veamos comentarios positivos sobre la usabilidad de la aplicación.
-
-**Hypothesis Statement 09:**
-
-- Creemos que los talleres que adopten esta plataforma tendrán mayor fidelización de clientes frente a los que no lo hagan.
-- Sabremos que estamos en lo correcto cuando los talleres suscritos muestren un aumento en clientes recurrentes.
-
-**Hypothesis Statement 10:**
-
-- Creemos que los usuarios valorarán la posibilidad de acceder al historial de mantenimiento de su motocicleta en un solo lugar.
-- Sabremos que estamos en lo correcto cuando los clientes consulten repetidamente el historial en la aplicación.
-
-**Hypothesis Statement 11:**
-
-- Creemos que la plataforma ayudará a los talleres a gestionar de manera más eficiente varias motos de distintos clientes al mismo tiempo.
-- Sabremos que estamos en lo correcto cuando los mecánicos reporten menor tiempo de organización y mayor control de su cartera de clientes.
-
-**Hypothesis Statement 12:**
-
-- Creemos que integrar recordatorios automáticos de mantenimientos programados reducirá los olvidos de los clientes.
-- Sabremos que estamos en lo correcto cuando los clientes acudan puntualmente a las citas de mantenimiento.
-
-**Hypothesis Statement 13:**
-
-- Creemos que la interfaz intuitiva de la aplicación facilitará la adopción por parte de clientes que no son expertos en tecnología.
-- Sabremos que estamos en lo correcto cuando los usuarios aprendan a manejar la app en menos de una semana y la usen sin asistencia.
-
-**Hypothesis Statement 14:**
-
-- Creemos que mostrar gráficas y estadísticas en tiempo real aumentará la percepción de valor tecnológico en la plataforma.
-- Sabremos que estamos en lo correcto cuando los usuarios interactúen frecuentemente con los paneles de datos visuales.
-
-**Hypothesis Statement 15:**
-
-- Creemos que el envío de reportes semanales sobre el estado de la moto fortalecerá la relación de confianza entre cliente y taller.
-- Sabremos que estamos en lo correcto cuando los clientes valoren positivamente los reportes y continúen la suscripción.
-
-**Hypothesis Statement 16:**
-
-- Creemos que el sistema reducirá costos inesperados al detectar anomalías antes de que se conviertan en averías graves.
-- Sabremos que estamos en lo correcto cuando los clientes reporten menos gastos de emergencia y mayor previsión.
-
-**Hypothesis Statement 17:**
-
-- Creemos que ofrecer soporte rápido en caso de fallos críticos en la moto motivará a los usuarios a depender de la aplicación.
-- Sabremos que estamos en lo correcto cuando los usuarios utilicen la función de soporte y lo califiquen positivamente.
-
-**Hypothesis Statement 18:**
-
-- Creemos que incluir un sistema de alertas personalizadas para cada cliente aumentará la efectividad del mantenimiento preventivo.
-- Sabremos que estamos en lo correcto cuando los talleres reporten mayor precisión en la programación de servicios.
-
-**Hypothesis Statement 19:**
-
-- Creemos que la transparencia en el estado real de la moto mejorará la percepción de honestidad hacia los mecánicos.
-- Sabremos que estamos en lo correcto cuando los clientes expresen confianza en las recomendaciones de mantenimiento recibidas a través de la app.
-
-**Hypothesis Statement 20:**
-
-- Creemos que los motociclistas estarán más motivados a usar BykerZ si reciben consejos prácticos de cuidado básico de sus motocicletas.
-- Sabremos que estamos en lo correcto cuando identifiquemos que los usuarios revisan de forma constante las secciones de recomendaciones en la aplicación.
 
 ##### 1.2.2.4 Lean UX Canvas
-![Lean UX Canvas](images/chapter-1/lean-ux-canvas.png)
+![Lean UX Canvas](images/chapter-1/lean_ux_canvas.jpg)
 
 ### 1.3 Segmentos objetivo
 
-#### Segmento Objetivo #1: Usuarios de motos urbanas
+#### Segmento Objetivo #1: Motociclistas
 
-Este grupo incluye a personas que utilizan motocicletas como su principal medio de transporte en entornos urbanos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
+Para este grupo su principal medio de transporte son las motos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
 
 - Características clave:
   - Edad: 18 a 45 años
@@ -609,9 +716,9 @@ Este grupo incluye a personas que utilizan motocicletas como su principal medio 
   - Conocer costos acumulados de uso y reparaciones.
   - Tener a mano el historial de mantenimiento.
 
-#### Segmento Objetivo #2: Mecánicos y talleres de servicio
+#### Segmento Objetivo #2: Mecánicos
 
-Este grupo está conformado por profesionales independientes o pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
+Este grupo está conformado por profesionales independientes con pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
 
 - Características clave:
   - Edad: 25 a 55 años
