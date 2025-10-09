@@ -4748,36 +4748,359 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
 ### 6.1. Software Configuration Management.
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar BykerZ. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
 
 #### 6.1.1. Software Development Environment Configuration.
 
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de asignación de tareas, plataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto.
+
+**Herramientas:**
+- **Centro de organización de trabajo:** Github
+- **Planificación de tareas:** Trello
+- **Reuniones con el equipo:** Discord
+- **Coordinación grupal:** WhatsApp
+
+**Requirements Management**  
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+| Herramienta | Descripción                                                                                        | Enlace                                     |
+|-------------|----------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **Trello**  | Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | [https://trello.com/](https://trello.com/) |
+
+**Product UX/UI Design**  
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
+
+| Herramienta | Descripción                                                                                    | Enlace                                           |
+|-------------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| **Figma**   | Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App. | [https://www.figma.com/](https://www.figma.com/) |
+
+**Software Development**  
+Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
+
+| Herramienta         | Descripción                                                                  | Enlace                                                                           |
+|---------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Android**         | Lenguaje de programación utilizado para la creación de la mobile application | [https://developer.android.com/](https://developer.android.com/)                 |
+| **Jetpack Compose** | Framework utilizado para la creación de la mobile application                | [https://developer.android.com/compose](https://developer.android.com/compose)   |
+| **Spring Boot**     | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
+| **Tailwind CSS**    | Framework utilizado para la creación de la landing page                      | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
+| **Angular**         | Framework de desarrollo web open source                                      | [https://angular.dev/](https://angular.dev/)                                     |
+
+**Software Testing**
+Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
+
+| Herramienta | Descripción                                            | Enlace                                                 |
+|-------------|--------------------------------------------------------|--------------------------------------------------------|
+| **JUnit**   | Framework de pruebas unitarias para Java               | [https://junit.org/](https://junit.org/)               |
+| **Mockito** | Framework de simulación para pruebas unitarias en Java | [https://site.mockito.org/](https://site.mockito.org/) |
+
+**Software Deployment**
+Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
+
+| Herramienta                   | Descripción                                                            | Enlace                                                                                                         |
+|-------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **Render**                    | Plataforma de despliegue en la nube                                    | [https://render.com/](https://render.com/)                                                                     |
+| **Firebase App Distribution** | Plataforma para distribuir versiones de prueba de aplicaciones móviles | [https://firebase.google.com/products/app-distribution](https://firebase.google.com/products/app-distribution) |
+
+**Software Documentation**  
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+| Herramienta  | Descripción                                                      | Enlace                                                             |
+|--------------|------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Markdown** | Lenguaje de marcado utilizado para la documentación del proyecto | [https://www.markdownguide.org/](https://www.markdownguide.org/)   |
+| **Github**   | Para gestionar la documentación del proyecto                     | [https://github.com/NRG-4/report](https://github.com/NRG-4/report) |
+
 #### 6.1.2. Source Code Management.
+
+Para la gestión del código fuente, utilizamos los siguientes repositorios:
+
+| Herramienta            | Descripción               | Enlace                                                                                                                   |
+|------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Mobile Application** | BykerZ-Mobile-Application | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
+| **Backend**            | BykerZ-Backend            | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
+| **Landing Page**       | BykerZ-Landing-Page       | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
+| **Web Application**    | BykerZ-Web-Application    | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
+
+**Flujo de trabajo GitFlow**  
+Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Git branching model"* con los siguientes parámetros:
+
+- Una rama de producción.
+- Una rama de pruebas.
+- Una rama en la que se solucionen los bugs rápidamente y vuelvan a producción.
+- Ramas de features a implementar.
+- Cada cambio en producción debe establecerse como una nueva versión.
+
+**Ramas definidas:**
+- **Main branch:** Rama de producción, cada cambio requiere autorización de un compañero de equipo.
+- **Hotfix branch:** Para errores identificados que deben solucionarse y desplegarse nuevamente en producción.
+- **Develop branch:** Implementaciones constantes de features.
+- **Features branch:** Cada feature tendrá su propia rama, luego se fusiona en *develop*.
+
+**Nomenclatura de versiones:**
+- **Major changes:** Cambios significativos incompatibles (ej. `1.0.0 -> 2.0.0`).
+- **Minor changes:** Cambios que añaden o modifican características (ej. `1.1.0 -> 1.2.0`).
+- **Patch:** Correcciones menores (ej. `1.1.3 -> 1.1.4`).
+
+**Sufijos asignados:**
+- `alpha`: Versión no estable.
+- `beta`: Versión funcional pero no lista para publicación.
+- `rc`: Versión candidata para publicación.
 
 #### 6.1.3. Source Code Style Guide & Conventions.
 
+El equipo adopta convenciones estandarizadas de codificación para asegurar la coherencia, legibilidad y mantenibilidad del código en todos los componentes del sistema. Todas las nomenclaturas, identificadores y comentarios se escribirán en inglés, siguiendo las guías oficiales de estilo recomendadas para cada tecnología empleada en la solución.
+
+**Mobile Application – Android (Kotlin/Java)**
+
+* **Classes:** PascalCase (e.g., UserProfileActivity).
+* **Functions & Variables:** camelCase (e.g., getUserData(), userName).
+* **Constants:** UPPER_SNAKE_CASE (e.g., MAX_ATTEMPTS).
+* **Architecture:** Separación por capas (MVVM – Model, ViewModel, View).
+* **Good Practices:**
+  * Mantener lógica fuera de la UI (ViewModel o UseCase).
+  * Evitar operaciones costosas en @Composable.
+  * Documentar funciones con KDoc.
+
+**Web Application – Angular (TypeScript, HTML, CSS)**
+
+* **Components & Services:** PascalCase (e.g., UserDashboardComponent, AuthService).
+* **Variables & Methods:** camelCase (e.g., userProfile, loadData()).
+* **Interfaces:** Prefijo I (e.g., IUser, IServiceResponse).
+* **File Naming:** kebab-case (e.g., user-profile.component.ts).
+* **HTML Structure:**
+  * Uso semántico de etiquetas.
+  * Identificadores claros (id, class) en kebab-case.
+* **CSS / Tailwind CSS:**
+  * Ordenar clases en el siguiente orden: Layout → Flex/Grid → Spacing → Typography → Colors → Effects.
+  * Uso de prefijos sm:, md:, lg: para diseño responsive.
+  * Evitar uso excesivo de @apply en archivos CSS.
+
+**Backend – Spring Boot (Java)**
+
+* **Package Structure:** controller, service, repository, model, config.
+* **Naming Conventions:**
+  * Classes: PascalCase (e.g., UserController).
+  * Methods & Variables: camelCase (e.g., findUserById()).
+  * Constants: UPPER_SNAKE_CASE.
+* **Good Practices:**
+  * Inyección de dependencias con @Autowired o constructor.
+  * Validaciones mediante @Valid.
+  * Manejo de excepciones centralizado con @ControllerAdvice. 
+  * Documentación con JavaDoc.
+
+**Database – PostgreSQL**
+
+* **Table Names:** snake_case plural (e.g., user_profiles).
+* **Column Names:** snake_case (e.g., created_at).
+* **Primary Keys:** id o table_name_id (e.g., user_id).
+* **Foreign Keys:** referenced_table_id.
+* **Views & Indexes:** prefijo v_ y idx_ respectivamente.
+* **Scripts:** comentarios en inglés y consistencia en sangría.
+
+**Landing Page – HTML & CSS**
+
+* **HTML:**
+  * Estructura semántica (< header >, < main >, < footer >).
+  * Atributos y etiquetas en minúsculas.
+  * Sangría de 2 espacios.
+* **CSS:**
+  * Nombres de clases en kebab-case (e.g., main-banner).
+  * Uso de variables CSS para colores y tipografía.
+  * Evitar el uso de IDs para estilos.
+
+**General Guidelines**
+
+* **Comments:** Siempre en inglés, explicando el por qué y no solo el qué.
+* **Commits:** Convención semántica (feat:, fix:, docs:, refactor:, test:).
+* **Version Control:** Ramas en formato kebab-case (feature/add-login-page).
+* **Performance:** Uso de lazy loading para imágenes, módulos y componentes.
+* **Accessibility:** Cumplimiento de WCAG 2.1 en interfaces web y móviles.
+
 #### 6.1.4. Software Deployment Configuration.
+
+**Landing Page**
+1. Ejecutar `npm run build` localmente.
+2. Subir repositorio a GitHub (público).
+3. Crear servicio en Render → Web Service.
+4. Seleccionar repositorio y configurar.
+5. Deploy y verificación en la URL pública.
+
+**Mobile Application**
+1. Activar modo desarrollador y depuración USB en dispositivo.
+2. Conectar a la PC.
+3. Abrir proyecto en Android Studio.
+4. Seleccionar dispositivo y ejecutar.
+5. Verificar funcionamiento.
+
+**Web Application**
+1. Subir repositorio a GitHub (público).
+2. Crear Web Service en Render.
+3. Seleccionar repositorio y configurar.
+4. Deploy y verificación en la URL pública.
+
+**Backend**
+1. Configurar base de datos en Neontech.
+2. Crear `Dockerfile` para despliegue.
+3. Crear Web Service en Render.
+4. Importar repositorio backend.
+5. Deploy de la API.
+
+Deployment diagram C4 model:
+
+<img src="images/chapter-4/deployment-model.png" alt="Deployment Diagram">
 
 ### 6.2. Landing Page, Services & Applications Implementation.
 
-#### 6.2.1. Sprint n
+En esta sección se detalla el proceso de implementación, pruebas, documentación y despliegue de los distintos componentes del ecosistema digital: Landing Page, Web Services, Web Applications, Mobile Applications y Embedded Applications. El propósito es evidenciar cómo las decisiones de diseño, arquitectura y desarrollo se materializan en soluciones funcionales y coherentes. Además, se presentan los avances organizados por Sprints, reflejando la evolución iterativa del producto conforme al Product Backlog y las metas definidas en cada ciclo de desarrollo ágil.
 
-##### 6.2.1.1. Sprint Planning n.
+#### 6.2.1. Sprint 1
+
+En este primer sprint se enfocó el esfuerzo del equipo en construir la versión inicial de los componentes principales del ecosistema digital, incluyendo la Landing Page, la Web Application y el Backend. El objetivo fue establecer la base funcional del proyecto, validando la integración entre las capas de presentación, lógica de negocio y datos, mientras se promovía un flujo de trabajo colaborativo y ágil entre los distintos roles del equipo.
+
+##### 6.2.1.1. Sprint Planning 1.
+
+Esta sección describe el proceso de planificación del Sprint 1, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación inicial del Frontend (Landing Page y Web App) y del Backend (servicios base y endpoints principales).
+
+| Sprint #                         | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-10-05                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Sprint 1 - Review Summary        | Este es el primer sprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
+| Sprint 1 - Retrospective Summary | Este es el primer sprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Sprint 1 Goal                    | Nuestro enfoque está en entregar la primera versión funcional del ecosistema BykerZ incluyendo la Landing Page para visitantes, la Aplicación Web para dueños de motocicletas y mecánicos, y el Backend para los desarrolladores.<br>Creemos que esto proporcionará un punto de entrada unificado y accesible para los usuarios potenciales, una herramienta operativa para la gestión de vehículos y el seguimiento de mantenimientos, y una capa de servicios sólida para futuras integraciones y escalabilidad.<br>Esto se confirmará cuando los visitantes puedan navegar por la Landing Page y comprender la propuesta de valor de BykerZ, los dueños y mecánicos puedan acceder a la aplicación web para gestionar sus vehículos y mantenimientos, y los desarrolladores puedan conectarse exitosamente a los endpoints del backend obteniendo respuestas estables. |
+| Sprint 1 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ##### 6.2.1.2. Aspect Leaders and Collaborators.
 
-##### 6.2.1.3. Sprint Backlog n.
+La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
+
+| Team Mmeber                           | Github Username       | Aspect Name 1                | Aspect Name 2            |
+|---------------------------------------|-----------------------|------------------------------|--------------------------|
+| Alejo Cardenas Jose Antonio           | Firtness              | Backend Development (C)      |                          |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Landing Page Development (L) | Frontend Development (C) |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Backend Development (L)      |                          |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | Frontend Development (C)     |                          |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Frontend Development (C)     |                          |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Frontend Development (C)     |                          |
+
+##### 6.2.1.3. Sprint Backlog 1.
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H)
+
+<table>
+  <tr>
+    <td colspan="1"><strong>Sprint #</strong></td>
+    <td colspan="7"><strong>Sprint 1</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>User Story</strong></td>
+    <td colspan="6"><strong>Work-Item/task</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Description</strong></td>
+    <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+    <td colspan="1"><strong>Assigned To</strong></td>
+    <td colspan="1"><strong>Status</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1">TS-001</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+</table>
 
 ##### 6.2.1.4. Development Evidence for Sprint Review.
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, las Web Applications y los Web Services. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Landing Page**
+
+| Repository          | Branch  | Commit Id | Commit Message                                                | Commit Message Body                                           | Date       |
+|---------------------|---------|-----------|---------------------------------------------------------------|---------------------------------------------------------------|------------|
+| BykerZ-Landing-Page | develop | 09b7216b  | Initial commit                                                | Initial commit                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | cf789b69  | feat: add multilingual support script                         | feat: add multilingual support script                         | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c9d3b907  | feat: add styles for language selector                        | feat: add styles for language selector                        | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 8ff55ac0  | feat: add i18n support                                        | feat: add i18n support                                        | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 6ac895e0  | feat: update index.html to include external script file       | feat: update index.html to include external script file       | 08/10/2025 |
+| BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation  | feat: update button labels for web and mobile app navigation  | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config | feat: add team roles and copyright information in i18n config | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information  | feat: add unique IDs to team roles and copyright information  | 08/10/2025 |
+
+**Web Application**
+
+| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date       |
+|------------------------|---------|-----------|----------------|---------------------|------------|
+| BykerZ-Web-Application | develop |           | I              |                     | 08/10/2025 |
+
+**Backend**
+
+| Repository     | Branch  | Commit Id | Commit Message | Commit Message Body | Date       |
+|----------------|---------|-----------|----------------|---------------------|------------|
+| BykerZ-Backend | develop |           | I              |                     | 08/10/2025 |
 
 ##### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
 ##### 6.2.1.6. Execution Evidence for Sprint Review.
 
+En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
+
+Video: []()
+
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
+
+Backend repository: []()
+
+| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
+|----------|------------|-------------|------------|--------------|---------------|-------------|
 
 ##### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+**Backend**
+
 ##### 6.2.1.9. Team Collaboration Insights during Sprint.
+
+En esta sección se presentan los insights de colaboración del equipo durante el Sprint, destacando cómo se desarrollaron las actividades de implementación y el nivel de participación de cada integrante en los diferentes productos: Landing Page, Backend y Web Application. Se incluyen capturas de los analíticos de colaboración y registros de commits en GitHub, acompañadas de una interpretación conjunta elaborada por el equipo. Este análisis permite evidenciar el grado de involucramiento, coordinación y contribución de los miembros en las tareas de desarrollo, reflejando el trabajo colaborativo y la dinámica del equipo a lo largo del Sprint.
+
+**Landing Page**
+
+**Web Application**
+
+**Backend**
 
 ### 6.3. Validation Interviews.
 
