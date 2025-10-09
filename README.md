@@ -4459,29 +4459,17 @@ En esta sección se presentan los wireflows que ilustran los flujos de interacci
 ##### Web Application
 La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
-**Dueño - Registro de Motocicleta**: Este flujo permite al dueño registrar una o más motocicletas nuevas en su cuenta, especificando las características y modificables del vehículo, además del mecánico asociado a ésta.
-![Dueno - Registro de Motocicleta](images/chapter-5/web-wireflows-owner-vehicles.png)
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![web-wireflows-view-vehicles.png](images/chapter-5/wireflows-web/web-wireflows-view-vehicles.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
 
-**Dueño - Gastos**: Este flujo permite al dueño gestionar los gastos realizados en visitas de mantenimiento, reparaciones o compras relacionadas con sus motocicletas.
-![Dueno - Gastos](images/chapter-5/web-wireflows-owner-expenses.png)
+**User Goal: Como dueño de moto, quiero vincular un mecánico a mi motocicleta.**
+![web-wireflows-sync-mechanic.png](images/chapter-5/wireflows-web/web-wireflows-sync-mechanic.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
 
-**Dueño - Comparativas**: Este flujo permite al dueño comparar diferentes modelos de motocicletas, ayudándole en la toma de decisiones para futuras compras o cambios.
-![Dueno - Comparativas](images/chapter-5/web-wireflows-owner-compares.png)
-
-**Dueño - Mantenimientos**: Este flujo permite al dueño gestionar y programar los mantenimientos de sus motocicletas, asegurando que se realicen a tiempo y de manera adecuada.
-![Dueno - Mantenimientos](images/chapter-5/web-wireflows-owner-maintenances.png)
-
-**Mecánico - Suscripciones de clientes**: Este flujo permite al mecánico gestionar las suscripciones de los dueños de motocicletas, facilitando la administración de sus clientes y servicios.
-![Mecanico - Suscripciones de clientes](images/chapter-5/web-wireflows-mechanic-subscriptions.png)
-
-**Mecánico - Membresía**: Este flujo permite al mecánico gestionar su membresía en la plataforma, incluyendo la actualización de su perfil y la visualización de beneficios.
-![Mecanico - Membresía](images/chapter-5/web-wireflows-mechanic-membership.png)
-
-**Mecánico - Comparativas**: Este flujo permite al mecánico comparar diferentes modelos de motocicletas, ayudándole a ofrecer mejores recomendaciones a sus clientes.
-![Mecanico - Comparativas](images/chapter-5/web-wireflows-mechanic-compares.png)
-
-**Mecánico - Mantenimientos**: Este flujo permite al mecánico gestionar los mantenimientos realizados a las motocicletas de sus clientes.
-![Mecánico - Mantenimientos](images/chapter-5/web-wireflows-mechanic-maintenances.png)
+**User Goal: Como dueño de moto, quiero editar los datos de un vehículo registrado.**
+![web-wireflows-edit-vehicle.png](images/chapter-5/wireflows-web/web-wireflows-edit-vehicle.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los datos del vehículo modificados correctamente.
 
 ##### Mobile Application
 La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
@@ -4555,6 +4543,21 @@ En esta sección se presentan los mock-ups finales de las aplicaciones, donde se
 <img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
 
 #### 5.4.4. Applications User Flow Diagrams
+
+##### Web Application
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![web-userflows-view-vehicles.png](images/chapter-5/userflows-web/web-userflows-view-vehicles.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un mecánico a mi motocicleta.**
+![web-userflows-sync-mechanic.png](images/chapter-5/userflows-web/web-userflows-sync-mechanic.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los datos de un vehículo registrado.**
+![web-userflows-edit-vehicle.png](images/chapter-5/userflows-web/web-userflows-edit-vehicle.png)
+El flujo de usuario inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los datos del vehículo modificados correctamente.
+
 
 ### Mobile Application
 
