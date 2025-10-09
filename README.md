@@ -5058,6 +5058,8 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 ##### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
+Para este sprint no se desarrollaron pruebas unitarias ni de integración, ya que el enfoque principal estuvo en la implementación inicial de los componentes del ecosistema digital. Sin embargo, se reconoce la importancia de incorporar una suite de pruebas en futuros sprints para garantizar la calidad y estabilidad del software a medida que se avanza en el desarrollo.
+
 ##### 6.2.1.6. Execution Evidence for Sprint Review.
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
