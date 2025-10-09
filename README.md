@@ -4542,6 +4542,13 @@ Video: []()
 
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
+En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
+
+Backend repository: []()
+
+| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
+|----------|------------|-------------|------------|--------------|---------------|-------------|
+
 ##### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
 ##### 6.2.1.9. Team Collaboration Insights during Sprint.
