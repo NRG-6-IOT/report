@@ -542,15 +542,29 @@ Estos datos reflejan la magnitud del problema y justifican la necesidad de soluc
 
 ##### 1.2.2.1 Lean UX Problem Statements
 
-El estado actual del sector de mantenimiento de motocicletas se ha centrado principalmente en modelos de servicio reactivos, donde los propietarios carecen de visibilidad sobre el estado de sus vehículos y los talleres mecánicos dependen de diagnósticos manuales basados en información limitada.
+1. Problem Statement — Experiencia del motociclista
+   
+BykerZ fue diseñado para lograr la creacion de una herramienta digital para los motociclistas que les permita monitorear el estado de su vehículo y anticipar posibles fallas mecánicas.
+Hemos observado que los productos actuales del mercado no están cumpliendo completamente, ya que muchos usuarios aún carecen de visibilidad clara sobre el estado interno de su motocicleta, lo que limita su capacidad de actuar de forma preventiva.
+Esta situación está causando un incremento en los costos por mantenimiento reactivo y una mayor exposición a accidentes por fallas imprevistas.
+¿Cómo podríamos mejorar BykerZ para que los motociclistas puedan realizar un monitoreo más preciso y predictivo, de manera que se incremente su seguridad y se reduzcan los gastos imprevistos, en función de métricas de reducción de fallas mecánicas y mantenimiento preventivo oportuno?
 
-Lo que los servicios existentes no logran abordar es el monitoreo continuo que permitan anticipar fallos mecánicos y optimizar la relación entre usuarios y talleres.
 
-Nuestro producto abordará esta brecha mediante una plataforma que facilite el monitoreo proactivo y la comunicación basada en datos.
+2. Problem Statement — Eficiencia del mecánico y taller
+   
+BykerZ fue diseñado para lograr optimizar el flujo de trabajo de los mecánicos, facilitando diagnósticos precisos mediante el acceso a datos en tiempo real del vehículo.
+Hemos observado que los sistemas actuales no lo estan alcanzando plenamente , ya que los mecánicos continúan dedicando mucho tiempo a la inspección manual de los vehículos y a la búsqueda de la causa raíz de los problemas.
+Esto está causando una pérdida de eficiencia operativa, mayores tiempos de reparación y dificultades para fidelizar clientes.
+¿Cómo podríamos mejorar BykerZ para que los talleres mecánicos puedan realizar diagnósticos más rápidos y precisos, reduciendo el tiempo promedio de atención y aumentando la satisfacción del cliente, medido mediante la reducción del tiempo de diagnóstico y la tasa de retención de clientes?
 
-Nuestro enfoque inicial serán los propietarios de motocicletas urbanas y los talleres mecánicos independientes.
 
-Sabremos que tenemos éxito cuando observemos un aumento del 30% en mantenimientos preventivos programados a través de la plataforma y una reducción del 25% en reparaciones de emergencia reportadas por los talleres asociados durante los primeros seis meses de implementación.
+3. Problem Statement — Retención y vínculo usuario–taller
+   
+BykerZ fue diseñado para lograr fortalecer la relación continua entre motociclistas y talleres mediante una comunicación proactiva basada en datos.
+Hemos observado que el producto no está cumpliendo completamente , ya que los usuarios tienden a interactuar con la plataforma de manera esporádica y suelen olvidar realizar mantenimientos programados.
+Esto está causando una baja retención de usuarios activos y pérdida de oportunidades de servicio recurrente para los talleres.
+¿Cómo podríamos mejorar BykerZ para que los motociclistas mantengan un vínculo constante con sus mecánicos de confianza y realicen mantenimientos oportunos, en base a la frecuencia de interacción, la cantidad de mantenimientos programados cumplidos y la tasa de retención mensual de usuarios?
+
 
 ##### 1.2.2.2 Lean UX Assumptions
 
