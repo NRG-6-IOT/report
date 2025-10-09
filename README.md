@@ -4,6 +4,8 @@
 
 ### **CURSO:** Desarrollo de Soluciones IoT
 
+### **Código del Curso**: 1ASI0572
+
 ### **NRC**: 3443
 
 ### **Profesor:** Ángel Augusto Velásquez Núñez
