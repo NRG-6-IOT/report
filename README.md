@@ -47,38 +47,80 @@
     <tr>
       <td>0.1</td>
       <td>01/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
-      <td>Desarrollo del solution profile, lean ux process, segmentos objetivos y análisis de competidores</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del solution profile</td>
     </tr>
     <tr>
       <td>0.2</td>
-      <td>08/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
-      <td>Diseño, registro y análisis de entrevistas y needfinding</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del Lean ux process</td>
     </tr>
     <tr>
       <td>0.3</td>
-      <td>13/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>User stories, impact mapping, product backlog</td>
+      <td>01/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del Segmentos objetivos</td>
     </tr>
     <tr>
       <td>0.4</td>
-      <td>14/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>Big Pictures Eventstorming</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del Análisis de competidores</td>
     </tr>
     <tr>
       <td>0.5</td>
-      <td>15/09/2025</td>
+      <td>08/09/2025</td>
+      <td>Pasquale Barrenechea Gianluca Santino</td>
+      <td>Desarrollo del diseño, registro y análisis de entrevistas</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>08/09/2025</td>
+      <td>Astonitas Díaz Juan Diego</td>
+      <td>Desarrollo del Needfinding</td>
+    </tr>
+    <tr>
+      <td>0.7</td>
+      <td>13/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo de los User stories y product backlog</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>13/09/2025</td>
+      <td>Pacheco Astiguetta Sebastian</td>
+      <td>Desarrollo del impact mapping</td>
+    </tr>
+    <tr>
+      <td>0.9</td>
+      <td>14/09/2025</td>
       <td>Casas Sanchez Gabriel Alexander</td>
-      <td>Domain message flows modeling, bounded context canvases, context mapping, software architecture</td>
+      <td>Desarrollo del Big Pictures Eventstorming</td>
     </tr>
     <tr>
       <td>1.0</td>
-      <td>20/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>Tactical-level Domain-Driven Design</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del los Domain message flows modeling y bounded context canvases</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>15/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del context mapping</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>15/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del software architecture</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del tactical-level domain-Driven design</td>
     </tr>
   </tbody>
 </table>
@@ -108,8 +150,28 @@ Distribución de commits:
 * Paitan Pumachuca Max Anthony (MaxPaitanP): commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
+Explicacion del desarrollo de actividades de la primera entrega :<br>
+<br>Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
+
+<br>En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
+
+<br>Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
+
+<br>Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
+
+<br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
+
 ## Contenido
 
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**NRC**: 3443](#nrc-3443)
+    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
+    - [**Ingeniería de software**](#ingeniería-de-software)
+  - [Informe del trabajo Final](#informe-del-trabajo-final)
+    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
+    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
+  - [**Integrantes**](#integrantes)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
   - [Project Report Collaboration Insights](#project-report-collaboration-insights)
   - [Contenido](#contenido)
@@ -119,13 +181,23 @@ Distribución de commits:
       - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
       - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
+      - [Problema identificado](#problema-identificado)
+      - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [What](#what)
+        - [When](#when)
+        - [Where](#where)
+        - [Who](#who)
+        - [Why](#why)
+        - [How](#how)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
         - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
         - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+      - [Segmento Objetivo #1: Usuarios de motos urbanas](#segmento-objetivo-1-usuarios-de-motos-urbanas)
+      - [Segmento Objetivo #2: Mecánicos y talleres de servicio](#segmento-objetivo-2-mecánicos-y-talleres-de-servicio)
   - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
       - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
@@ -143,6 +215,7 @@ Distribución de commits:
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
+- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -158,11 +231,16 @@ Distribución de commits:
         - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
         - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: unnamed](#421-bounded-context-unnamed)
+      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
+    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
+    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
+    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
+    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
@@ -212,47 +290,47 @@ Distribución de commits:
         - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
           - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-  - [Capitulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-    - [5.1 Style Guidelines](#51-style-guidelines)
-        - [5.1.1 General Style Guidelines](#511-general-style-guidelines)
-        - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+  - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+    - [5.1. Style Guidelines](#51-style-guidelines)
+      - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+      - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
     - [5.2. Information Architecture](#52-information-architecture)
-        - [5.2.1. Organization Systems](#521-organization-systems)
-        - [5.2.2. Labeling Systems](#522-labeling-systems)
-        - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-        - [5.2.4. Searching Systems](#524-searching-systems)
-        - [5.2.5. Navigation Systems](#525-navigation-systems)
+      - [5.2.1. Organization Systems](#521-organization-systems)
+      - [5.2.2. Labeling Systems](#522-labeling-systems)
+      - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+      - [5.2.4. Searching Systems](#524-searching-systems)
+      - [5.2.5. Navigation Systems](#525-navigation-systems)
     - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-        - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-        - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+      - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+      - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
     - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-        - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-        - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
-        - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-        - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+      - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+      - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+      - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
-  - [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
-    - [6.1. Software Configuration Management](#61-software-configuration-management)
-        - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-        - [6.1.2. Source Code Management](#612-source-code-management)
-        - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
-        - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
-    - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-        - [6.2.1. Sprint n](#621-sprint-n)
-            - [6.2.1.1. Sprint Planning n](#6211-sprint-planning-n)
-            - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
-            - [6.2.1.3. Sprint Backlog n](#6213-sprint-backlog-n)
-            - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
-            - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
-            - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
-            - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
-            - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
-            - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-    - [6.3. Validation Interviews](#63-validation-interviews)
-        - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-        - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-        - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-    - [6.4. Video About-the-Product]()
+  - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+    - [6.1. Software Configuration Management.](#61-software-configuration-management)
+      - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [6.1.2. Source Code Management.](#612-source-code-management)
+      - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+      - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+    - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+      - [6.2.1. Sprint n](#621-sprint-n)
+        - [6.2.1.1. Sprint Planning n.](#6211-sprint-planning-n)
+        - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+        - [6.2.1.3. Sprint Backlog n.](#6213-sprint-backlog-n)
+        - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+        - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+        - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+        - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+        - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+        - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+    - [6.3. Validation Interviews.](#63-validation-interviews)
+      - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+      - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+      - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+    - [6.4. Video About-the-Product.](#64-video-about-the-product)
   - [Conclusiones](#conclusiones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
@@ -280,29 +358,41 @@ del ABET – EAC - Student Outcome 5.
     <tr>
       <td><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
       <td>
-        <br> TB1: <br>Astonitas Díaz Juan Diego: Mediatnte fomentar la ayuda mutua, se logro que todos los integrantes implementaran correctamente los diagramas de sus bounded context
-        <br>Alejo Cardenas, Jose Antonio: Asumí un liderazgo compartido junto a mis compañeros en la elaboración de User Stories, Impact Mapping y Bounded Contexts, valorando cada aporte y llegando a consensos que guiaron nuestro trabajo.
-        <br> Pasquale Barrenechea, Gianluca Santino: A través de la investigación y análisis colaborativo, contribuí en el diseño detallado de los bounded context Suscripciones, Bienestar del Vehículo e IAM, asegurando la coherencia entre capas de dominio y aplicación, además de mantener la alineación con las relaciones entre mecánicos y usuarios.
-        <br>Pacheco Astiguetta, Sebastian: Al analizar la información recopilada, se logró definir claramente los límites y responsabilidades de cada bounded context, facilitando la integración y comunicación entre ellos.
-        <br>Real Calderón, Sebastián Omar: Colaboré activamente con mis compañeros, aportando ideas y asumiendo un liderazgo compartido para alcanzar consensos y mantener la coherencia del trabajo en equipo.
-        <br>Casas Sanchez, Gabriel Alexander: Asumí un rol de liderazgo compartido en la definición y diseño de los bounded contexts, promoviendo la colaboración y el consenso entre los miembros del equipo para asegurar una visión unificada del proyecto.
-    /td>
+        <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
+        <strong>TB1:</strong> Asumí un rol de liderazgo compartido en la definición de los modelos del dominio y en la elaboración del <em>Solution Profile</em>, <em>Big Picture Eventstorming</em>, <em>Domain Message Flows Modeling</em> y los <em>Bounded Context Canvases</em>. Promoví la colaboración entre los miembros del equipo para mantener coherencia entre los diferentes modelos y asegurar una visión unificada del sistema.<br><br>
+        <strong>Real Calderon Sebastian Omar</strong><br>
+        <strong>TB1:</strong> Participé activamente en la elaboración de los <em>Segmentos Objetivos</em>, los <em>User Stories</em>, el <em>Product Backlog</em> y el <em>Context Mapping</em>. Coordiné la integración de estos artefactos con el resto del equipo, fomentando la comunicación constante y asegurando que las definiciones del dominio se mantuvieran alineadas con los objetivos del proyecto.<br><br>
+        <strong>Alejo Cardenas Jose Antonio</strong><br>
+        <strong>TB1:</strong> Lideré la elaboración del <em>Lean UX Process</em>, el <em>Análisis de Competidores</em> y la <em>Arquitectura de Software</em>. Trabajé de manera conjunta con mis compañeros para definir estrategias de diseño y establecer lineamientos técnicos que respondieran a las necesidades del proyecto, priorizando siempre la coherencia y el consenso en las decisiones tomadas.<br><br>
+        <strong>Pacheco Astiguetta Sebastian</strong><br>
+        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br><br>
+        <strong>Astonitas Díaz Juan Diego</strong><br>
+        <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
+        <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
+        <strong>TB1:</strong> Elaboré el <em>Diseño, registro y análisis de entrevistas</em>, organizando la información obtenida de los usuarios para orientar las decisiones del diseño del sistema. Participé en la coordinación del grupo para integrar los resultados de las entrevistas con los artefactos posteriores, fortaleciendo la coherencia entre las etapas del informe.
+      </td>
       <td>
-        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades (User Stories, Impact Mapping, Domain Storytelling, Eventstorming, Context Mapping y definición de Bounded Contexts), donde cada integrante asumió responsabilidades específicas y se promovió la toma de decisiones consensuada que permitió avanzar de manera organizada en cada etapa del trabajo.
+        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades del informe (User Stories, Impact Mapping, Eventstorming, Context Mapping y definición de Bounded Contexts). Cada integrante asumió responsabilidades específicas y participó en la toma de decisiones conjuntas, lo que permitió mantener la coherencia del proyecto y avanzar de manera organizada en cada etapa del trabajo.
       </td>
     </tr>
     <tr>
-      <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
+      <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</strong></td>
       <td>
-        <br> TB1: <br>Astonitas Díaz Juan Diego: Dirigi la construccion y la organizacion del grupo para la correcta ejecucion y documentacion de los bounded context
-        <br>Alejo Cardenas, Jose Antonio: Fomenté un entorno inclusivo de colaboración durante el event storming, establecí metas claras con el equipo, planificamos tareas de forma organizada y logramos cumplir con los objetivos propuestos.
-        <br> Pasquale Barrenchea, Gianluca Santino: Organicé las tareas del equipo para garantizar la correcta integración de los bounded contexts, promoví la comunicación constante y aseguré que cada entregable estuviera alineado con los objetivos definidos en el proyecto.
-        <br>Pacheco Astiguetta, Sebastian: Fomenté un ambiente de trabajo inclusivo y colaborativo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar el cumplimiento de los objetivos del proyecto.
-        <br>Real Calderón, Sebastián Omar: Ayudé a fomentar un ambiente de colaboración e inclusión, participando en la planificación de tareas y en el cumplimiento de los objetivos del proyecto.
-        <br>Casas Sanchez, Gabriel Alexander: Promoví un entorno de trabajo colaborativo e inclusivo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar que el equipo cumpliera con los objetivos del proyecto.
+        <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
+        <strong>TB1:</strong> Promoví un entorno colaborativo e inclusivo al coordinar la definición de los artefactos de modelado del dominio. Establecí metas claras junto al equipo y organicé las tareas relacionadas con la arquitectura y el diseño del sistema, asegurando la integración entre todas las secciones del informe.<br><br>
+        <strong>Real Calderon Sebastian Omar</strong><br>
+        <strong>TB1:</strong> Contribuí a la planificación de tareas y organización del equipo, promoviendo la colaboración en el desarrollo de los artefactos funcionales y de dominio. Aporté en la definición de objetivos comunes y verifiqué la coherencia entre los entregables del grupo.<br><br>
+        <strong>Alejo Cardenas Jose Antonio</strong><br>
+        <strong>TB1:</strong> Fomenté un entorno de trabajo inclusivo durante la elaboración del Lean UX Process, Análisis de Competidores y Arquitectura de Software. Planifiqué las tareas de manera organizada junto al grupo, asegurando que cada entregable se alineara con los objetivos generales del proyecto.<br><br>
+        <strong>Pacheco Astiguetta Sebastian</strong><br>
+        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br><br>
+        <strong>Astonitas Díaz Juan Diego</strong><br>
+        <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
+        <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
+        <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.
       </td>
       <td>
-        Generamos un entorno inclusivo que facilitó la participación activa de todos los miembros, definiendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de presentaciones, mapeos de contexto, análisis competitivo y construcción del lenguaje ubicuo. Gracias a esta coordinación, logramos cumplir con los objetivos planteados en cada entrega de manera eficiente y colaborativa.
+        Se generó un entorno inclusivo que facilitó la participación activa de todos los integrantes. Cada miembro contribuyó desde su especialidad, estableciendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de artefactos, análisis competitivo y construcción del lenguaje ubicuo. Gracias a la coordinación del grupo, se cumplieron los objetivos establecidos en cada etapa del proyecto.
       </td>
     </tr>
   </tbody>
@@ -337,7 +427,7 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
   </tr>
   <tr>
     <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
-    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
+    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión, código u202220033. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
   </tr>
   <tr>
     <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
@@ -351,28 +441,21 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
   </tr>
   <tr>
     <td> <img src="images/chapter-1/jose-pfp.jpg" alt="Jose Alejo" style="width: 500px; height: auto;"> </td>
-    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
+    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo, código u202122484. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
   </tr>
   <tr>
     <th colspan="2">Sebastian Pacheco Astiguetta</th>
   </tr>
   <tr>
     <td> <img src="images/chapter-1/Sebastian-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
-    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
+    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC, código u202110291. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
   </tr>
   <tr>
     <th colspan="2">Sebatian Omar Real Calderon</th>
   </tr>
   <tr>
     <td> <img src="images/chapter-1/sebastian_real_pfp.jpeg" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
-    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
-  </tr>
-    <tr>
-    <th colspan="2">Max Anthony Paitan Pumachuca</th>
-  </tr>
-  <tr>
-    <td> <img src="images/chapter-1/max-pfp.png" alt="Max Paitan" style="width: 500px; height: auto;"> </td>
-    <td>  </td>
+    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software, código u20221D964. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
   </tr>
 </table>
 
