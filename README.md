@@ -4327,43 +4327,73 @@ Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Gi
 
 #### 6.1.3. Source Code Style Guide & Conventions.
 
-Buenas prácticas para un código coherente y sostenible:
+El equipo adopta convenciones estandarizadas de codificación para asegurar la coherencia, legibilidad y mantenibilidad del código en todos los componentes del sistema. Todas las nomenclaturas, identificadores y comentarios se escribirán en inglés, siguiendo las guías oficiales de estilo recomendadas para cada tecnología empleada en la solución.
 
-**Android (Kotlin/Java)**
-- Clases: PascalCase
-- Funciones y variables: camelCase
-- Constantes: UPPER_SNAKE_CASE
-- Separar lógica de UI (ViewModel, UseCase).
+**Mobile Application – Android (Kotlin/Java)**
 
-**Jetpack Compose**
-- Funciones: PascalCase (ej: `ButtonSubmit()`).
-- Estado manejado en ViewModel.
-- Evitar cálculos pesados en `@Composable`.
+* **Classes:** PascalCase (e.g., UserProfileActivity).
+* **Functions & Variables:** camelCase (e.g., getUserData(), userName).
+* **Constants:** UPPER_SNAKE_CASE (e.g., MAX_ATTEMPTS).
+* **Architecture:** Separación por capas (MVVM – Model, ViewModel, View).
+* **Good Practices:**
+  * Mantener lógica fuera de la UI (ViewModel o UseCase).
+  * Evitar operaciones costosas en @Composable.
+  * Documentar funciones con KDoc.
 
-**Spring Boot**
-- Paquetes por capa (controller, service, repository, model).
-- Clases en PascalCase.
-- Métodos en camelCase.
+**Web Application – Angular (TypeScript, HTML, CSS)**
 
-**Next.js**
-- Rutas en snake_case o kebab-case.
-- API routes en `/pages/api/`.
-- CSS Modules, evitar estilos globales.
+* **Components & Services:** PascalCase (e.g., UserDashboardComponent, AuthService).
+* **Variables & Methods:** camelCase (e.g., userProfile, loadData()).
+* **Interfaces:** Prefijo I (e.g., IUser, IServiceResponse).
+* **File Naming:** kebab-case (e.g., user-profile.component.ts).
+* **HTML Structure:**
+  * Uso semántico de etiquetas.
+  * Identificadores claros (id, class) en kebab-case.
+* **CSS / Tailwind CSS:**
+  * Ordenar clases en el siguiente orden: Layout → Flex/Grid → Spacing → Typography → Colors → Effects.
+  * Uso de prefijos sm:, md:, lg: para diseño responsive.
+  * Evitar uso excesivo de @apply en archivos CSS.
 
-**Shadcn/ui**
-- Extender estilos base, no sobrescribir CSS nativo.
-- Usar `clsx` o `tailwind-merge`.
-- Variables CSS en `:root` para theming.
+**Backend – Spring Boot (Java)**
 
-**Tailwind CSS**
-- Ordenar clases: Layout > Flex/Grid > Spacing > Typography > Colors > Effects.
-- Usar `md:`, `lg:` para responsive.
-- Evitar `@apply` en CSS.
+* **Package Structure:** controller, service, repository, model, config.
+* **Naming Conventions:**
+  * Classes: PascalCase (e.g., UserController).
+  * Methods & Variables: camelCase (e.g., findUserById()).
+  * Constants: UPPER_SNAKE_CASE.
+* **Good Practices:**
+  * Inyección de dependencias con @Autowired o constructor.
+  * Validaciones mediante @Valid.
+  * Manejo de excepciones centralizado con @ControllerAdvice. 
+  * Documentación con JavaDoc.
 
-**General**
-- Comentarios en inglés.
-- Commits semánticos (`feat:`, `fix:`, `docs:`).
-- Lazy loading en imágenes y componentes.
+**Database – PostgreSQL**
+
+* **Table Names:** snake_case plural (e.g., user_profiles).
+* **Column Names:** snake_case (e.g., created_at).
+* **Primary Keys:** id o table_name_id (e.g., user_id).
+* **Foreign Keys:** referenced_table_id.
+* **Views & Indexes:** prefijo v_ y idx_ respectivamente.
+* **Scripts:** comentarios en inglés y consistencia en sangría.
+
+**Landing Page – HTML & CSS**
+
+* **HTML:**
+  * Estructura semántica (< header >, < main >, < footer >).
+  * Atributos y etiquetas en minúsculas.
+  * Sangría de 2 espacios.
+* **CSS:**
+  * Nombres de clases en kebab-case (e.g., main-banner).
+  * Uso de variables CSS para colores y tipografía.
+  * Evitar el uso de IDs para estilos.
+
+**General Guidelines**
+
+* **Comments:** Siempre en inglés, explicando el por qué y no solo el qué.
+* **Commits:** Convención semántica (feat:, fix:, docs:, refactor:, test:).
+* **Version Control:** Ramas en formato kebab-case (feature/add-login-page).
+* **Performance:** Uso de lazy loading para imágenes, módulos y componentes.
+* **Accessibility:** Cumplimiento de WCAG 2.1 en interfaces web y móviles.
 
 #### 6.1.4. Software Deployment Configuration.
 
