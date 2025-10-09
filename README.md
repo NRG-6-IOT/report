@@ -4992,6 +4992,8 @@ La sección Aspect Leaders and Collaborators presenta la asignación de roles y 
 
 La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
 
+<img src="images/chapter-6/sprint-1-trello-board.png" alt="Sprint 1 trello board">
+
 Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H)
 
 <table>
@@ -5061,6 +5063,19 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
 Video: []()
+
+**Landing Page**
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-1.png" alt="Landing Page Evidence 1">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-2.png" alt="Landing Page Evidence 2">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-3.png" alt="Landing Page Evidence 3">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-4.png" alt="Landing Page Evidence 4">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-5.png" alt="Landing Page Evidence 5">
+
 
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
