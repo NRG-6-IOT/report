@@ -197,8 +197,8 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
         - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
         - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-      - [Segmento Objetivo #1: Usuarios de motos urbanas](#segmento-objetivo-1-usuarios-de-motos-urbanas)
-      - [Segmento Objetivo #2: Mecánicos y talleres de servicio](#segmento-objetivo-2-mecánicos-y-talleres-de-servicio)
+      - [Segmento Objetivo #1: Motociclistas](#segmento-objetivo-1-motociclistas)
+      - [Segmento Objetivo #2: Mecánicos](#segmento-objetivo-2-mecánicos)
   - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
       - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
@@ -568,100 +568,143 @@ Esto está causando una baja retención de usuarios activos y pérdida de oportu
 
 ##### 1.2.2.2 Lean UX Assumptions
 
+En el Lean UX Assumptions, se identificaron y documentaron las principales suposiciones del proyecto BykerZ en torno al negocio, los usuarios, los resultados esperados y las características del producto.
+
 - Business Assumptions
 
-1. Creemos que nuestros clientes tienen la necesidad de mantener sus motocicletas en óptimo estado, evitando fallas inesperadas y reduciendo gastos de mantenimiento.
+1. Suponemos que nuestros clientes tienen la necesidad de mantener sus motocicletas en óptimo estado, evitando fallas inesperadas y reduciendo gastos de mantenimiento.
 
-2. Creemos que estas necesidades pueden resolverse con una plataforma digital conectada a un dispositivo IoT que monitoree el estado mecánico de la moto y alerte sobre posibles averías.
+2. Suponemos que estas necesidades pueden resolverse con una plataforma digital conectada a un dispositivo IoT que monitoree el estado mecánico de la moto y alerte sobre posibles averías.
 
-3. Creemos que mis clientes iniciales serán motociclistas urbanos que utilizan su vehículo a diario y mecánicos que buscan digitalizar sus servicios.
+3. Suponemos que mis clientes iniciales serán motociclistas urbanos que utilizan su vehículo a diario y mecánicos que buscan digitalizar sus servicios.
 
-4. Creemos que el principal valor que el cliente desea obtener de mi servicio es seguridad y confianza al conducir, al saber que su motocicleta se encuentra en buenas condiciones.
+4. Suponemos que el principal valor que el cliente desea obtener de mi servicio es seguridad y confianza al conducir, al saber que su motocicleta se encuentra en buenas condiciones.
 
-5. Creemos que el cliente se beneficiara al ahorrar por mantenimientos preventivos, conexión directa con talleres y acceso a un historial de servicios.
+5. Suponemos que el cliente se beneficiara al ahorrar por mantenimientos preventivos, conexión directa con talleres y acceso a un historial de servicios.
 
-6. Creemos que adquiriremos la mayoría de mis clientes a través de alianzas estratégicas con talleres mecánicos, marketing digital en redes sociales y recomendaciones entre motociclistas.
+6. Suponemos que adquiriremos la mayoría de mis clientes a través de alianzas estratégicas con talleres mecánicos, marketing digital en redes sociales y recomendaciones entre motociclistas.
 
-7. Creemos que generaremos ingresos mediante una suscripción mensual de talleres que utilicen la plataforma para gestionar sus servicios y clientes.
+7. Suponemos que generaremos ingresos mediante una suscripción mensual de talleres que utilicen la plataforma para gestionar sus servicios y clientes.
 
-8. Creemos que nuestra competencia principal en el mercado será las aplicaciones de mantenimiento genéricas y los scanners automotrices tradicionales sin integración digital.
+8. Suponemos que nuestra competencia principal en el mercado será las aplicaciones de mantenimiento genéricas y los scanners automotrices tradicionales sin integración digital.
 
-9. Creemos que los superaremos gracias a la integración completa entre el motociclista y el taller, la facilidad de uso y la analítica predictiva en tiempo real.
+9. Suponemos que los superaremos gracias a la integración completa entre el motociclista y el taller, la facilidad de uso y la analítica predictiva en tiempo real.
 
-10. Creemos que nuestro mayor riesgo de producto es que los usuarios no perciban suficiente valor práctico en los primeros usos de la aplicación o que la instalación del IoT sea compleja.
+10. Suponemos que nuestro mayor riesgo de producto es que los usuarios no perciban suficiente valor práctico en los primeros usos de la aplicación o que la instalación del IoT sea compleja.
 
-11. Creemos que resolveremos esto mediante una experiencia de usuario simple, tutoriales de instalación guiados y soporte técnico personalizado durante la adopción inicial.
+11. Suponemos que resolveremos esto mediante una experiencia de usuario simple, tutoriales de instalación guiados y soporte técnico personalizado durante la adopción inicial.
 
-12. Creemos que si los datos recolectados por el IoT no son precisos o confiables, la propuesta de valor del producto se vería seriamente comprometida.
+12. Suponemos que si los datos recolectados por el IoT no son precisos o confiables, la propuesta de valor del producto se vería seriamente comprometida.
 
 - Business Outcomes Assumptions
 
-1. Creemos que la empresa incrementará su base de usuarios activos mediante recomendaciones y alianzas con talleres locales.
+1. Suponemos que la empresa incrementará su base de usuarios activos mediante recomendaciones y alianzas con talleres locales.
 
-2. Creemos que la empresa aumentará sus ingresos por suscripciones al ofrecer herramientas avanzadas de análisis y mantenimiento predictivo.
+2. Suponemos que la empresa aumentará sus ingresos por suscripciones al ofrecer herramientas avanzadas de análisis y mantenimiento predictivo.
 
-3. Creemos que la empresa reducirá costos de soporte al automatizar alertas y reportes para usuarios y mecánicos.
+3. Suponemos que la empresa reducirá costos de soporte al automatizar alertas y reportes para usuarios y mecánicos.
 
-4. Creemos que la empresa obtendrá datos valiosos sobre patrones de uso y fallas que permitirán mejorar el producto continuamente.
+4. Suponemos que la empresa obtendrá datos valiosos sobre patrones de uso y fallas que permitirán mejorar el producto continuamente.
 
-5. Creemos que la marca se posicionará como referente en movilidad inteligente y mantenimiento preventivo para motociclistas urbanos.
+5. Suponemos que la marca se posicionará como referente en movilidad inteligente y mantenimiento preventivo para motociclistas urbanos.
 
 
 - User Assumptions
 
 A. Motociclista urbano
 
-1. Creemos que el usuario es un conductor de motocicleta que depende de su vehículo para movilizarse o trabajar diariamente y busca evitar fallas imprevistas.
+1. Suponemos que el usuario es un conductor de motocicleta que depende de su vehículo para movilizarse o trabajar diariamente y busca evitar fallas imprevistas.
 
-2. Creemos que nuestro producto encaja en su vida como una herramienta de monitoreo constante y seguridad que lo acompaña en cada trayecto y le ayuda a cuidar su moto de forma inteligente.
+2. Suponemos que nuestro producto encaja en su vida como una herramienta de monitoreo constante y seguridad que lo acompaña en cada trayecto y le ayuda a cuidar su moto de forma inteligente.
 
-3. Creemos que el producto resuelve los problemas de desconocimiento del estado del vehículo, mantenimiento reactivo, y altos gastos por reparaciones sorpresivas.
+3. Suponemos que el producto resuelve los problemas de desconocimiento del estado del vehículo, mantenimiento reactivo, y altos gastos por reparaciones sorpresivas.
 
-4. Creemos que el producto se utiliza de manera pasiva durante los trayectos (recolección automática de datos IoT) y de forma activa al revisar métricas, recibir alertas o agendar servicios con su mecánico.
+4. Suponemos que el producto se utiliza de manera pasiva durante los trayectos (recolección automática de datos IoT) y de forma activa al revisar métricas, recibir alertas o agendar servicios con su mecánico.
 
-5. Creemos que las funciones más importantes para este usuario son alertas preventivas, métricas de consumo, historial de mantenimiento, y conexión directa con el taller de confianza.
+5. Suponemos que las funciones más importantes para este usuario son alertas preventivas, métricas de consumo, historial de mantenimiento, y conexión directa con el taller de confianza.
 
-6. Creemos que el producto debe tener una interfaz móvil intuitiva, visualmente clara y confiable, con notificaciones comprensibles y una navegación ágil adaptada al uso diario.
+6. Suponemos que el producto debe tener una interfaz móvil intuitiva, visualmente clara y confiable, con notificaciones comprensibles y una navegación ágil adaptada al uso diario.
 
-7. Creemos que el usuario tambien puede ser un mecánico o propietario de taller que ofrece servicios de mantenimiento y busca mejorar la precisión de sus diagnósticos y la fidelización de sus clientes.
+7. Suponemos que el usuario tambien puede ser un mecánico o propietario de taller que ofrece servicios de mantenimiento y busca mejorar la precisión de sus diagnósticos y la fidelización de sus clientes.
 
-8. Creemos que nuestro producto encaja en su trabajo como una herramienta de gestión técnica que le permite acceder a métricas en tiempo real del vehículo del cliente, planificar mantenimientos y ofrecer servicios proactivos.
+8. Suponemos que nuestro producto encaja en su trabajo como una herramienta de gestión técnica que le permite acceder a métricas en tiempo real del vehículo del cliente, planificar mantenimientos y ofrecer servicios proactivos.
 
-9. Creemos que el producto resuelve los problemas de falta de historial confiable, diagnósticos lentos y dificultad para mantener contacto constante con los clientes.
+9. Suponemos que el producto resuelve los problemas de falta de historial confiable, diagnósticos lentos y dificultad para mantener contacto constante con los clientes.
 
-10. Creemos que el producto se utiliza durante el diagnóstico en el taller, para analizar datos de telemetría, y entre visitas, para monitorear remotamente el estado de las motos de los clientes.
+10. Suponemos que el producto se utiliza durante el diagnóstico en el taller, para analizar datos de telemetría, y entre visitas, para monitorear remotamente el estado de las motos de los clientes.
 
-11. Creemos que las funciones más importantes para este usuario son acceso a historial completo del vehículo, comparación de métricas entre motos, recordatorios automáticos y agendamiento de citas.
+11. Suponemos que las funciones más importantes para este usuario son acceso a historial completo del vehículo, comparación de métricas entre motos, recordatorios automáticos y agendamiento de citas.
 
-12. Creemos que el producto debe presentar una interfaz web profesional, con paneles de análisis claros, filtros por cliente y reportes automáticos de rendimiento y mantenimiento.
+12. Suponemos que el producto debe presentar una interfaz web profesional, con paneles de análisis claros, filtros por cliente y reportes automáticos de rendimiento y mantenimiento.
 
 - User Outcomes Assumptions
 
-1. Creemos que los motociclistas se sentirán más seguros y tranquilos al recibir alertas tempranas sobre fallas o mantenimientos necesarios.
+1. Suponemos que los motociclistas se sentirán más seguros y tranquilos al recibir alertas tempranas sobre fallas o mantenimientos necesarios.
 
-2. Creemos que los motociclistas reducirán sus gastos de mantenimiento gracias a un uso más eficiente y preventivo de su moto.
+2. Suponemos que los motociclistas reducirán sus gastos de mantenimiento gracias a un uso más eficiente y preventivo de su moto.
 
-3. Creemos que los mecánicos mejorarán la precisión de sus diagnósticos y aumentarán la satisfacción del cliente al ofrecer un servicio proactivo.
+3. Suponemos que los mecánicos mejorarán la precisión de sus diagnósticos y aumentarán la satisfacción del cliente al ofrecer un servicio proactivo.
 
-4. Creemos que ambos usuarios experimentarán una relación más cercana y basada en datos, lo que aumentará la confianza y fidelización.
+4. Suponemos que ambos usuarios experimentarán una relación más cercana y basada en datos, lo que aumentará la confianza y fidelización.
 
-5. Creemos que los usuarios recomendarán el sistema a otros motociclistas o talleres si perciben beneficios reales en los primeros meses de uso.
+5. Suponemos que los usuarios recomendarán el sistema a otros motociclistas o talleres si perciben beneficios reales en los primeros meses de uso.
 
 - Features Assumptions
 
-1. Creemos que los usuarios usarán con frecuencia las alertas preventivas y el monitoreo de telemetría en tiempo real.
+1. Suponemos que los usuarios usarán con frecuencia las alertas preventivas y el monitoreo de telemetría en tiempo real.
 
-2. Creemos que los usuarios consultarán regularmente el historial de mantenimiento para planificar sus servicios.
+2. Suponemos que los usuarios consultarán regularmente el historial de mantenimiento para planificar sus servicios.
 
-3. Creemos que los mecánicos usarán los paneles comparativos para detectar anomalías y optimizar diagnósticos.
+3. Suponemos que los mecánicos usarán los paneles comparativos para detectar anomalías y optimizar diagnósticos.
 
-4. Creemos que la integración entre app móvil (motociclista) y panel web (taller) será clave para el éxito del ecosistema.
+4. Suponemos que la integración entre app móvil (motociclista) y panel web (taller) será clave para el éxito del ecosistema.
 
-5. Creemos que una interfaz simple, moderna y confiable impulsará la adopción del sistema.
+5. Suponemos que una interfaz simple, moderna y confiable impulsará la adopción del sistema.
 
-6. Creemos que las notificaciones automáticas y recordatorios personalizados serán una de las funciones más valoradas.
+6. Suponemos que las notificaciones automáticas y recordatorios personalizados serán una de las funciones más valoradas.
 
 ##### 1.2.2.3 Lean UX Hypothesis Statements
+
+1. Alertas preventivas y monitoreo de telemetría en tiempo real
+
+Creemos que implementar alertas preventivas y monitoreo de telemetría en tiempo real
+para motociclistas y mecánicos
+logrará una mejor planificación del mantenimiento y una reducción de fallas inesperadas.
+Sabremos que esto es cierto cuando veamos un uso frecuente de las alertas, comentarios positivos sobre la confiabilidad y una disminución en las visitas no planificadas al taller.
+
+2. Historial de mantenimiento
+
+Creemos que ofrecer un historial detallado de mantenimiento y herramientas de visualización
+para motociclistas
+logrará una mejor organización de los servicios y un seguimiento más preciso del rendimiento de sus vehículos.
+Sabremos que esto es cierto cuando veamos un uso repetido del historial y una mejora en los niveles de satisfacción de los usuarios.
+
+3. Paneles comparativos para mecánicos
+
+Creemos que desarrollar paneles comparativos basados en datos de IoT
+para mecánicos
+logrará diagnósticos más rápidos y recomendaciones de mantenimiento más precisas.
+Sabremos que esto es cierto cuando veamos una mejora en la eficiencia de los diagnósticos y retroalimentación positiva de los mecánicos.
+
+4. Integración entre la app móvil y el panel web
+
+Creemos que integrar la aplicación móvil para motociclistas con el panel web para talleres
+logrará una comunicación fluida y una gestión sincronizada de los servicios.
+Sabremos que esto es cierto cuando veamos un intercambio activo de datos entre ambas plataformas y un aumento en el uso conjunto de los sistemas.
+
+5. Interfaz simple, moderna y confiable
+
+Creemos que diseñar una interfaz limpia, intuitiva y visualmente atractiva
+para motociclistas y mecánicos
+logrará una mayor adopción del sistema y un uso continuo de la plataforma.
+Sabremos que esto es cierto cuando veamos resultados positivos en pruebas de usabilidad y altas tasas de retención de usuarios.
+
+6. Notificaciones automáticas y recordatorios personalizados
+
+Creemos que implementar notificaciones inteligentes y recordatorios personalizados
+para motociclistas
+logrará un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria.
+Sabremos que esto es cierto cuando veamos una alta interacción con los recordatorios y una reducción en los servicios atrasados.
 
 
 ##### 1.2.2.4 Lean UX Canvas
@@ -669,9 +712,9 @@ A. Motociclista urbano
 
 ### 1.3 Segmentos objetivo
 
-#### Segmento Objetivo #1: Usuarios de motos urbanas
+#### Segmento Objetivo #1: Motociclistas
 
-Este grupo incluye a personas que utilizan motocicletas como su principal medio de transporte en entornos urbanos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
+Para este grupo su principal medio de transporte son las motos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
 
 - Características clave:
   - Edad: 18 a 45 años
@@ -685,9 +728,9 @@ Este grupo incluye a personas que utilizan motocicletas como su principal medio 
   - Conocer costos acumulados de uso y reparaciones.
   - Tener a mano el historial de mantenimiento.
 
-#### Segmento Objetivo #2: Mecánicos y talleres de servicio
+#### Segmento Objetivo #2: Mecánicos
 
-Este grupo está conformado por profesionales independientes o pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
+Este grupo está conformado por profesionales independientes con pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
 
 - Características clave:
   - Edad: 25 a 55 años
