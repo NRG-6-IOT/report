@@ -4424,6 +4424,10 @@ El equipo adopta convenciones estandarizadas de codificación para asegurar la c
 4. Importar repositorio backend.
 5. Deploy de la API.
 
+Deployment diagram C4 model:
+
+<img src="images/chapter-4/deployment-model.png" alt="Deployment Diagram">
+
 ### 6.2. Landing Page, Services & Applications Implementation.
 
 #### 6.2.1. Sprint n
