@@ -190,6 +190,7 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
         - [Who](#who)
         - [Why](#why)
         - [How](#how)
+        - [How Much](#how-much)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
@@ -473,11 +474,12 @@ La plataforma IoT para motos urbanas BykerZ ofrece un ecosistema digital compues
     - Sugerencias para próximos mantenimientos.
 - Desde el rol de mecánico o taller: 
     - Comparación de métricas entre motos similares  
-    - Generación de reportes de salud del vehículo  
+    - Agendar citas para el usuario de la moto.  
     - La consulta del historial de servicios  
     - La emisión de recordatorios para próximos mantenimientos.  
 
 Gracias a sus funcionalidades, la plataforma impulsa un uso más seguro, económico y sostenible de las motos, al mismo tiempo que fortalece la relación entre usuarios y mecánicos mediante datos objetivos y accesibles en tiempo real.
+
 #### 1.2.1 Antecedentes y problemática
 
 ##### What
@@ -516,7 +518,7 @@ El problema surge en la propia motocicleta durante su operación diaria, donde o
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los talleres mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos y talleres se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
+El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
 
 ##### Why
 
@@ -529,6 +531,12 @@ Las causas del problema se deben en mayor parte a la falta de datos actualizados
 - ¿En qué condiciones los clientes usan nuestro producto?
 
 Los clientes utilizan nuestro producto en condiciones de movilidad, accediendo a los datos de su moto en tiempo real durante sus trayectos o de manera remota para planificar mantenimientos. La plataforma es utilizada principalmente a través de dispositivos móviles con conectividad a internet, permitiendo interacciones tanto preventivas como reactivas ante alertas generadas por el sistema.
+
+##### How Much
+
+El impacto de la problemática es considerable y puede observarse en las estadísticas de seguridad vial actuales. Según un informe publicado por Freitas (2025) en Infobae, Lima registra 1.668 muertes por accidentes de tránsito en lo que va del año 2025, siendo los motociclistas quienes lideran la lista de víctimas, de acuerdo con datos del Ministerio de Transportes y Comunicaciones (MTC). Esta cifra evidencia la alta vulnerabilidad de los conductores de motocicletas y la falta de mecanismos preventivos eficaces que permitan detectar a tiempo posibles fallas mecánicas o comportamientos de riesgo durante la conducción.
+
+Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma BykerZ contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los motociclistas urbanos.
 
 #### 1.2.2 Lean UX Process
 
