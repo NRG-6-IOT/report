@@ -4483,10 +4483,94 @@ La aplicación web está diseñada para ambos User Persona, siendo dueños de mo
 **Mecánico - Mantenimientos**: Este flujo permite al mecánico gestionar los mantenimientos realizados a las motocicletas de sus clientes.
 ![Mecánico - Mantenimientos](images/chapter-5/web-wireflows-mechanic-maintenances.png)
 
+##### Mobile Application
+La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![wireflow-ver-dashboard.png](images/chapter-5/wireflows-mobile/wireflow-ver-dashboard.png)
+El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
+
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+![wireflow-ver-mantenimientos.png](images/chapter-5/wireflows-mobile/wireflow-ver-mantenimientos.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![wireflow-ver-mantenimiento.png](images/chapter-5/wireflows-mobile/wireflow-eliminar-gasto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![wireflow-monitorear-metricas.png](images/chapter-5/wireflows-mobile/wireflow-monitorear-metricas.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![wireflow-desvincular-moto.png](images/chapter-5/wireflows-mobile/wireflow-desvincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![wireflow-vincular-moto.png](images/chapter-5/wireflows-mobile/wireflow-vincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![wireflow-registrar-vehiculo.png](images/chapter-5/wireflows-mobile/wireflow-registrar-vehiculo.png)
+El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![wireflow-ver-vehiculos.png](images/chapter-5/wireflows-mobile/wireflow-ver-vehiculos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![wireflow-registrar-gastos.png](images/chapter-5/wireflows-mobile/wireflow-registrar-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![wireflow-ver-gastos.png](images/chapter-5/wireflows-mobile/wireflow-ver-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
 
 #### 5.4.3. Applications Mock-ups
 
 #### 5.4.4. Applications User Flow Diagrams
+
+### Mobile Application
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![userflow-ver-dashboard.png](images/chapter-5/userflows-mobile/userflow-ver-dashboard.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Dashboard, accediendo así a dicha vista. Una vez dentro, el usuario puede observar un resumen que muestra sus vehículos, los gastos recientes y los próximos mantenimientos, cumpliendo con el objetivo de visualizar de forma general la información más relevante relacionada con su actividad como motociclista.
+
+![userflow-ver-mantenimiento.png](images/chapter-5/userflows-mobile/userflow-ver-mantenimiento.png)
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Mantenimientos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el recuadro de su moto, tras lo cual el sistema muestra una lista con los mantenimientos programados, permitiéndole visualizar de manera clara las próximas tareas de servicio correspondientes a su vehículo.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![userflow-eliminar-gasto.png](images/chapter-5/userflows-mobile/userflow-eliminar-gasto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Gastos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el icono para borrar el gasto deseado y, tras la acción, el sistema elimina el registro correspondiente, mostrando que el gasto fue eliminado correctamente de su historial.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![userflow-monitorear-moto.png](images/chapter-5/userflows-mobile/userflow-monitorear-moto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Monitorear, tras lo cual el sistema muestra las métricas de la moto, permitiéndole visualizar información relevante sobre su rendimiento y estado actual.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![userflow-desvincular-moto.png](images/chapter-5/userflows-mobile/userflow-desvincular-moto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y muestra que la moto ha sido desvinculada correctamente del mecánico asociado.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![userflow-vincular-moto.png](images/chapter-5/userflows-mobile/userflow-vincular-moto.png)
+El flujo inicia cuando el usuario accede a la página de Vehículos, luego selecciona su vehículo y entra en los detalles del mismo. Una vez allí, el usuario presiona el botón Vincular, ingresa el código del mecánico y presiona el botón Solicitar. Finalmente, el sistema confirma la acción mostrando que la moto ha sido vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![userflow-registro-vehiculo.png](images/chapter-5/userflows-mobile/userflow-registro-vehiculo.png)
+El flujo inicia cuando el usuario accede a la página de Vehículos, luego presiona el botón “Añadir Vehículo”. A continuación, el usuario ingresa los datos de su moto y presiona el botón “Registrar”. Finalmente, el sistema confirma la acción mostrando que la moto ha sido registrada correctamente y aparece visible en la pantalla.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![userflow-ver-vehiculos.png](images/chapter-5/userflows-mobile/userflow-ver-vehiculos.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Vehículos, donde el sistema muestra los vehículos registrados en su cuenta, permitiéndole visualizar la información general de cada uno.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![userflow-registrar-gasto.png](images/chapter-5/userflows-mobile/userflow-registrar-gasto.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos y presiona el botón “Añadir Gasto”. A continuación, el usuario ingresa los datos del gasto en el formulario y presiona el botón “Registrar”. Finalmente, el sistema muestra el nuevo gasto añadido en la pantalla de gastos, confirmando que el registro se realizó correctamente.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![userflow-ver-gastos.png](images/chapter-5/userflows-mobile/userflow-ver-gastos.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos, donde el sistema muestra en pantalla los gastos registrados, permitiéndole visualizar la información correspondiente de forma clara y organizada.
 
 ### 5.5. Applications Prototyping
 
