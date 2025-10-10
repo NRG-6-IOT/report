@@ -392,7 +392,8 @@ del ABET – EAC - Student Outcome 5.
         <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
         <strong>TB1:</strong> Elaboré el <em>Diseño, registro y análisis de entrevistas</em>, organizando la información obtenida de los usuarios para orientar las decisiones del diseño del sistema. Participé en la coordinación del grupo para integrar los resultados de las entrevistas con los artefactos posteriores, fortaleciendo la coherencia entre las etapas del informe.
-      </td>
+        <strong>TP1:</strong> Participé activamente en el desarrollo de los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto a mis compañeros, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y los criterios de usabilidad establecidos. Esta contribución permitió sentar una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales.<br><br>
+    </td>
       <td>
         Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades del informe (User Stories, Impact Mapping, Eventstorming, Context Mapping y definición de Bounded Contexts). Cada integrante asumió responsabilidades específicas y participó en la toma de decisiones conjuntas, lo que permitió mantener la coherencia del proyecto y avanzar de manera organizada en cada etapa del trabajo.
       </td>
@@ -415,7 +416,8 @@ del ABET – EAC - Student Outcome 5.
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
-        <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.
+        <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.<br>
+        <strong>TP1:</strong> Organicé y desarrollé los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto al equipo, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y criterios de usabilidad. Esta labor permitió establecer una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales. <br>
       </td>
       <td>
         Se generó un entorno inclusivo que facilitó la participación activa de todos los integrantes. Cada miembro contribuyó desde su especialidad, estableciendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de artefactos, análisis competitivo y construcción del lenguaje ubicuo. Gracias a la coordinación del grupo, se cumplieron los objetivos establecidos en cada etapa del proyecto.
@@ -5420,3 +5422,6 @@ Backend	BykerZ-Backend : [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https
 BykerZ-Landing-Page: [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)
 
 BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)
+
+Entrevistas del needfinding: [Needfinding Interviews - NRG6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/EUX6HJSrkWFLsupKCjibccgBqipXedXcpryQbgwV-mpKdQ?e=fp4EZr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
