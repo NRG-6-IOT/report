@@ -4571,30 +4571,14 @@ En esta sección se desarrolla la propuesta de diseño visual e interactivo de l
 
 Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
-<img src="images/chapter-5/wireframes/wireframes-1.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-2.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-3.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-4.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-5.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-6.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-7.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-8.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-9.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-10.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-11.png" alt="app wireframes"/>
-
-<img src="images/chapter-5/wireframes/wireframes-12.png" alt="app wireframes"/>
-
+![wireframe1.png](images/chapter-5/wireframes/wireframe1.png)
+![wireframe2.png](images/chapter-5/wireframes/wireframe2.png)
+![wireframe3.png](images/chapter-5/wireframes/wireframe3.png)
+![wireframe4.png](images/chapter-5/wireframes/wireframe4.png)
+![wireframe5.png](images/chapter-5/wireframes/wireframe5.png)
+![wireframe6.png](images/chapter-5/wireframes/wireframe6.png)
+![wireframe7.png](images/chapter-5/wireframes/wireframe7.png)
+![wireframe8.png](images/chapter-5/wireframes/wireframe8.png)
 
 ##### Mobile Application
 
