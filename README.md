@@ -4,6 +4,8 @@
 
 ### **CURSO:** Desarrollo de Soluciones IoT
 
+### **Código del Curso**: 1ASI0572
+
 ### **NRC**: 3443
 
 ### **Profesor:** Ángel Augusto Velásquez Núñez
@@ -47,38 +49,86 @@
     <tr>
       <td>0.1</td>
       <td>01/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
-      <td>Desarrollo del solution profile, lean ux process, segmentos objetivos y análisis de competidores</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del solution profile</td>
     </tr>
     <tr>
       <td>0.2</td>
-      <td>08/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Paitan Pumachuca Max Anthony<br>Real Calderon Sebastian Omar</td>
-      <td>Diseño, registro y análisis de entrevistas y needfinding</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del Lean ux process</td>
     </tr>
     <tr>
       <td>0.3</td>
-      <td>13/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>User stories, impact mapping, product backlog</td>
+      <td>01/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del Segmentos objetivos</td>
     </tr>
     <tr>
       <td>0.4</td>
-      <td>14/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>Big Pictures Eventstorming</td>
+      <td>01/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del Análisis de competidores</td>
     </tr>
     <tr>
       <td>0.5</td>
-      <td>15/09/2025</td>
+      <td>08/09/2025</td>
+      <td>Pasquale Barrenechea Gianluca Santino</td>
+      <td>Desarrollo del diseño, registro y análisis de entrevistas</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>08/09/2025</td>
+      <td>Astonitas Díaz Juan Diego</td>
+      <td>Desarrollo del Needfinding</td>
+    </tr>
+    <tr>
+      <td>0.7</td>
+      <td>13/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo de los User stories y product backlog</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>13/09/2025</td>
+      <td>Pacheco Astiguetta Sebastian</td>
+      <td>Desarrollo del impact mapping</td>
+    </tr>
+    <tr>
+      <td>0.9</td>
+      <td>14/09/2025</td>
       <td>Casas Sanchez Gabriel Alexander</td>
-      <td>Domain message flows modeling, bounded context canvases, context mapping, software architecture</td>
+      <td>Desarrollo del Big Pictures Eventstorming</td>
     </tr>
     <tr>
       <td>1.0</td>
-      <td>20/09/2025</td>
-      <td>Alejo Cardenas Jose Antonio<br>Astonitas Díaz Juan Diego<br>Casas Sanchez Gabriel Alexander<br>Pasquale Barrenechea Gianluca Santino<br>Pacheco Astiguetta Sebastian<br>Real Calderon Sebastian Omar</td>
-      <td>Tactical-level Domain-Driven Design</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del los Domain message flows modeling y bounded context canvases</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>15/09/2025</td>
+      <td>Real Calderon Sebastian Omar</td>
+      <td>Desarrollo del context mapping</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>15/09/2025</td>
+      <td>Alejo Cardenas Jose Antonio</td>
+      <td>Desarrollo del software architecture</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+      <td>15/09/2025</td>
+      <td>Casas Sanchez Gabriel Alexander</td>
+      <td>Desarrollo del tactical-level domain-Driven design</td>
+    </tr>
+    <tr>
+        <td>1.4</td>
+        <td>03/10/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se añadieron los general style guidelines</td>
     </tr>
   </tbody>
 </table>
@@ -108,8 +158,29 @@ Distribución de commits:
 * Paitan Pumachuca Max Anthony (MaxPaitanP): commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
+Explicacion del desarrollo de actividades de la primera entrega :<br>
+<br>Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
+
+<br>En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
+
+<br>Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
+
+<br>Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
+
+<br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
+
 ## Contenido
 
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
+    - [**NRC**: 3443](#nrc-3443)
+    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
+    - [**Ingeniería de software**](#ingeniería-de-software)
+  - [Informe del trabajo Final](#informe-del-trabajo-final)
+    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
+    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
+  - [**Integrantes**](#integrantes)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
   - [Project Report Collaboration Insights](#project-report-collaboration-insights)
   - [Contenido](#contenido)
@@ -119,13 +190,24 @@ Distribución de commits:
       - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
       - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
+      - [Problema identificado](#problema-identificado)
+      - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [What](#what)
+        - [When](#when)
+        - [Where](#where)
+        - [Who](#who)
+        - [Why](#why)
+        - [How](#how)
+        - [How Much](#how-much)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
         - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
         - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+      - [Segmento Objetivo #1: Motociclistas](#segmento-objetivo-1-motociclistas)
+      - [Segmento Objetivo #2: Mecánicos](#segmento-objetivo-2-mecánicos)
   - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
       - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
@@ -143,6 +225,7 @@ Distribución de commits:
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
+- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -158,11 +241,16 @@ Distribución de commits:
         - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
         - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: unnamed](#421-bounded-context-unnamed)
+      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
+    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
+    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
+    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
+    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
@@ -212,6 +300,55 @@ Distribución de commits:
         - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
           - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+  - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+    - [5.1. Style Guidelines](#51-style-guidelines)
+      - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+      - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+    - [5.2. Information Architecture](#52-information-architecture)
+      - [5.2.1. Organization Systems](#521-organization-systems)
+      - [5.2.2. Labeling Systems](#522-labeling-systems)
+      - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+      - [5.2.4. Searching Systems](#524-searching-systems)
+      - [5.2.5. Navigation Systems](#525-navigation-systems)
+    - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+      - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+      - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+    - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+      - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+        - [Web Application](#web-application)
+        - [Mobile Application](#mobile-application)
+      - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+        - [Web Application](#web-application-1)
+        - [Mobile Application](#mobile-application-1)
+      - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+        - [Web Application](#web-application-2)
+        - [Mobile Application](#mobile-application-2)
+      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+        - [Web Application](#web-application-3)
+    - [Mobile Application](#mobile-application-3)
+    - [5.5. Applications Prototyping](#55-applications-prototyping)
+  - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+    - [6.1. Software Configuration Management.](#61-software-configuration-management)
+      - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [6.1.2. Source Code Management.](#612-source-code-management)
+      - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+      - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+    - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+      - [6.2.1. Sprint 1](#621-sprint-1)
+        - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
+        - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+        - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
+        - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+        - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+        - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+        - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+        - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+        - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+    - [6.3. Validation Interviews.](#63-validation-interviews)
+      - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+      - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+      - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+    - [6.4. Video About-the-Product.](#64-video-about-the-product)
   - [Conclusiones](#conclusiones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
@@ -239,29 +376,51 @@ del ABET – EAC - Student Outcome 5.
     <tr>
       <td><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
       <td>
-        <br> TB1: <br>Astonitas Díaz Juan Diego: Mediatnte fomentar la ayuda mutua, se logro que todos los integrantes implementaran correctamente los diagramas de sus bounded context
-        <br>Alejo Cardenas, Jose Antonio: Asumí un liderazgo compartido junto a mis compañeros en la elaboración de User Stories, Impact Mapping y Bounded Contexts, valorando cada aporte y llegando a consensos que guiaron nuestro trabajo.
-        <br> Pasquale Barrenechea, Gianluca Santino: A través de la investigación y análisis colaborativo, contribuí en el diseño detallado de los bounded context Suscripciones, Bienestar del Vehículo e IAM, asegurando la coherencia entre capas de dominio y aplicación, además de mantener la alineación con las relaciones entre mecánicos y usuarios.
-        <br>Pacheco Astiguetta, Sebastian: Al analizar la información recopilada, se logró definir claramente los límites y responsabilidades de cada bounded context, facilitando la integración y comunicación entre ellos.
-        <br>Real Calderón, Sebastián Omar: Colaboré activamente con mis compañeros, aportando ideas y asumiendo un liderazgo compartido para alcanzar consensos y mantener la coherencia del trabajo en equipo.
-        <br>Casas Sanchez, Gabriel Alexander: Asumí un rol de liderazgo compartido en la definición y diseño de los bounded contexts, promoviendo la colaboración y el consenso entre los miembros del equipo para asegurar una visión unificada del proyecto.
-    /td>
+        <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
+        <strong>TB1:</strong> Asumí un rol de liderazgo compartido en la definición de los modelos del dominio y en la elaboración del <em>Solution Profile</em>, <em>Big Picture Eventstorming</em>, <em>Domain Message Flows Modeling</em> y los <em>Bounded Context Canvases</em>. Promoví la colaboración entre los miembros del equipo para mantener coherencia entre los diferentes modelos y asegurar una visión unificada del sistema.<br><br>
+        <strong>TP:</strong> Asumí un rol activo como lider coordinando a mis compañeros para poder realizar cada entregable, fomente comunicación activa entre todos, y estuve al pendiente de cada integrante.<br><br>
+        <strong>Real Calderon Sebastian Omar</strong><br>
+        <strong>TB1:</strong> Participé activamente en la elaboración de los <em>Segmentos Objetivos</em>, los <em>User Stories</em>, el <em>Product Backlog</em> y el <em>Context Mapping</em>. Coordiné la integración de estos artefactos con el resto del equipo, fomentando la comunicación constante y asegurando que las definiciones del dominio se mantuvieran alineadas con los objetivos del proyecto.<br><br>
+        <strong>TP:</strong> Asumí un rol colaborativo en la integración de los desarrollos implementados, participando activamente en la coordinación técnica y en la validación conjunta de las funcionalidades construidas. Contribuí al liderazgo compartido al apoyar la toma de decisiones técnicas y asegurar la coherencia entre los diferentes módulos del sistema.<br><br>
+        <strong>Alejo Cardenas Jose Antonio</strong><br>
+        <strong>TB1:</strong> Lideré la elaboración del <em>Lean UX Process</em>, el <em>Análisis de Competidores</em> y la <em>Arquitectura de Software</em>. Trabajé de manera conjunta con mis compañeros para definir estrategias de diseño y establecer lineamientos técnicos que respondieran a las necesidades del proyecto, priorizando siempre la coherencia y el consenso en las decisiones tomadas.<br><br>
+        <strong>TP:</strong> Asumí un rol activo en la coordinación del equipo durante el desarrollo de los artefactos del proyecto, fomentando la comunicación y el liderazgo compartido. Colaboré en la toma de decisiones sobre los userflows, wireframes y mockups de la aplicación móvil, guiando al grupo hacia soluciones coherentes con los objetivos del proyecto y promoviendo la participación equitativa de todos los integrantes. <br><br>
+        <strong>Pacheco Astiguetta Sebastian</strong><br>
+        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br>
+        <strong>TP1:</strong> Participé en el desarrollo del Event Storming, colaboranto para identificar los eventos clave del dominio y los actores involucrados. Elaboré, junto a mis compañeros, las distintas secciones que los prototipos tendrán, considerando los wireframes, mock-ups y sus respectivos flujos, dando una base de partida para el desarrollo de las aplicaciones web y móvil.<br><br>
+        <strong>Astonitas Díaz Juan Diego</strong><br>
+        <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
+        <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
+        <strong>TB1:</strong> Elaboré el <em>Diseño, registro y análisis de entrevistas</em>, organizando la información obtenida de los usuarios para orientar las decisiones del diseño del sistema. Participé en la coordinación del grupo para integrar los resultados de las entrevistas con los artefactos posteriores, fortaleciendo la coherencia entre las etapas del informe.
+        <strong>TP1:</strong> Participé activamente en el desarrollo de los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto a mis compañeros, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y los criterios de usabilidad establecidos. Esta contribución permitió sentar una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales.<br><br>
+    </td>
       <td>
-        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades (User Stories, Impact Mapping, Domain Storytelling, Eventstorming, Context Mapping y definición de Bounded Contexts), donde cada integrante asumió responsabilidades específicas y se promovió la toma de decisiones consensuada que permitió avanzar de manera organizada en cada etapa del trabajo.
+        Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades del informe (User Stories, Impact Mapping, Eventstorming, Context Mapping y definición de Bounded Contexts). Cada integrante asumió responsabilidades específicas y participó en la toma de decisiones conjuntas, lo que permitió mantener la coherencia del proyecto y avanzar de manera organizada en cada etapa del trabajo.
       </td>
     </tr>
     <tr>
-      <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
+      <td><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</strong></td>
       <td>
-        <br> TB1: <br>Astonitas Díaz Juan Diego: Dirigi la construccion y la organizacion del grupo para la correcta ejecucion y documentacion de los bounded context
-        <br>Alejo Cardenas, Jose Antonio: Fomenté un entorno inclusivo de colaboración durante el event storming, establecí metas claras con el equipo, planificamos tareas de forma organizada y logramos cumplir con los objetivos propuestos.
-        <br> Pasquale Barrenchea, Gianluca Santino: Organicé las tareas del equipo para garantizar la correcta integración de los bounded contexts, promoví la comunicación constante y aseguré que cada entregable estuviera alineado con los objetivos definidos en el proyecto.
-        <br>Pacheco Astiguetta, Sebastian: Fomenté un ambiente de trabajo inclusivo y colaborativo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar el cumplimiento de los objetivos del proyecto.
-        <br>Real Calderón, Sebastián Omar: Ayudé a fomentar un ambiente de colaboración e inclusión, participando en la planificación de tareas y en el cumplimiento de los objetivos del proyecto.
-        <br>Casas Sanchez, Gabriel Alexander: Promoví un entorno de trabajo colaborativo e inclusivo, estableciendo metas claras y planificando tareas de manera efectiva para asegurar que el equipo cumpliera con los objetivos del proyecto.
+        <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
+        <strong>TB1:</strong> Promoví un entorno colaborativo e inclusivo al coordinar la definición de los artefactos de modelado del dominio. Establecí metas claras junto al equipo y organicé las tareas relacionadas con la arquitectura y el diseño del sistema, asegurando la integración entre todas las secciones del informe.<br><br>
+        <strong>TP:</strong> A traves del uso de la herramienta trello pude lograr crear un entorno colaborativo exitoso, definimos reuniones semanales para poder revisar cada entrega y así poder entregar un proyecto en condiciones.<br><br>
+        <strong>Real Calderon Sebastian Omar</strong><br>
+        <strong>TB1:</strong> Contribuí a la planificación de tareas y organización del equipo, promoviendo la colaboración en el desarrollo de los artefactos funcionales y de dominio. Aporté en la definición de objetivos comunes y verifiqué la coherencia entre los entregables del grupo.<br><br>
+        <strong>TP:</strong> Participé en la planificación y distribución de tareas de desarrollo, fomentando un entorno colaborativo e inclusivo. Aseguré la integración de las funcionalidades desarrolladas con el resto del sistema y apoyé el cumplimiento de los objetivos establecidos para las entregas del proyecto.<br><br>
+        <strong>Alejo Cardenas Jose Antonio</strong><br>
+        <strong>TB1:</strong> Fomenté un entorno de trabajo inclusivo durante la elaboración del Lean UX Process, Análisis de Competidores y Arquitectura de Software. Planifiqué las tareas de manera organizada junto al grupo, asegurando que cada entregable se alineara con los objetivos generales del proyecto.<br><br>
+        <strong>TP:</strong> Contribuí a la planificación y organización del trabajo del equipo, definiendo metas y distribuyendo tareas relacionadas con los flujos y prototipos móviles. Fomenté un entorno colaborativo e inclusivo, impulsando la cooperación y el cumplimiento de los objetivos establecidos en el proyecto. Aseguré que las correcciones y mejoras realizadas en los artefactos mantuvieran la coherencia funcional y visual del sistema. <br><br>
+        <strong>Pacheco Astiguetta Sebastian</strong><br>
+        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br>
+        <strong>TP1:</strong> Fomenté un ambiente de trabajo colaborativo e inclusivo durante el desarrollo del Event Storming y la definición de los prototipos. Establecí metas claras para cada sección y organicé las tareas de diseño, asegurando que todos los integrantes del equipo pudieran contribuir con sus ideas y habilidades para cumplir con los objetivos del proyecto.<br><br>
+        <strong>Astonitas Díaz Juan Diego</strong><br>
+        <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
+        <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
+        <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.<br>
+        <strong>TP1:</strong> Organicé y desarrollé los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto al equipo, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y criterios de usabilidad. Esta labor permitió establecer una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales. <br>
       </td>
       <td>
-        Generamos un entorno inclusivo que facilitó la participación activa de todos los miembros, definiendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de presentaciones, mapeos de contexto, análisis competitivo y construcción del lenguaje ubicuo. Gracias a esta coordinación, logramos cumplir con los objetivos planteados en cada entrega de manera eficiente y colaborativa.
+        Se generó un entorno inclusivo que facilitó la participación activa de todos los integrantes. Cada miembro contribuyó desde su especialidad, estableciendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de artefactos, análisis competitivo y construcción del lenguaje ubicuo. Gracias a la coordinación del grupo, se cumplieron los objetivos establecidos en cada etapa del proyecto.
       </td>
     </tr>
   </tbody>
@@ -276,6 +435,10 @@ del ABET – EAC - Student Outcome 5.
 NRG6 es una startup tecnológica enfocada en la innovación para el sector de movilidad inteligente. Su misión es transformar la manera en que propietarios, mecánicos y empresas gestionan el estado, uso y bienestar de motocicletas y vehículos, combinando IoT, análisis de datos y experiencia digital en una sola plataforma integral.
 
 BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicaciones web y móviles para brindar a los usuarios una visión completa de su moto: métricas en tiempo real, historial de mantenimientos, alertas preventivas, reportes personalizados y beneficios a través de planes de suscripción.
+
+**Misión**: Transformar la gestión de motocicletas combinando tecnología IoT y análisis de datos para ofrecer seguridad, eficiencia y confianza a propietarios y mecánicos.
+
+**Visión**: Ser la plataforma líder en movilidad inteligente que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
 
 #### 1.1.2 Perfiles de integrantes del equipo
 
@@ -292,7 +455,7 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
   </tr>
   <tr>
     <td> <img src="images/chapter-1/alex-pfp.jpg" alt="Gabriel Casas" style="width: 500px; height: auto;"> </td>
-    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
+    <td> Soy estudiante de Ingeniería de Software en séptimo ciclo, con habilidades para dirigir y trabajar bien bajo presión, código u202220033. Aunque no disfruto mucho de los trabajos grupales, siempre asumo un rol destacado y sobresaliente en ellos, aprovechando mi capacidad académica y versatilidad. </td>
   </tr>
   <tr>
     <th colspan="2"> Gianluca Santino Pasquale Barrenechea </th>
@@ -306,28 +469,21 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
   </tr>
   <tr>
     <td> <img src="images/chapter-1/jose-pfp.jpg" alt="Jose Alejo" style="width: 500px; height: auto;"> </td>
-    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
+    <td> Soy José Alejo Cárdenas, estudiante de la carrera de Ingeniería de Software del séptimo ciclo, código u202122484. Desde pequeño he sentido fascinación por la tecnología en general sobretodo por el funcionamiento, desarrollo y proteccion del software en el ambito de ciberseguridad. He estudiado lenguajes de programacion (javascript, python y C++), bases de datos (Microsoft SQL Server y Mongo DB) y Sistemas Operativos (Kali Linux y Windows). Asi mismo, tengo experiencia con hardware a nivel de esamblamiento de equipos y funcionamiento del mismo con sus especificaciones tecnicas. Además, mi constante comunicacion y organizacion durante cualquier trabajo grupal aportara mucho dinamismo al proyecto. Mis principales hobbies son entrenar en el gimnasio, jugar videojuegos con mis amigos y salir a conversar con estos ultimos durante algun almuerzo o cena. Para el proyecto aportare organizacion, comunicacion e inspiracion durante todo el transcurso del mismo. </td>
   </tr>
   <tr>
     <th colspan="2">Sebastian Pacheco Astiguetta</th>
   </tr>
   <tr>
     <td> <img src="images/chapter-1/Sebastian-pfp.png" alt="Sebastian Pacheco" style="width: 500px; height: auto;"> </td>
-    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
+    <td> Soy Sebastian Pacheco, tengo 22 años y soy alumno de Ingeniería de Software en la UPC, código u202110291. Me considero una persona trabajadora y activa, priorizando las responsabilidades ante todo, pero también destaco en trabajo en equipo, permitiendo a todos que participen. Tengo conocimiento de C++ y Python, los cuales pongo en práctica mediante proyectos personales. </td>
   </tr>
   <tr>
     <th colspan="2">Sebatian Omar Real Calderon</th>
   </tr>
   <tr>
     <td> <img src="images/chapter-1/sebastian_real_pfp.jpeg" alt="Sebastian Real" style="width: 500px; height: auto;"> </td>
-    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
-  </tr>
-    <tr>
-    <th colspan="2">Max Anthony Paitan Pumachuca</th>
-  </tr>
-  <tr>
-    <td> <img src="images/chapter-1/max-pfp.png" alt="Max Paitan" style="width: 500px; height: auto;"> </td>
-    <td>  </td>
+    <td> Soy Sebastián Real Calderón, estudiante de Ingeniería de Software, código u20221D964. Tengo conocimiento de diferentes lenguajes de programación, como C#, C++ y Java. Mi mayor objetivo al desarrollar software es crear una experiencia de usuario con la que los consumidores puedan sentirse satisfechos al trabajar con nuestras aplicaciones. Asimismo, aspiro a ser un buen participante al mantener una comunicación constante con mis compañeros, resolviendo problemas y apoyando a quién lo necesite para crear un ambiente cómodo para todos.  </td>
   </tr>
 </table>
 
@@ -345,11 +501,12 @@ La plataforma IoT para motos urbanas BykerZ ofrece un ecosistema digital compues
     - Sugerencias para próximos mantenimientos.
 - Desde el rol de mecánico o taller: 
     - Comparación de métricas entre motos similares  
-    - Generación de reportes de salud del vehículo  
+    - Agendar citas para el usuario de la moto.  
     - La consulta del historial de servicios  
     - La emisión de recordatorios para próximos mantenimientos.  
 
 Gracias a sus funcionalidades, la plataforma impulsa un uso más seguro, económico y sostenible de las motos, al mismo tiempo que fortalece la relación entre usuarios y mecánicos mediante datos objetivos y accesibles en tiempo real.
+
 #### 1.2.1 Antecedentes y problemática
 
 ##### What
@@ -388,7 +545,7 @@ El problema surge en la propia motocicleta durante su operación diaria, donde o
 
 - ¿Quienes se ven involucrados en el problema?
 
-El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los talleres mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos y talleres se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
+El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
 
 ##### Why
 
@@ -402,157 +559,175 @@ Las causas del problema se deben en mayor parte a la falta de datos actualizados
 
 Los clientes utilizan nuestro producto en condiciones de movilidad, accediendo a los datos de su moto en tiempo real durante sus trayectos o de manera remota para planificar mantenimientos. La plataforma es utilizada principalmente a través de dispositivos móviles con conectividad a internet, permitiendo interacciones tanto preventivas como reactivas ante alertas generadas por el sistema.
 
+##### How Much
+
+El impacto de la problemática es considerable y puede observarse en las estadísticas de seguridad vial actuales. Según un informe publicado por Freitas (2025) en Infobae, Lima registra 1.668 muertes por accidentes de tránsito en lo que va del año 2025, siendo los motociclistas quienes lideran la lista de víctimas, de acuerdo con datos del Ministerio de Transportes y Comunicaciones (MTC). Esta cifra evidencia la alta vulnerabilidad de los conductores de motocicletas y la falta de mecanismos preventivos eficaces que permitan detectar a tiempo posibles fallas mecánicas o comportamientos de riesgo durante la conducción.
+
+Estos datos reflejan la magnitud del problema y justifican la necesidad de soluciones tecnológicas que promuevan un mantenimiento preventivo y un monitoreo constante del estado del vehículo, permitiendo anticipar fallos críticos que podrían desencadenar accidentes. De este modo, la propuesta de la plataforma BykerZ contribuye directamente a reducir la incidencia de accidentes asociados a fallas mecánicas y a fortalecer la cultura de prevención entre los motociclistas urbanos.
+
 #### 1.2.2 Lean UX Process
 
 ##### 1.2.2.1 Lean UX Problem Statements
 
-En el panorama actual de la movilidad urbana, los propietarios de motocicletas operan con una constante incertidumbre respecto al estado de sus vehículos al carecer de visibilidad sobre su condición interna, lo que los expone al riesgo de fallas sorpresivas, reparaciones costosas o incluso accidentes fatales. Paralelamente, los talleres mecánicos se ven limitados por un modelo de servicio reactivo; solo pueden intervenir cuando el problema ya ha ocurrido, lo que se agrava al recibir descripciones vagas e incompletas de los usuarios. Esta falta de datos técnicos específicos complica el diagnóstico, prolonga los tiempos de reparación, reduce la eficiencia del servicio y finalmente erosiona la confianza del cliente.
+El estado actual del sector de mantenimiento de motocicletas se ha centrado principalmente en modelos de servicio reactivos, donde los propietarios carecen de visibilidad sobre el estado de sus vehículos y los talleres mecánicos dependen de diagnósticos manuales basados en información limitada.
 
-Para cubrir esta necesidad crítica, surge BykerZ como una herramienta integral que transforma este ecosistema. Se trata de una plataforma digital que monitorea el vehículo en tiempo real y recopila datos históricos de su desempeño de forma automática. Al analizar esta información, BykerZ genera métricas precisas y alertas oportunas sobre anomalías o patrones de desgaste, notificando tanto al motociclista como al mecánico. Esto permite a los usuarios actuar de manera preventiva y empodera a los talleres con información técnica precisa, optimizando sus diagnósticos, permitiendo un mantenimiento proactivo y restaurando así la confianza en los resultados del servicio.
+Lo que los servicios existentes no logran abordar es el monitoreo continuo que permitan anticipar fallos mecánicos y optimizar la relación entre usuarios y talleres.
+
+Nuestro producto abordará esta brecha mediante una plataforma que facilite el monitoreo proactivo y la comunicación basada en datos.
+
+Nuestro enfoque inicial serán los propietarios de motocicletas urbanas y los talleres mecánicos independientes.
+
+Sabremos que tenemos éxito cuando observemos un aumento del 30% en mantenimientos preventivos programados a través de la plataforma y una reducción del 25% en reparaciones de emergencia reportadas por los talleres asociados durante los primeros seis meses de implementación.
 
 ##### 1.2.2.2 Lean UX Assumptions
-###### User Assumptions:  
-- **¿Quién es el usuario?:** El usuario es un motociclista que busca una manera confiable de conocer el estado actual de su vehículo, así como un mecánico que necesito mayor precisión en la información técnica de la motocicleta para realizar diagnósticos y reparaciones eficientes.  
-- **¿Dónde encaja nuestro producto en su trabajo o vida?:** Nuestro producto encaja en el uso cotidiano de la motocicleta para los conductores, así como en el diagnóstico y reparación dentro del taller para los mecánicos.  
-- **¿Qué problemas resuelve nuestro producto?:** Nuestro producto resuelve la falta de información confiable sobre el estado de la moto para los conductores. Mientras que, para los mecánicos, resuelve el problema con diagnósticos lentos y/o imprecisos, así como la naturaleza reactiva de su negocio.  
-- **¿Cuándo y cómo se usa nuestro producto?:** Se utiliza de forma pasiva durante la conducción del usuario, y de forma activa al recibir las alertas para revisar el estado de su moto. El mecánico lo utiliza diariamente para revisar el estado de las motos de sus clientes suscritos.  
-- **¿Qué características son importantes?:** Para el usuario, son importantes las alertas, las métricas sencillas y fáciles de entender, un historial de mantenimiento y una forma de integrar su relación con un taller de confianza. Para el mecánico, es importante tener un dashboard con el estado de las motos de los clientes suscritos, una función de alertas prioritarias, una herramienta de comunicación integrada, y gestión de citas.  
-- **¿Cómo debe verse y comportarse nuestro producto?:** Debe tener una interfaz clara y minimalista para el usuario final, priorizando la visualización de datos de salud del vehículo de una manera sencilla (Colores de Semáforo: Verde/Amarillo/Rojo). Para el mecánico, la interfaz debe ser más compleja, pero igualmente intuitiva, priorizando la visualización de problemas críticos y la gestión de clientes.  
-###### Business Assumptions:
-- **Necesidades y problemas:** Creemos que los motociclistas necesitan una forma confiable de conocer el estado de sus vehículos y así poder anticipar fallas, mientras que los mecánicos requieren datos más técnicos y claros que les faciliten diagnósticos más rápidos y precisos.  
-- **Plataforma:** Estas necesidades se pueden resolver a través de un ecosistema que combine un hardware IoT, una aplicación móvil para el usuario y una plataforma web SaaS para los talleres.  
-- **Segmentación:** Los usuarios principales serán motociclistas que buscan seguridad y control sobre el estado de su vehículo, y nuestros clientes directos son los talleres o mecánicos interesados en contar con información detallada y quieren adoptar la tecnología necesaria para mejorar su servicio.  
-- **Comportamientos:** El valor que los usuarios esperan obtener de nuestro servicio es la tranquilidad de anticipar problemas, evitar gastos inesperados y acceder a reportes confiables que respalden decisiones de mantenimiento.  
-- **Beneficios:** Los usuarios obtendrán seguridad y un ahorro en costos de reparación a largo plazo. Los mecánicos se beneficiarán con diagnósticos más eficientes, mayor confianza del cliente y la optimización de su trabajo.
-- **Captación de clientes:** Adquiriremos talleres socios a través de ventas directas y referencias del sector, además de realizar campañas digitales enfocadas en las comunidades de motociclistas, atrayendo más clientes potenciales.  
-- **Modelo de ingresos:** Generaremos ingresos mediante la venta de los dispositivos IoT, planes de suscripción para el acceso de los mecánicos a los reportes avanzados y acuerdos comerciales con talleres para el uso de la plataforma.
-- **Competencia:** Nuestra competencia directa son los scanners OBD2 genéricos y apps como "Bike Scanner". La competencia indirecta son los servicios de mantenimiento tradicionales.  
-- **Ventaja competitiva:** Superaremos a la competencia gracias a la integración perfecta taller-cliente, la interpretación automatizada de datos y el enfoque en el mantenimiento predictivo y la experiencia completa, no solo en la lectura de datos.  
-###### Technical Assumptions (Suposiciones Técnicas)  
-- **Tecnología utilizada:** Podemos desarrollar un dispositivo IoT confiable, de bajo consumo y conectividad estable para instalarse en la moto. La app móvil se puede desarrollar con un framework cross-platform, como Flutter y el backend con tecnologías escalables como Spring Boot o Node.js.  
-- **Integraciones:** La plataforma del taller debería integrarse potencialmente con software de gestión de talleres existente y con pasarelas de pago para manejar las suscripciones.  
-- **Escalabilidad:** La arquitectura en la nube podrá escalar para soportar el procesamiento de datos en tiempo real de miles de dispositivos y usuarios simultáneos.  
-###### Market Assumptions (Suposiciones de Mercado)  
-- **Tamaño del mercado:** Existe un mercado significativo y en crecimiento de motociclistas que priorizan la seguridad y el cuidado de su vehículo, y talleres que buscan digitalizarse. Este también es poco explorado, por lo que existe la oportunidad de llenar un nicho con nuestro producto.  
-- **Competencia:** El mercado no está saturado con soluciones integrales que conecten directamente al usuario con el taller; la mayoría son herramientas genéricas o desconectadas del servicio profesional.  
-- **Tendencias:** Las tendencias de IoT, la movilidad inteligente y la economía de suscripción están en crecimiento, lo que crea un terreno fértil para nuestra solución.  
-###### Design Assumptions  
-- **Interacción del usuario:** Los usuarios tendrán una mejor interacción con las aplicaciones web y móvil si es que pueden consultar de forma inmediata los indicadores esenciales de su moto y recibir notificaciones oportunas sobre posibles fallas. Mientras que los mecánicos, además de una fácil interacción con las aplicaciones, podrán tener acceso a una mayor cantidad de información técnica y así poder realizar diagnósticos más precisos.  
-- **Experiencia del usuario:** Los usuarios tendrán una interfaz intuitiva y confiable que entregue información práctica y transmita tranquilidad, con datos presentados de forma simple y no con términos técnicos crudos, lo que mejorará la percepción de seguridad y control sobre el vehículo.  
-- **Colores y la tipografía:** Utilizaremos una paleta de colores que transmita seguridad (azules, verdes) y alerta (rojos, naranjas) cuando sea necesario. La tipografía debe ser marcada y muy legible incluso en movimiento.  
-- **Preferencias visuales:** Los usuarios considerarán atractivo un diseño que se asemeje a otros dashboards de vehículos modernos: limpio, con gráficos simples e íconos universalmente reconocibles, y resúmenes visuales fáciles de interpretar.  
-- **Prototipos y pruebas:** Las pruebas con motociclistas y mecánicos son necesarias para verificar la facilidad de uso del producto, así como del diseño; todo ello será a través de pruebas de usabilidad. 
+
+En el Lean UX Assumptions, se identificaron y documentaron las principales suposiciones del proyecto BykerZ en torno al negocio, los usuarios, los resultados esperados y las características del producto.
+
+- Business Assumptions
+
+1. Suponemos que nuestros clientes tienen la necesidad de mantener sus motocicletas en óptimo estado, evitando fallas inesperadas y reduciendo gastos de mantenimiento.
+
+2. Suponemos que estas necesidades pueden resolverse con una plataforma digital conectada a un dispositivo IoT que monitoree el estado mecánico de la moto y alerte sobre posibles averías.
+
+3. Suponemos que mis clientes iniciales serán motociclistas urbanos que utilizan su vehículo a diario y mecánicos que buscan digitalizar sus servicios.
+
+4. Suponemos que el principal valor que el cliente desea obtener de mi servicio es seguridad y confianza al conducir, al saber que su motocicleta se encuentra en buenas condiciones.
+
+5. Suponemos que el cliente se beneficiara al ahorrar por mantenimientos preventivos, conexión directa con talleres y acceso a un historial de servicios.
+
+6. Suponemos que adquiriremos la mayoría de mis clientes a través de alianzas estratégicas con talleres mecánicos, marketing digital en redes sociales y recomendaciones entre motociclistas.
+
+7. Suponemos que generaremos ingresos mediante una suscripción mensual de talleres que utilicen la plataforma para gestionar sus servicios y clientes.
+
+8. Suponemos que nuestra competencia principal en el mercado será las aplicaciones de mantenimiento genéricas y los scanners automotrices tradicionales sin integración digital.
+
+9. Suponemos que los superaremos gracias a la integración completa entre el motociclista y el taller, la facilidad de uso y la analítica predictiva en tiempo real.
+
+10. Suponemos que nuestro mayor riesgo de producto es que los usuarios no perciban suficiente valor práctico en los primeros usos de la aplicación o que la instalación del IoT sea compleja.
+
+11. Suponemos que resolveremos esto mediante una experiencia de usuario simple, tutoriales de instalación guiados y soporte técnico personalizado durante la adopción inicial.
+
+12. Suponemos que si los datos recolectados por el IoT no son precisos o confiables, la propuesta de valor del producto se vería seriamente comprometida.
+
+- Business Outcomes Assumptions
+
+1. Suponemos que la empresa incrementará su base de usuarios activos mediante recomendaciones y alianzas con talleres locales.
+
+2. Suponemos que la empresa aumentará sus ingresos por suscripciones al ofrecer herramientas avanzadas de análisis y mantenimiento predictivo.
+
+3. Suponemos que la empresa reducirá costos de soporte al automatizar alertas y reportes para usuarios y mecánicos.
+
+4. Suponemos que la empresa obtendrá datos valiosos sobre patrones de uso y fallas que permitirán mejorar el producto continuamente.
+
+5. Suponemos que la marca se posicionará como referente en movilidad inteligente y mantenimiento preventivo para motociclistas urbanos.
+
+
+- User Assumptions
+
+A. Motociclista urbano
+
+1. Suponemos que el usuario es un conductor de motocicleta que depende de su vehículo para movilizarse o trabajar diariamente y busca evitar fallas imprevistas.
+
+2. Suponemos que nuestro producto encaja en su vida como una herramienta de monitoreo constante y seguridad que lo acompaña en cada trayecto y le ayuda a cuidar su moto de forma inteligente.
+
+3. Suponemos que el producto resuelve los problemas de desconocimiento del estado del vehículo, mantenimiento reactivo, y altos gastos por reparaciones sorpresivas.
+
+4. Suponemos que el producto se utiliza de manera pasiva durante los trayectos (recolección automática de datos IoT) y de forma activa al revisar métricas, recibir alertas o agendar servicios con su mecánico.
+
+5. Suponemos que las funciones más importantes para este usuario son alertas preventivas, métricas de consumo, historial de mantenimiento, y conexión directa con el taller de confianza.
+
+6. Suponemos que el producto debe tener una interfaz móvil intuitiva, visualmente clara y confiable, con notificaciones comprensibles y una navegación ágil adaptada al uso diario.
+
+7. Suponemos que el usuario tambien puede ser un mecánico o propietario de taller que ofrece servicios de mantenimiento y busca mejorar la precisión de sus diagnósticos y la fidelización de sus clientes.
+
+8. Suponemos que nuestro producto encaja en su trabajo como una herramienta de gestión técnica que le permite acceder a métricas en tiempo real del vehículo del cliente, planificar mantenimientos y ofrecer servicios proactivos.
+
+9. Suponemos que el producto resuelve los problemas de falta de historial confiable, diagnósticos lentos y dificultad para mantener contacto constante con los clientes.
+
+10. Suponemos que el producto se utiliza durante el diagnóstico en el taller, para analizar datos de telemetría, y entre visitas, para monitorear remotamente el estado de las motos de los clientes.
+
+11. Suponemos que las funciones más importantes para este usuario son acceso a historial completo del vehículo, comparación de métricas entre motos, recordatorios automáticos y agendamiento de citas.
+
+12. Suponemos que el producto debe presentar una interfaz web profesional, con paneles de análisis claros, filtros por cliente y reportes automáticos de rendimiento y mantenimiento.
+
+- User Outcomes Assumptions
+
+1. Suponemos que los motociclistas se sentirán más seguros y tranquilos al recibir alertas tempranas sobre fallas o mantenimientos necesarios.
+
+2. Suponemos que los motociclistas reducirán sus gastos de mantenimiento gracias a un uso más eficiente y preventivo de su moto.
+
+3. Suponemos que los mecánicos mejorarán la precisión de sus diagnósticos y aumentarán la satisfacción del cliente al ofrecer un servicio proactivo.
+
+4. Suponemos que ambos usuarios experimentarán una relación más cercana y basada en datos, lo que aumentará la confianza y fidelización.
+
+5. Suponemos que los usuarios recomendarán el sistema a otros motociclistas o talleres si perciben beneficios reales en los primeros meses de uso.
+
+- Features Assumptions
+
+1. Suponemos que los usuarios usarán con frecuencia las alertas preventivas y el monitoreo de telemetría en tiempo real.
+
+2. Suponemos que los usuarios consultarán regularmente el historial de mantenimiento para planificar sus servicios.
+
+3. Suponemos que los mecánicos usarán los paneles comparativos para detectar anomalías y optimizar diagnósticos.
+
+4. Suponemos que la integración entre app móvil (motociclista) y panel web (taller) será clave para el éxito del ecosistema.
+
+5. Suponemos que una interfaz simple, moderna y confiable impulsará la adopción del sistema.
+
+6. Suponemos que las notificaciones automáticas y recordatorios personalizados serán una de las funciones más valoradas.
 
 ##### 1.2.2.3 Lean UX Hypothesis Statements
 
-**Hypothesis Statement 01:**
+1. Alertas preventivas y monitoreo de telemetría en tiempo real
 
-- Creemos que los motociclistas necesitan una forma sencilla y confiable de monitorear el estado de su moto en tiempo real.
-- Sabremos que estamos en lo correcto cuando observemos que los clientes consultan frecuentemente la aplicación para revisar métricas de su vehículo.
+Creemos que implementar alertas preventivas y monitoreo de telemetría en tiempo real
+para motociclistas y mecánicos
+logrará una mejor planificación del mantenimiento y una reducción de fallas inesperadas.
+Sabremos que esto es cierto cuando veamos un uso frecuente de las alertas, comentarios positivos sobre la confiabilidad y una disminución en las visitas no planificadas al taller.
 
-**Hypothesis Statement 02:**
+2. Historial de mantenimiento
 
-- Creemos que los mecánicos requieren información temprana sobre fallos potenciales para brindar un servicio más proactivo.
-- Sabremos que estamos en lo correcto cuando los mecánicos reporten menor número de reparaciones de emergencia y mayor número de mantenimientos preventivos.
+Creemos que ofrecer un historial detallado de mantenimiento y herramientas de visualización
+para motociclistas
+logrará una mejor organización de los servicios y un seguimiento más preciso del rendimiento de sus vehículos.
+Sabremos que esto es cierto cuando veamos un uso repetido del historial y una mejora en los niveles de satisfacción de los usuarios.
 
-**Hypothesis Statement 03:**
+3. Paneles comparativos para mecánicos
 
-- Creemos que centralizar la comunicación entre cliente y taller dentro de la plataforma reducirá la fricción y mejorará la coordinación.
-- Sabremos que estamos en lo correcto cuando los clientes usen la mensajería o notificaciones de la app en lugar de llamadas o visitas imprevistas.
+Creemos que desarrollar paneles comparativos basados en datos de IoT
+para mecánicos
+logrará diagnósticos más rápidos y recomendaciones de mantenimiento más precisas.
+Sabremos que esto es cierto cuando veamos una mejora en la eficiencia de los diagnósticos y retroalimentación positiva de los mecánicos.
 
-**Hypothesis Statement 04:**
+4. Integración entre la app móvil y el panel web
 
-- Creemos que la creación de un historial de servicios será clave para que los motociclistas planifiquen mantenimientos futuros.
-- Sabremos que estamos en lo correcto cuando los usuarios registren y consulten con frecuencia los mantenimientos realizados en su moto.
+Creemos que integrar la aplicación móvil para motociclistas con el panel web para talleres
+logrará una comunicación fluida y una gestión sincronizada de los servicios.
+Sabremos que esto es cierto cuando veamos un intercambio activo de datos entre ambas plataformas y un aumento en el uso conjunto de los sistemas.
 
-**Hypothesis Statement 05:**
+5. Interfaz simple, moderna y confiable
 
-- Creemos que ofrecer una suscripción con acceso a datos en tiempo real dará valor suficiente para retener clientes.
-- Sabremos que estamos en lo correcto cuando observemos baja tasa de cancelación y renovaciones recurrentes de la suscripción.
+Creemos que diseñar una interfaz limpia, intuitiva y visualmente atractiva
+para motociclistas y mecánicos
+logrará una mayor adopción del sistema y un uso continuo de la plataforma.
+Sabremos que esto es cierto cuando veamos resultados positivos en pruebas de usabilidad y altas tasas de retención de usuarios.
 
-**Hypothesis Statement 06:**
+6. Notificaciones automáticas y recordatorios personalizados
 
-- Creemos que los usuarios percibirán a BykerZ como una forma de manejar con mayor seguridad y confianza.
-- Sabremos que estamos en lo correcto cuando recibamos comentarios positivos en encuestas y reseñas sobre la sensación de seguridad brindada por el uso de la aplicación.
+Creemos que implementar notificaciones inteligentes y recordatorios personalizados
+para motociclistas
+logrará un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria.
+Sabremos que esto es cierto cuando veamos una alta interacción con los recordatorios y una reducción en los servicios atrasados.
 
-**Hypothesis Statement 07:**
-
-- Creemos que las notificaciones deben ser escuetas y fáciles de entender para que los motociclistas no las ignoren.
-- Sabremos que estamos en lo correcto cuando las pruebas de usabilidad muestren que los usuarios entienden y siguen las alertas que reciban.
-
-**Hypothesis Statement 08:**
-
-- Creemos que una interfaz simple con información precisa facilitará la adopción de la aplicación por los motociclistas.
-- Sabremos que estamos en lo correcto cuando veamos comentarios positivos sobre la usabilidad de la aplicación.
-
-**Hypothesis Statement 09:**
-
-- Creemos que los talleres que adopten esta plataforma tendrán mayor fidelización de clientes frente a los que no lo hagan.
-- Sabremos que estamos en lo correcto cuando los talleres suscritos muestren un aumento en clientes recurrentes.
-
-**Hypothesis Statement 10:**
-
-- Creemos que los usuarios valorarán la posibilidad de acceder al historial de mantenimiento de su motocicleta en un solo lugar.
-- Sabremos que estamos en lo correcto cuando los clientes consulten repetidamente el historial en la aplicación.
-
-**Hypothesis Statement 11:**
-
-- Creemos que la plataforma ayudará a los talleres a gestionar de manera más eficiente varias motos de distintos clientes al mismo tiempo.
-- Sabremos que estamos en lo correcto cuando los mecánicos reporten menor tiempo de organización y mayor control de su cartera de clientes.
-
-**Hypothesis Statement 12:**
-
-- Creemos que integrar recordatorios automáticos de mantenimientos programados reducirá los olvidos de los clientes.
-- Sabremos que estamos en lo correcto cuando los clientes acudan puntualmente a las citas de mantenimiento.
-
-**Hypothesis Statement 13:**
-
-- Creemos que la interfaz intuitiva de la aplicación facilitará la adopción por parte de clientes que no son expertos en tecnología.
-- Sabremos que estamos en lo correcto cuando los usuarios aprendan a manejar la app en menos de una semana y la usen sin asistencia.
-
-**Hypothesis Statement 14:**
-
-- Creemos que mostrar gráficas y estadísticas en tiempo real aumentará la percepción de valor tecnológico en la plataforma.
-- Sabremos que estamos en lo correcto cuando los usuarios interactúen frecuentemente con los paneles de datos visuales.
-
-**Hypothesis Statement 15:**
-
-- Creemos que el envío de reportes semanales sobre el estado de la moto fortalecerá la relación de confianza entre cliente y taller.
-- Sabremos que estamos en lo correcto cuando los clientes valoren positivamente los reportes y continúen la suscripción.
-
-**Hypothesis Statement 16:**
-
-- Creemos que el sistema reducirá costos inesperados al detectar anomalías antes de que se conviertan en averías graves.
-- Sabremos que estamos en lo correcto cuando los clientes reporten menos gastos de emergencia y mayor previsión.
-
-**Hypothesis Statement 17:**
-
-- Creemos que ofrecer soporte rápido en caso de fallos críticos en la moto motivará a los usuarios a depender de la aplicación.
-- Sabremos que estamos en lo correcto cuando los usuarios utilicen la función de soporte y lo califiquen positivamente.
-
-**Hypothesis Statement 18:**
-
-- Creemos que incluir un sistema de alertas personalizadas para cada cliente aumentará la efectividad del mantenimiento preventivo.
-- Sabremos que estamos en lo correcto cuando los talleres reporten mayor precisión en la programación de servicios.
-
-**Hypothesis Statement 19:**
-
-- Creemos que la transparencia en el estado real de la moto mejorará la percepción de honestidad hacia los mecánicos.
-- Sabremos que estamos en lo correcto cuando los clientes expresen confianza en las recomendaciones de mantenimiento recibidas a través de la app.
-
-**Hypothesis Statement 20:**
-
-- Creemos que los motociclistas estarán más motivados a usar BykerZ si reciben consejos prácticos de cuidado básico de sus motocicletas.
-- Sabremos que estamos en lo correcto cuando identifiquemos que los usuarios revisan de forma constante las secciones de recomendaciones en la aplicación.
 
 ##### 1.2.2.4 Lean UX Canvas
-![Lean UX Canvas](images/chapter-1/lean-ux-canvas.png)
+![Lean UX Canvas](images/chapter-1/lean_ux_canvas.jpg)
 
 ### 1.3 Segmentos objetivo
 
-#### Segmento Objetivo #1: Usuarios de motos urbanas
+#### Segmento Objetivo #1: Motociclistas
 
-Este grupo incluye a personas que utilizan motocicletas como su principal medio de transporte en entornos urbanos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
+Para este grupo su principal medio de transporte son las motos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
 
 - Características clave:
   - Edad: 18 a 45 años
@@ -566,9 +741,9 @@ Este grupo incluye a personas que utilizan motocicletas como su principal medio 
   - Conocer costos acumulados de uso y reparaciones.
   - Tener a mano el historial de mantenimiento.
 
-#### Segmento Objetivo #2: Mecánicos y talleres de servicio
+#### Segmento Objetivo #2: Mecánicos
 
-Este grupo está conformado por profesionales independientes o pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
+Este grupo está conformado por profesionales independientes con pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
 
 - Características clave:
   - Edad: 25 a 55 años
@@ -802,6 +977,8 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Duración de la Entrevista | 4:20                                                       |
 | Minuto de Inicio          | 0:00                                                       |
 
+Flavio, un joven mecánico de 21 años que trabaja en un taller de motos en San Miguel, destaca por su enfoque práctico y empírico en el mantenimiento y diagnóstico vehicular. Realiza principalmente servicios preventivos y correctivos de motos de delivery, registrando la información de sus clientes de forma manual, lo que genera dificultades en el seguimiento de mantenimientos. Su personalidad es proactiva y orientada a la mejora del servicio, mostrando interés en herramientas tecnológicas que optimicen su trabajo. Usa canales digitales básicos como WhatsApp para comunicarse, pero carece de sistemas especializados. Considera que el acceso a datos de telemetría como kilometraje, consumo o estado de batería le permitiría anticiparse a fallas y mejorar su precisión en los diagnósticos. Además, se muestra dispuesto a implementar soluciones digitales, incluso bajo un modelo de suscripción fija, siempre que sean fáciles de usar, precisas y se integren con plataformas cotidianas.
+
 | Entrevista 2              | ![Juan](images/chapter-2/thumbnail-mecanico2-juan.png) |
 |---------------------------|--------------------------------------------------------|
 | Nombre del entrevistado   | Juan Cuellar                                           |
@@ -811,6 +988,8 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Duración de la Entrevista | 4:15                                                   |
 | Minuto de Inicio          | 4:20                                                   |
 
+Juan, un mecánico de 25 años con tres años de experiencia en el mantenimiento de motos de uso diario, delivery y mototaxis, trabaja en un entorno práctico y orientado a la rapidez del servicio. Ofrece mantenimientos básicos y reparaciones eléctricas sencillas, priorizando la atención ágil a repartidores que dependen de sus vehículos para trabajar. Lleva el registro de mantenimientos en una hoja de Excel y se comunica con sus clientes principalmente mediante WhatsApp, aunque admite que no actualiza sus registros con frecuencia por falta de tiempo. Su diagnóstico se basa en observación, experiencia y prueba directa, sin herramientas avanzadas. Considera que la posibilidad de monitorear remotamente las motos mediante telemetría sería muy beneficiosa, ya que le permitiría anticipar problemas y brindar un servicio más eficiente. Valora métricas como kilometraje, batería, consumo y presión de llantas, y reconoce la utilidad de reportes simples y periódicos para mejorar la confianza del cliente. Con una actitud abierta hacia la tecnología, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio agregado bajo un modelo de costo fijo, siempre que sea fácil de usar y práctica, alineada con su ritmo de trabajo y el de sus clientes repartidores.
+
 | Entrevista 3              | ![Aldo](images/chapter-2/thumbnail-mecanico3-aldo.png) |
 |---------------------------|--------------------------------------------------------|
 | Nombre del entrevistado   | Aldo Vasquez                                           |
@@ -819,6 +998,9 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Ocupación                 | Ayudante de mecánico                                   |
 | Duración de la Entrevista | 3:58                                                   |
 | Minuto de Inicio          | 8:18                                                   |
+
+Aldo, un joven mecánico de 23 años con un año de experiencia en un taller de Breña, se caracteriza por su enfoque empírico y su interés en mejorar la eficiencia de su trabajo. Brinda principalmente servicios de mantenimiento preventivo y correctivo, incluyendo cambios de aceite, frenos, cadenas y reparaciones eléctricas, adaptándose al aumento de motos modernas. Registra los mantenimientos de forma manual y memorística, utilizando cuadernos o recordatorios verbales, y se comunica con sus clientes principalmente por WhatsApp. Carece de herramientas digitales para diagnósticos, confiando en su experiencia e intuición, aunque reconoce el valor de la tecnología: considera que la telemetría en tiempo real presión, temperatura, voltaje le permitiría anticipar fallas y optimizar el servicio. Valora la precisión y simplicidad en las herramientas digitales, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio adicional bajo un modelo de costo fijo, y demuestra una actitud abierta hacia la innovación tecnológica aplicada a su labor diaria.
+
 
 A continuación, se presentan detalles de las entrevistas realizadas a los dueños de motos:
 
@@ -831,6 +1013,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 5:40                                                         |
 | Minuto de Inicio          | 12:10                                                        |
 
+
 | Entrevista 5              | ![Mathias](images/chapter-2/thumbnail-motociclista2-mathias.png) |
 |---------------------------|------------------------------------------------------------------|
 | Nombre del entrevistado   | Mathias Diaz                                                     |
@@ -839,6 +1022,8 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Ocupación                 | Profesor                                                         |
 | Duración de la Entrevista | 7:34                                                             |
 | Minuto de Inicio          | 17:49                                                            |
+
+
 
 | Entrevista 6              | ![Jair Huamani](images/chapter-2/thumbnail-motociclista3-jair.png) |
 |---------------------------|--------------------------------------------------------------------|
@@ -849,6 +1034,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 8:28                                                               |
 | Minuto de Inicio          | 25:18                                                              |
 
+Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de transporte en Lima, se caracteriza por su enfoque organizado y su interés en mantener la eficiencia y seguridad de su vehículo. Actualmente, lleva el control del gasto de combustible y mantenimiento de su moto de manera manual, lo que a veces le genera dificultades para recordar fechas importantes. Ha experimentado fallas inesperadas que le han ocasionado gastos imprevistos, lo que le ha llevado a valorar la importancia del mantenimiento preventivo. Se comunica con su mecánico principalmente a través de llamadas y mensajes de texto, pero no utiliza herramientas digitales específicas para gestionar el estado de su moto. Jair se muestra abierto a la idea de una aplicación que le permita monitorear automáticamente el estado de su moto, recibir alertas sobre posibles fallas y conocer métricas en tiempo real como presión de neumáticos, nivel de combustible y temperatura del motor. Valora la simplicidad y claridad en las aplicaciones móviles, y estaría dispuesto a pagar una suscripción mensual si el servicio le ofrece beneficios tangibles en términos de seguridad y ahorro en mantenimiento.
 
 #### 2.2.3 Análisis de entrevistas
 
@@ -900,15 +1086,15 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 
 **2. Segmento 2: Usuario Final de Motocicleta**
 
-| Tarea                                               | Frecuencia | Severidad |
-|-----------------------------------------------------|------------|-----------|
-| Realizar mantenimientos preventivos                 | Baja       | Alta      |
-| Confiar en su mecánico de confianza                 | Alta       | Media     |
-| Recordar fechas de último mantenimiento             | Media      | Alta      |
-| Detectar fallas solo cuando se presentan            | Alta       | Alta      |
-| Buscar información en internet sobre problemas      | Media      | Media     |
-| Administrar presupuesto de reparaciones             | Alta       | Alta      |
-| Verificar el estado básico de la moto antes de usarla | Alta     | Media     |
+| Tarea                                                 | Frecuencia | Severidad |
+|-------------------------------------------------------|------------|-----------|
+| Realizar mantenimientos preventivos                   | Baja       | Alta      |
+| Confiar en su mecánico de confianza                   | Alta       | Media     |
+| Recordar fechas de último mantenimiento               | Media      | Alta      |
+| Detectar fallas solo cuando se presentan              | Alta       | Alta      |
+| Buscar información en internet sobre problemas        | Media      | Media     |
+| Administrar presupuesto de reparaciones               | Alta       | Alta      |
+| Verificar el estado básico de la moto antes de usarla | Alta       | Media     |
 
 #### 2.3.3 User Journey Mapping
 
@@ -993,63 +1179,68 @@ Epicas:
 
 # Épicas
 
-| Código  | Título                                              | Descripción                                                                                                                                                                                                 |
-|---------|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EP-001  | Monitoreo inteligente del estado de la moto          | Desarrollar una aplicación móvil que permita a los motociclistas visualizar en tiempo real métricas clave de su motocicleta (batería, kilometraje, consumo de combustible, temperatura, presión de neumáticos y vibraciones), facilitando decisiones informadas y la prevención de fallas. |
-| EP-002  | Sistema de alertas preventivas y recordatorios       | Implementar un sistema que notifique a motociclistas y talleres sobre mantenimientos, condiciones críticas o fallas recurrentes mediante alertas en la app, para anticipar problemas, reducir riesgos y mantener una agenda organizada. |
-| EP-003  | Gestión del historial de mantenimiento y gastos      | Desarrollar funcionalidades que permitan a motociclistas y talleres registrar el historial de mantenimientos y los costos de reparaciones, repuestos y servicios. La información debe visualizarse en reportes claros (mensuales o por evento) y estar disponible para ambos, fomentando transparencia, planificación y fidelización, reemplazando métodos manuales por una solución digital confiable. |
-| EP-004  | Desarrollo e integración del dispositivo embebido de telemetría | Diseñar e integrar un dispositivo IoT que recolecte en tiempo real datos críticos de la moto y los transmita de forma segura a la plataforma. Incluye desarrollo de firmware, pruebas de sensores, compatibilidad con distintos modelos y validación de la conexión con la app mediante protocolos eficientes. |
-| EP-005  | Gestión de relación entre motociclista y mecánico    | Funcionalidades para crear y administrar la relación entre un motociclista y su mecánico de confianza, permitiendo compartir métricas de la moto en tiempo real y recibir notificaciones. Estas relaciones podrán modificarse o terminarse según las necesidades de ambas partes. |
-| EP-006  | Diseño de la landing page                           | Como equipo de desarrollo, queremos diseñar y construir una landing page atractiva, informativa y fácil de navegar, que comunique claramente el valor de la plataforma tanto para motociclistas como para mecánicos, con el objetivo de captar nuevos usuarios, generar confianza y facilitar el registro en el sistema. |
-| EP-007  | Gestión de Motos                                    | Administra toda la información relacionada con el ciclo de vida de las motocicletas dentro del sistema. Define los procesos de registro, consulta, actualización y baja de las motos, garantizando la integridad y consistencia de los datos. |
+| Código | Título                                                          | Descripción                                                                                                                                                                                                                                                                                                                                                                                             |
+|--------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EP-001 | Monitoreo inteligente del estado de la moto                     | Desarrollar una aplicación móvil que permita a los motociclistas visualizar en tiempo real métricas clave de su motocicleta (batería, kilometraje, consumo de combustible, temperatura, presión de neumáticos y vibraciones), facilitando decisiones informadas y la prevención de fallas.                                                                                                              |
+| EP-002 | Sistema de alertas preventivas y recordatorios                  | Implementar un sistema que notifique a motociclistas y talleres sobre mantenimientos, condiciones críticas o fallas recurrentes mediante alertas en la app, para anticipar problemas, reducir riesgos y mantener una agenda organizada.                                                                                                                                                                 |
+| EP-003 | Gestión del historial de mantenimiento y gastos                 | Desarrollar funcionalidades que permitan a motociclistas y talleres registrar el historial de mantenimientos y los costos de reparaciones, repuestos y servicios. La información debe visualizarse en reportes claros (mensuales o por evento) y estar disponible para ambos, fomentando transparencia, planificación y fidelización, reemplazando métodos manuales por una solución digital confiable. |
+| EP-004 | Desarrollo e integración del dispositivo embebido de telemetría | Diseñar e integrar un dispositivo IoT que recolecte en tiempo real datos críticos de la moto y los transmita de forma segura a la plataforma. Incluye desarrollo de firmware, pruebas de sensores, compatibilidad con distintos modelos y validación de la conexión con la app mediante protocolos eficientes.                                                                                          |
+| EP-005 | Gestión de relación entre motociclista y mecánico               | Funcionalidades para crear y administrar la relación entre un motociclista y su mecánico de confianza, permitiendo compartir métricas de la moto en tiempo real y recibir notificaciones. Estas relaciones podrán modificarse o terminarse según las necesidades de ambas partes.                                                                                                                       |
+| EP-006 | Diseño de la landing page                                       | Como equipo de desarrollo, queremos diseñar y construir una landing page atractiva, informativa y fácil de navegar, que comunique claramente el valor de la plataforma tanto para motociclistas como para mecánicos, con el objetivo de captar nuevos usuarios, generar confianza y facilitar el registro en el sistema.                                                                                |
+| EP-007 | Gestión de Motos                                                | Administra toda la información relacionada con el ciclo de vida de las motocicletas dentro del sistema. Define los procesos de registro, consulta, actualización y baja de las motos, garantizando la integridad y consistencia de los datos.                                                                                                                                                           |
 
 User Stories:
 
-| User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-| :--- | :--- | :--- | :--- | :--- |
-| US-001 | Visualización del consumo de combustible en tiempo real | Como motociclista, quiero visualizar en tiempo real el consumo de combustible de mi moto, para poder optimizar mi forma de conducir y ahorrar gastos. | Escenario 1: <br>Dado que el motociclista está conduciendo la motocicleta con la aplicación conectada, cuando accede al panel de métricas en tiempo real, entonces el sistema debe mostrar el consumo actual de combustible en L/100km y el valor debe actualizarse continuamente durante la conducción <br><br> Escenario 2: Dado que el motociclista ha finalizado un recorrido con la aplicación activa, cuando solicita ver el resumen del viaje completado, entonces el sistema debe mostrar el consumo promedio de combustible del trayecto en km/L y debe incluir la distancia total recorrida y el tiempo de viaje. | EP-001 |
-| US-002 | Registro de gastos de mantenimiento y repuestos | Como motociclista, quiero registrar los gastos de mantenimiento y repuestos que realizo, para llevar un control acumulado mensual o por kilometraje. | Escenario 1: <br>Dado que el motociclista ha accedido a la sección de registro de gastos, cuando ingresa el monto, la descripción, la fecha y el tipo de gasto, y confirma el registro, entonces el sistema guarda la información y actualiza automáticamente los acumulados mensuales y por kilometraje correspondientes. <br><br> Escenario 2: <br>Dado que el motociclista está en la sección de métricas de gastos, cuando selecciona filtrar por mes, tipo de gasto o rango de kilometraje, y solicita ver el historial, entonces el sistema muestra el total invertido y el listado de gastos según los filtros aplicados. | EP-001 |
-| US-003 | Acceso al historial de servicios realizados | Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó. | Escenario 1: <br>Dado que existe un historial de servicios de mantenimiento registrados para la motocicleta del usuario, cuando el motociclista accede a la sección de historial y selecciona un servicio específico de la lista, entonces el sistema muestra un detalle completo que incluye fecha exacta del servicio, tipo de mantenimiento realizado, nombre del taller o mecánico, repuestos utilizados con sus respectivas referencias, costo del servicio y kilometraje en el momento del mantenimiento. <br><br> Escenario 2: <br>Dado que el historial de servicios contiene múltiples registros de mantenimiento de diferentes fechas y tipos, cuando el motociclista ingresa criterios de búsqueda específicos (rango de fechas, tipo de servicio, taller o repuesto utilizado) y ejecuta la consulta, entonces el sistema filtra la base de datos y presenta solamente los registros que coinciden exactamente con todos los criterios aplicados, ordenados cronológicamente. | EP-001 |
-| US-004 | Comparación de métricas entre motos similares | Como mecánico, quiero comparar las métricas de dos motos similares, para detectar posibles problemas o desviaciones en el rendimiento que requieran revisión. | Escenario 1: <br>Dado que existen en el sistema two motocicletas del mismo modelo y año con métricas registradas, cuando el mecánico selecciona ambas motos y solicita comparar sus métricas, entonces el sistema muestra una vista lado a lado con el consumo de combustible, temperatura de operación, kilometraje y alertas de mantenimiento. <br><br> Escenario 2: <br>Dado que la comparación entre dos motocicletas similares muestra variaciones significativas en sus métricas de rendimiento, cuando el mecánico revisa el reporte de comparación, entonces el sistema destaca las diferencias críticas y proporciona sugerencias de posibles problemas mecánicos que podrían causar dichas discrepancias. | EP-001 |
-| US-005 | Notificación de alerta por consumo excesivo. | Como motociclista, quiero que el aplicativo móvil me notifique en caso de que el sistema detecte un consumo anormalmente alto de combustible por kilómetro. | Escenario 1: <br>Dado que el consumo de combustible durante un trayecto supera los parámetros establecidos como normales para el modelo de la motocicleta, cuando este consumo anormalmente alto se mantiene durante al menos 15 minutos de conducción continua, entonces el sistema emite una notificación push en el aplicativo móvil alertando al usuario sobre el alto consumo de combustible. <br><br> Escenario 2: <br>Dado que el consumo de combustible había superado los parámetros normales y se había emitido una alerta previa, cuando el consumo se mantiene dentro de los rangos normales establecidos durante los últimos 10 minutos de conducción, entonces el sistema envía una notificación push al usuario informando que el consumo de combustible se ha normalizado y la alerta previa ha sido desactivada. | EP-02 |
-| US-006 | Notificación de alerta por presión de llantas. | Como motociclista, <br>quiero que el aplicativo móvil me notifique cuando la presión de las llantas sea anormal, <br>para poder tomar acciones preventivas que garanticen mi seguridad y el buen estado de la motocicleta. | Escenario 1: <br>Dado que la presión de una o más llantas de la motocicleta está por debajo del rango recomendado por el fabricante, cuando esta condición de baja presión se mantiene durante más de 5 minutos de conducción continua, entonces el sistema envía una notificación push al usuario especificando qué llanta(s) requiere(n) revisión inmediata y mostrando los valores de presión actuales. <br><br> Escenario 2: <br>Dado que la presión de las llantas que habían estado por debajo del rango recomendado ahora se encuentra dentro de los parámetros normales, cuando esta condición estable se mantiene durante al menos 5 minutos de conducción continua, entonces el sistema envía una notificación push al usuario informando que la presión de las llantas se ha normalizado e indicando los valores actuales dentro del rango seguro. | EP-002 |
-| US-007 | Recomendación de mantenimiento. | Como mecánico, quiero poder agendar citas con mis clientes en caso de detectar alguna medida anómala en sus motocicletas desde mi interfaz, para brindar un servicio oportuno y mantener la seguridad de sus vehículos. | Escenario 1: <br>Dado que el sistema ha detectado una medida anómala en los datos de rendimiento de la motocicleta de un cliente registrado, cuando el mecánico accede a la interfaz de gestión de clientes y selecciona al cliente afectado, entonces el sistema muestra las métricas anómalas y permite generar una recomendación de mantenimiento con la posibilidad de proponer una cita en el calendario disponible. <br><br> Escenario 2: <br>Dado que existe una cita de mantenimiento propuesta por el mecánico para un cliente específico, cuando el cliente confirma la cita a través de la aplicación móvil, entonces el sistema registra automáticamente la cita en la agenda del mecánico, marca el horario como ocupado y envía notificaciones de confirmación tanto al mecánico como al cliente con los detalles de la cita. <br><br> Escenario 3: <br>Dado que existe una cita de mantenimiento propuesta por el mecánico pendiente de confirmación, cuando el cliente rechaza la cita o solicita reprogramación a través de la aplicación móvil, entonces el sistema notifica inmediatamente al mecánico sobre la respuesta del cliente, libera el horario previamente reservado y habilita la opción para que el mecánico pueda proponer una nueva fecha y hora disponible. | EP-002 |
-| US-008 | Notificación de sobrecalentamiento del motor | Como motociclista, <br>quiero que el aplicativo móvil me notifique cuando el motor de mi motocicleta esté presentando un sobrecalentamiento, <br>para poder detenerme a tiempo y evitar daños mayores al vehículo o accidentes. | Escenario 1: <br>Dado que la temperatura del motor de la motocicleta ha superado el límite máximo seguro establecido por el fabricante, cuando esta condición de sobrecalentamiento se mantiene durante más de 60 segundos consecutivos, entonces el sistema emite una notificación de alerta urgente al usuario indicando el riesgo de sobrecalentamiento y recomendando detener la marcha de manera segura. <br><br> Escenario 2: <br>Dado que la temperatura del motor había superado los límites seguros y se había emitido una alerta de sobrecalentamiento, cuando la temperatura regresa y se mantiene dentro del rango normal durante al menos 5 minutos consecutivos, entonces el sistema envía una notificación al usuario informando que la temperatura del motor se ha normalizado y la alerta ha sido desactivada. <br><br> Escenario 3: <br>Dado que se han registrado tres o más episodios de sobrecalentamiento del motor en un período de 7 días, cuando el sistema detecta este patrón recurrente anómalo, entonces el sistema notifica al usuario recomendando agendar una revisión de mantenimiento urgente y ofrece la opción de contactar directamente con un taller especializado. | EP-002 |
-| US-009 | Sugerencias personalizadas para próximos mantenimientos | Como motociclista, quiero recibir sugerencias personalizadas sobre el próximo mantenimiento que debo hacer, basadas en el historial y uso de mi moto. | Escenario 1: <br>Dado que se ha alcanzado el kilometraje o tiempo máximo recomendado para el mantenimiento de un componente específico según los intervalos establecidos por el fabricante, cuando el sistema analice el historial de servicios y el uso actual de la motocicleta, entonces generará una sugerencia personalizada indicando la necesidad de revisión o cambio del componente y mostrará el motivo basado en los criterios técnicos. <br><br> Escenario 2: <br>Dado que existen recomendaciones de mantenimiento pendientes generadas por el sistema para la motocicleta del usuario, cuando el motociclista acceda a la sección de sugerencias de mantenimiento en el aplicativo, entonces el sistema mostrará una lista priorizada de recomendaciones específicas con detalles sobre el componente, la razón de la sugerencia y el nivel de urgencia para cada mantenimiento requerido. | EP-003 |
-| US-010 | Generación de reporte de salud del vehículo | Como mecánico, quiero generar un reporte de salud del vehículo que incluya estado de batería, temperatura, consumo y alertas recientes, para entregarlo al cliente al final del servicio. | Escenario 1: <br>Dado que el mecánico ha completado un servicio de mantenimiento en una motocicleta y todos los datos del vehículo están actualizados en el sistema, cuando el mecánico selecciona la opción "Generar Reporte de Salud" desde la interfaz de finalización de servicio, entonces el sistema produce un documento detallado que incluye el estado de la batería, historial de temperatura, consumo de combustible, alertas recientes y las intervenciones realizadas durante el servicio. <br><br> Escenario 2: <br>Dado que se ha generado exitosamente el reporte de salud del vehículo para el cliente, cuando el mecánico selecciona la opción de compartir reporte, entonces el sistema ofrece las opciones de imprimir el documento directamente o enviarlo por correo electrónico al cliente desde la misma interfaz, con un formato profesional y fácil de entender. | EP-003 |
-| US-011 | Consulta del historial de servicios por parte del mecánico | Como mecánico, quiero consultar el historial de servicios realizados en una moto específica, para tomar decisiones informadas al momento del diagnóstico. | Escenario 1: <br>Dado que existe una motocicleta registrada en el sistema con historial de servicios previos, cuando el mecánico ingresa la placa o el nombre del cliente en el módulo de búsqueda y selecciona la motocicleta, entonces el sistema muestra el historial completo ordenado cronológicamente con detalles de fechas, tipos de servicio realizados, repuestos utilizados y talleres donde se ejecutaron los mantenimientos. <br><br> Escenario 2: <br>Dado que el mecánico se encuentra en el historial de servicios de una motocicleta con múltiples intervenciones registradas, cuando aplica filtros por tipo de servicio, rango de fechas o repuestos específicos, entonces el sistema muestra solamente los registros que coinciden con los criterios de filtrado, permitiendo un análisis más focused del historial de mantenimiento. | EP-003 |
-| US-012 | Resumen mensual de servicios, alertas y gastos | Como motociclista, quiero ver un resumen mensual de los servicios, alertas y gastos de mi moto, para tener una visión clara de su estado y del dinero invertido. | Escenario 1: <br>Dado que existen registros de servicios, alertas y gastos de mantenimiento para la motocicleta durante el mes actual, cuando el motociclista accede a la sección de reportes mensuales y selecciona un mes específico, entonces el sistema genera un resumen consolidado que incluye el total de gastos, cantidad de alertas, servicios realizados, kilometraje recorrido y una calificación del estado general del vehículo. <br><br> Escenario 2: <br>Dado que el motociclista se encuentra en el reporte mensual de su motocicleta, cuando solicita exportar o compartir el reporte, entonces el sistema genera un documento descargable en formato PDF con gráficos de tendencias, tablas comparativas con meses anteriores y un desglose detallado de categorías de gastos para su análisis financiero. | EP-003 |
-| US-013 | Subscripción con mecánico. | Como motociclista, quiero poder establecer una relación con mi mecánico de confianza dentro de la aplicación para darle acceso a los datos recopilados, así como permitirle enviarme mensajes o agendar citas. | Escenario 1: <br>Dado que el motociclista se encuentre en la seccion de mecanicos, <br>cuando seleccione al mecánico desde la lista de disponibles o ingrese un código de invitación, <br>entonces el sistema deberá enviar una solicitud de relación al mecánico elegido. <br><br> Escenario 2: <br>Dado que un motociclista ha enviado una solicitud de relación a un mecánico, <br>cuando el mecánico acepte la solicitud, <br>entonces el sistema deberá confirmar la relación establecida y otorgar al mecánico acceso autorizado a los datos del motociclista. | EP-005 |
-| US-014 | Visualización de subscripciones activas con clientes. | Como mecánico, quiero poder visualizar las subscripciones activas de todos mis clientes, para tener claridad sobre qué motociclistas me han otorgado acceso a sus datos y poder gestionar mejor la relación. | Escenario 1: <br>Dado que existen clientes que han aceptado compartir sus datos de motocicleta con el mecánico a través de suscripciones activas, cuando el mecánico accede a la sección de gestión de suscripciones en su interfaz, entonces el sistema muestra una lista completa de todos los motociclistas con suscripciones vigentes, incluyendo nombre, modelo de moto, fecha de suscripción y nivel de acceso granted. <br><br> Escenario 2: <br>Dado que un cliente ha revocado recientemente his suscripción de compartir datos con el mecánico, cuando el mecánico consulta la lista de suscripciones activas o actualiza la vista, entonces el sistema excluye automáticamente a dicho cliente de la lista y lo mueve al historial de suscripciones anteriores, manteniendo un registro de la relación previa pero sin mostrar acceso actual. | EP-005 |
-| US-015 | Terminación de la subscripcion con el mecanico | Como motociclista , quiero poder terminar o cambiar la relación de vinculación en cualquier momento, para asegurar mi privacidad y poder elegir un nuevo mecánico si lo deseo. | Escenario 1: <br>Dado que existe una suscripción activa entre el motociclista y un taller mecánico, cuando el motociclista accede a la configuración de privacidad en su aplicación y confirma la acción de "Revocar acceso", entonces el sistema elimina inmediatamente los permisos de acceso a los datos y notifica al taller sobre la terminación de la relación. <br><br> Escenario 2: <br>Dado que la suscripción entre el motociclista y el taller mecánico ha sido cancelada recientemente, cuando el mecánico intenta acceder a los datos históricos del vehículo o el motociclista busca información del taller en la aplicación, entonces el sistema muestra un mensaje indicando que no hay relación activa y bloquea el acceso a toda información compartida previamente hasta que se establezca una nueva vinculación explícita. | EP-005 |
-| US-016 | Terminación de la subscripción con el cliente. | Como mecánico, <br>quiero poder terminar la relación de vinculación con un motociclista en cualquier momento, <br>para asegurar que no tenga acceso a mis servicios si ya no deseo mantener la relación. | Escenario 1: <br>Dado que existe una relación de vinculación activa entre el mecánico y un motociclista cliente, cuando el mecánico accede al perfil del cliente en su sistema y selecciona la opción "Terminar relación de vinculación", entonces el sistema revoca inmediatamente todos los permisos de acceso a los datos del cliente, elimina la motocicleta de su lista de vehículos gestionados y envía una notificación automática al motociclista informando sobre la finalización del servicio. <br><br> Escenario 2: <br>Dado que el mecánico ha cancelado la suscripción de vinculación con un motociclista específico, cuando el mecánico intenta acceder al historial de servicios o datos de la motocicleta del cliente, o cuando el motociclista busca información del taller en su aplicación, entonces el sistema muestra un mensaje de "Relación no activa" y restringe completamente el acceso a toda información compartida previamente, requiriendo una nueva solicitud de vinculación mutua para restaurar el acceso. | EP-005 |
-| US-017 | Gestión de múltiples suscripciones con diferentes mecánicos | Como motociclista, quiero poder tener y administrar suscripciones con más de un mecánico a la vez, para consultar métricas y recibir soporte especializado en diferentes áreas o ubicaciones. | Escenario 1: Dado que el motociclista mantiene suscripciones activas con múltiples talleres mecánicos, cuando el usuario accede a la sección de gestión de suscripciones en su aplicación, entonces el sistema muestra una lista completa con todos los mecánicos suscritos, permitiendo habilitar/deshabilitar notificaciones, revocar acceso individualmente y ver el nivel de permisos granted para cada taller. <br><br> Escenario 2: <br>Dado que el motociclista tiene relaciones activas con varios talleres mecánicos simultáneamente, cuando recibe notificaciones o alertas relacionadas con el estado de su motocicleta, entonces el sistema identifica claramente el taller de origen en cada mensaje y permite filtrar las comunicaciones por mecánico específico para una mejor organización. | EP-005 |
-| US-018 | Notificación de nuevas suscripciones | Como mecánico, quiero recibir una notificación cuando un motociclista me otorgue acceso, para poder darle seguimiento inmediato y contactarlo si es necesario. | Escenario 1: <br>Dado que un motociclista ha enviado una solicitud de vinculación a un mecánico, <br>cuando el motociclista confirme la suscripción, <br>entonces el sistema debe enviar una notificación push al mecánico informando sobre la nueva relación <br><br> Escenario 2: <br>Dado que el mecánico ha recibido una notificación de nueva suscripción, <br>cuando accede a la sección de suscripciones en la aplicación, <br>entonces el sistema debe mostrar al nuevo cliente en la lista con sus datos básicos (nombre, modelo de moto, fecha de suscripción). | EP-005 |
-| US-019 | Historial de suscripciones pasadas | Como mecánico, quiero ver el historial de clientes con los que tuve suscripción, para mantener un registro de relaciones previas aunque ya no estén activas. | Escenario 1: <br>Dado que un cliente ha revocado o terminado su suscripción con un mecánico, <br>cuando el mecánico consulte la sección de historial de suscripciones, <br>entonces el sistema debe mostrar al cliente en un listado de relaciones pasadas con fecha de inicio y de finalización. <br><br> Escenario 2: <br>Dado que existen múltiples suscripciones pasadas, <br>cuando el mecánico aplique filtros por fecha o por cliente, <br>entonces el sistema debe mostrar únicamente las suscripciones que coincidan con los criterios de búsqueda. | EP-003 |
-| US-020 | Notificación diferenciada de alertas críticas | Como motociclista, quiero que las alertas en la app se clasifiquen por nivel de severidad (informativa, preventiva, crítica), para poder priorizar mi respuesta según la urgencia. | Escenario 1: <br>Dado que el sistema detecta una condición anómala en la motocicleta, <br>cuando la anomalía se clasifica como informativa, preventiva o crítica, <br>entonces el sistema debe enviar una notificación diferenciada con un color, ícono o etiqueta que refleje el nivel de severidad. <br><br> Escenario 2: <br>Dado que el motociclista recibe varias alertas en la aplicación, <br>cuando accede a la bandeja de notificaciones, <br>entonces el sistema debe mostrar las alertas agrupadas y ordenadas por nivel de severidad, priorizando las críticas en la parte superior. | EP-002 |
-| US-021 | Redirección al aplicativo web. | Como usuario, quiero que exista un botón en la landing page que me redirija al dashboard del aplicativo web del sistema, para acceder a este sin tener que buscar otro enlace. | Escenario 1: <br>Dado un usuario en la landing page de la startup, cuando hace clic en el botón "Acceder al Dashboard" ubicado en el header de la página, entonces el sistema redirige automáticamente a la URL del aplicativo web, abriendo la página de Inicio de Sesión. <br><br> Escenario 2: <br>Dado un usuario que ya ha iniciado sesión previamente en el aplicativo web, cuando accede a la landing page y hace clic en el botón "Dashboard", entonces el sistema verifica las credenciales almacenadas y redirige directamente al dashboard principal sin requerir un nuevo inicio de sesión. | EP-006 |
-| US-022 | Redirección a la descarga del aplicativo. | Como usuario, quiero que exista un botón en la landing page que me redirija a la descarga del aplicativo móvil, para poder acceder al mismo sin tener que buscar otro enlace. | Escenario 1: <br>Dado que un usuario se encuentra en la landing page del aplicativo, cuando hace clic en el botón principal de "Descargar App" ubicado prominente en la página, entonces el sistema redirige automáticamente a la store correspondiente (Google Play Store o Apple App Store) según el sistema operativo de su dispositivo. <br><br> Escenario 2: <br>Dado que un usuario está navegando en la landing page desde un dispositivo móvil, cuando selecciona el botón de "Descargar Ahora" en la sección de llamada a la acción, entonces el sistema detecta automáticamente el tipo de dispositivo y lo redirige directamente al enlace de descarga específico para su sistema operativo sin pasos intermedios. | EP-006 |
-| US-023 | Visualización de Misión y Visión de la startup. | Como usuario, quiero ver una sección en la landing page con la Misión y Visión de la startup para conocer más a detalle los objetivos del proyecto. | Escenario 1: <br>Dado un usuario en la landing page de la startup, cuando hace clic en la sección "Nuestra Propuesta" en el menú principal, entonces el sistema muestra la Misión y Visión de la empresa en un diseño claro y conciso, con iconos representativos y texto destacado que comunica el propósito y los objetivos a largo plazo. <br><br> Escenario 2: <br>Dado un visitante interesado en los valores de la startup, cuando se desplaza hasta el pie de página de la landing page, entonces el sistema presenta un resumen de la Misión y Visión junto con los principios fundamentales de la empresa, permitiendo al usuario comprender la esencia del proyecto de forma rápida. | EP-006 |
-| US-024 | Testimonios de usuarios previos. | Como usuario interesado en el producto, quiero ver testimonios reales de clientes en la landing page, para poder confiar en la efectividad de la solución antes de probar el sistema. | Escenario 1: <br>Dado un usuario en la landing page, cuando se desplaza hasta la sección "Experiencias de Usuarios", entonces el sistema muestra al menos tres testimonios verificados con foto, nombre, ubicación y calificación por estrellas, junto con una descripción breve de su experiencia usando el sistema. <br><br> Escenario 2: <br>Dado un usuario interesado en conocer opiniones específicas, cuando hace clic en el botón "Ver más testimonios" en la sección designada, entonces el sistema redirige a una página dedicada con filtros por tipo de motocicleta, tiempo de uso del sistema y tipo de servicio evaluado. | EP-006 |
-| US-025 | Sección de ¿Cómo Funciona?. | Como usuario, quiero ver una sección de en la landing page que explique el funcionamiento general del sistema, para entender el valor agregado y la tecnología detrás del producto. | Escenario 1: <br>Dado un usuario en la landing page, cuando se desplaza hasta la sección "¿Cómo Funciona?", entonces el sistema muestra una línea de tiempo visual con 4 pasos claros (ej: "Conecta los sensores", "Monitorea en tiempo real", "Recibe alertas inteligentes", "Optimiza tu rendimiento"), cada uno con un ícono representativo y una breve descripción. <br><br> Escenario 2: <br>Dado un usuario interesado en detalles técnicos, cuando hace clic en cualquier paso de la sección "¿Cómo Funciona?", entonces el sistema expande ese paso mostrando una explicación más detallada, un gráfico ilustrativo y opcionalmente un video corto demostrativo de esa funcionalidad específica. | EP-006 |
-| US-026 | Registro inicial de moto | Como motociclista, quiero registrar mi moto con sus datos básicos (placa, marca, modelo, año, número de serie), para tener mi vehículo identificado dentro del sistema. | Escenario 1: Registro exitoso <br><br> Dado que el motociclista accede a la opción “Registrar nueva moto”, cuando ingresa correctamente los datos básicos de la moto (placa, marca, modelo, año, número de serie), entonces el sistema guarda la moto y muestra un mensaje de confirmación: “Moto registrada con éxito”. <br><br> Escenario 2: <br><br> Dado que el motociclista intenta registrar una moto, cuando ingresa una placa que ya existe en su cuenta, entonces el sistema rechaza el registro y muestra un mensaje de error: “La placa ya está registrada en tu perfil”. | EP-007 |
-| US-027 | Consulta de motos | Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una. | Escenario 1: <br><br> Dado que el motociclista tiene varias motos registradas, cuando accede a la sección “Mis Motos”, entonces el sistema muestra una lista con cada moto y sus datos básicos (placa, marca, modelo, año). <br><br> Escenario 2: <br><br> Dado que el motociclista no tiene motos registradas, cuando accede a la sección “Mis Motos”, entonces el sistema muestra un mensaje: “Aún no tienes motos registradas. Registra tu primera moto aquí”. | EP-007 |
-| US-028 | Actualización de información de moto | Como motociclista, quiero actualizar los datos de mi moto registrada (ej. cambio de color, actualización de seguro, accesorios relevantes), para mantener la información de mi vehículo al día. | Escenario 1: <br><br> Dado que el motociclista selecciona una moto registrada, cuando actualiza su información (ej. cambio de color o seguro) y guarda los cambios, entonces el sistema actualiza los datos y muestra un mensaje de confirmación: “La información de tu moto ha sido actualizada”. <br><br> Escenario 2: <br><br> Dado que el motociclista intenta actualizar una moto, cuando deja campos obligatorios vacíos o ingresa datos inválidos (ej. un año inexistente), entonces el sistema rechaza la actualización y muestra mensajes de validación indicando los errores. | EP-007 |
-| US-029 | Eliminación de moto | Como motociclista, quiero dar de baja una moto de mi cuenta, para mantener en el sistema solo mis vehículos vigentes. | Escenario 1: <br><br> Dado que el motociclista desea dar de baja una moto, cuando selecciona la opción “Eliminar moto” y confirma la acción, entonces el sistema elimina el registro de la moto y la quita de la lista de vehículos. <br><br> Escenario 2: <br><br> Dado que el motociclista selecciona la opción “Eliminar moto”, cuando aparece el cuadro de confirmación y decide cancelar la acción, entonces el sistema no elimina la moto y la mantiene en la lista de vehículos registrados. | EP-007 |
-| TS-001 | Uso de polling para detección. | Como desarrollador, quiero implementar un mecanismo de sondeo periódico (polling) para leer los valores de los sensores de la motocicleta (ej. presión de llantas, temperatura del motor, consumo de combustible), <br>para garantizar que la aplicación obtenga datos actualizados constantemente, y estos se vean registrados a lo largo del tiempo. | Escenario 1: <br>Dado que la aplicación está conectada a los sensores de la motocicleta y el sistema de polling está configurado con un intervalo específico, cuando se ejecuta el ciclo periódico de lectura de sensores, entonces el sistema obtiene los valores actualizados de presión de llantas, temperatura del motor y consumo de combustible, y los almacena con timestamp en la base de datos local para su posterior análisis. <br><br> Escenario 2: <br>Dado que el último ciclo de polling detectó un valor de sensor que supera los umbrales predefinidos de seguridad, cuando el sistema procesa y valida esta lectura anómala, entonces genera inmediatamente un evento de alerta prioritario que activa las notificaciones al usuario y registra el incidente en el historial de anomalías del vehículo. <br><br> Escenario 3: <br>Dado que todos los valores de sensores leídos durante el ciclo de polling se encuentran dentro de los rangos normales establecidos, cuando el sistema completa la lectura y verificación de datos, entonces actualiza los registros históricos con los nuevos valores sin generar alertas ni notificaciones al usuario, manteniendo el funcionamiento silencioso del monitoreo. | EP-004 |
-| TS-002 | Monitoreo del estado de las métricas. | Como desarrollador, quiero que las métricas recopiladas actuales del vehículo aparezcan en el monitor serial del dispositivo, para comprobar que estas coincidan con los valores reales. | Escenario 1: <br>Dado que el sistema de sensores de la motocicleta está operativo y enviando datos en tiempo real, cuando se ejecuta la rutina de monitoreo y adquisición de datos, entonces los valores actuales de presión de llantas, temperatura del motor y consumo de combustible se imprimen en el monitor serial cada 2 segundos con el formato: "[TIMESTAMP] Sensor: [VALOR] [UNIDAD]". <br><br> Escenario 2: <br>Dado que un sensor específico reporta un valor que excede los umbrales normales predefinidos, cuando el sistema procesa y muestra este dato en el monitor serial, entonces la métrica aparece destacada con el formato "[ALERTA] Sensor: [VALOR] [UNIDAD] - FUERA DE RANGO" para facilitar su identificación inmediata durante las pruebas. <br><br> Escenario 3: <br>Dado que los sensores están reportando valores dentro de los rangos normales sin fluctuaciones significativas, cuando el sistema muestra las lecturas en el monitor serial, entonces los datos aparecen con valores estables y consistentes, manteniendo una variación máxima del 5% entre lecturas consecutivas y reflejando fielmente el comportamiento real de los sensores sin distorsiones. | EP-004 |
-| TS-003 | Lectura de sensor de presión de llantas | Como desarrollador, quiero implementar la lectura periódica de los sensores de presión de llantas, para disponer de datos confiables en el sistema. | Escenario 1: <br>Dado que los sensores de presión de llantas están correctamente conectados y calibrados, cuando el sistema ejecuta la rutina periódica de lectura de sensores, entonces obtiene y registra el valor actual en PSI de cada llanta (delantera y trasera) con una precisión de ±1 PSI and timestamp of the measurement. <br><br> Escenario 2: <br>Dado que se ha realizado una lectura de presión de llantas con valores fuera del rango seguro establecido (menor a 28 PSI o mayor a 40 PSI para motocicletas estándar), cuando el sistema procesa estos datos, entonces marca automáticamente la lectura como anómala en la base de datos y activa el protocolo de notificación de alerta temprana. | EP-04 |
-| TS-004 | Lectura de sensor de temperatura del motor | Como desarrollador, quiero integrar la lectura del sensor de temperatura del motor, para detectar condiciones de sobrecalentamiento. | Escenario 1: <br>Dado que el sensor de temperatura del motor está instalado y funcionando correctamente, cuando el sistema ejecuta la rutina de monitoreo periódico, entonces el valor actual de temperatura en grados Celsius se registra en la memoria del dispositivo con una precisión de más o menos 2°C y se almacena con su timestamp correspondiente. <br><br> Escenario 2: <br>Dado que la lectura de temperatura del motor supera los 95°C (umbral de sobrecalentamiento para la mayoría de motocicletas), cuando el sistema procesa este dato, entonces marca la lectura como alerta crítica interna, activa el flag de sobrecalentamiento en el sistema y prepara el protocolo de notificación de emergencia. <br><br> Escenario 3: <br>Dado que la temperatura del motor se mantiene entre 70°C y 80°C (rango operativo normal), cuando el sistema registra la lectura en el log de datos, entonces almacena el valor sin activar alertas ni banderas de advertencia, manteniendo el estado operativo normal del sistema de monitoreo. | EP-04 |
-| TS-005 | Lectura de sensor de consumo de combustible | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio. | Escenario 1: <br>Dado que el motor de la motocicleta está en marcha y el sensor de flujo de combustible detecta circulación de combustible, cuando el sistema realiza la lectura periódica del sensor, entonces calcula el consumo instantáneo en L/100km basado en el flujo actual y la velocidad de la motocicleta, actualizando el valor cada 5 segundos. <br><br> Escenario 2: <br>Dado que el motociclista ha finalizado un trayecto y el motor se apaga, cuando el sistema procesa todos los datos acumulados del viaje, entonces calcula el consumo promedio de combustible dividiendo el total de combustible consumido entre la distancia recorrida, mostrando el resultado en km/L con dos decimales de precisión. <br><br> Escenario 3: <br>Dado que el motor de la motocicleta está apagado y no hay circulación de combustible, cuando el sistema ejecuta la rutina de lectura del sensor de flujo, entonces reporta un valor de 0.0 L/h para el consumo instantáneo y mantiene inactivo el cálculo de consumo hasta que se detecte nuevo flujo. | EP-04 |
-| TS-006 | Registro de métricas en memoria local | Como desarrollador, quiero que todas las métricas capturadas se almacenen en memoria local del dispositivo, para permitir la persistencia de datos incluso sin conexión a la app. | Escenario 1: <br>Dado que se completa exitosamente una lectura de cualquier sensor del sistema (presión, temperatura, combustible), cuando se obtiene el valor medido, entonces los datos se almacenan inmediatamente en la memoria local con un timestamp preciso y se etiquetan con el tipo de sensor correspondiente para su posterior recuperación. <br><br> Escenario 2: <br>Dado que la memoria local alcanza su capacidad máxima de almacenamiento (ej. 10,000 registros), cuando se intenta guardar un nuevo dato y el espacio está lleno, entonces el sistema elimina automáticamente el 10% de los registros más antiguos para liberar espacio y continúa almacenando los nuevos datos sin interrupción. <br><br> Escenario 3: <br>Dado que la aplicación recupera la conexión a internet después de un período sin conexión, cuando se ejecuta el proceso de sincronización con el servidor, entonces la memoria local envía todos los registros almacenados durante el período offline y los marca como sincronizados una vez confirmada su recepción exitosa. | EP-04 |
-| TS-007 | Sincronización de datos con la aplicación móvil | Como desarrollador, quiero sincronizar los datos de métricas almacenados en el dispositivo con la app móvil, para asegurar que el usuario siempre tenga la información más reciente. | Escenario 1: <br>Dado que el dispositivo tiene registros locales de métricas sin sincronizar almacenados en su memoria, cuando la aplicación móvil establece conexión estable con el dispositivo, entonces se inicia la transferencia de todos los datos pendientes en lotes organizados por timestamp y tipo de métrica. <br><br> Escenario 2: <br>Dado que la transmisión de datos desde el dispositivo hacia la aplicación móvil se ha completado exitosamente, cuando la aplicación confirma la recepción íntegra de todos los registros, entonces el dispositivo marca los datos como sincronizados en su base de datos local y los mantiene como respaldo histórico por un período determinado. <br><br> Escenario 3: <br>Dado que ocurre una falla durante el proceso de sincronización de datos, cuando el sistema reintenta la conexión y transferencia, entonces identifica los registros pendientes de sincronización mediante timestamps y envía solamente el diferencial de datos que no había sido transferido previamente. | EP-04 |
-| TS-008 | Integración con framework de comunicación IoT | Como desarrollador, quiero integrar el framework IoT del proyecto para enviar los datos recopilados a la nube, para habilitar reportes remotos y análisis avanzados. | Escenario 1: <br>Dado que el dispositivo tiene conexión a internet activa y estable, cuando se completa un ciclo de lectura de sensores y procesamiento de datos, entonces el sistema envía automáticamente el paquete de métricas a la nube utilizando el framework IoT configurado, aplicando el protocolo de seguridad correspondiente. <br><br> Escenario 2: <br>Dado que la conexión a internet no está disponible o la transmisión a la nube falla, cuando el sistema intenta enviar los datos, entonces almacena la información en una cola local persistente con timestamp y reintenta el envío cada 5 minutos hasta que se restablezca la conectividad. <br><br> Escenario 3: <br>Dado que el envío de datos a la nube se completa exitosamente, cuando el servidor cloud confirma la recepción mediante acknowledge, entonces el sistema registra la confirmación en el log serial con el mensaje "[OK] Datos sincronizados - [TIMESTAMP]" y elimina los datos correspondientes de la cola local. | EP-04 |
+  | User Story ID | Título                                                      | Descripción                                                                                                                                                                                                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Relacionado con (Epic ID) |
+  |---------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------|
+  | US-001        | Visualización del consumo de combustible en tiempo real     | Como motociclista, quiero visualizar en tiempo real el consumo de combustible de mi moto, para poder optimizar mi forma de conducir y ahorrar gastos.                                                                                                                                                                                                  | Escenario 1: <br>Dado que el motociclista está conduciendo la motocicleta con la aplicación conectada, cuando accede al panel de métricas en tiempo real, entonces el sistema debe mostrar el consumo actual de combustible en L/100km y el valor debe actualizarse continuamente durante la conducción <br><br> Escenario 2: Dado que el motociclista ha finalizado un recorrido con la aplicación activa, cuando solicita ver el resumen del viaje completado, entonces el sistema debe mostrar el consumo promedio de combustible del trayecto en km/L y debe incluir la distancia total recorrida y el tiempo de viaje.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-001                    |
+  | US-002        | Registro de gastos de mantenimiento y repuestos             | Como motociclista, quiero registrar los gastos de mantenimiento y repuestos que realizo, para llevar un control acumulado mensual o por kilometraje.                                                                                                                                                                                                   | Escenario 1: <br>Dado que el motociclista se encuentra en la aplicación, cuando revisa sus gastos, entonces el sistema le muestra un listado de sus gastos recientes. <br><br> Escenario 2: <br>Dado que el motociclista se encuentra en la aplicación, cuando desea agrega un gasto, entonces el sistema muestra el formulario de registro de gastos.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-001                    |
+  | US-003        | Acceso al historial de servicios realizados                 | Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó.                                                                                                                                                                              | Escenario 1: <br>Dado que un motociclista desea visualizar los mantenimientos realizados, cuando el motociclista solicita ver los mantenimientos realizados y por realizar, entonces el sistema muestra todos los mantenimientos, separados según su estado. <br><br> Escenario 2: <br>que un motociclista desea ver los detalles de un mantenimiento, cuando el motociclista revisa los detalles del mantenimiento hecho, entonces el sistema muestra los detalle del mantenimiento junto a sus gastos asociados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-001                    |
+  | US-004        | Comparación de métricas entre motos similares               | Como mecánico, quiero comparar las métricas de dos motos similares, para detectar posibles problemas o desviaciones en el rendimiento que requieran revisión.                                                                                                                                                                                          | Escenario 1: <br>Dado que existen en el sistema two motocicletas del mismo modelo y año con métricas registradas, cuando el mecánico selecciona ambas motos y solicita comparar sus métricas, entonces el sistema muestra una vista lado a lado con el consumo de combustible, temperatura de operación, kilometraje y alertas de mantenimiento. <br><br> Escenario 2: <br>Dado que la comparación entre dos motocicletas similares muestra variaciones significativas en sus métricas de rendimiento, cuando el mecánico revisa el reporte de comparación, entonces el sistema destaca las diferencias críticas y proporciona sugerencias de posibles problemas mecánicos que podrían causar dichas discrepancias.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-001                    |
+  | US-005        | Notificación de alerta por consumo excesivo.                | Como motociclista, quiero que el aplicativo móvil me notifique en caso de que el sistema detecte un consumo anormalmente alto de combustible por kilómetro.                                                                                                                                                                                            | Escenario 1: <br>Dado que el consumo de combustible durante un trayecto supera los parámetros establecidos como normales para el modelo de la motocicleta, cuando este consumo anormalmente alto se mantiene durante al menos 15 minutos de conducción continua, entonces el sistema emite una notificación push en el aplicativo móvil alertando al usuario sobre el alto consumo de combustible. <br><br> Escenario 2: <br>Dado que el consumo de combustible había superado los parámetros normales y se había emitido una alerta previa, cuando el consumo se mantiene dentro de los rangos normales establecidos durante los últimos 10 minutos de conducción, entonces el sistema envía una notificación push al usuario informando que el consumo de combustible se ha normalizado y la alerta previa ha sido desactivada.                                                                                                                                                                                                                                                                                                                                                                                                                                                             | EP-02                     |
+  | US-006        | Notificación de alerta por presión de llantas.              | Como motociclista, <br>quiero que el aplicativo móvil me notifique cuando la presión de las llantas sea anormal, <br>para poder tomar acciones preventivas que garanticen mi seguridad y el buen estado de la motocicleta.                                                                                                                             | Escenario 1: <br>Dado que la presión de una o más llantas de la motocicleta está por debajo del rango recomendado por el fabricante, cuando esta condición de baja presión se mantiene durante más de 5 minutos de conducción continua, entonces el sistema envía una notificación push al usuario especificando qué llanta(s) requiere(n) revisión inmediata y mostrando los valores de presión actuales. <br><br> Escenario 2: <br>Dado que la presión de las llantas que habían estado por debajo del rango recomendado ahora se encuentra dentro de los parámetros normales, cuando esta condición estable se mantiene durante al menos 5 minutos de conducción continua, entonces el sistema envía una notificación push al usuario informando que la presión de las llantas se ha normalizado e indicando los valores actuales dentro del rango seguro.                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-002                    |
+  | US-007        | Recomendación de mantenimiento.                             | Como mecánico, quiero poder agendar citas con mis clientes en caso de detectar alguna medida anómala en sus motocicletas desde mi interfaz, para brindar un servicio oportuno y mantener la seguridad de sus vehículos.                                                                                                                                | Escenario 1: <br>Dado que el sistema ha detectado una medida anómala en los datos de rendimiento de la motocicleta de un cliente registrado, cuando el mecánico accede a la interfaz de gestión de clientes y selecciona al cliente afectado, entonces el sistema muestra las métricas anómalas y permite generar una recomendación de mantenimiento con la posibilidad de proponer una cita en el calendario disponible. <br><br> Escenario 2: <br>Dado que existe una cita de mantenimiento propuesta por el mecánico para un cliente específico, cuando el cliente confirma la cita a través de la aplicación móvil, entonces el sistema registra automáticamente la cita en la agenda del mecánico, marca el horario como ocupado y envía notificaciones de confirmación tanto al mecánico como al cliente con los detalles de la cita. <br><br> Escenario 3: <br>Dado que existe una cita de mantenimiento propuesta por el mecánico pendiente de confirmación, cuando el cliente rechaza la cita o solicita reprogramación a través de la aplicación móvil, entonces el sistema notifica inmediatamente al mecánico sobre la respuesta del cliente, libera el horario previamente reservado y habilita la opción para que el mecánico pueda proponer una nueva fecha y hora disponible. | EP-002                    |
+  | US-008        | Notificación de sobrecalentamiento del motor                | Como motociclista, <br>quiero que el aplicativo móvil me notifique cuando el motor de mi motocicleta esté presentando un sobrecalentamiento, <br>para poder detenerme a tiempo y evitar daños mayores al vehículo o accidentes.                                                                                                                        | Escenario 1: <br>Dado que la temperatura del motor de la motocicleta ha superado el límite máximo seguro establecido por el fabricante, cuando esta condición de sobrecalentamiento se mantiene durante más de 60 segundos consecutivos, entonces el sistema emite una notificación de alerta urgente al usuario indicando el riesgo de sobrecalentamiento y recomendando detener la marcha de manera segura. <br><br> Escenario 2: <br>Dado que la temperatura del motor había superado los límites seguros y se había emitido una alerta de sobrecalentamiento, cuando la temperatura regresa y se mantiene dentro del rango normal durante al menos 5 minutos consecutivos, entonces el sistema envía una notificación al usuario informando que la temperatura del motor se ha normalizado y la alerta ha sido desactivada. <br><br> Escenario 3: <br>Dado que se han registrado tres o más episodios de sobrecalentamiento del motor en un período de 7 días, cuando el sistema detecta este patrón recurrente anómalo, entonces el sistema notifica al usuario recomendando agendar una revisión de mantenimiento urgente y ofrece la opción de contactar directamente con un taller especializado.                                                                                     | EP-002                    |
+  | US-009        | Sugerencias personalizadas para próximos mantenimientos     | Como motociclista, quiero recibir sugerencias personalizadas sobre el próximo mantenimiento que debo hacer, basadas en el historial y uso de mi moto.                                                                                                                                                                                                  | Escenario 1: <br>Dado que se ha alcanzado el kilometraje o tiempo máximo recomendado para el mantenimiento de un componente específico según los intervalos establecidos por el fabricante, cuando el sistema analice el historial de servicios y el uso actual de la motocicleta, entonces generará una sugerencia personalizada indicando la necesidad de revisión o cambio del componente y mostrará el motivo basado en los criterios técnicos. <br><br> Escenario 2: <br>Dado que existen recomendaciones de mantenimiento pendientes generadas por el sistema para la motocicleta del usuario, cuando el motociclista acceda a la sección de sugerencias de mantenimiento en el aplicativo, entonces el sistema mostrará una lista priorizada de recomendaciones específicas con detalles sobre el componente, la razón de la sugerencia y el nivel de urgencia para cada mantenimiento requerido.                                                                                                                                                                                                                                                                                                                                                                                      | EP-003                    |
+  | US-010        | Generación de reporte de salud del vehículo                 | Como mecánico, quiero generar un reporte de salud del vehículo que incluya estado de batería, temperatura, consumo y alertas recientes, para entregarlo al cliente al final del servicio.                                                                                                                                                              | Escenario 1: <br>Dado que el mecánico ha completado un servicio de mantenimiento en una motocicleta y todos los datos del vehículo están actualizados en el sistema, cuando el mecánico selecciona la opción "Generar Reporte de Salud" desde la interfaz de finalización de servicio, entonces el sistema produce un documento detallado que incluye el estado de la batería, historial de temperatura, consumo de combustible, alertas recientes y las intervenciones realizadas durante el servicio. <br><br> Escenario 2: <br>Dado que se ha generado exitosamente el reporte de salud del vehículo para el cliente, cuando el mecánico selecciona la opción de compartir reporte, entonces el sistema ofrece las opciones de imprimir el documento directamente o enviarlo por correo electrónico al cliente desde la misma interfaz, con un formato profesional y fácil de entender.                                                                                                                                                                                                                                                                                                                                                                                                    | EP-003                    |
+  | US-011        | Consulta del historial de servicios por parte del mecánico  | Como mecánico, quiero consultar el historial de servicios realizados en una moto específica, para tomar decisiones informadas al momento del diagnóstico.                                                                                                                                                                                              | Escenario 1: <br>Dado que dado que un mecánico desea visualizar los mantenimientos de un motociclista con  mantenimientos programados, cuando el mecánico ingresa la placa o el nombre del cliente, entonces el sistema muestra los mantenimientos filtrados por moticiclista o placa. <br><br> Escenario 2: <br>Dado que el mecánico se encuentra visualizando los servicios de una motocicleta, cuando interactua con algún mantenimiento programado, entonces el sistema le permite asiganr un gasto y marcar el mantenimiento como completado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-003                    |
+  | US-012        | Resumen mensual de servicios, alertas y gastos              | Como motociclista, quiero ver un resumen mensual de los servicios, alertas y gastos de mi moto, para tener una visión clara de su estado y del dinero invertido.                                                                                                                                                                                       | Escenario 1: <br>Dado que existen registros de servicios, alertas y gastos de mantenimiento para la motocicleta durante el mes actual, cuando el motociclista accede a la sección de reportes mensuales y selecciona un mes específico, entonces el sistema genera un resumen consolidado que incluye el total de gastos, cantidad de alertas, servicios realizados, kilometraje recorrido y una calificación del estado general del vehículo. <br><br> Escenario 2: <br>Dado que el motociclista se encuentra en el reporte mensual de su motocicleta, cuando solicita exportar o compartir el reporte, entonces el sistema genera un documento descargable en formato PDF con gráficos de tendencias, tablas comparativas con meses anteriores y un desglose detallado de categorías de gastos para su análisis financiero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-003                    |
+  | US-013        | Subscripción con mecánico.                                  | Como motociclista, quiero poder establecer una relación con mi mecánico de confianza dentro de la aplicación para darle acceso a los datos recopilados, así como permitirle enviarme mensajes o agendar citas.                                                                                                                                         | Escenario 1: <br>Dado que el motociclista se encuentre en la seccion de mecanicos, <br>cuando seleccione al mecánico desde la lista de disponibles o ingrese un código de invitación, <br>entonces el sistema deberá enviar una solicitud de relación al mecánico elegido. <br><br> Escenario 2: <br>Dado que un motociclista ha enviado una solicitud de relación a un mecánico, <br>cuando el mecánico acepte la solicitud, <br>entonces el sistema deberá confirmar la relación establecida y otorgar al mecánico acceso autorizado a los datos del motociclista.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | EP-005                    |
+  | US-014        | Visualización de subscripciones activas con clientes.       | Como mecánico, quiero poder visualizar las subscripciones activas de todos mis clientes, para tener claridad sobre qué motociclistas me han otorgado acceso a sus datos y poder gestionar mejor la relación.                                                                                                                                           | Escenario 1: <br>Dado que un mecánico ya posee suscripciones activas, cuando el mecánico visualiza las suscripciones activas relacionadas a él, entonces el sistema muestra una lista completa de todos los motociclistas con suscripciones vigentes, incluyendo nombre, modelo de moto y fecha de suscripción. <br><br> Escenario 2: <br>Dado que un cliente ha enviadouna solicitud de suscripción a un mecánico, cuando el mecánico visualiza las suscripciones pendientes, entonces el sistema le permite aceptarlas o denegarlas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-005                    |
+  | US-015        | Terminación de la subscripcion con el mecanico              | Como motociclista , quiero poder terminar o cambiar la relación de vinculación en cualquier momento, para asegurar mi privacidad y poder elegir un nuevo mecánico si lo deseo.                                                                                                                                                                         | Escenario 1: <br>Dado que existe una suscripción activa entre el motociclista y un taller mecánico, cuando el motociclista accede a la configuración de privacidad en su aplicación y confirma la acción de "Revocar acceso", entonces el sistema elimina inmediatamente los permisos de acceso a los datos y notifica al taller sobre la terminación de la relación. <br><br> Escenario 2: <br>Dado que la suscripción entre el motociclista y el taller mecánico ha sido cancelada recientemente, cuando el mecánico intenta acceder a los datos históricos del vehículo o el motociclista busca información del taller en la aplicación, entonces el sistema muestra un mensaje indicando que no hay relación activa y bloquea el acceso a toda información compartida previamente hasta que se establezca una nueva vinculación explícita.                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-005                    |
+  | US-016        | Terminación de la subscripción con el cliente.              | Como mecánico, <br>quiero poder terminar la relación de vinculación con un motociclista en cualquier momento, <br>para asegurar que no tenga acceso a mis servicios si ya no deseo mantener la relación.                                                                                                                                               | Escenario 1: <br>Dado que existe una relación de vinculación activa entre el mecánico y un motociclista cliente, cuando el mecánico accede al perfil del cliente en su sistema y selecciona la opción "Terminar relación de vinculación", entonces el sistema revoca inmediatamente todos los permisos de acceso a los datos del cliente, elimina la motocicleta de su lista de vehículos gestionados y envía una notificación automática al motociclista informando sobre la finalización del servicio. <br><br> Escenario 2: <br>Dado que el mecánico ha cancelado la suscripción de vinculación con un motociclista específico, cuando el mecánico intenta acceder al historial de servicios o datos de la motocicleta del cliente, o cuando el motociclista busca información del taller en su aplicación, entonces el sistema muestra un mensaje de "Relación no activa" y restringe completamente el acceso a toda información compartida previamente, requiriendo una nueva solicitud de vinculación mutua para restaurar el acceso.                                                                                                                                                                                                                                                   | EP-005                    |
+  | US-017        | Gestión de múltiples suscripciones con diferentes mecánicos | Como motociclista, quiero poder tener y administrar suscripciones con más de un mecánico a la vez, para consultar métricas y recibir soporte especializado en diferentes áreas o ubicaciones.                                                                                                                                                          | Escenario 1: Dado que el motociclista mantiene suscripciones activas con múltiples talleres mecánicos, cuando el usuario accede a la sección de gestión de suscripciones en su aplicación, entonces el sistema muestra una lista completa con todos los mecánicos suscritos, permitiendo habilitar/deshabilitar notificaciones, revocar acceso individualmente y ver el nivel de permisos granted para cada taller. <br><br> Escenario 2: <br>Dado que el motociclista tiene relaciones activas con varios talleres mecánicos simultáneamente, cuando recibe notificaciones o alertas relacionadas con el estado de su motocicleta, entonces el sistema identifica claramente el taller de origen en cada mensaje y permite filtrar las comunicaciones por mecánico específico para una mejor organización.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-005                    |
+  | US-018        | Notificación de nuevas suscripciones                        | Como mecánico, quiero recibir una notificación cuando un motociclista me otorgue acceso, para poder darle seguimiento inmediato y contactarlo si es necesario.                                                                                                                                                                                         | Escenario 1: <br>Dado que un motociclista ha enviado una solicitud de vinculación a un mecánico, <br>cuando el motociclista confirme la suscripción, <br>entonces el sistema debe enviar una notificación push al mecánico informando sobre la nueva relación <br><br> Escenario 2: <br>Dado que el mecánico ha recibido una notificación de nueva suscripción, <br>cuando accede a la sección de suscripciones en la aplicación, <br>entonces el sistema debe mostrar al nuevo cliente en la lista con sus datos básicos (nombre, modelo de moto, fecha de suscripción).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-005                    |
+  | US-019        | Historial de suscripciones pasadas                          | Como mecánico, quiero ver el historial de clientes con los que tuve suscripción, para mantener un registro de relaciones previas aunque ya no estén activas.                                                                                                                                                                                           | Escenario 1: <br>Dado que un cliente ha revocado o terminado su suscripción con un mecánico, <br>cuando el mecánico consulte la sección de historial de suscripciones, <br>entonces el sistema debe mostrar al cliente en un listado de relaciones pasadas con fecha de inicio y de finalización. <br><br> Escenario 2: <br>Dado que existen múltiples suscripciones pasadas, <br>cuando el mecánico aplique filtros por fecha o por cliente, <br>entonces el sistema debe mostrar únicamente las suscripciones que coincidan con los criterios de búsqueda.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | EP-003                    |
+  | US-020        | Notificación diferenciada de alertas críticas               | Como motociclista, quiero que las alertas en la app se clasifiquen por nivel de severidad (informativa, preventiva, crítica), para poder priorizar mi respuesta según la urgencia.                                                                                                                                                                     | Escenario 1: <br>Dado que el sistema detecta una condición anómala en la motocicleta, <br>cuando la anomalía se clasifica como informativa, preventiva o crítica, <br>entonces el sistema debe enviar una notificación diferenciada con un color, ícono o etiqueta que refleje el nivel de severidad. <br><br> Escenario 2: <br>Dado que el motociclista recibe varias alertas en la aplicación, <br>cuando accede a la bandeja de notificaciones, <br>entonces el sistema debe mostrar las alertas agrupadas y ordenadas por nivel de severidad, priorizando las críticas en la parte superior.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | EP-002                    |
+  | US-021        | Redirección al aplicativo web.                              | Como usuario, quiero que exista un botón en la landing page que me redirija al dashboard del aplicativo web del sistema, para acceder a este sin tener que buscar otro enlace.                                                                                                                                                                         | Escenario 1: <br>Dado un usuario en la landing page de la startup, cuando hace clic en el botón "Acceder al Dashboard" ubicado en el header de la página, entonces el sistema redirige automáticamente a la URL del aplicativo web, abriendo la página de Inicio de Sesión. <br><br> Escenario 2: <br>Dado un usuario que ya ha iniciado sesión previamente en el aplicativo web, cuando accede a la landing page y hace clic en el botón "Dashboard", entonces el sistema verifica las credenciales almacenadas y redirige directamente al dashboard principal sin requerir un nuevo inicio de sesión.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | EP-006                    |
+  | US-022        | Redirección a la descarga del aplicativo.                   | Como usuario, quiero que exista un botón en la landing page que me redirija a la descarga del aplicativo móvil, para poder acceder al mismo sin tener que buscar otro enlace.                                                                                                                                                                          | Escenario 1: <br>Dado que un usuario se encuentra en la landing page del aplicativo, cuando hace clic en el botón principal de "Descargar App" ubicado prominente en la página, entonces el sistema redirige automáticamente a la store correspondiente (Google Play Store o Apple App Store) según el sistema operativo de su dispositivo. <br><br> Escenario 2: <br>Dado que un usuario está navegando en la landing page desde un dispositivo móvil, cuando selecciona el botón de "Descargar Ahora" en la sección de llamada a la acción, entonces el sistema detecta automáticamente el tipo de dispositivo y lo redirige directamente al enlace de descarga específico para su sistema operativo sin pasos intermedios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-006                    |
+  | US-023        | Visualización de Misión y Visión de la startup.             | Como visitante, quiero ver una sección en la landing page con la Misión y Visión de la startup para conocer más a detalle los objetivos del proyecto.                                                                                                                                                                                                  | Escenario 1: <br>Dado un visitante, cuando se encuentra dentro de la landing page, entonces el sistema muestra una sección con la Misión y Visión de la empresa en un diseño claro y conciso. <br><br> Escenario 2: <br>Dado un visitante, cuando se encuentra en la nav bar, entonces el sistema proporciona un acceso directo a la sección.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-006                    |
+  | US-024        | Testimonios de usuarios previos.                            | Como usuario interesado en el producto, quiero ver testimonios reales de clientes en la landing page, para poder confiar en la efectividad de la solución antes de probar el sistema.                                                                                                                                                                  | Escenario 1: <br>Dado un usuario en la landing page, cuando se desplaza hasta la sección "Experiencias de Usuarios", entonces el sistema muestra al menos tres testimonios verificados con foto, nombre, ubicación y calificación por estrellas, junto con una descripción breve de su experiencia usando el sistema. <br><br> Escenario 2: <br>Dado un usuario interesado en conocer opiniones específicas, cuando hace clic en el botón "Ver más testimonios" en la sección designada, entonces el sistema redirige a una página dedicada con filtros por tipo de motocicleta, tiempo de uso del sistema y tipo de servicio evaluado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | EP-006                    |
+  | US-025        | Sección de ¿Cómo Funciona?.                                 | Como usuario, quiero ver una sección de en la landing page que explique el funcionamiento general del sistema, para entender el valor agregado y la tecnología detrás del producto.                                                                                                                                                                    | Escenario 1: <br>Dado un usuario en la landing page, cuando se desplaza hasta la sección "¿Cómo Funciona?", entonces el sistema muestra una línea de tiempo visual con 4 pasos claros (ej: "Conecta los sensores", "Monitorea en tiempo real", "Recibe alertas inteligentes", "Optimiza tu rendimiento"), cada uno con un ícono representativo y una breve descripción. <br><br> Escenario 2: <br>Dado un usuario interesado en detalles técnicos, cuando hace clic en cualquier paso de la sección "¿Cómo Funciona?", entonces el sistema expande ese paso mostrando una explicación más detallada, un gráfico ilustrativo y opcionalmente un video corto demostrativo de esa funcionalidad específica.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | EP-006                    |
+  | US-026        | Registro inicial de moto                                    | Como motociclista, quiero registrar mi moto con sus datos básicos (placa, marca, modelo, año), para tener mi vehículo identificado dentro del sistema.                                                                                                                                                                                                 | Escenario 1: Registro exitoso <br> Dado que el motociclista quiere agregar una moto al sistema, cuando ingresa correctamente los datos básicos de la moto (placa, marca, modelo, año), entonces el sistema guarda la moto y muestra un mensaje de confirmación: “Moto registrada con éxito”. <br><br> Escenario 2: <br><br> Dado que el motociclista intenta registrar una moto, cuando ingresa una placa que ya existe en su cuenta, entonces el sistema rechaza el registro y muestra un mensaje de error: “La placa ya está registrada en tu perfil”.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | EP-007                    |
+  | US-027        | Consulta de motos                                           | Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.                                                                                                                                                                                                                            | Escenario 1: <br> Dado que el motociclista no haregistrado ninguna moto, cuando desea visualizar sus vehiculos registrados, entonces el sistema muestra un mensaje "Ninguna moto registrada". <br><br> Escenario 2: <br><br> Dado que el motociclista tiene motos registradas, cuando visualiza el listado de motos, entonces el sistema muestra un resumen de detalles de la moto y los datos del mecánico vinculado a ella.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-007                    |
+  | US-028        | Actualización de información de moto                        | Como motociclista, quiero actualizar los datos de mi moto registrada (ej. cambio de color, actualización de seguro, accesorios relevantes), para mantener la información de mi vehículo al día.                                                                                                                                                        | Escenario 1: <br> Dado que el motociclista selecciona una moto registrada, cuando actualiza su información (ej. cambio de color o seguro) y guarda los cambios, entonces el sistema actualiza los datos y muestra un mensaje de confirmación: “La información de tu moto ha sido actualizada”. <br><br> Escenario 2: <br><br> Dado que el motociclista intenta actualizar una moto, cuando deja campos obligatorios vacíos o ingresa datos inválidos (ej. un año inexistente), entonces el sistema rechaza la actualización y muestra mensajes de validación indicando los errores.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-007                    |
+  | US-029        | Eliminación de moto                                         | Como motociclista, quiero dar de baja una moto de mi cuenta, para mantener en el sistema solo mis vehículos vigentes.                                                                                                                                                                                                                                  | Escenario 1: <br> Dado que el motociclista desea dar de baja una moto, cuando selecciona la opción “Eliminar moto” y confirma la acción, entonces el sistema elimina el registro de la moto y la quita de la lista de vehículos. <br><br> Escenario 2: <br><br> Dado que el motociclista selecciona la opción “Eliminar moto”, cuando aparece el cuadro de confirmación y decide cancelar la acción, entonces el sistema no elimina la moto y la mantiene en la lista de vehículos registrados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | EP-007                    |
+  | US-030        | Visualización de las características del producto           | Como visitante, quiero poder ver las caracteristicas que brinda la solución                                                                                                                                                                                                                                                                            | Escenario 1: <br> Dado un visitante, cuando se encuentra dentro de la landing page, entonces el sistema muestra una sección con as caracteristicas del producto en un diseño claro y conciso. <br><br> Escenario 2: <br> Dado un visitante, cuando se encuentra en la landing page, entonces el sistema proporciona un acceso directo a la sección de caracteristicas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-006                    |
+  | US-031        | Visualización del equipo de trabajo                         | Como visitante quiero poder ver al equipo de desarollo para así poder conocer a las personas detras del proyecto                                                                                                                                                                                                                                       | Escenario 1: <br> Dado un visitante, cuando se encuentra dentro de la landing page, entonces el sistema muestra una sección con el equipo de trabajo en un diseño claro y conciso. <br><br> Escenario 2: <br> Dado un visitante, cuando se encuentra en la landing page, entonces el sistema proporciona un acceso directo a la sección del equipo de trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-006                    |
+  | TS-001        | Uso de polling para detección.                              | Como desarrollador, quiero implementar un mecanismo de sondeo periódico (polling) para leer los valores de los sensores de la motocicleta (ej. presión de llantas, temperatura del motor, consumo de combustible), <br>para garantizar que la aplicación obtenga datos actualizados constantemente, y estos se vean registrados a lo largo del tiempo. | Escenario 1: <br>Dado que la aplicación está conectada a los sensores de la motocicleta y el sistema de polling está configurado con un intervalo específico, cuando se ejecuta el ciclo periódico de lectura de sensores, entonces el sistema obtiene los valores actualizados de presión de llantas, temperatura del motor y consumo de combustible, y los almacena con timestamp en la base de datos local para su posterior análisis. <br><br> Escenario 2: <br>Dado que el último ciclo de polling detectó un valor de sensor que supera los umbrales predefinidos de seguridad, cuando el sistema procesa y valida esta lectura anómala, entonces genera inmediatamente un evento de alerta prioritario que activa las notificaciones al usuario y registra el incidente en el historial de anomalías del vehículo. <br><br> Escenario 3: <br>Dado que todos los valores de sensores leídos durante el ciclo de polling se encuentran dentro de los rangos normales establecidos, cuando el sistema completa la lectura y verificación de datos, entonces actualiza los registros históricos con los nuevos valores sin generar alertas ni notificaciones al usuario, manteniendo el funcionamiento silencioso del monitoreo.                                                           | EP-004                    |
+  | TS-002        | Monitoreo del estado de las métricas.                       | Como desarrollador, quiero que las métricas recopiladas actuales del vehículo aparezcan en el monitor serial del dispositivo, para comprobar que estas coincidan con los valores reales.                                                                                                                                                               | Escenario 1: <br>Dado que el sistema de sensores de la motocicleta está operativo y enviando datos en tiempo real, cuando se ejecuta la rutina de monitoreo y adquisición de datos, entonces los valores actuales de presión de llantas, temperatura del motor y consumo de combustible se imprimen en el monitor serial cada 2 segundos con el formato: "[TIMESTAMP] Sensor: [VALOR] [UNIDAD]". <br><br> Escenario 2: <br>Dado que un sensor específico reporta un valor que excede los umbrales normales predefinidos, cuando el sistema procesa y muestra este dato en el monitor serial, entonces la métrica aparece destacada con el formato "[ALERTA] Sensor: [VALOR] [UNIDAD] - FUERA DE RANGO" para facilitar su identificación inmediata durante las pruebas. <br><br> Escenario 3: <br>Dado que los sensores están reportando valores dentro de los rangos normales sin fluctuaciones significativas, cuando el sistema muestra las lecturas en el monitor serial, entonces los datos aparecen con valores estables y consistentes, manteniendo una variación máxima del 5% entre lecturas consecutivas y reflejando fielmente el comportamiento real de los sensores sin distorsiones.                                                                                             | EP-004                    |
+  | TS-003        | Lectura de sensor de presión de llantas                     | Como desarrollador, quiero implementar la lectura periódica de los sensores de presión de llantas, para disponer de datos confiables en el sistema.                                                                                                                                                                                                    | Escenario 1: <br>Dado que los sensores de presión de llantas están correctamente conectados y calibrados, cuando el sistema ejecuta la rutina periódica de lectura de sensores, entonces obtiene y registra el valor actual en PSI de cada llanta (delantera y trasera) con una precisión de ±1 PSI and timestamp of the measurement. <br><br> Escenario 2: <br>Dado que se ha realizado una lectura de presión de llantas con valores fuera del rango seguro establecido (menor a 28 PSI o mayor a 40 PSI para motocicletas estándar), cuando el sistema procesa estos datos, entonces marca automáticamente la lectura como anómala en la base de datos y activa el protocolo de notificación de alerta temprana.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-04                     |
+  | TS-004        | Lectura de sensor de temperatura del motor                  | Como desarrollador, quiero integrar la lectura del sensor de temperatura del motor, para detectar condiciones de sobrecalentamiento.                                                                                                                                                                                                                   | Escenario 1: <br>Dado que el sensor de temperatura del motor está instalado y funcionando correctamente, cuando el sistema ejecuta la rutina de monitoreo periódico, entonces el valor actual de temperatura en grados Celsius se registra en la memoria del dispositivo con una precisión de más o menos 2°C y se almacena con su timestamp correspondiente. <br><br> Escenario 2: <br>Dado que la lectura de temperatura del motor supera los 95°C (umbral de sobrecalentamiento para la mayoría de motocicletas), cuando el sistema procesa este dato, entonces marca la lectura como alerta crítica interna, activa el flag de sobrecalentamiento en el sistema y prepara el protocolo de notificación de emergencia. <br><br> Escenario 3: <br>Dado que la temperatura del motor se mantiene entre 70°C y 80°C (rango operativo normal), cuando el sistema registra la lectura en el log de datos, entonces almacena el valor sin activar alertas ni banderas de advertencia, manteniendo el estado operativo normal del sistema de monitoreo.                                                                                                                                                                                                                                           | EP-04                     |
+  | TS-005        | Lectura de sensor de consumo de combustible                 | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio.                                                                                                                                                                                                               | Escenario 1: <br>Dado que el motor de la motocicleta está en marcha y el sensor de flujo de combustible detecta circulación de combustible, cuando el sistema realiza la lectura periódica del sensor, entonces calcula el consumo instantáneo en L/100km basado en el flujo actual y la velocidad de la motocicleta, actualizando el valor cada 5 segundos. <br><br> Escenario 2: <br>Dado que el motociclista ha finalizado un trayecto y el motor se apaga, cuando el sistema procesa todos los datos acumulados del viaje, entonces calcula el consumo promedio de combustible dividiendo el total de combustible consumido entre la distancia recorrida, mostrando el resultado en km/L con dos decimales de precisión. <br><br> Escenario 3: <br>Dado que el motor de la motocicleta está apagado y no hay circulación de combustible, cuando el sistema ejecuta la rutina de lectura del sensor de flujo, entonces reporta un valor de 0.0 L/h para el consumo instantáneo y mantiene inactivo el cálculo de consumo hasta que se detecte nuevo flujo.                                                                                                                                                                                                                                 | EP-04                     |
+  | TS-006        | Registro de métricas en memoria local                       | Como desarrollador, quiero que todas las métricas capturadas se almacenen en memoria local del dispositivo, para permitir la persistencia de datos incluso sin conexión a la app.                                                                                                                                                                      | Escenario 1: <br>Dado que se completa exitosamente una lectura de cualquier sensor del sistema (presión, temperatura, combustible), cuando se obtiene el valor medido, entonces los datos se almacenan inmediatamente en la memoria local con un timestamp preciso y se etiquetan con el tipo de sensor correspondiente para su posterior recuperación. <br><br> Escenario 2: <br>Dado que la memoria local alcanza su capacidad máxima de almacenamiento (ej. 10,000 registros), cuando se intenta guardar un nuevo dato y el espacio está lleno, entonces el sistema elimina automáticamente el 10% de los registros más antiguos para liberar espacio y continúa almacenando los nuevos datos sin interrupción. <br><br> Escenario 3: <br>Dado que la aplicación recupera la conexión a internet después de un período sin conexión, cuando se ejecuta el proceso de sincronización con el servidor, entonces la memoria local envía todos los registros almacenados durante el período offline y los marca como sincronizados una vez confirmada su recepción exitosa.                                                                                                                                                                                                                    | EP-04                     |
+  | TS-007        | Sincronización de datos con la aplicación móvil             | Como desarrollador, quiero sincronizar los datos de métricas almacenados en el dispositivo con la app móvil, para asegurar que el usuario siempre tenga la información más reciente.                                                                                                                                                                   | Escenario 1: <br>Dado que el dispositivo tiene registros locales de métricas sin sincronizar almacenados en su memoria, cuando la aplicación móvil establece conexión estable con el dispositivo, entonces se inicia la transferencia de todos los datos pendientes en lotes organizados por timestamp y tipo de métrica. <br><br> Escenario 2: <br>Dado que la transmisión de datos desde el dispositivo hacia la aplicación móvil se ha completado exitosamente, cuando la aplicación confirma la recepción íntegra de todos los registros, entonces el dispositivo marca los datos como sincronizados en su base de datos local y los mantiene como respaldo histórico por un período determinado. <br><br> Escenario 3: <br>Dado que ocurre una falla durante el proceso de sincronización de datos, cuando el sistema reintenta la conexión y transferencia, entonces identifica los registros pendientes de sincronización mediante timestamps y envía solamente el diferencial de datos que no había sido transferido previamente.                                                                                                                                                                                                                                                     | EP-04                     |
+  | TS-008        | Integración con framework de comunicación IoT               | Como desarrollador, quiero integrar el framework IoT del proyecto para enviar los datos recopilados a la nube, para habilitar reportes remotos y análisis avanzados.                                                                                                                                                                                   | Escenario 1: <br>Dado que el dispositivo tiene conexión a internet activa y estable, cuando se completa un ciclo de lectura de sensores y procesamiento de datos, entonces el sistema envía automáticamente el paquete de métricas a la nube utilizando el framework IoT configurado, aplicando el protocolo de seguridad correspondiente. <br><br> Escenario 2: <br>Dado que la conexión a internet no está disponible o la transmisión a la nube falla, cuando el sistema intenta enviar los datos, entonces almacena la información en una cola local persistente con timestamp y reintenta el envío cada 5 minutos hasta que se restablezca la conectividad. <br><br> Escenario 3: <br>Dado que el envío de datos a la nube se completa exitosamente, cuando el servidor cloud confirma la recepción mediante acknowledge, entonces el sistema registra la confirmación en el log serial con el mensaje "[OK] Datos sincronizados - [TIMESTAMP]" y elimina los datos correspondientes de la cola local.                                                                                                                                                                                                                                                                                   | EP-04                     |
 
 ### 3.2 Impact Mapping
 
 <img src="./images/chapter-3/impact_mapping_1.png" alt="impact_mapping_1" width="800"/>
+
 <img src="./images/chapter-3/impact_mapping_2.png" alt="impact_mapping_2" width="800"/>
+
 <img src="./images/chapter-3/impact_mapping_3.png" alt="impact_mapping_3" width="800"/>
+
 <img src="./images/chapter-3/impact_mapping_4.png" alt="impact_mapping_4" width="800"/>
 
 ### 3.3 Product Backlog
@@ -4144,6 +4335,1109 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ![IAM-database.png](images/chapter-4/IAM-database.png)
 
+## Capítulo V: Solution UI/UX Design
+
+### 5.1. Style Guidelines
+
+La sección de Style Guidelines establece los lineamientos visuales y de diseño que garantizan una experiencia de usuario coherente, clara y alineada con la identidad de marca de BykerZ. Este repositorio central reúne todos los elementos gráficos y normativos necesarios para que el equipo de diseño y desarrollo trabaje de manera consistente en los distintos canales digitales (web, móvil).
+
+Su objetivo principal es mantener una presentación uniforme y profesional, fortaleciendo la identidad visual de la startup y asegurando que cada interacción con el usuario transmita confianza, innovación y accesibilidad.
+
+Para lograr este objetivo esta sección se dividirá en dos sub-secciones:
+
+* General Style Guidelines: Se definiran los principios básicos de diseño incluyendo branding, tipografía, paleta de colores, espaciado y tono comunicacional.
+* Web Mobile and IoT Style Guidelines: Aquí se definen los estándares visuales especificos para cada plataforna.
+
+Estos lineamientos permiten mantener organizados y accesibles todos los artefactos de diseño, reduciendo inconsistencias y mejorando la eficiencia del equipo.
+
+#### 5.1.1. General Style Guidelines
+
+Los lineamientos generales de estilo definen los principios transversales de diseño que guiarán la identidad visual de BykerZ en todas sus plataformas digitales. Incluyen decisiones clave en torno al branding, paleta de colores, tipografía, tono comunicacional y principios de diseño.
+
+**Branding:** 
+
+El logotipo se empleará principalmente en su versión negra sobre fondos claros y en su versión blanca sobre fondos oscuros. Se debe mantener un área de seguridad alrededor del logotipo equivalente a la altura de la letra “B” de BykerZ para garantizar su visibilidad.
+
+* El logo completo se utilizará en la barra de navegación superior y en aplicaciones móviles.
+* El isotipo se aplicará únicamente en espacios reducidos, como íconos de aplicaciones móviles o pestañas del navegador.
+
+_Logos:_
+
+<img src="images/chapter-5/bykerz-logo.png" alt="logo"/>
+
+<img src="images/chapter-5/bykerz-logo-alt.png" alt="logo alt"/>
+
+_Isotipo:_
+
+<img src="images/chapter-5/bykerz-isotipo.png" alt="isotipo"/>
+
+**Paleta de colores:** 
+
+La identidad visual se basa en tonos naranjas y marrones, diseñados para transmitir energía, confianza y dinamismo.
+
+* Colores principales: tonos cálidos que refuerzan la personalidad de la marca.
+* Fondos y textos: blanco (#FFFFFF) para fondos y #130100 para tipografía principal, asegurando alta legibilidad.
+* Colores secundarios: tonos como #C84E00 y #380800 se reservan para acentos, componentes interactivos y llamadas a la acción.
+
+<img src="images/chapter-5/color-palette.png" alt="color palette"/>
+
+**Tipografía:** 
+
+La tipografía principal será Roboto, elegida por su legibilidad, modernidad y versatilidad.
+
+* Se aplicarán jerarquías tipográficas claras, diferenciando títulos, subtítulos y cuerpo de texto.
+* Se hará uso de negritas para destacar información clave.
+
+<img src="images/chapter-5/typography.png" alt="typography"/>
+
+**Tono y lenguaje:** 
+
+La comunicación seguirá un tono profesional pero accesible, evitando tecnicismos innecesarios.
+
+* Se priorizará la claridad y la brevedad en los textos.
+* El estilo de comunicación debe transmitir confianza, innovación y cercanía.
+
+**Principios de diseño:** 
+
+El diseño se regirá por los siguientes principios:
+
+* Consistencia: mantener coherencia visual en todos los elementos.
+* Simplicidad: evitar la saturación visual y priorizar lo esencial.
+* Accesibilidad: garantizar la legibilidad y usabilidad para todos los usuarios.
+* Espaciado adecuado: entre elementos para mejorar la experiencia visual.
+* Iconografía clara: símbolos simples y reconocibles que complementen el texto.
+* Uso de contrastes: para resaltar información y facilitar la navegación.
+
+#### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+Esta sección establece los estándares visuales e interactivos para los distintos canales digitales de BykerZ: interfaces web, aplicaciones móviles y aplicaciones de IoT. Cada uno presenta particularidades de interacción y diseño, pero todos comparten la misma identidad visual definida en los lineamientos generales.
+
+**Web style Guide:**
+
+Componentes:
+
+* Botones: se definen estilos primario, secundario y deshabilitado, con diferencias claras en color y contraste.
+* Formularios: incluyen campos de texto, validaciones visuales y selectores uniformes.
+* Cards: tarjetas utilizadas para mostrar información resumida, con variantes internas para resaltar datos clave.
+* Tablas: estilo simple con uso de bordes internos y jerarquía tipográfica para cabeceras.
+
+Comportamiento de componentes:
+
+* Estados de interacción (hover, active, focus) se encuentran deshabilitados, priorizando la simplicidad y evitando distracciones visuales.
+
+Responsive design:
+
+* Interfaces diseñadas principalmente para desktop, con adaptación proporcional según el tamaño de la ventana.
+* Se prioriza la legibilidad y la correcta distribución del contenido en resoluciones variables.
+
+Íconos e ilustraciones: 
+
+* No se utilizarán ilustraciones a color.
+* Los íconos serán siluetas simples y su presencia se limitará a indicadores funcionales.
+
+**Mobile Style guide:**
+
+Componentes:
+
+* Botones: variantes primary y secondary deshabilitadas, con áreas táctiles amplias.
+* Formularios: campos de texto optimizados para teclado móvil, validaciones claras y selectores de fácil interacción.
+* Cards: diseño compacto para mostrar información de manera jerárquica y accesible.
+
+Gestos:
+
+* Tap: gesto principal para interacción con botones y elementos táctiles.
+* Swipe vertical: navegación entre pantallas o listas.
+* Swipe horizontal: apertura del menú lateral (sidebar) o carruseles de contenido.
+
+Responsive Design
+
+* Adaptación automática a resoluciones de smartphones y tablets.
+* Se prioriza la usabilidad en pantallas pequeñas, con tipografía legible y espacios amplios para interacción táctil.
+
+### 5.2. Information Architecture
+
+La arquitectura de la información establece la estructura, organización y jerarquía de los contenidos y funcionalidades dentro de la plataforma BykerZ. Su propósito es garantizar que los usuarios encuentren la información de manera clara, intuitiva y eficiente, optimizando la experiencia de navegación y reduciendo fricciones en el uso.
+
+A través de esta sección, se definen los flujos de interacción, los esquemas de navegación y la disposición lógica de los elementos, lo que permite mantener consistencia en la experiencia digital tanto en web como en dispositivos móviles. Una arquitectura de la información bien diseñada no solo facilita la usabilidad, sino que también refuerza la identidad y los objetivos estratégicos del producto.
+
+#### 5.2.1. Organization Systems
+
+Esquemas de organización aplicados:
+
+* Jerárquico: Al interactuar con cada card del sistema, el usuario accede a una vista detallada del elemento seleccionado. Esto refleja un esquema jerárquico donde se pasa de información general (card) a información específica (detalle).
+* Secuencial: Los procesos de registro siguen un flujo lineal. Para confirmar la información, el usuario debe completar y validar cada paso en orden, sin poder avanzar si falta uno.
+* Matricial: Algunos registros utilizan filtros dependientes, como en el caso del registro de una moto: los modelos se muestran en función de la marca seleccionada, permitiendo combinar criterios.
+
+Esquemas de categorización aplicados:
+
+* Cronológico: La información se organiza mostrando los registros más recientes primero, facilitando el acceso a la información actualizada.
+* Alfabético: Los listados se ordena por nombre, permitiendo búsquedas rápidas.
+* Tópicos: En cada vista, la información se divide en secciones cada una correspondiendo al nombre asignado en las barras de navegación.
+* Audiencia: Para la aplicación web, las secciones y funcionalidades se adaptan según el rol del usuario (dueño de moto o mecánico), mostrando solo lo relevante para cada perfil.
+
+#### 5.2.2. Labeling Systems
+
+El sistema de etiquetado se diseñó con enfoque en simplicidad y consistencia, utilizando palabras cortas y familiares para los usuarios. Se priorizó la claridad en la asociación entre etiqueta y contenido, evitando tecnicismos innecesarios.
+
+* **Menú principal (navbar superior – Dueños de moto):** Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+* **Menú principal (navbar superior – Mecánicos):** Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+* **Menú principal (sidebar lateral – Dueños de moto):** Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard, Monitoreo.
+
+Las etiquetas funcionan como puntos de entrada semánticos, permitiendo que los usuarios identifiquen rápidamente la funcionalidad:
+
+* **Vehículos:** Gestión de motos registradas.
+* **Comparativas:** Análisis y comparación de modelos.
+* **Gastos:** Registro y seguimiento de gastos asociados.
+* **Mantenimientos:** Historial y programación de servicios.
+* **Dashboard:** Vista general con métricas clave.
+* **Suscripciones:** Gestión vinculos entre mecánico y dueño.
+* **Membresía:** Información sobre planes y beneficios.
+
+#### 5.2.3. SEO Tags and Meta Tags
+Con el objetivo de optimizar la visibilidad y posicionamiento de BykerZ en motores de búsqueda, se definieron etiquetas SEO y metaetiquetas específicas para las principales páginas del ecosistema digital: Landing Page, Web Application y Mobile App.
+Estas etiquetas mejoran la accesibilidad, la comprensión del contenido por parte de los buscadores y la coherencia de la identidad de marca en todos los canales digitales.
+
+**Landing Page**
+
+* _Title:_ BykerZ | Plataforma inteligente para monitoreo y mantenimiento de motocicletas
+* _Meta Description:_ BykerZ conecta propietarios y mecánicos en un ecosistema digital de mantenimiento preventivo y monitoreo vehicular. Optimiza tus servicios, controla gastos y cuida tu moto desde un solo lugar.
+* _Keywords:_ mantenimiento de motos, monitoreo vehicular, app para motociclistas, talleres mecánicos, control de gastos, alertas de mantenimiento
+* _Author:_ NRG6
+
+**Web Application**
+
+* _Title:_ BykerZ Control inteligente de vehículos y mantenimientos
+* _Meta Description:_ Accede al panel de control BykerZ para gestionar vehículos, registrar mantenimientos, visualizar métricas y recibir alertas en tiempo real.
+* _Keywords:_ dashboard de mantenimiento, métricas de vehículos, alertas de mantenimiento, gestión de motos, control vehicular
+* _Author:_ NRG6
+
+**Mobile App**
+
+* _App Title:_ BykerZ – Control y Mantenimiento de Motos
+* _App Subtitle:_ Tu moto, siempre bajo control
+* _App Description:_ BykerZ te permite registrar tus vehículos, controlar mantenimientos, recibir alertas y conectar con mecánicos verificados. Diseñada para simplificar la gestión y aumentar la seguridad en el mantenimiento de motocicletas.
+* _App Keywords:_ mantenimiento moto, mecánicos, control vehículo, alertas moto, app motociclistas
+
+#### 5.2.4. Searching Systems
+
+El sistema de búsqueda de BykerZ está diseñado para ofrecer una experiencia rápida, intuitiva y adaptada al perfil del usuario, permitiendo encontrar información relevante sin necesidad de recorrer múltiples secciones.
+
+Búsqueda local: En los selectores de formularios, se implementó una función de búsqueda local que filtra las opciones a medida que el usuario ecoge, facilitando la selección rápida de marcas, modelos y otros datos.
+
+#### 5.2.5. Navigation Systems
+
+El sistema de navegación de BykerZ se diseñó con el propósito de garantizar una experiencia fluida, predecible y centrada en las necesidades de cada tipo de usuario. Su estructura combina navegación jerárquica y contextual, adaptándose tanto al rol del usuario (Dueño o Mecánico) como al dispositivo (web o móvil).
+
+Estructura general de navegación
+
+La arquitectura de navegación se apoya en tres componentes principales:
+
+**1. Barra de navegación superior (navbar, desktop):**
+Visible en la versión web, permite acceder rápidamente a las secciones principales del sistema según el rol del usuario.
+* Dueños: Vehículos, Comparativas, Gastos, Mantenimientos, Dashboard.
+* Mecánicos: Suscripciones, Membresía, Comparativas, Mantenimientos, Dashboard.
+
+Estas opciones se mantienen siempre visibles para reforzar la orientación del usuario y evitar pérdida de contexto.
+
+**2. Barra lateral (sidebar, movil):**
+Presente en la vista de los dueños, proporciona un acceso complementario a módulos adicionales como Monitoreo, así como accesos rápidos a configuraciones o reportes.
+* Su función es profundizar la navegación sin abandonar la vista principal.
+* La jerarquía visual está marcada por íconos simples, etiquetas cortas y un sistema de resaltado para la sección activa.
+
+**3. Navegación interna (cards y botones de acción):**
+Dentro de cada módulo, la navegación se realiza mediante cards interactivas que enlazan con vistas detalladas.
+* Ejemplo: desde “Vehículos” se puede acceder a “Detalles del vehículo” → “Historial de mantenimientos” → “Comparativas”.
+* Esto permite mantener un flujo jerárquico descendente, donde cada nivel muestra más información específica.
+
+### 5.3. Landing Page UI Design
+
+En esta sección se presenta la propuesta visual de la Landing Page, donde se traduce la arquitectura de información y las decisiones de diseño en una interfaz clara, atractiva y funcional que refleje la identidad visual y los objetivos de la startup.
+
+#### 5.3.1. Landing Page Wireframe
+
+Esta sección muestra la estructura base de la Landing Page mediante wireframes para desktop y mobile, destacando la jerarquía visual, la usabilidad y la coherencia con los principios de diseño inclusivo y la arquitectura de información.
+
+<img src="images/chapter-5/landing-page-wireframe.png" alt="landing page wireframe desktop"/>
+
+#### 5.3.2. Landing Page Mock-up
+
+Aquí se presentan los mock-ups finales de la Landing Page en versiones desktop y mobile, evidenciando la aplicación del Design System, los principios de diseño visual y la alineación con la experiencia de usuario definida en etapas previas.
+
+<img src="images/chapter-5/landing-page-mockup.png" alt="landing page mockup desktop"/>
+
+### 5.4. Applications UX/UI Design
+
+En esta sección se desarrolla la propuesta de diseño visual e interactivo de las aplicaciones, mostrando cómo se materializan los principios de usabilidad, accesibilidad y consistencia visual para ofrecer una experiencia de usuario fluida y coherente con la identidad de la startup.
+
+#### 5.4.1. Applications Wireframes
+
+##### Web Application
+
+Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+![wireframe1.png](images/chapter-5/wireframes/wireframe1.png)
+![wireframe2.png](images/chapter-5/wireframes/wireframe2.png)
+![wireframe3.png](images/chapter-5/wireframes/wireframe3.png)
+![wireframe4.png](images/chapter-5/wireframes/wireframe4.png)
+![wireframe5.png](images/chapter-5/wireframes/wireframe5.png)
+![wireframe6.png](images/chapter-5/wireframes/wireframe6.png)
+![wireframe7.png](images/chapter-5/wireframes/wireframe7.png)
+![wireframe8.png](images/chapter-5/wireframes/wireframe8.png)
+
+##### Mobile Application
+
+Esta sección presenta los wireframes de las aplicacion movil, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+<img src="images/chapter-5/wireframes-mobile/wireframe1.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe2.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe3.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe4.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe5.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe6.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe7.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe8.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe9.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe10.png" alt="app wireframes"/>
+
+
+#### 5.4.2. Applications Wireflow Diagram
+En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
+
+##### Web Application
+La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![usergoal1.drawio.png](images/chapter-5/user-goals-web/usergoal1.drawio.png)
+![wireflow1.drawio.png](images/chapter-5/wireflows-web/wireflow1.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal2.drawio.png](images/chapter-5/user-goals-web/usergoal2.drawio.png)
+![wireflow2.drawio.png](images/chapter-5/wireflows-web/wireflow2.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![usergoal3.drawio.png](images/chapter-5/user-goals-web/usergoal3.drawio.png)
+![wireflow3.drawio.png](images/chapter-5/wireflows-web/wireflow3.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![usergoal4.drawio.png](images/chapter-5/user-goals-web/usergoal4.drawio.png)
+![wireflow4.drawio.png](images/chapter-5/wireflows-web/wireflow4.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
+![usergoal5.drawio.png](images/chapter-5/user-goals-web/usergoal5.drawio.png)
+![wireflow5.drawio.png](images/chapter-5/wireflows-web/wireflow5.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
+![usergoal6.drawio.png](images/chapter-5/user-goals-web/usergoal6.drawio.png)
+![wireflow6.drawio.png](images/chapter-5/wireflows-web/wireflow6.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
+
+**User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
+![usergoal7.drawio.png](images/chapter-5/user-goals-web/usergoal7.drawio.png)
+![wireflow7.drawio.png](images/chapter-5/wireflows-web/wireflow7.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
+
+**User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal8.drawio.png](images/chapter-5/user-goals-web/usergoal8.drawio.png)
+![wireflow8.drawio.png](images/chapter-5/wireflows-web/wireflow8.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
+![usergoal9.drawio.png](images/chapter-5/user-goals-web/usergoal9.drawio.png)
+![wireflow9.drawio.png](images/chapter-5/wireflows-web/wireflow9.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![usergoal10.drawio.png](images/chapter-5/user-goals-web/usergoal10.drawio.png)
+![wireflow10.drawio.png](images/chapter-5/wireflows-web/wireflow10.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
+
+##### Mobile Application
+La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![wireflow-ver-dashboard.png](images/chapter-5/wireflows-mobile/wireflow-ver-dashboard.png)
+El wireflow inicia cuando el usuario despliega la barra lateral desde el panel principal y presiona en la sección Dashboard. Al hacerlo, la interfaz cambia para mostrar la vista del Dashboard, donde el usuario observa el resumen general que incluye sus vehículos, los gastos recientes y los próximos mantenimientos, representados mediante tarjetas o gráficos que resumen la información de forma visual y accesible.
+
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+![wireflow-ver-mantenimientos.png](images/chapter-5/wireflows-mobile/wireflow-ver-mantenimientos.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![wireflow-ver-mantenimiento.png](images/chapter-5/wireflows-mobile/wireflow-eliminar-gasto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Gastos. Una vez en la vista de gastos, el sistema muestra la lista de registros existentes, donde el usuario presiona el ícono de borrar gasto correspondiente al que desea eliminar. Finalmente, la interfaz se actualiza y el usuario observa que el gasto fue eliminado, confirmando la acción mediante la desaparición del registro o un mensaje de confirmación visual.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![wireflow-monitorear-metricas.png](images/chapter-5/wireflows-mobile/wireflow-monitorear-metricas.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona el botón Vehículos. En la lista mostrada, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Monitorear, tras lo cual la interfaz cambia para mostrar las métricas de la moto, permitiéndole observar información en tiempo real sobre su estado y rendimiento.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![wireflow-desvincular-moto.png](images/chapter-5/wireflows-mobile/wireflow-desvincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y actualiza la interfaz. Finalmente, el usuario observa su moto desvinculada del mecánico, reflejado mediante un cambio visual o mensaje de confirmación.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![wireflow-vincular-moto.png](images/chapter-5/wireflows-mobile/wireflow-vincular-moto.png)
+El wireflow inicia cuando el usuario presiona en la barra lateral desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![wireflow-registrar-vehiculo.png](images/chapter-5/wireflows-mobile/wireflow-registrar-vehiculo.png)
+El wireflow inicia cuando el usuario abre la barra lateral de navegación y selecciona la opción Vehículos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo vehículo. Luego, la interfaz muestra un formulario donde el usuario ingresa los datos de su vehículo y presiona el botón Registrar. Finalmente, el sistema confirma la acción mostrando la moto registrada en la pantalla, reflejada en la lista de vehículos disponibles.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![wireflow-ver-vehiculos.png](images/chapter-5/wireflows-mobile/wireflow-ver-vehiculos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![wireflow-registrar-gastos.png](images/chapter-5/wireflows-mobile/wireflow-registrar-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Una vez en la página, el usuario presiona el botón “+” para añadir un nuevo gasto. La interfaz muestra un formulario donde el usuario ingresa los datos correspondientes y presiona el botón “Registrar”. Finalmente, el sistema actualiza la vista y el usuario observa el nuevo gasto añadido en la pantalla de gastos.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![wireflow-ver-gastos.png](images/chapter-5/wireflows-mobile/wireflow-ver-gastos.png)
+El wireflow inicia cuando el usuario presiona el botón de la barra lateral desde el panel principal y selecciona la opción Gastos. Al acceder a la página, el sistema muestra en pantalla los gastos registrados del usuario, permitiéndole observar y revisar la información correspondiente de manera clara y ordenada.
+
+#### 5.4.3. Applications Mock-ups
+
+##### Web Application
+
+En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
+
+<img src="images/chapter-5/mockups/mockup-1.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-2.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-3.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-4.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-5.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-6.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-7.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-8.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-9.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-10.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-11.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
+
+##### Mobile Application
+
+En esta sección se presentan los mock-ups finales de la aplicacion movil, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
+
+<img src="images/chapter-5/mockups-mobile/mockup1.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup2.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup3.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup4.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup5.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup6.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup7.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup8.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup9.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup10.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup11.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup12.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup13.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup14.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup15.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup16.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup17.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup18.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup19.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup20.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup21.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup22.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup23.jpg" alt="app mockup"/>
+
+#### 5.4.4. Applications User Flow Diagrams
+
+En esta sección se presentan los user flows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
+
+##### Web Application
+
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![usergoal1.drawio.png](images/chapter-5/user-goals-web/usergoal1.drawio.png)
+![userflow1.drawio.png](images/chapter-5/userflows-web/userflow1.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal2.drawio.png](images/chapter-5/user-goals-web/usergoal2.drawio.png)
+![userflow2.drawio.png](images/chapter-5/userflows-web/userflow2.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![usergoal3.drawio.png](images/chapter-5/user-goals-web/usergoal3.drawio.png)
+![userflow3.drawio.png](images/chapter-5/userflows-web/userflow3.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
+**User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
+![usergoal4.drawio.png](images/chapter-5/user-goals-web/usergoal4.drawio.png)
+![userflow4.drawio.png](images/chapter-5/userflows-web/userflow4.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
+![usergoal5.drawio.png](images/chapter-5/user-goals-web/usergoal5.drawio.png)
+![userflow5.drawio.png](images/chapter-5/userflows-web/userflow5.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
+![usergoal6.drawio.png](images/chapter-5/user-goals-web/usergoal6.drawio.png)
+![userflow6.drawio.png](images/chapter-5/userflows-web/userflow6.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
+
+**User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
+![usergoal7.drawio.png](images/chapter-5/user-goals-web/usergoal7.drawio.png)
+![userflow7.drawio.png](images/chapter-5/userflows-web/userflow7.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
+
+**User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal8.drawio.png](images/chapter-5/user-goals-web/usergoal8.drawio.png)
+![userflow8.drawio.png](images/chapter-5/userflows-web/userflow8.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
+![usergoal9.drawio.png](images/chapter-5/user-goals-web/usergoal9.drawio.png)
+![userflow9.drawio.png](images/chapter-5/userflows-web/userflow9.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![usergoal10.drawio.png](images/chapter-5/user-goals-web/usergoal10.drawio.png)
+![userflow10.drawio.png](images/chapter-5/userflows-web/userflow10.drawio.png)
+El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
+
+
+### Mobile Application
+
+**User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
+![userflow-ver-dashboard.png](images/chapter-5/userflows-mobile/userflow-ver-dashboard.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Dashboard, accediendo así a dicha vista. Una vez dentro, el usuario puede observar un resumen que muestra sus vehículos, los gastos recientes y los próximos mantenimientos, cumpliendo con el objetivo de visualizar de forma general la información más relevante relacionada con su actividad como motociclista.
+
+![userflow-ver-mantenimiento.png](images/chapter-5/userflows-mobile/userflow-ver-mantenimiento.png)
+**User Goal: Como Motociclista, quiero ver todos los mantenimientos programados de mi moto.**
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Mantenimientos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el recuadro de su moto, tras lo cual el sistema muestra una lista con los mantenimientos programados, permitiéndole visualizar de manera clara las próximas tareas de servicio correspondientes a su vehículo.
+
+**User Goal: Como Motociclista, quiero eliminar un gasto pasado de mi registro de gastos.**
+![userflow-eliminar-gasto.png](images/chapter-5/userflows-mobile/userflow-eliminar-gasto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Gastos, accediendo a dicha vista. Una vez dentro, el usuario selecciona el icono para borrar el gasto deseado y, tras la acción, el sistema elimina el registro correspondiente, mostrando que el gasto fue eliminado correctamente de su historial.
+
+**User Goal: Como Motociclista, quiero monitorear las metricas de mi moto.**
+![userflow-monitorear-moto.png](images/chapter-5/userflows-mobile/userflow-monitorear-moto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Monitorear, tras lo cual el sistema muestra las métricas de la moto, permitiéndole visualizar información relevante sobre su rendimiento y estado actual.
+
+**User Goal: Como Motociclista, quiero desvincular mi moto de un mecanico.**
+![userflow-desvincular-moto.png](images/chapter-5/userflows-mobile/userflow-desvincular-moto.png)
+El flujo inicia cuando el usuario se encuentra en el panel, luego presiona la sección Vehículos y selecciona su moto. Una vez en los detalles del vehículo, el usuario presiona el botón Desvincular, tras lo cual el sistema ejecuta la acción y muestra que la moto ha sido desvinculada correctamente del mecánico asociado.
+
+**User Goal: Como Motociclista, quiero vincular mi moto a un mecanico por su codigo.**
+![userflow-vincular-moto.png](images/chapter-5/userflows-mobile/userflow-vincular-moto.png)
+El flujo inicia cuando el usuario accede a la página de Vehículos, luego selecciona su vehículo y entra en los detalles del mismo. Una vez allí, el usuario presiona el botón Vincular, ingresa el código del mecánico y presiona el botón Solicitar. Finalmente, el sistema confirma la acción mostrando que la moto ha sido vinculada correctamente al mecánico correspondiente.
+
+**User Goal: Como Motociclista, quiero registrar un vehículo en mi cuenta.**
+![userflow-registro-vehiculo.png](images/chapter-5/userflows-mobile/userflow-registro-vehiculo.png)
+El flujo inicia cuando el usuario accede a la página de Vehículos, luego presiona el botón “Añadir Vehículo”. A continuación, el usuario ingresa los datos de su moto y presiona el botón “Registrar”. Finalmente, el sistema confirma la acción mostrando que la moto ha sido registrada correctamente y aparece visible en la pantalla.
+
+**User Goal: Como Motociclista, quiero ver mis vehículos registrados.**
+![userflow-ver-vehiculos.png](images/chapter-5/userflows-mobile/userflow-ver-vehiculos.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Vehículos, donde el sistema muestra los vehículos registrados en su cuenta, permitiéndole visualizar la información general de cada uno.
+
+**User Goal: Como Motociclista, registrar mis gastos.**
+![userflow-registrar-gasto.png](images/chapter-5/userflows-mobile/userflow-registrar-gasto.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos y presiona el botón “Añadir Gasto”. A continuación, el usuario ingresa los datos del gasto en el formulario y presiona el botón “Registrar”. Finalmente, el sistema muestra el nuevo gasto añadido en la pantalla de gastos, confirmando que el registro se realizó correctamente.
+
+**User Goal: Como Motociclista, quiero ver mis gastos registrados**
+![userflow-ver-gastos.png](images/chapter-5/userflows-mobile/userflow-ver-gastos.png)
+El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos, donde el sistema muestra en pantalla los gastos registrados, permitiéndole visualizar la información correspondiente de forma clara y organizada.
+
+### 5.5. Applications Prototyping
+
+En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
+
+Aplicación Móvil:
+- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
+
+Aplicación Web:
+- [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
+
+## Capítulo VI: Product Implementation, Validation & Deployment
+
+### 6.1. Software Configuration Management.
+En este ítem se definirán todas las reglas y procesos que hemos seguido en el proyecto al momento de crear y desplegar BykerZ. El objetivo de estas reglas y procesos es garantizar la integridad y consistencia del software, desde el inicio hasta el despliegue y mantenimiento.
+
+#### 6.1.1. Software Development Environment Configuration.
+
+**Project Management**
+
+Para la organización del proyecto requerimos de un sistema de asignación de tareas, plataformas y puntos de reunión y un repositorio dónde trabajaremos en conjunto cada avance del proyecto.
+
+**Herramientas:**
+- **Centro de organización de trabajo:** Github
+- **Planificación de tareas:** Trello
+- **Reuniones con el equipo:** Discord
+- **Coordinación grupal:** WhatsApp
+
+**Requirements Management**  
+Utilizamos Trello para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios.
+
+| Herramienta | Descripción                                                                                        | Enlace                                     |
+|-------------|----------------------------------------------------------------------------------------------------|--------------------------------------------|
+| **Trello**  | Para designar las tareas y actividades de cada integrante del grupo en caso de revisión o cambios. | [https://trello.com/](https://trello.com/) |
+
+**Product UX/UI Design**  
+Para el diseño de los wireframes y mockups, además de la realización del prototipo de la mobile application y web application, utilizamos Figma.
+
+| Herramienta | Descripción                                                                                    | Enlace                                           |
+|-------------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| **Figma**   | Para el diseño de los wireframes y mockups, además de la realización del prototipo de Web App. | [https://www.figma.com/](https://www.figma.com/) |
+
+**Software Development**  
+Empleamos Android y Jetpack Compose para la creación de la mobile application, Spring Boot para la creación de la API REST y Angular para la web application. Para el desarrollo de la landing page utilizamos html, js y css.
+
+| Herramienta         | Descripción                                                                  | Enlace                                                                           |
+|---------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Android**         | Lenguaje de programación utilizado para la creación de la mobile application | [https://developer.android.com/](https://developer.android.com/)                 |
+| **Jetpack Compose** | Framework utilizado para la creación de la mobile application                | [https://developer.android.com/compose](https://developer.android.com/compose)   |
+| **Spring Boot**     | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
+| **Tailwind CSS**    | Framework utilizado para la creación de la landing page                      | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
+| **Angular**         | Framework de desarrollo web open source                                      | [https://angular.dev/](https://angular.dev/)                                     |
+
+**Software Testing**
+Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
+
+| Herramienta | Descripción                                            | Enlace                                                 |
+|-------------|--------------------------------------------------------|--------------------------------------------------------|
+| **JUnit**   | Framework de pruebas unitarias para Java               | [https://junit.org/](https://junit.org/)               |
+| **Mockito** | Framework de simulación para pruebas unitarias en Java | [https://site.mockito.org/](https://site.mockito.org/) |
+
+**Software Deployment**
+Para el despliegue de la API REST y la web application utilizamos Render. Para la distribución de la versión mobile application utilizamos Firebase App Distribution.
+
+| Herramienta                   | Descripción                                                            | Enlace                                                                                                         |
+|-------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **Render**                    | Plataforma de despliegue en la nube                                    | [https://render.com/](https://render.com/)                                                                     |
+| **Firebase App Distribution** | Plataforma para distribuir versiones de prueba de aplicaciones móviles | [https://firebase.google.com/products/app-distribution](https://firebase.google.com/products/app-distribution) |
+
+**Software Documentation**  
+Para la documentación del software utilizamos Markdown, y para el trabajo colaborativo Github.
+
+| Herramienta  | Descripción                                                      | Enlace                                                             |
+|--------------|------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Markdown** | Lenguaje de marcado utilizado para la documentación del proyecto | [https://www.markdownguide.org/](https://www.markdownguide.org/)   |
+| **Github**   | Para gestionar la documentación del proyecto                     | [https://github.com/NRG-4/report](https://github.com/NRG-4/report) |
+
+#### 6.1.2. Source Code Management.
+
+Para la gestión del código fuente, utilizamos los siguientes repositorios:
+
+| Herramienta            | Descripción               | Enlace                                                                                                                   |
+|------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Mobile Application** | BykerZ-Mobile-Application | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
+| **Backend**            | BykerZ-Backend            | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
+| **Landing Page**       | BykerZ-Landing-Page       | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
+| **Web Application**    | BykerZ-Web-Application    | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
+
+**Flujo de trabajo GitFlow**  
+Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Git branching model"* con los siguientes parámetros:
+
+- Una rama de producción.
+- Una rama de pruebas.
+- Una rama en la que se solucionen los bugs rápidamente y vuelvan a producción.
+- Ramas de features a implementar.
+- Cada cambio en producción debe establecerse como una nueva versión.
+
+**Ramas definidas:**
+- **Main branch:** Rama de producción, cada cambio requiere autorización de un compañero de equipo.
+- **Hotfix branch:** Para errores identificados que deben solucionarse y desplegarse nuevamente en producción.
+- **Develop branch:** Implementaciones constantes de features.
+- **Features branch:** Cada feature tendrá su propia rama, luego se fusiona en *develop*.
+
+**Nomenclatura de versiones:**
+- **Major changes:** Cambios significativos incompatibles (ej. `1.0.0 -> 2.0.0`).
+- **Minor changes:** Cambios que añaden o modifican características (ej. `1.1.0 -> 1.2.0`).
+- **Patch:** Correcciones menores (ej. `1.1.3 -> 1.1.4`).
+
+**Sufijos asignados:**
+- `alpha`: Versión no estable.
+- `beta`: Versión funcional pero no lista para publicación.
+- `rc`: Versión candidata para publicación.
+
+#### 6.1.3. Source Code Style Guide & Conventions.
+
+El equipo adopta convenciones estandarizadas de codificación para asegurar la coherencia, legibilidad y mantenibilidad del código en todos los componentes del sistema. Todas las nomenclaturas, identificadores y comentarios se escribirán en inglés, siguiendo las guías oficiales de estilo recomendadas para cada tecnología empleada en la solución.
+
+**Mobile Application – Android (Kotlin/Java)**
+
+* **Classes:** PascalCase (e.g., UserProfileActivity).
+* **Functions & Variables:** camelCase (e.g., getUserData(), userName).
+* **Constants:** UPPER_SNAKE_CASE (e.g., MAX_ATTEMPTS).
+* **Architecture:** Separación por capas (MVVM – Model, ViewModel, View).
+* **Good Practices:**
+  * Mantener lógica fuera de la UI (ViewModel o UseCase).
+  * Evitar operaciones costosas en @Composable.
+  * Documentar funciones con KDoc.
+
+**Web Application – Angular (TypeScript, HTML, CSS)**
+
+* **Components & Services:** PascalCase (e.g., UserDashboardComponent, AuthService).
+* **Variables & Methods:** camelCase (e.g., userProfile, loadData()).
+* **Interfaces:** Prefijo I (e.g., IUser, IServiceResponse).
+* **File Naming:** kebab-case (e.g., user-profile.component.ts).
+* **HTML Structure:**
+  * Uso semántico de etiquetas.
+  * Identificadores claros (id, class) en kebab-case.
+* **CSS / Tailwind CSS:**
+  * Ordenar clases en el siguiente orden: Layout → Flex/Grid → Spacing → Typography → Colors → Effects.
+  * Uso de prefijos sm:, md:, lg: para diseño responsive.
+  * Evitar uso excesivo de @apply en archivos CSS.
+
+**Backend – Spring Boot (Java)**
+
+* **Package Structure:** controller, service, repository, model, config.
+* **Naming Conventions:**
+  * Classes: PascalCase (e.g., UserController).
+  * Methods & Variables: camelCase (e.g., findUserById()).
+  * Constants: UPPER_SNAKE_CASE.
+* **Good Practices:**
+  * Inyección de dependencias con @Autowired o constructor.
+  * Validaciones mediante @Valid.
+  * Manejo de excepciones centralizado con @ControllerAdvice. 
+  * Documentación con JavaDoc.
+
+**Database – PostgreSQL**
+
+* **Table Names:** snake_case plural (e.g., user_profiles).
+* **Column Names:** snake_case (e.g., created_at).
+* **Primary Keys:** id o table_name_id (e.g., user_id).
+* **Foreign Keys:** referenced_table_id.
+* **Views & Indexes:** prefijo v_ y idx_ respectivamente.
+* **Scripts:** comentarios en inglés y consistencia en sangría.
+
+**Landing Page – HTML & CSS**
+
+* **HTML:**
+  * Estructura semántica (< header >, < main >, < footer >).
+  * Atributos y etiquetas en minúsculas.
+  * Sangría de 2 espacios.
+* **CSS:**
+  * Nombres de clases en kebab-case (e.g., main-banner).
+  * Uso de variables CSS para colores y tipografía.
+  * Evitar el uso de IDs para estilos.
+
+**General Guidelines**
+
+* **Comments:** Siempre en inglés, explicando el por qué y no solo el qué.
+* **Commits:** Convención semántica (feat:, fix:, docs:, refactor:, test:).
+* **Version Control:** Ramas en formato kebab-case (feature/add-login-page).
+* **Performance:** Uso de lazy loading para imágenes, módulos y componentes.
+* **Accessibility:** Cumplimiento de WCAG 2.1 en interfaces web y móviles.
+
+#### 6.1.4. Software Deployment Configuration.
+
+**Landing Page**
+1. Ejecutar `npm run build` localmente.
+2. Subir repositorio a GitHub (público).
+3. Crear servicio en Render → Web Service.
+4. Seleccionar repositorio y configurar.
+5. Deploy y verificación en la URL pública.
+
+**Mobile Application**
+1. Activar modo desarrollador y depuración USB en dispositivo.
+2. Conectar a la PC.
+3. Abrir proyecto en Android Studio.
+4. Seleccionar dispositivo y ejecutar.
+5. Verificar funcionamiento.
+
+**Web Application**
+1. Subir repositorio a GitHub (público).
+2. Crear Web Service en Render.
+3. Seleccionar repositorio y configurar.
+4. Deploy y verificación en la URL pública.
+
+**Backend**
+1. Configurar base de datos en Neontech.
+2. Crear `Dockerfile` para despliegue.
+3. Crear Web Service en Render.
+4. Importar repositorio backend.
+5. Deploy de la API.
+
+Deployment diagram C4 model:
+
+<img src="images/chapter-4/deployment-model.png" alt="Deployment Diagram">
+
+### 6.2. Landing Page, Services & Applications Implementation.
+
+En esta sección se detalla el proceso de implementación, pruebas, documentación y despliegue de los distintos componentes del ecosistema digital: Landing Page, Web Services, Web Applications, Mobile Applications y Embedded Applications. El propósito es evidenciar cómo las decisiones de diseño, arquitectura y desarrollo se materializan en soluciones funcionales y coherentes. Además, se presentan los avances organizados por Sprints, reflejando la evolución iterativa del producto conforme al Product Backlog y las metas definidas en cada ciclo de desarrollo ágil.
+
+#### 6.2.1. Sprint 1
+
+En este primer sprint se enfocó el esfuerzo del equipo en construir la versión inicial de los componentes principales del ecosistema digital, incluyendo la Landing Page, la Web Application y el Backend. El objetivo fue establecer la base funcional del proyecto, validando la integración entre las capas de presentación, lógica de negocio y datos, mientras se promovía un flujo de trabajo colaborativo y ágil entre los distintos roles del equipo.
+
+##### 6.2.1.1. Sprint Planning 1.
+
+Esta sección describe el proceso de planificación del Sprint 1, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación inicial del Frontend (Landing Page y Web App) y del Backend (servicios base y endpoints principales).
+
+| Sprint #                         | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-10-05                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Sprint 1 - Review Summary        | Este es el primer sprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 
+| Sprint 1 - Retrospective Summary | Este es el primer sprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Sprint 1 Goal                    | Nuestro enfoque está en entregar la primera versión funcional del ecosistema BykerZ incluyendo la Landing Page para visitantes, la Aplicación Web para dueños de motocicletas y mecánicos, y el Backend para los desarrolladores.<br>Creemos que esto proporcionará un punto de entrada unificado y accesible para los usuarios potenciales, una herramienta operativa para la gestión de vehículos y el seguimiento de mantenimientos, y una capa de servicios sólida para futuras integraciones y escalabilidad.<br>Esto se confirmará cuando los visitantes puedan navegar por la Landing Page y comprender la propuesta de valor de BykerZ, los dueños y mecánicos puedan acceder a la aplicación web para gestionar sus vehículos y mantenimientos, y los desarrolladores puedan conectarse exitosamente a los endpoints del backend obteniendo respuestas estables. |
+| Sprint 1 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+
+##### 6.2.1.2. Aspect Leaders and Collaborators.
+
+La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
+
+| Team Mmeber                           | Github Username       | Aspect Name 1                | Aspect Name 2            |
+|---------------------------------------|-----------------------|------------------------------|--------------------------|
+| Alejo Cardenas Jose Antonio           | Firtness              | Backend Development (C)      |                          |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Landing Page Development (L) | Frontend Development (C) |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Backend Development (L)      |                          |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | Frontend Development (C)     |                          |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Frontend Development (C)     |                          |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Frontend Development (C)     |                          |
+
+##### 6.2.1.3. Sprint Backlog 1.
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+<img src="images/chapter-6/sprint-1-trello-board.png" alt="Sprint 1 trello board">
+
+Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H)
+
+<table>
+  <tr>
+    <td colspan="1"><strong>Sprint #</strong></td>
+    <td colspan="7"><strong>Sprint 1</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>User Story</strong></td>
+    <td colspan="6"><strong>Work-Item/task</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Description</strong></td>
+    <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+    <td colspan="1"><strong>Assigned To</strong></td>
+    <td colspan="1"><strong>Status</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-002</td>
+    <td colspan="1">Registro de gastos de mantenimiento y repuestos.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la vista de visualización de gastos</td>
+    <td colspan="1">Como motociclista, quiero registrar los gastos de mantenimiento y repuestos que realizo, para llevar un control acumulado mensual o por kilometraje.</td>
+    <td colspan="1">8</td>
+    <td colspan="1">Gabriel Casas</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-003</td>
+    <td colspan="1">Acceso al historial de servicios realizados.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la vista de visualización de mantenimientos.</td>
+    <td colspan="1">Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó.</td>
+    <td colspan="1">8</td>
+    <td colspan="1">Gianluca Pasquale</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-011</td>
+    <td colspan="1">Consulta del historial de servicios por parte del mecánico.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Programar la vista de mantenimientos de desde la vista de mecánicos.</td>
+    <td colspan="1">Como mecánico, quiero consultar el historial de servicios realizados en una moto específica, para tomar decisiones informadas al momento del diagnóstico.</td>
+    <td colspan="1">5</td>
+    <td colspan="1">Sebastián Pacheco</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-014</td>
+    <td colspan="1">Visualización de subscripciones activas con clientes.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la vista de suscripciones activas desde la vista de mecánicos.</td>
+    <td colspan="1">Como mecánico, quiero poder visualizar las subscripciones activas de todos mis clientes, para tener claridad sobre qué motociclistas me han otorgado acceso a sus datos y poder gestionar mejor la relación.</td>
+    <td colspan="1">5</td>
+    <td colspan="1">Gabriel Casas</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-023</td>
+    <td colspan="1">Visualización de Misión y Visión de la startup.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la sección de Misión y Visón de la landing page.</td>
+    <td colspan="1">Como visitante, quiero ver una sección en la landing page con la Misión y Visión de la startup para conocer más a detalle los objetivos del proyecto.</td>
+    <td colspan="1">3</td>
+    <td colspan="1">Juan Astonitas</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-026</td>
+    <td colspan="1">Registro inicial de moto.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear el formulario para agregar una moto al sistema.</td>
+    <td colspan="1">Como motociclista, quiero registrar mi moto con sus datos básicos (placa, marca, modelo, año), para tener mi vehículo identificado dentro del sistema.</td>
+    <td colspan="1">8</td>
+    <td colspan="1">Sebastián Real</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-027</td>
+    <td colspan="1">Consulta de motos.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la vista para mostrar las motos pertenecientes a un usuario.</td>
+    <td colspan="1">Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.</td>
+    <td colspan="1">5</td>
+    <td colspan="1">Sebastián Real</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-027</td>
+    <td colspan="1">Consulta de motos.</td>
+    <td colspan="1">T002</td>
+    <td colspan="1">Crear el un endpoint para la consulta de motos.</td>
+    <td colspan="1">Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.</td>
+    <td colspan="1">8</td>
+    <td colspan="1">José Alejo</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-030</td>
+    <td colspan="1">Visualización de las características del producto.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la sección de características de la landing page.</td>
+    <td colspan="1">Como visitante, quiero poder ver las caracteristicas que brinda la solución</td>
+    <td colspan="1">3</td>
+    <td colspan="1">Juan Astonitas</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-031</td>
+    <td colspan="1">Visualización del equipo de trabajo.</td>
+    <td colspan="1">T001</td>
+    <td colspan="1">Crear la sección de Conoce al Equipo de la landing page.</td>
+    <td colspan="1">Como visitante quiero poder ver al equipo de desarollo para así poder conocer a las personas detras del proyecto.</td>
+    <td colspan="1">3</td>
+    <td colspan="1">Juan Astonitas</td>
+    <td colspan="1">Done</td>
+  </tr>
+</table>
+
+
+##### 6.2.1.4. Development Evidence for Sprint Review.
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, las Web Applications y los Web Services. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Landing Page**
+
+| Repository          | Branch  | Commit Id | Commit Message                                                                       | Commit Message Body                                                                   | Date       |
+|---------------------|---------|-----------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------|
+| BykerZ-Landing-Page | develop | 09b7216b  | Initial commit                                                                       | Initial commit                                                                        | 08/10/2025 |
+| BykerZ-Landing-Page | develop | cf789b69  | feat: add multilingual support script                                                | feat: add multilingual support script                                                 | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c9d3b907  | feat: add styles for language selector                                               | feat: add styles for language selector                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 8ff55ac0  | feat: add i18n support                                                               | feat: add i18n support                                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 6ac895e0  | feat: update index.html to include external script file                              | feat: update index.html to include external script file                               | 08/10/2025 |
+| BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation                         | feat: update button labels for web and mobile app navigation                          | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config                        | feat: add team roles and copyright information in i18n config                         | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information                         | feat: add unique IDs to team roles and copyright information                          | 08/10/2025 |
+| BykerZ-Landing-Page | develop | e5ba6d37  | feat: add plans section with pricing details and navigation links                    | feat: add plans section with pricing details and navigation links                     | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 59dab675  | feat: add video embeds to project placeholders and update styles for responsiveness  | feat: add video embeds to project placeholders and update styles for responsiveness   | 08/10/2025 |
+
+
+**Web Application**
+
+| Repository             | Branch            | Commit Id | Commit Message                                                      | Commit Message Body                                                 | Date       |
+|------------------------|-------------------|-----------|---------------------------------------------------------------------|---------------------------------------------------------------------|------------|
+| BykerZ-Web-Application | develop           | a0be106          | feat: initial routes set                                            | feat: initial routes set                                            | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 89fa421          | feat: navbar implemented                                            | feat: navbar implemented                                            | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 7c1d8ea          | feat: vehicle entity                                                | feat: vehicle entity                                                | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 6d49a52          | feat: incomplete create dialog                                      | feat: incomplete create dialog                                      | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 41d38a4          | feat: add vehicle form                                              | feat: add vehicle form                                              | 08/10/2025 |
+| BykerZ-Web-Application | develop           | e44a98e          | feat: vehicle details screen                                        | feat: vehicle details screen                                        | 08/10/2025 |
+| BykerZ-Web-Application | suscription       | 6d49a52          | feat(subscription): subscription page.                              | feat(subscription): subscription page.                              | 08/10/2025 |
+| BykerZ-Web-Application | vehicle-wellness  | 376f4a7          | feat: implement maintenance management features and update routing  | feat: implement maintenance management features and update routing  | 08/10/2025 |
+
+
+**Backend**
+
+| Repository     | Branch | Commit Id | Commit Message                               | Commit Message Body                          | Date       |
+|----------------|--------|-----------|----------------------------------------------|----------------------------------------------|------------|
+| BykerZ-Backend | main   | d0ff2f2   | Initial commit                               | Initial commit                               | 08/10/2025 |
+| BykerZ-Backend | main   | a690332   | fix(apiConfiguration): fix api configuration | fix(apiConfiguration): fix api configuration | 08/10/2025 |
+| BykerZ-Backend | main   | 475861b   | feat(iam-vehicle-shared): initial commit     | feat(iam-vehicle-shared): initial commit     | 08/10/2025 |
+
+
+##### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+
+Para este sprint no se desarrollaron pruebas unitarias ni de integración, ya que el enfoque principal estuvo en la implementación inicial de los componentes del ecosistema digital. Sin embargo, se reconoce la importancia de incorporar una suite de pruebas en futuros sprints para garantizar la calidad y estabilidad del software a medida que se avanza en el desarrollo.
+
+##### 6.2.1.6. Execution Evidence for Sprint Review.
+
+En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
+
+Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+**Landing Page**
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-1.png" alt="Landing Page Evidence 1">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-2.png" alt="Landing Page Evidence 2">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-3.png" alt="Landing Page Evidence 3">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-4.png" alt="Landing Page Evidence 4">
+
+<img src="images/chapter-6/sprint-1-landing-execution-evidence-5.png" alt="Landing Page Evidence 5">
+
+**Backend**
+
+<img src="images/chapter-6/sprint-1-backend-execution-evidence-1.png" alt="Backend Evidence 1">
+
+##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
+
+Backend repository: []()
+
+| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
+|-----------|-------------|-------------|-------------|---------------|----------------|-------------|
+| /api/v1/users | GET | Obtiene la lista completa de usuarios. | — | — | Lista de usuarios con sus datos principales. | Permite visualizar todos los usuarios registrados en el sistema. |
+| /api/v1/users | PUT | Actualiza la información de un usuario existente. | — | Objeto JSON con los datos actualizados del usuario. | Usuario actualizado con sus nuevos valores. | Modifica los datos de un usuario en la base de datos. |
+| /api/v1/users/{userId} | GET | Obtiene la información de un usuario específico. | `userId` (path) | — | Datos detallados del usuario. | Retorna la información del usuario identificado por su ID. |
+| /api/v1/users/{userId} | DELETE | Elimina un usuario del sistema. | `userId` (path) | — | Mensaje de confirmación de eliminación. | Permite eliminar usuarios registrados. |
+| /api/v1/users/me | GET | Obtiene la información del usuario autenticado. | Token de autenticación (header) | — | Datos del usuario autenticado. | Permite conocer los datos del usuario actualmente logueado. |
+| /api/v1/users/email/{username} | GET | Busca un usuario por su nombre de usuario o correo electrónico. | `username` (path) | — | Datos del usuario encontrado. | Permite consultar usuarios mediante su nombre de usuario o email. |
+| /api/v1/vehicles | GET | Lista todos los vehículos registrados. | — | — | Lista de vehículos registrados. | Permite visualizar los vehículos disponibles en el sistema. |
+| /api/v1/vehicles | POST | Registra un nuevo vehículo. | — | Objeto JSON con los datos del vehículo. | Vehículo creado con su ID asignado. | Permite añadir nuevos vehículos a la base de datos. |
+| /api/v1/vehicles/{vehicleId} | GET | Obtiene la información de un vehículo específico. | `vehicleId` (path) | — | Datos detallados del vehículo. | Retorna los datos de un vehículo registrado. |
+| /api/v1/brands | GET | Lista todas las marcas de vehículos. | — | — | Lista de marcas registradas. | Permite visualizar las marcas disponibles en el sistema. |
+| /api/v1/brands | POST | Crea una nueva marca. | — | Objeto JSON con los datos de la marca. | Marca creada con su identificador. | Permite registrar nuevas marcas de vehículos. |
+| /api/v1/brands/{brandId} | GET | Obtiene los detalles de una marca específica. | `brandId` (path) | — | Datos de la marca solicitada. | Retorna la información detallada de una marca registrada. |
+| /api/v1/models | GET | Lista todos los modelos de vehículos. | — | — | Lista de modelos registrados. | Permite consultar todos los modelos disponibles. |
+| /api/v1/models | POST | Crea un nuevo modelo de vehículo. | — | Objeto JSON con nombre, marca y año del modelo. | Modelo creado con su identificador. | Permite añadir nuevos modelos de vehículos. |
+| /api/v1/models/{modelId} | GET | Obtiene los detalles de un modelo específico. | `modelId` (path) | — | Datos detallados del modelo. | Retorna la información de un modelo de vehículo. |
+| /api/v1/authentication/sign-up | POST | Registra un nuevo usuario. | — | Objeto JSON con datos de registro (nombre, correo, contraseña, etc.). | Usuario creado con token de autenticación. | Permite crear nuevas cuentas de usuario en el sistema. |
+| /api/v1/authentication/sign-in | POST | Autentica a un usuario. | — | Objeto JSON con `username` y `password`. | Token JWT y datos del usuario autenticado. | Permite iniciar sesión y obtener credenciales para acceder a recursos protegidos. |
+| /api/v1/authentication/** | OPTIONS | Verifica los métodos HTTP soportados. | — | — | Cabeceras con métodos permitidos. | Usado para CORS y exploración de la API. |
+| /api/v1/roles | GET | Lista todos los roles disponibles. | — | — | Lista de roles registrados en el sistema. | Permite consultar los distintos roles de usuario disponibles. |
+
+##### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+**Backend**
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#/](https://bykerz-backend.onrender.com/swagger-ui/index.html#/)
+
+##### 6.2.1.9. Team Collaboration Insights during Sprint.
+
+En esta sección se presentan los insights de colaboración del equipo durante el Sprint, destacando cómo se desarrollaron las actividades de implementación y el nivel de participación de cada integrante en los diferentes productos: Landing Page, Backend y Web Application. Se incluyen capturas de los analíticos de colaboración y registros de commits en GitHub, acompañadas de una interpretación conjunta elaborada por el equipo. Este análisis permite evidenciar el grado de involucramiento, coordinación y contribución de los miembros en las tareas de desarrollo, reflejando el trabajo colaborativo y la dinámica del equipo a lo largo del Sprint.
+
+**Landing Page**
+
+<img src="images/chapter-6/insights/sprint-1-insights-landing-page-1.png" alt="Collaboration Evidence 1">
+
+<img src="images/chapter-6/insights/sprint-1-insights-landing-page-2.png" alt="Collaboration Evidence 3">
+
+Distribución de commits:
+
+* Juan Astonitas: 10 commits
+* Gabriel Casas: 2 commit 
+
+**Web Application**
+
+<img src="images/chapter-6/insights/sprint-1-insights-web-app-1.png" alt="Collaboration Evidence 1">
+
+<img src="images/chapter-6/insights/sprint-1-insights-web-app-2.png" alt="Collaboration Evidence 2">
+
+Distribución de commits:
+
+* Sebastián Real: 13 commits 
+* Juan Astonitas: 5 commit 
+* Gabriel Casas: 9 commit 
+
+**Backend**
+
+<img src="images/chapter-6/insights/sprint-1-insights-backend-1.png" alt="Collaboration Evidence 1">
+
+<img src="images/chapter-6/insights/sprint-1-insights-backend-2.png" alt="Collaboration Evidence 2">
+
+Distribución de commits:
+
+* José Alejo: 4 commits
+* Juan Astonitas: 1 commit
+
+### 6.3. Validation Interviews.
+
+#### 6.3.1. Diseño de Entrevistas.
+
+#### 6.3.2. Registro de Entrevistas.
+
+#### 6.3.3. Evaluaciones según heurísticas.
+
+### 6.4. Video About-the-Product.
+
 ## Conclusiones
 
 **TB1**: Durante el desarrollo del TB1, el equipo de trabajo logró definir claramente el problema a resolver y los objetivos del proyecto, estableciendo una base sólida para las siguientes fases del desarrollo. Usando metodologías ágiles, modelado estratégico y diseño centrado en el usuario, además del Lean UX, event storming, mapping y desarrollo de user stories, se sentaron las bases para un desarrollo iterativo y centrado en las necesidades del usuario final. Además, el proceso promovió la colaboración efectiva entre los miembros del equipo, facilitando la comunicación y la toma de decisiones informadas.
@@ -4153,3 +5447,14 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
 
 ## Anexos
+
+Video exposición tp: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Backend	BykerZ-Backend : [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)
+
+BykerZ-Landing-Page: [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)
+
+BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)
+
+Entrevistas del needfinding: [Needfinding Interviews - NRG6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/EUX6HJSrkWFLsupKCjibccgBqipXedXcpryQbgwV-mpKdQ?e=fp4EZr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
