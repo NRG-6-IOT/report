@@ -4611,17 +4611,55 @@ En esta sección se presentan los wireflows que ilustran los flujos de interacci
 ##### Web Application
 La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
+**User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
+![usergoal1.drawio.png](images/chapter-5/user-goals-web/usergoal1.drawio.png)
+![wireflow1.drawio.png](images/chapter-5/wireflows-web/wireflow1.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Gastos. Al acceder, la interfaz muestra la lista de registros existentes, permitiendo al usuario visualizar la información general de cada gasto de manera clara y organizada.
+
+**User Goal: Como dueño de moto, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal2.drawio.png](images/chapter-5/user-goals-web/usergoal2.drawio.png)
+![wireflow2.drawio.png](images/chapter-5/wireflows-web/wireflow2.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como dueño de moto, quiero revisar los matenimientos de mis vehículos.**
+![usergoal3.drawio.png](images/chapter-5/user-goals-web/usergoal3.drawio.png)
+![wireflow3.drawio.png](images/chapter-5/wireflows-web/wireflow3.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Finalmente, el sistema despliega una vista con los mantenimientos programados, permitiendo al usuario observar de forma clara las fechas, tipos de servicio y estado de cada mantenimiento.
+
 **User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
-![web-wireflows-view-vehicles.png](images/chapter-5/wireflows-web/web-wireflows-view-vehicles.png)
+![usergoal4.drawio.png](images/chapter-5/user-goals-web/usergoal4.drawio.png)
+![wireflow4.drawio.png](images/chapter-5/wireflows-web/wireflow4.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Al acceder a la página, el sistema muestra la lista de vehículos registrados del usuario, permitiéndole visualizar la información general de cada uno de manera clara y organizada.
 
-**User Goal: Como dueño de moto, quiero vincular un mecánico a mi motocicleta.**
-![web-wireflows-sync-mechanic.png](images/chapter-5/wireflows-web/web-wireflows-sync-mechanic.png)
-El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
+**User Goal: Como dueño de moto, quiero vincular un nuevo mecánico a mi motocicleta.**
+![usergoal5.drawio.png](images/chapter-5/user-goals-web/usergoal5.drawio.png)
+![wireflow5.drawio.png](images/chapter-5/wireflows-web/wireflow5.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. Luego, el usuario presiona en la moto de su preferencia para acceder a los detalles del vehículo. Dentro de esta vista, el usuario presiona el botón Vincular, ingresa el código del mecánico y confirma la acción al presionar Solicitar. Finalmente, el sistema actualiza la interfaz y el usuario observa su moto vinculada correctamente al mecánico correspondiente.
 
-**User Goal: Como dueño de moto, quiero editar los datos de un vehículo registrado.**
-![web-wireflows-edit-vehicle.png](images/chapter-5/wireflows-web/web-wireflows-edit-vehicle.png)
-El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la opción Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los datos del vehículo modificados correctamente.
+**User Goal: Como dueño de moto, quiero editar los detalles de una motocicleta que me pertenece.**
+![usergoal6.drawio.png](images/chapter-5/user-goals-web/usergoal6.drawio.png)
+![wireflow6.drawio.png](images/chapter-5/wireflows-web/wireflow6.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Vehículos. En la lista de motos registradas, el usuario presiona en su vehículo para acceder a los detalles del mismo. Dentro de esta vista, el usuario presiona el botón Editar, realiza los cambios necesarios en el formulario y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa los detalles modificados reflejados en la pantalla.
+
+**User Goal: Como mecánico de motos, quiero visualizar las suscripciones activas.**
+![usergoal7.drawio.png](images/chapter-5/user-goals-web/usergoal7.drawio.png)
+![wireflow7.drawio.png](images/chapter-5/wireflows-web/wireflow7.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Suscripciones. Al acceder, la interfaz muestra la lista de suscripciones activas, permitiendo al mecánico visualizar la información general de cada una de manera clara y organizada.
+
+**User Goal: Como mecánico de motos, quiero visualizar la comparativa que hay entre mis vehículos.**
+![usergoal8.drawio.png](images/chapter-5/user-goals-web/usergoal8.drawio.png)
+![wireflow8.drawio.png](images/chapter-5/wireflows-web/wireflow8.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Comparativas. Al acceder, la interfaz muestra las cards de los vehículos registrados, donde el usuario presiona en la card de su preferencia para ver los detalles. Finalmente, el sistema despliega una vista con la comparativa entre los vehículos seleccionados, permitiendo al usuario observar de forma clara las diferencias y similitudes en aspectos clave como rendimiento, costos y mantenimientos.
+
+**User Goal: Como mecánico de motos, quiero progamar un mantenimiento.**
+![usergoal9.drawio.png](images/chapter-5/user-goals-web/usergoal9.drawio.png)
+![wireflow9.drawio.png](images/chapter-5/wireflows-web/wireflow9.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Mantenimientos. Al acceder, la interfaz muestra los recuadros de las motos registradas, donde el usuario presiona el recuadro de su moto para ver los detalles. Dentro de esta vista, el usuario presiona el botón Programar, completa el formulario con los detalles del mantenimiento y confirma la acción al presionar Guardar. Finalmente, el sistema actualiza la interfaz y el usuario observa el nuevo mantenimiento programado reflejado en la pantalla.
+
+**User Goal: Como mecanico de motos, quiero adquirir las membresias.**
+![usergoal10.drawio.png](images/chapter-5/user-goals-web/usergoal10.drawio.png)
+![wireflow10.drawio.png](images/chapter-5/wireflows-web/wireflow10.drawio.png)
+El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
 ##### Mobile Application
 La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
