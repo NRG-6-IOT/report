@@ -4714,29 +4714,24 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
-<img src="images/chapter-5/mockups/mockup-1.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-2.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-3.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-4.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-5.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-6.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-7.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-8.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-9.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-10.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-11.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
+![mockup1.png](images/chapter-5/mockups/mockup1.png)
+![mockup2.png](images/chapter-5/mockups/mockup2.png)
+![mockup3.png](images/chapter-5/mockups/mockup3.png)
+![mockup4.png](images/chapter-5/mockups/mockup4.png)
+![mockup5.png](images/chapter-5/mockups/mockup5.png)
+![mockup6.png](images/chapter-5/mockups/mockup6.png)
+![mockup7.png](images/chapter-5/mockups/mockup7.png)
+![mockup8.png](images/chapter-5/mockups/mockup8.png)
+![mockup9.png](images/chapter-5/mockups/mockup9.png)
+![mockup10.png](images/chapter-5/mockups/mockup10.png)
+![mockup11.png](images/chapter-5/mockups/mockup11.png)
+![mockup12.png](images/chapter-5/mockups/mockup12.png)
+![mockup13.png](images/chapter-5/mockups/mockup13.png)
+![mockup14.png](images/chapter-5/mockups/mockup14.png)
+![mockup15.png](images/chapter-5/mockups/mockup15.png)
+![mockup16.png](images/chapter-5/mockups/mockup16.png)
+![mockup17.png](images/chapter-5/mockups/mockup17.png)
+![mockup18.png](images/chapter-5/mockups/mockup18.png)
 
 ##### Mobile Application
 
