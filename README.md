@@ -4857,6 +4857,12 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 
 En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
+Aplicación Móvil:
+- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
+
+Aplicación Web:
+- [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
+
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
 ### 6.1. Software Configuration Management.
