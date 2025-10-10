@@ -5279,7 +5279,7 @@ Para este sprint no se desarrollaron pruebas unitarias ni de integración, ya qu
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video: []()
+Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Landing Page**
 
