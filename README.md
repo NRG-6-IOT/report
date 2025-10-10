@@ -27,7 +27,6 @@
 | **Astonitas Díaz Juan Diego**             | U202110237 |
 | **Casas Sanchez Gabriel Alexander**       | U202220033 |
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
-| **Paitan Pumachuca Max Anthony**          | U201314454 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 
@@ -5446,6 +5445,8 @@ Distribución de commits:
 ## Conclusiones
 
 **TB1**: Durante el desarrollo del TB1, el equipo de trabajo logró definir claramente el problema a resolver y los objetivos del proyecto, estableciendo una base sólida para las siguientes fases del desarrollo. Usando metodologías ágiles, modelado estratégico y diseño centrado en el usuario, además del Lean UX, event storming, mapping y desarrollo de user stories, se sentaron las bases para un desarrollo iterativo y centrado en las necesidades del usuario final. Además, el proceso promovió la colaboración efectiva entre los miembros del equipo, facilitando la comunicación y la toma de decisiones informadas.
+
+**TP**: Durante el desarrollo del Trabajo Parcial, el equipo consolidó el avance técnico del proyecto mediante la implementación del Sprint 1, que incluyó el progreso en la web application, el backend y el despliegue completo de la landing page. Asimismo, se desarrollaron los user flows, wireflows y la arquitectura UX, fortaleciendo la coherencia entre el diseño y la funcionalidad del sistema. Este proceso permitió integrar los resultados del modelado previo con el desarrollo técnico, garantizando una base sólida y escalable para los siguientes sprints. Además, se mantuvo una comunicación constante y un enfoque colaborativo, lo que favoreció la coordinación eficiente y el cumplimiento de los objetivos del sprint.
 
 ## Bibliografía
 
