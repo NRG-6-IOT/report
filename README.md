@@ -5033,7 +5033,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear la vista de visualización de gastos</td>
     <td colspan="1">Como motociclista, quiero registrar los gastos de mantenimiento y repuestos que realizo, para llevar un control acumulado mensual o por kilometraje.</td>
     <td colspan="1">8</td>
-    <td colspan="1"></td>
+    <td colspan="1">Gabriel Casas</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5043,7 +5043,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear la vista de visualización de mantenimientos.</td>
     <td colspan="1">Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó.</td>
     <td colspan="1">8</td>
-    <td colspan="1"></td>
+    <td colspan="1">Gianluca Pascuale</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5053,7 +5053,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Programar la vista de mantenimientos de desde la vista de mecánicos.</td>
     <td colspan="1">Como mecánico, quiero consultar el historial de servicios realizados en una moto específica, para tomar decisiones informadas al momento del diagnóstico.</td>
     <td colspan="1">5</td>
-    <td colspan="1"></td>
+    <td colspan="1">Sebastián Pacheco</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5063,7 +5063,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear la vista de suscripciones activas desde la vista de mecánicos.</td>
     <td colspan="1">Como mecánico, quiero poder visualizar las subscripciones activas de todos mis clientes, para tener claridad sobre qué motociclistas me han otorgado acceso a sus datos y poder gestionar mejor la relación.</td>
     <td colspan="1">5</td>
-    <td colspan="1"></td>
+    <td colspan="1">Gabriel Casas</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5073,7 +5073,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear la sección de Misión y Visón de la landing page.</td>
     <td colspan="1">Como visitante, quiero ver una sección en la landing page con la Misión y Visión de la startup para conocer más a detalle los objetivos del proyecto.</td>
     <td colspan="1">3</td>
-    <td colspan="1"></td>
+    <td colspan="1">Juan Astonitas</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5097,13 +5097,23 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Done</td>
   </tr>
   <tr>
+    <td colspan="1">US-027</td>
+    <td colspan="1">Consulta de motos.</td>
+    <td colspan="1">T002</td>
+    <td colspan="1">Crear el un endpoint para la consulta de motos.</td>
+    <td colspan="1">Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.</td>
+    <td colspan="1">8</td>
+    <td colspan="1">Sebastián Real</td>
+    <td colspan="1">Done</td>
+  </tr>
+  <tr>
     <td colspan="1">US-030</td>
     <td colspan="1">Visualización de las características del producto.</td>
     <td colspan="1">T001</td>
     <td colspan="1">Crear la sección de características de la landing page.</td>
     <td colspan="1">Como visitante, quiero poder ver las caracteristicas que brinda la solución</td>
     <td colspan="1">3</td>
-    <td colspan="1"></td>
+    <td colspan="1">Juan Astonitas</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5113,7 +5123,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear la sección de Conoce al Equipo de la landing page.</td>
     <td colspan="1">Como visitante quiero poder ver al equipo de desarollo para así poder conocer a las personas detras del proyecto.</td>
     <td colspan="1">3</td>
-    <td colspan="1"></td>
+    <td colspan="1">Juan Astonitas</td>
     <td colspan="1">Done</td>
   </tr>
 </table>
