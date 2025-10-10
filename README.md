@@ -171,187 +171,148 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 ## Contenido
 
-- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
-    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
-    - [**NRC**: 3443](#nrc-3443)
-    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
-    - [**Ingeniería de software**](#ingeniería-de-software)
-  - [Informe del trabajo Final](#informe-del-trabajo-final)
-    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
-    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
-  - [**Integrantes**](#integrantes)
-  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
-  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
-  - [Contenido](#contenido)
-  - [Student Outcome](#student-outcome)
-  - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1 Startup Profile](#11-startup-profile)
-      - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-      - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2 Solution Profile](#12-solution-profile)
-      - [Problema identificado](#problema-identificado)
-      - [Solución propuesta](#solución-propuesta)
-      - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [What](#what)
-        - [When](#when)
-        - [Where](#where)
-        - [Who](#who)
-        - [Why](#why)
-        - [How](#how)
-        - [How Much](#how-much)
-      - [1.2.2 Lean UX Process](#122-lean-ux-process)
-        - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-        - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-        - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-      - [Segmento Objetivo #1: Motociclistas](#segmento-objetivo-1-motociclistas)
-      - [Segmento Objetivo #2: Mecánicos](#segmento-objetivo-2-mecánicos)
-  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1 Competidores](#21-competidores)
-      - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-      - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2 Entrevistas](#22-entrevistas)
-      - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-      - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-      - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3 Needfinding](#23-needfinding)
-      - [2.3.1 User Personas](#231-user-personas)
-      - [2.3.2 User Task Matrix](#232-user-task-matrix)
-      - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-      - [2.3.4 Empathy Mapping](#234-empathy-mapping)
-    - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
-    - [2.5 Ubiquitous Language](#25-ubiquitous-language)
-  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1 User Stories](#31-user-stories)
-- [Épicas](#épicas)
-    - [3.2 Impact Mapping](#32-impact-mapping)
-    - [3.3 Product Backlog](#33-product-backlog)
-  - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
-      - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
-        - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
-        - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-        - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
-      - [4.1.2 Context Mapping](#412-context-mapping)
-      - [4.1.3 Software Architecture](#413-software-architecture)
-        - [4.1.3.1 Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-        - [4.1.3.2 Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-        - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-        - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-    - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
-        - [4.2.1.1 Domain Layer](#4211-domain-layer)
-    - [Aggregate: `Vehicle`](#aggregate-vehicle)
-        - [4.2.1.2 Interface Layer](#4212-interface-layer)
-    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
-        - [4.2.1.3 Application Layer](#4213-application-layer)
-    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
-    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
-        - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
-    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
-        - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-          - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-      - [4.2.2 Bounded Context: Historiales](#422-bounded-context-historiales)
-        - [4.2.2.1 Domain Layer](#4221-domain-layer)
-        - [4.2.2.2 Interface Layer](#4222-interface-layer)
-        - [4.2.2.3 Application Layer](#4223-application-layer)
-        - [4.2.2.4 Infrastructure Layer](#4224-infrastructure-layer)
-        - [4.2.2.5 Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-          - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-suscripción)
-        - [4.2.3.1 Domain Layer](#4231-domain-layer)
-        - [4.2.3.2 Interface Layer](#4232-interface-layer)
-        - [4.2.3.3 Application Layer](#4233-application-layer)
-        - [4.2.3.4 Infrastructure Layer](#4234-infrastructure-layer)
-        - [4.2.3.5 Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.3.6 Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.3.6.1 Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-          - [4.2.3.6.2 Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-      - [4.2.4 Bounded Context: Bienestar de Vehículos](#424-bounded-context-bienestar-de-vehículos)
-        - [4.2.4.1 Domain Layer](#4241-domain-layer)
-        - [4.2.4.2 Interface Layer](#4242-interface-layer)
-        - [4.2.4.3 Application Layer](#4243-application-layer)
-        - [4.2.4.4 Infrastructure Layer](#4244-infrastructure-layer)
-        - [4.2.4.5 Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.4.6 Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.4.6.1 Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-          - [4.2.4.6.2 Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-      - [4.2.5 Bounded Context: Reportes](#425-bounded-context-reportes)
-        - [4.2.5.1 Domain Layer](#4251-domain-layer)
-        - [4.2.5.2 Interface Layer](#4252-interface-layer)
-        - [4.2.5.3 Application Layer](#4253-application-layer)
-        - [4.2.5.4 Infrastructure Layer](#4254-infrastructure-layer)
-        - [4.2.5.5 Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-          - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-      - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
-        - [4.2.6.1 Domain Layer](#4261-domain-layer)
-        - [4.2.6.2 Interface Layer](#4262-interface-layer)
-        - [4.2.6.3 Application Layer](#4263-application-layer)
-          - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
-        - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-          - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-  - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-    - [5.1. Style Guidelines](#51-style-guidelines)
-      - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-      - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
-    - [5.2. Information Architecture](#52-information-architecture)
-      - [5.2.1. Organization Systems](#521-organization-systems)
-      - [5.2.2. Labeling Systems](#522-labeling-systems)
-      - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-      - [5.2.4. Searching Systems](#524-searching-systems)
-      - [5.2.5. Navigation Systems](#525-navigation-systems)
-    - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-      - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-      - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
-    - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-      - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-        - [Web Application](#web-application)
-        - [Mobile Application](#mobile-application)
-      - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
-        - [Web Application](#web-application-1)
-        - [Mobile Application](#mobile-application-1)
-      - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-        - [Web Application](#web-application-2)
-        - [Mobile Application](#mobile-application-2)
-      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-        - [Web Application](#web-application-3)
-    - [Mobile Application](#mobile-application-3)
-    - [5.5. Applications Prototyping](#55-applications-prototyping)
-  - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
-    - [6.1. Software Configuration Management.](#61-software-configuration-management)
-      - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
-      - [6.1.2. Source Code Management.](#612-source-code-management)
-      - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
-      - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
-    - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
-      - [6.2.1. Sprint 1](#621-sprint-1)
-        - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
-        - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
-        - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
-        - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
-        - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
-        - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
-        - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
-        - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
-        - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
-    - [6.3. Validation Interviews.](#63-validation-interviews)
-      - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
-      - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
-      - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
-    - [6.4. Video About-the-Product.](#64-video-about-the-product)
-  - [Conclusiones](#conclusiones)
-  - [Bibliografía](#bibliografía)
-  - [Anexos](#anexos)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+  - [1.1 Startup Profile](#11-startup-profile)
+    - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2 Solution Profile](#12-solution-profile)
+    - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2 Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  - [2.1 Competidores](#21-competidores)
+    - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2 Entrevistas](#22-entrevistas)
+    - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3 Needfinding](#23-needfinding)
+    - [2.3.1 User Personas](#231-user-personas)
+    - [2.3.2 User Task Matrix](#232-user-task-matrix)
+    - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4 Empathy Mapping](#234-empathy-mapping)
+  - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
+  - [2.5 Ubiquitous Language](#25-ubiquitous-language)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1 User Stories](#31-user-stories)
+  - [3.2 Impact Mapping](#32-impact-mapping)
+  - [3.3 Product Backlog](#33-product-backlog)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+  - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+    - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
+      - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
+      - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+      - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
+    - [4.1.2 Context Mapping](#412-context-mapping)
+    - [4.1.3 Software Architecture](#413-software-architecture)
+      - [4.1.3.1 Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+      - [4.1.3.2 Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+      - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+      - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+  - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+    - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
+      - [4.2.1.1 Domain Layer](#4211-domain-layer)
+      - [4.2.1.2 Interface Layer](#4212-interface-layer)
+      - [4.2.1.3 Application Layer](#4213-application-layer)
+      - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+      - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+        - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+    - [4.2.2 Bounded Context: Historiales](#422-bounded-context-historiales)
+      - [4.2.2.1 Domain Layer](#4221-domain-layer)
+      - [4.2.2.2 Interface Layer](#4222-interface-layer)
+      - [4.2.2.3 Application Layer](#4223-application-layer)
+      - [4.2.2.4 Infrastructure Layer](#4224-infrastructure-layer)
+      - [4.2.2.5 Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
+        - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
+    - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-suscripción)
+      - [4.2.3.1 Domain Layer](#4231-domain-layer)
+      - [4.2.3.2 Interface Layer](#4232-interface-layer)
+      - [4.2.3.3 Application Layer](#4233-application-layer)
+      - [4.2.3.4 Infrastructure Layer](#4234-infrastructure-layer)
+      - [4.2.3.5 Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.3.6 Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.3.6.1 Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+        - [4.2.3.6.2 Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+    - [4.2.4 Bounded Context: Bienestar de Vehículos](#424-bounded-context-bienestar-de-vehículos)
+      - [4.2.4.1 Domain Layer](#4241-domain-layer)
+      - [4.2.4.2 Interface Layer](#4242-interface-layer)
+      - [4.2.4.3 Application Layer](#4243-application-layer)
+      - [4.2.4.4 Infrastructure Layer](#4244-infrastructure-layer)
+      - [4.2.4.5 Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.4.6 Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.4.6.1 Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
+        - [4.2.4.6.2 Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
+    - [4.2.5 Bounded Context: Reportes](#425-bounded-context-reportes)
+      - [4.2.5.1 Domain Layer](#4251-domain-layer)
+      - [4.2.5.2 Interface Layer](#4252-interface-layer)
+      - [4.2.5.3 Application Layer](#4253-application-layer)
+      - [4.2.5.4 Infrastructure Layer](#4254-infrastructure-layer)
+      - [4.2.5.5 Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+        - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+    - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
+      - [4.2.6.1 Domain Layer](#4261-domain-layer)
+      - [4.2.6.2 Interface Layer](#4262-interface-layer)
+      - [4.2.6.3 Application Layer](#4263-application-layer)
+      - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
+      - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
+        - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+  - [5.1. Style Guidelines](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture](#52-information-architecture)
+    - [5.2.1. Organization Systems](#521-organization-systems)
+    - [5.2.2. Labeling Systems](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems](#524-searching-systems)
+    - [5.2.5. Navigation Systems](#525-navigation-systems)
+  - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+    - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+    - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+    - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+    - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping](#55-applications-prototyping)
+- [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+  - [6.1. Software Configuration Management.](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+    - [6.1.2. Source Code Management.](#612-source-code-management)
+    - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+    - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+  - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+    - [6.2.1. Sprint 1](#621-sprint-1)
+      - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+      - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
+      - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+      - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews.](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product.](#64-video-about-the-product)
+- [Conclusiones](#conclusiones)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
 
 ## Student Outcome
 
@@ -380,10 +341,12 @@ del ABET – EAC - Student Outcome 5.
         <strong>TB1:</strong> Asumí un rol de liderazgo compartido en la definición de los modelos del dominio y en la elaboración del <em>Solution Profile</em>, <em>Big Picture Eventstorming</em>, <em>Domain Message Flows Modeling</em> y los <em>Bounded Context Canvases</em>. Promoví la colaboración entre los miembros del equipo para mantener coherencia entre los diferentes modelos y asegurar una visión unificada del sistema.<br><br>
         <strong>Real Calderon Sebastian Omar</strong><br>
         <strong>TB1:</strong> Participé activamente en la elaboración de los <em>Segmentos Objetivos</em>, los <em>User Stories</em>, el <em>Product Backlog</em> y el <em>Context Mapping</em>. Coordiné la integración de estos artefactos con el resto del equipo, fomentando la comunicación constante y asegurando que las definiciones del dominio se mantuvieran alineadas con los objetivos del proyecto.<br><br>
+        <strong>TP:</strong> Asumí un rol colaborativo en la integración de los desarrollos implementados, participando activamente en la coordinación técnica y en la validación conjunta de las funcionalidades construidas. Contribuí al liderazgo compartido al apoyar la toma de decisiones técnicas y asegurar la coherencia entre los diferentes módulos del sistema.<br><br>
         <strong>Alejo Cardenas Jose Antonio</strong><br>
         <strong>TB1:</strong> Lideré la elaboración del <em>Lean UX Process</em>, el <em>Análisis de Competidores</em> y la <em>Arquitectura de Software</em>. Trabajé de manera conjunta con mis compañeros para definir estrategias de diseño y establecer lineamientos técnicos que respondieran a las necesidades del proyecto, priorizando siempre la coherencia y el consenso en las decisiones tomadas.<br><br>
         <strong>Pacheco Astiguetta Sebastian</strong><br>
-        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br><br>
+        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br>
+        <strong>TP1:</strong> Participé en el desarrollo del Event Storming, colaboranto para identificar los eventos clave del dominio y los actores involucrados. Elaboré, junto a mis compañeros, las distintas secciones que los prototipos tendrán, considerando los wireframes, mock-ups y sus respectivos flujos, dando una base de partida para el desarrollo de las aplicaciones web y móvil.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
@@ -400,10 +363,12 @@ del ABET – EAC - Student Outcome 5.
         <strong>TB1:</strong> Promoví un entorno colaborativo e inclusivo al coordinar la definición de los artefactos de modelado del dominio. Establecí metas claras junto al equipo y organicé las tareas relacionadas con la arquitectura y el diseño del sistema, asegurando la integración entre todas las secciones del informe.<br><br>
         <strong>Real Calderon Sebastian Omar</strong><br>
         <strong>TB1:</strong> Contribuí a la planificación de tareas y organización del equipo, promoviendo la colaboración en el desarrollo de los artefactos funcionales y de dominio. Aporté en la definición de objetivos comunes y verifiqué la coherencia entre los entregables del grupo.<br><br>
+        <strong>TP:</strong> Participé en la planificación y distribución de tareas de desarrollo, fomentando un entorno colaborativo e inclusivo. Aseguré la integración de las funcionalidades desarrolladas con el resto del sistema y apoyé el cumplimiento de los objetivos establecidos para las entregas del proyecto.<br><br>
         <strong>Alejo Cardenas Jose Antonio</strong><br>
         <strong>TB1:</strong> Fomenté un entorno de trabajo inclusivo durante la elaboración del Lean UX Process, Análisis de Competidores y Arquitectura de Software. Planifiqué las tareas de manera organizada junto al grupo, asegurando que cada entregable se alineara con los objetivos generales del proyecto.<br><br>
         <strong>Pacheco Astiguetta Sebastian</strong><br>
-        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br><br>
+        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br>
+        <strong>TP1:</strong> Fomenté un ambiente de trabajo colaborativo e inclusivo durante el desarrollo del Event Storming y la definición de los prototipos. Establecí metas claras para cada sección y organicé las tareas de diseño, asegurando que todos los integrantes del equipo pudieran contribuir con sus ideas y habilidades para cumplir con los objetivos del proyecto.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
@@ -4758,6 +4723,8 @@ En esta sección se presentan los mock-ups finales de la aplicacion movil, donde
 
 #### 5.4.4. Applications User Flow Diagrams
 
+En esta sección se presentan los user flows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
+
 ##### Web Application
 
 **User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
@@ -4844,6 +4811,8 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos, donde el sistema muestra en pantalla los gastos registrados, permitiéndole visualizar la información correspondiente de forma clara y organizada.
 
 ### 5.5. Applications Prototyping
+
+En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
@@ -5224,31 +5193,42 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Landing Page**
 
-| Repository          | Branch  | Commit Id | Commit Message                                                | Commit Message Body                                           | Date       |
-|---------------------|---------|-----------|---------------------------------------------------------------|---------------------------------------------------------------|------------|
-| BykerZ-Landing-Page | develop | 09b7216b  | Initial commit                                                | Initial commit                                                | 08/10/2025 |
-| BykerZ-Landing-Page | develop | cf789b69  | feat: add multilingual support script                         | feat: add multilingual support script                         | 08/10/2025 |
-| BykerZ-Landing-Page | develop | c9d3b907  | feat: add styles for language selector                        | feat: add styles for language selector                        | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 8ff55ac0  | feat: add i18n support                                        | feat: add i18n support                                        | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 6ac895e0  | feat: update index.html to include external script file       | feat: update index.html to include external script file       | 08/10/2025 |
-| BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation  | feat: update button labels for web and mobile app navigation  | 08/10/2025 |
-| BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config | feat: add team roles and copyright information in i18n config | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information  | feat: add unique IDs to team roles and copyright information  | 08/10/2025 |
-| BykerZ-Landing-Page | develop | e5ba6d37  | feat: add plans section with pricing details and navigation links  | feat: add plans section with pricing details and navigation links   | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 59dab675  | feat: add video embeds to project placeholders and update styles for responsiveness  | feat: add video embeds to project placeholders and update styles for responsiveness  | 08/10/2025 |
+| Repository          | Branch  | Commit Id | Commit Message                                                                       | Commit Message Body                                                                   | Date       |
+|---------------------|---------|-----------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------|
+| BykerZ-Landing-Page | develop | 09b7216b  | Initial commit                                                                       | Initial commit                                                                        | 08/10/2025 |
+| BykerZ-Landing-Page | develop | cf789b69  | feat: add multilingual support script                                                | feat: add multilingual support script                                                 | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c9d3b907  | feat: add styles for language selector                                               | feat: add styles for language selector                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 8ff55ac0  | feat: add i18n support                                                               | feat: add i18n support                                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 6ac895e0  | feat: update index.html to include external script file                              | feat: update index.html to include external script file                               | 08/10/2025 |
+| BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation                         | feat: update button labels for web and mobile app navigation                          | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config                        | feat: add team roles and copyright information in i18n config                         | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information                         | feat: add unique IDs to team roles and copyright information                          | 08/10/2025 |
+| BykerZ-Landing-Page | develop | e5ba6d37  | feat: add plans section with pricing details and navigation links                    | feat: add plans section with pricing details and navigation links                     | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 59dab675  | feat: add video embeds to project placeholders and update styles for responsiveness  | feat: add video embeds to project placeholders and update styles for responsiveness   | 08/10/2025 |
 
 
 **Web Application**
 
-| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date       |
-|------------------------|---------|-----------|----------------|---------------------|------------|
-| BykerZ-Web-Application | develop |           | I              |                     | 08/10/2025 |
+| Repository             | Branch            | Commit Id | Commit Message                                                      | Commit Message Body                                                 | Date       |
+|------------------------|-------------------|-----------|---------------------------------------------------------------------|---------------------------------------------------------------------|------------|
+| BykerZ-Web-Application | develop           | a0be106          | feat: initial routes set                                            | feat: initial routes set                                            | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 89fa421          | feat: navbar implemented                                            | feat: navbar implemented                                            | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 7c1d8ea          | feat: vehicle entity                                                | feat: vehicle entity                                                | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 6d49a52          | feat: incomplete create dialog                                      | feat: incomplete create dialog                                      | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 41d38a4          | feat: add vehicle form                                              | feat: add vehicle form                                              | 08/10/2025 |
+| BykerZ-Web-Application | develop           | e44a98e          | feat: vehicle details screen                                        | feat: vehicle details screen                                        | 08/10/2025 |
+| BykerZ-Web-Application | suscription       | 6d49a52          | feat(subscription): subscription page.                              | feat(subscription): subscription page.                              | 08/10/2025 |
+| BykerZ-Web-Application | vehicle-wellness  | 376f4a7          | feat: implement maintenance management features and update routing  | feat: implement maintenance management features and update routing  | 08/10/2025 |
+
 
 **Backend**
 
-| Repository     | Branch  | Commit Id | Commit Message | Commit Message Body | Date       |
-|----------------|---------|-----------|----------------|---------------------|------------|
-| BykerZ-Backend | develop |           | I              |                     | 08/10/2025 |
+| Repository     | Branch | Commit Id | Commit Message                               | Commit Message Body                          | Date       |
+|----------------|--------|-----------|----------------------------------------------|----------------------------------------------|------------|
+| BykerZ-Backend | main   | d0ff2f2   | Initial commit                               | Initial commit                               | 08/10/2025 |
+| BykerZ-Backend | main   | a690332   | fix(apiConfiguration): fix api configuration | fix(apiConfiguration): fix api configuration | 08/10/2025 |
+| BykerZ-Backend | main   | 475861b   | feat(iam-vehicle-shared): initial commit     | feat(iam-vehicle-shared): initial commit     | 08/10/2025 |
+
 
 ##### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
@@ -5280,7 +5260,26 @@ En esta sección se presentan los avances logrados en la documentación de los W
 Backend repository: []()
 
 | endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
-|----------|------------|-------------|------------|--------------|---------------|-------------|
+|-----------|-------------|-------------|-------------|---------------|----------------|-------------|
+| /api/v1/users | GET | Obtiene la lista completa de usuarios. | — | — | Lista de usuarios con sus datos principales. | Permite visualizar todos los usuarios registrados en el sistema. |
+| /api/v1/users | PUT | Actualiza la información de un usuario existente. | — | Objeto JSON con los datos actualizados del usuario. | Usuario actualizado con sus nuevos valores. | Modifica los datos de un usuario en la base de datos. |
+| /api/v1/users/{userId} | GET | Obtiene la información de un usuario específico. | `userId` (path) | — | Datos detallados del usuario. | Retorna la información del usuario identificado por su ID. |
+| /api/v1/users/{userId} | DELETE | Elimina un usuario del sistema. | `userId` (path) | — | Mensaje de confirmación de eliminación. | Permite eliminar usuarios registrados. |
+| /api/v1/users/me | GET | Obtiene la información del usuario autenticado. | Token de autenticación (header) | — | Datos del usuario autenticado. | Permite conocer los datos del usuario actualmente logueado. |
+| /api/v1/users/email/{username} | GET | Busca un usuario por su nombre de usuario o correo electrónico. | `username` (path) | — | Datos del usuario encontrado. | Permite consultar usuarios mediante su nombre de usuario o email. |
+| /api/v1/vehicles | GET | Lista todos los vehículos registrados. | — | — | Lista de vehículos registrados. | Permite visualizar los vehículos disponibles en el sistema. |
+| /api/v1/vehicles | POST | Registra un nuevo vehículo. | — | Objeto JSON con los datos del vehículo. | Vehículo creado con su ID asignado. | Permite añadir nuevos vehículos a la base de datos. |
+| /api/v1/vehicles/{vehicleId} | GET | Obtiene la información de un vehículo específico. | `vehicleId` (path) | — | Datos detallados del vehículo. | Retorna los datos de un vehículo registrado. |
+| /api/v1/brands | GET | Lista todas las marcas de vehículos. | — | — | Lista de marcas registradas. | Permite visualizar las marcas disponibles en el sistema. |
+| /api/v1/brands | POST | Crea una nueva marca. | — | Objeto JSON con los datos de la marca. | Marca creada con su identificador. | Permite registrar nuevas marcas de vehículos. |
+| /api/v1/brands/{brandId} | GET | Obtiene los detalles de una marca específica. | `brandId` (path) | — | Datos de la marca solicitada. | Retorna la información detallada de una marca registrada. |
+| /api/v1/models | GET | Lista todos los modelos de vehículos. | — | — | Lista de modelos registrados. | Permite consultar todos los modelos disponibles. |
+| /api/v1/models | POST | Crea un nuevo modelo de vehículo. | — | Objeto JSON con nombre, marca y año del modelo. | Modelo creado con su identificador. | Permite añadir nuevos modelos de vehículos. |
+| /api/v1/models/{modelId} | GET | Obtiene los detalles de un modelo específico. | `modelId` (path) | — | Datos detallados del modelo. | Retorna la información de un modelo de vehículo. |
+| /api/v1/authentication/sign-up | POST | Registra un nuevo usuario. | — | Objeto JSON con datos de registro (nombre, correo, contraseña, etc.). | Usuario creado con token de autenticación. | Permite crear nuevas cuentas de usuario en el sistema. |
+| /api/v1/authentication/sign-in | POST | Autentica a un usuario. | — | Objeto JSON con `username` y `password`. | Token JWT y datos del usuario autenticado. | Permite iniciar sesión y obtener credenciales para acceder a recursos protegidos. |
+| /api/v1/authentication/** | OPTIONS | Verifica los métodos HTTP soportados. | — | — | Cabeceras con métodos permitidos. | Usado para CORS y exploración de la API. |
+| /api/v1/roles | GET | Lista todos los roles disponibles. | — | — | Lista de roles registrados en el sistema. | Permite consultar los distintos roles de usuario disponibles. |
 
 ##### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
