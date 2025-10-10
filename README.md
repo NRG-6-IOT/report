@@ -5336,6 +5336,18 @@ Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/
 
 <img src="images/chapter-6/sprint-1-backend-execution-evidence-1.png" alt="Backend Evidence 1">
 
+**Web Application**
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-1.png" alt="Web Application Evidence 1">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-2.png" alt="Web Application Evidence 2">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-3.png" alt="Web Application Evidence 3">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-4.png" alt="Web Application Evidence 4">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-5.png" alt="Web Application Evidence 5">
+
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
 En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
