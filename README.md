@@ -191,6 +191,19 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
 
 ## Contenido
 
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
+    - [**NRC**: 3443](#nrc-3443)
+    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
+    - [**Ingeniería de software**](#ingeniería-de-software)
+  - [Informe del trabajo Final](#informe-del-trabajo-final)
+    - [**Nombre del startup:** NRG6](#nombre-del-startup-nrg6)
+    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
+  - [**Integrantes**](#integrantes)
+  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
+  - [Contenido](#contenido)
   - [Student Outcome](#student-outcome)
   - [Capítulo I: Introducción](#capítulo-i-introducción)
     - [1.1 Startup Profile](#11-startup-profile)
@@ -200,6 +213,13 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
       - [Problema identificado](#problema-identificado)
       - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [What](#what)
+        - [When](#when)
+        - [Where](#where)
+        - [Who](#who)
+        - [Why](#why)
+        - [How](#how)
+        - [How Much](#how-much)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
@@ -243,9 +263,14 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
       - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
+    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
+    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
+    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
+    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
@@ -4750,7 +4775,7 @@ En esta sección se presentan los mock-ups finales de la aplicacion movil, donde
 
 <img src="images/chapter-5/mockups-mobile/mockup8.jpg" alt="app mockup"/>
 
-<img src="images/chapter-5/mockups-mobile/mockup9.jpg" alt="app mockup"/>
+<img src="images/chapter-5/mockups-mobile/mockup9.png" alt="app mockup"/>
 
 <img src="images/chapter-5/mockups-mobile/mockup10.jpg" alt="app mockup"/>
 
