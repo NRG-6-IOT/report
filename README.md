@@ -5335,6 +5335,9 @@ Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/
 
 <img src="images/chapter-6/sprint-1-landing-execution-evidence-5.png" alt="Landing Page Evidence 5">
 
+**Backend**
+
+<img src="images/chapter-6/sprint-1-backend-execution-evidence-1.png" alt="Backend Evidence 1">
 
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
@@ -5385,15 +5388,45 @@ Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https:
 
 **Backend**
 
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#/](https://bykerz-backend.onrender.com/swagger-ui/index.html#/)
+
 ##### 6.2.1.9. Team Collaboration Insights during Sprint.
 
 En esta sección se presentan los insights de colaboración del equipo durante el Sprint, destacando cómo se desarrollaron las actividades de implementación y el nivel de participación de cada integrante en los diferentes productos: Landing Page, Backend y Web Application. Se incluyen capturas de los analíticos de colaboración y registros de commits en GitHub, acompañadas de una interpretación conjunta elaborada por el equipo. Este análisis permite evidenciar el grado de involucramiento, coordinación y contribución de los miembros en las tareas de desarrollo, reflejando el trabajo colaborativo y la dinámica del equipo a lo largo del Sprint.
 
 **Landing Page**
 
+<img src="images/chapter-6/insights/sprint-1-insights-landing-page-1.png" alt="Collaboration Evidence 1">
+
+<img src="images/chapter-6/insights/sprint-1-insights-landing-page-2.png" alt="Collaboration Evidence 3">
+
+Distribución de commits:
+
+* Juan Astonitas: 10 commits
+* Gabriel Casas: 2 commit 
+
 **Web Application**
 
+<img src="images/chapter-6/insights/sprint-1-insights-web-app-1.png" alt="Collaboration Evidence 1">
+
+<img src="images/chapter-6/insights/sprint-1-insights-web-app-2.png" alt="Collaboration Evidence 2">
+
+Distribución de commits:
+
+* Sebastián Real: 13 commits 
+* Juan Astonitas: 5 commit 
+* Gabriel Casas: 9 commit 
+
 **Backend**
+
+<img src="images/chapter-6/insights/sprint-1-insights-backend-1.png" alt="Collaboration Evidence 1">
+
+<img src="images/chapter-6/insights/sprint-1-insights-backend-2.png" alt="Collaboration Evidence 2">
+
+Distribución de commits:
+
+* José Alejo: 4 commits
+* Juan Astonitas: 1 commit
 
 ### 6.3. Validation Interviews.
 
