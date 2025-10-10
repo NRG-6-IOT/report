@@ -378,6 +378,7 @@ del ABET – EAC - Student Outcome 5.
       <td>
         <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
         <strong>TB1:</strong> Asumí un rol de liderazgo compartido en la definición de los modelos del dominio y en la elaboración del <em>Solution Profile</em>, <em>Big Picture Eventstorming</em>, <em>Domain Message Flows Modeling</em> y los <em>Bounded Context Canvases</em>. Promoví la colaboración entre los miembros del equipo para mantener coherencia entre los diferentes modelos y asegurar una visión unificada del sistema.<br><br>
+        <strong>TP:</strong> Asumí un rol activo como lider coordinando a mis compañeros para poder realizar cada entregable, fomente comunicación activa entre todos, y estuve al pendiente de cada integrante.<br><br>
         <strong>Real Calderon Sebastian Omar</strong><br>
         <strong>TB1:</strong> Participé activamente en la elaboración de los <em>Segmentos Objetivos</em>, los <em>User Stories</em>, el <em>Product Backlog</em> y el <em>Context Mapping</em>. Coordiné la integración de estos artefactos con el resto del equipo, fomentando la comunicación constante y asegurando que las definiciones del dominio se mantuvieran alineadas con los objetivos del proyecto.<br><br>
         <strong>TP:</strong> Asumí un rol colaborativo en la integración de los desarrollos implementados, participando activamente en la coordinación técnica y en la validación conjunta de las funcionalidades construidas. Contribuí al liderazgo compartido al apoyar la toma de decisiones técnicas y asegurar la coherencia entre los diferentes módulos del sistema.<br><br>
@@ -401,6 +402,7 @@ del ABET – EAC - Student Outcome 5.
       <td>
         <br><strong>Casas Sanchez Gabriel Alexander</strong><br>
         <strong>TB1:</strong> Promoví un entorno colaborativo e inclusivo al coordinar la definición de los artefactos de modelado del dominio. Establecí metas claras junto al equipo y organicé las tareas relacionadas con la arquitectura y el diseño del sistema, asegurando la integración entre todas las secciones del informe.<br><br>
+        <strong>TP:</strong> A traves del uso de la herramienta trello pude lograr crear un entorno colaborativo exitoso, definimos reuniones semanales para poder revisar cada entrega y así poder entregar un proyecto en condiciones.<br><br>
         <strong>Real Calderon Sebastian Omar</strong><br>
         <strong>TB1:</strong> Contribuí a la planificación de tareas y organización del equipo, promoviendo la colaboración en el desarrollo de los artefactos funcionales y de dominio. Aporté en la definición de objetivos comunes y verifiqué la coherencia entre los entregables del grupo.<br><br>
         <strong>TP:</strong> Participé en la planificación y distribución de tareas de desarrollo, fomentando un entorno colaborativo e inclusivo. Aseguré la integración de las funcionalidades desarrolladas con el resto del sistema y apoyé el cumplimiento de los objetivos establecidos para las entregas del proyecto.<br><br>
@@ -4877,6 +4879,12 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 
 En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
+Aplicación Móvil:
+- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
+
+Aplicación Web:
+- [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
+
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
 ### 6.1. Software Configuration Management.
@@ -5301,7 +5309,7 @@ Para este sprint no se desarrollaron pruebas unitarias ni de integración, ya qu
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video: []()
+Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Landing Page**
 
@@ -5395,4 +5403,10 @@ Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito e
 
 ## Anexos
 
-Video exposición tp: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KAe=gFiYHu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KAe=gFiYHu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Video exposición tp: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Backend	BykerZ-Backend : [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)
+
+BykerZ-Landing-Page: [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)
+
+BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)
