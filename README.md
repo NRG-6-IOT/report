@@ -5054,6 +5054,9 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 | BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation  | feat: update button labels for web and mobile app navigation  | 08/10/2025 |
 | BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config | feat: add team roles and copyright information in i18n config | 08/10/2025 |
 | BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information  | feat: add unique IDs to team roles and copyright information  | 08/10/2025 |
+| BykerZ-Landing-Page | develop | e5ba6d37  | feat: add plans section with pricing details and navigation links  | feat: add plans section with pricing details and navigation links   | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 59dab675  | feat: add video embeds to project placeholders and update styles for responsiveness  | feat: add video embeds to project placeholders and update styles for responsiveness  | 08/10/2025 |
+
 
 **Web Application**
 
