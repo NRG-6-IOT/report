@@ -1089,7 +1089,7 @@ A continuación, se presenta el User Persona de Carlos Quispe. Él representa al
 
 A continuación, se presenta el perfil de Daniel Castro, un User Persona desarrollado para representar al segmento clave de motociclistas jóvenes y urbanos en Lima que han adoptado las motocicletas eléctricas como su principal medio de transporte. Este arquetipo sintetiza los hallazgos de la investigación de usuarios, encapsulando sus comportamientos, necesidades y metas.
 
-![user_persona2.png](images/chapter-2/user_persona2.png)
+![user_persona2.png](images/chapter-2/user_persona.png)
 
 #### 2.3.2 User Task Matrix
 
