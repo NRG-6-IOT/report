@@ -379,7 +379,8 @@ del ABET – EAC - Student Outcome 5.
         <strong>Alejo Cardenas Jose Antonio</strong><br>
         <strong>TB1:</strong> Lideré la elaboración del <em>Lean UX Process</em>, el <em>Análisis de Competidores</em> y la <em>Arquitectura de Software</em>. Trabajé de manera conjunta con mis compañeros para definir estrategias de diseño y establecer lineamientos técnicos que respondieran a las necesidades del proyecto, priorizando siempre la coherencia y el consenso en las decisiones tomadas.<br><br>
         <strong>Pacheco Astiguetta Sebastian</strong><br>
-        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br><br>
+        <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br>
+        <strong>TP1:</strong> Participé en el desarrollo del Event Storming, colaboranto para identificar los eventos clave del dominio y los actores involucrados. Elaboré, junto a mis compañeros, las distintas secciones que los prototipos tendrán, considerando los wireframes, mock-ups y sus respectivos flujos, dando una base de partida para el desarrollo de las aplicaciones web y móvil.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
@@ -399,7 +400,8 @@ del ABET – EAC - Student Outcome 5.
         <strong>Alejo Cardenas Jose Antonio</strong><br>
         <strong>TB1:</strong> Fomenté un entorno de trabajo inclusivo durante la elaboración del Lean UX Process, Análisis de Competidores y Arquitectura de Software. Planifiqué las tareas de manera organizada junto al grupo, asegurando que cada entregable se alineara con los objetivos generales del proyecto.<br><br>
         <strong>Pacheco Astiguetta Sebastian</strong><br>
-        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br><br>
+        <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br>
+        <strong>TP1:</strong> Fomenté un ambiente de trabajo colaborativo e inclusivo durante el desarrollo del Event Storming y la definición de los prototipos. Establecí metas claras para cada sección y organicé las tareas de diseño, asegurando que todos los integrantes del equipo pudieran contribuir con sus ideas y habilidades para cumplir con los objetivos del proyecto.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
