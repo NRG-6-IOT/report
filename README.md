@@ -5382,3 +5382,9 @@ Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito e
 ## Anexos
 
 Video exposición tp: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Backend	BykerZ-Backend : [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)
+
+BykerZ-Landing-Page: [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)
+
+BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)
