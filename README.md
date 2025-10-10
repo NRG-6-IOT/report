@@ -4669,6 +4669,8 @@ En esta sección se presentan los mock-ups finales de las aplicaciones, donde se
 
 #### 5.4.4. Applications User Flow Diagrams
 
+En esta sección se presentan los user flows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
+
 ##### Web Application
 
 **User Goal: Como dueño de moto, quiero visualizar mis motocicletas registradas.**
@@ -4755,6 +4757,8 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la página de Gastos, donde el sistema muestra en pantalla los gastos registrados, permitiéndole visualizar la información correspondiente de forma clara y organizada.
 
 ### 5.5. Applications Prototyping
+
+En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
