@@ -125,7 +125,7 @@
       <td>Desarrollo del tactical-level domain-Driven design</td>
     </tr>
     <tr>
-        <td>1.1</td>
+        <td>1.4</td>
         <td>03/10/2025</td>
         <td>Casas Sanchez Gabriel Alexander</td>
         <td>Se añadieron los general style guidelines</td>
