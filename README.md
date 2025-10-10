@@ -173,6 +173,7 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 - [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
     - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
     - [**NRC**: 3443](#nrc-3443)
     - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
     - [**Ingeniería de software**](#ingeniería-de-software)
@@ -315,8 +316,12 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
     - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
       - [5.4.1. Applications Wireframes](#541-applications-wireframes)
       - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+        - [Web Application](#web-application)
+        - [Mobile Application](#mobile-application)
       - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
       - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+        - [Web Application](#web-application-1)
+    - [Mobile Application](#mobile-application-1)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
     - [6.1. Software Configuration Management.](#61-software-configuration-management)
@@ -325,10 +330,10 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
       - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
       - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
     - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
-      - [6.2.1. Sprint n](#621-sprint-n)
-        - [6.2.1.1. Sprint Planning n.](#6211-sprint-planning-n)
+      - [6.2.1. Sprint 1](#621-sprint-1)
+        - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
         - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
-        - [6.2.1.3. Sprint Backlog n.](#6213-sprint-backlog-n)
+        - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
         - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
         - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
         - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
@@ -5115,7 +5120,26 @@ En esta sección se presentan los avances logrados en la documentación de los W
 Backend repository: []()
 
 | endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
-|----------|------------|-------------|------------|--------------|---------------|-------------|
+|-----------|-------------|-------------|-------------|---------------|----------------|-------------|
+| /api/v1/users | GET | Obtiene la lista completa de usuarios. | — | — | Lista de usuarios con sus datos principales. | Permite visualizar todos los usuarios registrados en el sistema. |
+| /api/v1/users | PUT | Actualiza la información de un usuario existente. | — | Objeto JSON con los datos actualizados del usuario. | Usuario actualizado con sus nuevos valores. | Modifica los datos de un usuario en la base de datos. |
+| /api/v1/users/{userId} | GET | Obtiene la información de un usuario específico. | `userId` (path) | — | Datos detallados del usuario. | Retorna la información del usuario identificado por su ID. |
+| /api/v1/users/{userId} | DELETE | Elimina un usuario del sistema. | `userId` (path) | — | Mensaje de confirmación de eliminación. | Permite eliminar usuarios registrados. |
+| /api/v1/users/me | GET | Obtiene la información del usuario autenticado. | Token de autenticación (header) | — | Datos del usuario autenticado. | Permite conocer los datos del usuario actualmente logueado. |
+| /api/v1/users/email/{username} | GET | Busca un usuario por su nombre de usuario o correo electrónico. | `username` (path) | — | Datos del usuario encontrado. | Permite consultar usuarios mediante su nombre de usuario o email. |
+| /api/v1/vehicles | GET | Lista todos los vehículos registrados. | — | — | Lista de vehículos registrados. | Permite visualizar los vehículos disponibles en el sistema. |
+| /api/v1/vehicles | POST | Registra un nuevo vehículo. | — | Objeto JSON con los datos del vehículo. | Vehículo creado con su ID asignado. | Permite añadir nuevos vehículos a la base de datos. |
+| /api/v1/vehicles/{vehicleId} | GET | Obtiene la información de un vehículo específico. | `vehicleId` (path) | — | Datos detallados del vehículo. | Retorna los datos de un vehículo registrado. |
+| /api/v1/brands | GET | Lista todas las marcas de vehículos. | — | — | Lista de marcas registradas. | Permite visualizar las marcas disponibles en el sistema. |
+| /api/v1/brands | POST | Crea una nueva marca. | — | Objeto JSON con los datos de la marca. | Marca creada con su identificador. | Permite registrar nuevas marcas de vehículos. |
+| /api/v1/brands/{brandId} | GET | Obtiene los detalles de una marca específica. | `brandId` (path) | — | Datos de la marca solicitada. | Retorna la información detallada de una marca registrada. |
+| /api/v1/models | GET | Lista todos los modelos de vehículos. | — | — | Lista de modelos registrados. | Permite consultar todos los modelos disponibles. |
+| /api/v1/models | POST | Crea un nuevo modelo de vehículo. | — | Objeto JSON con nombre, marca y año del modelo. | Modelo creado con su identificador. | Permite añadir nuevos modelos de vehículos. |
+| /api/v1/models/{modelId} | GET | Obtiene los detalles de un modelo específico. | `modelId` (path) | — | Datos detallados del modelo. | Retorna la información de un modelo de vehículo. |
+| /api/v1/authentication/sign-up | POST | Registra un nuevo usuario. | — | Objeto JSON con datos de registro (nombre, correo, contraseña, etc.). | Usuario creado con token de autenticación. | Permite crear nuevas cuentas de usuario en el sistema. |
+| /api/v1/authentication/sign-in | POST | Autentica a un usuario. | — | Objeto JSON con `username` y `password`. | Token JWT y datos del usuario autenticado. | Permite iniciar sesión y obtener credenciales para acceder a recursos protegidos. |
+| /api/v1/authentication/** | OPTIONS | Verifica los métodos HTTP soportados. | — | — | Cabeceras con métodos permitidos. | Usado para CORS y exploración de la API. |
+| /api/v1/roles | GET | Lista todos los roles disponibles. | — | — | Lista de roles registrados en el sistema. | Permite consultar los distintos roles de usuario disponibles. |
 
 ##### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
