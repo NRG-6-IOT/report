@@ -958,6 +958,8 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Duración de la Entrevista | 4:20                                                       |
 | Minuto de Inicio          | 0:00                                                       |
 
+Flavio, un joven mecánico de 21 años que trabaja en un taller de motos en San Miguel, destaca por su enfoque práctico y empírico en el mantenimiento y diagnóstico vehicular. Realiza principalmente servicios preventivos y correctivos de motos de delivery, registrando la información de sus clientes de forma manual, lo que genera dificultades en el seguimiento de mantenimientos. Su personalidad es proactiva y orientada a la mejora del servicio, mostrando interés en herramientas tecnológicas que optimicen su trabajo. Usa canales digitales básicos como WhatsApp para comunicarse, pero carece de sistemas especializados. Considera que el acceso a datos de telemetría como kilometraje, consumo o estado de batería le permitiría anticiparse a fallas y mejorar su precisión en los diagnósticos. Además, se muestra dispuesto a implementar soluciones digitales, incluso bajo un modelo de suscripción fija, siempre que sean fáciles de usar, precisas y se integren con plataformas cotidianas.
+
 | Entrevista 2              | ![Juan](images/chapter-2/thumbnail-mecanico2-juan.png) |
 |---------------------------|--------------------------------------------------------|
 | Nombre del entrevistado   | Juan Cuellar                                           |
@@ -967,6 +969,8 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Duración de la Entrevista | 4:15                                                   |
 | Minuto de Inicio          | 4:20                                                   |
 
+Juan, un mecánico de 25 años con tres años de experiencia en el mantenimiento de motos de uso diario, delivery y mototaxis, trabaja en un entorno práctico y orientado a la rapidez del servicio. Ofrece mantenimientos básicos y reparaciones eléctricas sencillas, priorizando la atención ágil a repartidores que dependen de sus vehículos para trabajar. Lleva el registro de mantenimientos en una hoja de Excel y se comunica con sus clientes principalmente mediante WhatsApp, aunque admite que no actualiza sus registros con frecuencia por falta de tiempo. Su diagnóstico se basa en observación, experiencia y prueba directa, sin herramientas avanzadas. Considera que la posibilidad de monitorear remotamente las motos mediante telemetría sería muy beneficiosa, ya que le permitiría anticipar problemas y brindar un servicio más eficiente. Valora métricas como kilometraje, batería, consumo y presión de llantas, y reconoce la utilidad de reportes simples y periódicos para mejorar la confianza del cliente. Con una actitud abierta hacia la tecnología, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio agregado bajo un modelo de costo fijo, siempre que sea fácil de usar y práctica, alineada con su ritmo de trabajo y el de sus clientes repartidores.
+
 | Entrevista 3              | ![Aldo](images/chapter-2/thumbnail-mecanico3-aldo.png) |
 |---------------------------|--------------------------------------------------------|
 | Nombre del entrevistado   | Aldo Vasquez                                           |
@@ -975,6 +979,9 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Ocupación                 | Ayudante de mecánico                                   |
 | Duración de la Entrevista | 3:58                                                   |
 | Minuto de Inicio          | 8:18                                                   |
+
+Aldo, un joven mecánico de 23 años con un año de experiencia en un taller de Breña, se caracteriza por su enfoque empírico y su interés en mejorar la eficiencia de su trabajo. Brinda principalmente servicios de mantenimiento preventivo y correctivo, incluyendo cambios de aceite, frenos, cadenas y reparaciones eléctricas, adaptándose al aumento de motos modernas. Registra los mantenimientos de forma manual y memorística, utilizando cuadernos o recordatorios verbales, y se comunica con sus clientes principalmente por WhatsApp. Carece de herramientas digitales para diagnósticos, confiando en su experiencia e intuición, aunque reconoce el valor de la tecnología: considera que la telemetría en tiempo real presión, temperatura, voltaje le permitiría anticipar fallas y optimizar el servicio. Valora la precisión y simplicidad en las herramientas digitales, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio adicional bajo un modelo de costo fijo, y demuestra una actitud abierta hacia la innovación tecnológica aplicada a su labor diaria.
+
 
 A continuación, se presentan detalles de las entrevistas realizadas a los dueños de motos:
 
@@ -987,6 +994,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 5:40                                                         |
 | Minuto de Inicio          | 12:10                                                        |
 
+
 | Entrevista 5              | ![Mathias](images/chapter-2/thumbnail-motociclista2-mathias.png) |
 |---------------------------|------------------------------------------------------------------|
 | Nombre del entrevistado   | Mathias Diaz                                                     |
@@ -995,6 +1003,8 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Ocupación                 | Profesor                                                         |
 | Duración de la Entrevista | 7:34                                                             |
 | Minuto de Inicio          | 17:49                                                            |
+
+
 
 | Entrevista 6              | ![Jair Huamani](images/chapter-2/thumbnail-motociclista3-jair.png) |
 |---------------------------|--------------------------------------------------------------------|
@@ -1005,6 +1015,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 8:28                                                               |
 | Minuto de Inicio          | 25:18                                                              |
 
+Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de transporte en Lima, se caracteriza por su enfoque organizado y su interés en mantener la eficiencia y seguridad de su vehículo. Actualmente, lleva el control del gasto de combustible y mantenimiento de su moto de manera manual, lo que a veces le genera dificultades para recordar fechas importantes. Ha experimentado fallas inesperadas que le han ocasionado gastos imprevistos, lo que le ha llevado a valorar la importancia del mantenimiento preventivo. Se comunica con su mecánico principalmente a través de llamadas y mensajes de texto, pero no utiliza herramientas digitales específicas para gestionar el estado de su moto. Jair se muestra abierto a la idea de una aplicación que le permita monitorear automáticamente el estado de su moto, recibir alertas sobre posibles fallas y conocer métricas en tiempo real como presión de neumáticos, nivel de combustible y temperatura del motor. Valora la simplicidad y claridad en las aplicaciones móviles, y estaría dispuesto a pagar una suscripción mensual si el servicio le ofrece beneficios tangibles en términos de seguridad y ahorro en mantenimiento.
 
 #### 2.2.3 Análisis de entrevistas
 
