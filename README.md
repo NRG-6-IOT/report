@@ -321,9 +321,11 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
         - [Web Application](#web-application-1)
         - [Mobile Application](#mobile-application-1)
       - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
         - [Web Application](#web-application-2)
-    - [Mobile Application](#mobile-application-2)
+        - [Mobile Application](#mobile-application-2)
+      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+        - [Web Application](#web-application-3)
+    - [Mobile Application](#mobile-application-3)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
     - [6.1. Software Configuration Management.](#61-software-configuration-management)
@@ -4676,7 +4678,9 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 #### 5.4.3. Applications Mock-ups
 
-En esta sección se presentan los mock-ups finales de las aplicaciones, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
+##### Web Application
+
+En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
 <img src="images/chapter-5/mockups/mockup-1.png" alt="app mockup"/>
 
@@ -4701,6 +4705,56 @@ En esta sección se presentan los mock-ups finales de las aplicaciones, donde se
 <img src="images/chapter-5/mockups/mockup-11.png" alt="app mockup"/>
 
 <img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
+
+##### Mobile Application
+
+En esta sección se presentan los mock-ups finales de la aplicacion movil, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
+
+<img src="images/chapter-5/mockups-mobile/mockup1.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup2.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup3.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup4.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup5.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup6.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup7.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup8.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup9.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup10.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup11.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup12.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup13.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup14.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup15.png" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup16.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup17.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup18.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup19.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup20.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup21.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup22.jpg" alt="app mockup"/>
+
+<img src="images/chapter-5/mockups-mobile/mockup23.jpg" alt="app mockup"/>
 
 #### 5.4.4. Applications User Flow Diagrams
 
