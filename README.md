@@ -5043,7 +5043,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear la vista de visualización de mantenimientos.</td>
     <td colspan="1">Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó.</td>
     <td colspan="1">8</td>
-    <td colspan="1">Gianluca Pascuale</td>
+    <td colspan="1">Gianluca Pasquale</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
@@ -5103,7 +5103,7 @@ Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H
     <td colspan="1">Crear el un endpoint para la consulta de motos.</td>
     <td colspan="1">Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.</td>
     <td colspan="1">8</td>
-    <td colspan="1">Sebastián Real</td>
+    <td colspan="1">José Alejo</td>
     <td colspan="1">Done</td>
   </tr>
   <tr>
