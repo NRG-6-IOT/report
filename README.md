@@ -137,6 +137,8 @@
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG-8-IOT/report](https://github.com/NRG-8-IOT/report).
 
+**TB1**
+
 <img src="images/insights/report-insights-tb1-1.png" alt="Repo Insights">
 
 <img src="images/insights/report-insights-tb1-2.png" alt="Repo Insights">
@@ -169,21 +171,27 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 <br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
 
+**TP**
+
+<img src="images/insights/report-insights-tp-1.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-2.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-3.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-4.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-5.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-6.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-7.png" alt="Repo Insights">
+
+Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
+Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
+
 ## Contenido
 
-- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
-    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
-    - [**NRC**: 3443](#nrc-3443)
-    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
-    - [**Ingeniería de software**](#ingeniería-de-software)
-  - [Informe del trabajo Final](#informe-del-trabajo-final)
-    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
-    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
-  - [**Integrantes**](#integrantes)
-  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
-  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
-  - [Contenido](#contenido)
   - [Student Outcome](#student-outcome)
   - [Capítulo I: Introducción](#capítulo-i-introducción)
     - [1.1 Startup Profile](#11-startup-profile)
@@ -193,13 +201,6 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
       - [Problema identificado](#problema-identificado)
       - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [What](#what)
-        - [When](#when)
-        - [Where](#where)
-        - [Who](#who)
-        - [Why](#why)
-        - [How](#how)
-        - [How Much](#how-much)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
@@ -243,14 +244,9 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
       - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
-    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
-    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
-    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
-    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
-    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
