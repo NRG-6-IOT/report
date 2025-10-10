@@ -173,6 +173,7 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 - [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
     - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
+    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
     - [**NRC**: 3443](#nrc-3443)
     - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
     - [**Ingeniería de software**](#ingeniería-de-software)
@@ -314,9 +315,15 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
       - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
     - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
       - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+        - [Web Application](#web-application)
+        - [Mobile Application](#mobile-application)
       - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+        - [Web Application](#web-application-1)
+        - [Mobile Application](#mobile-application-1)
       - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
       - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+        - [Web Application](#web-application-2)
+    - [Mobile Application](#mobile-application-2)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
     - [6.1. Software Configuration Management.](#61-software-configuration-management)
@@ -325,10 +332,10 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
       - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
       - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
     - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
-      - [6.2.1. Sprint n](#621-sprint-n)
-        - [6.2.1.1. Sprint Planning n.](#6211-sprint-planning-n)
+      - [6.2.1. Sprint 1](#621-sprint-1)
+        - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
         - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
-        - [6.2.1.3. Sprint Backlog n.](#6213-sprint-backlog-n)
+        - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
         - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
         - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
         - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
@@ -4552,7 +4559,9 @@ En esta sección se desarrolla la propuesta de diseño visual e interactivo de l
 
 #### 5.4.1. Applications Wireframes
 
-Esta sección presenta los wireframes de las aplicaciones móviles, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+##### Web Application
+
+Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
 <img src="images/chapter-5/wireframes/wireframes-1.png" alt="app wireframes"/>
 
@@ -4577,6 +4586,32 @@ Esta sección presenta los wireframes de las aplicaciones móviles, donde se def
 <img src="images/chapter-5/wireframes/wireframes-11.png" alt="app wireframes"/>
 
 <img src="images/chapter-5/wireframes/wireframes-12.png" alt="app wireframes"/>
+
+
+##### Mobile Application
+
+Esta sección presenta los wireframes de las aplicacion movil, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
+
+<img src="images/chapter-5/wireframes-mobile/wireframe1.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe2.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe3.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe4.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe5.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe6.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe7.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe8.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe9.png" alt="app wireframes"/>
+
+<img src="images/chapter-5/wireframes-mobile/wireframe10.png" alt="app wireframes"/>
+
 
 #### 5.4.2. Applications Wireflow Diagram
 En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
