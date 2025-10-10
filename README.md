@@ -5044,31 +5044,42 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Landing Page**
 
-| Repository          | Branch  | Commit Id | Commit Message                                                | Commit Message Body                                           | Date       |
-|---------------------|---------|-----------|---------------------------------------------------------------|---------------------------------------------------------------|------------|
-| BykerZ-Landing-Page | develop | 09b7216b  | Initial commit                                                | Initial commit                                                | 08/10/2025 |
-| BykerZ-Landing-Page | develop | cf789b69  | feat: add multilingual support script                         | feat: add multilingual support script                         | 08/10/2025 |
-| BykerZ-Landing-Page | develop | c9d3b907  | feat: add styles for language selector                        | feat: add styles for language selector                        | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 8ff55ac0  | feat: add i18n support                                        | feat: add i18n support                                        | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 6ac895e0  | feat: update index.html to include external script file       | feat: update index.html to include external script file       | 08/10/2025 |
-| BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation  | feat: update button labels for web and mobile app navigation  | 08/10/2025 |
-| BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config | feat: add team roles and copyright information in i18n config | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information  | feat: add unique IDs to team roles and copyright information  | 08/10/2025 |
-| BykerZ-Landing-Page | develop | e5ba6d37  | feat: add plans section with pricing details and navigation links  | feat: add plans section with pricing details and navigation links   | 08/10/2025 |
-| BykerZ-Landing-Page | develop | 59dab675  | feat: add video embeds to project placeholders and update styles for responsiveness  | feat: add video embeds to project placeholders and update styles for responsiveness  | 08/10/2025 |
+| Repository          | Branch  | Commit Id | Commit Message                                                                       | Commit Message Body                                                                   | Date       |
+|---------------------|---------|-----------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------|
+| BykerZ-Landing-Page | develop | 09b7216b  | Initial commit                                                                       | Initial commit                                                                        | 08/10/2025 |
+| BykerZ-Landing-Page | develop | cf789b69  | feat: add multilingual support script                                                | feat: add multilingual support script                                                 | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c9d3b907  | feat: add styles for language selector                                               | feat: add styles for language selector                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 8ff55ac0  | feat: add i18n support                                                               | feat: add i18n support                                                                | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 6ac895e0  | feat: update index.html to include external script file                              | feat: update index.html to include external script file                               | 08/10/2025 |
+| BykerZ-Landing-Page | develop | ad7f3b71  | feat: update button labels for web and mobile app navigation                         | feat: update button labels for web and mobile app navigation                          | 08/10/2025 |
+| BykerZ-Landing-Page | develop | c5bc2abd  | feat: add team roles and copyright information in i18n config                        | feat: add team roles and copyright information in i18n config                         | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 4e087961  | feat: add unique IDs to team roles and copyright information                         | feat: add unique IDs to team roles and copyright information                          | 08/10/2025 |
+| BykerZ-Landing-Page | develop | e5ba6d37  | feat: add plans section with pricing details and navigation links                    | feat: add plans section with pricing details and navigation links                     | 08/10/2025 |
+| BykerZ-Landing-Page | develop | 59dab675  | feat: add video embeds to project placeholders and update styles for responsiveness  | feat: add video embeds to project placeholders and update styles for responsiveness   | 08/10/2025 |
 
 
 **Web Application**
 
-| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date       |
-|------------------------|---------|-----------|----------------|---------------------|------------|
-| BykerZ-Web-Application | develop |           | I              |                     | 08/10/2025 |
+| Repository             | Branch            | Commit Id | Commit Message                                                      | Commit Message Body                                                 | Date       |
+|------------------------|-------------------|-----------|---------------------------------------------------------------------|---------------------------------------------------------------------|------------|
+| BykerZ-Web-Application | develop           | a0be106          | feat: initial routes set                                            | feat: initial routes set                                            | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 89fa421          | feat: navbar implemented                                            | feat: navbar implemented                                            | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 7c1d8ea          | feat: vehicle entity                                                | feat: vehicle entity                                                | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 6d49a52          | feat: incomplete create dialog                                      | feat: incomplete create dialog                                      | 08/10/2025 |
+| BykerZ-Web-Application | develop           | 41d38a4          | feat: add vehicle form                                              | feat: add vehicle form                                              | 08/10/2025 |
+| BykerZ-Web-Application | develop           | e44a98e          | feat: vehicle details screen                                        | feat: vehicle details screen                                        | 08/10/2025 |
+| BykerZ-Web-Application | suscription       | 6d49a52          | feat(subscription): subscription page.                              | feat(subscription): subscription page.                              | 08/10/2025 |
+| BykerZ-Web-Application | vehicle-wellness  | 376f4a7          | feat: implement maintenance management features and update routing  | feat: implement maintenance management features and update routing  | 08/10/2025 |
+
 
 **Backend**
 
-| Repository     | Branch  | Commit Id | Commit Message | Commit Message Body | Date       |
-|----------------|---------|-----------|----------------|---------------------|------------|
-| BykerZ-Backend | develop |           | I              |                     | 08/10/2025 |
+| Repository     | Branch | Commit Id | Commit Message                               | Commit Message Body                          | Date       |
+|----------------|--------|-----------|----------------------------------------------|----------------------------------------------|------------|
+| BykerZ-Backend | main   | d0ff2f2   | Initial commit                               | Initial commit                               | 08/10/2025 |
+| BykerZ-Backend | main   | a690332   | fix(apiConfiguration): fix api configuration | fix(apiConfiguration): fix api configuration | 08/10/2025 |
+| BykerZ-Backend | main   | 475861b   | feat(iam-vehicle-shared): initial commit     | feat(iam-vehicle-shared): initial commit     | 08/10/2025 |
+
 
 ##### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
