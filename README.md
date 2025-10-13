@@ -14,7 +14,7 @@
 
 ## Informe del trabajo Final
 
-### **Nombre del startup:** NRG8
+### **Nombre del startup:** NRG6
 
 ### **Nombre del producto:** BykerZ
 
@@ -27,7 +27,6 @@
 | **Astonitas Díaz Juan Diego**             | U202110237 |
 | **Casas Sanchez Gabriel Alexander**       | U202220033 |
 | **Pacheco Astiguetta Sebastian**          | U202110291 |
-| **Paitan Pumachuca Max Anthony**          | U201314454 |
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 
@@ -137,6 +136,8 @@
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG-8-IOT/report](https://github.com/NRG-8-IOT/report).
 
+**TB1**
+
 <img src="images/insights/report-insights-tb1-1.png" alt="Repo Insights">
 
 <img src="images/insights/report-insights-tb1-2.png" alt="Repo Insights">
@@ -169,6 +170,25 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 <br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
 
+**TP**
+
+<img src="images/insights/report-insights-tp-1.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-2.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-3.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-4.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-5.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-6.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tp-7.png" alt="Repo Insights">
+
+Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
+Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
+
 ## Contenido
 
 - [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
@@ -178,7 +198,7 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
     - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
     - [**Ingeniería de software**](#ingeniería-de-software)
   - [Informe del trabajo Final](#informe-del-trabajo-final)
-    - [**Nombre del startup:** NRG8](#nombre-del-startup-nrg8)
+    - [**Nombre del startup:** NRG6](#nombre-del-startup-nrg6)
     - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
   - [**Integrantes**](#integrantes)
   - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
@@ -390,6 +410,7 @@ del ABET – EAC - Student Outcome 5.
         <strong>TP1:</strong> Participé en el desarrollo del Event Storming, colaboranto para identificar los eventos clave del dominio y los actores involucrados. Elaboré, junto a mis compañeros, las distintas secciones que los prototipos tendrán, considerando los wireframes, mock-ups y sus respectivos flujos, dando una base de partida para el desarrollo de las aplicaciones web y móvil.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
+        <strong>TP:</strong> Dirigi y trabaje en el diseño de los mockups, wireflows y userflows. trabajando y dando direccion al equipo
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
         <strong>TB1:</strong> Elaboré el <em>Diseño, registro y análisis de entrevistas</em>, organizando la información obtenida de los usuarios para orientar las decisiones del diseño del sistema. Participé en la coordinación del grupo para integrar los resultados de las entrevistas con los artefactos posteriores, fortaleciendo la coherencia entre las etapas del informe.
         <strong>TP1:</strong> Participé activamente en el desarrollo de los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto a mis compañeros, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y los criterios de usabilidad establecidos. Esta contribución permitió sentar una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales.<br><br>
@@ -415,6 +436,7 @@ del ABET – EAC - Student Outcome 5.
         <strong>TP1:</strong> Fomenté un ambiente de trabajo colaborativo e inclusivo durante el desarrollo del Event Storming y la definición de los prototipos. Establecí metas claras para cada sección y organicé las tareas de diseño, asegurando que todos los integrantes del equipo pudieran contribuir con sus ideas y habilidades para cumplir con los objetivos del proyecto.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
+         <strong>TP:</strong> Estableci metas y planifique el desarollo de los userflows para su correcta redaccion y desarrollo.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
         <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.<br>
         <strong>TP1:</strong> Organicé y desarrollé los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto al equipo, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y criterios de usabilidad. Esta labor permitió establecer una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales. <br>
@@ -1067,7 +1089,7 @@ A continuación, se presenta el User Persona de Carlos Quispe. Él representa al
 
 A continuación, se presenta el perfil de Daniel Castro, un User Persona desarrollado para representar al segmento clave de motociclistas jóvenes y urbanos en Lima que han adoptado las motocicletas eléctricas como su principal medio de transporte. Este arquetipo sintetiza los hallazgos de la investigación de usuarios, encapsulando sus comportamientos, necesidades y metas.
 
-![user_persona2.png](images/chapter-2/user_persona2.png)
+![user_persona2.png](images/chapter-2/user_persona.png)
 
 #### 2.3.2 User Task Matrix
 
@@ -4714,29 +4736,24 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
-<img src="images/chapter-5/mockups/mockup-1.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-2.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-3.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-4.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-5.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-6.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-7.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-8.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-9.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-10.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-11.png" alt="app mockup"/>
-
-<img src="images/chapter-5/mockups/mockup-12.png" alt="app mockup"/>
+![mockup1.png](images/chapter-5/mockups/mockup1.png)
+![mockup2.png](images/chapter-5/mockups/mockup2.png)
+![mockup3.png](images/chapter-5/mockups/mockup3.png)
+![mockup4.png](images/chapter-5/mockups/mockup4.png)
+![mockup5.png](images/chapter-5/mockups/mockup5.png)
+![mockup6.png](images/chapter-5/mockups/mockup6.png)
+![mockup7.png](images/chapter-5/mockups/mockup7.png)
+![mockup8.png](images/chapter-5/mockups/mockup8.png)
+![mockup9.png](images/chapter-5/mockups/mockup9.png)
+![mockup10.png](images/chapter-5/mockups/mockup10.png)
+![mockup11.png](images/chapter-5/mockups/mockup11.png)
+![mockup12.png](images/chapter-5/mockups/mockup12.png)
+![mockup13.png](images/chapter-5/mockups/mockup13.png)
+![mockup14.png](images/chapter-5/mockups/mockup14.png)
+![mockup15.png](images/chapter-5/mockups/mockup15.png)
+![mockup16.png](images/chapter-5/mockups/mockup16.png)
+![mockup17.png](images/chapter-5/mockups/mockup17.png)
+![mockup18.png](images/chapter-5/mockups/mockup18.png)
 
 ##### Mobile Application
 
@@ -4758,7 +4775,7 @@ En esta sección se presentan los mock-ups finales de la aplicacion movil, donde
 
 <img src="images/chapter-5/mockups-mobile/mockup8.jpg" alt="app mockup"/>
 
-<img src="images/chapter-5/mockups-mobile/mockup9.jpg" alt="app mockup"/>
+<img src="images/chapter-5/mockups-mobile/mockup9.png" alt="app mockup"/>
 
 <img src="images/chapter-5/mockups-mobile/mockup10.jpg" alt="app mockup"/>
 
@@ -5339,6 +5356,18 @@ Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/
 
 <img src="images/chapter-6/sprint-1-backend-execution-evidence-1.png" alt="Backend Evidence 1">
 
+**Web Application**
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-1.png" alt="Web Application Evidence 1">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-2.png" alt="Web Application Evidence 2">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-3.png" alt="Web Application Evidence 3">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-4.png" alt="Web Application Evidence 4">
+
+<img src="images/chapter-6/sprint-1-web-app-execution-evidence-5.png" alt="Web Application Evidence 5">
+
 ##### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
 En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
@@ -5441,6 +5470,8 @@ Distribución de commits:
 ## Conclusiones
 
 **TB1**: Durante el desarrollo del TB1, el equipo de trabajo logró definir claramente el problema a resolver y los objetivos del proyecto, estableciendo una base sólida para las siguientes fases del desarrollo. Usando metodologías ágiles, modelado estratégico y diseño centrado en el usuario, además del Lean UX, event storming, mapping y desarrollo de user stories, se sentaron las bases para un desarrollo iterativo y centrado en las necesidades del usuario final. Además, el proceso promovió la colaboración efectiva entre los miembros del equipo, facilitando la comunicación y la toma de decisiones informadas.
+
+**TP**: Durante el desarrollo del Trabajo Parcial, el equipo consolidó el avance técnico del proyecto mediante la implementación del Sprint 1, que incluyó el progreso en la web application, el backend y el despliegue completo de la landing page. Asimismo, se desarrollaron los user flows, wireflows y la arquitectura UX, fortaleciendo la coherencia entre el diseño y la funcionalidad del sistema. Este proceso permitió integrar los resultados del modelado previo con el desarrollo técnico, garantizando una base sólida y escalable para los siguientes sprints. Además, se mantuvo una comunicación constante y un enfoque colaborativo, lo que favoreció la coordinación eficiente y el cumplimiento de los objetivos del sprint.
 
 ## Bibliografía
 
