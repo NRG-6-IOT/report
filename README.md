@@ -1,24 +1,24 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="150" alt="UPC Logo">
 
-# Universidad Peruana de Ciencias Aplicadas
+Universidad Peruana de Ciencias Aplicadas
 
-### **CURSO:** Desarrollo de Soluciones IoT
+**CURSO:** Desarrollo de Soluciones IoT
 
-### **Código del Curso**: 1ASI0572
+**Código del Curso**: 1ASI0572
 
-### **NRC**: 3443
+**NRC**: 3443
 
-### **Profesor:** Ángel Augusto Velásquez Núñez
+**Profesor:** Ángel Augusto Velásquez Núñez
 
-### **Ingeniería de software**
+**Ingeniería de software**
 
-## Informe del trabajo Final
+**Informe del trabajo Final**
 
-### **Nombre del startup:** NRG6
+**Nombre del startup:** NRG6
 
-### **Nombre del producto:** BykerZ
+**Nombre del producto:** BykerZ
 
-## **Integrantes**
+**Integrantes**
 
 
 | **Nombre**                                | **Codigo** |
@@ -33,7 +33,7 @@
 
 **Septiembre 2025**
 
-## Registro de Versiones del Informe
+**Registro de Versiones del Informe**
 
 <table>
   <thead>
@@ -132,7 +132,7 @@
   </tbody>
 </table>
 
-## Project Report Collaboration Insights
+**Project Report Collaboration Insights**
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG-8-IOT/report](https://github.com/NRG-8-IOT/report).
 
@@ -190,19 +190,6 @@ Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cu
 Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
 
 ## Contenido
-
-- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-    - [**CURSO:** Desarrollo de Soluciones IoT](#curso-desarrollo-de-soluciones-iot)
-    - [**Código del Curso**: 1ASI0572](#código-del-curso-1asi0572)
-    - [**NRC**: 3443](#nrc-3443)
-    - [**Profesor:** Ángel Augusto Velásquez Núñez](#profesor-ángel-augusto-velásquez-núñez)
-    - [**Ingeniería de software**](#ingeniería-de-software)
-  - [Informe del trabajo Final](#informe-del-trabajo-final)
-    - [**Nombre del startup:** NRG6](#nombre-del-startup-nrg6)
-    - [**Nombre del producto:** BykerZ](#nombre-del-producto-bykerz)
-  - [**Integrantes**](#integrantes)
-  - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
-  - [Project Report Collaboration Insights](#project-report-collaboration-insights)
   - [Contenido](#contenido)
   - [Student Outcome](#student-outcome)
   - [Capítulo I: Introducción](#capítulo-i-introducción)
@@ -213,21 +200,12 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
       - [Problema identificado](#problema-identificado)
       - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [What](#what)
-        - [When](#when)
-        - [Where](#where)
-        - [Who](#who)
-        - [Why](#why)
-        - [How](#how)
-        - [How Much](#how-much)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
         - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
         - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
         - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
     - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-      - [Segmento Objetivo #1: Motociclistas](#segmento-objetivo-1-motociclistas)
-      - [Segmento Objetivo #2: Mecánicos](#segmento-objetivo-2-mecánicos)
   - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1 Competidores](#21-competidores)
       - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
@@ -263,14 +241,9 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
       - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
-    - [Aggregate: `Vehicle`](#aggregate-vehicle)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
-    - [Controlador: `VehicleController`](#controlador-vehiclecontroller)
         - [4.2.1.3 Application Layer](#4213-application-layer)
-    - [Clase: `VehicleCommandServiceImpl`](#clase-vehiclecommandserviceimpl)
-    - [Clase: `VehicleQueryServiceImpl`](#clase-vehiclequeryserviceimpl)
         - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
-    - [Clase: `VehicleRepository`](#clase-vehiclerepository)
         - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
@@ -531,7 +504,7 @@ Gracias a sus funcionalidades, la plataforma impulsa un uso más seguro, económ
 
 #### 1.2.1 Antecedentes y problemática
 
-##### What
+**What**
 
 - ¿Cuál es el problema?
 
@@ -543,7 +516,7 @@ La relación con el mecánico se transforma gracias a nuestra plataforma. Ya no 
 
 En esencia, la plataforma está enfocada en proporcionar a ambos actores una herramienta integral que satisface sus necesidades específicas: facilita un monitoreo y registro sencillo de las métricas del vehículo para el usuario y, al mismo tiempo, empodera al mecánico con datos precisos para realizar revisiones más efectivas, optimizando significativamente su trabajo y elevando la calidad del servicio.
 
-##### When
+**When**
 
 - ¿Cuándo sucede el problema?
 
@@ -553,7 +526,7 @@ El problema ocurre durante el uso diario de la motocicleta, cuando el propietari
 
 El cliente utiliza la aplicación de BykerZ de forma continua durante sus trayectos para monitorizar en tiempo real el estado de su moto y conocer en qué momento necesita llevar a cabo mantenimiento. Además, accede a ella de manera proactiva al recibir notificaciones del taller, lo que le permite gestionar alertas específicas y agendar citas de mantenimiento con facilidad. Este uso constante no solo le ofrece tranquilidad y control sobre su vehículo, sino que también favorece directamente al mecánico, quien recibe métricas precisas y premeditadas que agilizan y optimizan el proceso de diagnóstico y reparación.
 
-##### Where
+**Where**
 
 - ¿Dónde está el cliente cuando usa el producto?
 
@@ -563,25 +536,25 @@ El cliente utiliza la aplicación de BykerZ principalmente desde su smartphone, 
 
 El problema surge en la propia motocicleta durante su operación diaria, donde ocurren los eventos críticos. Además, se manifiesta en el taller mecánico, donde la falta de datos en tiempo real impide al mecánico anticiparse a las fallas y ofrece un servicio reactivo.
 
-##### Who
+**Who**
 
 - ¿Quienes se ven involucrados en el problema?
 
 El problema involucra directamente a dos actores clave: los propietarios de motocicletas y los mecánicos. Por un lado, los usuarios enfrentan la dificultad constante de no tener conocimiento preciso del estado interno de sus vehículos, lo que los expone a sufrir fallas imprevistas y reparaciones costosas. Por otro lado, los mecánicos se ven igualmente afectados, ya que esta falta de información les impide evolucionar hacia un modelo de servicio preventivo y proactivo, lo que no solo genera ineficiencias en sus procesos de diagnóstico, sino que también representa una pérdida de oportunidades de negocio para fidelizar y agregar valor a su cartera de clientes existente.
 
-##### Why
+**Why**
 
 - ¿Por qué sucede el problema?
 
 Las causas del problema se deben en mayor parte a la falta de datos actualizados sobre el estado del vehículo y/o poco conocimiento de algunos usuarios con respecto a identificar señales de una falla en el vehículo. Por otro lado, el diagnóstico se complica ya que carece de un historial del vehículo, dependiendo de lo que el cliente recuerde en base a reparaciones previas y/o incidentes recientes.
 
-##### How 
+**How** 
 
 - ¿En qué condiciones los clientes usan nuestro producto?
 
 Los clientes utilizan nuestro producto en condiciones de movilidad, accediendo a los datos de su moto en tiempo real durante sus trayectos o de manera remota para planificar mantenimientos. La plataforma es utilizada principalmente a través de dispositivos móviles con conectividad a internet, permitiendo interacciones tanto preventivas como reactivas ante alertas generadas por el sistema.
 
-##### How Much
+**How Much**
 
 El impacto de la problemática es considerable y puede observarse en las estadísticas de seguridad vial actuales. Según un informe publicado por Freitas (2025) en Infobae, Lima registra 1.668 muertes por accidentes de tránsito en lo que va del año 2025, siendo los motociclistas quienes lideran la lista de víctimas, de acuerdo con datos del Ministerio de Transportes y Comunicaciones (MTC). Esta cifra evidencia la alta vulnerabilidad de los conductores de motocicletas y la falta de mecanismos preventivos eficaces que permitan detectar a tiempo posibles fallas mecánicas o comportamientos de riesgo durante la conducción.
 
@@ -747,7 +720,7 @@ Sabremos que esto es cierto cuando veamos una alta interacción con los recordat
 
 ### 1.3 Segmentos objetivo
 
-#### Segmento Objetivo #1: Motociclistas
+**Segmento Objetivo #1: Motociclistas**
 
 Para este grupo su principal medio de transporte son las motos, ya sea para movilizarse hacia sus trabajos, estudios, actividades sociales o incluso para labores de reparto. Son usuarios interesados en mantener la eficiencia de su moto, reducir costos imprevistos y contar con mayor seguridad mediante el monitoreo del estado de su vehículo.
 
@@ -763,7 +736,7 @@ Para este grupo su principal medio de transporte son las motos, ya sea para movi
   - Conocer costos acumulados de uso y reparaciones.
   - Tener a mano el historial de mantenimiento.
 
-#### Segmento Objetivo #2: Mecánicos
+**Segmento Objetivo #2: Mecánicos**
 
 Este grupo está conformado por profesionales independientes con pequeños talleres que ofrecen servicios de reparación y mantenimiento de motocicletas. Requieren herramientas que les permitan ofrecer diagnósticos más precisos y gestionar mejor la relación con sus clientes, a fin de mejorar la confianza y fidelización.
 
@@ -778,7 +751,6 @@ Este grupo está conformado por profesionales independientes con pequeños talle
   - Emitir reportes de salud y diagnósticos comparativos.
   - Consultar el historial de servicios de cada cliente.
   - Recordar y planificar mantenimientos preventivos.
-
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
