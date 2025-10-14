@@ -1067,15 +1067,16 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 
 **1. Segmento 1: Mecánico de Motocicletas**
 
-| Tarea                                               | Frecuencia | Severidad |
-|-----------------------------------------------------|------------|-----------|
-| Realizar diagnósticos precisos de fallas            | Alta       | Alta      |
-| Optimizar tiempos de servicio                       | Alta       | Alta      |
-| Recordar historial de mantenimientos de clientes    | Media      | Alta      |
-| Fidelizar clientela mediante recordatorios de citas | Media      | Media     |
-| Usar herramientas de diagnóstico manual             | Alta       | Media     |
-| Implementar nuevas herramientas tecnológicas        | Baja       | Alta      |
-| Anticipar fallas comunes de motos                   | Media      | Alta      |
+| Tarea                                           | Frecuencia | Severidad |
+|-------------------------------------------------|------------|-----------|
+| Realizar diagnósticos precisos de fallas        | Alta       | Alta      |
+| Optimizar tiempos de servicio                   | Alta       | Alta      |
+| Visualizar mantenimientos de clientes           | Media      | Alta      |
+| Programar citas con clientes                    | Media      | Media     |
+| Usar herramientas de diagnóstico manual         | Alta       | Media     |
+| Implementar nuevas herramientas tecnológicas    | Baja       | Alta      |
+| Anticipar fallas comunes de motos               | Media      | Alta      |
+| Verificar estado básico de la moto al recibirla | Media      | Media     |
 
 
 **2. Segmento 2: Usuario Final de Motocicleta**
@@ -1083,7 +1084,6 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 | Tarea                                                 | Frecuencia | Severidad |
 |-------------------------------------------------------|------------|-----------|
 | Realizar mantenimientos preventivos                   | Baja       | Alta      |
-| Confiar en su mecánico de confianza                   | Alta       | Media     |
 | Recordar fechas de último mantenimiento               | Media      | Alta      |
 | Detectar fallas solo cuando se presentan              | Alta       | Alta      |
 | Buscar información en internet sobre problemas        | Media      | Media     |
