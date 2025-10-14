@@ -1,6 +1,6 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="150" alt="UPC Logo">
 
-Universidad Peruana de Ciencias Aplicadas
+**Universidad Peruana de Ciencias Aplicadas**
 
 **CURSO:** Desarrollo de Soluciones IoT
 
@@ -223,7 +223,6 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
     - [2.5 Ubiquitous Language](#25-ubiquitous-language)
   - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1 User Stories](#31-user-stories)
-- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
