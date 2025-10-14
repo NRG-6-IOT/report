@@ -1065,6 +1065,8 @@ A continuación, se presenta el perfil de Daniel Castro, un User Persona desarro
 
 #### 2.3.2 User Task Matrix
 
+En esta sección se presenta la User Task Matrix, herramienta que permite identificar y analizar las tareas que cada User Persona, representando a los distintos segmentos de usuarios, realiza para alcanzar sus objetivos. Se detallan las tareas en función de su frecuencia e importancia, proporcionando una visión clara de las actividades más relevantes para cada segmento.
+
 **1. Segmento 1: Mecánico de Motocicletas**
 
 | Tarea                                           | Frecuencia | Severidad |
