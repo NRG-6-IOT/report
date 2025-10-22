@@ -1117,29 +1117,17 @@ En esta sección se presentan los Empathy Mapping por cada segmento objetivo def
 
 ### 2.4 Big Picture EventStorming
 
-**1. Definir eventos:**
+El Big Picture Event Storming es la fase inicial y colaborativa del Domain-Driven Design (DDD) Estratégico. Su propósito es que todo el equipo obtenga una comprensión común y de alto nivel del dominio, identificando los procesos clave, los flujos transaccionales y las áreas de riesgo. Al enfocarse en los Eventos de Dominio, logramos construir una línea de tiempo que representa la totalidad del negocio. Este proceso es la base sobre la cual se descubren las fronteras de los Bounded Contexts.
 
-<img src="images/chapter-2/event-storming-1.png" alt="Event Storming 1" />
+Esta imagen muestra la primera aproximación visual del dominio. Nos enfocamos exclusivamente en los Eventos de Dominio (notas naranjas), los cuales representan hechos del pasado relevantes para el negocio (ej., usuario registrado, vehículo registrado, mantenimiento completado). Este artefacto garantiza que todo el equipo comparte el mismo Lenguaje Ubicuo sobre lo que realmente importa en el sistema.
 
-**2. Definir comandos y agentes**
+<img src="images/chapter-2/event-storming-1.png" alt="Big Picture Event Storming"/>
 
-<img src="images/chapter-2/event-storming-2.png" alt="Event Storming 2" />
+Al añadir los Actores (notas amarillas) y los Comandos (notas azules), convertimos el flujo de hechos en un flujo transaccional completo. Esta etapa es crucial porque: 
+1) Identifica Responsabilidades: Aclaramos el rol (Motociclista, Mecánico) que ejecuta la acción (ej., el Motociclista es el Actor que emite el Comando Registrar Vehículo). 2
+2) Establece la Intención: Se define el Comando (la intención de la acción) que, de ser exitoso, resulta en un Evento. Este mapeo expuso claramente las interacciones directas del usuario con el sistema, sirviendo como base para el descubrimiento de los Bounded Contexts transaccionales.
 
-**3. Definir políticas**
-
-<img src="images/chapter-2/event-storming-3.png" alt="Event Storming 3" />
-
-**4. Definir vistas**
-
-<img src="images/chapter-2/event-storming-4.png" alt="Event Storming 4" />
-
-**6. Agregados**
-
-<img src="images/chapter-2/event-storming-5.png" alt="Event Storming 5" />
-
-**7. Bounded context**
-
-<img src="images/chapter-2/event-storming-6.png" alt="Event Storming 6" />
+<img src="images/chapter-2/event-storming-2.png" alt="Big Picture Event Storming"/>
 
 ### 2.5 Ubiquitous Language
 
@@ -1288,62 +1276,46 @@ En esta sección se aborda el diseño de la arquitectura desde una perspectiva e
 
 #### 4.1.1 Design-Level EventStorming
 
-Para trasladar la estrategia al plano operativo, se utiliza EventStorming como técnica colaborativa de modelado. Esta metodología, centrada en la identificación de eventos de dominio, facilita la exploración profunda del negocio y la detección de flujos críticos de información. A través de dinámicas visuales y participativas, se descubren los límites naturales del dominio y se modelan las interacciones entre actores, comandos y proyecciones. El objetivo es traducir la visión estratégica en un diseño claro, alineado con el lenguaje ubicuo y la realidad operativa del sistema.
+El EventStorming de Nivel de Diseño es la evolución directa del modelo de Big Picture. El objetivo es pasar del entendimiento general a un modelo táctico y ejecutable que exponga cómo la lógica del negocio debe ser codificada. Al introducir los conceptos de Policies, Vistas de Lectura (Read Models) y, crucialmente, los Agregados, se establece el modelo conceptual que servirá como base para la arquitectura de microservicios.
+
+Esta etapa enriqueció el timeline con dos elementos clave: Policies (notas moradas) y Vistas de Lectura (Read Models o Views, notas verdes). Las Policies modelan la lógica de reacción automática que ocurre sin intervención humana. Las Vistas de Lectura se identificaron como los modelos de datos optimizados para la consulta que los Actores utilizan.
+
+<img src="images/chapter-4/event-storming-1.png" alt="Design Level EventStorming">
+
+El Agregado es la decisión de diseño más importante en esta fase. Se introdujo una nota amarilla clara sobre los comandos para identificar el Agregado (la entidad transaccional, ej., Vehículo, Suscripción) que es responsable de recibir el Comando y validar las reglas de negocio antes de emitir el Evento.
+
+<img src="images/chapter-4/event-storming-2.png" alt="Design Level EventStorming">
+
+El modelo táctico se consolidó al agrupar todos los elementos alrededor de su Agregado central. Las fronteras se dibujaron para aislar el Lenguaje Ubicuo y garantizar que la consistencia del Agregado se mantenga dentro de su contexto. Este resultado final es el esquema táctico completo, que expone seis Contextos Delimitados candidatos listos para la siguiente fase de descubrimiento y diseño.
+
+<img src="images/chapter-4/event-storming-3.png" alt="Design Level EventStorming">
 
 ##### 4.1.1.1 Candidate Context Discovery
 
-Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y look-for-pivotal-events, el equipo identificó y agrupó los principales eventos del dominio en bounded contexts candidatos. A continuación, se describen los bounded contexts definidos:
+Una vez que se estableció el modelo táctico detallado mediante EventStorming, el siguiente paso fue aislar las fronteras de los Contextos Delimitados (Bounded Contexts/BCs). Estos BCs actúan como los límites de los futuros microservicios, asegurando que el Lenguaje Ubicuo y los Agregados de cada sección sean consistentes e inconfundibles.
 
-**1. Reportes**
+El proceso se llevó a cabo utilizando una combinación de las siguientes técnicas:
 
-* **Propósito:** Elaboración de reportes de métricas de las motos y análisis comparativo de su desempeño.
-* **Responsabilidades:**
-  * Generar reportes periódicos de métricas.
-  * Comparar métricas históricas y actuales.
-  * Producir reportes de métricas actualizadas en tiempo real.
-* **Eventos clave:** MetricasGeneradas, ReporteSolicitado, ReporteComparado.
-* **Valor para el negocio:** Provee visibilidad y soporte a la toma de decisiones del dueño de la moto y de los talleres.
+Start-with-Value: Esta técnica permitió identificar los BCs Core (Núcleo), que son la fuente de valor diferenciador del negocio. Se priorizó el aislamiento de Suscripción y Bienestar del Vehículo, ya que la conexión contractual y el valor predictivo de la telemetría son la propuesta única de Bykerz.
 
-**2. Historiales**
+Start-with-Simple: Se utilizó esta técnica para dividir el timeline en flujos de trabajo secuenciales, creando modelos con un propósito único. Esto llevó a la separación clara de Gestión de Vehículos de Mantenimiento y Operaciones.
 
-* **Propósito:** Mantener un registro consolidado de todas las actividades y gastos relacionados con la moto.
-* **Responsabilidades:**
-  * Historial de servicios de los mecánicos.
-  * Historial de gastos asociados.
-  * Historial de reparaciones realizadas.
-  * Historial de clientes atendidos (para mecánicos).
-* **Eventos clave:** ServicioRegistrado, GastoRegistrado, ReparacionFinalizada.
-* **Valor para el negocio:** Ofrece trazabilidad y respaldo de la información para usuarios y mecánicos.
+Look-for-Pivotal-Events: Se buscaron los Eventos pivote que denotan un cambio en la responsabilidad, como el acceso a telemetria concedido, que actúa como el punto de transferencia de control desde el BC Suscripción hacia el BC Bienestar del Vehículo.
 
-**3. Suscripción**
+La agrupación se realizó encerrando todos los elementos tácticos (Comandos, Agregados, Politicas, Vistas) en contenedores de color, asegurando que cada Agregado principal reside en un único Bounded Context.
 
-* **Propósito:** Gestionar la relación contractual y de conexión entre dueños de motos y mecánicos.
-* **Responsabilidades:**
-  * Manejar las suscripciones activas.
-  * Administrar vínculos de servicio (mecánico ↔ dueño de moto).
-  * Controlar renovaciones o cancelaciones de suscripciones.
-* **Eventos clave:** SuscripcionCreada, SuscripcionCancelada, MecanicoAsignado.
-* **Valor para el negocio:** Garantiza un flujo de ingresos estable y facilita la conexión entre oferta (mecánicos) y demanda (dueños).
+La imagen evidencia el resultado final del proceso de Candidate Context Discovery. Se lograron identificar seis Contextos Delimitados candidatos, basados en la unicidad de su Lenguaje Ubicuo y sus Agregados principales: 
+1. 
+2. IAM (Usuario)
+2. Suscripción (Suscripción)
+3. Gestión de Vehículos (Vehículo)
+4. Mantenimiento y Operaciones (Mantenimiento)
+5. Bienestar del Vehículo (Análisis de Telemetría)
+6. Reportes (Vistas de Lectura). 
 
-**4. Bienestar de Vehículos**
+Esta clara delimitación de fronteras garantiza que los futuros equipos de desarrollo tendrán un enfoque claro en su modelo, sin dependencias internas confusas.
 
-* **Propósito:** Monitorear y gestionar el estado general de la moto a partir de métricas técnicas.
-* **Responsabilidades:**
-  * Registrar y controlar métricas en tiempo real.
-  * Generar alertas preventivas de mantenimiento.
-  * Calcular el estado de salud general del vehículo.
-* **Eventos clave:** MetricaRegistrada, AlertaGenerada, EstadoActualizado.
-* **Valor para el negocio:** Permite anticipar fallas y garantizar mayor seguridad y durabilidad del vehículo.
-
-**5. Gestión de Vehículos**
-
-* **Propósito:** Administrar la información básica y de registro de cada moto en el sistema.
-* **Responsabilidades:**
-  * Registro de nuevas motos.
-  * Acceso a datos técnicos y de propiedad.
-  * Actualización de datos generales del vehículo.
-* **Eventos clave:** VehiculoRegistrado, DatosVehiculoActualizados.
-* **Valor para el negocio:** Provee la base de datos central sobre la cual interactúan los demás contextos.
+<img src="images/chapter-4/event-storming-3.png" alt="Design Level EventStorming">
 
 ##### 4.1.1.2 Domain Message Flows Modeling
 
@@ -1411,25 +1383,29 @@ Tras la sesión de EventStorming, aplicando las técnicas de start-with-value y 
 
 En esta sección se desarrollan los Bounded Context Canvases correspondientes a los contextos delimitados previamente durante el proceso de Candidate Context Discovery. El objetivo principal de este apartado es detallar, para cada contexto, los criterios de diseño que permitan comprender su propósito, límites de responsabilidad, capacidades clave, dependencias y reglas de negocio asociadas.
 
-**Reportes**
+**IAM (Identity and Access Management)**
 
-<img src="images/chapter-4/reports-bc-canvas.png" alt="Reportes Bounded Context Canvas">
+<img src="images/chapter-4/bc-canvas-iam.png" alt="Bounded Context Canvas IAM (Identity and Access Management)">
 
-**Historiales**
+**Maintenance and Operations**
 
-<img src="images/chapter-4/historial-bc-canvas.png" alt="Historiales Bounded Context Canvas">
+<img src="images/chapter-4/bc-canvas-maintenance-and-operations.png" alt="Bounded Context Canvas Maintenance and Operations">
 
-**Suscripción**
+**Reports**
 
-<img src="images/chapter-4/subscription-bc-canvas.png" alt="Suscripción Bounded Context Canvas">
+<img src="images/chapter-4/bc-canvas-reports.png" alt="Bounded Context Canvas Reports">
 
-**Bienestar de Vehículos**
+**Subscription**
 
-<img src="images/chapter-4/health-bc-canvas.png" alt="Bienestar de Vehículos Bounded Context Canvas">
+<img src="images/chapter-4/bc-canvas-subscription.png" alt="Bounded Context Canvas Subscription">
 
-**Gestión de Vehículos**
+**Vehicle Management**
 
-<img src="images/chapter-4/vehicle-management-bc-canvas.png" alt="Gestión de Vehículos Bounded Context Canvas">
+<img src="images/chapter-4/bc-canvas-vehicle-management.png" alt="Bounded Context Canvas Vehicle Management">
+
+**Vehicle Wellness**
+
+<img src="images/chapter-4/bc-canvas-vehicle-wellness.png" alt="Bounded Context Canvas Vehicle Wellness">
 
 #### 4.1.2 Context Mapping
 
