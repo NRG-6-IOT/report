@@ -5612,6 +5612,35 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
 
 En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
 
+**Preguntas Generales:**
+
+* ¿Qué tan fácil le resultó entender el propósito general de la aplicación al ingresar por primera vez?
+* ¿Cómo calificaría la claridad de la información mostrada en el dashboard?
+* ¿Le resultó intuitiva la navegación entre las diferentes secciones de la aplicación?
+* ¿Encontró algún momento en el que no supiera qué acción debía realizar?
+* ¿Considera que los tiempos de respuesta y carga son adecuados para una experiencia fluida?
+* ¿Qué aspecto visual o funcional le resultó más atractivo o útil dentro de la aplicación?
+
+**Preguntas de Mecánicos:**
+
+* ¿Fue claro el proceso para visualizar y gestionar sus asignaciones activas y pendientes?
+* ¿Considera fácil identificar la información relevante de cada asignación (dueño, vehículo, estado, fecha)?
+* ¿Qué tan útil le resultó poder ver los detalles de un mantenimiento programado o pasado?
+* ¿Le pareció sencillo programar un nuevo mantenimiento desde la interfaz?
+* ¿La sección de Comparativas entre motos le ayudó a analizar las características de los vehículos de forma efectiva?
+* ¿Encontró algún elemento confuso o que requiriera mayor explicación dentro de las pantallas de mantenimiento o asignaciones?
+* Si pudiera mejorar una funcionalidad de su vista como mecánico, ¿cuál sería y por qué?
+
+**Preguntas para Dueños:**
+
+* ¿Qué tan claro le resultó el proceso para registrar un nuevo vehículo en la aplicación?
+* ¿La información mostrada en los detalles del vehículo es suficiente para sus necesidades?
+* ¿Pudo comprender fácilmente el estado de sus mantenimientos (pendientes o pasados)?
+* ¿Le pareció sencillo registrar o eliminar un gasto relacionado con su vehículo?
+* ¿Qué tan útil le resultó la funcionalidad de Comparativas para evaluar sus motos frente a otras?
+* ¿El dashboard le proporcionó una visión clara del estado general de sus vehículos y gastos?
+* ¿Qué mejoras sugeriría para facilitar la gestión de sus vehículos o mantenimientos dentro de la aplicación?
+
 ### 6.4. Video About-the-Product.
 
 ## Conclusiones
