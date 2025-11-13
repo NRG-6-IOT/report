@@ -5606,6 +5606,8 @@ En esta sección se registran las preguntas orientadas a evaluar la usabilidad y
 
 #### 6.3.2. Registro de Entrevistas.
 
+Aquí se presenta el registro sistemático de las entrevistas realizadas, incluyendo la información de los participantes, los enlaces a los videos de las sesiones y un resumen descriptivo de las percepciones, comentarios y dificultades expresadas por los usuarios durante el proceso de validación. Este registro permite documentar evidencias concretas que sustentan el análisis de la experiencia de usuario.
+
 #### 6.3.3. Evaluaciones según heurísticas.
 
 ### 6.4. Video About-the-Product.
