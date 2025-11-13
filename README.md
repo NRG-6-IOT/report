@@ -5525,6 +5525,29 @@ Backend repository: [https://github.com/NRG-6-IOT/BykerZ-Backend](https://github
 
 ##### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+**Mobile Application**
+
+**Backend**
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#/](https://bykerz-backend.onrender.com/swagger-ui/index.html#/)
+
 ##### 6.2.2.9. Team Collaboration Insights during Sprint.
 
 ### 6.3. Validation Interviews.
