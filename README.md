@@ -5602,6 +5602,8 @@ En esta sección se documenta el proceso de validación realizado mediante entre
 
 #### 6.3.1. Diseño de Entrevistas.
 
+En esta sección se registran las preguntas orientadas a evaluar la usabilidad y experiencia de usuario de los productos digitales desarrollados, incluyendo la Landing Page, la Web Application y la Mobile Application. Las preguntas están diseñadas para obtener insights sobre la facilidad de navegación, comprensión de funcionalidades, satisfacción general y posibles áreas de mejora, permitiendo así una evaluación integral desde la perspectiva del usuario final.
+
 #### 6.3.2. Registro de Entrevistas.
 
 #### 6.3.3. Evaluaciones según heurísticas.
