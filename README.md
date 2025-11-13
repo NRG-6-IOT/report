@@ -5479,6 +5479,26 @@ Enlace al tablero:[]()
 
 ##### 6.2.2.4. Development Evidence for Sprint Review.
 
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, las Web Applications y los Web Services. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**
+
+| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
+|------------------------|---------|-----------|----------------|---------------------|------|
+| BykerZ-Web-Application | develop |           |                |                     |      |
+
+**Backend**
+
+| Repository     | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
+|----------------|---------|-----------|----------------|---------------------|------|
+| BykerZ-Backend | develop |           |                |                     |      |
+
+**Mobile Application**
+
+| Repository                | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
+|---------------------------|---------|-----------|----------------|---------------------|------|
+| BykerZ-Mobile-Application | develop |           |                |                     |      |
+
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
 ##### 6.2.2.6. Execution Evidence for Sprint Review.
