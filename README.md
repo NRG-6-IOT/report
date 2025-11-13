@@ -5598,6 +5598,8 @@ Distribución de commits:
 
 ### 6.3. Validation Interviews.
 
+En esta sección se documenta el proceso de validación realizado mediante entrevistas con usuarios pertenecientes a los segmentos objetivo. El propósito de estas actividades fue obtener retroalimentación directa sobre la usabilidad, funcionalidad y percepción general de la Landing Page, la Web Application y la Mobile Application, con el fin de identificar oportunidades de mejora y fortalecer la experiencia de usuario antes de las siguientes iteraciones del proyecto.
+
 #### 6.3.1. Diseño de Entrevistas.
 
 #### 6.3.2. Registro de Entrevistas.
