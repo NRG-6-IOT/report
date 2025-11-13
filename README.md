@@ -5429,6 +5429,17 @@ Esta sección describe el proceso de planificación del Sprint 2, donde el equip
 
 ##### 6.2.2.2. Aspect Leaders and Collaborators.
 
+La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
+
+| Team Mmeber                           | Github Username       | Aspect Name 1                     |
+|---------------------------------------|-----------------------|-----------------------------------|
+| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            |
+
 ##### 6.2.2.3. Sprint Backlog 2.
 
 ##### 6.2.2.4. Development Evidence for Sprint Review.
