@@ -5503,6 +5503,16 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 ##### 6.2.2.6. Execution Evidence for Sprint Review.
 
+En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
+
+Video: []()
+
+**Backend**
+
+**Web Application**
+
+**Mobile Application**
+
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
 ##### 6.2.2.8. Software Deployment Evidence for Sprint Review.
