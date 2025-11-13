@@ -5431,7 +5431,7 @@ Esta sección describe el proceso de planificación del Sprint 2, donde el equip
 
 La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
 
-| Team Mmeber                           | Github Username       | Aspect Name 1                     |
+| Team Member                           | Github Username       | Aspect Name 1                     |
 |---------------------------------------|-----------------------|-----------------------------------|
 | Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           |
 | Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) |
@@ -5441,6 +5441,41 @@ La sección Aspect Leaders and Collaborators presenta la asignación de roles y 
 | Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            |
 
 ##### 6.2.2.3. Sprint Backlog 2.
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+Enlace al tablero:[]()
+
+<table>
+  <tr>
+    <td colspan="1"><strong>Sprint #</strong></td>
+    <td colspan="7"><strong>Sprint 1</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>User Story</strong></td>
+    <td colspan="6"><strong>Work-Item/task</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Description</strong></td>
+    <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+    <td colspan="1"><strong>Assigned To</strong></td>
+    <td colspan="1"><strong>Status</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+</table>
 
 ##### 6.2.2.4. Development Evidence for Sprint Review.
 
