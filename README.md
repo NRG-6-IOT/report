@@ -5408,6 +5408,8 @@ Distribución de commits:
 
 #### 6.2.2. Sprint 2
 
+Durante el segundo sprint, el equipo orientó sus esfuerzos al fortalecimiento y evolución de los principales productos del ecosistema digital: la Web Application, el Backend, la Mobile Application y el prototipo IoT. En esta iteración se priorizó la implementación de funcionalidades clave vinculadas a la gestión de motocicletas, mantenimientos, alertas y reportes. Asimismo, se llevó a cabo la reestructuración de los bounded context, con el objetivo de optimizar la arquitectura del dominio, mejorar la coherencia entre los módulos y asegurar una integración más eficiente entre los distintos componentes del sistema.
+
 ##### 6.2.2.1. Sprint Planning 2.
 
 ##### 6.2.2.2. Aspect Leaders and Collaborators.
