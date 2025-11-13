@@ -5610,6 +5610,8 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
 
 #### 6.3.3. Evaluaciones según heurísticas.
 
+En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
+
 ### 6.4. Video About-the-Product.
 
 ## Conclusiones
