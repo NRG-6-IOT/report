@@ -158,7 +158,6 @@ Distribución de commits:
 * Casas Sanchez Gabriel Alexander (Al3xiel): 24 commits.
 * Pasquale Barrenechea Gianluca Santino (cwassointt): 40 commits.
 * Pacheco Astiguetta Sebastian (Pachieeee): 14 commits.
-* Paitan Pumachuca Max Anthony (MaxPaitanP): commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
 Explicacion del desarrollo de actividades de la primera entrega :<br>
@@ -190,6 +189,24 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
 Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
+
+**TB2**:
+
+<img src="images/insights/report-insights-tb2-1.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb2-2.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tb2-3.png" alt="Repo Insights">
+
+Distribución de commits:
+* Alejo Cardenas Jose Antonio (Firtness): 15 commits.
+* Astonitas Díaz Juan Diego (NeorRise456): 1 commits.
+* Casas Sanchez Gabriel Alexander (Al3xiel): 33 commits.
+* Pasquale Barrenechea Gianluca Santino (cwassointt): 7 commits.
+* Pacheco Astiguetta Sebastian (Pachieeee): 8 commits.
+* Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 1 commits.
+
+El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
 
 ## Contenido
   - [Contenido](#contenido)
