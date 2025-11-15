@@ -6121,7 +6121,7 @@ Una vez enviada la invitación desde la aplicación apptester se debe probar la 
 
 <img src="images/chapter-6/sprint-2/mobile-deploy-evidence-10.png" alt="Mobile Application deploy evidence 10"/>
 
-<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-11.0png" alt="Mobile Application deploy evidence 11"/>
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-11.png" alt="Mobile Application deploy evidence 11"/>
 
 **Backend**
 
