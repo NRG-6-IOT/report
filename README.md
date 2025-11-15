@@ -5434,14 +5434,14 @@ Esta sección describe el proceso de planificación del Sprint 2, donde el equip
 
 La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
 
-| Team Member                           | Github Username       | Aspect Name 1                     |
-|---------------------------------------|-----------------------|-----------------------------------|
-| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           |
-| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) |
-| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                |
-| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        |
-| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    |
-| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            |
+| Team Member                           | Github Username       | Aspect Name 1                     | Aspect Name 2           | Aspect Name 3    | Aspect Name 4          | Aspect Name 5     |
+|---------------------------------------|-----------------------|-----------------------------------|-------------------------|------------------|------------------------|-------------------|  
+| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) | Simulated Prototype (L) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (L) | Edge Services (L) |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        | Simulated Prototype (C) | Embedded App (L) | Physical Prototype (L) | Edge Services (C) |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
 
 ##### 6.2.2.3. Sprint Backlog 2.
 
