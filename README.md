@@ -6264,47 +6264,118 @@ En esta sección se presentan los insights de colaboración del equipo durante e
 
 **Landing Page**
 
+<img src="images/chapter-6/sprint-2/insights/landing-sprint-2-insights-1.png" alt="Landing Page sprint 2 insights 1"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 0 commits
+* Astonitas Díaz Juan Diego: 2 commits
+* Casas Sanchez Gabriel Alexander: 0 commits
+* Pacheco Astiguetta Sebastian: 0 commits
+* Pasquale Barrenechea Gianluca Santino: 0 commits
+* Real Calderon Sebatian Omar: 0 commits
 
 **Backend**
 
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-1.png" alt="Backend sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-2.png" alt="Backend sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-3.png" alt="Backend sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-4.png" alt="Backend sprint 2 insights 4"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-5.png" alt="Backend sprint 2 insights 5"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-6.png" alt="Backend sprint 2 insights 6"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-7.png" alt="Backend sprint 2 insights 7"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-8.png" alt="Backend sprint 2 insights 8"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-9.png" alt="Backend sprint 2 insights 9"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-10.png" alt="Backend sprint 2 insights 10"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 4 commits
+* Astonitas Díaz Juan Diego: 6 commits
+* Casas Sanchez Gabriel Alexander: 17 commits
+* Pacheco Astiguetta Sebastian: 28 commits
+* Pasquale Barrenechea Gianluca Santino: 3 commits
+* Real Calderon Sebatian Omar: 4 commits
 
 **Web Application**
 
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-1.png" alt="Web Application sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-2.png" alt="Web Application sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-3.png" alt="Web Application sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-4.png" alt="Web Application sprint 2 insights 4"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-5.png" alt="Web Application sprint 2 insights 5"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-6.png" alt="Web Application sprint 2 insights 6"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-7.png" alt="Web Application sprint 2 insights 7"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-8.png" alt="Web Application sprint 2 insights 8"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-9.png" alt="Web Application sprint 2 insights 9"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 12 commits
+* Astonitas Díaz Juan Diego: 6 commits
+* Casas Sanchez Gabriel Alexander: 29 commits
+* Pacheco Astiguetta Sebastian: 96 commits
+* Pasquale Barrenechea Gianluca Santino: 18 commits
+* Real Calderon Sebatian Omar: 14 commits
 
 **Mobile Application**
 
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-1.png" alt="Mobile Application sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-2.png" alt="Mobile Application sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-3.png" alt="Mobile Application sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-4.png" alt="Mobile Application sprint 2 insights 4"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-5.png" alt="Mobile Application sprint 2 insights 5"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-6.png" alt="Mobile Application sprint 2 insights 6"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 11 commits
+* Astonitas Díaz Juan Diego: 7 commits
+* Casas Sanchez Gabriel Alexander: 13 commits
+* Pacheco Astiguetta Sebastian: 38 commits
+* Pasquale Barrenechea Gianluca Santino: 3 commits
+* Real Calderon Sebatian Omar: 8 commits
+
+**Edge Services**
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-1.png" alt="Edge Services sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-2.png" alt="Edge Services sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-3.png" alt="Edge Services sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-4.png" alt="Edge Services sprint 2 insights 4"/>
+
+Distribución de commits:
+
+* Alejo Cardenas Jose Antonio: 1 commits
+* Astonitas Díaz Juan Diego: 1 commits
+* Casas Sanchez Gabriel Alexander: 11 commits
+* Pacheco Astiguetta Sebastian: 2 commits
+* Pasquale Barrenechea Gianluca Santino: 1 commits
+* Real Calderon Sebatian Omar: 2 commits
 
 ### 6.3. Validation Interviews.
 
