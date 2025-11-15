@@ -5439,7 +5439,7 @@ La sección Aspect Leaders and Collaborators presenta la asignación de roles y 
 
 La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
 
-Enlace al tablero:[]()
+Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot](https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot)
 
 <table>
   <tr>
@@ -5461,14 +5461,436 @@ Enlace al tablero:[]()
     <td colspan="1"><strong>Status</strong></td>
   </tr>
   <tr>
+    <td colspan="3">US-037</td>
+    <td colspan="3">Manejo de asignaciones</td>
+    <td>T-001</td>
+    <td>Crear el botón de generación de asignaciones</td>
+    <td>Crear el botón de generación de asignaciones</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-002</td>
+    <td>Mostrar el panel de asignaciones pendientes</td>
+    <td>Mostrar el panel de asignaciones pendientes</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-003</td>
+    <td>Añadir la vista de detalles de asignación</td>
+    <td>Añadir la vista de detalles de asignación</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="2">US-038</td>
+    <td colspan="2">Vinculación de asignación</td>
+    <td>T-004</td>
+    <td>Crear el formulario de ingreso de código de asignación</td>
+    <td>Crear el formulario de ingreso de código de asignación</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-005</td>
+    <td>Visualizar la información del mecánico desde la vista de dahsboard para o dueños</td>
+    <td>Visualizar la información del mecánico desde la vista de dahsboard para o dueños</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="2">US-039</td>
+    <td colspan="2">Creación de perfil para motociclistas</td>
+    <td>T-006</td>
+    <td>Validar código en registro</td>
+    <td>Validar código en registro</td>
+    <td>5</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-007</td>
+    <td>Crear perfil con el rol de motociclista</td>
+    <td>Crear perfil con el rol de motociclista</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="2">US-040</td>
+    <td colspan="2">Creación de perfil para mecánicos</td>
+    <td>T-008</td>
+    <td>Listar las membresías disponibles</td>
+    <td>Listar las membresías disponibles</td>
+    <td>5</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-009</td>
+    <td>Crear perfil con el rol de mecánico</td>
+    <td>Crear perfil con el rol de mecánico</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="3">US-041</td>
+    <td colspan="3">Autenticación en la aplicación web</td>
+    <td>T-010</td>
+    <td>Validar credenciales del usuario</td>
+    <td>Validar credenciales del usuario</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-011</td>
+    <td>Reservar localmente el rol del usuario</td>
+    <td>Reservar localmente el rol del usuario</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-012</td>
+    <td>Dar acceso a las funciones relacionadas al rol del usuario en el sistema</td>
+    <td>Dar acceso a las funciones relacionadas al rol del usuario en el sistema</td>
+    <td>5</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-042</td>
+    <td colspan="1">Sección de métricas por cada vehículo</td>
     <td colspan="1"></td>
     <td colspan="1"></td>
     <td colspan="1"></td>
     <td colspan="1"></td>
     <td colspan="1"></td>
     <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-043</td>
+    <td colspan="1">Sistema de notificaciones interno</td>
     <td colspan="1"></td>
     <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-044</td>
+    <td colspan="1">Alerta de Temperatura Alta</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-045</td>
+    <td colspan="1">Alerta de Temperatura Baja</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-046</td>
+    <td colspan="1">Alerta de Humedad Alta</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-047</td>
+    <td colspan="1">Alerta de CO2 Alto</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-048</td>
+    <td colspan="1">Alerta de NH3 Alto</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-049</td>
+    <td colspan="1">Alerta de Benceno Alto</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-050</td>
+    <td colspan="1">Alerta de Presión Baja</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-051</td>
+    <td colspan="1">Alerta de Presión Alta</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-056</td>
+    <td colspan="1">Alerta de Impacto Detectado</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-057</td>
+    <td colspan="1">Registro de gastos de mantenimiento</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-058</td>
+    <td colspan="1">Gestión de mantenimientos del dueño</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-059</td>
+    <td colspan="1">Visualización de mantenimientos del mecánico</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-060</td>
+    <td colspan="1">Creación de mantenimientos por mecánico</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-061</td>
+    <td colspan="1">Gestión del progreso del mantenimiento</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-062</td>
+    <td colspan="1">Comparación de vehículos por motociclista</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-063</td>
+    <td colspan="1">Comparación de modelos por mecánico</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-064</td>
+    <td colspan="1">Evaluación por escenarios de uso</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-065</td>
+    <td colspan="1">Visualización de especificaciones detalladas</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="4">US-066</td>
+    <td colspan="4">Visualización de vehículos</td>
+    <td>T-054</td>
+    <td>Diseñar cards de Vehículo</td>
+    <td>Diseñar cards de Vehículo</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-055</td>
+    <td>Implementar iteración de cards de Vehículo en la pantalla de Vehículos</td>
+    <td>Implementar iteración de cards de Vehículo en la pantalla de Vehículos</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-056</td>
+    <td>Programar servicio de vehículos</td>
+    <td>Programar servicio de vehículos</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-057</td>
+    <td>Implementar llamada a vehículos del dueño</td>
+    <td>Implementar llamada a vehículos del dueño</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="5">US-067</td>
+    <td colspan="5">Visualización de detalles de un vehículo</td>
+    <td>T-058</td>
+    <td>Implementar llamada a la API de vehículo por ID</td>
+    <td>Implementar llamada a la API de vehículo por ID</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-059</td>
+    <td>Crear pantallas de detalles de vehículos</td>
+    <td>Crear pantallas de detalles de vehículos</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-060</td>
+    <td>Crear botón de redirección a pantalla de detalles en la card de vehículo.</td>
+    <td>Crear botón de redirección a pantalla de detalles en la card de vehículo.</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-061</td>
+    <td>Implementar llamada de la API al servicio de la aplicación web</td>
+    <td>Implementar llamada de la API al servicio de la aplicación web</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-062</td>
+    <td>Implementar llamada a la API al servicio de la aplicación móvil</td>
+    <td>Implementar llamada a la API al servicio de la aplicación móvil</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="6">US-068</td>
+    <td colspan="6">Registro de Vehículo</td>
+    <td>T-063</td>
+    <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
+    <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-064</td>
+    <td>Programar validaciones para el formulario de creación</td>
+    <td>Programar validaciones para el formulario de creación</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-065</td>
+    <td>Implementar servicio en el formulario</td>
+    <td>Implementar servicio en el formulario</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-066</td>
+    <td>Crear un formulario para la creación de un vehículo</td>
+    <td>Crear un formulario para la creación de un vehículo</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-067</td>
+    <td>Implementar llamada de API en el servicio de la aplicación web</td>
+    <td>Implementar llamada de API en el servicio de la aplicación web</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-068</td>
+    <td>Implementar llamada de API en el servicio de la aplicación móvil</td>
+    <td>Implementar llamada de API en el servicio de la aplicación móvil</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
   </tr>
 </table>
 
