@@ -5419,126 +5419,211 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-042</td>
-    <td colspan="1">Sección de métricas por cada vehículo</td>
-    <td>T-021 Implementar una card para mostrar los datos registrado de la métrica</td>
-    <td>T-022 Implementar una lista para mostrar cada una de las cards de métricas de un vehículo</td>
-    <td>T-023 Implementar una vista para mostrar la lista de las distintas métricas registradas para un vehículo</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3">US-042</td>
+    <td rowspan="3">Sección de métricas por cada vehículo</td>
+    <td>T-021</td>
+    <td>Implementar una card para mostrar los datos registrado de la métrica</td>
+    <td>Implementar una card para mostrar los datos registrado de la métrica</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-043</td>
-    <td colspan="1">Sistema de notificaciones interno</td>
-    <td>T-024 Implementar el WebSocket en el frontend para recibir alertas</td>
-    <td>T-025 Implementar WebSocket en el backend para enviar alertas</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>T-022</td>
+    <td>Implementar una lista para mostrar cada una de las cards de métricas de un vehículo</td>
+    <td>Implementar una lista para mostrar cada una de las cards de métricas de un vehículo</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-044</td>
-    <td colspan="1">Alerta de Temperatura Alta</td>
-    <td>T-026 Evento backend para anunciar temperatura alta</td>
-    <td>T-027 Enviar alerta de temperatura alta mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>T-023</td>
+    <td>Implementar una vista para mostrar la lista de las distintas métricas registradas para un vehículo</td>
+    <td>Implementar una vista para mostrar la lista de las distintas métricas registradas para un vehículo</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-045</td>
-    <td colspan="1">Alerta de Temperatura Baja</td>
-    <td>T-028 Evento backend para anunciar temperatura baja</td>
-    <td>T-029 Enviar alerta de temperatura baja mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td rowspan="2">US-043</td>
+    <td rowspan="2">Sistema de notificaciones interno</td>
+    <td>T-024</td>
+    <td>Implementar el WebSocket en el frontend para recibir alertas</td>
+    <td>Implementar el WebSocket en el frontend para recibir alertas</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-046</td>
-    <td colspan="1">Alerta de Humedad Alta</td>
-    <td>T-030 Evento backend para anunciar humedad alta</td>
-    <td>T-031 Enviar alerta de humedad alta mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>T-025</td>
+    <td>Implementar WebSocket en el backend para enviar alertas</td>
+    <td>Implementar WebSocket en el backend para enviar alertas</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-047</td>
-    <td colspan="1">Alerta de CO2 Alto</td>
-    <td>T-032 Evento backend para anunciar CO2 alto</td>
-    <td>T-033 Enviar alerta de CO2 alto mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td rowspan="2">US-044</td>
+    <td rowspan="2">Alerta de Temperatura Alta</td>
+    <td>T-026</td>
+    <td>Evento backend para anunciar temperatura alta</td>
+    <td>Evento backend para anunciar temperatura alta</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-048</td>
-    <td colspan="1">Alerta de NH3 Alto</td>
-    <td>T-034 Evento backend para anunciar NH3 alto</td>
-    <td>T-035 Enviar alerta de NH3 alto mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>T-027</td>
+    <td>Enviar alerta de temperatura alta mediante WebSocket</td>
+    <td>Enviar alerta de temperatura alta mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-049</td>
-    <td colspan="1">Alerta de Benceno Alto</td>
-    <td>T-036 Evento backend para anunciar Benceno alto</td>
-    <td>T-037 Enviar alerta de Benceno alto mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td rowspan="2">US-045</td>
+    <td rowspan="2">Alerta de Temperatura Baja</td>
+    <td>T-028</td>
+    <td>Evento backend para anunciar temperatura baja</td>
+    <td>Evento backend para anunciar temperatura baja</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-050</td>
-    <td colspan="1">Alerta de Presión Baja</td>
-    <td>T-038 Evento backend para anunciar presión baja</td>
-    <td>T-039 Enviar alerta de presión baja mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>T-029</td>
+    <td>Enviar alerta de temperatura baja mediante WebSocket</td>
+    <td>Enviar alerta de temperatura baja mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-051</td>
-    <td colspan="1">Alerta de Presión Alta</td>
-    <td>T-040 Evento backend para anunciar presión alta</td>
-    <td>T-041 Enviar alerta de presión alta mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td rowspan="2">US-046</td>
+    <td rowspan="2">Alerta de Humedad Alta</td>
+    <td>T-030</td>
+    <td>Evento backend para anunciar humedad alta</td>
+    <td>Evento backend para anunciar humedad alta</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-  
   <tr>
-    <td colspan="1">US-056</td>
-    <td colspan="1">Alerta de Impacto Detectado</td>
-    <td>T-042 Evento backend para anunciar impacto detectado</td>
-    <td>T-043 Enviar alerta de impacto detectado mediante WebSocket</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>T-031</td>
+    <td>Enviar alerta de humedad alta mediante WebSocket</td>
+    <td>Enviar alerta de humedad alta mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
-
+  <tr>
+    <td rowspan="2">US-047</td>
+    <td rowspan="2">Alerta de CO2 Alto</td>
+    <td>T-032</td>
+    <td>Evento backend para anunciar CO2 alto</td>
+    <td>Evento backend para anunciar CO2 alto</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-033</td>
+    <td>Enviar alerta de CO2 alto mediante WebSocket</td>
+    <td>Enviar alerta de CO2 alto mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-048</td>
+    <td rowspan="2">Alerta de NH3 Alto</td>
+    <td>T-034</td>
+    <td>Evento backend para anunciar NH3 alto</td>
+    <td>Evento backend para anunciar NH3 alto</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-035</td>
+    <td>Enviar alerta de NH3 alto mediante WebSocket</td>
+    <td>Enviar alerta de NH3 alto mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-049</td>
+    <td rowspan="2">Alerta de Benceno Alto</td>
+    <td>T-036</td>
+    <td>Evento backend para anunciar Benceno alto</td>
+    <td>Evento backend para anunciar Benceno alto</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-037</td>
+    <td>Enviar alerta de Benceno alto mediante WebSocket</td>
+    <td>Enviar alerta de Benceno alto mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-050</td>
+    <td rowspan="2">Alerta de Presión Baja</td>
+    <td>T-038</td>
+    <td>Evento backend para anunciar presión baja</td>
+    <td>Evento backend para anunciar presión baja</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-039</td>
+    <td>Enviar alerta de presión baja mediante WebSocket</td>
+    <td>Enviar alerta de presión baja mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-051</td>
+    <td rowspan="2">Alerta de Presión Alta</td>
+    <td>T-040</td>
+    <td>Evento backend para anunciar presión alta</td>
+    <td>Evento backend para anunciar presión alta</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-041</td>
+    <td>Enviar alerta de presión alta mediante WebSocket</td>
+    <td>Enviar alerta de presión alta mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-056</td>
+    <td rowspan="2">Alerta de Impacto Detectado</td>
+    <td>T-042</td>
+    <td>Evento backend para anunciar impacto detectado</td>
+    <td>Evento backend para anunciar impacto detectado</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-043</td>
+    <td>Enviar alerta de impacto detectado mediante WebSocket</td>
+    <td>Enviar alerta de impacto detectado mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
   <tr>
     <td rowspan="2">US-057</td>
     <td rowspan="2">Gestion de Gastos</td>
