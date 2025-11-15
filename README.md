@@ -5825,9 +5825,213 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Web Application**
 
-| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
-|------------------------|---------|-----------|----------------|---------------------|------|
-| BykerZ-Web-Application | develop |           |                |                     |      |
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>c66e985e</td>
+      <td>feat(iam): add ProfileStore service to manage user profile state and loading</td>
+      <td>feat(iam): add ProfileStore service to manage user profile state and loading</td>
+      <td>10/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>2348fb53</td>
+      <td>feat: add authentication guard and enhance vehicle comparison pages</td>
+      <td>feat: add authentication guard and enhance vehicle comparison pages</td>
+      <td>10/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>c57824c6</td>
+      <td>feat(expenses-and-maintenance): add routes and entities for expenses and maintenance management</td>
+      <td>feat(expenses-and-maintenance): add routes and entities for expenses and maintenance management</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>9fa8793e</td>
+      <td>feat(verify-owner): implement owner verification and assignment logic</td>
+      <td>feat(verify-owner): implement owner verification and assignment logic</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>48b35a3e</td>
+      <td>feat(sign-up): improve sign-up process with enhanced error handling and auto sign-in flow</td>
+      <td>feat(sign-up): improve sign-up process with enhanced error handling and auto sign-in flow</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>ff0de08b</td>
+      <td>feat(authentication): enhance sign-in method to support redirect option</td>
+      <td>feat(authentication): enhance sign-in method to support redirect option</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>e5487d99</td>
+      <td>feat(notifications): added notifications by websocket</td>
+      <td>feat(notifications): added notifications by websocket</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>b2022fd3</td>
+      <td>feat(wellnessMetric): added wellnessMetric</td>
+      <td>feat(wellnessMetric): added wellnessMetric</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>d969d0d3</td>
+      <td>feat: vehicle registration</td>
+      <td>feat: vehicle registration</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>cf404ade</td>
+      <td>feat(role-selection): implement registration functionality for Owner and Mechanic roles</td>
+      <td>feat(role-selection): implement registration functionality for Owner and Mechanic roles</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>91dbefaa</td>
+      <td>feat: add Dockerfile and Nginx configuration for production build and routing</td>
+      <td>feat: add Dockerfile and Nginx configuration for production build and routing</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>51047a05</td>
+      <td>feat(maintenance): implement maintenance management features including creation, retrieval, updates</td>
+      <td>feat(maintenance): implement maintenance management features including creation, retrieval, updates</td>
+      <td>12/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>e5dda545</td>
+      <td>feat: implement expense management features including creation, retrieval, and deletion</td>
+      <td>feat: implement expense management features including creation, retrieval, and deletion</td>
+      <td>12/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>7dcc9468</td>
+      <td>feat: assignment vehicle list</td>
+      <td>feat: assignment vehicle list</td>
+      <td>12/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>67f01c9a</td>
+      <td>feat(routes): add back authentication guard to protected routes</td>
+      <td>feat(routes): add back authentication guard to protected routes</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>1704fa02</td>
+      <td>feat(comparatives): enhance user ID management and improve vehicle selection logic</td>
+      <td>feat(comparatives): enhance user ID management and improve vehicle selection logic</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>1704fa02</td>
+      <td>featc and enhance loading logic</td>
+      <td>feat(comparatives): add vehicle comparison navigation and enhance loading logic</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>755c7aae</td>
+      <td>feat(comparatives): enhance vehicle details page with export functionality and responsive design</td>
+      <td>feat(comparatives): enhance vehicle details page with export functionality and responsive design</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>18738665</td>
+      <td>feat(comparatives): implement vehicle comparison pages and components</td>
+      <td>feat(comparatives): implement vehicle comparison pages and components</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>821841ec</td>
+      <td>feat(comparatives): add vehicle comparison components and model</td>
+      <td>feat(comparatives): add vehicle comparison components and model</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>c752c3f4</td>
+      <td>feat(register-vehicle): enhance vehicle registration dialog with form validation and improved UI</td>
+      <td>feat(register-vehicle): enhance vehicle registration dialog with form validation and improved UI</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>6683057f</td>
+      <td>feat(metrics-notifications): added new field</td>
+      <td>feat(metrics-notifications): added new field</td>
+      <td>14/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>22d07502</td>
+      <td>fix(vehicle-wellness): fix vehicle-wellness</td>
+      <td>fix(vehicle-wellness): fix vehicle-wellness</td>
+      <td>14/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>09ec9d5a</td>
+      <td>fix(notifications): fix notifications list</td>
+      <td>fix(notifications): fix notifications list</td>
+      <td>14/11/2025</td>
+    </tr>
+  </tbody>
+</table>
+
 
 **Backend**
 
@@ -5875,9 +6079,32 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Mobile Application**
 
-| Repository                | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
-|---------------------------|---------|-----------|----------------|---------------------|------|
-| BykerZ-Mobile-Application | develop |           |                |                     |      |
+| Repository                | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                        | Date       |
+|---------------------------|---------|--|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------|
+| BykerZ-Mobile-Application | develop | af7ce170 | fix(metrics-notifications): fix corrected fields                                                        | fix(metrics-notifications): fix corrected fields                                                           | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | f896d2ff | fix(metrics and notificaions): fix corrected fields                                                     | fix(metrics and notificaions): fix corrected fields                                                        | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | 2c0eadd1 | feat(notifications+websocket): added websocket implementation and notifications bc                      | feat(notifications+websocket): added websocket implementation and notifications bc                         | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | e46b85aa | fix(vehicle_wellness): fix vehicle\_wellness's metrics                                                  | fix(vehicle\_wellness): fix vehicle\_wellness's metrics                                                    | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | da9349df | fix(vehicle_management): fix colors,new button                                                          | fix(vehicle\_management): fix colors,new button                                                            | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | cb7c3c24 | feat: vehicle bloc creation and details                                                                 | feat: vehicle bloc creation and details                                                                    | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 2cf1e18b | feat: vehicles from owner page                                                                          | feat: vehicles from owner page                                                                             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 0d9ddb87 | feat: model service                                                                                     | feat: model service                                                                                        | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 4ff35555 | feat: vehicle and model entities redefined                                                              | feat: vehicle and model entities redefined                                                                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 37aa3669 | fix(vehicle_wellness): added vehicle_wellness                                                           | fix(vehicle\_wellness): added vehicle\_wellness                                                            | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | 8287760c | fix(metrics): fix datasources                                                                           | fix(metrics): fix datasources                                                                              | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | a01aa02a | feat(iam): update image asset references in pubspec.yaml                                                | feat(iam): update image asset references in pubspec.yaml                                                   | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | ebc4075b | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | f48e639e | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling          | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 5b055910 | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display              | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 1ec74f2e | feat(bloc): added bloc                                                                                  | feat(bloc): added bloc                                                                                     | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | e38bc96f | feat(metrics-data-layer): added data layer                                                              | feat(metrics-data-layer): added data layer                                                                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | c4011a2 | feat(metrics): added metrics                                                                            | feat(metrics): added metrics                                                                               | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | e46c2fe8 | feat(expense): implement CreateExpense feature with BLoC for expense creation                           | feat(expense): implement CreateExpense feature with BLoC for expense creation                              | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 9b1edcd9 | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                   | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                      | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 1f6d26fa | feat(expense): add ExpenseDetail page with BLoC for expense details management                          | feat(expense): add ExpenseDetail page with BLoC for expense details management                             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 5c46dbb9 | feat(maintenance): implement maintenance management with BLoC and API integration                       | feat(maintenance): implement maintenance management with BLoC and API integration                          | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | a14aad9c | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC           | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC              | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 2d9ee343 | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions              | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions                 | 13/11/2025 |
 
 **Edge Services**
 
