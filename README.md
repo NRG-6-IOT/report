@@ -6315,6 +6315,12 @@ Enlace:[https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-
 
 <img src="images/chapter-6/sprint-2/iot-execution-evidence-5.png" alt="IoT execution evidence 5"/>
 
+**Simulated Prototype**
+
+<img src="images/chapter-6/sprint-2/simulated-execution-evidence-1.png" alt="Simulated Prototype execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/simulated-execution-evidence-2.png" alt="Simulated Prototype execution evidence 2"/>
+
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
 En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
