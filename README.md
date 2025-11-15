@@ -5569,12 +5569,12 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
   <tr>
     <td colspan="1">US-042</td>
     <td colspan="1">Sección de métricas por cada vehículo</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td colspan="1">US-043</td>
@@ -5677,57 +5677,93 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"></td>
   </tr>
   <tr>
-    <td colspan="1">US-057</td>
-    <td colspan="1">Registro de gastos de mantenimiento</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-057</td>
+    <td rowspan="2">Gestion de Gastos</td>
+    <td>T-49</td>
+    <td>Implementar el almacenamiento local(store) para Gastos</td>
+    <td>Implementar el almacenamiento local(store) para Gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-058</td>
-    <td colspan="1">Gestión de mantenimientos del dueño</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-52</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Gastos</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-059</td>
-    <td colspan="1">Visualización de mantenimientos del mecánico</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="4">US-058</td>
+    <td rowspan="4">Gestión de mantenimientos del dueño</td>
+    <td>T-047</td>
+    <td>Implementar la vista de creacion de gastos</td>
+    <td>Implementar la vista de creacion de gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-051</td>
+    <td>Abstraer las entidades del dominio (Mantenimiento , Gasto e Item de Gasto)</td>
+    <td>Abstraer las entidades del dominio (Mantenimiento , Gasto e Item de Gasto)</td>
+    <td>3</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-046</td>
+    <td>Implementar la vista de Gastos</td>
+    <td>Implementar la vista de Gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-053</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Mantenimiento</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Mantenimiento</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="4">US-059</td>
+    <td colspan="4">Gestión del progreso del mantenimiento</td>
+    <td>T-044</td>
+    <td>Implementar la vista de Mantenimiento para Owner</td>
+    <td>Implementar la vista de Mantenimiento para Owner</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-045</td>
+    <td>Implementar la vista de Mantenimiento para Mecánico</td>
+    <td>Implementar la vista de Mantenimiento para Mecánico</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-048</td>
+    <td>Implementar el almacenamiento local(store) para mantenimientos</td>
+    <td>Implementar el almacenamiento local(store) para mantenimientos</td>
+    <td>3</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-050</td>
+    <td>Implementar Vista de crear mantenimiento</td>
+    <td>Implementar Vista de crear mantenimiento</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
   </tr>
   <tr>
     <td colspan="1">US-060</td>
-    <td colspan="1">Creación de mantenimientos por mecánico</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-  </tr>
-  <tr>
-    <td colspan="1">US-061</td>
-    <td colspan="1">Gestión del progreso del mantenimiento</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-  </tr>
-  <tr>
-    <td colspan="1">US-062</td>
     <td colspan="1">Comparación de vehículos por motociclista</td>
     <td colspan="1"></td>
     <td colspan="1"></td>
@@ -5737,7 +5773,7 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"></td>
   </tr>
   <tr>
-    <td colspan="1">US-063</td>
+    <td colspan="1">US-061</td>
     <td colspan="1">Comparación de modelos por mecánico</td>
     <td colspan="1"></td>
     <td colspan="1"></td>
@@ -5747,7 +5783,7 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"></td>
   </tr>
   <tr>
-    <td colspan="1">US-064</td>
+    <td colspan="1">US-062</td>
     <td colspan="1">Evaluación por escenarios de uso</td>
     <td colspan="1"></td>
     <td colspan="1"></td>
@@ -5757,7 +5793,7 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"></td>
   </tr>
   <tr>
-    <td colspan="1">US-065</td>
+    <td colspan="1">US-063</td>
     <td colspan="1">Visualización de especificaciones detalladas</td>
     <td colspan="1"></td>
     <td colspan="1"></td>
@@ -5767,7 +5803,7 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"></td>
   </tr>
   <tr>
-    <td rowspan="4">US-066</td>
+    <td rowspan="4">US-064</td>
     <td rowspan="4">Visualización de vehículos</td>
     <td>T-054</td>
     <td>Diseñar cards de Vehículo</td>
@@ -5801,7 +5837,7 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td rowspan="5">US-067</td>
+    <td rowspan="5">US-065</td>
     <td rowspan="5">Visualización de detalles de un vehículo</td>
     <td>T-058</td>
     <td>Implementar llamada a la API de vehículo por ID</td>
@@ -5843,7 +5879,7 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td rowspan="6">US-068</td>
+    <td rowspan="6">US-066</td>
     <td rowspan="6">Registro de Vehículo</td>
     <td>T-063</td>
     <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
@@ -5915,6 +5951,35 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 | Repository                | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
 |---------------------------|---------|-----------|----------------|---------------------|------|
 | BykerZ-Mobile-Application | develop |           |                |                     |      |
+
+**Edge Services**
+
+| Repository         | Branch  | Commit Id | Commit Message                                                                                           | Commit Message Body                                                                                      | Date       |
+|--------------------|---------|-----------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|------------|
+| BykerZ-Edge-Device | develop | 96fc25ec  | chore: create project.                                                                                   | chore: create project.                                                                                   | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 7245990d  | chore: add wellness layers.                                                                              | chore: add wellness layers.                                                                              | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 00c66929  | chore: add iam.                                                                                          | chore: add iam.                                                                                          | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 0d7260a0  | feat(wellness): add VehicleMetricRecord entity                                                           | feat(wellness): add VehicleMetricRecord entity                                                           | 14/11/2025 |
+| BykerZ-Edge-Device | develop | f71d625d  | feat(wellness): implement VehicleMetricRecord service for creating vehicle metrics                       | feat(wellness): implement VehicleMetricRecord service for creating vehicle metrics                       | 14/11/2025 |
+| BykerZ-Edge-Device | develop | dc888518  | feat(wellness): add VehicleMetricRecord model for vehicle metrics storage                                | feat(wellness): add VehicleMetricRecord model for vehicle metrics storage                                | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 306d87dd  | feat(wellness): add VehicleMetricRepository for saving vehicle metrics                                   | feat(wellness): add VehicleMetricRepository for saving vehicle metrics                                   | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 6ac50725  | feat(wellness): implement VehicleMetricRecordApplicationService for creating vehicle metric records      | feat(wellness): implement VehicleMetricRecordApplicationService for creating vehicle metric records      | 14/11/2025 |
+| BykerZ-Edge-Device | develop | aa337873  | feat(wellness): add endpoint for creating vehicle metric records                                         | feat(wellness): add endpoint for creating vehicle metric records                                         | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 5a943ee8  | feat(app): initialize Flask app and set up database on first request                                     | feat(app): initialize Flask app and set up database on first request                                     | 14/11/2025 |
+| BykerZ-Edge-Device | develop | c35a3de3  | fix: fixed missed record and function                                                                    | fix: fixed missed record and function                                                                    | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 0a4615f2  | refactor: refactor API-Key attribute for jwt.                                                            | refactor: refactor API-Key attribute for jwt.                                                            | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 2c6e61b1  | feat(wellness): add device retrieval and authentication methods                                          | feat(wellness): add device retrieval and authentication methods                                          | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 53d65868  | refactor: simplify create_vehicle_metric_record method by removing api_key parameter validation          | refactor: simplify create_vehicle_metric_record method by removing api_key parameter validation          | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 391edda3  | feat(requirements): add requests library to requirements                                                 | feat(requirements): add requests library to requirements                                                 | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 62380e76  | feat(wellness): update create_vehicle_metric_record to use Bearer token and forward data to external API | feat(wellness): update create_vehicle_metric_record to use Bearer token and forward data to external API | 14/11/2025 |
+| BykerZ-Edge-Device | develop | d745c034  | feat(tests): add IoT metrics simulator for sending mock data to Edge API                                 | feat(tests): add IoT metrics simulator for sending mock data to Edge API                                 | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 9e38c38d  | feat(app): update Flask app to run on all interfaces.                                                    | feat(app): update Flask app to run on all interfaces.                                                    | 14/11/2025 |
+
+**Embedded Application**
+
+| Repository          | Branch  | Commit Id | Commit Message                                         | Commit Message Body                                    | Date       |
+|---------------------|---------|-----------|--------------------------------------------------------|--------------------------------------------------------|------------|
+| BykerZ-Embedded-App | develop | 0b4edc1   | feat(embedded): add embedded application initial code. | feat(embedded): add embedded application initial code. | 14/11/2025 |
 
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
