@@ -4904,6 +4904,7 @@ Empleamos Android y Jetpack Compose para la creación de la mobile application, 
 | **Spring Boot**     | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
 | **Tailwind CSS**    | Framework utilizado para la creación de la landing page                      | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
 | **Angular**         | Framework de desarrollo web open source                                      | [https://angular.dev/](https://angular.dev/)                                     |
+| **Python**          | Lenguaje de programación utilizado para el desarrollo de scripts             | [https://www.python.org/](https://www.python.org/)                               |
 
 **Software Testing**
 Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
@@ -4933,12 +4934,14 @@ Para la documentación del software utilizamos Markdown, y para el trabajo colab
 
 Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
-| Herramienta            | Descripción               | Enlace                                                                                                                   |
-|------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Mobile Application** | BykerZ-Mobile-Application | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
-| **Backend**            | BykerZ-Backend            | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
-| **Landing Page**       | BykerZ-Landing-Page       | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
-| **Web Application**    | BykerZ-Web-Application    | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
+| Herramienta              | Descripción                 | Enlace                                                                                                                   |
+|--------------------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Mobile Application**   | BykerZ-Mobile-Application   | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
+| **Backend**              | BykerZ-Backend              | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
+| **Landing Page**         | BykerZ-Landing-Page         | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
+| **Web Application**      | BykerZ-Web-Application      | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
+| **Edge Service**         | BykerZ-Edge-Service         | [https://github.com/NRG-6-IOT/BykerZ-Edge-Service](https://github.com/NRG-6-IOT/BykerZ-Edge-Service)                     |
+| **Embedded Application** | BykerZ-Embedded-Application | [https://github.com/NRG-6-IOT/BykerZ-Embedded-Application](https://github.com/NRG-6-IOT/BykerZ-Embedded-Application)     |
 
 **Flujo de trabajo GitFlow**  
 Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Git branching model"* con los siguientes parámetros:
