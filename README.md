@@ -6243,7 +6243,7 @@ Video web app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc
 
 Video mobile app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV)
 
-Video IoT embedded application + edge services: []()
+Video IoT embedded application + edge services: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAT_gOk-s1E25r8KejgVYYQQ?e=MPnrSX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAT_gOk-s1E25r8KejgVYYQQ?e=MPnrSX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Landing Page**
 
