@@ -5733,6 +5733,65 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
 
 En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
 
+**Aplicación para evaluar:** BykerZ
+
+**Tareas que evaluar:**
+
+- Navegación inicial y comprensión del propósito de la aplicación
+- Claridad y completitud del panel principal para mecánicos
+- Gestión de asignaciones activas y pendientes
+- Programación y seguimiento de mantenimientos
+- Uso de la sección de comparativas entre motos
+- Procesos de creación y gestión de gastos asociados a servicios
+- Búsqueda y filtrado de información de clientes y asignaciones
+
+**Escala de severidad**
+
+| Valor | Descripción |
+|-------|-------------|
+| 1     | Cosmético   |
+| 2     | Leve        |
+| 3     | Moderado    |
+| 4     | Grave       |
+| 5     | Crítico     |
+
+**Tabla de resumen**
+
+| #Orden | Problema | Escala de Severidad | Heurística / Principio violado(a) |
+|--------|----------|---------------------|-----------------------------------|
+| 1 | Falta de información contextual sobre códigos de asignación y su propósito | 3 | Visibilidad del estado del sistema / Ayuda y documentación |
+| 2 | Panel principal incompleto sin resúmenes clave para la toma de decisiones | 3 | Flexibilidad y eficiencia de uso / Diseño estético y minimalista |
+| 3 | Flujos de acción críticos sin confirmaciones claras o títulos descriptivos | 2 | Prevención de errores / Consistencia y estándares |
+
+**Problema #1: Falta de información contextual sobre códigos de asignación y su propósito**
+
+**Heurística violada:** Visibilidad del estado del sistema y Ayuda y documentación
+
+**Descripción del problema:**  
+Ambos entrevistados reportaron confusión con los códigos de asignación. Flavio mencionó: "Al ver el código de asignación no entendí para qué servía. Luego comprendí que es para que el dueño me vincule. Un texto explicativo o ícono de ayuda sería útil". Daniela también señaló: "Al generar un código de asignación no supe qué hacer con él. Hubiera sido útil un mensaje explicativo". Esta falta de contexto obliga a los usuarios a descubrir por sí mismos el propósito de elementos clave, generando incertidumbre en procesos importantes.
+
+**Recomendación:**  
+Implementar tooltips informativos y etiquetas descriptivas junto a los códigos de asignación que expliquen claramente su función: "Comparte este código con el cliente para que te asigne su moto". Incluir un ícono de información (i) que al hacer hover muestre instrucciones completas sobre el proceso de vinculación. Adicionalmente, añadir un breve tutorial inicial que explique el flujo completo de asignación de clientes.
+
+**Problema #2: Panel principal incompleto sin resúmenes clave para la toma de decisiones**
+
+**Heurística violada:** Flexibilidad y eficiencia de uso y Diseño estético y minimalista
+
+**Descripción del problema:**  
+Ambos usuarios identificaron carencias en el panel principal. Flavio comentó: "Me gustaría ver un resumen rápido del número de mantenimientos pendientes para hoy o la semana, como un contador". Daniela fue más específica: "Falta información. Quisiera ver un resumen de ingresos, mantenimientos completados y gráficos de desempeño". La ausencia de métricas clave obliga a los usuarios a navegar por diferentes secciones para obtener información que debería estar disponible de inmediato.
+
+**Recomendación:**  
+Rediseñar el panel principal para incluir widgets con métricas esenciales: contador de mantenimientos pendientes para hoy/semana, resumen de ingresos mensuales, gráfico de mantenimientos completados vs pendientes, e indicadores de desempeño. Implementar un sistema de tarjetas modulares que permita a los usuarios personalizar qué información ver en su dashboard principal según sus necesidades específicas.
+
+**Problema #3: Flujos de acción críticos sin confirmaciones claras o títulos descriptivos**
+
+**Heurística violada:** Prevención de errores y Consistencia y estándares
+
+**Descripción del problema:**  
+Flavio reportó confusión en procesos importantes: "Al completar un mantenimiento apareció un diálogo para crear un gasto. No entendí al inicio. Un título más claro como 'Registrar costos del servicio' sería mejor". Daniela también experimentó confusión en flujos: "Al crear mantenimiento no entendí por qué debía elegir primero al dueño. Un texto o guía ayudaría". La falta de claridad en transiciones críticas puede llevar a errores en el registro de información importante.
+
+**Recomendación:**  
+Establecer títulos descriptivos en todos los diálogos y modales de acción crítica. Implementar mensajes de guía contextual que expliquen el propósito de cada paso en flujos complejos. Incluir indicadores de progreso en procesos multi-paso y añadir confirmaciones visuales claras después de completar acciones importantes. Para flujos recurrentes como creación de mantenimientos, desarrollar plantillas predefinidas que simplifiquen el proceso.
 
 
 ### 6.4. Video About-the-Product.
