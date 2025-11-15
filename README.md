@@ -6062,11 +6062,47 @@ Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https:
 
 **Web Application**
 
+Para desplegar la web application se necesita crear una cuenta en Render y crear un servicio web enlazado con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 4"/>
+
+Enlace a la web application en Render: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
 **Mobile Application**
 
 **Backend**
 
-Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#/](https://bykerz-backend.onrender.com/swagger-ui/index.html#/)
+Antes de desplegar el backend se necesita crear una cuenta en Render y crear una base de datos en PostgreSQL:
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 4"/>
+
+Una vez creada la base de datos, se procede a crear el servicio web en Render y enlazarlo con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-1.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-2.png" alt="Backend deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-3.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-4.png" alt="Backend deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-5.png" alt="Backend deploy evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-6.png" alt="Backend deploy evidence 6"/>
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
 
 ##### 6.2.2.9. Team Collaboration Insights during Sprint.
 
