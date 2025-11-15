@@ -4081,58 +4081,60 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.6.4 Infrastructure Layer
 
-<h3>Clase: <code>UserRepositoryImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>UserRepository</code> usando JPA/Hibernate para persistir y consultar usuarios.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>save(User user)</td><td>Persiste o actualiza un usuario.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera un usuario por ID.</td></tr>
-    <tr><td>findByUsername(String username)</td><td>Recupera un usuario por su nombre de usuario.</td></tr>
-    <tr><td>findByEmail(String email)</td><td>Recupera un usuario por email.</td></tr>
-    <tr><td>findAll()</td><td>Lista todos los usuarios registrados.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserRepository`
 
-<h3>Clase: <code>RoleRepositoryImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>RoleRepository</code> usando JPA/Hibernate para manejar roles y permisos.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Role role)</td><td>Persiste un rol.</td></tr>
-    <tr><td>findByName(String name)</td><td>Busca un rol por nombre.</td></tr>
-    <tr><td>findAll()</td><td>Lista todos los roles disponibles.</td></tr>
-  </tbody>
-</table>
+| Título         | Descripción                                                             |
+|----------------|-------------------------------------------------------------------------|
+| UserRepository | Interfaz de persistencia para operaciones CRUD y consultas de usuarios. |
 
-<h3>Clase: <code>PasswordHashingServiceImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>PasswordHashingService</code> que maneja el hash seguro de contraseñas usando BCrypt.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>hashPassword(String rawPassword)</td><td>Devuelve el hash de la contraseña.</td></tr>
-    <tr><td>verifyPassword(String rawPassword, String hashedPassword)</td><td>Verifica una contraseña contra su hash.</td></tr>
-  </tbody>
-</table>
+| Método                   | Descripción                                             |
+|--------------------------|---------------------------------------------------------|
+| findByUsername(String)   | Busca un usuario por su nombre de usuario.              |
+| existsByUsername(String) | Verifica si un usuario existe por su nombre de usuario. |
 
-<h3>Clase: <code>TokenProviderServiceImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>TokenProviderService</code> para generar y validar tokens JWT (usando jjwt o Spring Security JWT).</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>generateToken(User user)</td><td>Genera un token JWT con datos del usuario.</td></tr>
-    <tr><td>validateToken(String token)</td><td>Valida un token y devuelve si es válido.</td></tr>
-    <tr><td>extractUsername(String token)</td><td>Obtiene el username desde el token.</td></tr>
-  </tbody>
-</table>
+**Clase:** `RoleRepository`
+
+| Título         | Descripción                                                            |
+|----------------|------------------------------------------------------------------------|
+| RoleRepository | Interfaz de persistencia para operaciones CRUD y consultas de roles.   |
+
+| Método              | Descripción                              |
+|---------------------|------------------------------------------|
+| findByName(Roles)   | Busca un rol por su nombre.              |
+| existsByName(Roles) | Verifica si un rol existe por su nombre. |
+
+**Clase:** `HashingServiceImpl`
+
+| Título             | Descripción                                                                        |
+|--------------------|------------------------------------------------------------------------------------|
+| HashingServiceImpl | Implementación de `HashingService` que utiliza BCrypt para el hash de contraseñas. |
+
+| Método                        | Descripción                                                              |
+|-------------------------------|--------------------------------------------------------------------------|
+| encode(CharSequence)          | Genera un hash seguro de una contraseña en texto plano.                  |
+| matches(CharSequence, String) | Valida si una contraseña en texto plano coincide con su hash almacenado. |
+
+**Clase:** `TokenServiceImpl`
+
+| Título           | Descripción                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| TokenServiceImpl | Implementación de `TokenService` que utiliza JWT para la gestión de tokens. |
+
+| Método                                            | Descripción                                                       |
+|---------------------------------------------------|-------------------------------------------------------------------|
+| buildTokenWithDefaultParameters(String)           | Genera un token JWT a partir de la información del usuario.       |
+| getSigningKey()                                   | Obtiene la clave secreta utilizada para firmar los tokens.        |
+| extractClaim(String, Function<Claims, T>)         | Extrae un reclamo específico de un token JWT.                     |
+| extractAllClaims(String)                          | Extrae todos los reclamos contenidos en un token JWT.             |
+| isTokenPresentIn(String)                          | Verifica si un token JWT está presente en la base de datos.       |
+| isBearerTokenIn(String)                           | Verifica si un token JWT es un token Bearer válido.               |
+| extractTokenFrom(String)                          | Extrae el token JWT del encabezado de autorización.               |
+| getAuthorizationParameterFrom(HttpServletRequest) | Obtiene el parámetro de autorización del request HTTP.            |
+| getBearerTokenFrom(HttpServletRequest)            | Obtiene el token Bearer del request HTTP.                         |
+| generateToken(Authentication)                     | Genera un token JWT basado en la autenticación proporcionada.     |
+| generateToken(String)                             | Genera un token JWT basado en el nombre de usuario proporcionado. |
+| getUserNameFromToken(String)                      | Extrae el nombre de usuario contenido en un token JWT.            |
+| validateToken(String)                             | Valida un token JWT asegurando su integridad y vigencia.          |
 
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
