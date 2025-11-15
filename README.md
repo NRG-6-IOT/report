@@ -6239,7 +6239,11 @@ Para este sprint no se contemplaron pruebas unitarias.
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video: []()
+Video web app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Video mobile app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV)
+
+Video IoT embedded application + edge services: []()
 
 **Landing Page**
 
