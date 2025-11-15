@@ -6236,9 +6236,436 @@ En esta sección se presentan los avances logrados en la documentación de los W
 
 Backend repository: [https://github.com/NRG-6-IOT/BykerZ-Backend](https://github.com/NRG-6-IOT/BykerZ-Backend)
 
-| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
-|----------|------------|-------------|------------|--------------|---------------|-------------|
-|          |            |             |            |              |               |             |
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Method</th>
+      <th>Description</th>
+      <th>Parameters</th>
+      <th>Request body</th>
+      <th>Response</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/api/v1/users/{userId}</td>
+      <td>GET</td>
+      <td>Get a user by ID</td>
+      <td>path: <code>userId</code></td>
+      <td>none</td>
+      <td><code>UserResource</code></td>
+      <td>Retrieves user by its ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users</td>
+      <td>GET</td>
+      <td>Get all users</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;UserResource&gt;</code></td>
+      <td>Returns list of all users.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/email/{username}</td>
+      <td>GET</td>
+      <td>Get a user by username</td>
+      <td>path: <code>username</code></td>
+      <td>none</td>
+      <td><code>UserResource</code></td>
+      <td>Retrieves a user by username/email.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/me</td>
+      <td>GET</td>
+      <td>Get current authenticated user</td>
+      <td>auth context</td>
+      <td>none</td>
+      <td><code>UserResource</code></td>
+      <td>Returns the currently authenticated user.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/owner</td>
+      <td>GET</td>
+      <td>Get Owner ID of an user</td>
+      <td>auth principal</td>
+      <td>none</td>
+      <td><code>OwnerIdResource</code></td>
+      <td>Finds Owner ID linked to authenticated user via profile service.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/mechanic</td>
+      <td>GET</td>
+      <td>Get Mechanic ID of an user</td>
+      <td>auth principal</td>
+      <td>none</td>
+      <td><code>MechanicIdResource</code></td>
+      <td>Finds Mechanic ID linked to authenticated user via profile service.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense</td>
+      <td>GET</td>
+      <td>Get all expenses of an owner</td>
+      <td>auth principal → username → userId</td>
+      <td>none</td>
+      <td><code>List&lt;ExpenseResource&gt;</code></td>
+      <td>Returns expenses for owner associated with authenticated user.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/owner/{ownerId}</td>
+      <td>POST</td>
+      <td>Create new expense by owner ID</td>
+      <td>path: <code>ownerId</code>, auth principal</td>
+      <td><code>CreateExpenseResource</code></td>
+      <td><code>ExpenseResource</code></td>
+      <td>Creates expense for given owner; also creates items.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/{userId}</td>
+      <td>POST</td>
+      <td>Create a new expense for a user</td>
+      <td>path: <code>userId</code>, auth principal</td>
+      <td><code>CreateExpenseResource</code></td>
+      <td><code>ExpenseResource</code></td>
+      <td>Creates expense scoped to provided user ID and items.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/{expenseId}</td>
+      <td>GET</td>
+      <td>Get an expense by ID</td>
+      <td>path: <code>expenseId</code></td>
+      <td>none</td>
+      <td><code>ExpenseResource</code></td>
+      <td>Retrieves a specific expense.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/{expenseId}</td>
+      <td>DELETE</td>
+      <td>Delete an expense</td>
+      <td>path: <code>expenseId</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Deletes the expense by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}</td>
+      <td>GET</td>
+      <td>Get maintenance by ID</td>
+      <td>path: <code>maintenanceId</code></td>
+      <td>none</td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Retrieves maintenance details.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get maintenances by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>List&lt;MaintenanceResource&gt;</code></td>
+      <td>Returns all maintenances for given vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}</td>
+      <td>DELETE</td>
+      <td>Delete a maintenance by ID</td>
+      <td>path: <code>maintenanceId</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Deletes maintenance.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance</td>
+      <td>POST</td>
+      <td>Create a new maintenance</td>
+      <td>none</td>
+      <td><code>CreateMaintenanceResource</code></td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Creates maintenance record.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}</td>
+      <td>PUT</td>
+      <td>Update maintenance status by ID</td>
+      <td>path: <code>maintenanceId</code></td>
+      <td><code>UpdateStatusOfMaintenanceResource</code></td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Updates state/status of maintenance.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}/expense/assign/{expenseId}</td>
+      <td>PUT</td>
+      <td>Assign expense to maintenance</td>
+      <td>path: <code>maintenanceId</code>, <code>expenseId</code></td>
+      <td>none</td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Links an expense to a maintenance.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/mechanic/{mechanicId}</td>
+      <td>GET</td>
+      <td>Get maintenances by mechanic ID</td>
+      <td>path: <code>mechanicId</code></td>
+      <td>none</td>
+      <td><code>List&lt;MaintenanceResource&gt;</code></td>
+      <td>Returns maintenances assigned to mechanic.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{profileId}</td>
+      <td>GET</td>
+      <td>Get a profile by ID</td>
+      <td>path: <code>profileId</code></td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile by its ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/email/{email}</td>
+      <td>GET</td>
+      <td>Get a profile by email</td>
+      <td>path: <code>email</code></td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile by email address.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/user/{userId}</td>
+      <td>GET</td>
+      <td>Get a profile by user ID</td>
+      <td>path: <code>userId</code></td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile linked to given userId.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/user</td>
+      <td>GET</td>
+      <td>Get profile of authenticated user</td>
+      <td>auth principal</td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile for authenticated user.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/reports/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get aggregated report by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>ReportResource</code></td>
+      <td>Aggregates vehicle, maintenances and assignment data.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/reports/vehicle/{vehicleId}/export</td>
+      <td>GET</td>
+      <td>Export aggregated report as CSV</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>text/csv</code> (CSV string)</td>
+      <td>Returns CSV export of aggregated report.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models</td>
+      <td>GET</td>
+      <td>Get all models</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;ModelResource&gt;</code></td>
+      <td>Returns all vehicle models.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models/{modelId}</td>
+      <td>GET</td>
+      <td>Get model by ID</td>
+      <td>path: <code>modelId</code></td>
+      <td>none</td>
+      <td><code>ModelResource</code></td>
+      <td>Retrieves model by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models/brand/{brand}</td>
+      <td>GET</td>
+      <td>Get models by brand</td>
+      <td>path: <code>brand</code></td>
+      <td>none</td>
+      <td><code>List&lt;ModelResource&gt;</code></td>
+      <td>Returns models filtered by brand.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models/brands</td>
+      <td>GET</td>
+      <td>Get all distinct brands</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;String&gt;</code></td>
+      <td>Returns distinct model brands.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/owners</td>
+      <td>GET</td>
+      <td>Get all vehicle owners</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;OwnerResource&gt;</code></td>
+      <td>Returns all owners.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/owners/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get owner by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>OwnerResource</code></td>
+      <td>Returns owner who owns given vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/owners</td>
+      <td>POST</td>
+      <td>Create a new vehicle owner</td>
+      <td>none</td>
+      <td><code>CreateOwnerResource</code></td>
+      <td><code>OwnerResource</code></td>
+      <td>Creates owner with provided profile ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/owner/{ownerId}</td>
+      <td>GET</td>
+      <td>Get vehicles by owner ID</td>
+      <td>path: <code>ownerId</code></td>
+      <td>none</td>
+      <td><code>List&lt;VehicleResource&gt;</code></td>
+      <td>Returns vehicles associated to owner.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get vehicle by ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>VehicleResource</code></td>
+      <td>Retrieves vehicle details.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/{ownerId}</td>
+      <td>POST</td>
+      <td>Add a new vehicle to an owner</td>
+      <td>path: <code>ownerId</code></td>
+      <td><code>AddVehicleResource</code></td>
+      <td><code>VehicleResource</code></td>
+      <td>Creates and associates vehicle to owner.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/{vehicleId}</td>
+      <td>DELETE</td>
+      <td>Delete a vehicle by ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Removes vehicle from system and owner.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications</td>
+      <td>POST</td>
+      <td>Create a new notification</td>
+      <td>none</td>
+      <td><code>CreateNotificationResource</code></td>
+      <td><code>NotificationResource</code> (201)</td>
+      <td>Creates a notification and returns it.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications/{id}</td>
+      <td>GET</td>
+      <td>Get notification by ID</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td><code>NotificationResource</code></td>
+      <td>Retrieves a notification.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications</td>
+      <td>GET</td>
+      <td>Get all notifications</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;NotificationResource&gt;</code></td>
+      <td>Returns all notifications.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get notifications by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>List&lt;NotificationResource&gt;</code></td>
+      <td>Returns notifications for a vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications/{id}/read</td>
+      <td>PUT</td>
+      <td>Mark notification as read</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td><code>NotificationResource</code></td>
+      <td>Marks notification as read and returns updated resource.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics</td>
+      <td>POST</td>
+      <td>Create a new wellness metric</td>
+      <td>none</td>
+      <td><code>CreateWellnessMetricResource</code></td>
+      <td><code>WellnessMetricResource</code> (201)</td>
+      <td>Creates metric for a vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/{id}</td>
+      <td>PUT</td>
+      <td>Update a wellness metric</td>
+      <td>path: <code>id</code></td>
+      <td><code>UpdateWellnessMetricResource</code></td>
+      <td><code>WellnessMetricResource</code></td>
+      <td>Updates metric by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/{id}</td>
+      <td>DELETE</td>
+      <td>Delete a wellness metric</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Deletes metric by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/{id}</td>
+      <td>GET</td>
+      <td>Get wellness metric by ID</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td><code>WellnessMetricResource</code></td>
+      <td>Retrieves a metric.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics</td>
+      <td>GET</td>
+      <td>Get all wellness metrics</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;WellnessMetricResource&gt;</code></td>
+      <td>Returns all wellness metrics.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get wellness metrics by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>List&lt;WellnessMetricResource&gt;</code></td>
+      <td>Returns metrics for specific vehicle.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ##### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
