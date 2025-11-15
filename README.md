@@ -10,9 +10,11 @@
 
 **Profesor:** Ángel Augusto Velásquez Núñez
 
-**Ingeniería de software**
+**Facultad:** Ingeniería
 
-**Informe del trabajo Final**
+**Carrera:** Ingeniería de software
+
+**Informe del Trabajo Final**
 
 **Nombre del startup:** NRG6
 
@@ -21,7 +23,7 @@
 **Integrantes**
 
 
-| **Nombre**                                | **Codigo** |
+| **Nombre**                                | **Código** |
 |-------------------------------------------|------------|
 | **Alejo Cardenas Jose Antonio**           | U202122484 |
 | **Astonitas Díaz Juan Diego**             | U202110237 |
@@ -197,8 +199,6 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
       - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
       - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
-      - [Problema identificado](#problema-identificado)
-      - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
@@ -307,17 +307,9 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
       - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
     - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
       - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-        - [Web Application](#web-application)
-        - [Mobile Application](#mobile-application)
       - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
-        - [Web Application](#web-application-1)
-        - [Mobile Application](#mobile-application-1)
       - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-        - [Web Application](#web-application-2)
-        - [Mobile Application](#mobile-application-2)
       - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-        - [Web Application](#web-application-3)
-    - [Mobile Application](#mobile-application-3)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
     - [6.1. Software Configuration Management.](#61-software-configuration-management)
@@ -482,10 +474,10 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
 </table>
 
 ### 1.2 Solution Profile
-#### Problema identificado  
+**Problema identificado** 
 En el contexto urbano, los dueños de motos suelen carecer de herramientas digitales que les permitan monitorear el estado de sus vehículos y llevar un control de sus costos de uso y mantenimiento. Esto ocasiona un uso ineficiente del combustible (monetario y rendimiento), fallas mecánicas inesperadas, gastos imprevistos y dificultades para planificar el cuidado preventivo de la moto.  
 Por otro lado, los mecánicos y talleres enfrentan la falta de información confiable y actualizada sobre el historial junto a la condición de las motos de sus clientes, lo que en ocasiones limita la precisión de los diagnósticos y la capacidad de generar relaciones de confianza y fidelización.
-#### Solución propuesta  
+**Solución propuesta**
 La plataforma IoT para motos urbanas BykerZ ofrece un ecosistema digital compuesto por aplicaciones móviles, web y un dispositivo embebido que recolecta datos de telemetría en tiempo real (kilometraje, consumo de gasolina, estado de batería, vibración y temperatura del motor).  
 - Desde el rol de usuario de moto urbana:
     - Consultar métricas de eficiencia de combustible
@@ -4223,7 +4215,7 @@ En esta sección se desarrolla la propuesta de diseño visual e interactivo de l
 
 #### 5.4.1. Applications Wireframes
 
-##### Web Application
+**Web Application**
 
 Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
@@ -4236,7 +4228,7 @@ Esta sección presenta los wireframes de las aplicacion web, donde se define la 
 ![wireframe7.png](images/chapter-5/wireframes/wireframe7.png)
 ![wireframe8.png](images/chapter-5/wireframes/wireframe8.png)
 
-##### Mobile Application
+**Mobile Application**
 
 Esta sección presenta los wireframes de las aplicacion movil, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
@@ -4264,7 +4256,7 @@ Esta sección presenta los wireframes de las aplicacion movil, donde se define l
 #### 5.4.2. Applications Wireflow Diagram
 En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
-##### Web Application
+**Web Application**
 La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
@@ -4317,7 +4309,7 @@ El wireflow inicia cuando el usuario presiona en la barra de navegación superio
 ![wireflow10.drawio.png](images/chapter-5/wireflows-web/wireflow10.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
-##### Mobile Application
+**Mobile Application**
 La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
@@ -4362,7 +4354,7 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 #### 5.4.3. Applications Mock-ups
 
-##### Web Application
+**Web Application**
 
 En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
@@ -4385,7 +4377,7 @@ En esta sección se presentan los mock-ups finales de la aplicacion web, donde s
 ![mockup17.png](images/chapter-5/mockups/mockup17.png)
 ![mockup18.png](images/chapter-5/mockups/mockup18.png)
 
-##### Mobile Application
+**Mobile Application**
 
 En esta sección se presentan los mock-ups finales de la aplicacion movil, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
@@ -4439,7 +4431,7 @@ En esta sección se presentan los mock-ups finales de la aplicacion movil, donde
 
 En esta sección se presentan los user flows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
-##### Web Application
+**Web Application**
 
 **User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
 ![usergoal1.drawio.png](images/chapter-5/user-goals-web/usergoal1.drawio.png)
@@ -4492,7 +4484,7 @@ El user flow inicia cuando el usuario presiona en la barra de navegación superi
 El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
 
-### Mobile Application
+**Mobile Application**
 
 **User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
 ![userflow-ver-dashboard.png](images/chapter-5/userflows-mobile/userflow-ver-dashboard.png)
@@ -4538,10 +4530,10 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 
 En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
-Aplicación Móvil:
+**Aplicación Móvil:**
 - [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
 
-Aplicación Web:
+**Aplicación Web:**
 - [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
 
 ## Capítulo VI: Product Implementation, Validation & Deployment
@@ -4585,6 +4577,7 @@ Empleamos Android y Jetpack Compose para la creación de la mobile application, 
 | **Spring Boot**     | Framework utilizado para la creación de la API REST                          | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
 | **Tailwind CSS**    | Framework utilizado para la creación de la landing page                      | [https://tailwindcss.com/](https://tailwindcss.com/)                             |
 | **Angular**         | Framework de desarrollo web open source                                      | [https://angular.dev/](https://angular.dev/)                                     |
+| **Python**          | Lenguaje de programación utilizado para el desarrollo de scripts             | [https://www.python.org/](https://www.python.org/)                               |
 
 **Software Testing**
 Para las pruebas unitarias y de integración utilizamos JUnit y Mockito para la API REST.
@@ -4614,12 +4607,14 @@ Para la documentación del software utilizamos Markdown, y para el trabajo colab
 
 Para la gestión del código fuente, utilizamos los siguientes repositorios:
 
-| Herramienta            | Descripción               | Enlace                                                                                                                   |
-|------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Mobile Application** | BykerZ-Mobile-Application | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
-| **Backend**            | BykerZ-Backend            | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
-| **Landing Page**       | BykerZ-Landing-Page       | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
-| **Web Application**    | BykerZ-Web-Application    | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
+| Herramienta              | Descripción                 | Enlace                                                                                                                   |
+|--------------------------|-----------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Mobile Application**   | BykerZ-Mobile-Application   | [https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git](https://github.com/NRG-6-IOT/BykerZ-Mobile-Application.git) |
+| **Backend**              | BykerZ-Backend              | [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)                       |
+| **Landing Page**         | BykerZ-Landing-Page         | [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git)             |
+| **Web Application**      | BykerZ-Web-Application      | [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)       |
+| **Edge Service**         | BykerZ-Edge-Service         | [https://github.com/NRG-6-IOT/BykerZ-Edge-Service](https://github.com/NRG-6-IOT/BykerZ-Edge-Service)                     |
+| **Embedded Application** | BykerZ-Embedded-Application | [https://github.com/NRG-6-IOT/BykerZ-Embedded-Application](https://github.com/NRG-6-IOT/BykerZ-Embedded-Application)     |
 
 **Flujo de trabajo GitFlow**  
 Usaremos el flujo de trabajo planteado por Vincent Driessen en *"A successful Git branching model"* con los siguientes parámetros:
@@ -5087,13 +5082,880 @@ Distribución de commits:
 * José Alejo: 4 commits
 * Juan Astonitas: 1 commit
 
+#### 6.2.2. Sprint 2
+
+Durante el segundo sprint, el equipo orientó sus esfuerzos al fortalecimiento y evolución de los principales productos del ecosistema digital: la Web Application, el Backend, la Mobile Application y el prototipo IoT. En esta iteración se priorizó la implementación de funcionalidades clave vinculadas a la gestión de motocicletas, mantenimientos, alertas y reportes. Asimismo, se llevó a cabo la reestructuración de los bounded context, con el objetivo de optimizar la arquitectura del dominio, mejorar la coherencia entre los módulos y asegurar una integración más eficiente entre los distintos componentes del sistema.
+
+##### 6.2.2.1. Sprint Planning 2.
+
+Esta sección describe el proceso de planificación del Sprint 2, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación del Frontend (Mobile App y Web App) y del Backend.
+
+| Sprint #                         | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-10-13                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Sprint 2 - Review Summary        | No se alcanzaron desarrollar todos los entregables planteados como objetivo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
+| Sprint 2 - Retrospective Summary | Se realizó autocritica sobre las deficiencias de cada uno y se plantearon oportunidades de mejora, mejorando el compromiso entre los miembros del equipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Sprint 2 Goal                    | Nuestro enfoque está en entregar la segunda versión de la aplicación web y del backend con un 80% de cobertura funcional, junto con la primera versión de la aplicación móvil y el prototipo físico inicial del dispositivo IoT. Creemos que esto proporcionará un ecosistema más integrado y funcional para los usuarios de la plataforma, permitiendo el flujo de datos en tiempo real entre las aplicaciones y los componentes IoT. Esto se confirmará cuando la aplicación web y el backend alcancen un 80% de implementación de funcionalidades, la aplicación móvil se comunique exitosamente con los servicios del backend, y el prototipo IoT transmita datos de telemetría hacia la plataforma. |
+| Sprint 2 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+##### 6.2.2.2. Aspect Leaders and Collaborators.
+
+La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
+
+| Team Member                           | Github Username       | Aspect Name 1                     | Aspect Name 2           | Aspect Name 3    | Aspect Name 4          | Aspect Name 5     |
+|---------------------------------------|-----------------------|-----------------------------------|-------------------------|------------------|------------------------|-------------------|  
+| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) | Simulated Prototype (L) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (L) | Edge Services (L) |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        | Simulated Prototype (C) | Embedded App (L) | Physical Prototype (L) | Edge Services (C) |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+
+##### 6.2.2.3. Sprint Backlog 2.
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot](https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot)
+
+<table>
+  <tr>
+    <td colspan="1"><strong>Sprint #</strong></td>
+    <td colspan="7"><strong>Sprint 1</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>User Story</strong></td>
+    <td colspan="6"><strong>Work-Item/task</strong></td>
+  </tr>
+  <tr>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Id</strong></td>
+    <td colspan="1"><strong>Title</strong></td>
+    <td colspan="1"><strong>Description</strong></td>
+    <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+    <td colspan="1"><strong>Assigned To</strong></td>
+    <td colspan="1"><strong>Status</strong></td>
+  </tr>
+  <tr>
+    <td rowspan="3">US-037</td>
+    <td rowspan="3">Manejo de asignaciones</td>
+    <td>T-001</td>
+    <td>Crear el botón de generación de asignaciones</td>
+    <td>Crear el botón de generación de asignaciones</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-002</td>
+    <td>Mostrar el panel de asignaciones pendientes</td>
+    <td>Mostrar el panel de asignaciones pendientes</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-003</td>
+    <td>Añadir la vista de detalles de asignación</td>
+    <td>Añadir la vista de detalles de asignación</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-038</td>
+    <td rowspan="2">Vinculación de asignación</td>
+    <td>T-004</td>
+    <td>Crear el formulario de ingreso de código de asignación</td>
+    <td>Crear el formulario de ingreso de código de asignación</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-005</td>
+    <td>Visualizar la información del mecánico desde la vista de dahsboard para o dueños</td>
+    <td>Visualizar la información del mecánico desde la vista de dahsboard para o dueños</td>
+    <td>3</td>
+    <td>Gabriel Alexander Casas Sanchez</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-039</td>
+    <td rowspan="2">Creación de perfil para motociclistas</td>
+    <td>T-006</td>
+    <td>Validar código en registro</td>
+    <td>Validar código en registro</td>
+    <td>5</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-007</td>
+    <td>Crear perfil con el rol de motociclista</td>
+    <td>Crear perfil con el rol de motociclista</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-040</td>
+    <td rowspan="2">Creación de perfil para mecánicos</td>
+    <td>T-008</td>
+    <td>Listar las membresías disponibles</td>
+    <td>Listar las membresías disponibles</td>
+    <td>5</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-009</td>
+    <td>Crear perfil con el rol de mecánico</td>
+    <td>Crear perfil con el rol de mecánico</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="3">US-041</td>
+    <td rowspan="3">Autenticación en la aplicación web</td>
+    <td>T-010</td>
+    <td>Validar credenciales del usuario</td>
+    <td>Validar credenciales del usuario</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-011</td>
+    <td>Reservar localmente el rol del usuario</td>
+    <td>Reservar localmente el rol del usuario</td>
+    <td>3</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-012</td>
+    <td>Dar acceso a las funciones relacionadas al rol del usuario en el sistema</td>
+    <td>Dar acceso a las funciones relacionadas al rol del usuario en el sistema</td>
+    <td>5</td>
+    <td>Sebastian Pacheco</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-042</td>
+    <td colspan="1">Sección de métricas por cada vehículo</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-043</td>
+    <td colspan="1">Sistema de notificaciones interno</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-044</td>
+    <td colspan="1">Alerta de Temperatura Alta</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-045</td>
+    <td colspan="1">Alerta de Temperatura Baja</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-046</td>
+    <td colspan="1">Alerta de Humedad Alta</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-047</td>
+    <td colspan="1">Alerta de CO2 Alto</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-048</td>
+    <td colspan="1">Alerta de NH3 Alto</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-049</td>
+    <td colspan="1">Alerta de Benceno Alto</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-050</td>
+    <td colspan="1">Alerta de Presión Baja</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-051</td>
+    <td colspan="1">Alerta de Presión Alta</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-056</td>
+    <td colspan="1">Alerta de Impacto Detectado</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-057</td>
+    <td rowspan="2">Gestion de Gastos</td>
+    <td>T-49</td>
+    <td>Implementar el almacenamiento local(store) para Gastos</td>
+    <td>Implementar el almacenamiento local(store) para Gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-52</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Gastos</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="4">US-058</td>
+    <td rowspan="4">Gestión de mantenimientos del dueño</td>
+    <td>T-047</td>
+    <td>Implementar la vista de creacion de gastos</td>
+    <td>Implementar la vista de creacion de gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-051</td>
+    <td>Abstraer las entidades del dominio (Mantenimiento , Gasto e Item de Gasto)</td>
+    <td>Abstraer las entidades del dominio (Mantenimiento , Gasto e Item de Gasto)</td>
+    <td>3</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-046</td>
+    <td>Implementar la vista de Gastos</td>
+    <td>Implementar la vista de Gastos</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-053</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Mantenimiento</td>
+    <td>Implementar las llamadas al API para las funcionalidades de Mantenimiento</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="4">US-059</td>
+    <td colspan="4">Gestión del progreso del mantenimiento</td>
+    <td>T-044</td>
+    <td>Implementar la vista de Mantenimiento para Owner</td>
+    <td>Implementar la vista de Mantenimiento para Owner</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-045</td>
+    <td>Implementar la vista de Mantenimiento para Mecánico</td>
+    <td>Implementar la vista de Mantenimiento para Mecánico</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-048</td>
+    <td>Implementar el almacenamiento local(store) para mantenimientos</td>
+    <td>Implementar el almacenamiento local(store) para mantenimientos</td>
+    <td>3</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-050</td>
+    <td>Implementar Vista de crear mantenimiento</td>
+    <td>Implementar Vista de crear mantenimiento</td>
+    <td>5</td>
+    <td>Juan Astonitas</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td colspan="1">US-060</td>
+    <td colspan="1">Comparación de vehículos por motociclista</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-061</td>
+    <td colspan="1">Comparación de modelos por mecánico</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-062</td>
+    <td colspan="1">Evaluación por escenarios de uso</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td colspan="1">US-063</td>
+    <td colspan="1">Visualización de especificaciones detalladas</td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td rowspan="4">US-064</td>
+    <td rowspan="4">Visualización de vehículos</td>
+    <td>T-054</td>
+    <td>Diseñar cards de Vehículo</td>
+    <td>Diseñar cards de Vehículo</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-055</td>
+    <td>Implementar iteración de cards de Vehículo en la pantalla de Vehículos</td>
+    <td>Implementar iteración de cards de Vehículo en la pantalla de Vehículos</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-056</td>
+    <td>Programar servicio de vehículos</td>
+    <td>Programar servicio de vehículos</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-057</td>
+    <td>Implementar llamada a vehículos del dueño</td>
+    <td>Implementar llamada a vehículos del dueño</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="5">US-065</td>
+    <td rowspan="5">Visualización de detalles de un vehículo</td>
+    <td>T-058</td>
+    <td>Implementar llamada a la API de vehículo por ID</td>
+    <td>Implementar llamada a la API de vehículo por ID</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-059</td>
+    <td>Crear pantallas de detalles de vehículos</td>
+    <td>Crear pantallas de detalles de vehículos</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-060</td>
+    <td>Crear botón de redirección a pantalla de detalles en la card de vehículo.</td>
+    <td>Crear botón de redirección a pantalla de detalles en la card de vehículo.</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-061</td>
+    <td>Implementar llamada de la API al servicio de la aplicación web</td>
+    <td>Implementar llamada de la API al servicio de la aplicación web</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-062</td>
+    <td>Implementar llamada a la API al servicio de la aplicación móvil</td>
+    <td>Implementar llamada a la API al servicio de la aplicación móvil</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="6">US-066</td>
+    <td rowspan="6">Registro de Vehículo</td>
+    <td>T-063</td>
+    <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
+    <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-064</td>
+    <td>Programar validaciones para el formulario de creación</td>
+    <td>Programar validaciones para el formulario de creación</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-065</td>
+    <td>Implementar servicio en el formulario</td>
+    <td>Implementar servicio en el formulario</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-066</td>
+    <td>Crear un formulario para la creación de un vehículo</td>
+    <td>Crear un formulario para la creación de un vehículo</td>
+    <td>3</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-067</td>
+    <td>Implementar llamada de API en el servicio de la aplicación web</td>
+    <td>Implementar llamada de API en el servicio de la aplicación web</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-068</td>
+    <td>Implementar llamada de API en el servicio de la aplicación móvil</td>
+    <td>Implementar llamada de API en el servicio de la aplicación móvil</td>
+    <td>5</td>
+    <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+</table>
+
+##### 6.2.2.4. Development Evidence for Sprint Review.
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Landing Page, las Web Applications y los Web Services. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**
+
+| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
+|------------------------|---------|-----------|----------------|---------------------|------|
+| BykerZ-Web-Application | develop |           |                |                     |      |
+
+**Backend**
+
+| Repository     | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
+|----------------|---------|-----------|----------------|---------------------|------|
+| BykerZ-Backend | develop |           |                |                     |      |
+
+**Mobile Application**
+
+| Repository                | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
+|---------------------------|---------|-----------|----------------|---------------------|------|
+| BykerZ-Mobile-Application | develop |           |                |                     |      |
+
+**Edge Services**
+
+| Repository         | Branch  | Commit Id | Commit Message                                                                                           | Commit Message Body                                                                                      | Date       |
+|--------------------|---------|-----------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|------------|
+| BykerZ-Edge-Device | develop | 96fc25ec  | chore: create project.                                                                                   | chore: create project.                                                                                   | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 7245990d  | chore: add wellness layers.                                                                              | chore: add wellness layers.                                                                              | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 00c66929  | chore: add iam.                                                                                          | chore: add iam.                                                                                          | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 0d7260a0  | feat(wellness): add VehicleMetricRecord entity                                                           | feat(wellness): add VehicleMetricRecord entity                                                           | 14/11/2025 |
+| BykerZ-Edge-Device | develop | f71d625d  | feat(wellness): implement VehicleMetricRecord service for creating vehicle metrics                       | feat(wellness): implement VehicleMetricRecord service for creating vehicle metrics                       | 14/11/2025 |
+| BykerZ-Edge-Device | develop | dc888518  | feat(wellness): add VehicleMetricRecord model for vehicle metrics storage                                | feat(wellness): add VehicleMetricRecord model for vehicle metrics storage                                | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 306d87dd  | feat(wellness): add VehicleMetricRepository for saving vehicle metrics                                   | feat(wellness): add VehicleMetricRepository for saving vehicle metrics                                   | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 6ac50725  | feat(wellness): implement VehicleMetricRecordApplicationService for creating vehicle metric records      | feat(wellness): implement VehicleMetricRecordApplicationService for creating vehicle metric records      | 14/11/2025 |
+| BykerZ-Edge-Device | develop | aa337873  | feat(wellness): add endpoint for creating vehicle metric records                                         | feat(wellness): add endpoint for creating vehicle metric records                                         | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 5a943ee8  | feat(app): initialize Flask app and set up database on first request                                     | feat(app): initialize Flask app and set up database on first request                                     | 14/11/2025 |
+| BykerZ-Edge-Device | develop | c35a3de3  | fix: fixed missed record and function                                                                    | fix: fixed missed record and function                                                                    | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 0a4615f2  | refactor: refactor API-Key attribute for jwt.                                                            | refactor: refactor API-Key attribute for jwt.                                                            | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 2c6e61b1  | feat(wellness): add device retrieval and authentication methods                                          | feat(wellness): add device retrieval and authentication methods                                          | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 53d65868  | refactor: simplify create_vehicle_metric_record method by removing api_key parameter validation          | refactor: simplify create_vehicle_metric_record method by removing api_key parameter validation          | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 391edda3  | feat(requirements): add requests library to requirements                                                 | feat(requirements): add requests library to requirements                                                 | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 62380e76  | feat(wellness): update create_vehicle_metric_record to use Bearer token and forward data to external API | feat(wellness): update create_vehicle_metric_record to use Bearer token and forward data to external API | 14/11/2025 |
+| BykerZ-Edge-Device | develop | d745c034  | feat(tests): add IoT metrics simulator for sending mock data to Edge API                                 | feat(tests): add IoT metrics simulator for sending mock data to Edge API                                 | 14/11/2025 |
+| BykerZ-Edge-Device | develop | 9e38c38d  | feat(app): update Flask app to run on all interfaces.                                                    | feat(app): update Flask app to run on all interfaces.                                                    | 14/11/2025 |
+
+**Embedded Application**
+
+| Repository          | Branch  | Commit Id | Commit Message                                         | Commit Message Body                                    | Date       |
+|---------------------|---------|-----------|--------------------------------------------------------|--------------------------------------------------------|------------|
+| BykerZ-Embedded-App | develop | 0b4edc1   | feat(embedded): add embedded application initial code. | feat(embedded): add embedded application initial code. | 14/11/2025 |
+
+##### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+##### 6.2.2.6. Execution Evidence for Sprint Review.
+
+En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
+
+Video: []()
+
+**Backend**
+
+**Web Application**
+
+**Mobile Application**
+
+##### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
+
+Backend repository: [https://github.com/NRG-6-IOT/BykerZ-Backend](https://github.com/NRG-6-IOT/BykerZ-Backend)
+
+| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
+|----------|------------|-------------|------------|--------------|---------------|-------------|
+|          |            |             |            |              |               |             |
+
+##### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+**Mobile Application**
+
+**Backend**
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#/](https://bykerz-backend.onrender.com/swagger-ui/index.html#/)
+
+##### 6.2.2.9. Team Collaboration Insights during Sprint.
+
+En esta sección se presentan los insights de colaboración del equipo durante el Sprint, destacando cómo se desarrollaron las actividades de implementación y el nivel de participación de cada integrante en los diferentes productos: Landing Page, Backend y Web Application. Se incluyen capturas de los analíticos de colaboración y registros de commits en GitHub, acompañadas de una interpretación conjunta elaborada por el equipo. Este análisis permite evidenciar el grado de involucramiento, coordinación y contribución de los miembros en las tareas de desarrollo, reflejando el trabajo colaborativo y la dinámica del equipo a lo largo del Sprint.
+
+**Landing Page**
+
+Distribución de commits:
+
+* Alejo Cardenas Jose Antonio: commits
+* Astonitas Díaz Juan Diego: commits
+* Casas Sanchez Gabriel Alexander: commits
+* Pacheco Astiguetta Sebastian: commits
+* Pasquale Barrenechea Gianluca Santino: commits
+* Real Calderon Sebatian Omar: commits
+
+**Backend**
+
+Distribución de commits:
+
+* Alejo Cardenas Jose Antonio: commits
+* Astonitas Díaz Juan Diego: commits
+* Casas Sanchez Gabriel Alexander: commits
+* Pacheco Astiguetta Sebastian: commits
+* Pasquale Barrenechea Gianluca Santino: commits
+* Real Calderon Sebatian Omar: commits
+
+**Web Application**
+
+Distribución de commits:
+
+* Alejo Cardenas Jose Antonio: commits
+* Astonitas Díaz Juan Diego: commits
+* Casas Sanchez Gabriel Alexander: commits
+* Pacheco Astiguetta Sebastian: commits
+* Pasquale Barrenechea Gianluca Santino: commits
+* Real Calderon Sebatian Omar: commits
+
+**Mobile Application**
+
+Distribución de commits:
+
+* Alejo Cardenas Jose Antonio: commits
+* Astonitas Díaz Juan Diego: commits
+* Casas Sanchez Gabriel Alexander: commits
+* Pacheco Astiguetta Sebastian: commits
+* Pasquale Barrenechea Gianluca Santino: commits
+* Real Calderon Sebatian Omar: commits
+
 ### 6.3. Validation Interviews.
+
+En esta sección se documenta el proceso de validación realizado mediante entrevistas con usuarios pertenecientes a los segmentos objetivo. El propósito de estas actividades fue obtener retroalimentación directa sobre la usabilidad, funcionalidad y percepción general de la Landing Page, la Web Application y la Mobile Application, con el fin de identificar oportunidades de mejora y fortalecer la experiencia de usuario antes de las siguientes iteraciones del proyecto.
 
 #### 6.3.1. Diseño de Entrevistas.
 
+En esta sección se registran las preguntas orientadas a evaluar la usabilidad y experiencia de usuario de los productos digitales desarrollados, incluyendo la Landing Page, la Web Application y la Mobile Application. Las preguntas están diseñadas para obtener insights sobre la facilidad de navegación, comprensión de funcionalidades, satisfacción general y posibles áreas de mejora, permitiendo así una evaluación integral desde la perspectiva del usuario final.
+
+**Preguntas Generales:**
+
+* ¿Qué tan fácil le resultó entender el propósito general de la aplicación al ingresar por primera vez?
+* ¿Cómo calificaría la claridad de la información mostrada en el dashboard?
+* ¿Le resultó intuitiva la navegación entre las diferentes secciones de la aplicación?
+* ¿Encontró algún momento en el que no supiera qué acción debía realizar?
+* ¿Considera que los tiempos de respuesta y carga son adecuados para una experiencia fluida?
+* ¿Qué aspecto visual o funcional le resultó más atractivo o útil dentro de la aplicación?
+
+**Preguntas de Mecánicos:**
+
+* ¿Fue claro el proceso para visualizar y gestionar sus asignaciones activas y pendientes?
+* ¿Considera fácil identificar la información relevante de cada asignación (dueño, vehículo, estado, fecha)?
+* ¿Qué tan útil le resultó poder ver los detalles de un mantenimiento programado o pasado?
+* ¿Le pareció sencillo programar un nuevo mantenimiento desde la interfaz?
+* ¿La sección de Comparativas entre motos le ayudó a analizar las características de los vehículos de forma efectiva?
+* ¿Encontró algún elemento confuso o que requiriera mayor explicación dentro de las pantallas de mantenimiento o asignaciones?
+* Si pudiera mejorar una funcionalidad de su vista como mecánico, ¿cuál sería y por qué?
+
+**Preguntas para Dueños:**
+
+* ¿Qué tan claro le resultó el proceso para registrar un nuevo vehículo en la aplicación?
+* ¿La información mostrada en los detalles del vehículo es suficiente para sus necesidades?
+* ¿Pudo comprender fácilmente el estado de sus mantenimientos (pendientes o pasados)?
+* ¿Le pareció sencillo registrar o eliminar un gasto relacionado con su vehículo?
+* ¿Qué tan útil le resultó la funcionalidad de Comparativas para evaluar sus motos frente a otras?
+* ¿El dashboard le proporcionó una visión clara del estado general de sus vehículos y gastos?
+* ¿Qué mejoras sugeriría para facilitar la gestión de sus vehículos o mantenimientos dentro de la aplicación?
+
+
 #### 6.3.2. Registro de Entrevistas.
 
+Aquí se presenta el registro sistemático de las entrevistas realizadas, incluyendo la información de los participantes, los enlaces a los videos de las sesiones y un resumen descriptivo de las percepciones, comentarios y dificultades expresadas por los usuarios durante el proceso de validación. Este registro permite documentar evidencias concretas que sustentan el análisis de la experiencia de usuario.
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Entrevista 1</strong></td>
+      <td>
+        <img src="images/chapter-6/interview1.png" alt="interview 1" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Enlace a la entrevista</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Nombre Entrevistado</strong></td>
+      <td>Flavio Gallardo</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>San Miguel</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Mecánico independiente</td>
+    </tr>
+    <tr>
+      <td><strong>Duración Entrevista</strong></td>
+      <td> 03:22 </td>
+    </tr>
+    <tr>
+      <td><strong>Minuto de Inicio</strong></td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td><strong>Análisis</strong></td>
+      <td>
+        El entrevistado percibe la aplicación como profesional y de propósito claro desde el inicio, destacando la organización del panel de mecánico con las secciones de asignaciones y mantenimientos. Califica con 8/10 la claridad del panel principal, aunque sugiere incluir un contador de mantenimientos pendientes para mejor planificación. La navegación le resulta intuitiva y los tiempos de carga adecuados para su trabajo. Identifica como funcionalidad más útil la sección de comparativas entre motos, que facilita las explicaciones a clientes. Señala oportunidades de mejora como: añadir texto explicativo para el código de asignación, permitir eliminar asignaciones desde la vista principal, mostrar fecha de creación en las asignaciones, incorporar fotos del trabajo realizado, programar mantenimientos recurrentes, mejorar el título del diálogo de creación de gastos, e implementar notificaciones push, calendario mensual y carga de fotos del antes/después. En general, valora positivamente la aplicación por su utilidad en la organización del trabajo diario.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-6/interview2.png" alt="interview 2" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Daniela Kin</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Borja</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Recepcionista de Taller Mecánico</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>02:27</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        La entrevistada encontró la aplicación intuitiva desde el inicio, destacando positivamente la pantalla de selección de roles y la sencillez del registro, aunque menciona que hubiera preferido ver información sobre planes de pago anticipadamente. Considera que el panel principal necesita más información, sugiriendo la inclusión de resúmenes de ingresos, mantenimientos completados y gráficos de desempeño. La navegación le resultó generalmente intuitiva, pero tuvo dificultad inicial para encontrar dónde crear asignaciones. Señala como punto de confusión la falta de explicación sobre el uso del código de asignación generado. Valora especialmente la sección de detalles de mantenimiento con gastos asociados y los colores profesionales de la interfaz. Entre sus principales sugerencias de mejora se encuentran: implementar filtros por nombre de cliente, mostrar cantidad de motos vinculadas por cliente, exportar historial en PDF, crear plantillas de servicios comunes, añadir gráficos visuales en comparativas, incluir guías durante la creación de mantenimientos, y agregar reportes financieros, recordatorios automáticos y chat interno con clientes. Los tiempos de respuesta de la aplicación fueron calificados como adecuados para la atención inmediata a clientes.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 #### 6.3.3. Evaluaciones según heurísticas.
+
+En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
+
+**Aplicación para evaluar:** BykerZ
+
+**Tareas que evaluar:**
+
+- Navegación inicial y comprensión del propósito de la aplicación
+- Claridad y completitud del panel principal para mecánicos
+- Gestión de asignaciones activas y pendientes
+- Programación y seguimiento de mantenimientos
+- Uso de la sección de comparativas entre motos
+- Procesos de creación y gestión de gastos asociados a servicios
+- Búsqueda y filtrado de información de clientes y asignaciones
+
+**Escala de severidad**
+
+| Valor | Descripción |
+|-------|-------------|
+| 1     | Cosmético   |
+| 2     | Leve        |
+| 3     | Moderado    |
+| 4     | Grave       |
+| 5     | Crítico     |
+
+**Tabla de resumen**
+
+| #Orden | Problema | Escala de Severidad | Heurística / Principio violado(a) |
+|--------|----------|---------------------|-----------------------------------|
+| 1 | Falta de información contextual sobre códigos de asignación y su propósito | 3 | Visibilidad del estado del sistema / Ayuda y documentación |
+| 2 | Panel principal incompleto sin resúmenes clave para la toma de decisiones | 3 | Flexibilidad y eficiencia de uso / Diseño estético y minimalista |
+| 3 | Flujos de acción críticos sin confirmaciones claras o títulos descriptivos | 2 | Prevención de errores / Consistencia y estándares |
+
+**Problema #1: Falta de información contextual sobre códigos de asignación y su propósito**
+
+**Heurística violada:** Visibilidad del estado del sistema y Ayuda y documentación
+
+**Descripción del problema:**  
+Ambos entrevistados reportaron confusión con los códigos de asignación. Flavio mencionó: "Al ver el código de asignación no entendí para qué servía. Luego comprendí que es para que el dueño me vincule. Un texto explicativo o ícono de ayuda sería útil". Daniela también señaló: "Al generar un código de asignación no supe qué hacer con él. Hubiera sido útil un mensaje explicativo". Esta falta de contexto obliga a los usuarios a descubrir por sí mismos el propósito de elementos clave, generando incertidumbre en procesos importantes.
+
+**Recomendación:**  
+Implementar tooltips informativos y etiquetas descriptivas junto a los códigos de asignación que expliquen claramente su función: "Comparte este código con el cliente para que te asigne su moto". Incluir un ícono de información (i) que al hacer hover muestre instrucciones completas sobre el proceso de vinculación. Adicionalmente, añadir un breve tutorial inicial que explique el flujo completo de asignación de clientes.
+
+**Problema #2: Panel principal incompleto sin resúmenes clave para la toma de decisiones**
+
+**Heurística violada:** Flexibilidad y eficiencia de uso y Diseño estético y minimalista
+
+**Descripción del problema:**  
+Ambos usuarios identificaron carencias en el panel principal. Flavio comentó: "Me gustaría ver un resumen rápido del número de mantenimientos pendientes para hoy o la semana, como un contador". Daniela fue más específica: "Falta información. Quisiera ver un resumen de ingresos, mantenimientos completados y gráficos de desempeño". La ausencia de métricas clave obliga a los usuarios a navegar por diferentes secciones para obtener información que debería estar disponible de inmediato.
+
+**Recomendación:**  
+Rediseñar el panel principal para incluir widgets con métricas esenciales: contador de mantenimientos pendientes para hoy/semana, resumen de ingresos mensuales, gráfico de mantenimientos completados vs pendientes, e indicadores de desempeño. Implementar un sistema de tarjetas modulares que permita a los usuarios personalizar qué información ver en su dashboard principal según sus necesidades específicas.
+
+**Problema #3: Flujos de acción críticos sin confirmaciones claras o títulos descriptivos**
+
+**Heurística violada:** Prevención de errores y Consistencia y estándares
+
+**Descripción del problema:**  
+Flavio reportó confusión en procesos importantes: "Al completar un mantenimiento apareció un diálogo para crear un gasto. No entendí al inicio. Un título más claro como 'Registrar costos del servicio' sería mejor". Daniela también experimentó confusión en flujos: "Al crear mantenimiento no entendí por qué debía elegir primero al dueño. Un texto o guía ayudaría". La falta de claridad en transiciones críticas puede llevar a errores en el registro de información importante.
+
+**Recomendación:**  
+Establecer títulos descriptivos en todos los diálogos y modales de acción crítica. Implementar mensajes de guía contextual que expliquen el propósito de cada paso en flujos complejos. Incluir indicadores de progreso en procesos multi-paso y añadir confirmaciones visuales claras después de completar acciones importantes. Para flujos recurrentes como creación de mantenimientos, desarrollar plantillas predefinidas que simplifiquen el proceso.
+
 
 ### 6.4. Video About-the-Product.
 
