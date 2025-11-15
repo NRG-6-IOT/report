@@ -5763,44 +5763,70 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-060</td>
-    <td colspan="1">Comparación de vehículos por motociclista</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-060</td>
+    <td rowspan="2">Comparación de vehículos por motociclista</td>
+    <td>T-013</td>
+    <td>Crear el componente de página de comparación para motociclistas</td>
+    <td>Crear el componente de página de comparación para motociclistas</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-061</td>
-    <td colspan="1">Comparación de modelos por mecánico</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-015</td>
+    <td>Implementar el componente de tarjeta de vehículo con selector</td>
+    <td>Implementar el componente de tarjeta de vehículo con selector</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2">US-061</td>
+    <td rowspan="2">Comparación de modelos por mecánico</td>
+    <td>T-014</td>
+    <td>Crear el componente de página de comparación para mecánicos</td>
+    <td>Crear el componente de página de comparación para mecánicos</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-062</td>
-    <td colspan="1">Evaluación por escenarios de uso</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-016</td>
+    <td>Desarrollar el componente de comparación de especificaciones técnicas</td>
+    <td>Desarrollar el componente de comparación de especificaciones técnicas</td>
+    <td>5</td>
+    <td>SGianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-063</td>
-    <td colspan="1">Visualización de especificaciones detalladas</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-062</td>
+    <td rowspan="2">Evaluación por escenarios de uso</td>
+    <td>T-017</td>
+    <td>Desarrollar el componente de comparación de escenarios de uso</td>
+    <td>Desarrollar el componente de comparación de escenarios de uso</td>
+    <td>3</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-018</td>
+    <td>Implementar el componente de calificación por estrellas</td>
+    <td>Implementar el componente de calificación por estrellas</td>
+    <td>3</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
+  
+  <tr>
+    <td rowspan="1">US-063</td>
+    <td rowspan="1">Visualización de especificaciones detalladas</td>
+    <td>T-020</td>
+    <td>Desarrollar la lógica de detección de ganador en especificaciones</td>
+    <td>Desarrollar la lógica de detección de ganador en especificaciones</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
     <td rowspan="4">US-064</td>
@@ -5926,6 +5952,17 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Implementar llamada de API en el servicio de la aplicación móvil</td>
     <td>5</td>
     <td>Sebastian Real</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td rowspan="1">US-067</td>
+    <td rowspan="1">Exportación de reporte técnico del vehículo</td>
+    <td>T-019</td>
+    <td>Implementar el componente de exportar como CSV los reportes de un vehículo</td>
+    <td>Implementar el componente de exportar como CSV los reportes de un vehículo</td>
+    <td>3</td>
+    <td>Gianluca Pasquale</td>
     <td>Done</td>
   </tr>
 </table>
