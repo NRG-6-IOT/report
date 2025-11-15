@@ -6029,6 +6029,24 @@ En esta sección se documentan los resultados obtenidos durante el Sprint, mostr
 
 Video: []()
 
+**Landing Page**
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-1.png" alt="Landing Page execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-2.png" alt="Landing Page execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-3.png" alt="Landing Page execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-4.png" alt="Landing Page execution evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-5.png" alt="Landing Page execution evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-6.png" alt="Landing Page execution evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-7.png" alt="Landing Page execution evidence 7"/>
+
+Enlace: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
 **Backend**
 
 <img src="images/chapter-6/sprint-2/backend-execution-evidence-1.png" alt="Backend execution evidence 1"/>
@@ -6062,6 +6080,16 @@ Enlace:[https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-
 <img src="images/chapter-6/sprint-2/mobile-execution-evidence-4.png" alt="Mobile Application execution evidence 4"/>
 
 <img src="images/chapter-6/sprint-2/mobile-execution-evidence-5.png" alt="Mobile Application execution evidence 5"/>
+
+**Edge Services**
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-1.png" alt="Edge Services execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-2.png" alt="Edge Services execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-3.png" alt="Edge Services execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-4.png" alt="Edge Services execution evidence 4"/>
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
