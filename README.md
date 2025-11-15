@@ -5604,14 +5604,6 @@ En esta sección se documenta el proceso de validación realizado mediante entre
 
 En esta sección se registran las preguntas orientadas a evaluar la usabilidad y experiencia de usuario de los productos digitales desarrollados, incluyendo la Landing Page, la Web Application y la Mobile Application. Las preguntas están diseñadas para obtener insights sobre la facilidad de navegación, comprensión de funcionalidades, satisfacción general y posibles áreas de mejora, permitiendo así una evaluación integral desde la perspectiva del usuario final.
 
-#### 6.3.2. Registro de Entrevistas.
-
-Aquí se presenta el registro sistemático de las entrevistas realizadas, incluyendo la información de los participantes, los enlaces a los videos de las sesiones y un resumen descriptivo de las percepciones, comentarios y dificultades expresadas por los usuarios durante el proceso de validación. Este registro permite documentar evidencias concretas que sustentan el análisis de la experiencia de usuario.
-
-#### 6.3.3. Evaluaciones según heurísticas.
-
-En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
-
 **Preguntas Generales:**
 
 * ¿Qué tan fácil le resultó entender el propósito general de la aplicación al ingresar por primera vez?
@@ -5640,6 +5632,108 @@ En esta subsección se expone el análisis de las entrevistas basado en la aplic
 * ¿Qué tan útil le resultó la funcionalidad de Comparativas para evaluar sus motos frente a otras?
 * ¿El dashboard le proporcionó una visión clara del estado general de sus vehículos y gastos?
 * ¿Qué mejoras sugeriría para facilitar la gestión de sus vehículos o mantenimientos dentro de la aplicación?
+
+
+#### 6.3.2. Registro de Entrevistas.
+
+Aquí se presenta el registro sistemático de las entrevistas realizadas, incluyendo la información de los participantes, los enlaces a los videos de las sesiones y un resumen descriptivo de las percepciones, comentarios y dificultades expresadas por los usuarios durante el proceso de validación. Este registro permite documentar evidencias concretas que sustentan el análisis de la experiencia de usuario.
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Entrevista 1</strong></td>
+      <td>
+        <img src="images/chapter-6/interview1.png" alt="interview 1" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Enlace a la entrevista</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Nombre Entrevistado</strong></td>
+      <td>Flavio Gallardo</td>
+    </tr>
+    <tr>
+      <td><strong>Edad</strong></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><strong>Distrito</strong></td>
+      <td>San Miguel</td>
+    </tr>
+    <tr>
+      <td><strong>Ocupación</strong></td>
+      <td>Mecánico independiente</td>
+    </tr>
+    <tr>
+      <td><strong>Duración Entrevista</strong></td>
+      <td> 03:22 </td>
+    </tr>
+    <tr>
+      <td><strong>Minuto de Inicio</strong></td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td><strong>Análisis</strong></td>
+      <td>
+        El entrevistado percibe la aplicación como profesional y de propósito claro desde el inicio, destacando la organización del panel de mecánico con las secciones de asignaciones y mantenimientos. Califica con 8/10 la claridad del panel principal, aunque sugiere incluir un contador de mantenimientos pendientes para mejor planificación. La navegación le resulta intuitiva y los tiempos de carga adecuados para su trabajo. Identifica como funcionalidad más útil la sección de comparativas entre motos, que facilita las explicaciones a clientes. Señala oportunidades de mejora como: añadir texto explicativo para el código de asignación, permitir eliminar asignaciones desde la vista principal, mostrar fecha de creación en las asignaciones, incorporar fotos del trabajo realizado, programar mantenimientos recurrentes, mejorar el título del diálogo de creación de gastos, e implementar notificaciones push, calendario mensual y carga de fotos del antes/después. En general, valora positivamente la aplicación por su utilidad en la organización del trabajo diario.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-6/interview2.png" alt="interview 2" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Daniela Kin</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>San Borja</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Recepcionista de Taller Mecánico</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>02:27</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        La entrevistada encontró la aplicación intuitiva desde el inicio, destacando positivamente la pantalla de selección de roles y la sencillez del registro, aunque menciona que hubiera preferido ver información sobre planes de pago anticipadamente. Considera que el panel principal necesita más información, sugiriendo la inclusión de resúmenes de ingresos, mantenimientos completados y gráficos de desempeño. La navegación le resultó generalmente intuitiva, pero tuvo dificultad inicial para encontrar dónde crear asignaciones. Señala como punto de confusión la falta de explicación sobre el uso del código de asignación generado. Valora especialmente la sección de detalles de mantenimiento con gastos asociados y los colores profesionales de la interfaz. Entre sus principales sugerencias de mejora se encuentran: implementar filtros por nombre de cliente, mostrar cantidad de motos vinculadas por cliente, exportar historial en PDF, crear plantillas de servicios comunes, añadir gráficos visuales en comparativas, incluir guías durante la creación de mantenimientos, y agregar reportes financieros, recordatorios automáticos y chat interno con clientes. Los tiempos de respuesta de la aplicación fueron calificados como adecuados para la atención inmediata a clientes.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### 6.3.3. Evaluaciones según heurísticas.
+
+En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
+
+
 
 ### 6.4. Video About-the-Product.
 
