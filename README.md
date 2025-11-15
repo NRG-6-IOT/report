@@ -3514,462 +3514,314 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.6.1 Domain Layer
 
-<h3>Aggregates</h3>
-<h4><code>User</code></h4>
-<p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales y rol.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>id</td><td>int</td><td>Identificador único del usuario.</td></tr>
-    <tr><td>username</td><td>varchar</td><td>Nombre de usuario único (para login).</td></tr>
-    <tr><td>email</td><td>varchar</td><td>Correo electrónico verificado o por verificar.</td></tr>
-    <tr><td>password</td><td>varchar</td><td>Contraseña del usuario (almacenada con hash).</td></tr>
-    <tr><td>displayName</td><td>varchar</td><td>Nombre visible en la plataforma.</td></tr>
-    <tr><td>role</td><td>varchar</td><td>Rol asignado al usuario (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Fecha de creación del usuario.</td></tr>
-    <tr><td>updatedAt</td><td>Timestamp</td><td>Última fecha de actualización del usuario.</td></tr>
-    <tr><td>status</td><td>UserStatus (Enum)</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
-  </tbody>
-</table>
+**Aggregates**
 
-<h3>Value Objects</h3>
-<h4><code>Role</code></h4>
-<p><strong>Descripción:</strong> Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>name</td><td>String</td><td>Nombre del rol (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
-    <tr><td>permissions</td><td>Set&lt;String&gt;</td><td>Lista de permisos asociados al rol.</td></tr>
-  </tbody>
-</table>
+`User`
 
-<h4><code>UserStatus</code> (Enum)</h4>
-<ul>
-  <li>ACTIVE</li>
-  <li>SUSPENDED</li>
-  <li>DELETED</li>
-</ul>
+**Descripción:** Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales y rol.</p>
 
-<h3>Commands</h3>
-<ul>
-  <li><code>SignUpCommand</code> (Record)</li>
-  <li><code>SignInCommand</code> (Record)</li>
-  <li><code>UpdateUserInfoCommand</code> (Record)</li>
-  <li><code>SeedRolesCommand</code> (Record)</li>
-</ul>
+| Atributo  | Tipo      | Descripción                             |
+|-----------|-----------|-----------------------------------------|
+| id        | Long      | Identificador único del rol.            |
+| username  | String    | Nombre de usuario único.                |
+| password  | String    | Contraseña del usuario (hashed).        |
+| userRoles | Set<Role> | Conjunto de roles asignados al usuario. |
 
-<h3>Queries</h3>
-<ul>
-  <li><code>GetAllRolesQuery</code> (Record)</li>
-  <li><code>GetAllUsersQuery</code> (Record)</li>
-  <li><code>GetRoleByNameQuery</code> (Record)</li>
-  <li><code>GetUserByIdQuery</code> (Record)</li>
-  <li><code>GetUserByUsernameQuery</code> (Record)</li>
-</ul>
+**Entities**
 
-<h3>Services</h3>
-<h4><code>UserCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(SignUpCommand)</li>
-  <li>+ handle(SignInCommand)</li>
-  <li>+ handle(UpdateUserInfoCommand)</li>
-</ul>
-<h4><code>UserQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetAllUsersQuery)</li>
-  <li>+ handle(GetUserByIdQuery)</li>
-  <li>+ handle(GetUserByUsernameQuery)</li>
-</ul>
-<h4><code>RoleCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(SeedRolesCommand)</li>
-</ul>
-<h4><code>RoleQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetAllRolesQuery)</li>
-  <li>+ handle(GetRoleByNameQuery)</li>
-</ul>
+`Role`
+
+**Descripción:** Entidad que representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
+
+| Atributo | Tipo  | Descripción                      |
+|----------|-------|----------------------------------|
+| id       | Long  | Identificador único del rol.     |
+| name     | Roles | Nombre del rol (ej. ROLE_ADMIN). |
+
+**Value Objects**
+
+`Roles` (Enum)
+
+**Descripción:** Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
+
+- ROLE_ADMIN
+- ROLE_MECHANIC
+- ROLE_OWNER
+
+**Commands**
+
+- `CreateUserCommand` (Record)
+- `DeleteUserCommand` (Record)
+- `SeedRolesCommand` (Record)
+- `SignInCommand` (Record)
+- `SignUpCommand` (Record)
+- `UpdateUserCommand` (Record)
+
+**Queries**
+
+- `GetAllRolesQuery` (Record)
+- `GetAllUsersQuery` (Record)
+- `GetUserByIdQuery` (Record)
+- `GetUserByUsernameQuery` (Record)
+
+**Services**
+
+`RoleCommandService`
+
+- handle(SeedRolesCommand)
+
+`RoleQueryService`
+
+- handle(GetAllRolesQuery)
+
+`UserCommandService`
+
+- handle(DeleteUserCommand)
+- handle(UpdateUserCommand)
+- handle(SignInCommand)
+- handle(SignUpCommand)
+
+`UserQueryService`
+
+- handle(GetAllUsersQuery)
+- handle(GetUserByIdQuery)
+- handle(GetUserByUsernameQuery)
 
 ##### 4.2.6.2 Interface Layer
 
-<h3>Controlador: <code>AuthenticationController</code></h3>
-<table>
-  <tr><th>Título</th><td>AuthenticationController</td></tr>
-  <tr><th>Descripción</th><td>Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma BykerZ.</td></tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>signIn(SignInResource credentials)</td>
-      <td>POST /api/iam/auth/signin</td>
-      <td>Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica.</td>
-    </tr>
-    <tr>
-      <td>signUp(SignUpResource data)</td>
-      <td>POST /api/iam/auth/signup</td>
-      <td>Registra un nuevo usuario en la plataforma con credenciales y rol inicial.</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>UserCommandService</td>
-      <td>Servicio encargado de manejar los comandos relacionados con usuarios.</td>
-    </tr>
-    <tr>
-      <td>AuthenticationResourceAssembler</td>
-      <td>Convierte entidades de autenticación en recursos REST para las respuestas.</td>
-    </tr>
-  </tbody>
-</table>
+**Controlador:** `AuthenticationController`
 
-<h3>Controlador: <code>RolesController</code></h3>
-<table>
-  <tr><th>Título</th><td>RolesController</td></tr>
-  <tr><th>Descripción</th><td>Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema.</td></tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getAllRoles()</td>
-      <td>GET /api/iam/roles</td>
-      <td>Lista todos los roles disponibles en el sistema.</td>
-    </tr>
-    <tr>
-      <td>getRoleByName(String name)</td>
-      <td>GET /api/iam/roles/{name}</td>
-      <td>Obtiene un rol específico por su nombre.</td>
-    </tr>
-    <tr>
-      <td>seedRoles()</td>
-      <td>POST /api/iam/roles/seed</td>
-      <td>Inicializa los roles base del sistema (ej. Owner, Mechanic, Admin).</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>RoleQueryService</td>
-      <td>Servicio para consultas relacionadas con roles.</td>
-    </tr>
-    <tr>
-      <td>RoleCommandService</td>
-      <td>Servicio para comandos relacionados con la inicialización de roles.</td>
-    </tr>
-    <tr>
-      <td>RoleResourceAssembler</td>
-      <td>Convierte objetos <code>Role</code> en <code>RoleResource</code>.</td>
-    </tr>
-  </tbody>
-</table>
+| Titulo                   | Descripción                                                                                                            |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------|
+| AuthenticationController | Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma BykerZ. |
 
-<h3>Controlador: <code>UsersController</code></h3>
-<table>
-  <tr><th>Título</th><td>UsersController</td></tr>
-  <tr><th>Descripción</th><td>Controlador REST encargado de operaciones CRUD y consultas sobre usuarios en BykerZ.</td></tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getAllUsers()</td>
-      <td>GET /api/iam/users</td>
-      <td>GET /api/iam/users</td>
-      <td>Lista todos los usuarios registrados en la plataforma.</td>
-    </tr>
-    <tr>
-      <td>getUserById(Long id)</td>
-      <td>GET /api/iam/users/{id}</td>
-      <td>Obtiene los detalles de un usuario por su identificador único.</td>
-    </tr>
-    <tr>
-      <td>updateUserInfo(Long id, UserResource user)</td>
-      <td>PUT /api/iam/users/{id}</td>
-      <td>Actualiza información de un usuario (displayName, email, role, status).</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>UserQueryService</td>
-      <td>Servicio encargado de consultas de usuarios.</td>
-    </tr>
-    <tr>
-      <td>UserCommandService</td>
-      <td>Servicio encargado de manejar los comandos relacionados con la gestión de usuarios.</td>
-    </tr>
-    <tr>
-      <td>UserResourceAssembler</td>
-      <td>Convierte entidades <code>User</code> en <code>UserResource</code>.</td>
-    </tr>
-  </tbody>
-</table>
+| Método                 | Ruta                                | Descripción                                                                                   |
+|------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------|
+| signIn(SignInResource) | POST /api/v1/authentication/sign-in | Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica. |
+| signUp(SignUpResource) | POST /api/v1/authentication/sign-up | Registra un nuevo usuario en la plataforma con credenciales y rol inicial.                    |
+
+**Controlador:** `RolesController`
+
+| Título          | Descripción                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------|
+| RolesController | Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema. |
+
+| Método                     | Ruta              | Descripción                                               |
+|----------------------------|-------------------|-----------------------------------------------------------|
+| getAllRoles()              | GET /api/v1/roles | Lista todos los roles disponibles en el sistema.          |
+
+**Controlador:** `UsersController`
+
+| Título          | Descripción                                                                          |
+|-----------------|--------------------------------------------------------------------------------------|
+| UsersController | Controlador REST encargado de operaciones CRUD y consultas sobre usuarios en BykerZ. |
+
+| Método                         | Ruta                                  | Descripción                                                  |
+|--------------------------------|---------------------------------------|--------------------------------------------------------------|
+| updateUser(UpdateUserResource) | PUT /api/v1/users                     | Actualiza la información de un usuario existente.            |
+| deleteUser(Long)               | DELETE /api/v1/users/{userId}         | Elimina un usuario del sistema.                              |
+| getUserById(Long)              | GET /api/v1/users/{userId}            | Obtiene los detalles de un usuario por su ID.                |
+| getAllUsers()                  | GET /api/v1/users                     | Lista todos los usuarios registrados en el sistema.          |
+| getUserByUsername(String)      | GET /api/v1/users/username/{username} | Obtiene los detalles de un usuario por su nombre de usuario. |
+
+**Fachada:** `IamContextFacade`
+
+| Título             | Descripción                                                        |
+|--------------------|--------------------------------------------------------------------|
+| IamContextFacade   | Fachada que expone operaciones simplificadas del contexto IAM.     |
+
+| Método                      | Descripción                                   |
+|-----------------------------|-----------------------------------------------|
+| fetchUserById(Long)         | Recupera un usuario por su ID.                |
+| fetchUserByUsername(String) | Recupera un usuario por su nombre de usuario. |
 
 ##### 4.2.6.3 Application Layer
 
-<h3>Clase: <code>UserCommandServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>UserCommandServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones relacionadas con usuarios.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(SignUpCommand)</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
-    <tr><td>handle(UpdateUserInfoCommand)</td><td>Actualiza la información de un usuario existente.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>UserRepository</td><td>Repositorio encargado de la persistencia de usuarios.</td></tr>
-    <tr><td>PasswordHashingService</td><td>Servicio de encriptación de contraseñas.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserCommandServiceImpl`
 
-<hr>
+| Título                 | Descripción                                                                         |
+|------------------------|-------------------------------------------------------------------------------------|
+| UserCommandServiceImpl | Implementación del servicio de comandos para operaciones relacionadas con usuarios. |
 
-<h3>Clase: <code>RoleCommandServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>RoleCommandServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de comandos para la gestión de roles.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(SeedRolesCommand)</td><td>Inicializa los roles básicos de la aplicación (ej. Admin, Mecánico, Motociclista).</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>RoleRepository</td><td>Repositorio encargado de la persistencia y gestión de roles.</td></tr>
-  </tbody>
-</table>
+| Método                    | Descripción                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| handle(UpdateUserCommand) | Actualiza la información de un usuario existente.                                             |
+| handle(DeleteUserCommand) | Elimina un usuario del sistema.                                                               |
+| handle(SignUpCommand)     | Registra un nuevo usuario en la plataforma con credenciales y rol inicial.                    |
+| handle(SignInCommand)     | Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica. |
 
-<hr>
+**Dependencias:**
 
-<h3>Clase: <code>AuthenticationCommandServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>AuthenticationCommandServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones de autenticación.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(SignInCommand)</td><td>Autentica a un usuario y devuelve un token JWT válido.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>UserRepository</td><td>Repositorio de usuarios para verificar credenciales.</td></tr>
-    <tr><td>PasswordHashingService</td><td>Servicio de verificación de contraseñas encriptadas.</td></tr>
-    <tr><td>TokenProviderService</td><td>Servicio encargado de la generación de tokens JWT.</td></tr>
-  </tbody>
-</table>
+| Dependencia            | Descripción                                           |
+|------------------------|-------------------------------------------------------|
+| UserRepository         | Repositorio encargado de la persistencia de usuarios. |
+| RoleRepository         | Repositorio encargado de la gestión de roles.         |
+| HashingService         | Servicio de encriptación de contraseñas.              |
+| TokenService           | Servicio encargado de la generación de tokens JWT.    |
+| ExternalProfileService | Servicio para gestionar perfiles externos.            |
 
-<hr>
+**Clase:** `RoleCommandServiceImpl`
 
-<h3>Clase: <code>UserQueryServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>UserQueryServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de consultas para obtener información de usuarios.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(GetAllUsersQuery)</td><td>Obtiene la lista completa de usuarios registrados.</td></tr>
-    <tr><td>handle(GetUserByIdQuery)</td><td>Recupera los detalles de un usuario por su ID.</td></tr>
-    <tr><td>handle(GetUserByUsernameQuery)</td><td>Busca un usuario por su nombre de usuario.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>UserRepository</td><td>Repositorio encargado de consultas de usuarios.</td></tr>
-  </tbody>
-</table>
+| Título                 | Descripción                                                       |
+|------------------------|-------------------------------------------------------------------|
+| RoleCommandServiceImpl | Implementación del servicio de comandos para la gestión de roles. |
 
-<hr>
+| Método                   | Descripción                                                                        |
+|--------------------------|------------------------------------------------------------------------------------|
+| handle(SeedRolesCommand) | Inicializa los roles básicos de la aplicación (ej. Admin, Mecánico, Motociclista). |
 
-<h3>Clase: <code>RoleQueryServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>RoleQueryServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de consultas para roles.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(GetAllRolesQuery)</td><td>Obtiene todos los roles disponibles en el sistema.</td></tr>
-    <tr><td>handle(GetRoleByNameQuery)</td><td>Recupera un rol específico por su nombre.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>RoleRepository</td><td>Repositorio encargado de consultas de roles.</td></tr>
-  </tbody>
-</table>
+**Dependencias:**
 
-<hr>
+| Dependencia    | Descripción                                                  |
+|----------------|--------------------------------------------------------------|
+| RoleRepository | Repositorio encargado de la persistencia y gestión de roles. |
 
-<h3>Clase: <code>ApplicationReadyEventHandler</code></h3>
-<table>
-  <tr><th>Título</th><td>ApplicationReadyEventHandler</td></tr>
-  <tr><th>Descripción</th><td>Manejador de eventos que inicializa los roles base al iniciar la aplicación.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Evento</th><th>Acción</th></tr></thead>
-  <tbody>
-    <tr><td>ApplicationReadyEvent</td><td>Ejecuta el <code>SeedRolesCommand</code> para poblar roles iniciales.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>RoleCommandServiceImpl</td><td>Servicio de comandos encargado de sembrar los roles iniciales.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserQueryServiceImpl`
 
-<hr>
+| Título               | Descripción                                                                    |
+|----------------------|--------------------------------------------------------------------------------|
+| UserQueryServiceImpl | Implementación del servicio de consultas para obtener información de usuarios. |
 
-<h3>Clase: <code>PasswordHashingService</code></h3>
-<table>
-  <tr><th>Título</th><td>PasswordHashingService</td></tr>
-  <tr><th>Descripción</th><td>Servicio encargado de encriptar y verificar contraseñas.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>hashPassword(String plainPassword)</td><td>Genera un hash seguro de una contraseña en texto plano.</td></tr>
-    <tr><td>verifyPassword(String plainPassword, String hashedPassword)</td><td>Valida si una contraseña en texto plano coincide con su hash almacenado.</td></tr>
-  </tbody>
-</table>
+| Método                         | Descripción                                        |
+|--------------------------------|----------------------------------------------------|
+| handle(GetAllUsersQuery)       | Obtiene la lista completa de usuarios registrados. |
+| handle(GetUserByIdQuery)       | Recupera los detalles de un usuario por su ID.     |
+| handle(GetUserByUsernameQuery) | Busca un usuario por su nombre de usuario.         |
 
-<hr>
+**Dependencias:**
 
-<h3>Clase: <code>TokenProviderService</code></h3>
-<table>
-  <tr><th>Título</th><td>TokenProviderService</td></tr>
-  <tr><th>Descripción</th><td>Servicio encargado de generar y validar tokens JWT para la autenticación.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>generateToken(User user)</td><td>Genera un token JWT a partir de la información de un usuario.</td></tr>
-    <tr><td>validateToken(String token)</td><td>Valida la autenticidad y vigencia de un token JWT.</td></tr>
-  </tbody>
-</table>
+| Dependencia    | Descripción                                           |
+|----------------|-------------------------------------------------------|
+| UserRepository | Repositorio encargado de consultas de usuarios.       |
+
+**Clase:** `RoleQueryServiceImpl`
+
+| Título               | Descripción                                          |
+|----------------------|------------------------------------------------------|
+| RoleQueryServiceImpl | Implementación del servicio de consultas para roles. |
+
+| Método                   | Descripción                                        |
+|--------------------------|----------------------------------------------------|
+| handle(GetAllRolesQuery) | Obtiene todos los roles disponibles en el sistema. |
+
+**Dependencias:**
+
+| Dependencia    | Descripción                                  |
+|----------------|----------------------------------------------|
+| RoleRepository | Repositorio encargado de consultas de roles. |
+
+**Clase:** `ApplicationReadyEventHandler`
+
+| Título                       | Descripción                                                                  |
+|------------------------------|------------------------------------------------------------------------------|
+| ApplicationReadyEventHandler | Manejador de eventos que inicializa los roles base al iniciar la aplicación. |
+
+| Evento                                    | Acción                                                     |
+|-------------------------------------------|------------------------------------------------------------|
+| onApplicationReady(ApplicationReadyEvent) | Ejecuta el `SeedRolesCommand` para poblar roles iniciales. |
+
+**Dependencias:**
+
+| Dependencia        | Descripción                                                    |
+|--------------------|----------------------------------------------------------------|
+| RoleCommandService | Servicio de comandos encargado de sembrar los roles iniciales. |
+
+**Clase:** `HashingService`
+
+| Título         | Descripción                                              |
+|----------------|----------------------------------------------------------|
+| HashingService | Servicio encargado de encriptar y verificar contraseñas. |
+
+| Método                        | Descripción                                                              |
+|-------------------------------|--------------------------------------------------------------------------|
+| encode(CharSequence)          | Genera un hash seguro de una contraseña en texto plano.                  |
+| matches(CharSequence, String) | Valida si una contraseña en texto plano coincide con su hash almacenado. |
+
+**Clase:** `HashingService`
+
+| Título         | Descripción                                              |
+|----------------|----------------------------------------------------------|
+| HashingService | Servicio encargado de encriptar y verificar contraseñas. |
+
+| Método                       | Descripción                                                 |
+|------------------------------|-------------------------------------------------------------|
+| generateToken(String)        | Genera un token JWT a partir de la información del usuario. |
+| getUserNameFromToken(String) | Extrae el nombre de usuario contenido en un token JWT.      |
+| validateToken(String)        | Valida la autenticidad y vigencia de un token JWT.          |
+
+**Clase:** `IamContextFacadeImpl`
+
+| Título               | Descripción                                                    |
+|----------------------|----------------------------------------------------------------|
+| IamContextFacadeImpl | Fachada que expone operaciones simplificadas del contexto IAM. |
+
+| Método                      | Descripción                                   |
+|-----------------------------|-----------------------------------------------|
+| fetchUserById(Long)         | Recupera un usuario por su ID.                |
+| fetchUserByUsername(String) | Recupera un usuario por su nombre de usuario. |
+
+**Dependencias:**
+
+| Dependencia        | Descripción                                   |
+|--------------------|-----------------------------------------------|
+| UserQueryService   | Servicio de consultas para obtener usuarios.  |
 
 ###### 4.2.6.4 Infrastructure Layer
 
-<h3>Clase: <code>UserRepositoryImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>UserRepository</code> usando JPA/Hibernate para persistir y consultar usuarios.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>save(User user)</td><td>Persiste o actualiza un usuario.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera un usuario por ID.</td></tr>
-    <tr><td>findByUsername(String username)</td><td>Recupera un usuario por su nombre de usuario.</td></tr>
-    <tr><td>findByEmail(String email)</td><td>Recupera un usuario por email.</td></tr>
-    <tr><td>findAll()</td><td>Lista todos los usuarios registrados.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserRepository`
 
-<h3>Clase: <code>RoleRepositoryImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>RoleRepository</code> usando JPA/Hibernate para manejar roles y permisos.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Role role)</td><td>Persiste un rol.</td></tr>
-    <tr><td>findByName(String name)</td><td>Busca un rol por nombre.</td></tr>
-    <tr><td>findAll()</td><td>Lista todos los roles disponibles.</td></tr>
-  </tbody>
-</table>
+| Título         | Descripción                                                             |
+|----------------|-------------------------------------------------------------------------|
+| UserRepository | Interfaz de persistencia para operaciones CRUD y consultas de usuarios. |
 
-<h3>Clase: <code>PasswordHashingServiceImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>PasswordHashingService</code> que maneja el hash seguro de contraseñas usando BCrypt.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>hashPassword(String rawPassword)</td><td>Devuelve el hash de la contraseña.</td></tr>
-    <tr><td>verifyPassword(String rawPassword, String hashedPassword)</td><td>Verifica una contraseña contra su hash.</td></tr>
-  </tbody>
-</table>
+| Método                   | Descripción                                             |
+|--------------------------|---------------------------------------------------------|
+| findByUsername(String)   | Busca un usuario por su nombre de usuario.              |
+| existsByUsername(String) | Verifica si un usuario existe por su nombre de usuario. |
 
-<h3>Clase: <code>TokenProviderServiceImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>TokenProviderService</code> para generar y validar tokens JWT (usando jjwt o Spring Security JWT).</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>generateToken(User user)</td><td>Genera un token JWT con datos del usuario.</td></tr>
-    <tr><td>validateToken(String token)</td><td>Valida un token y devuelve si es válido.</td></tr>
-    <tr><td>extractUsername(String token)</td><td>Obtiene el username desde el token.</td></tr>
-  </tbody>
-</table>
+**Clase:** `RoleRepository`
+
+| Título         | Descripción                                                            |
+|----------------|------------------------------------------------------------------------|
+| RoleRepository | Interfaz de persistencia para operaciones CRUD y consultas de roles.   |
+
+| Método              | Descripción                              |
+|---------------------|------------------------------------------|
+| findByName(Roles)   | Busca un rol por su nombre.              |
+| existsByName(Roles) | Verifica si un rol existe por su nombre. |
+
+**Clase:** `HashingServiceImpl`
+
+| Título             | Descripción                                                                        |
+|--------------------|------------------------------------------------------------------------------------|
+| HashingServiceImpl | Implementación de `HashingService` que utiliza BCrypt para el hash de contraseñas. |
+
+| Método                        | Descripción                                                              |
+|-------------------------------|--------------------------------------------------------------------------|
+| encode(CharSequence)          | Genera un hash seguro de una contraseña en texto plano.                  |
+| matches(CharSequence, String) | Valida si una contraseña en texto plano coincide con su hash almacenado. |
+
+**Clase:** `TokenServiceImpl`
+
+| Título           | Descripción                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| TokenServiceImpl | Implementación de `TokenService` que utiliza JWT para la gestión de tokens. |
+
+| Método                                            | Descripción                                                       |
+|---------------------------------------------------|-------------------------------------------------------------------|
+| buildTokenWithDefaultParameters(String)           | Genera un token JWT a partir de la información del usuario.       |
+| getSigningKey()                                   | Obtiene la clave secreta utilizada para firmar los tokens.        |
+| extractClaim(String, Function<Claims, T>)         | Extrae un reclamo específico de un token JWT.                     |
+| extractAllClaims(String)                          | Extrae todos los reclamos contenidos en un token JWT.             |
+| isTokenPresentIn(String)                          | Verifica si un token JWT está presente en la base de datos.       |
+| isBearerTokenIn(String)                           | Verifica si un token JWT es un token Bearer válido.               |
+| extractTokenFrom(String)                          | Extrae el token JWT del encabezado de autorización.               |
+| getAuthorizationParameterFrom(HttpServletRequest) | Obtiene el parámetro de autorización del request HTTP.            |
+| getBearerTokenFrom(HttpServletRequest)            | Obtiene el token Bearer del request HTTP.                         |
+| generateToken(Authentication)                     | Genera un token JWT basado en la autenticación proporcionada.     |
+| generateToken(String)                             | Genera un token JWT basado en el nombre de usuario proporcionado. |
+| getUserNameFromToken(String)                      | Extrae el nombre de usuario contenido en un token JWT.            |
+| validateToken(String)                             | Valida un token JWT asegurando su integridad y vigencia.          |
 
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -5254,114 +5106,210 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-042</td>
-    <td colspan="1">Sección de métricas por cada vehículo</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td rowspan="3">US-042</td>
+    <td rowspan="3">Sección de métricas por cada vehículo</td>
+    <td>T-021</td>
+    <td>Implementar una card para mostrar los datos registrado de la métrica</td>
+    <td>Implementar una card para mostrar los datos registrado de la métrica</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-043</td>
-    <td colspan="1">Sistema de notificaciones interno</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-022</td>
+    <td>Implementar una lista para mostrar cada una de las cards de métricas de un vehículo</td>
+    <td>Implementar una lista para mostrar cada una de las cards de métricas de un vehículo</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-044</td>
-    <td colspan="1">Alerta de Temperatura Alta</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-023</td>
+    <td>Implementar una vista para mostrar la lista de las distintas métricas registradas para un vehículo</td>
+    <td>Implementar una vista para mostrar la lista de las distintas métricas registradas para un vehículo</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-045</td>
-    <td colspan="1">Alerta de Temperatura Baja</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-043</td>
+    <td rowspan="2">Sistema de notificaciones interno</td>
+    <td>T-024</td>
+    <td>Implementar el WebSocket en el frontend para recibir alertas</td>
+    <td>Implementar el WebSocket en el frontend para recibir alertas</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-046</td>
-    <td colspan="1">Alerta de Humedad Alta</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-025</td>
+    <td>Implementar WebSocket en el backend para enviar alertas</td>
+    <td>Implementar WebSocket en el backend para enviar alertas</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-047</td>
-    <td colspan="1">Alerta de CO2 Alto</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-044</td>
+    <td rowspan="2">Alerta de Temperatura Alta</td>
+    <td>T-026</td>
+    <td>Evento backend para anunciar temperatura alta</td>
+    <td>Evento backend para anunciar temperatura alta</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-048</td>
-    <td colspan="1">Alerta de NH3 Alto</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-027</td>
+    <td>Enviar alerta de temperatura alta mediante WebSocket</td>
+    <td>Enviar alerta de temperatura alta mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-049</td>
-    <td colspan="1">Alerta de Benceno Alto</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-045</td>
+    <td rowspan="2">Alerta de Temperatura Baja</td>
+    <td>T-028</td>
+    <td>Evento backend para anunciar temperatura baja</td>
+    <td>Evento backend para anunciar temperatura baja</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-050</td>
-    <td colspan="1">Alerta de Presión Baja</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-029</td>
+    <td>Enviar alerta de temperatura baja mediante WebSocket</td>
+    <td>Enviar alerta de temperatura baja mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-051</td>
-    <td colspan="1">Alerta de Presión Alta</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-046</td>
+    <td rowspan="2">Alerta de Humedad Alta</td>
+    <td>T-030</td>
+    <td>Evento backend para anunciar humedad alta</td>
+    <td>Evento backend para anunciar humedad alta</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-056</td>
-    <td colspan="1">Alerta de Impacto Detectado</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-031</td>
+    <td>Enviar alerta de humedad alta mediante WebSocket</td>
+    <td>Enviar alerta de humedad alta mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-047</td>
+    <td rowspan="2">Alerta de CO2 Alto</td>
+    <td>T-032</td>
+    <td>Evento backend para anunciar CO2 alto</td>
+    <td>Evento backend para anunciar CO2 alto</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-033</td>
+    <td>Enviar alerta de CO2 alto mediante WebSocket</td>
+    <td>Enviar alerta de CO2 alto mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-048</td>
+    <td rowspan="2">Alerta de NH3 Alto</td>
+    <td>T-034</td>
+    <td>Evento backend para anunciar NH3 alto</td>
+    <td>Evento backend para anunciar NH3 alto</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-035</td>
+    <td>Enviar alerta de NH3 alto mediante WebSocket</td>
+    <td>Enviar alerta de NH3 alto mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-049</td>
+    <td rowspan="2">Alerta de Benceno Alto</td>
+    <td>T-036</td>
+    <td>Evento backend para anunciar Benceno alto</td>
+    <td>Evento backend para anunciar Benceno alto</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-037</td>
+    <td>Enviar alerta de Benceno alto mediante WebSocket</td>
+    <td>Enviar alerta de Benceno alto mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-050</td>
+    <td rowspan="2">Alerta de Presión Baja</td>
+    <td>T-038</td>
+    <td>Evento backend para anunciar presión baja</td>
+    <td>Evento backend para anunciar presión baja</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-039</td>
+    <td>Enviar alerta de presión baja mediante WebSocket</td>
+    <td>Enviar alerta de presión baja mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-051</td>
+    <td rowspan="2">Alerta de Presión Alta</td>
+    <td>T-040</td>
+    <td>Evento backend para anunciar presión alta</td>
+    <td>Evento backend para anunciar presión alta</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-041</td>
+    <td>Enviar alerta de presión alta mediante WebSocket</td>
+    <td>Enviar alerta de presión alta mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td rowspan="2">US-056</td>
+    <td rowspan="2">Alerta de Impacto Detectado</td>
+    <td>T-042</td>
+    <td>Evento backend para anunciar impacto detectado</td>
+    <td>Evento backend para anunciar impacto detectado</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-043</td>
+    <td>Enviar alerta de impacto detectado mediante WebSocket</td>
+    <td>Enviar alerta de impacto detectado mediante WebSocket</td>
+    <td>5</td>
+    <td>Jose Alejo</td>
+    <td>Done</td>
   </tr>
   <tr>
     <td rowspan="2">US-057</td>
@@ -5416,8 +5364,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="4">US-059</td>
-    <td colspan="4">Gestión del progreso del mantenimiento</td>
+    <td rowspan="4">US-059</td>
+    <td rowspan="4">Gestión del progreso del mantenimiento</td>
     <td>T-044</td>
     <td>Implementar la vista de Mantenimiento para Owner</td>
     <td>Implementar la vista de Mantenimiento para Owner</td>
@@ -5450,44 +5398,70 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-060</td>
-    <td colspan="1">Comparación de vehículos por motociclista</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-060</td>
+    <td rowspan="2">Comparación de vehículos por motociclista</td>
+    <td>T-013</td>
+    <td>Crear el componente de página de comparación para motociclistas</td>
+    <td>Crear el componente de página de comparación para motociclistas</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-061</td>
-    <td colspan="1">Comparación de modelos por mecánico</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-015</td>
+    <td>Implementar el componente de tarjeta de vehículo con selector</td>
+    <td>Implementar el componente de tarjeta de vehículo con selector</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2">US-061</td>
+    <td rowspan="2">Comparación de modelos por mecánico</td>
+    <td>T-014</td>
+    <td>Crear el componente de página de comparación para mecánicos</td>
+    <td>Crear el componente de página de comparación para mecánicos</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-062</td>
-    <td colspan="1">Evaluación por escenarios de uso</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td>T-016</td>
+    <td>Desarrollar el componente de comparación de especificaciones técnicas</td>
+    <td>Desarrollar el componente de comparación de especificaciones técnicas</td>
+    <td>5</td>
+    <td>SGianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
-    <td colspan="1">US-063</td>
-    <td colspan="1">Visualización de especificaciones detalladas</td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
-    <td colspan="1"></td>
+    <td rowspan="2">US-062</td>
+    <td rowspan="2">Evaluación por escenarios de uso</td>
+    <td>T-017</td>
+    <td>Desarrollar el componente de comparación de escenarios de uso</td>
+    <td>Desarrollar el componente de comparación de escenarios de uso</td>
+    <td>3</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>T-018</td>
+    <td>Implementar el componente de calificación por estrellas</td>
+    <td>Implementar el componente de calificación por estrellas</td>
+    <td>3</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
+  
+  <tr>
+    <td rowspan="1">US-063</td>
+    <td rowspan="1">Visualización de especificaciones detalladas</td>
+    <td>T-020</td>
+    <td>Desarrollar la lógica de detección de ganador en especificaciones</td>
+    <td>Desarrollar la lógica de detección de ganador en especificaciones</td>
+    <td>5</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
   </tr>
   <tr>
     <td rowspan="4">US-064</td>
@@ -5615,6 +5589,17 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Sebastian Real</td>
     <td>Done</td>
   </tr>
+
+  <tr>
+    <td rowspan="1">US-067</td>
+    <td rowspan="1">Exportación de reporte técnico del vehículo</td>
+    <td>T-019</td>
+    <td>Implementar el componente de exportar como CSV los reportes de un vehículo</td>
+    <td>Implementar el componente de exportar como CSV los reportes de un vehículo</td>
+    <td>3</td>
+    <td>Gianluca Pasquale</td>
+    <td>Done</td>
+  </tr>
 </table>
 
 ##### 6.2.2.4. Development Evidence for Sprint Review.
@@ -5623,21 +5608,286 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Web Application**
 
-| Repository             | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
-|------------------------|---------|-----------|----------------|---------------------|------|
-| BykerZ-Web-Application | develop |           |                |                     |      |
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>c66e985e</td>
+      <td>feat(iam): add ProfileStore service to manage user profile state and loading</td>
+      <td>feat(iam): add ProfileStore service to manage user profile state and loading</td>
+      <td>10/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>2348fb53</td>
+      <td>feat: add authentication guard and enhance vehicle comparison pages</td>
+      <td>feat: add authentication guard and enhance vehicle comparison pages</td>
+      <td>10/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>c57824c6</td>
+      <td>feat(expenses-and-maintenance): add routes and entities for expenses and maintenance management</td>
+      <td>feat(expenses-and-maintenance): add routes and entities for expenses and maintenance management</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>9fa8793e</td>
+      <td>feat(verify-owner): implement owner verification and assignment logic</td>
+      <td>feat(verify-owner): implement owner verification and assignment logic</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>48b35a3e</td>
+      <td>feat(sign-up): improve sign-up process with enhanced error handling and auto sign-in flow</td>
+      <td>feat(sign-up): improve sign-up process with enhanced error handling and auto sign-in flow</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>ff0de08b</td>
+      <td>feat(authentication): enhance sign-in method to support redirect option</td>
+      <td>feat(authentication): enhance sign-in method to support redirect option</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>e5487d99</td>
+      <td>feat(notifications): added notifications by websocket</td>
+      <td>feat(notifications): added notifications by websocket</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>b2022fd3</td>
+      <td>feat(wellnessMetric): added wellnessMetric</td>
+      <td>feat(wellnessMetric): added wellnessMetric</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>d969d0d3</td>
+      <td>feat: vehicle registration</td>
+      <td>feat: vehicle registration</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>cf404ade</td>
+      <td>feat(role-selection): implement registration functionality for Owner and Mechanic roles</td>
+      <td>feat(role-selection): implement registration functionality for Owner and Mechanic roles</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>91dbefaa</td>
+      <td>feat: add Dockerfile and Nginx configuration for production build and routing</td>
+      <td>feat: add Dockerfile and Nginx configuration for production build and routing</td>
+      <td>11/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>51047a05</td>
+      <td>feat(maintenance): implement maintenance management features including creation, retrieval, updates</td>
+      <td>feat(maintenance): implement maintenance management features including creation, retrieval, updates</td>
+      <td>12/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>e5dda545</td>
+      <td>feat: implement expense management features including creation, retrieval, and deletion</td>
+      <td>feat: implement expense management features including creation, retrieval, and deletion</td>
+      <td>12/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>7dcc9468</td>
+      <td>feat: assignment vehicle list</td>
+      <td>feat: assignment vehicle list</td>
+      <td>12/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>67f01c9a</td>
+      <td>feat(routes): add back authentication guard to protected routes</td>
+      <td>feat(routes): add back authentication guard to protected routes</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>1704fa02</td>
+      <td>feat(comparatives): enhance user ID management and improve vehicle selection logic</td>
+      <td>feat(comparatives): enhance user ID management and improve vehicle selection logic</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>1704fa02</td>
+      <td>featc and enhance loading logic</td>
+      <td>feat(comparatives): add vehicle comparison navigation and enhance loading logic</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>755c7aae</td>
+      <td>feat(comparatives): enhance vehicle details page with export functionality and responsive design</td>
+      <td>feat(comparatives): enhance vehicle details page with export functionality and responsive design</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>18738665</td>
+      <td>feat(comparatives): implement vehicle comparison pages and components</td>
+      <td>feat(comparatives): implement vehicle comparison pages and components</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>821841ec</td>
+      <td>feat(comparatives): add vehicle comparison components and model</td>
+      <td>feat(comparatives): add vehicle comparison components and model</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>c752c3f4</td>
+      <td>feat(register-vehicle): enhance vehicle registration dialog with form validation and improved UI</td>
+      <td>feat(register-vehicle): enhance vehicle registration dialog with form validation and improved UI</td>
+      <td>13/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>6683057f</td>
+      <td>feat(metrics-notifications): added new field</td>
+      <td>feat(metrics-notifications): added new field</td>
+      <td>14/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>22d07502</td>
+      <td>fix(vehicle-wellness): fix vehicle-wellness</td>
+      <td>fix(vehicle-wellness): fix vehicle-wellness</td>
+      <td>14/11/2025</td>
+    </tr>
+    <tr>
+      <td>BykerZ-Web-Application</td>
+      <td>develop</td>
+      <td>09ec9d5a</td>
+      <td>fix(notifications): fix notifications list</td>
+      <td>fix(notifications): fix notifications list</td>
+      <td>14/11/2025</td>
+    </tr>
+  </tbody>
+</table>
+
 
 **Backend**
 
-| Repository     | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
-|----------------|---------|-----------|----------------|---------------------|------|
-| BykerZ-Backend | develop |           |                |                     |      |
+| Repository     | Branch  | Commit Id | Commit Message                                                                                                          | Commit Message Body                                                                                                     | Date       |
+|----------------|---------|-----------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------|
+| BykerZ-Backend | develop | d39df11e  | feat(maintenance): add expense management domain models and update datasource configuration                             | feat(maintenance): add expense management domain models and update datasource configuration                             | 26/10/2025 |
+| BykerZ-Backend | develop | c006ef98  | feat(assigment): add assigment aggregate and value objects.                                                             | feat(assigment): add assigment aggregate and value objects.                                                             | 26/10/2025 |
+| BykerZ-Backend | develop | e9ac7518  | feat(assigment): add queries.                                                                                           | feat(assigment): add queries.                                                                                           | 26/10/2025 |
+| BykerZ-Backend | develop | 0c7ca386  | feat(assigment): add commands.                                                                                          | feat(assigment): add commands.                                                                                          | 26/10/2025 |
+| BykerZ-Backend | develop | 0e70d211  | feat(assigment): add assignment repository.                                                                             | feat(assigment): add assignment repository.                                                                             | 26/10/2025 |
+| BykerZ-Backend | develop | 12e75b4a  | feat(assigment): add query and command service.                                                                         | feat(assigment): add query and command service.                                                                         | 26/10/2025 |
+| BykerZ-Backend | develop | 3ae6be8f  | feat(assigment): add query and command service implementation.                                                          | feat(assigment): add query and command service implementation.                                                          | 26/10/2025 |
+| BykerZ-Backend | develop | e3dfdb71  | feat(assigment): add resources.                                                                                         | feat(assigment): add resources.                                                                                         | 26/10/2025 |
+| BykerZ-Backend | develop | db7aefc7  | feat(assigment): add command and resource assemblers for assignment.                                                    | feat(assigment): add command and resource assemblers for assignment.                                                    | 26/10/2025 |
+| BykerZ-Backend | develop | 0f9310ad  | feat(assignments): add controllers for assignment management                                                            | feat(assignments): add controllers for assignment management                                                            | 26/10/2025 |
+| BykerZ-Backend | develop | bb7c5f97  | feat(maintenance): implement expense and service domain models with command and repository layers                       | feat(maintenance): implement expense and service domain models with command and repository layers                       | 28/10/2025 |
+| BykerZ-Backend | develop | aa87faef  | feat(maintenance): refactor service-related commands and queries to maintenance domain                                  | feat(maintenance): refactor service-related commands and queries to maintenance domain                                  | 30/10/2025 |
+| BykerZ-Backend | develop | 31e252e7  | feat(maintenance): rename package structure for command services and event handlers                                     | feat(maintenance): rename package structure for command services and event handlers                                     | 30/10/2025 |
+| BykerZ-Backend | develop | 4698f461  | feat(maintenance): add expense item command handling and repository methods                                             | feat(maintenance): add expense item command handling and repository methods                                             | 30/10/2025 |
+| BykerZ-Backend | develop | a22c8994  | feat: start development model seeding                                                                                   | feat: start development model seeding                                                                                   | 30/10/2025 |
+| BykerZ-Backend | develop | 4d4cae68  | feat(iam): add assemblers for creating profile commands and transforming profile resources.                             | feat(iam): add assemblers for creating profile commands and transforming profile resources.                             | 31/10/2025 |
+| BykerZ-Backend | develop | 0290750d  | feat(iam): add CreateProfileCommand record for profile creation.                                                        | feat(iam): add CreateProfileCommand record for profile creation.                                                        | 31/10/2025 |
+| BykerZ-Backend | develop | 33019c0e  | feat(iam): add Profile entity with firstName, lastName, and emailAddress fields.                                        | feat(iam): add Profile entity with firstName, lastName, and emailAddress fields.                                        | 31/10/2025 |
+| BykerZ-Backend | develop | a731f50e  | feat(iam): add ProfileCommandService interface for profile command operations.                                          | feat(iam): add ProfileCommandService interface for profile command operations.                                          | 31/10/2025 |
+| BykerZ-Backend | develop | 85f53542  | feat(iam): add ProfileQueryService interface for profile query operations.                                              | feat(iam): add ProfileQueryService interface for profile query operations.                                              | 31/10/2025 |
+| BykerZ-Backend | develop | 8974d5ba  | feat(iam): add ProfileRepository interface for profile data access.                                                     | feat(iam): add ProfileRepository interface for profile data access.                                                     | 31/10/2025 |
+| BykerZ-Backend | develop | 586ede91  | feat(iam): add ProfileCommandServiceImpl and ProfileQueryServiceImpl classes.                                           | feat(iam): add ProfileCommandServiceImpl and ProfileQueryServiceImpl classes.                                           | 31/10/2025 |
+| BykerZ-Backend | develop | 7eb56478  | feat(iam): add create and retrieve profile endpoints for ProfilesController.                                            | feat(iam): add create and retrieve profile endpoints for ProfilesController.                                            | 31/10/2025 |
+| BykerZ-Backend | develop | 2d26ff94  | feat(assignments): add Mechanic and MechanicCode classes for assignment management                                      | feat(assignments): add Mechanic and MechanicCode classes for assignment management                                      | 03/11/2025 |
+| BykerZ-Backend | develop | e2aad9da  | feat(assignments): add MechanicRepository for database interactions                                                     | feat(assignments): add MechanicRepository for database interactions                                                     | 03/11/2025 |
+| BykerZ-Backend | develop | 555d3d37  | feat(assignments): implement MechanicCommandService and its implementation for creating mechanics                       | feat(assignments): implement MechanicCommandService and its implementation for creating mechanics                       | 03/11/2025 |
+| BykerZ-Backend | develop | 5c58f8f4  | feat(assignments): add MechanicQueryService and its implementation for querying mechanics                               | feat(assignments): add MechanicQueryService and its implementation for querying mechanics                               | 03/11/2025 |
+| BykerZ-Backend | develop | b95e689d  | feat(assignments): add MechanicResource and assembler for converting Mechanic entities to resources                     | feat(assignments): add MechanicResource and assembler for converting Mechanic entities to resources                     | 03/11/2025 |
+| BykerZ-Backend | develop | 784d66ee  | refactor(auth): remove unused OPTIONS handler from authentication controller.                                           | refactor(auth): remove unused OPTIONS handler from authentication controller.                                           | 07/11/2025 |
+| BykerZ-Backend | develop | e497d25a  | refactor(profiles): remove profile creation method and command from resource assembler.                                 | refactor(profiles): remove profile creation method and command from resource assembler.                                 | 08/11/2025 |
+| BykerZ-Backend | develop | 47347cc4  | refactor(iam): move external profile service to the internal package.                                                   | refactor(iam): move external profile service to the internal package.                                                   | 08/11/2025 |
+| BykerZ-Backend | develop | 7b783ba6  | refactor(profiles): simplify profile creation method by streamlining result handling.                                   | refactor(profiles): simplify profile creation method by streamlining result handling.                                   | 08/11/2025 |
+| BykerZ-Backend | develop | 48370846  | refactor(iam): remove user command service from context facade constructor.                                             | refactor(iam): remove user command service from context facade constructor.                                             | 08/11/2025 |
+| BykerZ-Backend | develop | fd804c9e  | refactor(assignments): rename and relocate external vehicle service to shared package for multiple service interaction. | refactor(assignments): rename and relocate external vehicle service to shared package for multiple service interaction. | 08/11/2025 |
+| BykerZ-Backend | develop | 8020ebe5  | refactor(iam): import code clean up.                                                                                    | refactor(iam): import code clean up.                                                                                    | 08/11/2025 |
+| BykerZ-Backend | develop | 93dcee99  | feat(reports): add CORS configuration and implement CSV export for aggregated reports by vehicle ID                     | feat(reports): add CORS configuration and implement CSV export for aggregated reports by vehicle ID                     | 10/11/2025 |
+| BykerZ-Backend | develop | 061d4c3e  | fix(report): update report endpoints to use owner ID and improve CSV export formatting                                  | fix(report): update report endpoints to use owner ID and improve CSV export formatting                                  | 13/11/2025 |
+| BykerZ-Backend | develop | ddc5d916  | fix(report): rename endpoints to use vehicle ID and enhance CSV export details                                          | fix(report): rename endpoints to use vehicle ID and enhance CSV export details                                          | 13/11/2025 |
+| BykerZ-Backend | develop | f8a4f5db  | fix(user): handle profile creation failure by rolling back user creation.                                               | fix(user): handle profile creation failure by rolling back user creation.                                               | 14/11/2025 |
 
 **Mobile Application**
 
-| Repository                | Branch  | Commit Id | Commit Message | Commit Message Body | Date |
-|---------------------------|---------|-----------|----------------|---------------------|------|
-| BykerZ-Mobile-Application | develop |           |                |                     |      |
+| Repository                | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                        | Date       |
+|---------------------------|---------|--|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------|
+| BykerZ-Mobile-Application | develop | af7ce170 | fix(metrics-notifications): fix corrected fields                                                        | fix(metrics-notifications): fix corrected fields                                                           | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | f896d2ff | fix(metrics and notificaions): fix corrected fields                                                     | fix(metrics and notificaions): fix corrected fields                                                        | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | 2c0eadd1 | feat(notifications+websocket): added websocket implementation and notifications bc                      | feat(notifications+websocket): added websocket implementation and notifications bc                         | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | e46b85aa | fix(vehicle_wellness): fix vehicle\_wellness's metrics                                                  | fix(vehicle\_wellness): fix vehicle\_wellness's metrics                                                    | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | da9349df | fix(vehicle_management): fix colors,new button                                                          | fix(vehicle\_management): fix colors,new button                                                            | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | cb7c3c24 | feat: vehicle bloc creation and details                                                                 | feat: vehicle bloc creation and details                                                                    | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 2cf1e18b | feat: vehicles from owner page                                                                          | feat: vehicles from owner page                                                                             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 0d9ddb87 | feat: model service                                                                                     | feat: model service                                                                                        | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 4ff35555 | feat: vehicle and model entities redefined                                                              | feat: vehicle and model entities redefined                                                                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 37aa3669 | fix(vehicle_wellness): added vehicle_wellness                                                           | fix(vehicle\_wellness): added vehicle\_wellness                                                            | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | 8287760c | fix(metrics): fix datasources                                                                           | fix(metrics): fix datasources                                                                              | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | a01aa02a | feat(iam): update image asset references in pubspec.yaml                                                | feat(iam): update image asset references in pubspec.yaml                                                   | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | ebc4075b | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | f48e639e | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling          | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 5b055910 | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display              | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 1ec74f2e | feat(bloc): added bloc                                                                                  | feat(bloc): added bloc                                                                                     | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | e38bc96f | feat(metrics-data-layer): added data layer                                                              | feat(metrics-data-layer): added data layer                                                                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | c4011a2 | feat(metrics): added metrics                                                                            | feat(metrics): added metrics                                                                               | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | e46c2fe8 | feat(expense): implement CreateExpense feature with BLoC for expense creation                           | feat(expense): implement CreateExpense feature with BLoC for expense creation                              | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 9b1edcd9 | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                   | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                      | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 1f6d26fa | feat(expense): add ExpenseDetail page with BLoC for expense details management                          | feat(expense): add ExpenseDetail page with BLoC for expense details management                             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 5c46dbb9 | feat(maintenance): implement maintenance management with BLoC and API integration                       | feat(maintenance): implement maintenance management with BLoC and API integration                          | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | a14aad9c | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC           | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC              | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 2d9ee343 | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions              | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions                 | 13/11/2025 |
 
 **Edge Services**
 
@@ -5670,17 +5920,97 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
+Para este sprint no se contemplaron pruebas unitarias.
+
 ##### 6.2.2.6. Execution Evidence for Sprint Review.
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video: []()
+Video web app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Video mobile app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV)
+
+Video IoT embedded application + edge services: []()
+
+**Landing Page**
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-1.png" alt="Landing Page execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-2.png" alt="Landing Page execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-3.png" alt="Landing Page execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-4.png" alt="Landing Page execution evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-5.png" alt="Landing Page execution evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-6.png" alt="Landing Page execution evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/landing-execution-evidence-7.png" alt="Landing Page execution evidence 7"/>
+
+Enlace: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
 
 **Backend**
 
+<img src="images/chapter-6/sprint-2/backend-execution-evidence-1.png" alt="Backend execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-execution-evidence-2.png" alt="Backend execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-execution-evidence-3.png" alt="Backend execution evidence 3"/>
+
+Enlace: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
+
 **Web Application**
 
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-1.png" alt="Web Application execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-2.png" alt="Web Application execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-3.png" alt="Web Application execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-4.png" alt="Web Application execution evidence 4"/>
+
+Enlace:[https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
 **Mobile Application**
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-1.png" alt="Mobile Application execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-2.png" alt="Mobile Application execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-3.png" alt="Mobile Application execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-4.png" alt="Mobile Application execution evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-5.png" alt="Mobile Application execution evidence 5"/>
+
+**Edge Services**
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-1.png" alt="Edge Services execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-2.png" alt="Edge Services execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-3.png" alt="Edge Services execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/edge-execution-evidence-4.png" alt="Edge Services execution evidence 4"/>
+
+**Dispositivo IoT + Embedded Application + Edge Service**
+
+<img src="images/chapter-6/sprint-2/iot-execution-evidence-1.png" alt="IoT execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/iot-execution-evidence-2.png" alt="IoT execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/iot-execution-evidence-3.png" alt="IoT execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/iot-execution-evidence-4.png" alt="IoT execution evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/iot-execution-evidence-5.png" alt="IoT execution evidence 5"/>
+
+**Simulated Prototype**
+
+<img src="images/chapter-6/sprint-2/simulated-execution-evidence-1.png" alt="Simulated Prototype execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/simulated-execution-evidence-2.png" alt="Simulated Prototype execution evidence 2"/>
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
@@ -5688,9 +6018,436 @@ En esta sección se presentan los avances logrados en la documentación de los W
 
 Backend repository: [https://github.com/NRG-6-IOT/BykerZ-Backend](https://github.com/NRG-6-IOT/BykerZ-Backend)
 
-| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
-|----------|------------|-------------|------------|--------------|---------------|-------------|
-|          |            |             |            |              |               |             |
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Method</th>
+      <th>Description</th>
+      <th>Parameters</th>
+      <th>Request body</th>
+      <th>Response</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/api/v1/users/{userId}</td>
+      <td>GET</td>
+      <td>Get a user by ID</td>
+      <td>path: <code>userId</code></td>
+      <td>none</td>
+      <td><code>UserResource</code></td>
+      <td>Retrieves user by its ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users</td>
+      <td>GET</td>
+      <td>Get all users</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;UserResource&gt;</code></td>
+      <td>Returns list of all users.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/email/{username}</td>
+      <td>GET</td>
+      <td>Get a user by username</td>
+      <td>path: <code>username</code></td>
+      <td>none</td>
+      <td><code>UserResource</code></td>
+      <td>Retrieves a user by username/email.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/me</td>
+      <td>GET</td>
+      <td>Get current authenticated user</td>
+      <td>auth context</td>
+      <td>none</td>
+      <td><code>UserResource</code></td>
+      <td>Returns the currently authenticated user.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/owner</td>
+      <td>GET</td>
+      <td>Get Owner ID of an user</td>
+      <td>auth principal</td>
+      <td>none</td>
+      <td><code>OwnerIdResource</code></td>
+      <td>Finds Owner ID linked to authenticated user via profile service.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/users/mechanic</td>
+      <td>GET</td>
+      <td>Get Mechanic ID of an user</td>
+      <td>auth principal</td>
+      <td>none</td>
+      <td><code>MechanicIdResource</code></td>
+      <td>Finds Mechanic ID linked to authenticated user via profile service.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense</td>
+      <td>GET</td>
+      <td>Get all expenses of an owner</td>
+      <td>auth principal → username → userId</td>
+      <td>none</td>
+      <td><code>List&lt;ExpenseResource&gt;</code></td>
+      <td>Returns expenses for owner associated with authenticated user.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/owner/{ownerId}</td>
+      <td>POST</td>
+      <td>Create new expense by owner ID</td>
+      <td>path: <code>ownerId</code>, auth principal</td>
+      <td><code>CreateExpenseResource</code></td>
+      <td><code>ExpenseResource</code></td>
+      <td>Creates expense for given owner; also creates items.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/{userId}</td>
+      <td>POST</td>
+      <td>Create a new expense for a user</td>
+      <td>path: <code>userId</code>, auth principal</td>
+      <td><code>CreateExpenseResource</code></td>
+      <td><code>ExpenseResource</code></td>
+      <td>Creates expense scoped to provided user ID and items.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/{expenseId}</td>
+      <td>GET</td>
+      <td>Get an expense by ID</td>
+      <td>path: <code>expenseId</code></td>
+      <td>none</td>
+      <td><code>ExpenseResource</code></td>
+      <td>Retrieves a specific expense.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/expense/{expenseId}</td>
+      <td>DELETE</td>
+      <td>Delete an expense</td>
+      <td>path: <code>expenseId</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Deletes the expense by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}</td>
+      <td>GET</td>
+      <td>Get maintenance by ID</td>
+      <td>path: <code>maintenanceId</code></td>
+      <td>none</td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Retrieves maintenance details.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get maintenances by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>List&lt;MaintenanceResource&gt;</code></td>
+      <td>Returns all maintenances for given vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}</td>
+      <td>DELETE</td>
+      <td>Delete a maintenance by ID</td>
+      <td>path: <code>maintenanceId</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Deletes maintenance.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance</td>
+      <td>POST</td>
+      <td>Create a new maintenance</td>
+      <td>none</td>
+      <td><code>CreateMaintenanceResource</code></td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Creates maintenance record.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}</td>
+      <td>PUT</td>
+      <td>Update maintenance status by ID</td>
+      <td>path: <code>maintenanceId</code></td>
+      <td><code>UpdateStatusOfMaintenanceResource</code></td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Updates state/status of maintenance.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/{maintenanceId}/expense/assign/{expenseId}</td>
+      <td>PUT</td>
+      <td>Assign expense to maintenance</td>
+      <td>path: <code>maintenanceId</code>, <code>expenseId</code></td>
+      <td>none</td>
+      <td><code>MaintenanceResource</code></td>
+      <td>Links an expense to a maintenance.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/maintenance/mechanic/{mechanicId}</td>
+      <td>GET</td>
+      <td>Get maintenances by mechanic ID</td>
+      <td>path: <code>mechanicId</code></td>
+      <td>none</td>
+      <td><code>List&lt;MaintenanceResource&gt;</code></td>
+      <td>Returns maintenances assigned to mechanic.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{profileId}</td>
+      <td>GET</td>
+      <td>Get a profile by ID</td>
+      <td>path: <code>profileId</code></td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile by its ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/email/{email}</td>
+      <td>GET</td>
+      <td>Get a profile by email</td>
+      <td>path: <code>email</code></td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile by email address.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/user/{userId}</td>
+      <td>GET</td>
+      <td>Get a profile by user ID</td>
+      <td>path: <code>userId</code></td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile linked to given userId.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/user</td>
+      <td>GET</td>
+      <td>Get profile of authenticated user</td>
+      <td>auth principal</td>
+      <td>none</td>
+      <td><code>ProfileResource</code></td>
+      <td>Retrieves profile for authenticated user.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/reports/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get aggregated report by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>ReportResource</code></td>
+      <td>Aggregates vehicle, maintenances and assignment data.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/reports/vehicle/{vehicleId}/export</td>
+      <td>GET</td>
+      <td>Export aggregated report as CSV</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>text/csv</code> (CSV string)</td>
+      <td>Returns CSV export of aggregated report.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models</td>
+      <td>GET</td>
+      <td>Get all models</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;ModelResource&gt;</code></td>
+      <td>Returns all vehicle models.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models/{modelId}</td>
+      <td>GET</td>
+      <td>Get model by ID</td>
+      <td>path: <code>modelId</code></td>
+      <td>none</td>
+      <td><code>ModelResource</code></td>
+      <td>Retrieves model by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models/brand/{brand}</td>
+      <td>GET</td>
+      <td>Get models by brand</td>
+      <td>path: <code>brand</code></td>
+      <td>none</td>
+      <td><code>List&lt;ModelResource&gt;</code></td>
+      <td>Returns models filtered by brand.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/models/brands</td>
+      <td>GET</td>
+      <td>Get all distinct brands</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;String&gt;</code></td>
+      <td>Returns distinct model brands.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/owners</td>
+      <td>GET</td>
+      <td>Get all vehicle owners</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;OwnerResource&gt;</code></td>
+      <td>Returns all owners.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/owners/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get owner by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>OwnerResource</code></td>
+      <td>Returns owner who owns given vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/owners</td>
+      <td>POST</td>
+      <td>Create a new vehicle owner</td>
+      <td>none</td>
+      <td><code>CreateOwnerResource</code></td>
+      <td><code>OwnerResource</code></td>
+      <td>Creates owner with provided profile ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/owner/{ownerId}</td>
+      <td>GET</td>
+      <td>Get vehicles by owner ID</td>
+      <td>path: <code>ownerId</code></td>
+      <td>none</td>
+      <td><code>List&lt;VehicleResource&gt;</code></td>
+      <td>Returns vehicles associated to owner.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get vehicle by ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>VehicleResource</code></td>
+      <td>Retrieves vehicle details.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/{ownerId}</td>
+      <td>POST</td>
+      <td>Add a new vehicle to an owner</td>
+      <td>path: <code>ownerId</code></td>
+      <td><code>AddVehicleResource</code></td>
+      <td><code>VehicleResource</code></td>
+      <td>Creates and associates vehicle to owner.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/vehicles/{vehicleId}</td>
+      <td>DELETE</td>
+      <td>Delete a vehicle by ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Removes vehicle from system and owner.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications</td>
+      <td>POST</td>
+      <td>Create a new notification</td>
+      <td>none</td>
+      <td><code>CreateNotificationResource</code></td>
+      <td><code>NotificationResource</code> (201)</td>
+      <td>Creates a notification and returns it.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications/{id}</td>
+      <td>GET</td>
+      <td>Get notification by ID</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td><code>NotificationResource</code></td>
+      <td>Retrieves a notification.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications</td>
+      <td>GET</td>
+      <td>Get all notifications</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;NotificationResource&gt;</code></td>
+      <td>Returns all notifications.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get notifications by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>List&lt;NotificationResource&gt;</code></td>
+      <td>Returns notifications for a vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/notifications/{id}/read</td>
+      <td>PUT</td>
+      <td>Mark notification as read</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td><code>NotificationResource</code></td>
+      <td>Marks notification as read and returns updated resource.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics</td>
+      <td>POST</td>
+      <td>Create a new wellness metric</td>
+      <td>none</td>
+      <td><code>CreateWellnessMetricResource</code></td>
+      <td><code>WellnessMetricResource</code> (201)</td>
+      <td>Creates metric for a vehicle.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/{id}</td>
+      <td>PUT</td>
+      <td>Update a wellness metric</td>
+      <td>path: <code>id</code></td>
+      <td><code>UpdateWellnessMetricResource</code></td>
+      <td><code>WellnessMetricResource</code></td>
+      <td>Updates metric by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/{id}</td>
+      <td>DELETE</td>
+      <td>Delete a wellness metric</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td>none (204)</td>
+      <td>Deletes metric by ID.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/{id}</td>
+      <td>GET</td>
+      <td>Get wellness metric by ID</td>
+      <td>path: <code>id</code></td>
+      <td>none</td>
+      <td><code>WellnessMetricResource</code></td>
+      <td>Retrieves a metric.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics</td>
+      <td>GET</td>
+      <td>Get all wellness metrics</td>
+      <td>none</td>
+      <td>none</td>
+      <td><code>List&lt;WellnessMetricResource&gt;</code></td>
+      <td>Returns all wellness metrics.</td>
+    </tr>
+    <tr>
+      <td>/api/v1/metrics/vehicle/{vehicleId}</td>
+      <td>GET</td>
+      <td>Get wellness metrics by vehicle ID</td>
+      <td>path: <code>vehicleId</code></td>
+      <td>none</td>
+      <td><code>List&lt;WellnessMetricResource&gt;</code></td>
+      <td>Returns metrics for specific vehicle.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ##### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
@@ -5711,11 +6468,94 @@ Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https:
 
 **Web Application**
 
+Para desplegar la web application se necesita crear una cuenta en Render y crear un servicio web enlazado con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 4"/>
+
+Enlace a la web application en Render: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
 **Mobile Application**
+
+Para desplegar la aplicación de android primero se debe crear un proyecto en la plataforma de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-1.png" alt="Mobile Application deploy evidence 1"/>
+
+Luego se debe debe registrar una nueva aplicación de tipo flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-2.png" alt="Mobile Application deploy evidence 2"/>
+
+Ahora se siguen los siguientes pasos:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-3.png" alt="Mobile Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-4.png" alt="Mobile Application deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-5.png" alt="Mobile Application deploy evidence 5"/>
+
+Además de esto en el proyecto flutter dentro del pubspec.yaml se debe agregar el plugin de firebase distribution:
+
+```yaml
+dev_dependencies:
+  firebase_core: ^2.0.0
+```
+
+Ahora debemos inicializar firebase en el proyecto de flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-6.png" alt="Mobile Application deploy evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-7.png" alt="Mobile Application deploy evidence 7"/>
+
+Después de ejecutar el app ya esta presente en el dashboard de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-8.png" alt="Mobile Application deploy evidence 8"/>
+
+Luego se deben subir el/los archivo apk a firebase distribution, agregar verificadores y algún comentario. El apk se crear a partir del comando:
+
+```yaml
+flutter build apk --release
+```
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-9.png" alt="Mobile Application deploy evidence 9"/>
+
+Una vez enviada la invitación desde la aplicación apptester se debe probar la aplicación en un dispositivo móvil:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-10.png" alt="Mobile Application deploy evidence 10"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-11.png" alt="Mobile Application deploy evidence 11"/>
 
 **Backend**
 
-Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#/](https://bykerz-backend.onrender.com/swagger-ui/index.html#/)
+Antes de desplegar el backend se necesita crear una cuenta en Render y crear una base de datos en PostgreSQL:
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 4"/>
+
+Una vez creada la base de datos, se procede a crear el servicio web en Render y enlazarlo con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-1.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-2.png" alt="Backend deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-3.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-4.png" alt="Backend deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-5.png" alt="Backend deploy evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-6.png" alt="Backend deploy evidence 6"/>
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
 
 ##### 6.2.2.9. Team Collaboration Insights during Sprint.
 
@@ -5723,47 +6563,118 @@ En esta sección se presentan los insights de colaboración del equipo durante e
 
 **Landing Page**
 
+<img src="images/chapter-6/sprint-2/insights/landing-sprint-2-insights-1.png" alt="Landing Page sprint 2 insights 1"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 0 commits
+* Astonitas Díaz Juan Diego: 2 commits
+* Casas Sanchez Gabriel Alexander: 0 commits
+* Pacheco Astiguetta Sebastian: 0 commits
+* Pasquale Barrenechea Gianluca Santino: 0 commits
+* Real Calderon Sebatian Omar: 0 commits
 
 **Backend**
 
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-1.png" alt="Backend sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-2.png" alt="Backend sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-3.png" alt="Backend sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-4.png" alt="Backend sprint 2 insights 4"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-5.png" alt="Backend sprint 2 insights 5"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-6.png" alt="Backend sprint 2 insights 6"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-7.png" alt="Backend sprint 2 insights 7"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-8.png" alt="Backend sprint 2 insights 8"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-9.png" alt="Backend sprint 2 insights 9"/>
+
+<img src="images/chapter-6/sprint-2/insights/backend-sprint-2-insights-10.png" alt="Backend sprint 2 insights 10"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 4 commits
+* Astonitas Díaz Juan Diego: 6 commits
+* Casas Sanchez Gabriel Alexander: 17 commits
+* Pacheco Astiguetta Sebastian: 28 commits
+* Pasquale Barrenechea Gianluca Santino: 3 commits
+* Real Calderon Sebatian Omar: 4 commits
 
 **Web Application**
 
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-1.png" alt="Web Application sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-2.png" alt="Web Application sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-3.png" alt="Web Application sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-4.png" alt="Web Application sprint 2 insights 4"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-5.png" alt="Web Application sprint 2 insights 5"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-6.png" alt="Web Application sprint 2 insights 6"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-7.png" alt="Web Application sprint 2 insights 7"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-8.png" alt="Web Application sprint 2 insights 8"/>
+
+<img src="images/chapter-6/sprint-2/insights/webapp-sprint-2-insights-9.png" alt="Web Application sprint 2 insights 9"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 12 commits
+* Astonitas Díaz Juan Diego: 6 commits
+* Casas Sanchez Gabriel Alexander: 29 commits
+* Pacheco Astiguetta Sebastian: 96 commits
+* Pasquale Barrenechea Gianluca Santino: 18 commits
+* Real Calderon Sebatian Omar: 14 commits
 
 **Mobile Application**
 
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-1.png" alt="Mobile Application sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-2.png" alt="Mobile Application sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-3.png" alt="Mobile Application sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-4.png" alt="Mobile Application sprint 2 insights 4"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-5.png" alt="Mobile Application sprint 2 insights 5"/>
+
+<img src="images/chapter-6/sprint-2/insights/mobile-sprint-2-insights-6.png" alt="Mobile Application sprint 2 insights 6"/>
+
 Distribución de commits:
 
-* Alejo Cardenas Jose Antonio: commits
-* Astonitas Díaz Juan Diego: commits
-* Casas Sanchez Gabriel Alexander: commits
-* Pacheco Astiguetta Sebastian: commits
-* Pasquale Barrenechea Gianluca Santino: commits
-* Real Calderon Sebatian Omar: commits
+* Alejo Cardenas Jose Antonio: 11 commits
+* Astonitas Díaz Juan Diego: 7 commits
+* Casas Sanchez Gabriel Alexander: 13 commits
+* Pacheco Astiguetta Sebastian: 38 commits
+* Pasquale Barrenechea Gianluca Santino: 3 commits
+* Real Calderon Sebatian Omar: 8 commits
+
+**Edge Services**
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-1.png" alt="Edge Services sprint 2 insights 1"/>
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-2.png" alt="Edge Services sprint 2 insights 2"/>
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-3.png" alt="Edge Services sprint 2 insights 3"/>
+
+<img src="images/chapter-6/sprint-2/insights/edge-sprint-2-insights-4.png" alt="Edge Services sprint 2 insights 4"/>
+
+Distribución de commits:
+
+* Alejo Cardenas Jose Antonio: 1 commits
+* Astonitas Díaz Juan Diego: 1 commits
+* Casas Sanchez Gabriel Alexander: 11 commits
+* Pacheco Astiguetta Sebastian: 2 commits
+* Pasquale Barrenechea Gianluca Santino: 1 commits
+* Real Calderon Sebatian Omar: 2 commits
 
 ### 6.3. Validation Interviews.
 
@@ -5964,6 +6875,18 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 
 
 ### 6.4. Video About-the-Product.
+
+| Sección                         | Web Application                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Resumen del video               | En este video se presenta una demostración completa de la Web Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo los usuarios pueden registrarse, iniciar sesión y navegar por el panel principal, donde pueden gestionar asignaciones, programar mantenimientos y acceder a comparativas entre motos. Además, se ilustran los flujos de trabajo para mecánicos y dueños de vehículos, enfatizando la facilidad de uso y la eficiencia que la aplicación ofrece para optimizar la gestión de servicios mecánicos. | 
+| Cuadro del video representativo | ![About The Product Web Application](images/chapter-6/about-the-product/about-the-product-web.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| URL del video                   | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D]                                                                                                                                                                                                                                           |
+
+| Sección                         | Mobile Application                                                                                                                                                                                                                                                                                                        |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Resumen del video               | En este video se presenta una demostración completa de la Mobile Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo los motociclistas pueden iniciar sesión, registrar sus vehículos y gestionar mantenimientos desde la comodidad de su dispositivo móvil.             |
+| Cuadro del video representativo | ![About The Product Mobile Application](images/chapter-6/about-the-product/about-the-product-mobile.png)                                                                                                                                                                                                                  |
+| URL del video                   | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV] |
 
 ## Conclusiones
 
