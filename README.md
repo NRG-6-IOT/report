@@ -6021,6 +6021,8 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
+Para este sprint no se contemplaron pruebas unitarias.
+
 ##### 6.2.2.6. Execution Evidence for Sprint Review.
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
@@ -6029,9 +6031,37 @@ Video: []()
 
 **Backend**
 
+<img src="images/chapter-6/sprint-2/backend-execution-evidence-1.png" alt="Backend execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-execution-evidence-2.png" alt="Backend execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-execution-evidence-3.png" alt="Backend execution evidence 3"/>
+
+Enlace: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
+
 **Web Application**
 
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-1.png" alt="Web Application execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-2.png" alt="Web Application execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-3.png" alt="Web Application execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-execution-evidence-4.png" alt="Web Application execution evidence 4"/>
+
+Enlace:[https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
 **Mobile Application**
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-1.png" alt="Mobile Application execution evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-2.png" alt="Mobile Application execution evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-3.png" alt="Mobile Application execution evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-4.png" alt="Mobile Application execution evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/mobile-execution-evidence-5.png" alt="Mobile Application execution evidence 5"/>
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
