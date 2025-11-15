@@ -33,7 +33,7 @@
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 
 
-**Septiembre 2025**
+**Noviembre 2025**
 
 **Registro de Versiones del Informe**
 
@@ -130,6 +130,48 @@
         <td>03/10/2025</td>
         <td>Casas Sanchez Gabriel Alexander</td>
         <td>Se añadieron los general style guidelines</td>
+    </tr>
+    <tr>
+        <td>1.5</td>
+        <td>13/11/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se agregaron las evidencias de entrevistas</td>
+    </tr>
+    <tr>
+        <td>1.6</td>
+        <td>14/11/2025</td>
+        <td>Pasquale Barrenechea Gianluca Santino</td>
+        <td>Se agregaron las evaluaciones y heurísticas de las entrevistas</td>
+    </tr>
+    <tr>
+        <td>1.7</td>
+        <td>14/11/2025</td>
+        <td>Pacheco Astiguetta Sebastian</td>
+        <td>Se actualizó la documentación del IAM según lo re-estructurado</td>
+    </tr>
+    <tr>
+        <td>1.8</td>
+        <td>15/11/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se agregaron las evidencias de ejecución y de desarrollo de los productos</td>
+    </tr>
+    <tr>
+        <td>1.9</td>
+        <td>15/11/2025</td>
+        <td>Pasquale Barrenechea Gianluca Santino</td>
+        <td>Se actualizaron las documentaciones de endpoints de servicios relacionados con web y mobile</td>
+    </tr>
+    <tr>
+        <td>1.10</td>
+        <td>15/11/2025</td>
+        <td>Pacheco Astiguetta Sebastian</td>
+        <td>Se agregó evidencia de ejecución para el prototipo IoT y embedded</td>
+    </tr>
+    <tr>
+        <td>2.0</td>
+        <td>15/11/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se agregaron los insights pertenecientes al sprint 2</td>
     </tr>
   </tbody>
 </table>
