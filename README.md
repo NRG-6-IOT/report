@@ -5461,8 +5461,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"><strong>Status</strong></td>
   </tr>
   <tr>
-    <td colspan="3">US-037</td>
-    <td colspan="3">Manejo de asignaciones</td>
+    <td rowspan="3">US-037</td>
+    <td rowspan="3">Manejo de asignaciones</td>
     <td>T-001</td>
     <td>Crear el botón de generación de asignaciones</td>
     <td>Crear el botón de generación de asignaciones</td>
@@ -5487,8 +5487,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="2">US-038</td>
-    <td colspan="2">Vinculación de asignación</td>
+    <td rowspan="2">US-038</td>
+    <td rowspan="2">Vinculación de asignación</td>
     <td>T-004</td>
     <td>Crear el formulario de ingreso de código de asignación</td>
     <td>Crear el formulario de ingreso de código de asignación</td>
@@ -5505,8 +5505,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="2">US-039</td>
-    <td colspan="2">Creación de perfil para motociclistas</td>
+    <td rowspan="2">US-039</td>
+    <td rowspan="2">Creación de perfil para motociclistas</td>
     <td>T-006</td>
     <td>Validar código en registro</td>
     <td>Validar código en registro</td>
@@ -5523,8 +5523,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="2">US-040</td>
-    <td colspan="2">Creación de perfil para mecánicos</td>
+    <td rowspan="2">US-040</td>
+    <td rowspan="2">Creación de perfil para mecánicos</td>
     <td>T-008</td>
     <td>Listar las membresías disponibles</td>
     <td>Listar las membresías disponibles</td>
@@ -5541,8 +5541,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="3">US-041</td>
-    <td colspan="3">Autenticación en la aplicación web</td>
+    <td rowspan="3">US-041</td>
+    <td rowspan="3">Autenticación en la aplicación web</td>
     <td>T-010</td>
     <td>Validar credenciales del usuario</td>
     <td>Validar credenciales del usuario</td>
@@ -5767,8 +5767,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td colspan="1"></td>
   </tr>
   <tr>
-    <td colspan="4">US-066</td>
-    <td colspan="4">Visualización de vehículos</td>
+    <td rowspan="4">US-066</td>
+    <td rowspan="4">Visualización de vehículos</td>
     <td>T-054</td>
     <td>Diseñar cards de Vehículo</td>
     <td>Diseñar cards de Vehículo</td>
@@ -5801,8 +5801,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="5">US-067</td>
-    <td colspan="5">Visualización de detalles de un vehículo</td>
+    <td rowspan="5">US-067</td>
+    <td rowspan="5">Visualización de detalles de un vehículo</td>
     <td>T-058</td>
     <td>Implementar llamada a la API de vehículo por ID</td>
     <td>Implementar llamada a la API de vehículo por ID</td>
@@ -5843,8 +5843,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="6">US-068</td>
-    <td colspan="6">Registro de Vehículo</td>
+    <td rowspan="6">US-068</td>
+    <td rowspan="6">Registro de Vehículo</td>
     <td>T-063</td>
     <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
     <td>Implementar endpoint de POST en la API para la creación de un Vehículo</td>
