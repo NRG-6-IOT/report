@@ -10,9 +10,11 @@
 
 **Profesor:** Ángel Augusto Velásquez Núñez
 
-**Ingeniería de software**
+**Facultad:** Ingeniería
 
-**Informe del trabajo Final**
+**Carrera:** Ingeniería de software
+
+**Informe del Trabajo Final**
 
 **Nombre del startup:** NRG6
 
@@ -21,7 +23,7 @@
 **Integrantes**
 
 
-| **Nombre**                                | **Codigo** |
+| **Nombre**                                | **Código** |
 |-------------------------------------------|------------|
 | **Alejo Cardenas Jose Antonio**           | U202122484 |
 | **Astonitas Díaz Juan Diego**             | U202110237 |
@@ -197,8 +199,6 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
       - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
       - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
     - [1.2 Solution Profile](#12-solution-profile)
-      - [Problema identificado](#problema-identificado)
-      - [Solución propuesta](#solución-propuesta)
       - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
       - [1.2.2 Lean UX Process](#122-lean-ux-process)
         - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
@@ -307,17 +307,9 @@ Posteriormente, el equipo generó las Development Evidence, Testing Suite Eviden
       - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
     - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
       - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-        - [Web Application](#web-application)
-        - [Mobile Application](#mobile-application)
       - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
-        - [Web Application](#web-application-1)
-        - [Mobile Application](#mobile-application-1)
       - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-        - [Web Application](#web-application-2)
-        - [Mobile Application](#mobile-application-2)
       - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-        - [Web Application](#web-application-3)
-    - [Mobile Application](#mobile-application-3)
     - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
     - [6.1. Software Configuration Management.](#61-software-configuration-management)
@@ -482,10 +474,10 @@ BykerZ Platform, conecta sensores IoT instalados en los vehículos con aplicacio
 </table>
 
 ### 1.2 Solution Profile
-#### Problema identificado  
+**Problema identificado** 
 En el contexto urbano, los dueños de motos suelen carecer de herramientas digitales que les permitan monitorear el estado de sus vehículos y llevar un control de sus costos de uso y mantenimiento. Esto ocasiona un uso ineficiente del combustible (monetario y rendimiento), fallas mecánicas inesperadas, gastos imprevistos y dificultades para planificar el cuidado preventivo de la moto.  
 Por otro lado, los mecánicos y talleres enfrentan la falta de información confiable y actualizada sobre el historial junto a la condición de las motos de sus clientes, lo que en ocasiones limita la precisión de los diagnósticos y la capacidad de generar relaciones de confianza y fidelización.
-#### Solución propuesta  
+**Solución propuesta**
 La plataforma IoT para motos urbanas BykerZ ofrece un ecosistema digital compuesto por aplicaciones móviles, web y un dispositivo embebido que recolecta datos de telemetría en tiempo real (kilometraje, consumo de gasolina, estado de batería, vibración y temperatura del motor).  
 - Desde el rol de usuario de moto urbana:
     - Consultar métricas de eficiencia de combustible
@@ -4542,7 +4534,7 @@ En esta sección se desarrolla la propuesta de diseño visual e interactivo de l
 
 #### 5.4.1. Applications Wireframes
 
-##### Web Application
+**Web Application**
 
 Esta sección presenta los wireframes de las aplicacion web, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
@@ -4555,7 +4547,7 @@ Esta sección presenta los wireframes de las aplicacion web, donde se define la 
 ![wireframe7.png](images/chapter-5/wireframes/wireframe7.png)
 ![wireframe8.png](images/chapter-5/wireframes/wireframe8.png)
 
-##### Mobile Application
+**Mobile Application**
 
 Esta sección presenta los wireframes de las aplicacion movil, donde se define la estructura, jerarquía y navegación de la interfaz. Se evidencia la aplicación de los principios de diseño inclusivo, la arquitectura de información y las buenas prácticas de diseño centrado en el usuario.
 
@@ -4583,7 +4575,7 @@ Esta sección presenta los wireframes de las aplicacion movil, donde se define l
 #### 5.4.2. Applications Wireflow Diagram
 En esta sección se presentan los wireflows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
-##### Web Application
+**Web Application**
 La aplicación web está diseñada para ambos User Persona, siendo dueños de motocicletas o mecánicos, con funcionalidades adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
@@ -4636,7 +4628,7 @@ El wireflow inicia cuando el usuario presiona en la barra de navegación superio
 ![wireflow10.drawio.png](images/chapter-5/wireflows-web/wireflow10.drawio.png)
 El wireflow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
-##### Mobile Application
+**Mobile Application**
 La aplicación web está diseñada con las funcionalidades para los dueños de motocicletas, adaptadas a sus necesidades específicas y con una navegación intuitiva.
 
 **User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
@@ -4681,7 +4673,7 @@ El wireflow inicia cuando el usuario presiona el botón de la barra lateral desd
 
 #### 5.4.3. Applications Mock-ups
 
-##### Web Application
+**Web Application**
 
 En esta sección se presentan los mock-ups finales de la aplicacion web, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
@@ -4704,7 +4696,7 @@ En esta sección se presentan los mock-ups finales de la aplicacion web, donde s
 ![mockup17.png](images/chapter-5/mockups/mockup17.png)
 ![mockup18.png](images/chapter-5/mockups/mockup18.png)
 
-##### Mobile Application
+**Mobile Application**
 
 En esta sección se presentan los mock-ups finales de la aplicacion movil, donde se refleja la apariencia visual definitiva y la interacción esperada por el usuario. La propuesta integra los principios de diseño, accesibilidad y coherencia visual, aplicando el Design System establecido para garantizar una experiencia uniforme, atractiva y funcional en todos los entornos digitales.
 
@@ -4758,7 +4750,7 @@ En esta sección se presentan los mock-ups finales de la aplicacion movil, donde
 
 En esta sección se presentan los user flows que ilustran los flujos de interacción y navegación dentro de las aplicaciones web y móvil de BykerZ, considerando los User goals propuestos.
 
-##### Web Application
+**Web Application**
 
 **User Goal: Como dueño de moto, quiero visualizar los gastos que tengo registrados.**
 ![usergoal1.drawio.png](images/chapter-5/user-goals-web/usergoal1.drawio.png)
@@ -4811,7 +4803,7 @@ El user flow inicia cuando el usuario presiona en la barra de navegación superi
 El user flow inicia cuando el usuario presiona en la barra de navegación superior desde el panel principal y selecciona la sección Membresía. Al acceder, la interfaz muestra las opciones de planes disponibles, donde el usuario presiona en el plan de su preferencia para ver los detalles. Dentro de esta vista, el usuario presiona el botón Adquirir, completa el formulario con los datos de pago y confirma la acción al presionar Confirmar. Finalmente, el sistema actualiza la interfaz y el usuario observa la confirmación de su membresía reflejada en la pantalla.
 
 
-### Mobile Application
+**Mobile Application**
 
 **User Goal: Como Motociclista, quiero ver  un resumen de mis vehiculos, gastos y mantenimientos.**
 ![userflow-ver-dashboard.png](images/chapter-5/userflows-mobile/userflow-ver-dashboard.png)
@@ -4857,10 +4849,10 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 
 En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
-Aplicación Móvil:
+**Aplicación Móvil:**
 - [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
 
-Aplicación Web:
+**Aplicación Web:**
 - [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
 
 ## Capítulo VI: Product Implementation, Validation & Deployment
