@@ -6076,6 +6076,53 @@ Enlace a la web application en Render: [https://bykerz-web-application.onrender.
 
 **Mobile Application**
 
+Para desplegar la aplicación de android primero se debe crear un proyecto en la plataforma de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-1.png" alt="Mobile Application deploy evidence 1"/>
+
+Luego se debe debe registrar una nueva aplicación de tipo flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-2.png" alt="Mobile Application deploy evidence 2"/>
+
+Ahora se siguen los siguientes pasos:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-3.png" alt="Mobile Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-4.png" alt="Mobile Application deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-5.png" alt="Mobile Application deploy evidence 5"/>
+
+Además de esto en el proyecto flutter dentro del pubspec.yaml se debe agregar el plugin de firebase distribution:
+
+```yaml
+dev_dependencies:
+  firebase_core: ^2.0.0
+```
+
+Ahora debemos inicializar firebase en el proyecto de flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-6.png" alt="Mobile Application deploy evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-7.png" alt="Mobile Application deploy evidence 7"/>
+
+Después de ejecutar el app ya esta presente en el dashboard de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-8.png" alt="Mobile Application deploy evidence 8"/>
+
+Luego se deben subir el/los archivo apk a firebase distribution, agregar verificadores y algún comentario. El apk se crear a partir del comando:
+
+```yaml
+flutter build apk --release
+```
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-9.png" alt="Mobile Application deploy evidence 9"/>
+
+Una vez enviada la invitación desde la aplicación apptester se debe probar la aplicación en un dispositivo móvil:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-10.png" alt="Mobile Application deploy evidence 10"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-11.0png" alt="Mobile Application deploy evidence 11"/>
+
 **Backend**
 
 Antes de desplegar el backend se necesita crear una cuenta en Render y crear una base de datos en PostgreSQL:
