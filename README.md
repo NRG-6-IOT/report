@@ -5729,8 +5729,8 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Done</td>
   </tr>
   <tr>
-    <td colspan="4">US-059</td>
-    <td colspan="4">Gestión del progreso del mantenimiento</td>
+    <td rowspan="4">US-059</td>
+    <td rowspan="4">Gestión del progreso del mantenimiento</td>
     <td>T-044</td>
     <td>Implementar la vista de Mantenimiento para Owner</td>
     <td>Implementar la vista de Mantenimiento para Owner</td>
