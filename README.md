@@ -3827,462 +3827,314 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.6.1 Domain Layer
 
-<h3>Aggregates</h3>
-<h4><code>User</code></h4>
-<p><strong>Descripción:</strong> Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales y rol.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>id</td><td>int</td><td>Identificador único del usuario.</td></tr>
-    <tr><td>username</td><td>varchar</td><td>Nombre de usuario único (para login).</td></tr>
-    <tr><td>email</td><td>varchar</td><td>Correo electrónico verificado o por verificar.</td></tr>
-    <tr><td>password</td><td>varchar</td><td>Contraseña del usuario (almacenada con hash).</td></tr>
-    <tr><td>displayName</td><td>varchar</td><td>Nombre visible en la plataforma.</td></tr>
-    <tr><td>role</td><td>varchar</td><td>Rol asignado al usuario (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
-    <tr><td>createdAt</td><td>Timestamp</td><td>Fecha de creación del usuario.</td></tr>
-    <tr><td>updatedAt</td><td>Timestamp</td><td>Última fecha de actualización del usuario.</td></tr>
-    <tr><td>status</td><td>UserStatus (Enum)</td><td>Estado de la cuenta (ACTIVE, SUSPENDED, DELETED).</td></tr>
-  </tbody>
-</table>
+**Aggregates**
 
-<h3>Value Objects</h3>
-<h4><code>Role</code></h4>
-<p><strong>Descripción:</strong> Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>name</td><td>String</td><td>Nombre del rol (ej. ROLE_OWNER, ROLE_MECHANIC, ROLE_ADMIN).</td></tr>
-    <tr><td>permissions</td><td>Set&lt;String&gt;</td><td>Lista de permisos asociados al rol.</td></tr>
-  </tbody>
-</table>
+`User`
 
-<h4><code>UserStatus</code> (Enum)</h4>
-<ul>
-  <li>ACTIVE</li>
-  <li>SUSPENDED</li>
-  <li>DELETED</li>
-</ul>
+**Descripción:** Agregado raíz que representa a un usuario en la plataforma BykerZ. Centraliza identidad, credenciales y rol.</p>
 
-<h3>Commands</h3>
-<ul>
-  <li><code>SignUpCommand</code> (Record)</li>
-  <li><code>SignInCommand</code> (Record)</li>
-  <li><code>UpdateUserInfoCommand</code> (Record)</li>
-  <li><code>SeedRolesCommand</code> (Record)</li>
-</ul>
+| Atributo  | Tipo      | Descripción                             |
+|-----------|-----------|-----------------------------------------|
+| id        | Long      | Identificador único del rol.            |
+| username  | String    | Nombre de usuario único.                |
+| password  | String    | Contraseña del usuario (hashed).        |
+| userRoles | Set<Role> | Conjunto de roles asignados al usuario. |
 
-<h3>Queries</h3>
-<ul>
-  <li><code>GetAllRolesQuery</code> (Record)</li>
-  <li><code>GetAllUsersQuery</code> (Record)</li>
-  <li><code>GetRoleByNameQuery</code> (Record)</li>
-  <li><code>GetUserByIdQuery</code> (Record)</li>
-  <li><code>GetUserByUsernameQuery</code> (Record)</li>
-</ul>
+**Entities**
 
-<h3>Services</h3>
-<h4><code>UserCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(SignUpCommand)</li>
-  <li>+ handle(SignInCommand)</li>
-  <li>+ handle(UpdateUserInfoCommand)</li>
-</ul>
-<h4><code>UserQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetAllUsersQuery)</li>
-  <li>+ handle(GetUserByIdQuery)</li>
-  <li>+ handle(GetUserByUsernameQuery)</li>
-</ul>
-<h4><code>RoleCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(SeedRolesCommand)</li>
-</ul>
-<h4><code>RoleQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetAllRolesQuery)</li>
-  <li>+ handle(GetRoleByNameQuery)</li>
-</ul>
+`Role`
+
+**Descripción:** Entidad que representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
+
+| Atributo | Tipo  | Descripción                      |
+|----------|-------|----------------------------------|
+| id       | Long  | Identificador único del rol.     |
+| name     | Roles | Nombre del rol (ej. ROLE_ADMIN). |
+
+**Value Objects**
+
+`Roles` (Enum)
+
+**Descripción:** Representa un rol (conjunto de permisos) que puede asignarse a usuarios.</p>
+
+- ROLE_ADMIN
+- ROLE_MECHANIC
+- ROLE_OWNER
+
+**Commands**
+
+- `CreateUserCommand` (Record)
+- `DeleteUserCommand` (Record)
+- `SeedRolesCommand` (Record)
+- `SignInCommand` (Record)
+- `SignUpCommand` (Record)
+- `UpdateUserCommand` (Record)
+
+**Queries**
+
+- `GetAllRolesQuery` (Record)
+- `GetAllUsersQuery` (Record)
+- `GetUserByIdQuery` (Record)
+- `GetUserByUsernameQuery` (Record)
+
+**Services**
+
+`RoleCommandService`
+
+- handle(SeedRolesCommand)
+
+`RoleQueryService`
+
+- handle(GetAllRolesQuery)
+
+`UserCommandService`
+
+- handle(DeleteUserCommand)
+- handle(UpdateUserCommand)
+- handle(SignInCommand)
+- handle(SignUpCommand)
+
+`UserQueryService`
+
+- handle(GetAllUsersQuery)
+- handle(GetUserByIdQuery)
+- handle(GetUserByUsernameQuery)
 
 ##### 4.2.6.2 Interface Layer
 
-<h3>Controlador: <code>AuthenticationController</code></h3>
-<table>
-  <tr><th>Título</th><td>AuthenticationController</td></tr>
-  <tr><th>Descripción</th><td>Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma BykerZ.</td></tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>signIn(SignInResource credentials)</td>
-      <td>POST /api/iam/auth/signin</td>
-      <td>Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica.</td>
-    </tr>
-    <tr>
-      <td>signUp(SignUpResource data)</td>
-      <td>POST /api/iam/auth/signup</td>
-      <td>Registra un nuevo usuario en la plataforma con credenciales y rol inicial.</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>UserCommandService</td>
-      <td>Servicio encargado de manejar los comandos relacionados con usuarios.</td>
-    </tr>
-    <tr>
-      <td>AuthenticationResourceAssembler</td>
-      <td>Convierte entidades de autenticación en recursos REST para las respuestas.</td>
-    </tr>
-  </tbody>
-</table>
+**Controlador:** `AuthenticationController`
 
-<h3>Controlador: <code>RolesController</code></h3>
-<table>
-  <tr><th>Título</th><td>RolesController</td></tr>
-  <tr><th>Descripción</th><td>Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema.</td></tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getAllRoles()</td>
-      <td>GET /api/iam/roles</td>
-      <td>Lista todos los roles disponibles en el sistema.</td>
-    </tr>
-    <tr>
-      <td>getRoleByName(String name)</td>
-      <td>GET /api/iam/roles/{name}</td>
-      <td>Obtiene un rol específico por su nombre.</td>
-    </tr>
-    <tr>
-      <td>seedRoles()</td>
-      <td>POST /api/iam/roles/seed</td>
-      <td>Inicializa los roles base del sistema (ej. Owner, Mechanic, Admin).</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>RoleQueryService</td>
-      <td>Servicio para consultas relacionadas con roles.</td>
-    </tr>
-    <tr>
-      <td>RoleCommandService</td>
-      <td>Servicio para comandos relacionados con la inicialización de roles.</td>
-    </tr>
-    <tr>
-      <td>RoleResourceAssembler</td>
-      <td>Convierte objetos <code>Role</code> en <code>RoleResource</code>.</td>
-    </tr>
-  </tbody>
-</table>
+| Titulo                   | Descripción                                                                                                            |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------|
+| AuthenticationController | Controlador REST encargado de exponer los endpoints para autenticación y registro de usuarios en la plataforma BykerZ. |
 
-<h3>Controlador: <code>UsersController</code></h3>
-<table>
-  <tr><th>Título</th><td>UsersController</td></tr>
-  <tr><th>Descripción</th><td>Controlador REST encargado de operaciones CRUD y consultas sobre usuarios en BykerZ.</td></tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getAllUsers()</td>
-      <td>GET /api/iam/users</td>
-      <td>GET /api/iam/users</td>
-      <td>Lista todos los usuarios registrados en la plataforma.</td>
-    </tr>
-    <tr>
-      <td>getUserById(Long id)</td>
-      <td>GET /api/iam/users/{id}</td>
-      <td>Obtiene los detalles de un usuario por su identificador único.</td>
-    </tr>
-    <tr>
-      <td>updateUserInfo(Long id, UserResource user)</td>
-      <td>PUT /api/iam/users/{id}</td>
-      <td>Actualiza información de un usuario (displayName, email, role, status).</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>UserQueryService</td>
-      <td>Servicio encargado de consultas de usuarios.</td>
-    </tr>
-    <tr>
-      <td>UserCommandService</td>
-      <td>Servicio encargado de manejar los comandos relacionados con la gestión de usuarios.</td>
-    </tr>
-    <tr>
-      <td>UserResourceAssembler</td>
-      <td>Convierte entidades <code>User</code> en <code>UserResource</code>.</td>
-    </tr>
-  </tbody>
-</table>
+| Método                 | Ruta                                | Descripción                                                                                   |
+|------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------|
+| signIn(SignInResource) | POST /api/v1/authentication/sign-in | Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica. |
+| signUp(SignUpResource) | POST /api/v1/authentication/sign-up | Registra un nuevo usuario en la plataforma con credenciales y rol inicial.                    |
+
+**Controlador:** `RolesController`
+
+| Título          | Descripción                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------|
+| RolesController | Controlador REST encargado de exponer operaciones relacionadas con los roles del sistema. |
+
+| Método                     | Ruta              | Descripción                                               |
+|----------------------------|-------------------|-----------------------------------------------------------|
+| getAllRoles()              | GET /api/v1/roles | Lista todos los roles disponibles en el sistema.          |
+
+**Controlador:** `UsersController`
+
+| Título          | Descripción                                                                          |
+|-----------------|--------------------------------------------------------------------------------------|
+| UsersController | Controlador REST encargado de operaciones CRUD y consultas sobre usuarios en BykerZ. |
+
+| Método                         | Ruta                                  | Descripción                                                  |
+|--------------------------------|---------------------------------------|--------------------------------------------------------------|
+| updateUser(UpdateUserResource) | PUT /api/v1/users                     | Actualiza la información de un usuario existente.            |
+| deleteUser(Long)               | DELETE /api/v1/users/{userId}         | Elimina un usuario del sistema.                              |
+| getUserById(Long)              | GET /api/v1/users/{userId}            | Obtiene los detalles de un usuario por su ID.                |
+| getAllUsers()                  | GET /api/v1/users                     | Lista todos los usuarios registrados en el sistema.          |
+| getUserByUsername(String)      | GET /api/v1/users/username/{username} | Obtiene los detalles de un usuario por su nombre de usuario. |
+
+**Fachada:** `IamContextFacade`
+
+| Título             | Descripción                                                        |
+|--------------------|--------------------------------------------------------------------|
+| IamContextFacade   | Fachada que expone operaciones simplificadas del contexto IAM.     |
+
+| Método                      | Descripción                                   |
+|-----------------------------|-----------------------------------------------|
+| fetchUserById(Long)         | Recupera un usuario por su ID.                |
+| fetchUserByUsername(String) | Recupera un usuario por su nombre de usuario. |
 
 ##### 4.2.6.3 Application Layer
 
-<h3>Clase: <code>UserCommandServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>UserCommandServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones relacionadas con usuarios.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(SignUpCommand)</td><td>Registra un nuevo usuario en la plataforma.</td></tr>
-    <tr><td>handle(UpdateUserInfoCommand)</td><td>Actualiza la información de un usuario existente.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>UserRepository</td><td>Repositorio encargado de la persistencia de usuarios.</td></tr>
-    <tr><td>PasswordHashingService</td><td>Servicio de encriptación de contraseñas.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserCommandServiceImpl`
 
-<hr>
+| Título                 | Descripción                                                                         |
+|------------------------|-------------------------------------------------------------------------------------|
+| UserCommandServiceImpl | Implementación del servicio de comandos para operaciones relacionadas con usuarios. |
 
-<h3>Clase: <code>RoleCommandServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>RoleCommandServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de comandos para la gestión de roles.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(SeedRolesCommand)</td><td>Inicializa los roles básicos de la aplicación (ej. Admin, Mecánico, Motociclista).</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>RoleRepository</td><td>Repositorio encargado de la persistencia y gestión de roles.</td></tr>
-  </tbody>
-</table>
+| Método                    | Descripción                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| handle(UpdateUserCommand) | Actualiza la información de un usuario existente.                                             |
+| handle(DeleteUserCommand) | Elimina un usuario del sistema.                                                               |
+| handle(SignUpCommand)     | Registra un nuevo usuario en la plataforma con credenciales y rol inicial.                    |
+| handle(SignInCommand)     | Autentica a un usuario en el sistema y devuelve un token JWT junto con su información básica. |
 
-<hr>
+**Dependencias:**
 
-<h3>Clase: <code>AuthenticationCommandServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>AuthenticationCommandServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de comandos para operaciones de autenticación.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(SignInCommand)</td><td>Autentica a un usuario y devuelve un token JWT válido.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>UserRepository</td><td>Repositorio de usuarios para verificar credenciales.</td></tr>
-    <tr><td>PasswordHashingService</td><td>Servicio de verificación de contraseñas encriptadas.</td></tr>
-    <tr><td>TokenProviderService</td><td>Servicio encargado de la generación de tokens JWT.</td></tr>
-  </tbody>
-</table>
+| Dependencia            | Descripción                                           |
+|------------------------|-------------------------------------------------------|
+| UserRepository         | Repositorio encargado de la persistencia de usuarios. |
+| RoleRepository         | Repositorio encargado de la gestión de roles.         |
+| HashingService         | Servicio de encriptación de contraseñas.              |
+| TokenService           | Servicio encargado de la generación de tokens JWT.    |
+| ExternalProfileService | Servicio para gestionar perfiles externos.            |
 
-<hr>
+**Clase:** `RoleCommandServiceImpl`
 
-<h3>Clase: <code>UserQueryServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>UserQueryServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de consultas para obtener información de usuarios.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(GetAllUsersQuery)</td><td>Obtiene la lista completa de usuarios registrados.</td></tr>
-    <tr><td>handle(GetUserByIdQuery)</td><td>Recupera los detalles de un usuario por su ID.</td></tr>
-    <tr><td>handle(GetUserByUsernameQuery)</td><td>Busca un usuario por su nombre de usuario.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>UserRepository</td><td>Repositorio encargado de consultas de usuarios.</td></tr>
-  </tbody>
-</table>
+| Título                 | Descripción                                                       |
+|------------------------|-------------------------------------------------------------------|
+| RoleCommandServiceImpl | Implementación del servicio de comandos para la gestión de roles. |
 
-<hr>
+| Método                   | Descripción                                                                        |
+|--------------------------|------------------------------------------------------------------------------------|
+| handle(SeedRolesCommand) | Inicializa los roles básicos de la aplicación (ej. Admin, Mecánico, Motociclista). |
 
-<h3>Clase: <code>RoleQueryServiceImpl</code></h3>
-<table>
-  <tr><th>Título</th><td>RoleQueryServiceImpl</td></tr>
-  <tr><th>Descripción</th><td>Implementación del servicio de consultas para roles.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>handle(GetAllRolesQuery)</td><td>Obtiene todos los roles disponibles en el sistema.</td></tr>
-    <tr><td>handle(GetRoleByNameQuery)</td><td>Recupera un rol específico por su nombre.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>RoleRepository</td><td>Repositorio encargado de consultas de roles.</td></tr>
-  </tbody>
-</table>
+**Dependencias:**
 
-<hr>
+| Dependencia    | Descripción                                                  |
+|----------------|--------------------------------------------------------------|
+| RoleRepository | Repositorio encargado de la persistencia y gestión de roles. |
 
-<h3>Clase: <code>ApplicationReadyEventHandler</code></h3>
-<table>
-  <tr><th>Título</th><td>ApplicationReadyEventHandler</td></tr>
-  <tr><th>Descripción</th><td>Manejador de eventos que inicializa los roles base al iniciar la aplicación.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Evento</th><th>Acción</th></tr></thead>
-  <tbody>
-    <tr><td>ApplicationReadyEvent</td><td>Ejecuta el <code>SeedRolesCommand</code> para poblar roles iniciales.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead><tr><th>Dependencia</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>RoleCommandServiceImpl</td><td>Servicio de comandos encargado de sembrar los roles iniciales.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserQueryServiceImpl`
 
-<hr>
+| Título               | Descripción                                                                    |
+|----------------------|--------------------------------------------------------------------------------|
+| UserQueryServiceImpl | Implementación del servicio de consultas para obtener información de usuarios. |
 
-<h3>Clase: <code>PasswordHashingService</code></h3>
-<table>
-  <tr><th>Título</th><td>PasswordHashingService</td></tr>
-  <tr><th>Descripción</th><td>Servicio encargado de encriptar y verificar contraseñas.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>hashPassword(String plainPassword)</td><td>Genera un hash seguro de una contraseña en texto plano.</td></tr>
-    <tr><td>verifyPassword(String plainPassword, String hashedPassword)</td><td>Valida si una contraseña en texto plano coincide con su hash almacenado.</td></tr>
-  </tbody>
-</table>
+| Método                         | Descripción                                        |
+|--------------------------------|----------------------------------------------------|
+| handle(GetAllUsersQuery)       | Obtiene la lista completa de usuarios registrados. |
+| handle(GetUserByIdQuery)       | Recupera los detalles de un usuario por su ID.     |
+| handle(GetUserByUsernameQuery) | Busca un usuario por su nombre de usuario.         |
 
-<hr>
+**Dependencias:**
 
-<h3>Clase: <code>TokenProviderService</code></h3>
-<table>
-  <tr><th>Título</th><td>TokenProviderService</td></tr>
-  <tr><th>Descripción</th><td>Servicio encargado de generar y validar tokens JWT para la autenticación.</td></tr>
-</table>
-<table>
-  <thead><tr><th>Método</th><th>Descripción</th></tr></thead>
-  <tbody>
-    <tr><td>generateToken(User user)</td><td>Genera un token JWT a partir de la información de un usuario.</td></tr>
-    <tr><td>validateToken(String token)</td><td>Valida la autenticidad y vigencia de un token JWT.</td></tr>
-  </tbody>
-</table>
+| Dependencia    | Descripción                                           |
+|----------------|-------------------------------------------------------|
+| UserRepository | Repositorio encargado de consultas de usuarios.       |
+
+**Clase:** `RoleQueryServiceImpl`
+
+| Título               | Descripción                                          |
+|----------------------|------------------------------------------------------|
+| RoleQueryServiceImpl | Implementación del servicio de consultas para roles. |
+
+| Método                   | Descripción                                        |
+|--------------------------|----------------------------------------------------|
+| handle(GetAllRolesQuery) | Obtiene todos los roles disponibles en el sistema. |
+
+**Dependencias:**
+
+| Dependencia    | Descripción                                  |
+|----------------|----------------------------------------------|
+| RoleRepository | Repositorio encargado de consultas de roles. |
+
+**Clase:** `ApplicationReadyEventHandler`
+
+| Título                       | Descripción                                                                  |
+|------------------------------|------------------------------------------------------------------------------|
+| ApplicationReadyEventHandler | Manejador de eventos que inicializa los roles base al iniciar la aplicación. |
+
+| Evento                                    | Acción                                                     |
+|-------------------------------------------|------------------------------------------------------------|
+| onApplicationReady(ApplicationReadyEvent) | Ejecuta el `SeedRolesCommand` para poblar roles iniciales. |
+
+**Dependencias:**
+
+| Dependencia        | Descripción                                                    |
+|--------------------|----------------------------------------------------------------|
+| RoleCommandService | Servicio de comandos encargado de sembrar los roles iniciales. |
+
+**Clase:** `HashingService`
+
+| Título         | Descripción                                              |
+|----------------|----------------------------------------------------------|
+| HashingService | Servicio encargado de encriptar y verificar contraseñas. |
+
+| Método                        | Descripción                                                              |
+|-------------------------------|--------------------------------------------------------------------------|
+| encode(CharSequence)          | Genera un hash seguro de una contraseña en texto plano.                  |
+| matches(CharSequence, String) | Valida si una contraseña en texto plano coincide con su hash almacenado. |
+
+**Clase:** `HashingService`
+
+| Título         | Descripción                                              |
+|----------------|----------------------------------------------------------|
+| HashingService | Servicio encargado de encriptar y verificar contraseñas. |
+
+| Método                       | Descripción                                                 |
+|------------------------------|-------------------------------------------------------------|
+| generateToken(String)        | Genera un token JWT a partir de la información del usuario. |
+| getUserNameFromToken(String) | Extrae el nombre de usuario contenido en un token JWT.      |
+| validateToken(String)        | Valida la autenticidad y vigencia de un token JWT.          |
+
+**Clase:** `IamContextFacadeImpl`
+
+| Título               | Descripción                                                    |
+|----------------------|----------------------------------------------------------------|
+| IamContextFacadeImpl | Fachada que expone operaciones simplificadas del contexto IAM. |
+
+| Método                      | Descripción                                   |
+|-----------------------------|-----------------------------------------------|
+| fetchUserById(Long)         | Recupera un usuario por su ID.                |
+| fetchUserByUsername(String) | Recupera un usuario por su nombre de usuario. |
+
+**Dependencias:**
+
+| Dependencia        | Descripción                                   |
+|--------------------|-----------------------------------------------|
+| UserQueryService   | Servicio de consultas para obtener usuarios.  |
 
 ###### 4.2.6.4 Infrastructure Layer
 
-<h3>Clase: <code>UserRepositoryImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>UserRepository</code> usando JPA/Hibernate para persistir y consultar usuarios.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>save(User user)</td><td>Persiste o actualiza un usuario.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera un usuario por ID.</td></tr>
-    <tr><td>findByUsername(String username)</td><td>Recupera un usuario por su nombre de usuario.</td></tr>
-    <tr><td>findByEmail(String email)</td><td>Recupera un usuario por email.</td></tr>
-    <tr><td>findAll()</td><td>Lista todos los usuarios registrados.</td></tr>
-  </tbody>
-</table>
+**Clase:** `UserRepository`
 
-<h3>Clase: <code>RoleRepositoryImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>RoleRepository</code> usando JPA/Hibernate para manejar roles y permisos.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Role role)</td><td>Persiste un rol.</td></tr>
-    <tr><td>findByName(String name)</td><td>Busca un rol por nombre.</td></tr>
-    <tr><td>findAll()</td><td>Lista todos los roles disponibles.</td></tr>
-  </tbody>
-</table>
+| Título         | Descripción                                                             |
+|----------------|-------------------------------------------------------------------------|
+| UserRepository | Interfaz de persistencia para operaciones CRUD y consultas de usuarios. |
 
-<h3>Clase: <code>PasswordHashingServiceImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>PasswordHashingService</code> que maneja el hash seguro de contraseñas usando BCrypt.</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>hashPassword(String rawPassword)</td><td>Devuelve el hash de la contraseña.</td></tr>
-    <tr><td>verifyPassword(String rawPassword, String hashedPassword)</td><td>Verifica una contraseña contra su hash.</td></tr>
-  </tbody>
-</table>
+| Método                   | Descripción                                             |
+|--------------------------|---------------------------------------------------------|
+| findByUsername(String)   | Busca un usuario por su nombre de usuario.              |
+| existsByUsername(String) | Verifica si un usuario existe por su nombre de usuario. |
 
-<h3>Clase: <code>TokenProviderServiceImpl</code></h3>
-<p><strong>Descripción:</strong> Implementación de <code>TokenProviderService</code> para generar y validar tokens JWT (usando jjwt o Spring Security JWT).</p>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>generateToken(User user)</td><td>Genera un token JWT con datos del usuario.</td></tr>
-    <tr><td>validateToken(String token)</td><td>Valida un token y devuelve si es válido.</td></tr>
-    <tr><td>extractUsername(String token)</td><td>Obtiene el username desde el token.</td></tr>
-  </tbody>
-</table>
+**Clase:** `RoleRepository`
+
+| Título         | Descripción                                                            |
+|----------------|------------------------------------------------------------------------|
+| RoleRepository | Interfaz de persistencia para operaciones CRUD y consultas de roles.   |
+
+| Método              | Descripción                              |
+|---------------------|------------------------------------------|
+| findByName(Roles)   | Busca un rol por su nombre.              |
+| existsByName(Roles) | Verifica si un rol existe por su nombre. |
+
+**Clase:** `HashingServiceImpl`
+
+| Título             | Descripción                                                                        |
+|--------------------|------------------------------------------------------------------------------------|
+| HashingServiceImpl | Implementación de `HashingService` que utiliza BCrypt para el hash de contraseñas. |
+
+| Método                        | Descripción                                                              |
+|-------------------------------|--------------------------------------------------------------------------|
+| encode(CharSequence)          | Genera un hash seguro de una contraseña en texto plano.                  |
+| matches(CharSequence, String) | Valida si una contraseña en texto plano coincide con su hash almacenado. |
+
+**Clase:** `TokenServiceImpl`
+
+| Título           | Descripción                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| TokenServiceImpl | Implementación de `TokenService` que utiliza JWT para la gestión de tokens. |
+
+| Método                                            | Descripción                                                       |
+|---------------------------------------------------|-------------------------------------------------------------------|
+| buildTokenWithDefaultParameters(String)           | Genera un token JWT a partir de la información del usuario.       |
+| getSigningKey()                                   | Obtiene la clave secreta utilizada para firmar los tokens.        |
+| extractClaim(String, Function<Claims, T>)         | Extrae un reclamo específico de un token JWT.                     |
+| extractAllClaims(String)                          | Extrae todos los reclamos contenidos en un token JWT.             |
+| isTokenPresentIn(String)                          | Verifica si un token JWT está presente en la base de datos.       |
+| isBearerTokenIn(String)                           | Verifica si un token JWT es un token Bearer válido.               |
+| extractTokenFrom(String)                          | Extrae el token JWT del encabezado de autorización.               |
+| getAuthorizationParameterFrom(HttpServletRequest) | Obtiene el parámetro de autorización del request HTTP.            |
+| getBearerTokenFrom(HttpServletRequest)            | Obtiene el token Bearer del request HTTP.                         |
+| generateToken(Authentication)                     | Genera un token JWT basado en la autenticación proporcionada.     |
+| generateToken(String)                             | Genera un token JWT basado en el nombre de usuario proporcionado. |
+| getUserNameFromToken(String)                      | Extrae el nombre de usuario contenido en un token JWT.            |
+| validateToken(String)                             | Valida un token JWT asegurando su integridad y vigencia.          |
 
 ##### 4.2.6.5 Bounded Context Software Architecture Component Level Diagrams
 
