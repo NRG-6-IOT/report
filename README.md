@@ -2440,229 +2440,75 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 **Services**
 
-`AssignmentCommandService`
+`AssignmentCommandService`(Interface)
 * handle(CreateAssignmentCommand)
 * handle(UpdateAssignmentStatusCommand)
 * handle(UpdateAssignmentTypeCommand)
 * handle(AssignOwnerToAssignmentCommand)
 * handle(DeleteAssignmentCommand)
 
-`AssignmentQueryService`
+`AssignmentQueryService`(Interface)
 * handle(GetAssignmentByOwnerIdQuery)
 * handle(GetAssignmentsByMechanicIdAndStatusQuery)
 * handle(GetAssignmentByIdQuery)
 * handle(GetAssigmentByCodeQuery)
 * handle(GetAssignmentByVehicleIdQuery)
 
-`MechanicCommandService`
+`MechanicCommandService`(Interface)
 * handle(CreateMechanicCommand)
 
-`MechanicQueryService`
+`MechanicQueryService`(Interface)
 * handle(GetMechanicByIdQuery)
 
 ##### 4.2.3.2 Interface Layer
 
-<h3>Controlador: <code>AppointmentController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las citas (<code>Appointment</code>), incluyendo su creación y consultas por ID, mecánico o rango de fechas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>createAppointment</td><td>POST /api/v1/appointments</td><td>Crea una nueva cita a partir de los datos enviados en el recurso.</td></tr>
-    <tr><td>getAppointmentById</td><td>GET /api/v1/appointments/{appointmentId}</td><td>Obtiene los detalles de una cita específica por su ID.</td></tr>
-    <tr><td>getAppointmentsByMechanic</td><td>GET /api/v1/appointments/mechanics/{mechanicId}</td><td>Lista todas las citas asociadas a un mecánico en particular.</td></tr>
-    <tr><td>getAppointmentsByDateRange</td><td>GET /api/v1/appointments?start={start}&end={end}</td><td>Obtiene todas las citas registradas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentQueryService</td><td>Servicio para consultas de citas por ID, mecánico o rango de fechas.</td></tr>
-    <tr><td>AppointmentCommandService</td><td>Servicio para ejecutar comandos relacionados con la creación de citas.</td></tr>
-    <tr><td>GenerateAppointmentCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de citas.</td></tr>
-    <tr><td>AppointmentResourceFromEntityAssembler</td><td>Convierte entidades de cita en recursos REST para la respuesta de la API.</td></tr>
-  </tbody>
-</table>
+**Rest Controllers**
 
-<h3>Controlador: <code>SubscriptionController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las suscripciones (<code>Subscription</code>), incluyendo la generación de códigos de invitación, cancelación, vinculación de motociclistas y consultas por ID o mecánico.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>generateInvitationCode</td><td>POST /api/v1/subscriptions/invitations</td><td>Genera un nuevo código de invitación para vincular un motociclista con un mecánico.</td></tr>
-    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{subscriptionId}/cancel</td><td>Cancela una suscripción específica por su ID.</td></tr>
-    <tr><td>linkMotorcyclist</td><td>POST /api/v1/subscriptions/link</td><td>Vincula un motociclista a un mecánico utilizando un código de invitación.</td></tr>
-    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{subscriptionId}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getUsersByMechanic</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}/users</td><td>Lista los motociclistas vinculados a un mecánico.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas de suscripciones por ID y usuarios vinculados a mecánicos.</td></tr>
-    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de generación de códigos de invitación, cancelación y vinculación.</td></tr>
-    <tr><td>GenerateInvitationCodeCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de generación de códigos de invitación.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta de la API.</td></tr>
-  </tbody>
-</table>
+`AssignmentController`
 
-<h3>Resources</h3>
-<ul>
-  <li><code>CreateAppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>AppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>GenerateInvitationCodeResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>SubscriptionResource</code> &lt;&lt;Record&gt;&gt;</li>
-</ul>
+| Método                  | Ruta                                                             | Descripción                                                                         |
+|-------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| updateAssignmentStatus  | /api/v1/assignments/{assignmentId}/status                        | Actualiza el estado de una asignación por su id                                     |
+| updateAssignmentType    | /api/v1/assignments/{assignmentId}/type                          | Actualiza el tipo de una asignación por su id                                       |
+| getAssignmentById       | /api/v1/assignments/{assignmentId}                               | Devuelve una asignación por su id                                                   |
+| assignOwnerToAssignment | /api/v1/assignments/code/{assignmentCode}/assign-owner/{ownerId} | Vincula un dueño con una asignación mediante un codigo de asignación y id del dueño |
+| deleteAssignment        | /api/v1/assignments/{assignmentId}                               | Elimina una asignación por su id                                                    |
+| getAssignmentByCode     | /api/v1/assignments/code/{assignmentCode}                        | Devuelve una asignación por su código                                               |
+
+`MechanicAssigmentController`
+
+| Método           | Ruta                                               | Descripción                                                      |
+|------------------|----------------------------------------------------|------------------------------------------------------------------|
+| getAssignments   | /api/v1/mechanic/{mechanicId}/assignments/{status} | Obtiene todas las asignaciones asociadas a un mecánico por su id |
+| createAssignment | /api/v1/mechanic/{mechanicId}/assignments          | Crea una asignacion y la asocia a un mecánico por su id          |
+
+`MechanicController`
+
+| Método               | Ruta             | Descripción                                                             |
+|----------------------|------------------|-------------------------------------------------------------------------|
+| getOwnersForMechanic | /api/v1/mechanic | Obtiene todos los dueños vinculados a un mecánico por alguna asignación |
+
+`OwnerAssigmentController`
+
+| Método        | Ruta                               | Descripción                                           |
+|---------------|------------------------------------|-------------------------------------------------------|
+| getAssignment | /api/v1/owner/{ownerId}/assignment | Obtiene la asignación asociada con un dueño por su id |
+
+**Resources**
+* AssignmentResource <<record>>
+* MechanicResource <<record>>
+* UpdateAssignmentStatusResource <<record>>
+* UpdateAssignmentTypeResource <<record>>
+
+**Assemblers**
+* AssignmentResourceFromEntityAssembler
+* CreateAssigmentCommandAssembler
+* MechanicResourceFromEntityAssembler
+* UpdateAssignmentStatusCommandFromResourceAssembler
+* UpdateAssignmentTypeCommandFromResourceAssembler
 
 ##### 4.2.3.3 Application Layer
 
-<h3>Clase: <code>AppointmentCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones relacionadas con citas de suscripción.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(ScheduleAppointmentCommand)</td><td>Programa una nueva cita entre un Owner y un Mechanic.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentRepository</td><td>Repositorio encargado de gestionar la persistencia de citas.</td></tr>
-  </tbody>
-</table>
-
-<h3>Clase: <code>SubscriptionCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de creación, cancelación y vinculación de suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GenerateInvitationCodeCommand)</td><td>Genera un código de invitación para que un Owner pueda invitar a un Mechanic o Motorcyclist.</td></tr>
-    <tr><td>handle(CancelSubscriptionCommand)</td><td>Cancela una suscripción activa.</td></tr>
-    <tr><td>handle(LinkMotorcyclistToMechanicCommand)</td><td>Vincula un motociclista con un mecánico dentro de una suscripción.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de la persistencia de suscripciones.</td></tr>
-  </tbody>
-</table>
-
-<h3>Clase: <code>AppointmentQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para obtener información de citas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GetAppointmentByIdQuery)</td><td>Obtiene una cita específica por su ID.</td></tr>
-    <tr><td>handle(GetAppointmentsByMechanicQuery)</td><td>Lista todas las citas programadas para un mecánico específico.</td></tr>
-    <tr><td>handle(GetAppointmentsByDateRangeQuery)</td><td>Obtiene todas las citas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentRepository</td><td>Repositorio encargado de consultas de citas.</td></tr>
-  </tbody>
-</table>
-
-<h3>Clase: <code>SubscriptionQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas relacionadas con suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles de una suscripción por su ID.</td></tr>
-    <tr><td>handle(GetUsersByMechanicQuery)</td><td>Lista todos los Owners y Motorcyclists vinculados a un mecánico a través de suscripciones.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de consultas de suscripciones.</td></tr>
-  </tbody>
-</table>
 
 ##### 4.2.3.4 Infrastructure Layer
 
