@@ -2382,421 +2382,179 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 <img src="./images/chapter-4/history_db.png" alt="history_db" width="600"/>
 
-#### 4.2.3 Bounded Context: Suscripción
+#### 4.2.3 Bounded Context: Assignments
 
 ##### 4.2.3.1 Domain Layer
 
-<h3>Aggregate: <code>Appointment</code></h3>
-<p><strong>Descripción:</strong> Representa una cita programada entre un <code>Mechanic</code> y un vehículo específico, con fecha y hora definidas.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>Identificador único del mecánico asignado.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador único del vehículo asociado.</td></tr>
-    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de la cita.</td></tr>
-  </tbody>
-</table>
+**Aggregates**
 
-<h3>Aggregate: <code>Subscription</code></h3>
-<p><strong>Descripción:</strong> Representa la relación entre un <code>User</code> (motociclista) y un <code>Mechanic</code>, establecida mediante una suscripción con código de invitación.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico vinculado.</td></tr>
-    <tr><td>userId</td><td>Long</td><td>Private</td><td>ID del usuario (motociclista).</td></tr>
-    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción.</td></tr>
-    <tr><td>invitationCode</td><td>String</td><td>Private</td><td>Código de invitación generado para vincular al usuario.</td></tr>
-  </tbody>
-</table>
+`Assignment`
+**Descripción:** Representa una asignación (relación) entre un mecánico y un dueño de motocicleta
 
-<h3>Value Objects</h3>
-<h4><code>AppointmentStatus</code> (Enum)</h4>
-<ul>
-  <li>SCHEDULED</li>
-  <li>COMPLETED</li>
-  <li>CANCELED</li>
-</ul>
-<h4><code>SubscriptionStatus</code> (Enum)</h4>
-<ul>
-  <li>ACTIVATED</li>
-  <li>CANCELED</li>
-</ul>
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                            |
+|----------------|------------------|-------------|----------------------------------------|
+| ownerId        | Long             | Private     | Identificador único del dueño asignado |
+| mechanic       | Mechanic         | Private     | Mecanico asignado                      |
+| status         | AssignmentStatus | Private     | Estado de la asignación                |
+| type           | AssignmentType   | Private     | Tipo de asignación                     |
+| assignmentCode | AssignmentCode   | Private     | Código único de la asignación          |
 
-<h3>Commands</h3>
-<ul>
-  <li>ScheduleAppointmentCommand &lt;&lt;Record&gt;&gt;</li>
-  <li>GenerateInvitationCodeCommand &lt;&lt;Record&gt;&gt;</li>
-  <li>CancelSubscriptionCommand &lt;&lt;Record&gt;&gt;</li>
-  <li>LinkMotorcyclistToMechanicCommand &lt;&lt;Record&gt;&gt;</li>
-</ul>
+`Mechanic`
+**Descripción:** Representa al mecánico en el sistema
 
-<h3>Queries</h3>
-<ul>
-  <li>GetAppointmentByIdQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetAppointmentByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetAppointmentsByDateRangeQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetUsersByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetSubscriptionByIdQuery &lt;&lt;Record&gt;&gt;</li>
-</ul>
+| Atributos   | Tipo de dato     | Visibilidad | Descripción           |
+|-------------|------------------|-------------|-----------------------|
+| profile     | Profile          | Private     | Perfil del mecánico   |
+| assignments | List<Assignment> | Private     | Lista de asignaciones |
 
-<h3>Services</h3>
-<h4><code>AppointmentCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(ScheduleAppointmentCommand)</li>
-</ul>
-<h4><code>AppointmentQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(GetAppointmentByIdQuery)</li>
-  <li>+handle(GetAppointmentsByMechanicQuery)</li>
-  <li>+handle(GetAppointmentsByDateRangeQuery)</li>
-</ul>
-<h4><code>SubscriptionCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(GenerateInvitationCodeCommand)</li>
-  <li>+handle(CancelSubscriptionCommand)</li>
-  <li>+handle(LinkMotorcyclistToMechanicCommand)</li>
-</ul>
-<h4><code>SubscriptionQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(GetSubscriptionByIdQuery)</li>
-  <li>+handle(GetUsersByMechanicQuery)</li>
-</ul>
+**Value Objects**
+
+`AssignmentStatus`(Enum)
+* ACTIVE
+* PENDING
+* CANCELLED
+
+`AssignmentType`(Enum)
+* UNCATEGORIZED
+* REGULAR
+* FREQUENT
+* BUSINESS
+
+`AssignmentCode`(Record)
+
+**Commands**
+* AssignOwnerToAssignmentCommand <<record>>
+* CreateAssignmentCommand <<record>>
+* CreateMechanicCommand <<record>>
+* DeleteAssignmentCommand <<record>>
+* UpdateAssignmentStatusCommand <<record>>
+* UpdateAssignmentTypeCommand <<record>>
+
+**Queries**
+* GetAssigmentByCodeQuery <<record>>
+* GetAssignmentByIdQuery <<record>>
+* GetAssignmentByOwnerIdQuery <<record>>
+* GetAssignmentsByMechanicIdAndStatusQuery <<record>>
+* GetMechanicByIdQuery <<record>>
+
+**Services**
+
+`AssignmentCommandService`(Interface)
+* handle(CreateAssignmentCommand)
+* handle(UpdateAssignmentStatusCommand)
+* handle(UpdateAssignmentTypeCommand)
+* handle(AssignOwnerToAssignmentCommand)
+* handle(DeleteAssignmentCommand)
+
+`AssignmentQueryService`(Interface)
+* handle(GetAssignmentByOwnerIdQuery)
+* handle(GetAssignmentsByMechanicIdAndStatusQuery)
+* handle(GetAssignmentByIdQuery)
+* handle(GetAssigmentByCodeQuery)
+
+`MechanicCommandService`(Interface)
+* handle(CreateMechanicCommand)
+
+`MechanicQueryService`(Interface)
+* handle(GetMechanicByIdQuery)
 
 ##### 4.2.3.2 Interface Layer
 
-<h3>Controlador: <code>AppointmentController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las citas (<code>Appointment</code>), incluyendo su creación y consultas por ID, mecánico o rango de fechas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>createAppointment</td><td>POST /api/v1/appointments</td><td>Crea una nueva cita a partir de los datos enviados en el recurso.</td></tr>
-    <tr><td>getAppointmentById</td><td>GET /api/v1/appointments/{appointmentId}</td><td>Obtiene los detalles de una cita específica por su ID.</td></tr>
-    <tr><td>getAppointmentsByMechanic</td><td>GET /api/v1/appointments/mechanics/{mechanicId}</td><td>Lista todas las citas asociadas a un mecánico en particular.</td></tr>
-    <tr><td>getAppointmentsByDateRange</td><td>GET /api/v1/appointments?start={start}&end={end}</td><td>Obtiene todas las citas registradas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentQueryService</td><td>Servicio para consultas de citas por ID, mecánico o rango de fechas.</td></tr>
-    <tr><td>AppointmentCommandService</td><td>Servicio para ejecutar comandos relacionados con la creación de citas.</td></tr>
-    <tr><td>GenerateAppointmentCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de citas.</td></tr>
-    <tr><td>AppointmentResourceFromEntityAssembler</td><td>Convierte entidades de cita en recursos REST para la respuesta de la API.</td></tr>
-  </tbody>
-</table>
+**Rest Controllers**
 
-<h3>Controlador: <code>SubscriptionController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las suscripciones (<code>Subscription</code>), incluyendo la generación de códigos de invitación, cancelación, vinculación de motociclistas y consultas por ID o mecánico.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>generateInvitationCode</td><td>POST /api/v1/subscriptions/invitations</td><td>Genera un nuevo código de invitación para vincular un motociclista con un mecánico.</td></tr>
-    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{subscriptionId}/cancel</td><td>Cancela una suscripción específica por su ID.</td></tr>
-    <tr><td>linkMotorcyclist</td><td>POST /api/v1/subscriptions/link</td><td>Vincula un motociclista a un mecánico utilizando un código de invitación.</td></tr>
-    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{subscriptionId}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getUsersByMechanic</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}/users</td><td>Lista los motociclistas vinculados a un mecánico.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas de suscripciones por ID y usuarios vinculados a mecánicos.</td></tr>
-    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de generación de códigos de invitación, cancelación y vinculación.</td></tr>
-    <tr><td>GenerateInvitationCodeCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de generación de códigos de invitación.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta de la API.</td></tr>
-  </tbody>
-</table>
+`AssignmentController`
 
-<h3>Resources</h3>
-<ul>
-  <li><code>CreateAppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>AppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>GenerateInvitationCodeResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>SubscriptionResource</code> &lt;&lt;Record&gt;&gt;</li>
-</ul>
+| Método                  | Ruta                                                             | Descripción                                                                         |
+|-------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| updateAssignmentStatus  | /api/v1/assignments/{assignmentId}/status                        | Actualiza el estado de una asignación por su id                                     |
+| updateAssignmentType    | /api/v1/assignments/{assignmentId}/type                          | Actualiza el tipo de una asignación por su id                                       |
+| getAssignmentById       | /api/v1/assignments/{assignmentId}                               | Devuelve una asignación por su id                                                   |
+| assignOwnerToAssignment | /api/v1/assignments/code/{assignmentCode}/assign-owner/{ownerId} | Vincula un dueño con una asignación mediante un codigo de asignación y id del dueño |
+| deleteAssignment        | /api/v1/assignments/{assignmentId}                               | Elimina una asignación por su id                                                    |
+| getAssignmentByCode     | /api/v1/assignments/code/{assignmentCode}                        | Devuelve una asignación por su código                                               |
+
+`MechanicAssigmentController`
+
+| Método           | Ruta                                               | Descripción                                                      |
+|------------------|----------------------------------------------------|------------------------------------------------------------------|
+| getAssignments   | /api/v1/mechanic/{mechanicId}/assignments/{status} | Obtiene todas las asignaciones asociadas a un mecánico por su id |
+| createAssignment | /api/v1/mechanic/{mechanicId}/assignments          | Crea una asignacion y la asocia a un mecánico por su id          |
+
+`MechanicController`
+
+| Método               | Ruta             | Descripción                                                             |
+|----------------------|------------------|-------------------------------------------------------------------------|
+| getOwnersForMechanic | /api/v1/mechanic | Obtiene todos los dueños vinculados a un mecánico por alguna asignación |
+
+`OwnerAssigmentController`
+
+| Método        | Ruta                               | Descripción                                           |
+|---------------|------------------------------------|-------------------------------------------------------|
+| getAssignment | /api/v1/owner/{ownerId}/assignment | Obtiene la asignación asociada con un dueño por su id |
+
+**Resources**
+* AssignmentResource <<record>>
+* MechanicResource <<record>>
+* UpdateAssignmentStatusResource <<record>>
+* UpdateAssignmentTypeResource <<record>>
+
+**Assemblers**
+* AssignmentResourceFromEntityAssembler
+* CreateAssigmentCommandAssembler
+* MechanicResourceFromEntityAssembler
+* UpdateAssignmentStatusCommandFromResourceAssembler
+* UpdateAssignmentTypeCommandFromResourceAssembler
 
 ##### 4.2.3.3 Application Layer
 
-<h3>Clase: <code>AppointmentCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones relacionadas con citas de suscripción.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(ScheduleAppointmentCommand)</td><td>Programa una nueva cita entre un Owner y un Mechanic.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentRepository</td><td>Repositorio encargado de gestionar la persistencia de citas.</td></tr>
-  </tbody>
-</table>
+`AssignmentCommandServiceImpl`
 
-<h3>Clase: <code>SubscriptionCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de creación, cancelación y vinculación de suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GenerateInvitationCodeCommand)</td><td>Genera un código de invitación para que un Owner pueda invitar a un Mechanic o Motorcyclist.</td></tr>
-    <tr><td>handle(CancelSubscriptionCommand)</td><td>Cancela una suscripción activa.</td></tr>
-    <tr><td>handle(LinkMotorcyclistToMechanicCommand)</td><td>Vincula un motociclista con un mecánico dentro de una suscripción.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de la persistencia de suscripciones.</td></tr>
-  </tbody>
-</table>
+| Método                                 | Descripción                           |
+|----------------------------------------|---------------------------------------|
+| handle(CreateAssignmentCommand)        | Crea una asignación                   |
+| handle(UpdateAssignmentStatusCommand)  | Actualiza el estado de una asignación |
+| handle(UpdateAssignmentTypeCommand)    | Actualiza el tipo de una asignación   |
+| handle(AssignOwnerToAssignmentCommand) | Asigna un dueño a una asignación      |
+| handle(DeleteAssignmentCommand)        | Elimina un asignación                 |
 
-<h3>Clase: <code>AppointmentQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para obtener información de citas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GetAppointmentByIdQuery)</td><td>Obtiene una cita específica por su ID.</td></tr>
-    <tr><td>handle(GetAppointmentsByMechanicQuery)</td><td>Lista todas las citas programadas para un mecánico específico.</td></tr>
-    <tr><td>handle(GetAppointmentsByDateRangeQuery)</td><td>Obtiene todas las citas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentRepository</td><td>Repositorio encargado de consultas de citas.</td></tr>
-  </tbody>
-</table>
+`AssignmentQueryServiceImpl`
 
-<h3>Clase: <code>SubscriptionQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas relacionadas con suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles de una suscripción por su ID.</td></tr>
-    <tr><td>handle(GetUsersByMechanicQuery)</td><td>Lista todos los Owners y Motorcyclists vinculados a un mecánico a través de suscripciones.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de consultas de suscripciones.</td></tr>
-  </tbody>
-</table>
+| Método                                           | Descripción                                                           |
+|--------------------------------------------------|-----------------------------------------------------------------------|
+| handle(GetAssignmentByOwnerIdQuery)              | Obtiene una asignación por el id del dueño                            |
+| handle(GetAssignmentsByMechanicIdAndStatusQuery) | Obtiene las asignaciones por id de mecánico y estado de la asignación |
+| handle(GetAssignmentByIdQuery)                   | Obtiene una asignación por su id                                      |
+| handle(GetAssigmentByCodeQuery)                  | Obtiene una asignación por su código de asignación                    |
+
+`MechanicCommandServiceImpl`
+
+| Método                        | Descripción      |
+|-------------------------------|------------------|
+| handle(CreateMechanicCommand) | Crea un mecánico |
+
+`MechanicQueryServiceImpl`
+
+| Método                       | Descripción                   |
+|------------------------------|-------------------------------|
+| handle(GetMechanicByIdQuery) | Obtiene un mecánico por su id |
 
 ##### 4.2.3.4 Infrastructure Layer
 
-<h3>Clase: <code>AppointmentRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Appointment</code>, que gestiona las operaciones de acceso a datos de citas de suscripción.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Appointment)</td><td>Guarda o actualiza una cita en la base de datos.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una cita por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de una cita por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe una cita por su ID.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todas las citas asociadas a un mecánico específico.</td></tr>
-    <tr><td>findByScheduleAtBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista todas las citas programadas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
+`AssignmentRepository`(interface)
 
-<h3>Clase: <code>SubscriptionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones de acceso y gestión de <code>Subscription</code> en la base de datos. Extiende de un repositorio genérico para CRUD y define consultas específicas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Subscription)</td><td>Guarda o actualiza una suscripción en la base de datos.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina (soft delete o hard delete) una suscripción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Recupera una suscripción por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe una suscripción por su ID.</td></tr>
-    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones de un dueño de vehículo, paginadas.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Lista todas las suscripciones asociadas a un mecánico específico.</td></tr>
-    <tr><td>findByInvitationCode(String code)</td><td>Recupera una suscripción a partir de un código de invitación.</td></tr>
-    <tr><td>findByVehicleId(Long)</td><td>Obtiene la suscripción vinculada a un vehículo.</td></tr>
-    <tr><td>findExpiringBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista suscripciones que expiran en un rango de fechas.</td></tr>
-  </tbody>
-</table>
+| Método                                         | Tipo de Retorno      | Descripción                                                                                                                |
+|------------------------------------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------|
+| findByOwnerIdAndStatus                         | Optional<Assignment> | Encuentra una asignación por el id del dueño y el estado                                                                   |
+| findByMechanic_IdAndStatusOrderByCreatedAtDesc | List<Assignment>     | Encuentra las asignaciones por el id del mecánico, el estado y las ordena de manera descendente según la fecha de creación |
+| existsByAssignmentCode                         | boolean              | Valida la existencia una asignación por código                                                                             |
+| existsByOwnerIdAndIdNotAndStatusNot            | boolean              | Valida la no existencia de una asignación por id de dueño y estado de asignación                                           |
+| findByAssignmentCode                           | Optional<Assignment> | Encuentra una asignación por su código                                                                                     |
 
-<h3>Clase: <code>PlanRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>PlanRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Plan</code>, que representa los planes de suscripción disponibles.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Plan)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina un plan por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de un plan por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe un plan por su ID.</td></tr>
-    <tr><td>findByName(String)</td><td>Busca un plan por su nombre.</td></tr>
-    <tr><td>findAll(Pageable)</td><td>Lista todos los planes con paginación.</td></tr>
-  </tbody>
-</table>
+`MechanicRepository`(interface)
 
-<h3>Clase: <code>PromotionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>PromotionRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Promotion</code>, usada en la aplicación de descuentos y campañas de suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Promotion)</td><td>Guarda o actualiza una promoción.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una promoción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de una promoción por su ID.</td></tr>
-    <tr><td>existsByCode(String)</td><td>Verifica si existe una promoción con un código específico.</td></tr>
-    <tr><td>findByCode(String)</td><td>Recupera una promoción por su código.</td></tr>
-    <tr><td>findValidPromotions(LocalDateTime now)</td><td>Lista las promociones vigentes en un momento dado.</td></tr>
-  </tbody>
-</table>
-
+| Método                  | Tipo de Retorno    | Descripción                               |
+|-------------------------|--------------------|-------------------------------------------|
+| getMechanicByProfile_Id | Optional<Mechanic> | Encuentra un mecánico por id de su perfil |
 
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -2806,11 +2564,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/subscription_code_level.png" alt="subscription_code_level" width="600"/>
+<img src="images/chapter-4/bounded-context/assignments-domain-layer.png" alt="Assignments Domain Layer"/>
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/subscription_db.png" alt="subscription_erd" width="600"/>
+<img src="images/chapter-4/bounded-context/assignments-db-diagram.png" alt="Assignments Domain Layer"/>
 
 #### 4.2.4 Bounded Context: Bienestar de Vehículos
 
@@ -5041,7 +4799,7 @@ La sección Aspect Leaders and Collaborators presenta la asignación de roles y 
 
 La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
 
-Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot](https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot)
+Enlace al tablero:
 
 <table>
   <tr>
@@ -6033,7 +5791,7 @@ Enlace: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://byk
 
 <img src="images/chapter-6/sprint-2/webapp-execution-evidence-4.png" alt="Web Application execution evidence 4"/>
 
-Enlace:[https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+Enlace: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
 
 **Mobile Application**
 
