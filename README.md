@@ -315,7 +315,7 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
           - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-suscripción)
+      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-assignments)
         - [4.2.3.1 Domain Layer](#4231-domain-layer)
         - [4.2.3.2 Interface Layer](#4232-interface-layer)
         - [4.2.3.3 Application Layer](#4233-application-layer)
