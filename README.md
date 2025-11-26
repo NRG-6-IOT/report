@@ -2434,7 +2434,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 * GetAssigmentByCodeQuery <<record>>
 * GetAssignmentByIdQuery <<record>>
 * GetAssignmentByOwnerIdQuery <<record>>
-* GetAssignmentByVehicleIdQuery <<record>>
 * GetAssignmentsByMechanicIdAndStatusQuery <<record>>
 * GetMechanicByIdQuery <<record>>
 
@@ -2452,7 +2451,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 * handle(GetAssignmentsByMechanicIdAndStatusQuery)
 * handle(GetAssignmentByIdQuery)
 * handle(GetAssigmentByCodeQuery)
-* handle(GetAssignmentByVehicleIdQuery)
 
 `MechanicCommandService`(Interface)
 * handle(CreateMechanicCommand)
@@ -2509,6 +2507,36 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.3.3 Application Layer
 
+`AssignmentCommandServiceImpl`
+
+| Método                                 | Descripción                           |
+|----------------------------------------|---------------------------------------|
+| handle(CreateAssignmentCommand)        | Crea una asignación                   |
+| handle(UpdateAssignmentStatusCommand)  | Actualiza el estado de una asignación |
+| handle(UpdateAssignmentTypeCommand)    | Actualiza el tipo de una asignación   |
+| handle(AssignOwnerToAssignmentCommand) | Asigna un dueño a una asignación      |
+| handle(DeleteAssignmentCommand)        | Elimina un asignación                 |
+
+`AssignmentQueryServiceImpl`
+
+| Método                                           | Descripción                                                           |
+|--------------------------------------------------|-----------------------------------------------------------------------|
+| handle(GetAssignmentByOwnerIdQuery)              | Obtiene una asignación por el id del dueño                            |
+| handle(GetAssignmentsByMechanicIdAndStatusQuery) | Obtiene las asignaciones por id de mecánico y estado de la asignación |
+| handle(GetAssignmentByIdQuery)                   | Obtiene una asignación por su id                                      |
+| handle(GetAssigmentByCodeQuery)                  | Obtiene una asignación por su código de asignación                    |
+
+`MechanicCommandServiceImpl`
+
+| Método                        | Descripción      |
+|-------------------------------|------------------|
+| handle(CreateMechanicCommand) | Crea un mecánico |
+
+`MechanicQueryServiceImpl`
+
+| Método                       | Descripción                   |
+|------------------------------|-------------------------------|
+| handle(GetMechanicByIdQuery) | Obtiene un macánico por su id |
 
 ##### 4.2.3.4 Infrastructure Layer
 
