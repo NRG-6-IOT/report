@@ -2536,125 +2536,25 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 | Método                       | Descripción                   |
 |------------------------------|-------------------------------|
-| handle(GetMechanicByIdQuery) | Obtiene un macánico por su id |
+| handle(GetMechanicByIdQuery) | Obtiene un mecánico por su id |
 
 ##### 4.2.3.4 Infrastructure Layer
 
-<h3>Clase: <code>AppointmentRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Appointment</code>, que gestiona las operaciones de acceso a datos de citas de suscripción.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Appointment)</td><td>Guarda o actualiza una cita en la base de datos.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una cita por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de una cita por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe una cita por su ID.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todas las citas asociadas a un mecánico específico.</td></tr>
-    <tr><td>findByScheduleAtBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista todas las citas programadas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
+`AssignmentRepository`(interface)
 
-<h3>Clase: <code>SubscriptionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones de acceso y gestión de <code>Subscription</code> en la base de datos. Extiende de un repositorio genérico para CRUD y define consultas específicas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Subscription)</td><td>Guarda o actualiza una suscripción en la base de datos.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina (soft delete o hard delete) una suscripción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Recupera una suscripción por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe una suscripción por su ID.</td></tr>
-    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones de un dueño de vehículo, paginadas.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Lista todas las suscripciones asociadas a un mecánico específico.</td></tr>
-    <tr><td>findByInvitationCode(String code)</td><td>Recupera una suscripción a partir de un código de invitación.</td></tr>
-    <tr><td>findByVehicleId(Long)</td><td>Obtiene la suscripción vinculada a un vehículo.</td></tr>
-    <tr><td>findExpiringBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista suscripciones que expiran en un rango de fechas.</td></tr>
-  </tbody>
-</table>
+| Método                                         | Tipo de Retorno      | Descripción                                                                                                                |
+|------------------------------------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------|
+| findByOwnerIdAndStatus                         | Optional<Assignment> | Encuentra una asignación por el id del dueño y el estado                                                                   |
+| findByMechanic_IdAndStatusOrderByCreatedAtDesc | List<Assignment>     | Encuentra las asignaciones por el id del mecánico, el estado y las ordena de manera descendente según la fecha de creación |
+| existsByAssignmentCode                         | boolean              | Valida la existencia una asignación por código                                                                             |
+| existsByOwnerIdAndIdNotAndStatusNot            | boolean              | Valida la no existencia de una asignación por id de dueño y estado de asignación                                           |
+| findByAssignmentCode                           | Optional<Assignment> | Encuentra una asignación por su código                                                                                     |
 
-<h3>Clase: <code>PlanRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>PlanRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Plan</code>, que representa los planes de suscripción disponibles.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Plan)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina un plan por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de un plan por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe un plan por su ID.</td></tr>
-    <tr><td>findByName(String)</td><td>Busca un plan por su nombre.</td></tr>
-    <tr><td>findAll(Pageable)</td><td>Lista todos los planes con paginación.</td></tr>
-  </tbody>
-</table>
+`MechanicRepository`(interface)
 
-<h3>Clase: <code>PromotionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>PromotionRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Promotion</code>, usada en la aplicación de descuentos y campañas de suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Promotion)</td><td>Guarda o actualiza una promoción.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una promoción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de una promoción por su ID.</td></tr>
-    <tr><td>existsByCode(String)</td><td>Verifica si existe una promoción con un código específico.</td></tr>
-    <tr><td>findByCode(String)</td><td>Recupera una promoción por su código.</td></tr>
-    <tr><td>findValidPromotions(LocalDateTime now)</td><td>Lista las promociones vigentes en un momento dado.</td></tr>
-  </tbody>
-</table>
-
+| Método                  | Tipo de Retorno    | Descripción                               |
+|-------------------------|--------------------|-------------------------------------------|
+| getMechanicByProfile_Id | Optional<Mechanic> | Encuentra un mecánico por id de su perfil |
 
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
