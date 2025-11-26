@@ -2564,11 +2564,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/subscription_code_level.png" alt="subscription_code_level" width="600"/>
+<img src="images/chapter-4/bounded-context/assignments-domain-layer.png" alt="Assignments Domain Layer"/>
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/subscription_db.png" alt="subscription_erd" width="600"/>
+<img src="images/chapter-4/bounded-context/assignments-db-diagram.png" alt="Assignments Domain Layer"/>
 
 #### 4.2.4 Bounded Context: Bienestar de Vehículos
 
