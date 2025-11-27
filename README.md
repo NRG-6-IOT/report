@@ -1510,12 +1510,14 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ### 4.2 Tactical-Level Domain-Driven Design
 
-#### 4.2.1 Bounded Context: Gestión de Vehículos
+#### 4.2.1 Bounded Context: Vehicle Management
 
 ##### 4.2.1.1 Domain Layer
 
-### Aggregate: `Owner`
-**Descripción**: Representa a un dueño de moto registrado en el sistema. Contiene tanto una referencia a un profile como a los vehículos registrados a su nombre.
+**Aggregates**
+
+`Owner`
+**Descripción:** Representa a un dueño de moto registrado en el sistema. Contiene tanto una referencia a un profile como a los vehículos registrados a su nombre.
 
 | Atributos           | Tipo de dato   | Visibilidad | Descripción                                |
 |---------------------|----------------|-------------|--------------------------------------------|
@@ -1523,53 +1525,100 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 | profile             | Profile        | Private     | Perfil de usuario asociado al dueño.       |
 | vehicles            | List<Vehicles> | Private     | Lista de Vehículos asociados al dueño.     |
 
-### Aggregate: `Model`
-**Descripción**: Representa un modelo de moto registrado
+`Model`
+**Descripción:** Representa un modelo de moto registrado
 
-| Atributos     | Tipo de dato | Visibilidad | Descripción                                         |
-|---------------|--------------|-------------|-----------------------------------------------------|
-| id            | Long         | Private     | Identificador único del modelo.                     |
-| name          | String       | Private     | Nombre del modelo.                                  |
-| brand         | String       | Private     | Nombre de la marca a la que le pertenece el modelo. |
-| modelYear     | String       | Private     | Año en el que salió el modelo.                      |
-| originCountry | String       | Private     | Nombre del país de origen del modelo.               |
-| producedAt    | Date         | Private     | Fecha de producción del modelo                      |
-| type          | String       | Private     | Tipo del modelo                                     |
-| displacement  | String       | Private     |                                                     |
-| potency       | String       | Private     |                                                     |
-| engineType    | String       | Private     |                                                     |
-| engineTorque  | String       | Private     |                                                     |
-| weight        | String       | Private     |                                                     |
-| transmission  | String       | Private     |                                                     |
-| brakes        | String       | Private     |                                                     |
-| tank          | String       | Private     |                                                     |
-| seatHeight    | String       | Private     |                                                     |
-| consumption   | String       | Private     |                                                     |
-| price         | Float        | Private     |                                                     |
-| oilCapacity   | String       | Private     |                                                     |
-| connectivity  | String       | Private     |                                                     |
-| durability    | String       | Private     |                                                     |
-| octane        | String       | Private     |                                                     |
+| Atributos     | Tipo de dato | Visibilidad | Descripción                                                   |
+|---------------|--------------|-------------|---------------------------------------------------------------|
+| id            | Long         | Private     | Identificador único del modelo.                               |
+| name          | String       | Private     | Nombre del modelo.                                            |
+| brand         | String       | Private     | Nombre de la marca a la que le pertenece el modelo.           |
+| modelYear     | String       | Private     | Año en el que salió el modelo.                                |
+| originCountry | String       | Private     | Nombre del país de origen del modelo.                         |
+| producedAt    | Date         | Private     | Fecha de producción del modelo.                               |
+| type          | String       | Private     | Tipo del modelo.                                              |
+| displacement  | String       | Private     | Cilindrada del motor del modelo.                              |
+| potency       | String       | Private     | Potencia máxima que puede generar el motor.                   |
+| engineType    | String       | Private     | Tipo o configuración del motor del modelo.                    |
+| engineTorque  | String       | Private     | Torque o fuerza de giro producida por el motor.               |
+| weight        | String       | Private     | Peso total del modelo.                                        |
+| transmission  | String       | Private     | Tipo de transmisión incorporada en el modelo.                 |
+| brakes        | String       | Private     | Sistema de frenos con el que está equipado el modelo.         |
+| tank          | String       | Private     | Capacidad del tanque de combustible del modelo.               |
+| seatHeight    | String       | Private     | Altura del asiento medida desde el suelo.                     |
+| consumption   | String       | Private     | Consumo promedio de combustible del modelo.                   |
+| price         | Float        | Private     | Precio estimado del modelo en el mercado.                     |
+| oilCapacity   | String       | Private     | Capacidad de aceite requerida por el motor del modelo.        |
+| connectivity  | String       | Private     | Tecnologías o sistemas de conectividad integrados.            |
+| durability    | String       | Private     | Nivel de durabilidad o resistencia del modelo.                |
+| octane        | String       | Private     | Nivel de octanaje recomendado para el combustible del modelo. |
 
-### Entity: `Vehicle`
-**Descripción**: Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
 
-| Atributos           | Tipo de dato  | Visibilidad | Descripción                       |
-|---------------------|---------------|-------------|-----------------------------------|
-| id                  | Long          | Private     | Identificador único del vehículo. |
-| owner               | Owner         | Private     | Dueño de la moto.                 |
-| model               | Model         | Private     | Modelo de la moto.                |
-| year                | String        | Private     | Año de fabricación de la moto.    |
-| plate               | String        | Private     | Placa de la moto.                 |
+**Entities**
 
-| Métodos                    | Tipo de retorno | Visibilidad | Descripción                                 |
-|----------------------------|-----------------|-------------|---------------------------------------------|
-| registerVehicle()          | void            | Public      | Registra un nuevo vehículo en el sistema.   |
-| updateVehicleDetails()     | void            | Public      | Actualiza los detalles del vehículo.        |
-| getVehicleStatus()         | VehicleStatus   | Public      | Obtiene el estado actual del vehículo.      |
-| assignAuthorizedMechanic() | void            | Public      | Asigna un mecánico autorizado al vehículo.  |
-| assignNewOwner()           | void            | Public      | Cambia el dueño del vehículo.               |
-| revokeAuthorizedMechanic() | void            | Public      | Revoca el mecánico autorizado del vehículo. |
+`Vehicle`
+**Descripción:** Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
+
+| Atributos           | Tipo de dato | Visibilidad | Descripción                       |
+|---------------------|--------------|-------------|-----------------------------------|
+| id                  | Long         | Private     | Identificador único del vehículo. |
+| owner               | Owner        | Private     | Dueño de la moto.                 |
+| model               | Model        | Private     | Modelo de la moto.                |
+| year                | Year         | Private     | Año de fabricación de la moto.    |
+| plate               | Plate        | Private     | Placa de la moto.                 |
+
+
+**Value Objects**
+
+`Plate` (Record)
+
+`Year` (Record)
+
+**Commands**
+* AddVehicleToOwnerCommand <<record>>
+* CreateModelCommand <<record>>
+* CreateOwnerCommand <<record>>
+* DeleteVehicleFromOwnerCommand <<record>>
+* SeedModelsCommand <<record>>
+* UpdateVehicleFromOwnerCommand <<record>>
+
+**Queries**
+* GetAllBrandsQuery <<record>>
+* GetAllModelsQuery <<record>>
+* GetAllOwnersQuery <<record>>
+* GetAllVehiclesQuery <<record>>
+* GetModelByIdQuery <<record>>
+* GetModelsByBrandQuery <<record>>
+* GetOwnerByIdQuery <<record>>
+* GetOwnerByVehicleIdQuery <<record>>
+* GetVehicleByIdQuery <<record>>
+* GetVehicleByPlateQuery <<record>>
+
+**Services**
+`ModelCommandService`
+* handle(CreateModelCommand)
+* handle(SeedModelsCommand)
+
+`ModelQueryService`
+* handle(GetAllModelsQuery)
+* handle(GetModelByIdQuery)
+* handle(GetModelsByBrandQuery)
+* handle(GetAllBrandsQuery)
+
+`OwnerCommandService`
+* handle(CreateOwnerCommand)
+* handle(AddVehicleToOwnerCommand)
+* handle(UpdateVehicleFromOwnerCommand)
+* handle(DeleteVehicleFromOwnerCommand)
+
+`OwnerQueryService`
+* handle(GetOwnerByIdQuery)
+* handle(GetOwnerByVehicleIdQuery)
+* handle(GetAllOwnersQuery)
+
+`VehicleQueryService`
+* handle(GetVehicleByIdQuery)
+* handle(GetVehicleByPlateQuery)
 
 ##### 4.2.1.2 Interface Layer
 
