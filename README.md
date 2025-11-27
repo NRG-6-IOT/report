@@ -1622,29 +1622,52 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.1.2 Interface Layer
 
-### Controlador: `VehicleController`
-**Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de vehículos.
+**Rest Controllers**
 
-| Método               | Ruta                                                      | Descripción                                 |
-|----------------------|-----------------------------------------------------------|---------------------------------------------|
-| addVehicle()         | POST /api/v1/vehicles/                                    | Registra un nuevo vehículo.                 |
-| updateVehicle()      | PUT /api/v1/vehicles/{vehicleId}                          | Actualiza los detalles de un vehículo.      |
-| updateVehicleOwner() | PATCH /api/v1/vehicles/{vehicleId}/owner                  | Cambia el dueño del vehículo.               |
-| authorizeMechanic()  | POST /api/v1/vehicles/{vehicleId}/mechanic                | Asigna un mecánico autorizado al vehículo.  |
-| revokeMechanic()     | DELETE /api/v1/vehicles/{vehicleId}/mechanic/{mechanicId} | Revoca el mecánico autorizado del vehículo. |
-| getVehicle()         | GET /api/v1/vehicles/{vehicleId}                          | Consulta los detalles de un vehículo.       |
-| getMechanic()        | GET /api/v1/mechanics/{mechanicId}                        | Consulta los detalles de un mecánico.       |
+`ModelsController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los modelos.
 
-**Dependencias:**
+| Método             | Ruta                             | Descripción                                                    |
+|--------------------|----------------------------------|----------------------------------------------------------------|
+| getAllModels()     | GET /api/v1/models/              | Obtiene todos los modelos registrados.                         |
+| getModelById()     | GET /api/v1/models/{modelId}     | Obtiene un modelo por su identificador.                        |
+| getModelsByBrand() | GET /api/v1/models/brand/{brand} | Obtiene todos los modelos de una marca específica.             |
+| getAllBrands()     | GET /api/v1/models/brands        | Obtiene todas las marcas presentes en los modelos registrados. |
 
-| Dependencia                                    | Descripción                                                                          |
-|------------------------------------------------|--------------------------------------------------------------------------------------|
-| VehicleCommandService                          | Servicio para manejar comandos relacionados con vehículos.                           |
-| VehicleQueryService                            | Servicio para manejar consultas relacionadas con vehículos.                          |
-| CreateVehicleCommandFromResourceAssembler      | Ensamblador para convertir recursos REST a comandos para creación de vehículos.      |
-| UpdateVehicleCommandFromResourceAssembler      | Ensamblador para convertir recursos REST a comandos para actualización de vehículos. |
-| UpdateVehicleOwnerCommandFromResourceAssembler | Ensamblador para convertir recursos REST a comandos para actualización de dueños.    |
-| VehicleResourceFromEntityAssembler             | Ensamblador para convertir entidades de vehículos a recursos REST.                   |
+`OwnersController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los dueños.
+
+| Método                | Ruta                                   | Descripción                                          |
+|-----------------------|----------------------------------------|------------------------------------------------------|
+| getAllOwners()        | GET /api/v1/owners/                    | Obtiene todos los dueños de vehículos registrados.   |
+| getOwnerByVehicleId() | GET /api/v1/owners/vehicle/{vehicleId} | Obtiene el dueño de un vehículo por su identificador |
+| createOwner()         | POST /api/v1/owners                    | Crea un dueño de vehículo.                           |
+
+`VehiclesController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los vehículos.
+
+| Método                 | Ruta                                | Descripción                                            |
+|------------------------|-------------------------------------|--------------------------------------------------------|
+| getVehiclesByOwnerId() | GET /api/v1/vehicles/               | Obtiene todos los vehículos registrados bajo un dueño. |
+| getVehicleById()       | GET /api/v1/vehicles/{vehicleId}    | Obtiene un vehículo por su identificador.              |
+| addVehicleToOwner()    | POST /api/v1/vehicles/{ownerId}     | Añade un vehículo a un dueño.                          |
+| deleteVehicleById()    | DELETE /api/v1/vehicles/{vehicleId} | Elimina un vehículo de un dueño.                       |
+
+**Resources**
+* AddVehicleResource <<record>>
+* CreateModelResource <<record>>
+* CreateOwnerResource <<record>>
+* ModelResource <<record>>
+* OwnerResource <<record>>
+* VehicleResource <<record>>
+
+**Assemblers**
+* AddVehicleCommandFromResourceAssembler
+* CreateModelCommandFromResourceAssembler
+* CreateOwnerCommandFromResourceAssembler
+* ModelResourceFromEntityAssembler
+* OwnerResourceFromEntityAssembler
+* VehicleResourceFromEntityAssembler
 
 ##### 4.2.1.3 Application Layer
 
