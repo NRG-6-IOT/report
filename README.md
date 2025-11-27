@@ -3096,15 +3096,159 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.5.1 Domain Layer
 
-<h3>Aggregate Root: <code>Report</code></h3>
-<p><strong>Descripción:</strong>Representa un reporte agregado que consolida información de un vehículo, sus mantenimientos y su asignación actual.</p>
 
-<h3>Query: <code>GetReportByVehicleIdQuery</code></h3>
-<p><strong>Descripción:</strong>Consulta que permite obtener un reporte consolidado a partir del identificador de un vehículo.</p>
+<!-- Aggregates -->
+<h3>Aggregates</h3>
+
+<h4><code>Report</code></h4>
+<p><strong>Descripción:</strong> Representa un reporte consolidado asociado a un vehículo. Contiene información generada mediante métricas, la fecha del reporte y la relación con el vehículo correspondiente.</p>
+
 <table>
   <thead>
     <tr>
-      <th>Campo</th>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del reporte</td>
+    </tr>
+    <tr>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador del vehículo asociado al reporte</td>
+    </tr>
+    <tr>
+      <td>metrics</td>
+      <td>List&lt;Metric&gt;</td>
+      <td>Private</td>
+      <td>Lista de métricas asociadas al reporte</td>
+    </tr>
+    <tr>
+      <td>reportDate</td>
+      <td>Date</td>
+      <td>Private</td>
+      <td>Fecha de generación del reporte</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Entities -->
+<h3>Entities</h3>
+
+<h4><code>Metric</code></h4>
+<p><strong>Descripción:</strong> Representa una métrica incluida dentro de un reporte. Puede ser cualquier tipo de información numérica o descriptiva relacionada con el estado del vehículo.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>metricId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único de la métrica</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>MetricType</td>
+      <td>Private</td>
+      <td>Tipo de métrica asociada</td>
+    </tr>
+    <tr>
+      <td>metricValue</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Valor registrado para esta métrica</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4><code>MetricType</code></h4>
+<p><strong>Descripción:</strong> Define el tipo de una métrica (por ejemplo: kilometraje, estado del aceite, temperatura, etc.).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>metricTypeId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del tipo de métrica</td>
+    </tr>
+    <tr>
+      <td>metricName</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Nombre del tipo de métrica</td>
+    </tr>
+    <tr>
+      <td>metricDescription</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción del tipo de métrica</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Value Objects -->
+<h3>Value Objects</h3>
+<p>(No se identifican value objects adicionales en este bounded context.)</p>
+
+<hr>
+
+<!-- Queries -->
+<h3>Queries</h3>
+
+<h4><code>GetReportByIdQuery</code> &lt;&lt;record&gt;&gt;</h4>
+<p>Obtiene un reporte específico mediante su identificador único.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo de dato</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Identificador del reporte a consultar</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4><code>GetReportByVehicleIdQuery</code> &lt;&lt;record&gt;&gt;</h4>
+<p>Obtiene todos los reportes asociados a un vehículo específico.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
       <th>Tipo de dato</th>
       <th>Descripción</th>
     </tr>
@@ -3113,13 +3257,38 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr>
       <td>vehicleId</td>
       <td>Long</td>
-      <td>Identificador del vehículo cuyo reporte se desea obtener.</td>
+      <td>Identificador del vehículo cuyos reportes se desean obtener</td>
     </tr>
   </tbody>
 </table>
 
-<h3>Interfaz: <code>ReportsQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas del dominio encargado de la recuperación de reportes consolidados.</p>
+<h4><code>GetMetricsByReportIdQuery</code> &lt;&lt;record&gt;&gt;</h4>
+<p>Obtiene todas las métricas pertenecientes a un reporte.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo de dato</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Identificador del reporte cuyas métricas serán recuperadas</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Services -->
+<h3>Services</h3>
+
+<h4><code>ReportQueryService</code> (Interface)</h4>
+<p>Interfaz de servicios de consultas para la recuperación de reportes y sus métricas.</p>
+
 <table>
   <thead>
     <tr>
@@ -3130,26 +3299,30 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetReportByVehicleIdQuery query)</td>
+      <td>handle(GetReportByIdQuery)</td>
       <td>Público</td>
-      <td>Recupera un reporte consolidado para un vehículo específico.</td>
+      <td>Recupera un reporte mediante su identificador único</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportByVehicleIdQuery)</td>
+      <td>Público</td>
+      <td>Recupera todos los reportes generados para un vehículo específico</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricsByReportIdQuery)</td>
+      <td>Público</td>
+      <td>Recupera todas las métricas asociadas a un reporte específico</td>
     </tr>
   </tbody>
 </table>
 
 ##### 4.2.5.2 Interface Layer
 
-<h3>Controlador: <code>ReportController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST que maneja las peticiones relacionadas con la generación de reportes agregados por vehículo.</td>
-  </tr>
-</table>
+<h3>Rest Controllers</h3>
+
+<h4><code>ReportController</code></h4>
+
+<p><strong>Descripción:</strong> Controlador REST encargado de manejar las peticiones asociadas a la obtención de reportes y sus métricas.</p>
 
 <table>
   <thead>
@@ -3161,134 +3334,33 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>getReportByVehicleId(Long vehicleId)</td>
+      <td>getReportById</td>
+      <td>GET /api/v1/reports/{reportId}</td>
+      <td>Obtiene un reporte por su identificador único.</td>
+    </tr>
+    <tr>
+      <td>getAllReportsForVehicle</td>
       <td>GET /api/v1/reports/vehicle/{vehicleId}</td>
-      <td>Obtiene un reporte consolidado de vehículo, mantenimientos y asignación, según el identificador del vehículo.</td>
+      <td>Obtiene todos los reportes asociados a un vehículo por su id.</td>
+    </tr>
+    <tr>
+      <td>getAllMetricsFromReport</td>
+      <td>GET /api/v1/reports/{reportId}/metrics</td>
+      <td>Obtiene todas las métricas asociadas a un reporte dado.</td>
     </tr>
   </tbody>
 </table>
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ReportsQueryService</td>
-      <td>Servicio del dominio utilizado para manejar las consultas de reportes consolidados.</td>
-    </tr>
-    <tr>
-      <td>ReportResource</td>
-      <td>Recurso REST que representa la información consolidada del reporte.</td>
-    </tr>
-  </tbody>
-</table>
+<hr>
 
-##### 4.2.5.3 Application Layer
+<h3>Resources</h3>
 
-<h3>Clase: <code>ReportsQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportsQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación de la interfaz <code>ReportsQueryService</code> encargada de construir reportes agregados combinando información de vehículos, mantenimientos y asignaciones.</td>
-  </tr>
-</table>
+<ul>
+  <li><code>ReportResource</code> &lt;&lt;class&gt;&gt;</li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(GetReportByVehicleIdQuery query)</td>
-      <td>Obtiene el reporte consolidado correspondiente al vehículo indicado, incluyendo su información, mantenimientos y asignación actual.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>VehiclesQueryService</td>
-      <td>Servicio encargado de recuperar información del vehículo.</td>
-    </tr>
-    <tr>
-      <td>MaintenanceQueryService</td>
-      <td>Servicio encargado de recuperar los mantenimientos asociados al vehículo.</td>
-    </tr>
-    <tr>
-      <td>AssignmentQueryService</td>
-      <td>Servicio encargado de recuperar la asignación activa del vehículo.</td>
-    </tr>
-    <tr>
-      <td>MechanicQueryService</td>
-      <td>Servicio encargado de recuperar la información del mecánico asignado (si aplica).</td>
-    </tr>
-    <tr>
-      <td>Logger (SLF4J)</td>
-      <td>Utilizado para registrar información y advertencias durante el proceso de consulta.</td>
-    </tr>
-  </tbody>
-</table>
-
-##### 4.2.5.4 Infrastructure Layer
-
-<h3>Clase: <code>ReportRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Repositorio placeholder para operaciones de persistencia de reportes. Actualmente no implementa métodos de acceso a datos, pero se reserva para futuras extensiones del contexto.</td>
-  </tr>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>noop()</td>
-      <td>Método sin operación (no-op), utilizado como marcador para mantener compatibilidad estructural mientras se definen futuras funcionalidades de persistencia.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Clase: <code>ReportResource</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportResource</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Recurso REST que representa un reporte consolidado, incluyendo la información del vehículo, sus mantenimientos y su asignación actual.</td>
-  </tr>
-</table>
+<h4><code>ReportResource</code></h4>
+<p><strong>Descripción:</strong> Representa la estructura de datos expuesta a través de la API para describir un reporte consolidado.</p>
 
 <table>
   <thead>
@@ -3300,22 +3372,222 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>vehicle</td>
-      <td>VehicleResource</td>
-      <td>Información detallada del vehículo.</td>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Identificador único del reporte</td>
     </tr>
     <tr>
-      <td>maintenances</td>
-      <td>List&lt;MaintenanceResource&gt;</td>
-      <td>Lista de mantenimientos realizados o programados para el vehículo.</td>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Identificador del vehículo asociado al reporte</td>
     </tr>
     <tr>
-      <td>assignment</td>
-      <td>AssignmentResource</td>
-      <td>Asignación actual del vehículo y el mecánico responsable (si aplica).</td>
+      <td>reportDate</td>
+      <td>Date</td>
+      <td>Fecha de generación del reporte</td>
+    </tr>
+    <tr>
+      <td>metrics</td>
+      <td>List&lt;Metric&gt;</td>
+      <td>Lista de métricas asociadas al reporte</td>
     </tr>
   </tbody>
 </table>
+
+<hr>
+
+<h3>Assemblers</h3>
+
+<ul>
+  <li><code>ReportResourceFromEntityAssembler</code></li>
+</ul>
+
+<h4><code>ReportResourceFromEntityAssembler</code></h4>
+<p><strong>Descripción:</strong> Ensamblador encargado de transformar una entidad <code>Report</code> del dominio en un recurso REST <code>ReportResource</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fromEntity(Report report)</td>
+      <td>Transforma una entidad del agregado Report en un recurso REST.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Dependencias</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportQueryService</td>
+      <td>Servicio de consultas del dominio utilizado para recuperar reportes y métricas.</td>
+    </tr>
+    <tr>
+      <td>ReportResourceFromEntityAssembler</td>
+      <td>Componente encargado de transformar entidades del dominio en recursos REST.</td>
+    </tr>
+    <tr>
+      <td>ReportResource</td>
+      <td>Recurso REST que representa la vista serializada del reporte consolidado.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+##### 4.2.5.3 Application Layer
+
+<h3><code>ReportQueryServiceImpl</code></h3>
+
+<p><strong>Descripción:</strong> Implementación del servicio de consultas <code>ReportQueryService</code>, responsable de recuperar reportes y métricas desde la capa de persistencia mediante el uso de consultas especializadas.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetReportByIdQuery)</td>
+      <td>Obtiene un reporte por su identificador único.</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportByVehicleIdQuery)</td>
+      <td>Obtiene todos los reportes asociados a un vehículo por su id.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricsByReportIdQuery)</td>
+      <td>Obtiene todas las métricas relacionadas con un reporte específico.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportRepository</td>
+      <td>Repositorio JPA encargado de la recuperación persistente de reportes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3><code>ApplicationReadyEventHandler</code></h3>
+
+<p><strong>Descripción:</strong> Componente ejecutado automáticamente al iniciar la aplicación. Se encarga de inicializar el sistema con valores por defecto para los tipos de métricas, en caso de que no existan registros previos.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>onApplicationEvent(ApplicationReadyEvent)</td>
+      <td>Se ejecuta al iniciar la aplicación; registra valores iniciales para los tipos de métricas si la base de datos está vacía.</td>
+    </tr>
+    <tr>
+      <td>currentTimestamp()</td>
+      <td>Devuelve el timestamp actual para propósitos de registro en logs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MetricTypeRepository</td>
+      <td>Repositorio encargado de gestionar tipos de métricas en la base de datos.</td>
+    </tr>
+    <tr>
+      <td>Logger (SLF4J)</td>
+      <td>Utilizado para registrar información, advertencias y errores durante la inicialización.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+##### 4.2.5.4 Infrastructure Layer
+
+
+<h3><code>ReportRepository</code> (interface)</h3>
+
+<p><strong>Descripción:</strong> Repositorio JPA encargado de las operaciones de persistencia del agregado <code>Report</code>. Provee métodos para obtener reportes por su identificador o por el identificador del vehículo asociado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByVehicleId(Long vehicleId)</td>
+      <td>List&lt;Report&gt;</td>
+      <td>Recupera todos los reportes asociados a un vehículo por su id.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3><code>MetricTypeRepository</code> (interface)</h3>
+
+<p><strong>Descripción:</strong> Repositorio JPA utilizado para gestionar la persistencia de los tipos de métricas (<code>MetricType</code>). Este repositorio permite realizar operaciones CRUD completas sobre los tipos de métricas del sistema.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hereda métodos de JpaRepository</td>
+      <td>Varía</td>
+      <td>Permite realizar operaciones CRUD sobre los tipos de métricas.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
 
