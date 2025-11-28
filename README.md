@@ -2984,6 +2984,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
+<h3>ACL:</h3>
+<h4><code>WellnessMetricContextFacade</code> (Interface)</h4>
+<ul>
+  <li>fetchWellnessMetricById(Long wellnessMetricId)</li>
+</ul>
+
 ##### 4.2.4.3 Application Layer
 
 <h3>Clase: <code>MetricCommandServiceImpl</code></h3>
