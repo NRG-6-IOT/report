@@ -251,37 +251,7 @@ Distribución de commits:
 El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
 
 ## Contenido
-  - [Contenido](#contenido)
-  - [Student Outcome](#student-outcome)
-  - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1 Startup Profile](#11-startup-profile)
-      - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-      - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2 Solution Profile](#12-solution-profile)
-      - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [1.2.2 Lean UX Process](#122-lean-ux-process)
-        - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-        - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-        - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1 Competidores](#21-competidores)
-      - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-      - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2 Entrevistas](#22-entrevistas)
-      - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-      - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-      - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3 Needfinding](#23-needfinding)
-      - [2.3.1 User Personas](#231-user-personas)
-      - [2.3.2 User Task Matrix](#232-user-task-matrix)
-      - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-      - [2.3.4 Empathy Mapping](#234-empathy-mapping)
-    - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
-    - [2.5 Ubiquitous Language](#25-ubiquitous-language)
-  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1 User Stories](#31-user-stories)
+- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -297,7 +267,7 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
         - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
+      - [4.2.1 Bounded Context: Vehicle Management](#421-bounded-context-vehicle-management)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
         - [4.2.1.3 Application Layer](#4213-application-layer)
@@ -315,7 +285,7 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
           - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-assignments)
+      - [4.2.3 Bounded Context: Assignments](#423-bounded-context-assignments)
         - [4.2.3.1 Domain Layer](#4231-domain-layer)
         - [4.2.3.2 Interface Layer](#4232-interface-layer)
         - [4.2.3.3 Application Layer](#4233-application-layer)
@@ -387,6 +357,16 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
         - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
         - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+      - [6.2.2. Sprint 2](#622-sprint-2)
+        - [6.2.2.1. Sprint Planning 2.](#6221-sprint-planning-2)
+        - [6.2.2.2. Aspect Leaders and Collaborators.](#6222-aspect-leaders-and-collaborators)
+        - [6.2.2.3. Sprint Backlog 2.](#6223-sprint-backlog-2)
+        - [6.2.2.4. Development Evidence for Sprint Review.](#6224-development-evidence-for-sprint-review)
+        - [6.2.2.5. Testing Suite Evidence for Sprint Review.](#6225-testing-suite-evidence-for-sprint-review)
+        - [6.2.2.6. Execution Evidence for Sprint Review.](#6226-execution-evidence-for-sprint-review)
+        - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
+        - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
+        - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
     - [6.3. Validation Interviews.](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
       - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
@@ -2695,118 +2675,145 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ##### 4.2.4.1 Domain Layer
 
 <h3>Aggregates</h3>
-<h4><code>Notification</code></h4>
-<p><strong>Descripción:</strong> Agregado que representa una notificación generada a partir del monitoreo del vehículo. Puede ser de tipo alerta o recomendación, y requiere confirmación del usuario o mecánico.</p>
+<h4><code>WellnessMetric</code></h4>
+<p><strong>Descripción:</strong> -</p>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>message</td><td>String</td><td>Mensaje de la notificación.</td></tr>
-    <tr><td>type</td><td>NotificationType (Enum)</td><td>Clasificación: ALERT o RECOMMENDATION.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo asociado.</td></tr>
-    <tr><td>status</td><td>NotificationStatus (Enum)</td><td>Estado de la notificación (PENDING, ACKNOWLEDGED).</td></tr>
-  </tbody>
-</table>
-
-<h4><code>Metric</code></h4>
-<p><strong>Descripción:</strong> Agregado que representa las métricas clave recopiladas por el dispositivo IoT del vehículo, organizadas como objetos de valor.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>odometer</td><td>Odometer (Value Object)</td><td>Distancia total recorrida.</td></tr>
-    <tr><td>temperature</td><td>Temperature (Value Object)</td><td>Temperatura actual del motor u otra parte crítica.</td></tr>
-    <tr><td>fuelConsumption</td><td>FuelConsumption (Value Object)</td><td>Consumo de combustible registrado.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo asociado.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>F</td></tr>
+    <tr><td>coordinates</td><td>Coordinates (Enum)</td><td>F</td></tr>
+    <tr><td>airQuality</td><td>AirQuality (Enum)</td><td>F</td></tr>
+    <tr><td>environmentalConditions</td><td>EnvironmentalConditions (Enum)</td><td>F</td></tr>
+    <tr><td>atmosphericPressure</td><td>AtmosphericPressure (Enum)</td><td>F</td></tr>
+    <tr><td>statusImpact</td><td>StatusImpact (Enum)</td><td>F</td></tr>
+    <tr><td>registeredAt</td><td>LocalDateTime</td><td>F</td></tr>
   </tbody>
 </table>
 
 <h3>Value Objects</h3>
-<h4><code>FuelConsumption</code></h4>
+<h4><code>AirQuality</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Consumo registrado.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (ej. L/100km).</td></tr>
+    <tr><td>CO2Ppm</td><td>Double</td><td>F</td></tr>
+    <tr><td>NH3Ppm</td><td>Double</td><td>F</td></tr>
+    <tr><td>BenzenePpm</td><td>Double</td><td>F</td></tr>
   </tbody>
 </table>
 
-<h4><code>Odometer</code></h4>
+<h4><code>AtmosphericPressure</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Valor total recorrido.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (km, millas).</td></tr>
+    <tr><td>pressureHpa</td><td>Float</td><td>F</td></tr>
   </tbody>
 </table>
 
-<h4><code>Temperature</code></h4>
+<h4><code>Coordinates</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Temperatura registrada.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (°C, °F).</td></tr>
+    <tr><td>latitude</td><td>Float</td><td>F</td></tr>
+    <tr><td>longitude</td><td>Float</td><td>F</td></tr>
   </tbody>
 </table>
 
-<h4><code>NotificationType</code> (Enum)</h4>
-<ul>
-  <li>ALERT</li>
-  <li>RECOMMENDATION</li>
-</ul>
+<h4><code>EnvironmentalConditions</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>temperatureCelsius</td><td>Float</td><td>F</td></tr>
+    <tr><td>humidityPercentage</td><td>Float</td><td>F</td></tr>
+  </tbody>
+</table>
 
-<h4><code>NotificationStatus</code> (Enum)</h4>
-<ul>
-  <li>PENDING</li>
-  <li>ACKNOWLEDGED</li>
-</ul>
+<h4><code>StatusImpact</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>impactDetected</td><td>Boolean</td><td>F</td></tr>
+  </tbody>
+</table>
+
+<h3>Entities</h3>
+<h4><code>Notification</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>vehicleId</td><td>Long</td><td>F</td></tr>
+    <tr><td>title</td><td>String</td><td>F</td></tr>
+    <tr><td>message</td><td>String</td><td>F</td></tr>
+    <tr><td>type</td><td>String</td><td>F</td></tr>
+    <tr><td>severity</td><td>String</td><td>F</td></tr>
+    <tr><td>read</td><td>boolean</td><td>F</td></tr>
+    <tr><td>occurredAt</td><td>LocalDateTime</td><td>F</td></tr>
+  </tbody>
+</table>
 
 <h3>Commands</h3>
 <ul>
-  <li><code>CreateMetricCommand</code> (Record)</li>
-  <li><code>CreateNotificationCommand</code> (Record)</li>
-  <li><code>AcknowledgeNotificationCommand</code> (Record)</li>
+  <li><code>CreateNotificationCommand(Long vehicleId,String title,String message,String type,String severity,LocalDateTime occurredAt)</code> (Record)</li>
+  <li><code>CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)</code> (Record)</li>
+  <li><code>DeleteWellnessMetricCommand(Long wellnessMetricId)</code> (Record)</li>
+  <li><code>MarkNotificationAsReadCommand(Long notificationId)</code> (Record)</li>
+  <li><code>UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)</code> (Record)</li>
 </ul>
 
 <h3>Queries</h3>
 <ul>
-  <li><code>GetMetricsByVehicleQuery</code> (Record)</li>
-  <li><code>GetMetricsByDateRangeQuery</code> (Record)</li>
-  <li><code>GetMetricByIdQuery</code> (Record)</li>
-  <li><code>GetNotificationsByVehicleQuery</code> (Record)</li>
-  <li><code>GetNotificationByTypeQuery</code> (Record)</li>
-  <li><code>GetNotificationByIdQuery</code> (Record)</li>
+  <li><code>GetAllNotificationsQuery()</code> (Record)</li>
+  <li><code>GetAllWellnessMetricsQuery()</code> (Record)</li>
+  <li><code>GetNotificationByIdQuery(Long notificationId)</code> (Record)</li>
+  <li><code>GetNotificationsByVehicleIdQuery(Long vehicleId)</code> (Record)</li>
+  <li><code>GetWellnessMetricByIdQuery(Long wellnessMetricId)</code> (Record)</li>
+  <li><code>GetWellnessMetricsByVehicleIdQuery(Long vehicleId)</code> (Record)</li>
+</ul>
+
+<h3>Events</h3>
+<ul>
+  <li><code>AirQualityAlertEvent</code></li>
+  <li><code>AtmosphericPressureAlertEvent</code></li>
+  <li><code>EnvironmentalConditionAlertEvent</code></li>
+  <li><code>StatusImpactAlertEvent</code></li>
 </ul>
 
 <h3>Services</h3>
-<h4><code>MetricCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(CreateMetricCommand)</li>
-</ul>
-<h4><code>MetricQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetMetricsByVehicleQuery)</li>
-  <li>+ handle(GetMetricsByDateRangeQuery)</li>
-  <li>+ handle(GetMetricByIdQuery)</li>
-</ul>
 <h4><code>NotificationCommandService</code> (Interface)</h4>
 <ul>
-  <li>+ handle(CreateNotificationCommand)</li>
-  <li>+ handle(AcknowledgeNotificationCommand)</li>
+  <li>handle(CreateNotificationCommand)</li>
+  <li>handle(MarkNotificationAsReadCommand)</li>
 </ul>
 <h4><code>NotificationQueryService</code> (Interface)</h4>
 <ul>
-  <li>+ handle(GetNotificationsByVehicleQuery)</li>
-  <li>+ handle(GetNotificationByTypeQuery)</li>
-  <li>+ handle(GetNotificationByIdQuery)</li>
+  <li>handle(GetNotificationByIdQuery)</li>
+  <li>handle(GetAllNotificationsQuery)</li>
+  <li>handle(GetNotificationsByVehicleIdQuery)</li>
+</ul>
+<h4><code>WellnessMetricCommandService</code> (Interface)</h4>
+<ul>
+  <li>handle(CreateWellnessMetricCommand)</li>
+  <li>handle(UpdateWellnessMetricCommand)</li>
+  <li>handle(DeleteWellnessMetricCommand)</li>
+</ul>
+<h4><code>WellnessMetricQueryService</code> (Interface)</h4>
+<ul>
+  <li>handle(GetWellnessMetricByIdQuery)</li>
+  <li>handle(GetAllWellnessMetricsQuery)</li>
+  <li>handle(GetWellnessMetricsByVehicleIdQuery)</li>
 </ul>
 
 ##### 4.2.4.2 Interface Layer
