@@ -1671,47 +1671,50 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.1.3 Application Layer
 
-### Clase: `VehicleCommandServiceImpl`
-**Descripción:** Implementación del servicio de comandos para la gestión de vehículos.
+`ModelCommandService`
+**Descripción:** Implementación del servicio de comandos para la gestión de modelos.
 
-| Método                                   | Descripción                                 |
-|------------------------------------------|---------------------------------------------|
-| handle(CreateVehicleCommand)             | Crea un nuevo vehículo.                     |
-| handle(UpdateVehicleCommand)             | Actualiza los detalles de un vehículo.      |
-| handle(UpdateVehicleOwnerCommand)        | Cambia el dueño del vehículo.               |
-| handle(AddMechanicToVehicleCommand)      | Asigna un mecánico autorizado al vehículo.  |
-| handle(RemoveMechanicFromVehicleCommand) | Revoca el mecánico autorizado del vehículo. |
+| Método                     | Descripción                                |
+|----------------------------|--------------------------------------------|
+| handle(CreateModelCommand) | Crea un nuevo modelo.                      |
+| handle(SeedModelsCommand)  | Crea los modelos al iniciar la aplicación. |
 
-**Dependencias:**
+`ModelQueryService`
+**Descripción:** Implementación del servicio de consultas para la gestión de modelos.
 
-| Dependencia                      | Descripción                                      |
-|----------------------------------|--------------------------------------------------|
-| VehicleRepository                | Repositorio para consultar datos de vehículos.   |
-| CreateVehicleCommand             | Comando para crear un vehículo.                  |
-| UpdateVehicleCommand             | Comando para actualizar un vehículo.             |
-| UpdateVehicleOwnerCommand        | Comando para actualizar el dueño de un vehículo. |
-| AddMechanicToVehicleCommand      | Comando para asignar un mecánico a un vehículo.  |
-| RemoveMechanicFromVehicleCommand | Comando para revocar un mecánico de un vehículo. |
+| Método                        | Descripción                                                        |
+|-------------------------------|--------------------------------------------------------------------|
+| handle(GetAllModelsQuery)     | Obtiene todos los modelos registrados.                             |
+| handle(GetModelByIdQuery)     | Obtiene un modelo por su identificador.                            |
+| handle(GetModelsByBrandQuery) | Obtiene todos los modelos de una marca específica.                 |
+| handle(GetAllBrandsQuery)     | Obtiene todas las marcas existentes entre los modelos del sistema. |
 
-### Clase: `VehicleQueryServiceImpl`
+`OwnerCommandService`
+**Descripción:** Implementación del servicio de comandos para la gestión de dueños.
+
+| Método                                | Descripción                          |
+|---------------------------------------|--------------------------------------|
+| handle(CreateOwnerCommand)            | Crea un nuevo dueño de moto.         |
+| handle(AddVehicleToOwnerCommand)      | Añade un vehículo nuevo al dueño.    |
+| handle(UpdateVehicleFromOwnerCommand) | Actualiza un vehículo para su dueño. |
+| handle(DeleteVehicleFromOwnerCommand) | Elimina un vehículo de un dueño.     |
+
+`OwnerQueryService`
+**Descripción:** Implementación del servicio de consultas para la gestión de dueños.
+
+| Método                           | Descripción                                                         |
+|----------------------------------|---------------------------------------------------------------------|
+| handle(GetOwnerByIdQuery)        | Obtiene un dueño por su identificador.                              |
+| handle(GetOwnerByVehicleIdQuery) | Obtiene un dueño a través del identificador de uno de sus vehículos |
+| handle(GetAllOwnersQuery)        | Obtiene todos los dueños registrados.                               |
+
+`VehicleQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas para la gestión de vehículos.
 
-| Método                               | Descripción                                           |
-|--------------------------------------|-------------------------------------------------------|
-| handle(GetVehicleByIdQuery)          | Obtiene un vehículo por su ID.                        |
-| handle(GetVehiclesByOwnerIdQuery)    | Obtiene todos los vehículos de un dueño               |
-| handle(GetVehiclesByMechanicIdQuery) | Obtiene todos los vehículos vinculados a un mecánico. |
-| handle(GetVehicleByVinQuery)         | Obtiene un vehículo por su VIN.                       |
-
-**Dependencias:**
-
-| Dependencia                  | Descripción                                           |
-|------------------------------|-------------------------------------------------------|
-| VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
-| GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
-| GetVehiclesByOwnerIdQuery    | Obtiene todos los vehículos de un dueño.              |
-| GetVehiclesByMechanicIdQuery | Obtiene todos los vehículos vinculados a un mecánico. |
-| GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
+| Método                         | Descripción                       |
+|--------------------------------|-----------------------------------|
+| handle(GetVehicleByIdQuery)    | Obtiene un vehículo por su ID.    |
+| handle(GetVehicleByPlateQuery) | Obtiene un vehículo por su placa. |
 
 ##### 4.2.1.4 Infrastructure Layer
 
