@@ -1718,18 +1718,30 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.1.4 Infrastructure Layer
 
-### Clase: `VehicleRepository`
-**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de vehículos.
+`OwnerRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de dueños.
 
-| Método                            | Descripción                                |
-|-----------------------------------|--------------------------------------------|
-| save(Vehicle vehicle)             | Guarda o actualiza un vehículo.            |
-| findById(Long id)                 | Busca un vehículo por su ID.               |
-| findByVin(String vin)             | Busca un vehículo por su VIN.              |
-| findByOwnerId(Long ownerId)       | Busca vehículos por ID de dueño.           |
-| findByMechanicId(Long mechanicId) | Busca vehículos por ID de mecánico.        |
-| existsByVin(String vin)           | Verifica si un vehículo existe por su VIN. |
-| deleteById(Long id)               | Elimina un vehículo por su ID.             |
+| Método                 | Tipo de Retorno | Descripción                                  |
+|------------------------|-----------------|----------------------------------------------|
+| findOwnerByProfile_Id  | Optional<Owner> | Encuentra un dueño por su id de perfil.      |
+| findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
+
+`ModelRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de modelos.
+
+| Método        | Tipo de Retorno | Descripción                                          |
+|---------------|-----------------|------------------------------------------------------|
+| existsByName  | boolean         | Valida la existencia de un modelo por su nombre.     |
+| findByBrand   | List<Model>     | Encuentra los modelos bajo una marca específica.     |
+| findAllBrands | List<String>    | Encuentra todas las marcas presentes en los modelos. |
+
+`VehicleReadRepositories`
+**Descripción:** Interfaz de persistencia para operaciones de lectura de vehículos.
+
+| Método                 | Tipo de Retorno | Descripción                                  |
+|------------------------|-----------------|----------------------------------------------|
+| findOwnerByProfile_Id  | Optional<Owner> | Encuentra un dueño por su id de perfil.      |
+| findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
 
 ##### 4.2.1.5 Bounded Context Software Architecture Component Level Diagrams
 
