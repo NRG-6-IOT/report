@@ -2676,19 +2676,19 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 <h3>Aggregates</h3>
 <h4><code>WellnessMetric</code></h4>
-<p><strong>Descripción:</strong> -</p>
+<p><strong>Descripción:</strong>Representa una métrica completa de bienestar registrada por un vehículo.</p>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>vehicleId</td><td>Long</td><td>F</td></tr>
-    <tr><td>coordinates</td><td>Coordinates (Enum)</td><td>F</td></tr>
-    <tr><td>airQuality</td><td>AirQuality (Enum)</td><td>F</td></tr>
-    <tr><td>environmentalConditions</td><td>EnvironmentalConditions (Enum)</td><td>F</td></tr>
-    <tr><td>atmosphericPressure</td><td>AtmosphericPressure (Enum)</td><td>F</td></tr>
-    <tr><td>statusImpact</td><td>StatusImpact (Enum)</td><td>F</td></tr>
-    <tr><td>registeredAt</td><td>LocalDateTime</td><td>F</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Identificador único del vehículo que registra la métrica</td></tr>
+    <tr><td>coordinates</td><td>Coordinates (Enum)</td><td>Ubicación geográfica donde se tomó la medición</td></tr>
+    <tr><td>airQuality</td><td>AirQuality (Enum)</td><td>Medición de la calidad del aire en el entorno</td></tr>
+    <tr><td>environmentalConditions</td><td>EnvironmentalConditions (Enum)</td><td>Condiciones ambientales generales registradas</td></tr>
+    <tr><td>atmosphericPressure</td><td>AtmosphericPressure (Enum)</td><td>Nivel de presión atmosférica medido</td></tr>
+    <tr><td>statusImpact</td><td>StatusImpact (Enum)</td><td>Indicador del impacto en el estado del sistema</td></tr>
+    <tr><td>registeredAt</td><td>LocalDateTime</td><td>Fecha y hora en que se registró la métrica</td></tr>
   </tbody>
 </table>
 
@@ -2699,9 +2699,9 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>CO2Ppm</td><td>Double</td><td>F</td></tr>
-    <tr><td>NH3Ppm</td><td>Double</td><td>F</td></tr>
-    <tr><td>BenzenePpm</td><td>Double</td><td>F</td></tr>
+    <tr><td>CO2Ppm</td><td>Double</td><td>Concentración de dióxido de carbono en partes por millón</td></tr>
+    <tr><td>NH3Ppm</td><td>Double</td><td>Concentración de amoníaco en partes por millón</td></tr>
+    <tr><td>BenzenePpm</td><td>Double</td><td>Concentración de benceno en partes por millón</td></tr>
   </tbody>
 </table>
 
@@ -2711,7 +2711,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>pressureHpa</td><td>Float</td><td>F</td></tr>
+    <tr><td>pressureHpa</td><td>Float</td><td>Valor de presión atmosférica en hectopascales</td></tr>
   </tbody>
 </table>
 
@@ -2721,8 +2721,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>latitude</td><td>Float</td><td>F</td></tr>
-    <tr><td>longitude</td><td>Float</td><td>F</td></tr>
+    <tr><td>latitude</td><td>Float</td><td>Coordenada de latitud de la ubicación</td></tr>
+    <tr><td>longitude</td><td>Float</td><td>Coordenada de longitud de la ubicación</td></tr>
   </tbody>
 </table>
 
@@ -2732,8 +2732,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>temperatureCelsius</td><td>Float</td><td>F</td></tr>
-    <tr><td>humidityPercentage</td><td>Float</td><td>F</td></tr>
+    <tr><td>temperatureCelsius</td><td>Float</td><td>Temperatura ambiental en grados Celsius</td></tr>
+    <tr><td>humidityPercentage</td><td>Float</td><td>Porcentaje de humedad relativa en el ambiente</td></tr>
   </tbody>
 </table>
 
@@ -2743,7 +2743,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>impactDetected</td><td>Boolean</td><td>F</td></tr>
+    <tr><td>impactDetected</td><td>Boolean</td><td>	Indicador de si se detectó algún impacto en el sistema</td></tr>
   </tbody>
 </table>
 
@@ -2754,13 +2754,13 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>vehicleId</td><td>Long</td><td>F</td></tr>
-    <tr><td>title</td><td>String</td><td>F</td></tr>
-    <tr><td>message</td><td>String</td><td>F</td></tr>
-    <tr><td>type</td><td>String</td><td>F</td></tr>
-    <tr><td>severity</td><td>String</td><td>F</td></tr>
-    <tr><td>read</td><td>boolean</td><td>F</td></tr>
-    <tr><td>occurredAt</td><td>LocalDateTime</td><td>F</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo relacionado con la notificación</td></tr>
+    <tr><td>title</td><td>String</td><td>Título descriptivo de la notificación</td></tr>
+    <tr><td>message</td><td>String</td><td>Contenido detallado del mensaje de notificación</td></tr>
+    <tr><td>type</td><td>String</td><td>Categoría o clasificación de la notificación</td></tr>
+    <tr><td>severity</td><td>String</td><td>Nivel de gravedad o importancia de la notificación</td></tr>
+    <tr><td>read</td><td>boolean</td><td>Estado que indica si la notificación ha sido leída</td></tr>
+    <tr><td>occurredAt</td><td>LocalDateTime</td><td>Fecha y hora en que ocurrió el evento notificado</td></tr>
   </tbody>
 </table>
 
