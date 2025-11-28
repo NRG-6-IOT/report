@@ -2817,12 +2817,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 </ul>
 
 ##### 4.2.4.2 Interface Layer
-
-<h3>Controlador: <code>MetricController</code></h3>
+<h3>Controllers:</h3>
+<h4>Controlador: <code>WellnessMetricsController</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricController</td>
+    <td>Wellness Metrics Controller</td>
   </tr>
   <tr>
     <th>Descripción</th>
@@ -2839,63 +2839,120 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>createMetric</td>
+      <td>createWellnessMetric</td>
       <td>POST /api/v1/metrics</td>
-      <td>Crea una nueva métrica asociada a un vehículo.</td>
+      <td>Crea una nueva métrica de bienestar para un vehículo</td>
     </tr>
     <tr>
-      <td>getMetricsByVehicle</td>
-      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
-      <td>Obtiene todas las métricas registradas para un vehículo específico.</td>
+      <td>updateWellnessMetric</td>
+      <td>PUT /api/v1/metrics/{id}</td>
+      <td>Actualiza una métrica de bienestar existente</td>
     </tr>
     <tr>
-      <td>getMetricsByDateRange</td>
-      <td>GET /api/v1/metrics/vehicle/{vehicleId}/range?from={from}&to={to}</td>
-      <td>Recupera las métricas de un vehículo dentro de un rango de fechas específico.</td>
+      <td>deleteWellnessMetric</td>
+      <td>DELETE /api/v1/metrics/{id}</td>
+      <td>Elimina una métrica de bienestar por su ID</td>
     </tr>
     <tr>
-      <td>getMetricById</td>
+      <td>getWellnessMetricById</td>
       <td>GET /api/v1/metrics/{id}</td>
-      <td>Obtiene una métrica específica por su ID.</td>
+      <td>Recupera una métrica de bienestar específica por su ID</td>
+    </tr>
+    <tr>
+      <td>getAllWellnessMetrics</td>
+      <td>GET /api/v1/metrics</td>
+      <td>Recupera todas las métricas de bienestar disponibles</td>
+    </tr>
+    <tr>
+      <td>getWellnessMetricsByVehicleId</td>
+      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
+      <td>Recupera todas las métricas de bienestar para un vehículo específico</td>
     </tr>
   </tbody>
 </table>
-<h4>Dependencias:</h4>
+
+<h4>Controlador: <code>Notifications Controller</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>Notifications Controller</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos.</td>
+  </tr>
+</table>
 <table>
   <thead>
     <tr>
-      <th>Dependencia</th>
+      <th>Método</th>
+      <th>Ruta</th>
       <th>Descripción</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>MetricQueryService</td>
-      <td>Servicio para consultas relacionadas con métricas de vehículos.</td>
+      <td>createNotification</td>
+      <td>POST /api/v1/notifications</td>
+      <td>Crea una nueva notificación en el sistema</td>
     </tr>
     <tr>
-      <td>MetricCommandService</td>
-      <td>Servicio para ejecutar comandos relacionados con la creación y gestión de métricas.</td>
+      <td>getNotificationById</td>
+      <td>GET /api/v1/notifications/{id}</td>
+      <td>Recupera una notificación específica por su ID</td>
     </tr>
     <tr>
-      <td>CreateMetricCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de métricas.</td>
+      <td>getAllNotifications</td>
+      <td>GET /api/v1/notifications</td>
+      <td>Recupera todas las notificaciones del sistema</td>
     </tr>
     <tr>
-      <td>MetricResourceFromEntityAssembler</td>
-      <td>Convierte entidades de métricas en recursos REST para la respuesta.</td>
+      <td>getNotificationsByVehicleId</td>
+      <td>GET /api/v1/notifications/vehicle/{vehicleId}</td>
+      <td>Recupera todas las notificaciones para un vehículo específico</td>
     </tr>
     <tr>
-      <td>CreateNotificationCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de notificaciones preventivas relacionadas con métricas.</td>
-    </tr>
-    <tr>
-      <td>NotificationResourceFromEntityAssembler</td>
-      <td>Convierte entidades de notificación en recursos REST para la respuesta.</td>
+      <td>markNotificationAsRead</td>
+      <td>GET /api/v1/notifications/{id}/read</td>
+      <td>Marca una notificación como leída</td>
     </tr>
   </tbody>
 </table>
-<h4>Resources:</h4>
+
+
+<h3>Transforms:</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Transform</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CreateNotificationCommandFromResourceAssembler</td>
+      <td>Convierte los recursos de entrada en comandos para crear notificaciones</td>
+    </tr>
+    <tr>
+      <td>CreateWellnessMetricCommandFromResourceAssembler</td>
+      <td>Transforma los recursos de entrada en comandos para crear métricas de bienestar</td>
+    </tr>
+    <tr>
+      <td>NotificationResourceFromEntityAssembler</td>
+      <td>Convierte entidades de notificación en recursos de respuesta para la API</td>
+    </tr>
+    <tr>
+      <td>UpdateWellnessMetricCommandFromResourceAssembler</td>
+      <td>Transforma los recursos de actualización en comandos para modificar métricas</td>
+    </tr>
+    <tr>
+      <td>WellnessMetricResourceFromEntityAssembler</td>
+      <td>Convierte entidades de métricas de bienestar en recursos de respuesta para la API</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Resources:</h3>
 <table>
   <thead>
     <tr>
@@ -2905,20 +2962,24 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>CreateMetricResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para la creación de métricas.</td>
+      <td>CreateMetricResource</td>
+      <td>Estructura de datos para la creación de nuevas métricas en el sistema</td>
     </tr>
     <tr>
-      <td>MetricResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para exponer métricas en las respuestas REST.</td>
+      <td>CreateWellnessMetricResource</td>
+      <td>Modelo de datos para solicitudes de creación de métricas de bienestar</td>
     </tr>
     <tr>
-      <td>CreateNotificationResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para la creación de notificaciones asociadas al bienestar vehicular.</td>
+      <td>NotificationResource</td>
+      <td>Representación de notificaciones en las respuestas de la API</td>
     </tr>
     <tr>
-      <td>NotificationResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para exponer notificaciones en las respuestas REST.</td>
+      <td>UpdateWellnessMetricResource</td>
+      <td>Estructura de datos para actualizar métricas de bienestar existentes</td>
+    </tr>
+    <tr>
+      <td>WellnessMetricResource</td>
+      <td>Representación de métricas de bienestar en las respuestas de la API</td>
     </tr>
   </tbody>
 </table>
