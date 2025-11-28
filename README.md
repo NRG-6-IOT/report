@@ -3597,7 +3597,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.1 Bounded Context Domain Layer Class Diagrams
 
-![report-class-diagram.png](images/chapter-4/report-class-diagram.png)
+![DOMAINDIAGRAMREPORT.png](images/chapter-4/DOMAINDIAGRAMREPORT.png)
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
