@@ -3370,11 +3370,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.4.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/vehicle_wellness_code_level.png" alt="vehicle_wellness_code_level" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_code_level.drawio.png" alt="vehicle_wellness_code_level" width="600"/>
 
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
