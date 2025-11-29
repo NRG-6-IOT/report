@@ -2997,11 +2997,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricCommandServiceImpl</td>
+    <td>NotificationCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>F</td>
+    <td>Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema</td>
   </tr>
 </table>
 <table>
@@ -3014,11 +3014,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>handle(CreateNotificationCommand createNotificationCommand)</td>
-      <td>F</td>
+      <td>Procesa la creación de una nueva notificación en el sistema</td>
     </tr>
     <tr>
       <td>handle(MarkNotificationAsReadCommand command)</td>
-      <td>F</td>
+      <td>Maneja la marcación de una notificación como leída</td>
     </tr>
   </tbody>
 </table>
@@ -3032,12 +3032,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>MetricRepository</td>
-      <td>F</td>
+      <td>NotificationRepository</td>
+      <td>Repositorio para acceder y gestionar los datos de notificaciones</td>
     </tr>
     <tr>
       <td>ExternalVehiclesService</td>
-      <td>F</td>
+      <td>Servicio externo para obtener información de vehículos</td>
     </tr>
   </tbody>
 </table>
@@ -3052,7 +3052,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>F</td>
+    <td>Servicio que maneja las operaciones de modificación de métricas de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3065,15 +3065,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>handle(CreateWellnessMetricCommand createWellnessMetricCommand)</td>
-      <td>F</td>
+      <td>Procesa la creación de nuevas métricas de bienestar</td>
     </tr>
     <tr>
       <td>handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)</td>
-      <td>F</td>
+      <td>Maneja la actualización de métricas de bienestar existentes</td>
     </tr>
     <tr>
       <td>handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)</td>
-      <td>F</td>
+      <td>Gestiona la eliminación de métricas de bienestar</td>
     </tr>
   </tbody>
 </table>
@@ -3088,15 +3088,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>WellnessMetricRepository</td>
-      <td>F</td>
+      <td>Repositorio para almacenar y recuperar métricas de bienestar</td>
     </tr>
     <tr>
       <td>WellnessMonitoringService</td>
-      <td>F</td>
+      <td>Servicio para monitorear y analizar las métricas de bienestar</td>
     </tr>
     <tr>
       <td>ExternalVehiclesService</td>
-      <td>F</td>
+      <td>Servicio externo para validar y obtener datos de vehículos</td>
     </tr>
   </tbody>
 </table>
@@ -3112,7 +3112,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>F</td>
+    <td>Servicio especializado en consultas y recuperación de notificaciones</td>
   </tr>
 </table>
 <table>
@@ -3125,15 +3125,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>handle(GetNotificationByIdQuery getNotificationByIdQuery)</td>
-      <td>F</td>
+      <td>Recupera una notificación específica por su identificador</td>
     </tr>
     <tr>
       <td>handle(GetAllNotificationsQuery getAllNotificationsQuery)</td>
-      <td>F</td>
+      <td>Obtiene todas las notificaciones del sistema</td>
     </tr>
     <tr>
       <td>handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)</td>
-      <td>F</td>
+      <td>Consulta las notificaciones asociadas a un vehículo específico</td>
     </tr>
   </tbody>
 </table>
@@ -3148,20 +3148,20 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationRepository</td>
-      <td>F</td>
+      <td>Repositorio para acceder a los datos de notificaciones</td>
     </tr>
   </tbody>
 </table>
 
-<h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
+<h4>Clase: <code>WellnessMetricQueryServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>NotificationQueryServiceImpl</td>
+    <td>WellnessMetricQueryServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>F</td>
+    <td>Servicio que maneja las consultas de métricas de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3173,16 +3173,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetNotificationByIdQuery getNotificationByIdQuery)</td>
-      <td>F</td>
+      <td>handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery)</td>
+      <td>Obtiene una métrica de bienestar específica por su ID</td>
     </tr>
     <tr>
-      <td>handle(GetAllNotificationsQuery getAllNotificationsQuery)</td>
-      <td>F</td>
+      <td>handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery)</td>
+      <td>Recupera todas las métricas de bienestar disponibles</td>
     </tr>
     <tr>
-      <td>handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)</td>
-      <td>F</td>
+      <td>handle(GetWellnessMetricsByVehicleIdQuery getWellnessMetricsByVehicleIdQuery)</td>
+      <td>Consulta las métricas de bienestar de un vehículo específico</td>
     </tr>
   </tbody>
 </table>
@@ -3196,8 +3196,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>NotificationRepository</td>
-      <td>F</td>
+      <td>WellnessMetricRepository</td>
+      <td>Repositorio para acceder a los datos de métricas de bienestar</td>
     </tr>
   </tbody>
 </table>
@@ -3213,7 +3213,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>F</td>
+    <td>Manejador de eventos relacionados con alertas del sistema de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3226,19 +3226,19 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>on(AirQualityAlertEvent event)</td>
-      <td>F</td>
+      <td>Procesa eventos de alerta relacionados con la calidad del aire</td>
     </tr>
     <tr>
       <td>on(AtmosphericPressureAlertEvent event)</td>
-      <td>F</td>
+      <td>Maneja eventos de alerta por presión atmosférica</td>
     </tr>
     <tr>
       <td>on(EnvironmentalConditionAlertEvent event)</td>
-      <td>F</td>
+      <td>Gestiona eventos de alerta por condiciones ambientales</td>
     </tr>
     <tr>
       <td>on(StatusImpactAlertEvent event)</td>
-      <td>F</td>
+      <td>Procesa eventos de alerta por impacto en el estado del sistema</td>
     </tr>
   </tbody>
 </table>
@@ -3253,15 +3253,15 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationCommandService</td>
-      <td>F</td>
+      <td>Servicio para crear notificaciones de alerta</td>
     </tr>
     <tr>
       <td>NotificationQueryService</td>
-      <td>F</td>
+      <td>Servicio para consultar notificaciones existentes</td>
     </tr>
     <tr>
       <td>WellnessWebSocketController</td>
-      <td>F</td>
+      <td>Controlador para enviar alertas en tiempo real</td>
     </tr>
   </tbody>
 </table>
@@ -3277,7 +3277,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>F</td>
+    <td>Fachada que actúa como puente entre el contexto de bienestar y otros sistemas</td>
   </tr>
 </table>
 <table>
@@ -3290,7 +3290,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>fetchWellnessMetricById(Long wellnessMetricId)</td>
-      <td>F</td>
+      <td>Recupera métricas de bienestar para su uso en otros contextos del sistema
+</td>
     </tr>
   </tbody>
 </table>
@@ -3305,7 +3306,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>WellnessMetricQueryService</td>
-      <td>F</td>
+      <td>Servicio para consultar métricas de bienestar</td>
     </tr>
   </tbody>
 </table>
