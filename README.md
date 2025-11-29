@@ -3042,7 +3042,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<hr>
+
 
 <h4>Clase: <code>WellnessMetricCommandServiceImpl</code></h4>
 <table>
@@ -3101,6 +3101,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
+<hr>
 
 <h3>Query Services</h3>
 <h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
@@ -3152,8 +3153,6 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tbody>
 </table>
 
-<hr>
-
 <h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
 <table>
   <tr>
@@ -3202,6 +3201,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </tbody>
 </table>
+
+<hr>
 
 <h3>Event Handlers</h3>
 <h4>Clase: <code>WellnessAlertEventHandler</code></h4>
@@ -3264,6 +3265,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </tbody>
 </table>
+
+<hr>
 
 <h3>ACL</h3>
 <h4>Clase: <code>WellnessMetricContextFacadeImpl</code></h4>
@@ -3336,6 +3339,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las métricas históricas de un vehículo.</td></tr>
   </tbody>
 </table>
+
+<hr>
 
 <h3>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
 <table>
