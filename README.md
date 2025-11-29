@@ -251,37 +251,7 @@ Distribución de commits:
 El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
 
 ## Contenido
-  - [Contenido](#contenido)
-  - [Student Outcome](#student-outcome)
-  - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1 Startup Profile](#11-startup-profile)
-      - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-      - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2 Solution Profile](#12-solution-profile)
-      - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [1.2.2 Lean UX Process](#122-lean-ux-process)
-        - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-        - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-        - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1 Competidores](#21-competidores)
-      - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-      - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2 Entrevistas](#22-entrevistas)
-      - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-      - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-      - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3 Needfinding](#23-needfinding)
-      - [2.3.1 User Personas](#231-user-personas)
-      - [2.3.2 User Task Matrix](#232-user-task-matrix)
-      - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-      - [2.3.4 Empathy Mapping](#234-empathy-mapping)
-    - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
-    - [2.5 Ubiquitous Language](#25-ubiquitous-language)
-  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1 User Stories](#31-user-stories)
+- [Épicas](#épicas)
     - [3.2 Impact Mapping](#32-impact-mapping)
     - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
@@ -297,7 +267,7 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
         - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
     - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
+      - [4.2.1 Bounded Context: Vehicle Management](#421-bounded-context-vehicle-management)
         - [4.2.1.1 Domain Layer](#4211-domain-layer)
         - [4.2.1.2 Interface Layer](#4212-interface-layer)
         - [4.2.1.3 Application Layer](#4213-application-layer)
@@ -315,7 +285,7 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
           - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-assignments)
+      - [4.2.3 Bounded Context: Assignments](#423-bounded-context-assignments)
         - [4.2.3.1 Domain Layer](#4231-domain-layer)
         - [4.2.3.2 Interface Layer](#4232-interface-layer)
         - [4.2.3.3 Application Layer](#4233-application-layer)
@@ -387,6 +357,16 @@ El desarrollo de este sprint se concentró en consolidar los avances del web app
         - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
         - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
         - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+      - [6.2.2. Sprint 2](#622-sprint-2)
+        - [6.2.2.1. Sprint Planning 2.](#6221-sprint-planning-2)
+        - [6.2.2.2. Aspect Leaders and Collaborators.](#6222-aspect-leaders-and-collaborators)
+        - [6.2.2.3. Sprint Backlog 2.](#6223-sprint-backlog-2)
+        - [6.2.2.4. Development Evidence for Sprint Review.](#6224-development-evidence-for-sprint-review)
+        - [6.2.2.5. Testing Suite Evidence for Sprint Review.](#6225-testing-suite-evidence-for-sprint-review)
+        - [6.2.2.6. Execution Evidence for Sprint Review.](#6226-execution-evidence-for-sprint-review)
+        - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
+        - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
+        - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
     - [6.3. Validation Interviews.](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
       - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
@@ -2695,127 +2675,154 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ##### 4.2.4.1 Domain Layer
 
 <h3>Aggregates</h3>
-<h4><code>Notification</code></h4>
-<p><strong>Descripción:</strong> Agregado que representa una notificación generada a partir del monitoreo del vehículo. Puede ser de tipo alerta o recomendación, y requiere confirmación del usuario o mecánico.</p>
+<h4><code>WellnessMetric</code></h4>
+<p><strong>Descripción:</strong>Representa una métrica completa de bienestar registrada por un vehículo.</p>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>message</td><td>String</td><td>Mensaje de la notificación.</td></tr>
-    <tr><td>type</td><td>NotificationType (Enum)</td><td>Clasificación: ALERT o RECOMMENDATION.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo asociado.</td></tr>
-    <tr><td>status</td><td>NotificationStatus (Enum)</td><td>Estado de la notificación (PENDING, ACKNOWLEDGED).</td></tr>
-  </tbody>
-</table>
-
-<h4><code>Metric</code></h4>
-<p><strong>Descripción:</strong> Agregado que representa las métricas clave recopiladas por el dispositivo IoT del vehículo, organizadas como objetos de valor.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>odometer</td><td>Odometer (Value Object)</td><td>Distancia total recorrida.</td></tr>
-    <tr><td>temperature</td><td>Temperature (Value Object)</td><td>Temperatura actual del motor u otra parte crítica.</td></tr>
-    <tr><td>fuelConsumption</td><td>FuelConsumption (Value Object)</td><td>Consumo de combustible registrado.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo asociado.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Identificador único del vehículo que registra la métrica</td></tr>
+    <tr><td>coordinates</td><td>Coordinates (Enum)</td><td>Ubicación geográfica donde se tomó la medición</td></tr>
+    <tr><td>airQuality</td><td>AirQuality (Enum)</td><td>Medición de la calidad del aire en el entorno</td></tr>
+    <tr><td>environmentalConditions</td><td>EnvironmentalConditions (Enum)</td><td>Condiciones ambientales generales registradas</td></tr>
+    <tr><td>atmosphericPressure</td><td>AtmosphericPressure (Enum)</td><td>Nivel de presión atmosférica medido</td></tr>
+    <tr><td>statusImpact</td><td>StatusImpact (Enum)</td><td>Indicador del impacto en el estado del sistema</td></tr>
+    <tr><td>registeredAt</td><td>LocalDateTime</td><td>Fecha y hora en que se registró la métrica</td></tr>
   </tbody>
 </table>
 
 <h3>Value Objects</h3>
-<h4><code>FuelConsumption</code></h4>
+<h4><code>AirQuality</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Consumo registrado.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (ej. L/100km).</td></tr>
+    <tr><td>CO2Ppm</td><td>Double</td><td>Concentración de dióxido de carbono en partes por millón</td></tr>
+    <tr><td>NH3Ppm</td><td>Double</td><td>Concentración de amoníaco en partes por millón</td></tr>
+    <tr><td>BenzenePpm</td><td>Double</td><td>Concentración de benceno en partes por millón</td></tr>
   </tbody>
 </table>
 
-<h4><code>Odometer</code></h4>
+<h4><code>AtmosphericPressure</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Valor total recorrido.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (km, millas).</td></tr>
+    <tr><td>pressureHpa</td><td>Float</td><td>Valor de presión atmosférica en hectopascales</td></tr>
   </tbody>
 </table>
 
-<h4><code>Temperature</code></h4>
+<h4><code>Coordinates</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Temperatura registrada.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (°C, °F).</td></tr>
+    <tr><td>latitude</td><td>Float</td><td>Coordenada de latitud de la ubicación</td></tr>
+    <tr><td>longitude</td><td>Float</td><td>Coordenada de longitud de la ubicación</td></tr>
   </tbody>
 </table>
 
-<h4><code>NotificationType</code> (Enum)</h4>
-<ul>
-  <li>ALERT</li>
-  <li>RECOMMENDATION</li>
-</ul>
+<h4><code>EnvironmentalConditions</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>temperatureCelsius</td><td>Float</td><td>Temperatura ambiental en grados Celsius</td></tr>
+    <tr><td>humidityPercentage</td><td>Float</td><td>Porcentaje de humedad relativa en el ambiente</td></tr>
+  </tbody>
+</table>
 
-<h4><code>NotificationStatus</code> (Enum)</h4>
-<ul>
-  <li>PENDING</li>
-  <li>ACKNOWLEDGED</li>
-</ul>
+<h4><code>StatusImpact</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>impactDetected</td><td>Boolean</td><td>	Indicador de si se detectó algún impacto en el sistema</td></tr>
+  </tbody>
+</table>
+
+<h3>Entities</h3>
+<h4><code>Notification</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo relacionado con la notificación</td></tr>
+    <tr><td>title</td><td>String</td><td>Título descriptivo de la notificación</td></tr>
+    <tr><td>message</td><td>String</td><td>Contenido detallado del mensaje de notificación</td></tr>
+    <tr><td>type</td><td>String</td><td>Categoría o clasificación de la notificación</td></tr>
+    <tr><td>severity</td><td>String</td><td>Nivel de gravedad o importancia de la notificación</td></tr>
+    <tr><td>read</td><td>boolean</td><td>Estado que indica si la notificación ha sido leída</td></tr>
+    <tr><td>occurredAt</td><td>LocalDateTime</td><td>Fecha y hora en que ocurrió el evento notificado</td></tr>
+  </tbody>
+</table>
 
 <h3>Commands</h3>
 <ul>
-  <li><code>CreateMetricCommand</code> (Record)</li>
-  <li><code>CreateNotificationCommand</code> (Record)</li>
-  <li><code>AcknowledgeNotificationCommand</code> (Record)</li>
+  <li><code>CreateNotificationCommand(Long vehicleId,String title,String message,String type,String severity,LocalDateTime occurredAt)</code> (Record)</li>
+  <li><code>CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)</code> (Record)</li>
+  <li><code>DeleteWellnessMetricCommand(Long wellnessMetricId)</code> (Record)</li>
+  <li><code>MarkNotificationAsReadCommand(Long notificationId)</code> (Record)</li>
+  <li><code>UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)</code> (Record)</li>
 </ul>
 
 <h3>Queries</h3>
 <ul>
-  <li><code>GetMetricsByVehicleQuery</code> (Record)</li>
-  <li><code>GetMetricsByDateRangeQuery</code> (Record)</li>
-  <li><code>GetMetricByIdQuery</code> (Record)</li>
-  <li><code>GetNotificationsByVehicleQuery</code> (Record)</li>
-  <li><code>GetNotificationByTypeQuery</code> (Record)</li>
-  <li><code>GetNotificationByIdQuery</code> (Record)</li>
+  <li><code>GetAllNotificationsQuery()</code> (Record)</li>
+  <li><code>GetAllWellnessMetricsQuery()</code> (Record)</li>
+  <li><code>GetNotificationByIdQuery(Long notificationId)</code> (Record)</li>
+  <li><code>GetNotificationsByVehicleIdQuery(Long vehicleId)</code> (Record)</li>
+  <li><code>GetWellnessMetricByIdQuery(Long wellnessMetricId)</code> (Record)</li>
+  <li><code>GetWellnessMetricsByVehicleIdQuery(Long vehicleId)</code> (Record)</li>
+</ul>
+
+<h3>Events</h3>
+<ul>
+  <li><code>AirQualityAlertEvent</code></li>
+  <li><code>AtmosphericPressureAlertEvent</code></li>
+  <li><code>EnvironmentalConditionAlertEvent</code></li>
+  <li><code>StatusImpactAlertEvent</code></li>
 </ul>
 
 <h3>Services</h3>
-<h4><code>MetricCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(CreateMetricCommand)</li>
-</ul>
-<h4><code>MetricQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetMetricsByVehicleQuery)</li>
-  <li>+ handle(GetMetricsByDateRangeQuery)</li>
-  <li>+ handle(GetMetricByIdQuery)</li>
-</ul>
 <h4><code>NotificationCommandService</code> (Interface)</h4>
 <ul>
-  <li>+ handle(CreateNotificationCommand)</li>
-  <li>+ handle(AcknowledgeNotificationCommand)</li>
+  <li>handle(CreateNotificationCommand)</li>
+  <li>handle(MarkNotificationAsReadCommand)</li>
 </ul>
 <h4><code>NotificationQueryService</code> (Interface)</h4>
 <ul>
-  <li>+ handle(GetNotificationsByVehicleQuery)</li>
-  <li>+ handle(GetNotificationByTypeQuery)</li>
-  <li>+ handle(GetNotificationByIdQuery)</li>
+  <li>handle(GetNotificationByIdQuery)</li>
+  <li>handle(GetAllNotificationsQuery)</li>
+  <li>handle(GetNotificationsByVehicleIdQuery)</li>
+</ul>
+<h4><code>WellnessMetricCommandService</code> (Interface)</h4>
+<ul>
+  <li>handle(CreateWellnessMetricCommand)</li>
+  <li>handle(UpdateWellnessMetricCommand)</li>
+  <li>handle(DeleteWellnessMetricCommand)</li>
+</ul>
+<h4><code>WellnessMetricQueryService</code> (Interface)</h4>
+<ul>
+  <li>handle(GetWellnessMetricByIdQuery)</li>
+  <li>handle(GetAllWellnessMetricsQuery)</li>
+  <li>handle(GetWellnessMetricsByVehicleIdQuery)</li>
 </ul>
 
 ##### 4.2.4.2 Interface Layer
-
-<h3>Controlador: <code>MetricController</code></h3>
+<h3>Controllers:</h3>
+<h4>Controlador: <code>WellnessMetricsController</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricController</td>
+    <td>Wellness Metrics Controller</td>
   </tr>
   <tr>
     <th>Descripción</th>
@@ -2832,63 +2839,120 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>createMetric</td>
+      <td>createWellnessMetric</td>
       <td>POST /api/v1/metrics</td>
-      <td>Crea una nueva métrica asociada a un vehículo.</td>
+      <td>Crea una nueva métrica de bienestar para un vehículo</td>
     </tr>
     <tr>
-      <td>getMetricsByVehicle</td>
-      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
-      <td>Obtiene todas las métricas registradas para un vehículo específico.</td>
+      <td>updateWellnessMetric</td>
+      <td>PUT /api/v1/metrics/{id}</td>
+      <td>Actualiza una métrica de bienestar existente</td>
     </tr>
     <tr>
-      <td>getMetricsByDateRange</td>
-      <td>GET /api/v1/metrics/vehicle/{vehicleId}/range?from={from}&to={to}</td>
-      <td>Recupera las métricas de un vehículo dentro de un rango de fechas específico.</td>
+      <td>deleteWellnessMetric</td>
+      <td>DELETE /api/v1/metrics/{id}</td>
+      <td>Elimina una métrica de bienestar por su ID</td>
     </tr>
     <tr>
-      <td>getMetricById</td>
+      <td>getWellnessMetricById</td>
       <td>GET /api/v1/metrics/{id}</td>
-      <td>Obtiene una métrica específica por su ID.</td>
+      <td>Recupera una métrica de bienestar específica por su ID</td>
+    </tr>
+    <tr>
+      <td>getAllWellnessMetrics</td>
+      <td>GET /api/v1/metrics</td>
+      <td>Recupera todas las métricas de bienestar disponibles</td>
+    </tr>
+    <tr>
+      <td>getWellnessMetricsByVehicleId</td>
+      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
+      <td>Recupera todas las métricas de bienestar para un vehículo específico</td>
     </tr>
   </tbody>
 </table>
-<h4>Dependencias:</h4>
+
+<h4>Controlador: <code>Notifications Controller</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>Notifications Controller</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos.</td>
+  </tr>
+</table>
 <table>
   <thead>
     <tr>
-      <th>Dependencia</th>
+      <th>Método</th>
+      <th>Ruta</th>
       <th>Descripción</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>MetricQueryService</td>
-      <td>Servicio para consultas relacionadas con métricas de vehículos.</td>
+      <td>createNotification</td>
+      <td>POST /api/v1/notifications</td>
+      <td>Crea una nueva notificación en el sistema</td>
     </tr>
     <tr>
-      <td>MetricCommandService</td>
-      <td>Servicio para ejecutar comandos relacionados con la creación y gestión de métricas.</td>
+      <td>getNotificationById</td>
+      <td>GET /api/v1/notifications/{id}</td>
+      <td>Recupera una notificación específica por su ID</td>
     </tr>
     <tr>
-      <td>CreateMetricCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de métricas.</td>
+      <td>getAllNotifications</td>
+      <td>GET /api/v1/notifications</td>
+      <td>Recupera todas las notificaciones del sistema</td>
     </tr>
     <tr>
-      <td>MetricResourceFromEntityAssembler</td>
-      <td>Convierte entidades de métricas en recursos REST para la respuesta.</td>
+      <td>getNotificationsByVehicleId</td>
+      <td>GET /api/v1/notifications/vehicle/{vehicleId}</td>
+      <td>Recupera todas las notificaciones para un vehículo específico</td>
     </tr>
     <tr>
-      <td>CreateNotificationCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de notificaciones preventivas relacionadas con métricas.</td>
-    </tr>
-    <tr>
-      <td>NotificationResourceFromEntityAssembler</td>
-      <td>Convierte entidades de notificación en recursos REST para la respuesta.</td>
+      <td>markNotificationAsRead</td>
+      <td>GET /api/v1/notifications/{id}/read</td>
+      <td>Marca una notificación como leída</td>
     </tr>
   </tbody>
 </table>
-<h4>Resources:</h4>
+
+
+<h3>Transforms:</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Transform</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CreateNotificationCommandFromResourceAssembler</td>
+      <td>Convierte los recursos de entrada en comandos para crear notificaciones</td>
+    </tr>
+    <tr>
+      <td>CreateWellnessMetricCommandFromResourceAssembler</td>
+      <td>Transforma los recursos de entrada en comandos para crear métricas de bienestar</td>
+    </tr>
+    <tr>
+      <td>NotificationResourceFromEntityAssembler</td>
+      <td>Convierte entidades de notificación en recursos de respuesta para la API</td>
+    </tr>
+    <tr>
+      <td>UpdateWellnessMetricCommandFromResourceAssembler</td>
+      <td>Transforma los recursos de actualización en comandos para modificar métricas</td>
+    </tr>
+    <tr>
+      <td>WellnessMetricResourceFromEntityAssembler</td>
+      <td>Convierte entidades de métricas de bienestar en recursos de respuesta para la API</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Resources:</h3>
 <table>
   <thead>
     <tr>
@@ -2898,73 +2962,38 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>CreateMetricResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para la creación de métricas.</td>
+      <td>CreateMetricResource</td>
+      <td>Estructura de datos para la creación de nuevas métricas en el sistema</td>
     </tr>
     <tr>
-      <td>MetricResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para exponer métricas en las respuestas REST.</td>
+      <td>CreateWellnessMetricResource</td>
+      <td>Modelo de datos para solicitudes de creación de métricas de bienestar</td>
     </tr>
     <tr>
-      <td>CreateNotificationResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para la creación de notificaciones asociadas al bienestar vehicular.</td>
+      <td>NotificationResource</td>
+      <td>Representación de notificaciones en las respuestas de la API</td>
     </tr>
     <tr>
-      <td>NotificationResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para exponer notificaciones en las respuestas REST.</td>
+      <td>UpdateWellnessMetricResource</td>
+      <td>Estructura de datos para actualizar métricas de bienestar existentes</td>
+    </tr>
+    <tr>
+      <td>WellnessMetricResource</td>
+      <td>Representación de métricas de bienestar en las respuestas de la API</td>
     </tr>
   </tbody>
 </table>
+
+<h3>ACL:</h3>
+<h4><code>WellnessMetricContextFacade</code> (Interface)</h4>
+<ul>
+  <li>fetchWellnessMetricById(Long wellnessMetricId)</li>
+</ul>
 
 ##### 4.2.4.3 Application Layer
 
-<h3>Clase: <code>MetricCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos encargado de gestionar la creación y registro de métricas asociadas al bienestar de los vehículos.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(RegisterMetricCommand)</td>
-      <td>Registra una nueva métrica asociada a un vehículo en el repositorio.</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MetricRepository</td>
-      <td>Repositorio encargado de la persistencia de métricas de vehículos.</td>
-    </tr>
-    <tr>
-      <td>RegisterMetricCommand</td>
-      <td>Comando para registrar nuevas métricas.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-
-<h3>Clase: <code>NotificationCommandServiceImpl</code></h3>
+<h3>Command Services</h3>
+<h4>Clase: <code>NotificationCommandServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -2972,7 +3001,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos encargado de la creación y gestión del ciclo de vida de las notificaciones asociadas a métricas vehiculares.</td>
+    <td>Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema</td>
   </tr>
 </table>
 <table>
@@ -2984,12 +3013,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(CreateNotificationCommand)</td>
-      <td>Crea una notificación asociada a un evento de bienestar vehicular.</td>
+      <td>handle(CreateNotificationCommand createNotificationCommand)</td>
+      <td>Procesa la creación de una nueva notificación en el sistema</td>
     </tr>
     <tr>
-      <td>handle(AcknowledgeNotificationCommand)</td>
-      <td>Marca una notificación como reconocida por el usuario o sistema.</td>
+      <td>handle(MarkNotificationAsReadCommand command)</td>
+      <td>Maneja la marcación de una notificación como leída</td>
     </tr>
   </tbody>
 </table>
@@ -3004,29 +3033,26 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationRepository</td>
-      <td>Repositorio encargado de la persistencia de notificaciones.</td>
+      <td>Repositorio para acceder y gestionar los datos de notificaciones</td>
     </tr>
     <tr>
-      <td>CreateNotificationCommand</td>
-      <td>Comando para la creación de notificaciones.</td>
-    </tr>
-    <tr>
-      <td>AcknowledgeNotificationCommand</td>
-      <td>Comando para reconocer y actualizar el estado de una notificación.</td>
+      <td>ExternalVehiclesService</td>
+      <td>Servicio externo para obtener información de vehículos</td>
     </tr>
   </tbody>
 </table>
-<hr>
 
-<h3>Clase: <code>MetricQueryServiceImpl</code></h3>
+
+
+<h4>Clase: <code>WellnessMetricCommandServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricQueryServiceImpl</td>
+    <td>WellnessMetricCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas encargado de recuperar información relacionada con notificaciones asociadas a métricas de los vehículos.</td>
+    <td>Servicio que maneja las operaciones de modificación de métricas de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3038,16 +3064,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetNotificationsByVehicleQuery)</td>
-      <td>Obtiene todas las notificaciones asociadas a un vehículo específico.</td>
+      <td>handle(CreateWellnessMetricCommand createWellnessMetricCommand)</td>
+      <td>Procesa la creación de nuevas métricas de bienestar</td>
     </tr>
     <tr>
-      <td>handle(GetNotificationsByTypeQuery)</td>
-      <td>Recupera notificaciones filtradas por tipo (ejemplo: alerta preventiva, advertencia crítica).</td>
+      <td>handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)</td>
+      <td>Maneja la actualización de métricas de bienestar existentes</td>
     </tr>
     <tr>
-      <td>handle(GetNotificationByIdQuery)</td>
-      <td>Obtiene una notificación específica a partir de su ID.</td>
+      <td>handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)</td>
+      <td>Gestiona la eliminación de métricas de bienestar</td>
     </tr>
   </tbody>
 </table>
@@ -3061,26 +3087,24 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>MetricRepository</td>
-      <td>Repositorio encargado de gestionar métricas y notificaciones asociadas.</td>
+      <td>WellnessMetricRepository</td>
+      <td>Repositorio para almacenar y recuperar métricas de bienestar</td>
     </tr>
     <tr>
-      <td>GetNotificationsByVehicleQuery</td>
-      <td>Query para recuperar notificaciones de un vehículo.</td>
+      <td>WellnessMonitoringService</td>
+      <td>Servicio para monitorear y analizar las métricas de bienestar</td>
     </tr>
     <tr>
-      <td>GetNotificationsByTypeQuery</td>
-      <td>Query para recuperar notificaciones filtradas por tipo.</td>
-    </tr>
-    <tr>
-      <td>GetNotificationByIdQuery</td>
-      <td>Query para obtener una notificación específica por su ID.</td>
+      <td>ExternalVehiclesService</td>
+      <td>Servicio externo para validar y obtener datos de vehículos</td>
     </tr>
   </tbody>
 </table>
+
 <hr>
 
-<h3>Clase: <code>NotificationQueryServiceImpl</code></h3>
+<h3>Query Services</h3>
+<h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3088,7 +3112,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas encargado de recuperar métricas asociadas a un vehículo y exponerlas en diferentes vistas (por rango de fechas, por ID o por vehículo).</td>
+    <td>Servicio especializado en consultas y recuperación de notificaciones</td>
   </tr>
 </table>
 <table>
@@ -3100,16 +3124,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetMetricsByVehicleQuery)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo específico.</td>
+      <td>handle(GetNotificationByIdQuery getNotificationByIdQuery)</td>
+      <td>Recupera una notificación específica por su identificador</td>
     </tr>
     <tr>
-      <td>handle(GetMetricsByDateRangeQuery)</td>
-      <td>Recupera las métricas de un vehículo dentro de un rango de fechas.</td>
+      <td>handle(GetAllNotificationsQuery getAllNotificationsQuery)</td>
+      <td>Obtiene todas las notificaciones del sistema</td>
     </tr>
     <tr>
-      <td>handle(GetMetricByIdQuery)</td>
-      <td>Obtiene una métrica específica a partir de su ID.</td>
+      <td>handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)</td>
+      <td>Consulta las notificaciones asociadas a un vehículo específico</td>
     </tr>
   </tbody>
 </table>
@@ -3124,34 +3148,20 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationRepository</td>
-      <td>Repositorio encargado de la persistencia y consulta de métricas asociadas a notificaciones.</td>
-    </tr>
-    <tr>
-      <td>GetMetricsByVehicleQuery</td>
-      <td>Query para recuperar todas las métricas de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetMetricsByDateRangeQuery</td>
-      <td>Query para recuperar métricas dentro de un rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>GetMetricByIdQuery</td>
-      <td>Query para obtener una métrica específica por su ID.</td>
+      <td>Repositorio para acceder a los datos de notificaciones</td>
     </tr>
   </tbody>
 </table>
 
-##### 4.2.4.4 Infrastructure Layer
-
-<h3>Clase: <code>MetricRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
+<h4>Clase: <code>WellnessMetricQueryServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricRepository</td>
+    <td>WellnessMetricQueryServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para métricas IoT que registran datos en tiempo real del estado del vehículo, con soporte para consultas históricas filtradas por rango de fechas.</td>
+    <td>Servicio que maneja las consultas de métricas de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3162,16 +3172,149 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(Metric metric)</td><td>Persiste una nueva métrica o actualiza una existente.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera una métrica específica por identificador.</td></tr>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas asociadas a un vehículo.</td></tr>
-    <tr><td>findByVehicleIdAndCreateAtBetween(Long vehicleId, LocalDateTime from, LocalDateTime to)</td><td>Obtiene todas las métricas de un vehículo registradas en un rango de fechas.</td></tr>
-    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene la última métrica registrada de un vehículo.</td></tr>
-    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las métricas históricas de un vehículo.</td></tr>
+    <tr>
+      <td>handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery)</td>
+      <td>Obtiene una métrica de bienestar específica por su ID</td>
+    </tr>
+    <tr>
+      <td>handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery)</td>
+      <td>Recupera todas las métricas de bienestar disponibles</td>
+    </tr>
+    <tr>
+      <td>handle(GetWellnessMetricsByVehicleIdQuery getWellnessMetricsByVehicleIdQuery)</td>
+      <td>Consulta las métricas de bienestar de un vehículo específico</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WellnessMetricRepository</td>
+      <td>Repositorio para acceder a los datos de métricas de bienestar</td>
+    </tr>
   </tbody>
 </table>
 
-<h3>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
+<hr>
+
+<h3>Event Handlers</h3>
+<h4>Clase: <code>WellnessAlertEventHandler</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>WellnessAlertEventHandler</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Manejador de eventos relacionados con alertas del sistema de bienestar</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>on(AirQualityAlertEvent event)</td>
+      <td>Procesa eventos de alerta relacionados con la calidad del aire</td>
+    </tr>
+    <tr>
+      <td>on(AtmosphericPressureAlertEvent event)</td>
+      <td>Maneja eventos de alerta por presión atmosférica</td>
+    </tr>
+    <tr>
+      <td>on(EnvironmentalConditionAlertEvent event)</td>
+      <td>Gestiona eventos de alerta por condiciones ambientales</td>
+    </tr>
+    <tr>
+      <td>on(StatusImpactAlertEvent event)</td>
+      <td>Procesa eventos de alerta por impacto en el estado del sistema</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NotificationCommandService</td>
+      <td>Servicio para crear notificaciones de alerta</td>
+    </tr>
+    <tr>
+      <td>NotificationQueryService</td>
+      <td>Servicio para consultar notificaciones existentes</td>
+    </tr>
+    <tr>
+      <td>WellnessWebSocketController</td>
+      <td>Controlador para enviar alertas en tiempo real</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>ACL</h3>
+<h4>Clase: <code>WellnessMetricContextFacadeImpl</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>WellnessMetricContextFacadeImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Fachada que actúa como puente entre el contexto de bienestar y otros sistemas</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fetchWellnessMetricById(Long wellnessMetricId)</td>
+      <td>Recupera métricas de bienestar para su uso en otros contextos del sistema
+</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WellnessMetricQueryService</td>
+      <td>Servicio para consultar métricas de bienestar</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 4.2.4.4 Infrastructure Layer
+
+<h3>Repositories</h3>
+<h4>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3179,7 +3322,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para notificaciones derivadas del análisis de métricas, soportando búsquedas por vehículo y por rangos temporales.</td>
+    <td>Interfaz que define las operaciones de acceso a datos para las notificaciones</td>
   </tr>
 </table>
 <table>
@@ -3190,11 +3333,32 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(Notification notification)</td><td>Persiste una nueva notificación o actualiza una existente.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera una notificación específica por identificador.</td></tr>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las notificaciones asociadas a un vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp from, Timestamp to, long vehicleId)</td><td>Obtiene todas las notificaciones de un vehículo en un rango de fechas específico.</td></tr>
-    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las notificaciones asociadas a un vehículo.</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Busca y recupera las notificaciones asociadas a un vehículo específico</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h4>Clase: <code>WellnessMetricRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>NotificationRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz que define las operaciones de acceso a datos para las métricas de bienestar</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Busca y recupera las métricas de bienestar asociadas a un vehículo específico</td></tr>
   </tbody>
 </table>
 
@@ -3206,11 +3370,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.4.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/vehicle_wellness_code_level.png" alt="vehicle_wellness_code_level" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_code_level.drawio.png" alt="vehicle_wellness_code_level" width="600"/>
 
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
