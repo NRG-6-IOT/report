@@ -2992,7 +2992,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.3 Application Layer
 
-<h3>Clase: <code>MetricCommandServiceImpl</code></h3>
+<h3>Command Services</h3>
+<h4>Clase: <code>NotificationCommandServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3000,7 +3001,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos encargado de gestionar la creación y registro de métricas asociadas al bienestar de los vehículos.</td>
+    <td>F</td>
   </tr>
 </table>
 <table>
@@ -3012,8 +3013,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(RegisterMetricCommand)</td>
-      <td>Registra una nueva métrica asociada a un vehículo en el repositorio.</td>
+      <td>handle(CreateNotificationCommand createNotificationCommand)</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>handle(MarkNotificationAsReadCommand command)</td>
+      <td>F</td>
     </tr>
   </tbody>
 </table>
@@ -3028,25 +3033,26 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>MetricRepository</td>
-      <td>Repositorio encargado de la persistencia de métricas de vehículos.</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>RegisterMetricCommand</td>
-      <td>Comando para registrar nuevas métricas.</td>
+      <td>ExternalVehiclesService</td>
+      <td>F</td>
     </tr>
   </tbody>
 </table>
+
 <hr>
 
-<h3>Clase: <code>NotificationCommandServiceImpl</code></h3>
+<h4>Clase: <code>WellnessMetricCommandServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>NotificationCommandServiceImpl</td>
+    <td>WellnessMetricCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos encargado de la creación y gestión del ciclo de vida de las notificaciones asociadas a métricas vehiculares.</td>
+    <td>F</td>
   </tr>
 </table>
 <table>
@@ -3058,12 +3064,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(CreateNotificationCommand)</td>
-      <td>Crea una notificación asociada a un evento de bienestar vehicular.</td>
+      <td>handle(CreateWellnessMetricCommand createWellnessMetricCommand)</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>handle(AcknowledgeNotificationCommand)</td>
-      <td>Marca una notificación como reconocida por el usuario o sistema.</td>
+      <td>handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)</td>
+      <td>F</td>
     </tr>
   </tbody>
 </table>
@@ -3077,84 +3087,23 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>NotificationRepository</td>
-      <td>Repositorio encargado de la persistencia de notificaciones.</td>
+      <td>WellnessMetricRepository</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>CreateNotificationCommand</td>
-      <td>Comando para la creación de notificaciones.</td>
+      <td>WellnessMonitoringService</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>AcknowledgeNotificationCommand</td>
-      <td>Comando para reconocer y actualizar el estado de una notificación.</td>
+      <td>ExternalVehiclesService</td>
+      <td>F</td>
     </tr>
   </tbody>
 </table>
-<hr>
 
-<h3>Clase: <code>MetricQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas encargado de recuperar información relacionada con notificaciones asociadas a métricas de los vehículos.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(GetNotificationsByVehicleQuery)</td>
-      <td>Obtiene todas las notificaciones asociadas a un vehículo específico.</td>
-    </tr>
-    <tr>
-      <td>handle(GetNotificationsByTypeQuery)</td>
-      <td>Recupera notificaciones filtradas por tipo (ejemplo: alerta preventiva, advertencia crítica).</td>
-    </tr>
-    <tr>
-      <td>handle(GetNotificationByIdQuery)</td>
-      <td>Obtiene una notificación específica a partir de su ID.</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MetricRepository</td>
-      <td>Repositorio encargado de gestionar métricas y notificaciones asociadas.</td>
-    </tr>
-    <tr>
-      <td>GetNotificationsByVehicleQuery</td>
-      <td>Query para recuperar notificaciones de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetNotificationsByTypeQuery</td>
-      <td>Query para recuperar notificaciones filtradas por tipo.</td>
-    </tr>
-    <tr>
-      <td>GetNotificationByIdQuery</td>
-      <td>Query para obtener una notificación específica por su ID.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
 
-<h3>Clase: <code>NotificationQueryServiceImpl</code></h3>
+<h3>Query Services</h3>
+<h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3162,7 +3111,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas encargado de recuperar métricas asociadas a un vehículo y exponerlas en diferentes vistas (por rango de fechas, por ID o por vehículo).</td>
+    <td>F</td>
   </tr>
 </table>
 <table>
@@ -3174,16 +3123,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetMetricsByVehicleQuery)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo específico.</td>
+      <td>handle(GetNotificationByIdQuery getNotificationByIdQuery)</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>handle(GetMetricsByDateRangeQuery)</td>
-      <td>Recupera las métricas de un vehículo dentro de un rango de fechas.</td>
+      <td>handle(GetAllNotificationsQuery getAllNotificationsQuery)</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>handle(GetMetricByIdQuery)</td>
-      <td>Obtiene una métrica específica a partir de su ID.</td>
+      <td>handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)</td>
+      <td>F</td>
     </tr>
   </tbody>
 </table>
@@ -3198,19 +3147,162 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationRepository</td>
-      <td>Repositorio encargado de la persistencia y consulta de métricas asociadas a notificaciones.</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>NotificationQueryServiceImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>F</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetNotificationByIdQuery getNotificationByIdQuery)</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>GetMetricsByVehicleQuery</td>
-      <td>Query para recuperar todas las métricas de un vehículo.</td>
+      <td>handle(GetAllNotificationsQuery getAllNotificationsQuery)</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>GetMetricsByDateRangeQuery</td>
-      <td>Query para recuperar métricas dentro de un rango de fechas.</td>
+      <td>handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NotificationRepository</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Event Handlers</h3>
+<h4>Clase: <code>WellnessAlertEventHandler</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>WellnessAlertEventHandler</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>F</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>on(AirQualityAlertEvent event)</td>
+      <td>F</td>
     </tr>
     <tr>
-      <td>GetMetricByIdQuery</td>
-      <td>Query para obtener una métrica específica por su ID.</td>
+      <td>on(AtmosphericPressureAlertEvent event)</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>on(EnvironmentalConditionAlertEvent event)</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>on(StatusImpactAlertEvent event)</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NotificationCommandService</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>NotificationQueryService</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>WellnessWebSocketController</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>ACL</h3>
+<h4>Clase: <code>WellnessMetricContextFacadeImpl</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>WellnessMetricContextFacadeImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>F</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fetchWellnessMetricById(Long wellnessMetricId)</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WellnessMetricQueryService</td>
+      <td>F</td>
     </tr>
   </tbody>
 </table>
