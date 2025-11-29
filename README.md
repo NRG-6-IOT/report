@@ -3313,37 +3313,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ##### 4.2.4.4 Infrastructure Layer
 
-<h3>Clase: <code>MetricRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para métricas IoT que registran datos en tiempo real del estado del vehículo, con soporte para consultas históricas filtradas por rango de fechas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Metric metric)</td><td>Persiste una nueva métrica o actualiza una existente.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera una métrica específica por identificador.</td></tr>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas asociadas a un vehículo.</td></tr>
-    <tr><td>findByVehicleIdAndCreateAtBetween(Long vehicleId, LocalDateTime from, LocalDateTime to)</td><td>Obtiene todas las métricas de un vehículo registradas en un rango de fechas.</td></tr>
-    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene la última métrica registrada de un vehículo.</td></tr>
-    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las métricas históricas de un vehículo.</td></tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h3>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
+<h3>Repositories</h3>
+<h4>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3351,7 +3322,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para notificaciones derivadas del análisis de métricas, soportando búsquedas por vehículo y por rangos temporales.</td>
+    <td>Interfaz que define las operaciones de acceso a datos para las notificaciones</td>
   </tr>
 </table>
 <table>
@@ -3362,11 +3333,32 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(Notification notification)</td><td>Persiste una nueva notificación o actualiza una existente.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera una notificación específica por identificador.</td></tr>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las notificaciones asociadas a un vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp from, Timestamp to, long vehicleId)</td><td>Obtiene todas las notificaciones de un vehículo en un rango de fechas específico.</td></tr>
-    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las notificaciones asociadas a un vehículo.</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Busca y recupera las notificaciones asociadas a un vehículo específico</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h4>Clase: <code>WellnessMetricRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>NotificationRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz que define las operaciones de acceso a datos para las métricas de bienestar</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Busca y recupera las métricas de bienestar asociadas a un vehículo específico</td></tr>
   </tbody>
 </table>
 
