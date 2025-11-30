@@ -1737,12 +1737,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ##### 4.2.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
-
-![Class Diagram](images/chapter-4/vehicle_management_bounded_context_domain_layer_class_diagram.jpg)
+<img src="./images/chapter-4/vehicle_management_bounded_context_domain_layer_class_diagram.jpg" alt="vehicles_domain_layer" width="1227"/>
 
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
+<img src="./images/chapter-4/vehicles_db.png" alt="vehicle_db" width="431"/>
 
 #### 4.2.2 Bounded Context: Historiales
 
