@@ -417,6 +417,8 @@ Distribución de commits:
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
+<div style="page-break-after: always;"></div>
+
 ## Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -501,6 +503,8 @@ del ABET – EAC - Student Outcome 5.
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 ## Capítulo I: Introducción
 
