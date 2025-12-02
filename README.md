@@ -7317,6 +7317,8 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 | Cuadro del video representativo | ![About The Product Embedded Application](images/chapter-6/about-the-product/about-the-product-embedded.png)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | URL del video                   | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAT_gOk-s1E25r8KejgVYYQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=XNorUj]                                                                                                                                                                                                                    |
 
+<div style="page-break-after: always;"></div>
+
 ## Conclusiones
 
 **TB1**: Durante el desarrollo del TB1, el equipo de trabajo logró definir claramente el problema a resolver y los objetivos del proyecto, estableciendo una base sólida para las siguientes fases del desarrollo. Usando metodologías ágiles, modelado estratégico y diseño centrado en el usuario, además del Lean UX, event storming, mapping y desarrollo de user stories, se sentaron las bases para un desarrollo iterativo y centrado en las necesidades del usuario final. Además, el proceso promovió la colaboración efectiva entre los miembros del equipo, facilitando la comunicación y la toma de decisiones informadas.
@@ -7325,9 +7327,13 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 
 **TB2**: Durante el desarrollo del TB2, el equipo de trabajo logró implementar y desplegar con éxito los componentes clave del proyecto, incluyendo la web application, la mobile application y el backend. Se llevaron a cabo validaciones mediante entrevistas con usuarios objetivo, lo que permitió obtener retroalimentación valiosa para mejorar la usabilidad y funcionalidad de las aplicaciones. Además, se aplicaron heurísticas de usabilidad para identificar áreas de mejora, asegurando una experiencia de usuario óptima. El proceso de despliegue en plataformas como Render y Firebase demostró la capacidad del equipo para llevar el proyecto desde la fase de desarrollo hasta la implementación efectiva. En conjunto, estas actividades fortalecieron la calidad del producto final y prepararon el camino para futuras iteraciones y mejoras.
 
+<div style="page-break-after: always;"></div>
+
 ## Bibliografía
 
 Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
+
+<div style="page-break-after: always;"></div>
 
 ## Anexos
 
