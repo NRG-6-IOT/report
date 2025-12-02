@@ -1043,7 +1043,7 @@ Preguntas complementarias:
 10. ¿Qué valoras más en una herramienta digital para tu trabajo? (ejemplo: precisión, facilidad de uso, integración con otros sistemas)
 
 #### 2.2.2 Registro de entrevistas
-En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: [Needfinding Interviews - NRG6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/EUX6HJSrkWFLsupKCjibccgBqipXedXcpryQbgwV-mpKdQ?e=fp4EZr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: https://tinyurl.com/26tdu3s4
 
 A continuación, se presentan detalles de las entrevistas realizadas a los mecánicos:
 
@@ -4817,11 +4817,11 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
 **Aplicación Móvil:**
-- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
+- https://tinyurl.com/234dfsfgsg
 
 **Aplicación Web:**
-- [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
-
+- https://tinyurl.com/3vvdswr2
+- 
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
 ### 6.1. Software Configuration Management.
@@ -5074,7 +5074,7 @@ La sección Sprint Backlog presenta la planificación detallada del trabajo a re
 
 <img src="images/chapter-6/sprint-1-trello-board.png" alt="Sprint 1 trello board">
 
-Enlace al tablero: [https://trello.com/b/0evNh75H](https://trello.com/b/0evNh75H)
+Enlace al tablero: https://trello.com/b/0evNh75H
 
 <table>
   <tr>
@@ -5249,7 +5249,7 @@ Para este sprint no se desarrollaron pruebas unitarias ni de integración, ya qu
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Video: https://tinyurl.com/mb7yfv2d
 
 **Landing Page**
 
@@ -5843,7 +5843,6 @@ Enlace al tablero:
     <td>Gianluca Pasquale</td>
     <td>Done</td>
   </tr>
-  
   <tr>
     <td rowspan="2">US-061</td>
     <td rowspan="2">Comparación de modelos por mecánico</td>
@@ -6017,7 +6016,6 @@ Enlace al tablero:
     <td>Sebastian Real</td>
     <td>Done</td>
   </tr>
-
   <tr>
     <td rowspan="1">US-067</td>
     <td rowspan="1">Exportación de reporte técnico del vehículo</td>
