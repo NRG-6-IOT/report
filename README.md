@@ -191,6 +191,17 @@ El enlace a github del reporte del proyecto es el siguiente: [https://github.com
 
 **TB1**
 
+Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
+
+En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
+
+Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
+
+Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
+
+En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
+
+
 <img src="images/insights/report-insights-tb1-1.png" alt="Repo Insights">
 
 <img src="images/insights/report-insights-tb1-2.png" alt="Repo Insights">
@@ -211,18 +222,11 @@ Distribución de commits:
 * Pacheco Astiguetta Sebastian (Pachieeee): 14 commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
-Explicacion del desarrollo de actividades de la primera entrega :<br>
-<br>Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
-
-<br>En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
-
-<br>Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
-
-<br>Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
-
-<br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
-
 **TP**
+
+Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
+
+Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
 
 <img src="images/insights/report-insights-tp-1.png" alt="Repo Insights">
 
@@ -238,10 +242,9 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 <img src="images/insights/report-insights-tp-7.png" alt="Repo Insights">
 
-Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
-Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
-
 **TB2**:
+
+El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
 
 <img src="images/insights/report-insights-tb2-1.png" alt="Repo Insights">
 
@@ -256,8 +259,6 @@ Distribución de commits:
 * Pasquale Barrenechea Gianluca Santino (cwassointt): 7 commits.
 * Pacheco Astiguetta Sebastian (Pachieeee): 8 commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 1 commits.
-
-El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
 
 <div style="page-break-after: always;"></div>
 
