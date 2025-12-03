@@ -7234,6 +7234,52 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td>
+        <img src="images/chapter-6/entrevista3.png" alt="interview 3 Juan Esteban" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Juan Esteban</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>La Molina</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Ayudante mecánico</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:15</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        El entrevistado comprendió rápidamente el propósito de la aplicación, valorando la concreción de los textos y la navegación intuitiva, a la cual comparó con una red social. Calificó el dashboard con un 9/10, destacando la utilidad de los gráficos de productividad, aunque señaló como punto de mejora el tamaño de la fuente en la versión móvil. Resaltó positivamente el diseño de alto contraste, considerándolo ideal para las condiciones de iluminación y trabajo dentro de un taller. En cuanto a funcionalidad, valoró la clasificación de asignaciones en "Activas" y "Pendientes" y la fluidez de la aplicación incluso con mala conexión a internet. No reportó áreas de confusión, indicando que la interfaz es muy amigable. Entre sus sugerencias de mejora destacan: añadir un indicador visual de "Urgencia" en las listas, implementar autocompletado para servicios comunes en los formularios de mantenimiento y, como funcionalidad clave a futuro, integrar el control de inventario para gestionar el stock de repuestos directamente desde la programación del servicio.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 #### 6.3.3. Evaluaciones según heurísticas.
 
