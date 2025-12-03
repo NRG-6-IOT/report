@@ -4524,7 +4524,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.7.6.2 Bounded Context Database Design Diagram
 
-
+![maintenance-db.png](images/chapter-4/maintenance-db.png)
 
 ## Capítulo V: Solution UI/UX Design
 
