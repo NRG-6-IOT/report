@@ -4520,7 +4520,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.7.6.1 Bounded Context Domain Layer Class Diagrams
 
-
+![maintenance-class-diagram.png](images/chapter-4/maintenance-class-diagram.png)
 
 ###### 4.2.7.6.2 Bounded Context Database Design Diagram
 
