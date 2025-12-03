@@ -317,7 +317,7 @@ Distribución de commits:
         - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
           - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-      - [4.2.2 Bounded Context: Historiales](#422-bounded-context-historiales)
+      - [4.2.2 Bounded Context: Maintenance](#422-bounded-context-maintenance)
         - [4.2.2.1 Domain Layer](#4221-domain-layer)
         - [4.2.2.2 Interface Layer](#4222-interface-layer)
         - [4.2.2.3 Application Layer](#4223-application-layer)
@@ -362,15 +362,6 @@ Distribución de commits:
         - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
           - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
           - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-      - [4.2.6. Bounded Context: Maintenance and Operations](#427-bounded-context-maintenance-and-operations)
-          - [4.2.6.1 Domain Layer](#4271-domain-layer)
-          - [4.2.6.2 Interface Layer](#4272-interface-layer)
-          - [4.2.6.3 Application Layer](#4273-application-layer)
-              - [4.2.6.4 Infrastructure Layer](#4274-infrastructure-layer)
-          - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4275-bounded-context-software-architecture-component-level-diagrams)
-          - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4276-bounded-context-software-architecture-code-level-diagrams)
-              - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42761-bounded-context-domain-layer-class-diagrams)
-              - [4.2.6.6.2 Bounded Context Database Design Diagram](#42762-bounded-context-database-design-diagram)
   - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
     - [5.1. Style Guidelines](#51-style-guidelines)
       - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
@@ -1797,736 +1788,243 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 <img src="./images/chapter-4/vehicles_db.png" alt="vehicle_db" width="431"/>
 
-#### 4.2.2 Bounded Context: Historiales
+#### 4.2.2 Bounded Context: Maintenance
 
 ##### 4.2.2.1 Domain Layer
 
-<h3>Aggregate: <code>ServiceHistory</code></h3>
-<p><strong>Descripción:</strong> Representa el registro histórico de servicios de mantenimiento y reparaciones realizadas a un vehículo, incluyendo detalles de gastos, repuestos utilizados y mecánicos involucrados.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>Identificador único del registro de servicio.</td>
-    </tr>
-    <tr>
-      <td>vehicleId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del vehículo al que se le realizó el servicio.</td>
-    </tr>
-    <tr>
-      <td>mechanicId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del mecánico que realizó el servicio.</td>
-    </tr>
-    <tr>
-      <td>serviceType</td>
-      <td>ServiceType</td>
-      <td>Private</td>
-      <td>Tipo de servicio realizado (mantenimiento, reparación, revisión).</td>
-    </tr>
-    <tr>
-      <td>serviceDate</td>
-      <td>Date</td>
-      <td>Private</td>
-      <td>Fecha en que se realizó el servicio.</td>
-    </tr>
-    <tr>
-      <td>mileage</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Kilometraje del vehículo al momento del servicio.</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String</td>
-      <td>Private</td>
-      <td>Descripción detallada del servicio realizado.</td>
-    </tr>
-    <tr>
-      <td>totalCost</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Costo total del servicio.</td>
-    </tr>
-  </tbody>
-</table>
+**Aggregates**
 
-<h3>Aggregate:<code>ExpenseHistory</code></h3>
-<p><strong>Descripción:</strong>Registra todos los gastos asociados a un vehículo por un usuario</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>Identificador único del gasto.</td>
-    </tr>
-    <tr>
-      <td>vehicleId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del vehículo asociado.</td>
-    </tr>
-    <tr>
-      <td>expenseType</td>
-      <td>ExpenseType</td>
-      <td>Private</td>
-      <td>Tipo de gasto.</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String</td>
-      <td>Private</td>
-      <td>Descripción del gasto.</td>
-    </tr>
-    <tr>
-      <td>amount</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Monto del gasto.</td>
-    </tr>
-    <tr>
-      <td>mileage</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Kilometraje al momento del gasto.</td>
-    </tr>
-  </tbody>
-</table>
+`Expense`
+**Descripción:** Representa un gasto registrado en el sistema, el cual puede ser de tipo personal o de mantenimiento. Agrupa los ítems del gasto y su clasificación.
 
-<h3>Interfaz:<code>ServiceHistoryQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de servicio.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetServiceHistoryByVehicleQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetServiceHistoryByIdQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetServicesByIdQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetServicesByDateRange)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+| Atributos    | Tipo de dato      | Visibilidad | Descripción                                  |
+|--------------|-------------------|-------------|----------------------------------------------|
+| id           | Long              | Private     | Identificador único del gasto.               |
+| name         | String            | Private     | Nombre o concepto del gasto.                 |
+| finalPrice   | Double            | Private     | Precio final acumulado del gasto.            |
+| userId       | Long              | Private     | Identificador del usuario creador del gasto. |
+| expenseItems | List<ExpenseItem> | Private     | Lista de ítems detallados del gasto.         |
+| expenseType  | ExpenseType       | Private     | Clasificación del tipo de gasto.             |
 
-<h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
-<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de servicio.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(CreateServiceHistory)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(UpdateServiceHistory)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(DeleteServiceHistory)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+`Maintenance`
+**Descripción:** Representa una actividad de mantenimiento (preventivo o correctivo) realizada sobre un vehículo. Gestiona el estado, la asignación de gastos y el mecánico responsable.
 
-<h3>Interfaz:<code>ExpenseHistoryQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de gastos.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByTypeQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByDateRangeQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetTotalInvestmentQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+| Atributos          | Tipo de dato     | Visibilidad | Descripción                                        |
+|--------------------|------------------|-------------|----------------------------------------------------|
+| id                 | Long             | Private     | Identificador único del mantenimiento.             |
+| details            | String           | Private     | Detalles breves del servicio.                      |
+| vehicleId          | Long             | Private     | Identificador del vehículo asociado.               |
+| dateOfService      | Date             | Private     | Fecha en la que se realiza el servicio.            |
+| location           | String           | Private     | Ubicación o taller donde se realiza el servicio.   |
+| description        | String           | Private     | Descripción detallada del trabajo.                 |
+| maintenanceExpense | Expense          | Private     | Gasto asociado al mantenimiento (opcional).        |
+| state              | MaintenanceState | Private     | Estado actual del proceso de mantenimiento.        |
+| mechanicId         | Long             | Private     | Identificador del mecánico asignado al servicio.   |
 
-<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
-<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de gastos.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(CreateExpenseHistoryCommand)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(UpdateExpenseHistoryCommand)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(DeleteExpenseHistoryCommand)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+**Entities**
 
-<h3>Value Object:<code>ServiceType</code></h3>
-<table>
-  <thead>
-    <tr>
-      <th>ServiceType</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MAINTENANCE</td>
-      <td>REPAIR</td>
-      <td>INSPECTION</td>
-      <td>INSTALLATION</td>
-    </tr>
-  </tbody>
-</table>
+`ExpenseItem`
+**Descripción:** Representa un ítem individual dentro de un registro de gasto, detallando costos unitarios y totales.
 
-<h3>Value Object:<code>ExpenseType</code></h3>
-<table>
-  <thead>
-  <tr>
-    <th>ServiceType</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>MAINTENANCE</td>
-    <td>FUEL</td>
-    <td>INSURANCE</td>
-    <td>PROCEDURE</td>
-    <td>AESTHETIC</td>
-  </tr>
-  </tbody>
-</table>
+| Atributos  | Tipo de dato | Visibilidad | Descripción                             |
+|------------|--------------|-------------|-----------------------------------------|
+| id         | Long         | Private     | Identificador único del ítem.           |
+| name       | String       | Private     | Nombre del ítem.                        |
+| amount     | Integer      | Private     | Cantidad de unidades.                   |
+| unitPrice  | Double       | Private     | Precio por unidad.                      |
+| totalPrice | Double       | Private     | Precio total (cantidad * unitario).     |
+| expense    | Expense      | Private     | Gasto al que pertenece este ítem.       |
+| itemType   | ItemType     | Private     | Categoría del ítem (Multa, herramientas, etc.). |
 
-<table>
-    <thead>
-        <tr>
-            <td>Commands</td>
-            <td>Description</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>CreateHistoryCommand</td>
-          <td>Crea una historia de servicio.</td>
-        </tr>
-        <tr>
-          <td>UpdateServiceHistoryCommand</td>
-          <td>Actualiza una historia de servicio.</td>
-        </tr>
-        <tr>
-          <td>DeleteServiceHistoryCommand</td>
-          <td>Elimina una historia de servicio.</td>
-        </tr>
-        <tr>
-          <td>CreateExpenseHistoryCommand</td>
-          <td>Crea una historia de gasto.</td>
-        </tr>
-        <tr>
-          <td>DeleteExpenseHistoryCommand</td>
-          <td>Elimina una historia de gasto.</td>
-        </tr>
-        <tr>
-          <td>UpdateExpenseHistoryCommand</td>
-          <td>Actualiza una historia de gasto.</td>
-        </tr>
-    </tbody>
-</table>
+`ExpenseType`, `ItemType`, `MaintenanceState` (Entidades de catálogo)
 
-<table>
-  <thead>
-  <tr>
-    <td>Queries</td>
-    <td>Description</td>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>GetServiceHistoriesByVehicleQuery</td>
-    <td>Obtiene las historias de servicios realizados a un vehículo específico.</td>
-  </tr>
-  <tr>
-    <td>GetServiceHistoryByIdQuery</td>
-    <td>Recupera el detalle de un servicio en particular a partir de su identificador único.</td>
-  </tr>
-  <tr>
-    <td>GetServicesByTypeQuery</td>
-    <td>Filtra y devuelve los servicios de un vehículo según el tipo de servicio solicitado.</td>
-  </tr>
-  <tr>
-    <td>GetServicesByDateRangeQuery</td>
-    <td>Obtiene todos los servicios realizados a un vehículo dentro de un rango de fechas específico.</td>
-  </tr>
-  <tr>
-    <td>GetExpenseHistoryByVehicleQuery</td>
-    <td>Recupera el historial de gastos relacionados a un vehículo a lo largo del tiempo.</td>
-  </tr>
-  <tr>
-    <td>GetExpenseByTypeQuery</td>
-    <td>Devuelve los gastos de un vehículo clasificados por un tipo de gasto específico.</td>
-  </tr>
-  <tr>
-    <td>GetExpensesByDateRangeQuery</td>
-    <td>Obtiene todos los gastos de un vehículo registrados dentro de un rango de fechas definido.</td>
-  </tr>
-  <tr>
-    <td>GetTotalInvestmentQuery</td>
-    <td>Calcula el monto total invertido en un vehículo, sumando servicios y gastos registrados.</td>
-  </tr>
-  </tbody>
-</table>
+**Value Objects**
+
+`ExpenseTypes` (Enum: PERSONAL, MAINTENANCE)
+`ItemTypes` (Enum: FINE, PARKING, PAYMENT, SUPPLIES, TAX, TOOLS)
+`MaintenanceStates` (Enum: PENDING, IN_PROGRESS, COMPLETED, CANCELLED)
+
+**Commands**
+* AddExpenseItemCommand <<record>>
+* AssignExpenseToMaintenanceCommand <<record>>
+* CreateExpenseByOwnerIdCommand <<record>>
+* CreateExpenseCommand <<record>>
+* CreateMaintenanceCommand <<record>>
+* DeleteExpenseCommand <<record>>
+* DeleteExpenseItemsByExpenseIdCommand <<record>>
+* DeleteMaintenanceCommand <<record>>
+* SeedExpenseTypesCommand <<record>>
+* SeedItemTypesCommand <<record>>
+* SeedMaintenanceStatesCommand <<record>>
+* UpdateStateOfMaintenanceByIdCommand <<record>>
+
+**Queries**
+* GetAllExpenseItemsByExpenseIdQuery <<record>>
+* GetAllExpensesByUserIdQuery <<record>>
+* GetAllMaintenancesByMechanicIdQuery <<record>>
+* GetAllMaintenancesByVehicleIdQuery <<record>>
+* GetExpenseByIdQuery <<record>>
+* GetMaintenanceByIdQuery <<record>>
+* GetMaintenancesByOwnerIdQuery <<record>>
+
+**Services**
+
+`ExpenseCommandService`
+* handle(CreateExpenseCommand)
+* handle(CreateExpenseByOwnerIdCommand)
+* handle(DeleteExpenseCommand)
+
+`ExpenseItemCommandService`
+* handle(AddExpenseItemCommand)
+* handle(DeleteExpenseItemsByExpenseIdCommand)
+
+`ExpenseQueryService`
+* handle(GetAllExpensesByUserIdQuery)
+* handle(GetExpenseByIdQuery)
+
+`MaintenanceCommandService`
+* handle(CreateMaintenanceCommand)
+* handle(DeleteMaintenanceCommand)
+* handle(AssignExpenseToMaintenanceCommand)
+* handle(UpdateStateOfMaintenanceByIdCommand)
+
+`MaintenanceQueryService`
+* handle(GetAllMaintenancesByVehicleIdQuery)
+* handle(GetMaintenanceByIdQuery)
+* handle(GetAllMaintenancesByMechanicIdQuery)
+* handle(GetMaintenancesByOwnerIdQuery)
+
+`SeedServices` (Agrupación lógica)
+* ExpenseTypeCommandService.handle(SeedExpenseTypesCommand)
+* ItemTypeCommandService.handle(SeedItemTypesCommand)
+* MaintenanceStateCommandService.handle(SeedMaintenanceStatesCommand)
 
 ##### 4.2.2.2 Interface Layer
 
-<h3>Controlador:<code>HistoryController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>HistoryController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios y gastos de vehículos.</td>
-  </tr>
-</table>
+**Rest Controllers**
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getServiceHistory(Long vehicleId)</td>
-      <td>GET /api/v1/history/service/{vehicleId}</td>
-      <td>Obtiene el historial completo de servicios de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>getServiceHistoryById(Long id)</td>
-      <td>GET /api/v1/history/service/{id}</td>
-      <td>Obtiene un servicio específico por su ID.</td>
-    </tr>
-    <tr>
-      <td>addServiceHistory(ServiceHistory history)</td>
-      <td>POST /api/v1/history/service</td>
-      <td>Agrega un nuevo registro de servicio.</td>
-    </tr>
-    <tr>
-      <td>updateServiceHistory(Long id, ServiceHistory history)</td>
-      <td>PUT /api/v1/history/service/{id}</td>
-      <td>Actualiza un registro de servicio existente.</td>
-    </tr>
-    <tr>
-      <td>deleteServiceHistory(Long id)</td>
-      <td>DELETE /api/v1/history/service/{id}</td>
-      <td>Elimina un registro de servicio.</td>
-    </tr>
-    <tr>
-      <td>getExpenseHistory(Long vehicleId)</td>
-      <td>GET /api/v1/history/expense/{vehicleId}</td>
-      <td>Obtiene el historial completo de gastos de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>addExpenseHistory(ExpenseHistory history)</td>
-      <td>POST /api/v1/history/expense</td>
-      <td>Agrega un nuevo registro de gasto al historial.</td>
-    </tr>
-    <tr>
-      <td>getMonthlySummary(Long vehicleId, int year, string month)</td>
-      <td>GET /api/v1/history/summary/{vehicleId}/{year}/{month}</td>
-      <td>Obtiene un resumen mensual de servicios y gastos.</td>
-    </tr>
-    <tr>
-      <td>getMaintenanceTimeline(Long vehicleId)</td>
-      <td>GET /api/v1/history/timeline/{vehicleId}</td>
-      <td>Obtiene una línea de tiempo de todos los mantenimientos.</td>
-    </tr>
-    <tr>
-      <td>exportHistoryReport(Long vehicleId)</td>
-      <td>GET /api/v1/history/export/{vehicleId}</td>
-      <td>Exporta el historial completo a formato PDF/Excel.</td>
-    </tr>
-  </tbody>
-</table>
+`ExpenseController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de gastos y sus ítems.
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HistoryResource</td>
-      <td>Recurso REST representante de un elemento de historial</td>
-    </tr>
-    <tr>
-      <td>CreateServiceHistoryResource</td>
-      <td>Recurso REST representante de la creación de un elemento de historial de servicios</td>
-    </tr>
-    <tr>
-      <td>CreateExpenseHistoryResource</td>
-      <td>Recurso REST representante de la creación de un elemento de historial de gastos</td>
-    </tr>
-    <tr>
-      <td>HistoryQueryService</td>
-      <td>Servicio para consultas y recuperación de datos de historiales.</td>
-    </tr>
-    <tr>
-      <td>HistoryCommandService</td>
-      <td>Servicio para ejecutar comandos de creación, actualización y eliminación de registros históricos.</td>
-    </tr>
-    <tr>
-      <td>CreateServiceHistoryCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de historiales de servicio.</td>
-    </tr>
-    <tr>
-      <td>CreateExpenseHistoryCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de historiales de gastos.</td>
-    </tr>
-    <tr>
-      <td>HistoryResourceFromEntityAssembler</td>
-      <td>Convierte entidades de historial en recursos REST para la respuesta.</td>
-    </tr>
-  </tbody>
-</table>
+| Método                 | Ruta                                  | Descripción                                            |
+|------------------------|---------------------------------------|--------------------------------------------------------|
+| getAllExpenses()       | GET /api/v1/expense                   | Obtiene todos los gastos del usuario autenticado.      |
+| createExpenseByOwnerId()| POST /api/v1/expense/owner/{ownerId} | Crea un gasto asociado a un dueño específico.          |
+| createExpense()        | POST /api/v1/expense/{userId}         | Crea un nuevo gasto para un usuario.                   |
+| getExpense()           | GET /api/v1/expense/{expenseId}       | Obtiene el detalle de un gasto por su ID.              |
+| deleteExpense()        | DELETE /api/v1/expense/{expenseId}    | Elimina un gasto existente.                            |
+
+`MaintenanceController`
+**Descripción:** Controlador REST que maneja las operaciones del ciclo de vida de los mantenimientos.
+
+| Método                      | Ruta                                                       | Descripción                                                       |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
+| getMaintenanceById()        | GET /api/v1/maintenance/{maintenanceId}                    | Obtiene un mantenimiento por su identificador.                    |
+| getMaintenancesByUserId()   | GET /api/v1/maintenance/vehicle/{vehicleId}                | Obtiene los mantenimientos asociados a un vehículo.               |
+| getMaintenancesByOwnerId()  | GET /api/v1/maintenance/owner/{ownerId}                    | Obtiene los mantenimientos de todos los vehículos de un dueño.    |
+| deleteMaintenanceById()     | DELETE /api/v1/maintenance/{maintenanceId}                 | Elimina un registro de mantenimiento.                             |
+| createMaintenance()         | POST /api/v1/maintenance                                   | Registra un nuevo mantenimiento.                                  |
+| updateMaintenanceStatusById()| PUT /api/v1/maintenance/{maintenanceId}                   | Actualiza el estado de un mantenimiento.                          |
+| assignExpenseToMaintenance()| PUT /api/v1/maintenance/{maintenanceId}/expense/assign/{id}| Asigna un gasto existente a un mantenimiento.                     |
+| getMaintenancesByMechanicId()| GET /api/v1/maintenance/mechanic/{mechanicId}             | Obtiene los mantenimientos asignados a un mecánico.               |
+
+**Resources**
+* CreateExpenseResource <<record>>
+* ExpenseResource <<record>>
+* CreateMaintenanceResource <<record>>
+* MaintenanceResource <<record>>
+* UpdateStatusOfMaintenanceResource <<record>>
+
+**Assemblers**
+* ExpenseResourceFromEntityAssembler
+* MaintenanceResourceFromEntityAssembler
+* CreateMaintenanceCommandFromResourceAssembler
 
 ##### 4.2.2.3 Application Layer
 
-<h3>Clase: <code>HistoryQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>HistoryQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de servicios.</td>
-  </tr>
-</table>
+`ExpenseCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos para la gestión de gastos.
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(GetServiceHistoryByVehicleQuery)</td>
-      <td>Obtiene el historial completo de servicios de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetServiceHistoryByIdQuery)</td>
-      <td>Obtiene un servicio específico por su ID.</td>
-    </tr>
-    <tr>
-      <td>handle(GetServicesByTypeQuery)</td>
-      <td>Filtra servicios por tipo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetServicesByDateRangeQuery)</td>
-      <td>Obtiene servicios dentro de un rango de fechas.</td>
-    </tr>
-  </tbody>
-</table>
+| Método                               | Descripción                                                  |
+|--------------------------------------|--------------------------------------------------------------|
+| handle(CreateExpenseCommand)         | Crea un gasto validando la existencia del usuario.           |
+| handle(CreateExpenseByOwnerIdCommand)| Crea un gasto a partir del ID de un dueño, resolviendo su usuario.|
+| handle(DeleteExpenseCommand)         | Elimina un gasto por su ID.                                  |
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ServiceHistoryRepository</td>
-      <td>Repositorio para acceso a datos de historiales de servicio.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
+`ExpenseQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para gastos.
 
-<h3>Clase: <code>ServiceHistoryCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ServiceHistoryCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de servicios</td>
-  </tr>
-</table>
+| Método                              | Descripción                                      |
+|-------------------------------------|--------------------------------------------------|
+| handle(GetAllExpensesByUserIdQuery) | Recupera todos los gastos de un usuario.         |
+| handle(GetExpenseByIdQuery)         | Recupera un gasto específico por su ID.          |
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(CreateServiceHistoryCommand)</td><td>Crea un nuevo registro de servicio en el historial.</td></tr>
-    <tr><td>handle(UpdateServiceHistoryCommand)</td><td>Actualiza un registro de servicio existente.</td></tr>
-    <tr><td>handle(DeleteServiceHistoryCommand)</td><td>Elimina un registro de servicio.</td></tr>
-  </tbody>
-</table>
+`ExpenseItemCommandServiceImpl`
+**Descripción:** Implementación para la gestión de ítems dentro de los gastos.
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>ServiceHistoryRepository</td><td>Repositorio para persistencia de historiales de servicio.</td></tr>
-  </tbody>
-</table>
+| Método                                      | Descripción                                      |
+|---------------------------------------------|--------------------------------------------------|
+| handle(AddExpenseItemCommand)               | Agrega un nuevo ítem a un gasto existente.       |
+| handle(DeleteExpenseItemsByExpenseIdCommand)| Elimina todos los ítems asociados a un gasto.    |
 
-<h3>Clase: <code>ExpenseHistoryQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ExpenseHistoryQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de gastos.</td>
-  </tr>
-</table>
+`MaintenanceCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos para el ciclo de vida del mantenimiento.
 
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
-    <td>Obtiene el historial completo de gastos de un vehículo.</td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByTypeQuery)</td>
-    <td>Filtra gastos por tipo.</td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByDateRangeQuery)</td>
-    <td>Obtiene gastos dentro de un rango de fechas.</td>
-  </tr>
-  <tr>
-    <td>handle(GetTotalInvestmentQuery)</td>
-    <td>Calcula la inversión total en un vehículo.</td>
-  </tr>
-  </tbody>
-</table>
+| Método                                     | Descripción                                                           |
+|--------------------------------------------|-----------------------------------------------------------------------|
+| handle(CreateMaintenanceCommand)           | Crea un mantenimiento validando el vehículo y estado inicial PENDING. |
+| handle(DeleteMaintenanceCommand)           | Elimina un mantenimiento y su gasto asociado si existe.               |
+| handle(AssignExpenseToMaintenanceCommand)  | Asocia un registro de gasto a un mantenimiento.                       |
+| handle(UpdateStateOfMaintenanceByIdCommand)| Actualiza el estado (e.j. IN_PROGRESS, COMPLETED) del mantenimiento.  |
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>ExpenseHistoryRepository</td>
-    <td>Repositorio para acceso a datos de historiales de gastos.</td>
-  </tr>
-  </tbody>
-</table>
-<hr>
+`MaintenanceQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para mantenimientos.
 
-<h3>Clase: <code>ExpenseHistoryCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ExpenseHistoryCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de gastos</td>
-  </tr>
-</table>
+| Método                                      | Descripción                                                      |
+|---------------------------------------------|------------------------------------------------------------------|
+| handle(GetAllMaintenancesByVehicleIdQuery)  | Obtiene el historial de mantenimientos de un vehículo.           |
+| handle(GetMaintenanceByIdQuery)             | Obtiene el detalle de un mantenimiento específico.               |
+| handle(GetAllMaintenancesByMechanicIdQuery) | Lista los mantenimientos asignados a un mecánico.                |
+| handle(GetMaintenancesByOwnerIdQuery)       | Lista los mantenimientos de todos los vehículos de un dueño.     |
 
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr><td>handle(CreateExpenseHistoryCommand)</td><td>Crea un nuevo registro de gasto en el historial.</td></tr>
-  <tr><td>handle(UpdateExpenseHistoryCommand)</td><td>Actualiza un registro de gasto existente.</td></tr>
-  <tr><td>handle(DeleteExpenseHistoryCommand)</td><td>Elimina un registro de gasto.</td></tr>
-  </tbody>
-</table>
+`MaintenanceApplicationReadyEventHandler`
+**Descripción:** Manejador de eventos de inicio de aplicación para la carga de datos semilla (Seeders).
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>ExpenseHistoryRepository</td>
-    <td>Repositorio para persistencia de historiales de gastos.</td>
-  </tr>
-  </tbody>
-</table>
+| Método             | Descripción                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| onApplicationReady | Ejecuta los comandos de Seed para Tipos de Gasto, Items y Estados de Mant.  |
 
 ##### 4.2.2.4 Infrastructure Layer
 
-<h3>Interfaz:<code>ServiceHistoryRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ServiceHistoryRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de historiales de servicio.</td>
-  </tr>
-</table>
+`ExpenseRepository`
+**Descripción:** Interfaz de persistencia para la entidad Expense.
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de servicio asociados a un vehículo.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todos los historiales de servicio realizados por un mecánico.</td></tr>
-    <tr><td>findByServiceTypeAndVehicleId(ServiceType type, Long vehicleId)</td><td>Filtra historiales por tipo de servicio y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp start, Timestamp end, Long vehicleId)</td><td>Obtiene historiales dentro de un rango de fechas para un vehículo.</td></tr>
-    <tr><td>findLatestServiceByVehicleId(Long vehicleId)</td><td>Obtiene el servicio más reciente de un vehículo.</td></tr>
-    <tr><td>calculateTotalSpentByVehicleId(Long vehicleId)</td><td>Calcula el total gastado en servicios para un vehículo.</td></tr>
-  </tbody>
-</table>
+| Método       | Tipo de Retorno | Descripción                                    |
+|--------------|-----------------|------------------------------------------------|
+| findByUserId | List<Expense>   | Encuentra todos los gastos de un usuario.      |
 
-<h3>Interfaz:<code>ExpenseHistoryRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ExpenseHistoryRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas relacionadas con historiales de gastos.</td>
-  </tr>
-</table>
+`ExpenseItemRepository`
+**Descripción:** Interfaz de persistencia para los ítems de gasto.
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de gasto asociados a un vehículo.</td></tr>
-    <tr><td>findByExpenseTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Filtra gastos por tipo y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Date start, Date end, Long vehicleId)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
-    <tr><td>calculateTotalExpensesByVehicleId(Long vehicleId)</td><td>Calcula el total gastado para un vehículo.</td></tr>
-    <tr><td>calculateExpensesByTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Calcula el gasto por tipo para un vehículo.</td></tr>
-  </tbody>
-</table>
+| Método                         | Tipo de Retorno | Descripción                                      |
+|--------------------------------|-----------------|--------------------------------------------------|
+| deleteExpenseItemsByExpense_Id | void            | Elimina todos los ítems de un ID de gasto dado.  |
+
+`MaintenanceRepository`
+**Descripción:** Interfaz de persistencia para la entidad Maintenance.
+
+| Método            | Tipo de Retorno   | Descripción                                                |
+|-------------------|-------------------|------------------------------------------------------------|
+| findByVehicleId   | List<Maintenance> | Encuentra mantenimientos por ID de vehículo.               |
+| findByMechanicId  | List<Maintenance> | Encuentra mantenimientos asignados a un mecánico.          |
+| findByVehicleIdIn | List<Maintenance> | Encuentra mantenimientos para una lista de IDs de vehículo.|
+
+`MaintenanceStateRepository`, `ExpenseTypeRepository`, `ItemTypeRepository`
+**Descripción:** Repositorios de catálogo para validar existencia de tipos y estados.
+
+| Método       | Tipo de Retorno | Descripción                                  |
+|--------------|-----------------|----------------------------------------------|
+| existsByName | boolean         | Valida si ya existe el tipo o estado en BD.  |
 
 ##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -2536,11 +2034,11 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.2.6.1 Bounded Context Domain Layer Class Diagrams
 
-![histories-class-diagram.png](images/chapter-4/histories-class-diagram.png)
+![maintenance-class-diagram.png](images/chapter-4/maintenance-class-diagram.png)
 
 ###### 4.2.2.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/history_db.png" alt="history_db" width="600"/>
+![maintenance-db.png](images/chapter-4/maintenance-db.png)
 
 #### 4.2.3 Bounded Context: Assignments
 
@@ -4274,257 +3772,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ![IAM-database.png](images/chapter-4/IAM-database.png)
 
-#### 4.2.7 Bounded Context: Maintenance and Operations
 
-##### 4.2.7.1 Domain Layer
-
-**Aggregates**
-
-`Expense`
-**Descripción:** Representa un gasto registrado en el sistema, el cual puede ser de tipo personal o de mantenimiento. Agrupa los ítems del gasto y su clasificación.
-
-| Atributos    | Tipo de dato      | Visibilidad | Descripción                                  |
-|--------------|-------------------|-------------|----------------------------------------------|
-| id           | Long              | Private     | Identificador único del gasto.               |
-| name         | String            | Private     | Nombre o concepto del gasto.                 |
-| finalPrice   | Double            | Private     | Precio final acumulado del gasto.            |
-| userId       | Long              | Private     | Identificador del usuario creador del gasto. |
-| expenseItems | List<ExpenseItem> | Private     | Lista de ítems detallados del gasto.         |
-| expenseType  | ExpenseType       | Private     | Clasificación del tipo de gasto.             |
-
-`Maintenance`
-**Descripción:** Representa una actividad de mantenimiento (preventivo o correctivo) realizada sobre un vehículo. Gestiona el estado, la asignación de gastos y el mecánico responsable.
-
-| Atributos          | Tipo de dato     | Visibilidad | Descripción                                        |
-|--------------------|------------------|-------------|----------------------------------------------------|
-| id                 | Long             | Private     | Identificador único del mantenimiento.             |
-| details            | String           | Private     | Detalles breves del servicio.                      |
-| vehicleId          | Long             | Private     | Identificador del vehículo asociado.               |
-| dateOfService      | Date             | Private     | Fecha en la que se realiza el servicio.            |
-| location           | String           | Private     | Ubicación o taller donde se realiza el servicio.   |
-| description        | String           | Private     | Descripción detallada del trabajo.                 |
-| maintenanceExpense | Expense          | Private     | Gasto asociado al mantenimiento (opcional).        |
-| state              | MaintenanceState | Private     | Estado actual del proceso de mantenimiento.        |
-| mechanicId         | Long             | Private     | Identificador del mecánico asignado al servicio.   |
-
-**Entities**
-
-`ExpenseItem`
-**Descripción:** Representa un ítem individual dentro de un registro de gasto, detallando costos unitarios y totales.
-
-| Atributos  | Tipo de dato | Visibilidad | Descripción                             |
-|------------|--------------|-------------|-----------------------------------------|
-| id         | Long         | Private     | Identificador único del ítem.           |
-| name       | String       | Private     | Nombre del ítem.                        |
-| amount     | Integer      | Private     | Cantidad de unidades.                   |
-| unitPrice  | Double       | Private     | Precio por unidad.                      |
-| totalPrice | Double       | Private     | Precio total (cantidad * unitario).     |
-| expense    | Expense      | Private     | Gasto al que pertenece este ítem.       |
-| itemType   | ItemType     | Private     | Categoría del ítem (Multa, herramientas, etc.). |
-
-`ExpenseType`, `ItemType`, `MaintenanceState` (Entidades de catálogo)
-
-**Value Objects**
-
-`ExpenseTypes` (Enum: PERSONAL, MAINTENANCE)
-`ItemTypes` (Enum: FINE, PARKING, PAYMENT, SUPPLIES, TAX, TOOLS)
-`MaintenanceStates` (Enum: PENDING, IN_PROGRESS, COMPLETED, CANCELLED)
-
-**Commands**
-* AddExpenseItemCommand <<record>>
-* AssignExpenseToMaintenanceCommand <<record>>
-* CreateExpenseByOwnerIdCommand <<record>>
-* CreateExpenseCommand <<record>>
-* CreateMaintenanceCommand <<record>>
-* DeleteExpenseCommand <<record>>
-* DeleteExpenseItemsByExpenseIdCommand <<record>>
-* DeleteMaintenanceCommand <<record>>
-* SeedExpenseTypesCommand <<record>>
-* SeedItemTypesCommand <<record>>
-* SeedMaintenanceStatesCommand <<record>>
-* UpdateStateOfMaintenanceByIdCommand <<record>>
-
-**Queries**
-* GetAllExpenseItemsByExpenseIdQuery <<record>>
-* GetAllExpensesByUserIdQuery <<record>>
-* GetAllMaintenancesByMechanicIdQuery <<record>>
-* GetAllMaintenancesByVehicleIdQuery <<record>>
-* GetExpenseByIdQuery <<record>>
-* GetMaintenanceByIdQuery <<record>>
-* GetMaintenancesByOwnerIdQuery <<record>>
-
-**Services**
-
-`ExpenseCommandService`
-* handle(CreateExpenseCommand)
-* handle(CreateExpenseByOwnerIdCommand)
-* handle(DeleteExpenseCommand)
-
-`ExpenseItemCommandService`
-* handle(AddExpenseItemCommand)
-* handle(DeleteExpenseItemsByExpenseIdCommand)
-
-`ExpenseQueryService`
-* handle(GetAllExpensesByUserIdQuery)
-* handle(GetExpenseByIdQuery)
-
-`MaintenanceCommandService`
-* handle(CreateMaintenanceCommand)
-* handle(DeleteMaintenanceCommand)
-* handle(AssignExpenseToMaintenanceCommand)
-* handle(UpdateStateOfMaintenanceByIdCommand)
-
-`MaintenanceQueryService`
-* handle(GetAllMaintenancesByVehicleIdQuery)
-* handle(GetMaintenanceByIdQuery)
-* handle(GetAllMaintenancesByMechanicIdQuery)
-* handle(GetMaintenancesByOwnerIdQuery)
-
-`SeedServices` (Agrupación lógica)
-* ExpenseTypeCommandService.handle(SeedExpenseTypesCommand)
-* ItemTypeCommandService.handle(SeedItemTypesCommand)
-* MaintenanceStateCommandService.handle(SeedMaintenanceStatesCommand)
-
-##### 4.2.7.2 Interface Layer
-
-**Rest Controllers**
-
-`ExpenseController`
-**Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de gastos y sus ítems.
-
-| Método                 | Ruta                                  | Descripción                                            |
-|------------------------|---------------------------------------|--------------------------------------------------------|
-| getAllExpenses()       | GET /api/v1/expense                   | Obtiene todos los gastos del usuario autenticado.      |
-| createExpenseByOwnerId()| POST /api/v1/expense/owner/{ownerId} | Crea un gasto asociado a un dueño específico.          |
-| createExpense()        | POST /api/v1/expense/{userId}         | Crea un nuevo gasto para un usuario.                   |
-| getExpense()           | GET /api/v1/expense/{expenseId}       | Obtiene el detalle de un gasto por su ID.              |
-| deleteExpense()        | DELETE /api/v1/expense/{expenseId}    | Elimina un gasto existente.                            |
-
-`MaintenanceController`
-**Descripción:** Controlador REST que maneja las operaciones del ciclo de vida de los mantenimientos.
-
-| Método                      | Ruta                                                       | Descripción                                                       |
-|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
-| getMaintenanceById()        | GET /api/v1/maintenance/{maintenanceId}                    | Obtiene un mantenimiento por su identificador.                    |
-| getMaintenancesByUserId()   | GET /api/v1/maintenance/vehicle/{vehicleId}                | Obtiene los mantenimientos asociados a un vehículo.               |
-| getMaintenancesByOwnerId()  | GET /api/v1/maintenance/owner/{ownerId}                    | Obtiene los mantenimientos de todos los vehículos de un dueño.    |
-| deleteMaintenanceById()     | DELETE /api/v1/maintenance/{maintenanceId}                 | Elimina un registro de mantenimiento.                             |
-| createMaintenance()         | POST /api/v1/maintenance                                   | Registra un nuevo mantenimiento.                                  |
-| updateMaintenanceStatusById()| PUT /api/v1/maintenance/{maintenanceId}                   | Actualiza el estado de un mantenimiento.                          |
-| assignExpenseToMaintenance()| PUT /api/v1/maintenance/{maintenanceId}/expense/assign/{id}| Asigna un gasto existente a un mantenimiento.                     |
-| getMaintenancesByMechanicId()| GET /api/v1/maintenance/mechanic/{mechanicId}             | Obtiene los mantenimientos asignados a un mecánico.               |
-
-**Resources**
-* CreateExpenseResource <<record>>
-* ExpenseResource <<record>>
-* CreateMaintenanceResource <<record>>
-* MaintenanceResource <<record>>
-* UpdateStatusOfMaintenanceResource <<record>>
-
-**Assemblers**
-* ExpenseResourceFromEntityAssembler
-* MaintenanceResourceFromEntityAssembler
-* CreateMaintenanceCommandFromResourceAssembler
-
-##### 4.2.7.3 Application Layer
-
-`ExpenseCommandServiceImpl`
-**Descripción:** Implementación del servicio de comandos para la gestión de gastos.
-
-| Método                               | Descripción                                                  |
-|--------------------------------------|--------------------------------------------------------------|
-| handle(CreateExpenseCommand)         | Crea un gasto validando la existencia del usuario.           |
-| handle(CreateExpenseByOwnerIdCommand)| Crea un gasto a partir del ID de un dueño, resolviendo su usuario.|
-| handle(DeleteExpenseCommand)         | Elimina un gasto por su ID.                                  |
-
-`ExpenseQueryServiceImpl`
-**Descripción:** Implementación del servicio de consultas para gastos.
-
-| Método                              | Descripción                                      |
-|-------------------------------------|--------------------------------------------------|
-| handle(GetAllExpensesByUserIdQuery) | Recupera todos los gastos de un usuario.         |
-| handle(GetExpenseByIdQuery)         | Recupera un gasto específico por su ID.          |
-
-`ExpenseItemCommandServiceImpl`
-**Descripción:** Implementación para la gestión de ítems dentro de los gastos.
-
-| Método                                      | Descripción                                      |
-|---------------------------------------------|--------------------------------------------------|
-| handle(AddExpenseItemCommand)               | Agrega un nuevo ítem a un gasto existente.       |
-| handle(DeleteExpenseItemsByExpenseIdCommand)| Elimina todos los ítems asociados a un gasto.    |
-
-`MaintenanceCommandServiceImpl`
-**Descripción:** Implementación del servicio de comandos para el ciclo de vida del mantenimiento.
-
-| Método                                     | Descripción                                                           |
-|--------------------------------------------|-----------------------------------------------------------------------|
-| handle(CreateMaintenanceCommand)           | Crea un mantenimiento validando el vehículo y estado inicial PENDING. |
-| handle(DeleteMaintenanceCommand)           | Elimina un mantenimiento y su gasto asociado si existe.               |
-| handle(AssignExpenseToMaintenanceCommand)  | Asocia un registro de gasto a un mantenimiento.                       |
-| handle(UpdateStateOfMaintenanceByIdCommand)| Actualiza el estado (e.j. IN_PROGRESS, COMPLETED) del mantenimiento.  |
-
-`MaintenanceQueryServiceImpl`
-**Descripción:** Implementación del servicio de consultas para mantenimientos.
-
-| Método                                      | Descripción                                                      |
-|---------------------------------------------|------------------------------------------------------------------|
-| handle(GetAllMaintenancesByVehicleIdQuery)  | Obtiene el historial de mantenimientos de un vehículo.           |
-| handle(GetMaintenanceByIdQuery)             | Obtiene el detalle de un mantenimiento específico.               |
-| handle(GetAllMaintenancesByMechanicIdQuery) | Lista los mantenimientos asignados a un mecánico.                |
-| handle(GetMaintenancesByOwnerIdQuery)       | Lista los mantenimientos de todos los vehículos de un dueño.     |
-
-`MaintenanceApplicationReadyEventHandler`
-**Descripción:** Manejador de eventos de inicio de aplicación para la carga de datos semilla (Seeders).
-
-| Método             | Descripción                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| onApplicationReady | Ejecuta los comandos de Seed para Tipos de Gasto, Items y Estados de Mant.  |
-
-##### 4.2.7.4 Infrastructure Layer
-
-`ExpenseRepository`
-**Descripción:** Interfaz de persistencia para la entidad Expense.
-
-| Método       | Tipo de Retorno | Descripción                                    |
-|--------------|-----------------|------------------------------------------------|
-| findByUserId | List<Expense>   | Encuentra todos los gastos de un usuario.      |
-
-`ExpenseItemRepository`
-**Descripción:** Interfaz de persistencia para los ítems de gasto.
-
-| Método                         | Tipo de Retorno | Descripción                                      |
-|--------------------------------|-----------------|--------------------------------------------------|
-| deleteExpenseItemsByExpense_Id | void            | Elimina todos los ítems de un ID de gasto dado.  |
-
-`MaintenanceRepository`
-**Descripción:** Interfaz de persistencia para la entidad Maintenance.
-
-| Método            | Tipo de Retorno   | Descripción                                                |
-|-------------------|-------------------|------------------------------------------------------------|
-| findByVehicleId   | List<Maintenance> | Encuentra mantenimientos por ID de vehículo.               |
-| findByMechanicId  | List<Maintenance> | Encuentra mantenimientos asignados a un mecánico.          |
-| findByVehicleIdIn | List<Maintenance> | Encuentra mantenimientos para una lista de IDs de vehículo.|
-
-`MaintenanceStateRepository`, `ExpenseTypeRepository`, `ItemTypeRepository`
-**Descripción:** Repositorios de catálogo para validar existencia de tipos y estados.
-
-| Método       | Tipo de Retorno | Descripción                                  |
-|--------------|-----------------|----------------------------------------------|
-| existsByName | boolean         | Valida si ya existe el tipo o estado en BD.  |
-
-##### 4.2.7.5 Bounded Context Software Architecture Component Level Diagrams
-
-![Component Diagram](images/chapter-4/system-component-diagram.png)
-
-##### 4.2.7.6 Bounded Context Software Architecture Code Level Diagrams
-
-###### 4.2.7.6.1 Bounded Context Domain Layer Class Diagrams
-
-![maintenance-class-diagram.png](images/chapter-4/maintenance-class-diagram.png)
-
-###### 4.2.7.6.2 Bounded Context Database Design Diagram
-
-![maintenance-db.png](images/chapter-4/maintenance-db.png)
 
 ## Capítulo V: Solution UI/UX Design
 
