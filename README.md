@@ -6971,9 +6971,9 @@ u-blox. (2011). NEO-6 DataSheet (GPS.G6-HW-09005) . https://content.u-blox.com/s
 
 ## Anexos
 
-User Persona Dueño: [User Persona Dueño]()
+User Persona Dueño: [User Persona Dueño](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQB14khdX9EBSbwr5EazRGatARDi61ArTQOe4TC5QhkYCmc?e=adxhxI)
 
-User Persona Mecanico: [User Persona Mecanico]()
+User Persona Mecanico: [User Persona Mecanico](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDtfTKlh6PCSL3Hnp3LfZsVAe5j8rsi19Pz6PqDoDtiqIs?e=LEfxta)
 
 User Journey Dueño: [User Journey Dueño](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQAzI7esgMsDTKLvXk9JjUSLAYrx578y28FgBuLJdLRvsDE?e=jRl9qh)
 
