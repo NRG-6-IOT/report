@@ -296,6 +296,24 @@ Distribución de commits:
 * Pacheco Astiguetta Sebastian (Pachieeee): 8 commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 1 commits.
 
+**TF**:
+
+El desarrollo de este sprint se concentró en la validación, integración y refinamiento final del producto, consolidando los bounded contexts traducidos (Wellness Metrics, Notifications, Maintenance), implementando componentes técnicos clave como la simulación GPS y el dispositivo físico, rediseñando completamente la interfaz web y móvil con soporte i18n, desarrollando los dashboards unificados, y corrigiendo la documentación y el Event Storming para alinear todo el sistema con los hallazgos obtenidos de las entrevistas con los usuarios finales.
+
+<img src="images/insights/report-insights-tf-1.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tf-2.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tf-3.png" alt="Repo Insights">
+
+Distribución de commits:
+* Alejo Cardenas Jose Antonio (Firtness):  commits.
+* Astonitas Díaz Juan Diego (NeorRise456):  commits.
+* Casas Sanchez Gabriel Alexander (Al3xiel):  commits.
+* Pasquale Barrenechea Gianluca Santino (cwassointt):  commits.
+* Pacheco Astiguetta Sebastian (Pachieeee):  commits.
+* Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku):  commits.
+
 <div style="page-break-after: always;"></div>
 
 ## Contenido
@@ -7016,7 +7034,7 @@ Story Telling Caso 6: [Story Telling Caso 6](https://upcedupe-my.sharepoint.com/
 
 Story Telling Caso 7: [Story Telling Caso 7](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBA8onoLsvgSoARS96dQVXrAVXxWMMpRwD5Ba8G5Dua7xk?e=crLdjV)
 
-Bounded Context Iam: [Bounded Context Iam](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBOYZyjoXFdS6dj4AxZ-iXQATgjNkZfK6qJt2yny5MgsIk?e=SU69jz)
+Bounded Context Iam: [Bounded Context Iam](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBOYZyjoXFdS6dj4AxZ-iXQATgjNkZfK6qJt2yny5MgsIk?e=FEkSdX)
 
 Bounded Context Maintenance and Operations: [Bounded Context Maintenance and Operations](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDcJLPgTGh5TbMcJpeCfyExAV6BwtLg02vwm6lOvtWbwEA?e=QUrvsZ)
 
