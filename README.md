@@ -6932,6 +6932,9 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 | https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 7b094aa4  | fix(services): remove unused parameters for creation.                                               | fix(services): remove unused parameters for creation.                                               | 03/12/2025 |
 
 ##### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+Este sprint no contó con la implementación de pruebas automatizadas debido a la priorización del desarrollo de funcionalidades críticas para el proyecto. Sin embargo, se reconoce la importancia de establecer una suite de pruebas robusta en futuras iteraciones para garantizar la calidad y estabilidad del software. En los próximos sprints, se planifica la incorporación de pruebas unitarias, de integración y funcionales que permitan validar el correcto funcionamiento de las aplicaciones y servicios desarrollados, asegurando así una experiencia óptima para los usuarios finales.
+
 ##### 6.2.3.6. Execution Evidence for Sprint Review
 ##### 6.2.3.7. Services Documentation Evidence for Sprint Review
 ##### 6.2.3.8. Software Deployment Evidence for Sprint Review
