@@ -6869,6 +6869,40 @@ Harrold, C. (2020). Practical smart device design and construction: Understandin
 
 Tamboli, A. (2022). Build your own IoT platform: Develop a Flexible and Scalable Internet of Things Platform.
 
+Naylamp Mechatronics. (s.f.). Cable Jumper Dupont Macho a Macho 10cm 20und. https://naylampmechatronics.com/cables/449-cable-jumper-dupont-macho-a-macho-10cm-20und.html
+
+Naylamp Mechatronics. (s.f.). Cable Jumper Dupont Hembra a Macho 10cm 20und. https://naylampmechatronics.com/cables/447-cable-jumper-dupont-hembra-a-macho-10cm-20und.html
+
+Naylamp Mechatronics. (s.f.). Cable Jumper Dupont Hembra a Hembra 10cm 20und. https://naylampmechatronics.com/cables/448-cable-jumper-dupont-hembra-a-hembra-10cm-20und.html
+
+Naylamp Mechatronics. (s.f.). Protoboard 830. https://naylampmechatronics.com/protoboard/222-protoboard-830.html
+
+Rincón Ingenieril. (2017, 10 de octubre). Cómo usar una protoboard. https://www.rinconingenieril.es/usar-una-protoboard/
+
+Naylamp Mechatronics. (s.f.). ESP32 DevKitC V4. https://naylampmechatronics.com/espressif-esp/1011-esp32-devkitc-v4-esp32-wifi-micro-usb.html
+
+Espressif Systems. (2024). ESP32 Datasheet . Naylamp Mechatronics. https://naylampmechatronics.com/img/cms/000384/000384_esp32_datasheet_en.pdf
+
+Components101. (2021,16 de Julio). DHT11 Temperature Sensor. https://components101.com/sensors/dht11-temperature-sensor
+
+DFRobot. (s.f.). DFR0067 DHT11 Datasheet . Components101. https://components101.com/sites/default/files/component_datasheet/DFR0067%20DHT11%20Datasheet.pdf
+
+Uelectronics. (s.f.). MQ-135 Módulo Detector de Calidad de Aire. https://uelectronics.com/producto/mq-135-modulo-detector-de-calidad-de-aire/
+
+Hanwei Electronics. (s.f.). SNS-MQ135 Datasheet . Uelectronics. https://uelectronics.com/wp-content/uploads/2018/01/SNS-MQ135.pdf
+
+Uelectronics. (s.f.). Sensor de Impacto KY-031. https://uelectronics.com/producto/sensor-de-impacto-ky-031/
+
+Uelectronics.(2020, 21 de Abril). KY-031 Datasheet .  https://uelectronics.com/wp-content/uploads/2017/06/KY-031.pdf
+
+Altronics. (s.f.). *Sensor de Presión BMP280 HW-611*. https://altronics.cl/sensor-presion-bmp280-hw-611
+
+Bosch Sensortec. (2015,Mayo). BST-BMP280-DS001-11 Datasheet . Adafruit. https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf
+
+u-blox. (s.f.). NEO-6 Series. https://www.u-blox.com/en/product/neo-6-series?legacy=Current#Documentation-&-resources
+
+u-blox. (2011). NEO-6 DataSheet (GPS.G6-HW-09005) . https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf
+
 <div style="page-break-after: always;"></div>
 
 ## Anexos
