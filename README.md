@@ -6936,6 +6936,37 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 Este sprint no contó con la implementación de pruebas automatizadas debido a la priorización del desarrollo de funcionalidades críticas para el proyecto. Sin embargo, se reconoce la importancia de establecer una suite de pruebas robusta en futuras iteraciones para garantizar la calidad y estabilidad del software. En los próximos sprints, se planifica la incorporación de pruebas unitarias, de integración y funcionales que permitan validar el correcto funcionamiento de las aplicaciones y servicios desarrollados, asegurando así una experiencia óptima para los usuarios finales.
 
 ##### 6.2.3.6. Execution Evidence for Sprint Review
+En esta sección se documentan las evidencias relacionadas con la ejecución del Sprint, incluyendo capturas de pantalla y descripciones de las actividades realizadas durante el desarrollo. Se destacan los hitos alcanzados, los desafíos enfrentados y las soluciones implementadas para superar obstáculos técnicos o de gestión. Esta documentación proporciona una visión clara del progreso del equipo y del cumplimiento de los objetivos establecidos para el Sprint.
+
+**Web Application Execution Evidence:**
+En este sprint se mejoro la interfaz del usuario y se implemento la internacionalización a la aplicación web. A continuación, se presentan capturas de pantalla que evidencian estos avances:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-1.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-2.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-3.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-4.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-5.png" alt="Execution Evidence Web" />
+
+**Backend Execution Evidence:**
+Durante este sprint, se implementaron los endpoint de autenticación y registro de dispositivos:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-back-1.png" alt="Execution Evidence Backend" />
+
+**Mobile Application Execution Evidence:**
+En este sprint se mejoro la interfaz del usuario y se implemento la internacionalización a la aplicación móvil. A continuación, se presentan capturas de pantalla que evidencian estos avances:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-1.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-2.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-3.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-4.png" alt="Execution Evidence Mobile" />
+
 ##### 6.2.3.7. Services Documentation Evidence for Sprint Review
 ##### 6.2.3.8. Software Deployment Evidence for Sprint Review
 ##### 6.2.3.9. Team Collaboration Insights during Sprint
