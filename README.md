@@ -2234,7 +2234,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="images/chapter-4/bounded-context/assignments-domain-layer.png" alt="Assignments Domain Layer"/>
+<img src="images/chapter-4/bounded-context/assignments-domain-layer.jpeg" alt="Assignments Domain Layer"/>
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
