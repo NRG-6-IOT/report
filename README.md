@@ -1456,9 +1456,9 @@ En esta sección se desarrollan los Bounded Context Canvases correspondientes a 
 
 <img src="images/chapter-4/bc-canvas-reports.png" alt="Bounded Context Canvas Reports">
 
-**Subscription**
+**Assignments**
 
-<img src="images/chapter-4/bc-canvas-subscription.png" alt="Bounded Context Canvas Subscription">
+<img src="images/chapter-4/bc-canvas-assignments.png" alt="Bounded Context Canvas Subscription">
 
 **Vehicle Management**
 
