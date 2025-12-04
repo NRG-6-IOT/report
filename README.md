@@ -7261,7 +7261,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td><strong>Enlace a la entrevista</strong></td>
-      <td>https://tinyurl.com/yc22a6xh</td>
+      <td>https://tinyurl.com/bdafhej8</td>
     </tr>
     <tr>
       <td><strong>Nombre Entrevistado</strong></td>
@@ -7282,6 +7282,10 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     <tr>
       <td><strong>Duración Entrevista</strong></td>
       <td> 03:22 </td>
+    </tr>
+    <tr>
+      <td><strong>Empieza en</strong></td>
+      <td> 00:06 </td>
     </tr>
     <tr>
       <td><strong>Minuto de Inicio</strong></td>
@@ -7306,7 +7310,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td>https://tinyurl.com/4y3v8zmt</td>
+      <td>https://tinyurl.com/bdafhej8</td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -7327,6 +7331,10 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     <tr>
       <td>Duración Entrevista</td>
       <td>02:27</td>
+    </tr>
+    <tr>
+      <td><strong>Empieza en</strong></td>
+      <td> 03:26 </td>
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
@@ -7351,7 +7359,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td>https://tinyurl.com/ydwyb7bs</td>
+      <td>https://tinyurl.com/bdafhej8</td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -7372,6 +7380,10 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     <tr>
       <td>Duración Entrevista</td>
       <td>04:15</td>
+    </tr>
+    <tr>
+      <td><strong>Empieza en</strong></td>
+      <td> 05:56 </td>
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
@@ -7624,7 +7636,7 @@ BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git
 
 Entrevistas del needfinding: https://tinyurl.com/26tdu3s4
 
-Entrevistas de validación: https://tinyurl.com/ydwyb7bs
+Entrevistas de validación: https://tinyurl.com/bdafhej8
 
 Video About the product web: https://tinyurl.com/473p96fd
 
