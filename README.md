@@ -307,12 +307,12 @@ El desarrollo de este sprint se concentró en la validación, integración y ref
 <img src="images/insights/report-insights-tf-3.png" alt="Repo Insights">
 
 Distribución de commits:
-* Alejo Cardenas Jose Antonio (Firtness):  commits.
-* Astonitas Díaz Juan Diego (NeorRise456):  commits.
-* Casas Sanchez Gabriel Alexander (Al3xiel):  commits.
-* Pasquale Barrenechea Gianluca Santino (cwassointt):  commits.
-* Pacheco Astiguetta Sebastian (Pachieeee):  commits.
-* Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku):  commits.
+* Alejo Cardenas Jose Antonio (Firtness): 39 commits.
+* Astonitas Díaz Juan Diego (NeorRise456): 18 commits.
+* Casas Sanchez Gabriel Alexander (Al3xiel): 107 commits.
+* Pasquale Barrenechea Gianluca Santino (cwassointt): 60 commits.
+* Pacheco Astiguetta Sebastian (Pachieeee): 41 commits.
+* Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
 <div style="page-break-after: always;"></div>
 
