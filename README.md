@@ -6968,6 +6968,14 @@ En este sprint se mejoro la interfaz del usuario y se implemento la internaciona
 <img src="images/chapter-6/sprint-3/execution-evidence-mobile-4.png" alt="Execution Evidence Mobile" />
 
 ##### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación técnica desarrollada durante el Sprint para los servicios implementados en el proyecto. Esta documentación incluye descripciones detalladas de las APIs, diagramas de arquitectura, flujos de datos y cualquier otro recurso relevante que facilite la comprensión y el uso de los servicios por parte del equipo de desarrollo y otros stakeholders. La documentación se ha elaborado siguiendo las mejores prácticas de la industria para asegurar su claridad, precisión y utilidad.
+
+| endpoint                                | verbo http | descripción                                            | parámetros | request body                         | response body                                                    | explicación                                                                                        |
+|-----------------------------------------|:----------:|--------------------------------------------------------|------------|--------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| /api/v1/devices/authentication/validate |    POST    | Valida un dispositivo registrado mediante su device Id | -          | deviceId:string                      | id:int<br/>deviceId:string<br/>vehicleId:string<br/>token:string | Valida un device mediante su id y devuelve el id del vehiculo asociado y el token de autenticación |
+| /api/v1/devices/authentication/register |    POST    | Registra un nuevo dispositvo mediante su device id     | -          | deviceId:string<br/>vehicleId:string | id:int<br/>deviceId:string<br/>vehicleId:string<br/>             | Registra un nuevo dispositivo y lo relaciona con un vehiculo                                       |
+
 ##### 6.2.3.8. Software Deployment Evidence for Sprint Review
 ##### 6.2.3.9. Team Collaboration Insights during Sprint
 
