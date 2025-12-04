@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div style="text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="150" alt="UPC Logo">
 
