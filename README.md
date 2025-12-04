@@ -1,6 +1,14 @@
+<div style="text-align: center;">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="150" alt="UPC Logo">
 
 **Universidad Peruana de Ciencias Aplicadas**
+
+**Facultad:** Ingeniería
+
+**Carrera:** Ingeniería de software
+
+**Periodo:** 202520
 
 **CURSO:** Desarrollo de Soluciones IoT
 
@@ -10,9 +18,6 @@
 
 **Profesor:** Ángel Augusto Velásquez Núñez
 
-**Facultad:** Ingeniería
-
-**Carrera:** Ingeniería de software
 
 **Informe del Trabajo Final**
 
@@ -21,7 +26,6 @@
 **Nombre del producto:** BykerZ
 
 **Integrantes**
-
 
 | **Nombre**                                | **Código** |
 |-------------------------------------------|------------|
@@ -32,8 +36,11 @@
 | **Pasquale Barrenechea Gianluca Santino** | U202112078 |
 | **Real Calderon Sebatian Omar**           | U20221D964 |
 
+**Diciembre 2025**
 
-**Noviembre 2025**
+</div>
+
+<div style="page-break-after: always;"></div>
 
 **Registro de Versiones del Informe**
 
@@ -173,14 +180,69 @@
         <td>Casas Sanchez Gabriel Alexander</td>
         <td>Se agregaron los insights pertenecientes al sprint 2</td>
     </tr>
+    <tr>
+        <td>2.1</td>
+        <td>30/11/2025</td>
+        <td>Alejo Cardenas Jose Antonio</td>
+        <td>Se agregaron las traducciones de BC Wellness Metrics y Notifications, corrección de Hypothesis, análisis de entrevistas y bibliografía.</td>
+    </tr>
+    <tr>
+        <td>2.2</td>
+        <td>01/12/2025</td>
+        <td>Astonitas Díaz Juan Diego</td>
+        <td>Se agregó el BC Maintenance and Operations, correcciones del documento e implementación del prototipo GPS simulado.</td>
+    </tr>
+    <tr>
+        <td>2.3</td>
+        <td>02/12/2025</td>
+        <td>Casas Sanchez Gabriel Alexander</td>
+        <td>Se agregó la documentación del Sprint 3, asignaciones de bounded contexts y elaboración del dispositivo simulado.</td>
+    </tr>
+    <tr>
+        <td>2.4</td>
+        <td>02/12/2025</td>
+        <td>Pasquale Barrenechea Gianluca Santino</td>
+        <td>Se agregaron entrevistas de validación, BC Comparatives, rediseño visual completo e implementación de i18n.</td>
+    </tr>
+    <tr>
+        <td>2.5</td>
+        <td>03/12/2025</td>
+        <td>Pacheco Astiguetta Sebastian</td>
+        <td>Se agregó habilitación de API Keys, actualización de IAM/Profiles, implementación parcial del Edge Service y cableado del prototipo físico.</td>
+    </tr>
+    <tr>
+        <td>3.0</td>
+        <td>04/12/2025</td>
+        <td>Real Calderon Sebastian Omar</td>
+        <td>Se corrigio el BC Vehicle Management, corrección del Event Storming y desarrollo del dashboard en aplicación web y móvil.</td>
+    </tr>
+    <tr>
+        <td>3.1</td>
+        <td>04/12/2025</td>
+        <td>Pacheco Astiguetta Sebastian</td>
+        <td>Revisión general de la implementación correcta de links y videos, formateo de tablas y agregado de about the team.</td>
+    </tr>
   </tbody>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 **Project Report Collaboration Insights**
 
 El enlace a github del reporte del proyecto es el siguiente: [https://github.com/NRG-8-IOT/report](https://github.com/NRG-8-IOT/report).
 
 **TB1**
+
+Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
+
+En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
+
+Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
+
+Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
+
+En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
+
 
 <img src="images/insights/report-insights-tb1-1.png" alt="Repo Insights">
 
@@ -202,18 +264,11 @@ Distribución de commits:
 * Pacheco Astiguetta Sebastian (Pachieeee): 14 commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
 
-Explicacion del desarrollo de actividades de la primera entrega :<br>
-<br>Para la elaboración del informe del proyecto, el equipo organizó las actividades de manera colaborativa mediante el repositorio de GitHub, distribuyendo las tareas entre los integrantes según las secciones del documento. Cada miembro asumió la responsabilidad de desarrollar contenidos específicos, manteniendo una comunicación constante para asegurar la coherencia en el estilo, la estructura y la calidad del informe.
-
-<br>En las primeras etapas, los miembros se centraron en la definición del producto y la investigación inicial. Gabriel Casas Sánchez desarrolló el Solution Profile, en el que se establecieron la propuesta de valor y los objetivos generales del proyecto. José Alejo Cárdenas elaboró el Lean UX Process y el Análisis de competidores, identificando oportunidades de mejora y diferenciación en el mercado. Por su parte, Sebastián Real Calderón se encargó de la sección de Segmentos Objetivos, definiendo los perfiles de usuarios principales y sus características.
-
-<br>Posteriormente, se abordaron las actividades relacionadas con la investigación con usuarios. Gianluca Pasquale Barrenechea fue responsable del Diseño, registro y análisis de entrevistas, recopilando información cualitativa relevante. Juan Diego Astonitas Díaz desarrolló la sección de Needfinding, en la que se analizaron las necesidades detectadas y se agruparon los principales hallazgos del proceso de investigación.
-
-<br>Una vez recopilada la información base, el equipo continuó con el desarrollo de los artefactos de diseño y modelado. Sebastián Real Calderón elaboró los User Stories y el Product Backlog, reflejando las funcionalidades que debía cubrir el sistema. Sebastián Pacheco Astiguetta desarrolló el Impact Mapping, estableciendo la relación entre los objetivos estratégicos del negocio y las acciones del producto. Gabriel Casas Sánchez complementó esta parte con el Big Picture Event Storming, que permitió identificar los eventos clave del dominio y los actores involucrados.
-
-<br>En la parte final del desarrollo del informe, se trabajó en los aspectos técnicos y de arquitectura del sistema. Gabriel Casas Sánchez documentó los Domain Message Flows Modeling y los Bounded Context Canvases, describiendo la interacción entre los componentes del dominio. Sebastián Real Calderón elaboró el Context Mapping, mostrando las relaciones entre los distintos contextos del sistema. José Alejo Cárdenas desarrolló la sección de Software Architecture, detallando la estructura y los componentes del sistema, y finalmente, Gabriel Casas Sánchez completó la parte de Tactical-level Domain-Driven Design, donde se definieron los agregados, entidades y servicios principales.
-
 **TP**
+
+Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
+
+Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
 
 <img src="images/insights/report-insights-tp-1.png" alt="Repo Insights">
 
@@ -229,10 +284,9 @@ Explicacion del desarrollo de actividades de la primera entrega :<br>
 
 <img src="images/insights/report-insights-tp-7.png" alt="Repo Insights">
 
-Durante el desarrollo del Sprint, el equipo trabajó de forma coordinada para cumplir con todas las fases establecidas en el Capítulo VI: Product Implementation, Validation & Deployment. En la etapa de Sprint Planning 1, se definieron los objetivos, entregables y prioridades de desarrollo, asignando responsabilidades específicas en Aspect Leaders and Collaborators para garantizar una distribución equitativa del trabajo. Con el Sprint Backlog 1, se organizó y dio seguimiento a las tareas de implementación de la Landing Page, los Web Services y las Aplicaciones. Dentro de Software Configuration Management, se configuró el entorno de desarrollo (Software Development Environment Configuration) y se gestionó el control de versiones en GitHub (Source Code Management) siguiendo las Style Guides & Conventions del proyecto para mantener un código uniforme y legible. En la etapa de Software Deployment Configuration, se establecieron los entornos de despliegue y pruebas, asegurando la correcta integración de los componentes.
-Posteriormente, el equipo generó las Development Evidence, Testing Suite Evidence, Execution Evidence y Services Documentation Evidence correspondientes a la revisión del Sprint, donde se documentaron los avances técnicos, las pruebas realizadas y la evidencia de funcionamiento del sistema. Finalmente, se completó la Software Deployment Evidence, mostrando la correcta implementación y despliegue de los productos. Todo este proceso fue respaldado por un análisis de colaboración y commits en GitHub dentro de Team Collaboration Insights during Sprint, que evidenció la participación activa, comunicación continua y liderazgo compartido de todos los integrantes para alcanzar los objetivos propuestos en tiempo y forma.
-
 **TB2**:
+
+El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
 
 <img src="images/insights/report-insights-tb2-1.png" alt="Repo Insights">
 
@@ -248,153 +302,193 @@ Distribución de commits:
 * Pacheco Astiguetta Sebastian (Pachieeee): 8 commits.
 * Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 1 commits.
 
-El desarrollo de este sprint se concentró en consolidar los avances del web application y backend, de la misma manera se presento la primera versión del mobile application. Por otro lado se creo el primer protipo del dispositivo iot y el edge service.
+**TF**:
 
-## Contenido
-  - [Contenido](#contenido)
-  - [Student Outcome](#student-outcome)
-  - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1 Startup Profile](#11-startup-profile)
-      - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-      - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2 Solution Profile](#12-solution-profile)
-      - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [1.2.2 Lean UX Process](#122-lean-ux-process)
-        - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-        - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-        - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1 Competidores](#21-competidores)
-      - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-      - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2 Entrevistas](#22-entrevistas)
-      - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-      - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-      - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3 Needfinding](#23-needfinding)
-      - [2.3.1 User Personas](#231-user-personas)
-      - [2.3.2 User Task Matrix](#232-user-task-matrix)
-      - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-      - [2.3.4 Empathy Mapping](#234-empathy-mapping)
-    - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
-    - [2.5 Ubiquitous Language](#25-ubiquitous-language)
-  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1 User Stories](#31-user-stories)
-    - [3.2 Impact Mapping](#32-impact-mapping)
-    - [3.3 Product Backlog](#33-product-backlog)
-  - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
-      - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
-        - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
-        - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-        - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
-      - [4.1.2 Context Mapping](#412-context-mapping)
-      - [4.1.3 Software Architecture](#413-software-architecture)
-        - [4.1.3.1 Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-        - [4.1.3.2 Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-        - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-        - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-    - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-      - [4.2.1 Bounded Context: Gestión de Vehículos](#421-bounded-context-gestión-de-vehículos)
-        - [4.2.1.1 Domain Layer](#4211-domain-layer)
-        - [4.2.1.2 Interface Layer](#4212-interface-layer)
-        - [4.2.1.3 Application Layer](#4213-application-layer)
-        - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
-        - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-          - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-      - [4.2.2 Bounded Context: Historiales](#422-bounded-context-historiales)
-        - [4.2.2.1 Domain Layer](#4221-domain-layer)
-        - [4.2.2.2 Interface Layer](#4222-interface-layer)
-        - [4.2.2.3 Application Layer](#4223-application-layer)
-        - [4.2.2.4 Infrastructure Layer](#4224-infrastructure-layer)
-        - [4.2.2.5 Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-          - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-      - [4.2.3 Bounded Context: Suscripción](#423-bounded-context-suscripción)
-        - [4.2.3.1 Domain Layer](#4231-domain-layer)
-        - [4.2.3.2 Interface Layer](#4232-interface-layer)
-        - [4.2.3.3 Application Layer](#4233-application-layer)
-        - [4.2.3.4 Infrastructure Layer](#4234-infrastructure-layer)
-        - [4.2.3.5 Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.3.6 Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.3.6.1 Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-          - [4.2.3.6.2 Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-      - [4.2.4 Bounded Context: Bienestar de Vehículos](#424-bounded-context-bienestar-de-vehículos)
-        - [4.2.4.1 Domain Layer](#4241-domain-layer)
-        - [4.2.4.2 Interface Layer](#4242-interface-layer)
-        - [4.2.4.3 Application Layer](#4243-application-layer)
-        - [4.2.4.4 Infrastructure Layer](#4244-infrastructure-layer)
-        - [4.2.4.5 Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.4.6 Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.4.6.1 Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-          - [4.2.4.6.2 Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-      - [4.2.5 Bounded Context: Reportes](#425-bounded-context-reportes)
-        - [4.2.5.1 Domain Layer](#4251-domain-layer)
-        - [4.2.5.2 Interface Layer](#4252-interface-layer)
-        - [4.2.5.3 Application Layer](#4253-application-layer)
-        - [4.2.5.4 Infrastructure Layer](#4254-infrastructure-layer)
-        - [4.2.5.5 Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-          - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-      - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
-        - [4.2.6.1 Domain Layer](#4261-domain-layer)
-        - [4.2.6.2 Interface Layer](#4262-interface-layer)
-        - [4.2.6.3 Application Layer](#4263-application-layer)
-          - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
-        - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-        - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
-          - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-          - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-  - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-    - [5.1. Style Guidelines](#51-style-guidelines)
-      - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-      - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
-    - [5.2. Information Architecture](#52-information-architecture)
-      - [5.2.1. Organization Systems](#521-organization-systems)
-      - [5.2.2. Labeling Systems](#522-labeling-systems)
-      - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-      - [5.2.4. Searching Systems](#524-searching-systems)
-      - [5.2.5. Navigation Systems](#525-navigation-systems)
-    - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-      - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-      - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
-    - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-      - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-      - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
-      - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-      - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-    - [5.5. Applications Prototyping](#55-applications-prototyping)
-  - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
-    - [6.1. Software Configuration Management.](#61-software-configuration-management)
-      - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
-      - [6.1.2. Source Code Management.](#612-source-code-management)
-      - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
-      - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
-    - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
-      - [6.2.1. Sprint 1](#621-sprint-1)
-        - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
-        - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
-        - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
-        - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
-        - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
-        - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
-        - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
-        - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
-        - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
-    - [6.3. Validation Interviews.](#63-validation-interviews)
-      - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
-      - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
-      - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
-    - [6.4. Video About-the-Product.](#64-video-about-the-product)
-  - [Conclusiones](#conclusiones)
-  - [Bibliografía](#bibliografía)
-  - [Anexos](#anexos)
+El desarrollo de este sprint se concentró en la validación, integración y refinamiento final del producto, consolidando los bounded contexts traducidos (Wellness Metrics, Notifications, Maintenance), implementando componentes técnicos clave como la simulación GPS y el dispositivo físico, rediseñando completamente la interfaz web y móvil con soporte i18n, desarrollando los dashboards unificados, y corrigiendo la documentación y el Event Storming para alinear todo el sistema con los hallazgos obtenidos de las entrevistas con los usuarios finales.
+
+<img src="images/insights/report-insights-tf-1.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tf-2.png" alt="Repo Insights">
+
+<img src="images/insights/report-insights-tf-3.png" alt="Repo Insights">
+
+Distribución de commits:
+* Alejo Cardenas Jose Antonio (Firtness): 39 commits.
+* Astonitas Díaz Juan Diego (NeorRise456): 18 commits.
+* Casas Sanchez Gabriel Alexander (Al3xiel): 107 commits.
+* Pasquale Barrenechea Gianluca Santino (cwassointt): 60 commits.
+* Pacheco Astiguetta Sebastian (Pachieeee): 41 commits.
+* Real Calderon Sebastian Omar (sebastianrealcalderon, Neshokku): 19 commits.
+
+<div style="page-break-after: always;"></div>
+
+Contenido
+- [Student Outcome](#student-outcome)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+  - [1.1 Startup Profile](#11-startup-profile)
+    - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2 Solution Profile](#12-solution-profile)
+    - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2 Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  - [2.1 Competidores](#21-competidores)
+    - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2 Entrevistas](#22-entrevistas)
+    - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3 Needfinding](#23-needfinding)
+    - [2.3.1 User Personas](#231-user-personas)
+    - [2.3.2 User Task Matrix](#232-user-task-matrix)
+    - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4 Empathy Mapping](#234-empathy-mapping)
+  - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
+  - [2.5 Ubiquitous Language](#25-ubiquitous-language)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1 User Stories](#31-user-stories)
+  - [3.2 Impact Mapping](#32-impact-mapping)
+  - [3.3 Product Backlog](#33-product-backlog)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+  - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+    - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
+      - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
+      - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+      - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
+    - [4.1.2 Context Mapping](#412-context-mapping)
+    - [4.1.3 Software Architecture](#413-software-architecture)
+      - [4.1.3.1 Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+      - [4.1.3.2 Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+      - [4.1.3.3 Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+      - [4.1.3.4 Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+  - [4.2 Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+    - [4.2.1 Bounded Context: Vehicle Management](#421-bounded-context-vehicle-management)
+      - [4.2.1.1 Domain Layer](#4211-domain-layer)
+      - [4.2.1.2 Interface Layer](#4212-interface-layer)
+      - [4.2.1.3 Application Layer](#4213-application-layer)
+      - [4.2.1.4 Infrastructure Layer](#4214-infrastructure-layer)
+      - [4.2.1.5 Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.1.6 Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.1.6.1 Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+        - [4.2.1.6.2 Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+    - [4.2.2 Bounded Context: Maintenance](#422-bounded-context-maintenance)
+      - [4.2.2.1 Domain Layer](#4221-domain-layer)
+      - [4.2.2.2 Interface Layer](#4222-interface-layer)
+      - [4.2.2.3 Application Layer](#4223-application-layer)
+      - [4.2.2.4 Infrastructure Layer](#4224-infrastructure-layer)
+      - [4.2.2.5 Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.2.6 Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.2.6.1 Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
+        - [4.2.2.6.2 Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
+    - [4.2.3 Bounded Context: Assignments](#423-bounded-context-assignments)
+      - [4.2.3.1 Domain Layer](#4231-domain-layer)
+      - [4.2.3.2 Interface Layer](#4232-interface-layer)
+      - [4.2.3.3 Application Layer](#4233-application-layer)
+      - [4.2.3.4 Infrastructure Layer](#4234-infrastructure-layer)
+      - [4.2.3.5 Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.3.6 Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.3.6.1 Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+        - [4.2.3.6.2 Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+    - [4.2.4 Bounded Context: Vehicle Wellness](#424-bounded-context-vehicle-wellness)
+      - [4.2.4.1 Domain Layer](#4241-domain-layer)
+      - [4.2.4.2 Interface Layer](#4242-interface-layer)
+      - [4.2.4.3 Application Layer](#4243-application-layer)
+      - [4.2.4.4 Infrastructure Layer](#4244-infrastructure-layer)
+      - [4.2.4.5 Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.4.6 Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.4.6.1 Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
+        - [4.2.4.6.2 Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
+    - [4.2.5 Bounded Context: Reportes](#425-bounded-context-reportes)
+      - [4.2.5.1 Domain Layer](#4251-domain-layer)
+      - [4.2.5.2 Interface Layer](#4252-interface-layer)
+      - [4.2.5.3 Application Layer](#4253-application-layer)
+      - [4.2.5.4 Infrastructure Layer](#4254-infrastructure-layer)
+      - [4.2.5.5 Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.5.6 Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.5.6.1 Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+        - [4.2.5.6.2 Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+    - [4.2.6. Bounded Context: IAM](#426-bounded-context-iam)
+      - [4.2.6.1 Domain Layer](#4261-domain-layer)
+      - [4.2.6.2 Interface Layer](#4262-interface-layer)
+      - [4.2.6.3 Application Layer](#4263-application-layer)
+        - [4.2.6.4 Infrastructure Layer](#4264-infrastructure-layer)
+      - [4.2.6.5 Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.6.6 Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.6.6.1 Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
+        - [4.2.6.6.2 Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+  - [5.1. Style Guidelines](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture](#52-information-architecture)
+    - [5.2.1. Organization Systems](#521-organization-systems)
+    - [5.2.2. Labeling Systems](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems](#524-searching-systems)
+    - [5.2.5. Navigation Systems](#525-navigation-systems)
+  - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+    - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+    - [5.4.2. Applications Wireflow Diagram](#542-applications-wireflow-diagram)
+    - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+    - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping](#55-applications-prototyping)
+- [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+  - [6.1. Software Configuration Management.](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+    - [6.1.2. Source Code Management.](#612-source-code-management)
+    - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+    - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+  - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+    - [6.2.1. Sprint 1](#621-sprint-1)
+      - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+      - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
+      - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+      - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+    - [6.2.2. Sprint 2](#622-sprint-2)
+      - [6.2.2.1. Sprint Planning 2.](#6221-sprint-planning-2)
+      - [6.2.2.2. Aspect Leaders and Collaborators.](#6222-aspect-leaders-and-collaborators)
+      - [6.2.2.3. Sprint Backlog 2.](#6223-sprint-backlog-2)
+      - [6.2.2.4. Development Evidence for Sprint Review.](#6224-development-evidence-for-sprint-review)
+      - [6.2.2.5. Testing Suite Evidence for Sprint Review.](#6225-testing-suite-evidence-for-sprint-review)
+      - [6.2.2.6. Execution Evidence for Sprint Review.](#6226-execution-evidence-for-sprint-review)
+      - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
+      - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
+      - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
+    - [6.2.3. Sprint 3](#623-sprint-3)
+      - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+      - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+      - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
+      - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+      - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+      - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+      - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+      - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+      - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews.](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product.](#64-video-about-the-product)
+  - [6.4. Video About-the-Team](#64-video-about-the-team)
+- [Conclusiones](#conclusiones)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
+
+<div style="page-break-after: always;"></div>
 
 ## Student Outcome
 
@@ -423,25 +517,32 @@ del ABET – EAC - Student Outcome 5.
         <strong>TB1:</strong> Asumí un rol de liderazgo compartido en la definición de los modelos del dominio y en la elaboración del <em>Solution Profile</em>, <em>Big Picture Eventstorming</em>, <em>Domain Message Flows Modeling</em> y los <em>Bounded Context Canvases</em>. Promoví la colaboración entre los miembros del equipo para mantener coherencia entre los diferentes modelos y asegurar una visión unificada del sistema.<br><br>
         <strong>TP:</strong> Asumí un rol activo como lider coordinando a mis compañeros para poder realizar cada entregable, fomente comunicación activa entre todos, y estuve al pendiente de cada integrante.<br><br>
         <strong>TB2:</strong> Asumí un rol activo como lider coordinando a mis compañeros para poder realizar los 8 entreagables que se tenian planeados para el desarollode este sprint, fomente comunicación activa entre todos, y busque cubrir las debilidades de mis compañeros.<br><br>
+        <strong>TF:</strong> Proporcioné liderazgo conjunto durante la documentación del Sprint 3 y la definición de los bounded contexts, coordinando activamente con los responsables de frontend, backend y hardware para integrar sus avances en una visión unificada del sistema. Mi rol facilitó la toma de decisiones técnicas y de diseño, asegurando que cada componente del proyecto evolucionara de manera alineada y coherente.<br><br>
         <strong>Real Calderon Sebastian Omar</strong><br>
         <strong>TB1:</strong> Participé activamente en la elaboración de los <em>Segmentos Objetivos</em>, los <em>User Stories</em>, el <em>Product Backlog</em> y el <em>Context Mapping</em>. Coordiné la integración de estos artefactos con el resto del equipo, fomentando la comunicación constante y asegurando que las definiciones del dominio se mantuvieran alineadas con los objetivos del proyecto.<br><br>
         <strong>TP:</strong> Asumí un rol colaborativo en la integración de los desarrollos implementados, participando activamente en la coordinación técnica y en la validación conjunta de las funcionalidades construidas. Contribuí al liderazgo compartido al apoyar la toma de decisiones técnicas y asegurar la coherencia entre los diferentes módulos del sistema.<br><br>
         <strong>TB2:</strong>Desarrollé el bounded context de Vehicle Management en el backend y coordiné su integración con los frontends web y móvil mediante las llamadas al API. Asimismo, apoyé la corrección de errores y la coherencia visual del sistema tras el refresco de datos, trabajando en conjunto con el equipo para mantener alineadas las decisiones técnicas. Con estas acciones aporté al liderazgo compartido, facilitando la integración entre módulos y asegurando un desarrollo unificado dentro del proyecto.<br><br>
+        <strong>TF:</strong> Asumí un rol de liderazgo conjunto en el desarrollo y unificación de los dashboards para la aplicación web y móvil, trabajando en coordinación directa con los equipos de frontend y UX. Mi contribución fue clave para alinear las decisiones sobre visualización de datos y experiencia de usuario, asegurando que ambos paneles mantuvieran coherencia funcional y estética bajo una visión compartida.<br><br>
         <strong>Alejo Cardenas Jose Antonio</strong><br>
         <strong>TB1:</strong> Lideré la elaboración del <em>Lean UX Process</em>, el <em>Análisis de Competidores</em> y la <em>Arquitectura de Software</em>. Trabajé de manera conjunta con mis compañeros para definir estrategias de diseño y establecer lineamientos técnicos que respondieran a las necesidades del proyecto, priorizando siempre la coherencia y el consenso en las decisiones tomadas.<br><br>
         <strong>TP:</strong> Asumí un rol activo en la coordinación del equipo durante el desarrollo de los artefactos del proyecto, fomentando la comunicación y el liderazgo compartido. Colaboré en la toma de decisiones sobre los userflows, wireframes y mockups de la aplicación móvil, guiando al grupo hacia soluciones coherentes con los objetivos del proyecto y promoviendo la participación equitativa de todos los integrantes. <br><br>
         <strong>TB2:</strong> Durante esta entrega asumí un rol activo en el desarrollo de los bounded contexts de notifications y vehicle-wellness, coordinando con mis compañeros para alinear aggregates, servicios y controladores tanto en backend como en las aplicaciones web y móvil. También lideré la integración del sistema de WebSockets, apoyando al equipo para consolidar una solución coherente entre los distintos módulos. En conjunto, contribuí al liderazgo compartido del equipo al facilitar la integración técnica, promover decisiones coordinadas y asegurar que las nuevas funcionalidades se mantuvieran alineadas con la visión general del proyecto.<br><br>
+        <strong>TF:</strong> Proporcioné liderazgo conjunto en la capa de definición y comunicación del proyecto, coordinando la traducción y estandarización de bounded contexts (Wellness Metrics, Notifications) con los responsables técnicos. Mi trabajo facilitó un lenguaje común, liderando también la corrección y consolidación de artefactos clave como las Hypotheses y el análisis de entrevistas, lo que aseguró que toda la documentación reflejara una visión integral y alineada del equipo.<br><br>
         <strong>Pacheco Astiguetta Sebastian</strong><br>
         <strong>TB1:</strong> Desarrollé el <em>Impact Mapping</em>, estableciendo la relación entre los objetivos del negocio, los actores y las acciones del sistema. Colaboré con mis compañeros en la revisión de los artefactos de diseño para asegurar que cada sección mantuviera una visión integral del proyecto.<br>
-        <strong>TP1:</strong> Participé en el desarrollo del Event Storming, colaboranto para identificar los eventos clave del dominio y los actores involucrados. Elaboré, junto a mis compañeros, las distintas secciones que los prototipos tendrán, considerando los wireframes, mock-ups y sus respectivos flujos, dando una base de partida para el desarrollo de las aplicaciones web y móvil.<br><br>
+        <strong>TP:</strong> Participé en el desarrollo del Event Storming, colaboranto para identificar los eventos clave del dominio y los actores involucrados. Elaboré, junto a mis compañeros, las distintas secciones que los prototipos tendrán, considerando los wireframes, mock-ups y sus respectivos flujos, dando una base de partida para el desarrollo de las aplicaciones web y móvil.<br><br>
         <strong>TB2:</strong> Me encargué del desarrollo de la autenticación de los usuarios, comunicando al resto de los servicios la información del usuario necesaria para poder realizar las operaciones con información precisa. La eficiencia en la comunicación permitió que el equipo mantuviera un flujo de trabajo coordinado y que las funcionalidades se integraran de manera efectiva.<br><br>
+        <strong>TF:</strong> Proporcioné liderazgo técnico conjunto en la implementación del núcleo de conectividad del sistema, coordinando la habilitación de API Keys, el desarrollo del Edge Service y el cableado del prototipo físico. Mi trabajo implicó una colaboración constante con los desarrolladores del backend y la aplicación embebida para garantizar que la arquitectura de integración se construyera de forma colaborativa y eficiente.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Desarrollé el apartado de <em>Needfinding</em>, analizando la información obtenida durante las entrevistas y los procesos de investigación. Contribuí al trabajo en equipo brindando apoyo a mis compañeros en la estructuración de hallazgos y asegurando que los resultados reflejaran las necesidades reales de los usuarios.<br><br>
         <strong>TP:</strong> Dirigi y trabaje en el diseño de los mockups, wireflows y userflows. trabajando y dando direccion al equipo
+        <strong>TB2:</strong> Lideré la fase inicial de integración de la API del prototipo IoT, coordinando las pruebas de conexión y transmisión de datos con el equipo de backend. Además, participé activamente en el desarrollo de los primeros componentes de la interfaz de monitoreo en la aplicación web, asegurando que cumplieran con los requerimientos de usabilidad definidos en etapas anteriores.<br><br>
+        <strong>TF:</strong> Proporcioné liderazgo conjunto en la evolución del bounded context de mantenimiento y en la implementación técnica de la simulación GPS, coordinando estrechamente con los equipos de backend y frontend para asegurar que la lógica de negocio y la interfaz de usuario estuvieran perfectamente sincronizadas. Mi rol facilitó la integración de esta funcionalidad crítica dentro del flujo de trabajo del taller, guiando decisiones técnicas que permitieron validar de manera efectiva las hipótesis de telemetría en tiempo real.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
         <strong>TB1:</strong> Elaboré el <em>Diseño, registro y análisis de entrevistas</em>, organizando la información obtenida de los usuarios para orientar las decisiones del diseño del sistema. Participé en la coordinación del grupo para integrar los resultados de las entrevistas con los artefactos posteriores, fortaleciendo la coherencia entre las etapas del informe.
-        <strong>TP1:</strong> Participé activamente en el desarrollo de los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto a mis compañeros, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y los criterios de usabilidad establecidos. Esta contribución permitió sentar una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales.<br><br>
+        <strong>TP:</strong> Participé activamente en el desarrollo de los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto a mis compañeros, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y los criterios de usabilidad establecidos. Esta contribución permitió sentar una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales.<br><br>
         <strong>TB2:</strong> Asumí un rol activo en el desarrollo del módulo de comparativas, coordinando con el equipo para asegurar la coherencia entre las interfaces y la lógica de negocio. Lideré la implementación de las tarjetas de comparación de vehículos, especificaciones técnicas y escenarios de uso, promoviendo la comunicación constante con mis compañeros para garantizar la integración exitosa de todos los componentes del sistema y mantener la visión unificada del proyecto.<br><br>
+        <strong>TF:</strong> Ejercí liderazgo compartido al frente del rediseño visual completo de las aplicaciones web y móvil, coordinando estrechamente con los equipos de desarrollo y validación para que la nueva interfaz reflejara tanto los requisitos técnicos como el feedback de los usuarios. Mi dirección conjunta en la implementación de i18n y del BC de comparativas aseguró que las decisiones de diseño y localización fueran consensuadas y adoptadas por todo el equipo.<br><br>
     </td>
       <td>
         Como grupo ejercimos un liderazgo compartido en el desarrollo de las distintas actividades del informe (User Stories, Impact Mapping, Eventstorming, Context Mapping y definición de Bounded Contexts). Cada integrante asumió responsabilidades específicas y participó en la toma de decisiones conjuntas, lo que permitió mantener la coherencia del proyecto y avanzar de manera organizada en cada etapa del trabajo.
@@ -454,25 +555,32 @@ del ABET – EAC - Student Outcome 5.
         <strong>TB1:</strong> Promoví un entorno colaborativo e inclusivo al coordinar la definición de los artefactos de modelado del dominio. Establecí metas claras junto al equipo y organicé las tareas relacionadas con la arquitectura y el diseño del sistema, asegurando la integración entre todas las secciones del informe.<br><br>
         <strong>TP:</strong> A traves del uso de la herramienta trello pude lograr crear un entorno colaborativo exitoso, definimos reuniones semanales para poder revisar cada entrega y así poder entregar un proyecto en condiciones.<br><br>
         <strong>TB2:</strong> A traves del uso de la herramienta trello pude lograr crear un trabajo colaborativo eficiente, se definieron sesiones de largo desarrollo conjunto para cumplir con las entregas.<br><br>
+        <strong>TF:</strong> Fomenté un entorno inclusivo durante la elaboración del dispositivo simulado y la documentación, estableciendo metas semanales claras y planificando revisiones conjuntas. Asigné tareas según las fortalezas de cada integrante y facilité espacios de discusión abierta, lo que permitió cumplir sistemáticamente los objetivos de cada hito y mantener al equipo enfocado y cohesionado.<br><br>
         <strong>Real Calderon Sebastian Omar</strong><br>
         <strong>TB1:</strong> Contribuí a la planificación de tareas y organización del equipo, promoviendo la colaboración en el desarrollo de los artefactos funcionales y de dominio. Aporté en la definición de objetivos comunes y verifiqué la coherencia entre los entregables del grupo.<br><br>
         <strong>TP:</strong> Participé en la planificación y distribución de tareas de desarrollo, fomentando un entorno colaborativo e inclusivo. Aseguré la integración de las funcionalidades desarrolladas con el resto del sistema y apoyé el cumplimiento de los objetivos establecidos para las entregas del proyecto.<br><br>
         <strong>TB2:</strong>Planifiqué mis tareas considerando las necesidades de integración con ambos frontends y colaboré con mis compañeros para resolver inconsistencias de visualización. Mantuvimos metas claras para la entrega y comunicación constante para garantizar que las funcionalidades se integraran correctamente. Esto contribuyó a un ambiente inclusivo y organizado, en el cual se cumplieron los objetivos propuestos para la iteración y se mantuvo la coherencia del sistema en todas sus plataformas.<br><br>
+        <strong>TF:</strong> Creé un entorno de trabajo colaborativo e inclusivo para el desarrollo del dashboard unificado en la aplicación web y móvil, estableciendo metas claras de integración de datos y experiencia de usuario. Planifiqué las tareas de diseño e implementación de los gráficos y métricas clave, asignando responsabilidades entre los equipos de frontend y backend, y facilitando revisiones continuas para incorporar feedback. Esta organización permitió cumplir el objetivo de tener paneles funcionales, coherentes y alineados con las necesidades de visualización tanto de mecánicos como de usuarios finales.<br><br>
         <strong>Alejo Cardenas Jose Antonio</strong><br>
         <strong>TB1:</strong> Fomenté un entorno de trabajo inclusivo durante la elaboración del Lean UX Process, Análisis de Competidores y Arquitectura de Software. Planifiqué las tareas de manera organizada junto al grupo, asegurando que cada entregable se alineara con los objetivos generales del proyecto.<br><br>
         <strong>TP:</strong> Contribuí a la planificación y organización del trabajo del equipo, definiendo metas y distribuyendo tareas relacionadas con los flujos y prototipos móviles. Fomenté un entorno colaborativo e inclusivo, impulsando la cooperación y el cumplimiento de los objetivos establecidos en el proyecto. Aseguré que las correcciones y mejoras realizadas en los artefactos mantuvieran la coherencia funcional y visual del sistema. <br><br>
         <strong>TB2:</strong>Planifiqué junto al equipo las tareas necesarias para construir los nuevos bounded contexts e integrar las métricas y notificaciones en tiempo real. Organicé mis actividades considerando las dependencias con los frontends y mantuve comunicación constante para asegurar que las funcionalidades se reflejaran correctamente en todas las plataformas. Estas acciones permitieron cumplir las metas de la iteración y fortalecieron un entorno colaborativo donde cada miembro pudo aportar y validar avances de manera ordenada y coordinada.<br><br>
+        <strong>TF:</strong> Para la corrección integral del reporte final, creé un entorno colaborativo mediante un sistema de revisiones por pares. Establecí la meta de garantizar coherencia y calidad profesional, planifiqué las tareas de corrección de anexos, bibliografía y análisis, e involucré a varios miembros en el proceso, logrando así cumplir el objetivo de entregar un documento pulido y unificado que representara el trabajo colectivo.<br><br>
         <strong>Pacheco Astiguetta Sebastian</strong><br>
         <strong>TB1:</strong> Colaboré en la organización de actividades y la planificación de entregas, promoviendo la participación de todos los miembros del equipo. A través del Impact Mapping, contribuí a establecer metas claras que guiaron el cumplimiento de los objetivos del informe.<br>
-        <strong>TP1:</strong> Fomenté un ambiente de trabajo colaborativo e inclusivo durante el desarrollo del Event Storming y la definición de los prototipos. Establecí metas claras para cada sección y organicé las tareas de diseño, asegurando que todos los integrantes del equipo pudieran contribuir con sus ideas y habilidades para cumplir con los objetivos del proyecto.<br><br>
+        <strong>TP:</strong> Fomenté un ambiente de trabajo colaborativo e inclusivo durante el desarrollo del Event Storming y la definición de los prototipos. Establecí metas claras para cada sección y organicé las tareas de diseño, asegurando que todos los integrantes del equipo pudieran contribuir con sus ideas y habilidades para cumplir con los objetivos del proyecto.<br><br>
         <strong>TB2:</strong> Trabajé en la implementación del servicio de autenticación, de usuarios y de perfiles, además de interactuar con los otros servicios para la creación dedicada de roles y permisos. Fomenté un entorno colaborativo al mantener una comunicación constante con el equipo, asegurando que las tareas se planificaran y ejecutaran de manera eficiente para que el proyecto mantenga un flujo de avance constante.<br><br>
+        <strong>TF:</strong> Establecí un entorno colaborativo para la integración del hardware y el software, definiendo la meta clara de conectar el prototipo físico con el backend. Planifiqué las tareas del cableado, la programación embebida en ModestIoT y la configuración del Edge Service, asignando roles y facilitando la comunicación entre los miembros, lo que resultó en el cumplimiento exitoso del objetivo de tener un sistema end-to-end operativo.<br><br>
         <strong>Astonitas Díaz Juan Diego</strong><br>
         <strong>TB1:</strong> Coordiné al grupo en la organización del proceso de documentación del Needfinding, promoviendo la participación activa de todos los integrantes. Aseguré que las tareas estuvieran claramente definidas para cumplir con los objetivos planteados.<br><br>
-         <strong>TP:</strong> Estableci metas y planifique el desarollo de los userflows para su correcta redaccion y desarrollo.<br><br>
+        <strong>TP:</strong> Estableci metas y planifique el desarollo de los userflows para su correcta redaccion y desarrollo.<br><br>
+        <strong>TB2:</strong> Establecí el plan de pruebas para la primera versión de la aplicación móvil, definiendo escenarios de uso clave para la validación con usuarios. Gestioné las tareas de corrección de errores en los wireflows tras las primeras sesiones de testing, lo que permitió un avance ordenado hacia un prototipo más robusto y funcional.<br><br>
+        <strong>TF:</strong> Creé un entorno colaborativo para el desarrollo del BC Maintenance and Operations, estableciendo metas claras de integración entre la lógica de negocio y la interfaz. Planifiqué las tareas de implementación simulada del GPS, asignando responsabilidades y fomentando la participación inclusiva del equipo de desarrollo, lo que nos permitió cumplir el objetivo de tener un prototipo funcional para validar las hipótesis de telemetría.<br><br>
         <strong>Pasquale Barrenechea Gianluca Santino</strong><br>
         <strong>TB1:</strong> Organicé las actividades de investigación y recolección de datos, fomentando un entorno colaborativo y de comunicación constante. Planifiqué la documentación de entrevistas y la integración de resultados con el resto de artefactos, garantizando la calidad y coherencia del trabajo.<br>
-        <strong>TP1:</strong> Organicé y desarrollé los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto al equipo, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y criterios de usabilidad. Esta labor permitió establecer una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales. <br>
+        <strong>TP:</strong> Organicé y desarrollé los Application Prototyping, colaborando en la elaboración de los User Flow Diagrams, wireframes y mock-ups para las aplicaciones web y móvil. Junto al equipo, definí los principales flujos de interacción y navegación, asegurando que los prototipos reflejaran las decisiones de arquitectura de información y criterios de usabilidad. Esta labor permitió establecer una base sólida para el diseño y desarrollo iterativo de las interfaces, facilitando la validación de las soluciones propuestas con los usuarios finales. <br>
         <strong>TB2:</strong> Organicé las tareas de desarrollo del módulo de comparativas, estableciendo metas claras para la construcción de las interfaces y la integración con los servicios. Planifiqué la implementación de las vistas de selección de vehículos, visualización de especificaciones y análisis de escenarios, promoviendo un ambiente colaborativo donde cada miembro del equipo pudo aportar sus conocimientos. Aseguré el cumplimiento de los objetivos mediante la validación continua de las funcionalidades y la coordinación efectiva con mis compañeros para mantener la coherencia del sistema.<br><br>
+        <strong>TF:</strong> Para el rediseño visual y la implementación de i18n, establecí un entorno de trabajo inclusivo mediante sesiones de feedback con todo el equipo. Definí metas claras de usabilidad y localización, planifiqué un cronograma de tareas detallado para frontend y QA, y monitoricé su cumplimiento, logrando así una entrega unificada que superó los objetivos de coherencia visual y preparación para mercados internacionales.<br><br>
       </td>
       <td>
         Se generó un entorno inclusivo que facilitó la participación activa de todos los integrantes. Cada miembro contribuyó desde su especialidad, estableciendo metas comunes y planificando tareas como el diseño de la arquitectura, elaboración de artefactos, análisis competitivo y construcción del lenguaje ubicuo. Gracias a la coordinación del grupo, se cumplieron los objetivos establecidos en cada etapa del proyecto.
@@ -480,6 +588,8 @@ del ABET – EAC - Student Outcome 5.
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 ## Capítulo I: Introducción
 
@@ -735,45 +845,27 @@ A. Motociclista urbano
 
 1. Alertas preventivas y monitoreo de telemetría en tiempo real
 
-Creemos que implementar alertas preventivas y monitoreo de telemetría en tiempo real
-para motociclistas y mecánicos
-logrará una mejor planificación del mantenimiento y una reducción de fallas inesperadas.
-Sabremos que esto es cierto cuando veamos un uso frecuente de las alertas, comentarios positivos sobre la confiabilidad y una disminución en las visitas no planificadas al taller.
+Creemos que el resultado de una mejor planificación del mantenimiento y una reducción de fallas inesperadas se conseguirá si el motociclista y el mecánico obtienen información predictiva con un sistema de alertas preventivas y monitoreo de telemetría en tiempo real.
 
 2. Historial de mantenimiento
 
-Creemos que ofrecer un historial detallado de mantenimiento y herramientas de visualización
-para motociclistas
-logrará una mejor organización de los servicios y un seguimiento más preciso del rendimiento de sus vehículos.
-Sabremos que esto es cierto cuando veamos un uso repetido del historial y una mejora en los niveles de satisfacción de los usuarios.
+Creemos que el resultado de una mejor organización de los servicios y un seguimiento preciso del rendimiento del vehículo se conseguirá si el motociclista obtiene visibilidad centralizada con un historial detallado de mantenimiento y herramientas de visualización.
 
 3. Paneles comparativos para mecánicos
 
-Creemos que desarrollar paneles comparativos basados en datos de IoT
-para mecánicos
-logrará diagnósticos más rápidos y recomendaciones de mantenimiento más precisas.
-Sabremos que esto es cierto cuando veamos una mejora en la eficiencia de los diagnósticos y retroalimentación positiva de los mecánicos.
+Creemos que el resultado de diagnósticos más rápidos y recomendaciones de mantenimiento más precisas se conseguirá si el mecánico obtiene paneles comparativos basados en datos de IoT.
 
 4. Integración entre la app móvil y el panel web
 
-Creemos que integrar la aplicación móvil para motociclistas con el panel web para talleres
-logrará una comunicación fluida y una gestión sincronizada de los servicios.
-Sabremos que esto es cierto cuando veamos un intercambio activo de datos entre ambas plataformas y un aumento en el uso conjunto de los sistemas.
+Creemos que el resultado de una comunicación fluida y una gestión sincronizada de servicios se conseguirá si el motociclista y el taller obtienen conectividad bidireccional con la integración entre la app móvil y el panel web.
 
 5. Interfaz simple, moderna y confiable
 
-Creemos que diseñar una interfaz limpia, intuitiva y visualmente atractiva
-para motociclistas y mecánicos
-logrará una mayor adopción del sistema y un uso continuo de la plataforma.
-Sabremos que esto es cierto cuando veamos resultados positivos en pruebas de usabilidad y altas tasas de retención de usuarios.
+Creemos que el resultado de una mayor adopción y un uso continuo de la plataforma se conseguirá si el motociclista y el mecánico obtienen una experiencia intuitiva y sin fricciones con una interfaz limpia, moderna y confiable.
 
 6. Notificaciones automáticas y recordatorios personalizados
 
-Creemos que implementar notificaciones inteligentes y recordatorios personalizados
-para motociclistas
-logrará un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria.
-Sabremos que esto es cierto cuando veamos una alta interacción con los recordatorios y una reducción en los servicios atrasados.
-
+Creemos que el resultado de un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria se conseguirá si el motociclista obtiene recordatorios contextuales con notificaciones automáticas y personalizadas.
 
 ##### 1.2.2.4 Lean UX Canvas
 ![Lean UX Canvas](images/chapter-1/lean_ux_canvas.jpg)
@@ -836,19 +928,19 @@ Este grupo está conformado por profesionales independientes con pequeños talle
 
 #### 2.1.1 Análisis competitivo
 
-| **Categoría** | **Byker Z** | **Wialon (Gurtam)** | **Fuelio** | **Geotab** |
-|---------------|----------------|----------------------|------------|------------|
-| **Perfil - Overview** | Plataforma IoT para motocicletas que conecta mecánicos con clientes, con métricas en tiempo real y alertas preventivas. | SaaS de telemática IoT para gestión de vehículos y activos móviles, con GPS y reportes avanzados. | App para rastrear consumo de combustible, costos, kilometraje y servicios, con búsqueda de estaciones y respaldo en la nube. | Líder global en telemática, con dispositivos IoT y software para análisis de datos vehiculares. |
-| **Ventaja competitiva** | Enfoque de nicho: motos + talleres mecánicos. Conexión directa cliente-mecánico mediante suscripción. | Amplia cobertura global y flexibilidad de personalización para distintos tipos de flotas. | Interfaz sencilla, soporte crowdsourced de precios, recordatorios, sincronización y reportes visuales potentes. | Precisión en datos y analítica avanzada, gran reputación en confiabilidad. |
-| **Perfil de Marketing - Mercado Objetivo** | Motociclistas individuales y talleres mecánicos pequeños/medianos. | Empresas de logística, transporte y flotas heterogéneas. | Usuarios que buscan ahorro en combustible y seguimiento básico de gastos vehiculares, incluidos conductores particulares y usuarios multi-vehículo. | Flotas comerciales, gobiernos, corporativos globales. |
-| **Estrategias de Marketing** | Enfoque B2B2C: atraer talleres como socios y motociclistas vía suscripción. | Estrategia B2B, alianzas con distribuidores y partners locales. | Se promociona como simple y potente; cuenta con integración de precios crowdsourced, historias de usuarios satisfechos y respaldo de Sygic. | Estrategia B2B global, certificaciones y partnerships institucionales. |
-| **Perfil de Producto - Productos & Servicios** | Sensores IoT para motos, app móvil/web para clientes, dashboard para mecánicos, alertas proactivas. | Plataforma SaaS con GPS, sensores IoT, informes personalizados. | Fill-ups, gastos, recordatorios, estación de gasolina cercana, gráficos, estadísticas, sincronización. <br> Pro: planificación de ruta, estimación de costo, filtro estaciones, reporte de ruta. | Dispositivos IoT + plataforma de análisis con diagnósticos y mantenimiento predictivo. |
-| **Precios & Costos** | Modelo de suscripción mensual accesible (B2C) + paquetes premium para talleres. | Licencias SaaS escalables, costos variables por flota. | Gratuito, Fuelio Pro en Android es suscripción (€7 - €9) sin afectar funciones gratuitas. | Suscripción SaaS + costo de dispositivos IoT (moderado/alto). |
-| **Canales de Distribución** | App móvil (Android), web, talleres como canales de adquisición. | Red de partners y distribuidores en más de 150 países. | Android & iOS. | Red global de resellers y partners certificados. |
-| **SWOT - Fortalezas** | Nicho diferenciado, cercanía con usuarios finales, foco en motos. | Escalabilidad, robustez y experiencia global. | Interfaz amigable, precios crowdsourced, reportes detallados, muchos features gratuitos. | Precisión en analítica, confiabilidad, amplia red global. |
-| **SWOT - Debilidades** | Proyecto nuevo, sin marca consolidada, recursos limitados. | No especializado en motos, alto costo para pequeños talleres. | Entrada manual laboriosa, problemas ocasionales de sincronización. | Altos costos, pensado para grandes flotas, no para usuarios individuales. |
-| **SWOT - Oportunidades** | Mercado creciente de motocicletas en LATAM/Asia, tendencia a IoT y mantenimiento predictivo. | Expansión en verticales nuevos como motos y microflotas. | Expandir trip logging, entradas automáticas, soporte ampliado en iOS. | Penetración en mercados emergentes y nuevas integraciones IoT. |
-| **SWOT - Amenazas** | Ingreso de grandes players al nicho, barreras de hardware. | Competencia creciente y commoditización de la telemática. | Cambios en licenciamiento por Sygic; apps emergentes con mejor UX o IA predictiva. | Alta competencia y presión por diferenciación. |
+| **Categoría**                                  | **Byker Z**                                                                                                             | **Wialon (Gurtam)**                                                                               | **Fuelio**                                                                                                                                                                                       | **Geotab**                                                                                      |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Perfil - Overview**                          | Plataforma IoT para motocicletas que conecta mecánicos con clientes, con métricas en tiempo real y alertas preventivas. | SaaS de telemática IoT para gestión de vehículos y activos móviles, con GPS y reportes avanzados. | App para rastrear consumo de combustible, costos, kilometraje y servicios, con búsqueda de estaciones y respaldo en la nube.                                                                     | Líder global en telemática, con dispositivos IoT y software para análisis de datos vehiculares. |
+| **Ventaja competitiva**                        | Enfoque de nicho: motos + talleres mecánicos. Conexión directa cliente-mecánico mediante suscripción.                   | Amplia cobertura global y flexibilidad de personalización para distintos tipos de flotas.         | Interfaz sencilla, soporte crowdsourced de precios, recordatorios, sincronización y reportes visuales potentes.                                                                                  | Precisión en datos y analítica avanzada, gran reputación en confiabilidad.                      |
+| **Perfil de Marketing - Mercado Objetivo**     | Motociclistas individuales y talleres mecánicos pequeños/medianos.                                                      | Empresas de logística, transporte y flotas heterogéneas.                                          | Usuarios que buscan ahorro en combustible y seguimiento básico de gastos vehiculares, incluidos conductores particulares y usuarios multi-vehículo.                                              | Flotas comerciales, gobiernos, corporativos globales.                                           |
+| **Estrategias de Marketing**                   | Enfoque B2B2C: atraer talleres como socios y motociclistas vía suscripción.                                             | Estrategia B2B, alianzas con distribuidores y partners locales.                                   | Se promociona como simple y potente; cuenta con integración de precios crowdsourced, historias de usuarios satisfechos y respaldo de Sygic.                                                      | Estrategia B2B global, certificaciones y partnerships institucionales.                          |
+| **Perfil de Producto - Productos & Servicios** | Sensores IoT para motos, app móvil/web para clientes, dashboard para mecánicos, alertas proactivas.                     | Plataforma SaaS con GPS, sensores IoT, informes personalizados.                                   | Fill-ups, gastos, recordatorios, estación de gasolina cercana, gráficos, estadísticas, sincronización. <br> Pro: planificación de ruta, estimación de costo, filtro estaciones, reporte de ruta. | Dispositivos IoT + plataforma de análisis con diagnósticos y mantenimiento predictivo.          |
+| **Precios & Costos**                           | Modelo de suscripción mensual accesible (B2C) + paquetes premium para talleres.                                         | Licencias SaaS escalables, costos variables por flota.                                            | Gratuito, Fuelio Pro en Android es suscripción (€7 - €9) sin afectar funciones gratuitas.                                                                                                        | Suscripción SaaS + costo de dispositivos IoT (moderado/alto).                                   |
+| **Canales de Distribución**                    | App móvil (Android), web, talleres como canales de adquisición.                                                         | Red de partners y distribuidores en más de 150 países.                                            | Android & iOS.                                                                                                                                                                                   | Red global de resellers y partners certificados.                                                |
+| **SWOT - Fortalezas**                          | Nicho diferenciado, cercanía con usuarios finales, foco en motos.                                                       | Escalabilidad, robustez y experiencia global.                                                     | Interfaz amigable, precios crowdsourced, reportes detallados, muchos features gratuitos.                                                                                                         | Precisión en analítica, confiabilidad, amplia red global.                                       |
+| **SWOT - Debilidades**                         | Proyecto nuevo, sin marca consolidada, recursos limitados.                                                              | No especializado en motos, alto costo para pequeños talleres.                                     | Entrada manual laboriosa, problemas ocasionales de sincronización.                                                                                                                               | Altos costos, pensado para grandes flotas, no para usuarios individuales.                       |
+| **SWOT - Oportunidades**                       | Mercado creciente de motocicletas en LATAM/Asia, tendencia a IoT y mantenimiento predictivo.                            | Expansión en verticales nuevos como motos y microflotas.                                          | Expandir trip logging, entradas automáticas, soporte ampliado en iOS.                                                                                                                            | Penetración en mercados emergentes y nuevas integraciones IoT.                                  |
+| **SWOT - Amenazas**                            | Ingreso de grandes players al nicho, barreras de hardware.                                                              | Competencia creciente y commoditización de la telemática.                                         | Cambios en licenciamiento por Sygic; apps emergentes con mejor UX o IA predictiva.                                                                                                               | Alta competencia y presión por diferenciación.                                                  |
 
 #### 2.1.2 Estrategias y tácticas frente a competidores
 
@@ -1018,7 +1110,7 @@ Preguntas complementarias:
 10. ¿Qué valoras más en una herramienta digital para tu trabajo? (ejemplo: precisión, facilidad de uso, integración con otros sistemas)
 
 #### 2.2.2 Registro de entrevistas
-En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: [Needfinding Interviews - NRG6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/EUX6HJSrkWFLsupKCjibccgBqipXedXcpryQbgwV-mpKdQ?e=fp4EZr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+En esta sección se registran los puntos más relevantes de las entrevistas realizadas a los mecánicos y dueños de motos. Las entrevistas, en formato de video, se encuentran en el siguiente enlace: https://tinyurl.com/26tdu3s4
 
 A continuación, se presentan detalles de las entrevistas realizadas a los mecánicos:
 
@@ -1031,8 +1123,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los mecá
 | Duración de la Entrevista | 4:20                                                       |
 | Minuto de Inicio          | 0:00                                                       |
 
-Flavio, un joven mecánico de 21 años que trabaja en un taller de motos en San Miguel, destaca por su enfoque práctico y empírico en el mantenimiento y diagnóstico vehicular. Realiza principalmente servicios preventivos y correctivos de motos de delivery, registrando la información de sus clientes de forma manual, lo que genera dificultades en el seguimiento de mantenimientos. Su personalidad es proactiva y orientada a la mejora del servicio, mostrando interés en herramientas tecnológicas que optimicen su trabajo. Usa canales digitales básicos como WhatsApp para comunicarse, pero carece de sistemas especializados. Considera que el acceso a datos de telemetría como kilometraje, consumo o estado de batería le permitiría anticiparse a fallas y mejorar su precisión en los diagnósticos. Además, se muestra dispuesto a implementar soluciones digitales, incluso bajo un modelo de suscripción fija, siempre que sean fáciles de usar, precisas y se integren con plataformas cotidianas.
-
+Flavio, un joven mecánico de 21 años que trabaja en un taller de motos en San Miguel, destaca por su enfoque práctico y empírico en el mantenimiento y diagnóstico vehicular. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Realiza principalmente servicios preventivos y correctivos de motos de delivery, registrando la información de sus clientes de forma manual, lo que genera dificultades en el seguimiento de mantenimientos. Su personalidad es proactiva y orientada a la mejora del servicio, mostrando interés en herramientas tecnológicas que optimicen su trabajo. Usa canales digitales básicos como WhatsApp para comunicarse, pero carece de sistemas especializados. Considera que el acceso a datos de telemetría como kilometraje, consumo o estado de batería le permitiría anticiparse a fallas y mejorar su precisión en los diagnósticos. Además, se muestra dispuesto a implementar soluciones digitales, incluso bajo un modelo de suscripción fija, siempre que sean fáciles de usar, precisas y se integren con plataformas cotidianas.
 | Entrevista 2              | ![Juan](images/chapter-2/thumbnail-mecanico2-juan.png) |
 |---------------------------|--------------------------------------------------------|
 | Nombre del entrevistado   | Juan Cuellar                                           |
@@ -1042,8 +1133,7 @@ Flavio, un joven mecánico de 21 años que trabaja en un taller de motos en San 
 | Duración de la Entrevista | 4:15                                                   |
 | Minuto de Inicio          | 4:20                                                   |
 
-Juan, un mecánico de 25 años con tres años de experiencia en el mantenimiento de motos de uso diario, delivery y mototaxis, trabaja en un entorno práctico y orientado a la rapidez del servicio. Ofrece mantenimientos básicos y reparaciones eléctricas sencillas, priorizando la atención ágil a repartidores que dependen de sus vehículos para trabajar. Lleva el registro de mantenimientos en una hoja de Excel y se comunica con sus clientes principalmente mediante WhatsApp, aunque admite que no actualiza sus registros con frecuencia por falta de tiempo. Su diagnóstico se basa en observación, experiencia y prueba directa, sin herramientas avanzadas. Considera que la posibilidad de monitorear remotamente las motos mediante telemetría sería muy beneficiosa, ya que le permitiría anticipar problemas y brindar un servicio más eficiente. Valora métricas como kilometraje, batería, consumo y presión de llantas, y reconoce la utilidad de reportes simples y periódicos para mejorar la confianza del cliente. Con una actitud abierta hacia la tecnología, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio agregado bajo un modelo de costo fijo, siempre que sea fácil de usar y práctica, alineada con su ritmo de trabajo y el de sus clientes repartidores.
-
+Juan, un mecánico de 25 años con tres años de experiencia en el mantenimiento de motos de uso diario, delivery y mototaxis, trabaja en un entorno práctico y orientado a la rapidez del servicio. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Ofrece mantenimientos básicos y reparaciones eléctricas sencillas, priorizando la atención ágil a repartidores que dependen de sus vehículos para trabajar. Lleva el registro de mantenimientos en una hoja de Excel y se comunica con sus clientes principalmente mediante WhatsApp, aunque admite que no actualiza sus registros con frecuencia por falta de tiempo. Su diagnóstico se basa en observación, experiencia y prueba directa, sin herramientas avanzadas. Considera que la posibilidad de monitorear remotamente las motos mediante telemetría sería muy beneficiosa, ya que le permitiría anticipar problemas y brindar un servicio más eficiente. Valora métricas como kilometraje, batería, consumo y presión de llantas, y reconoce la utilidad de reportes simples y periódicos para mejorar la confianza del cliente. Con una actitud abierta hacia la tecnología, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio agregado bajo un modelo de costo fijo, siempre que sea fácil de usar y práctica, alineada con su ritmo de trabajo y el de sus clientes repartidores.
 | Entrevista 3              | ![Aldo](images/chapter-2/thumbnail-mecanico3-aldo.png) |
 |---------------------------|--------------------------------------------------------|
 | Nombre del entrevistado   | Aldo Vasquez                                           |
@@ -1053,8 +1143,7 @@ Juan, un mecánico de 25 años con tres años de experiencia en el mantenimiento
 | Duración de la Entrevista | 3:58                                                   |
 | Minuto de Inicio          | 8:18                                                   |
 
-Aldo, un joven mecánico de 23 años con un año de experiencia en un taller de Breña, se caracteriza por su enfoque empírico y su interés en mejorar la eficiencia de su trabajo. Brinda principalmente servicios de mantenimiento preventivo y correctivo, incluyendo cambios de aceite, frenos, cadenas y reparaciones eléctricas, adaptándose al aumento de motos modernas. Registra los mantenimientos de forma manual y memorística, utilizando cuadernos o recordatorios verbales, y se comunica con sus clientes principalmente por WhatsApp. Carece de herramientas digitales para diagnósticos, confiando en su experiencia e intuición, aunque reconoce el valor de la tecnología: considera que la telemetría en tiempo real presión, temperatura, voltaje le permitiría anticipar fallas y optimizar el servicio. Valora la precisión y simplicidad en las herramientas digitales, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio adicional bajo un modelo de costo fijo, y demuestra una actitud abierta hacia la innovación tecnológica aplicada a su labor diaria.
-
+Aldo, un joven mecánico de 23 años con un año de experiencia en un taller de Breña, se caracteriza por su enfoque empírico y su interés en mejorar la eficiencia de su trabajo. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Brinda principalmente servicios de mantenimiento preventivo y correctivo, incluyendo cambios de aceite, frenos, cadenas y reparaciones eléctricas, adaptándose al aumento de motos modernas. Registra los mantenimientos de forma manual y memorística, utilizando cuadernos o recordatorios verbales, y se comunica con sus clientes principalmente por WhatsApp. Carece de herramientas digitales para diagnósticos, confiando en su experiencia e intuición, aunque reconoce el valor de la tecnología: considera que la telemetría en tiempo real (presión, temperatura, voltaje) le permitiría anticipar fallas y optimizar el servicio. Valora la precisión y simplicidad en las herramientas digitales, estaría dispuesto a recomendar y ofrecer una app de monitoreo como servicio adicional bajo un modelo de costo fijo, y demuestra una actitud abierta hacia la innovación tecnológica aplicada a su labor diaria.
 
 A continuación, se presentan detalles de las entrevistas realizadas a los dueños de motos:
 
@@ -1067,6 +1156,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 5:40                                                         |
 | Minuto de Inicio          | 12:10                                                        |
 
+Josue, un estudiante de 22 años de San Miguel, utiliza su motocicleta principalmente para trasladarse a la universidad y realizar encargos ocasionales. Muestra una actitud práctica y orientada a la optimización de recursos, ya que debe gestionar un presupuesto ajustado. Actualmente, realiza un seguimiento básico de sus gastos de combustible y mantenimiento de forma mental o en notas simples, lo que a veces le hace perder el control de sus fechas de servicio. Valora mucho la confiabilidad de su moto, ya que una falla repentina afectaría directamente sus estudios y movilidad. Se comunica con su mecánico por WhatsApp y llamadas, pero encuentra este proceso desorganizado. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Le interesaría una aplicación que le ayude a recordar fechas de mantenimiento, le permita visualizar un historial claro de gastos y, sobre todo, que sea muy sencilla y rápida de usar. Estaría dispuesto a usar una versión gratuita con funciones básicas, mostrando mayor interés en funciones de alerta y recordatorio que en métricas en tiempo muy avanzadas.
 
 | Entrevista 5              | ![Mathias](images/chapter-2/thumbnail-motociclista2-mathias.png) |
 |---------------------------|------------------------------------------------------------------|
@@ -1077,6 +1167,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 7:34                                                             |
 | Minuto de Inicio          | 17:49                                                            |
 
+Mathias, un profesor de 23 años de Pueblo Libre, usa su motocicleta para desplazarse diariamente a su trabajo en un colegio y para sus actividades personales. Tiene un perfil organizado y metódico, valorando la planificación y la prevención. Lleva un registro manual (en una libreta) del kilometraje y los servicios realizados a su moto, pero reconoce que este método es susceptible a olvidos y no le proporciona alertas proactivas. Su principal motivación es la seguridad y la economía a largo plazo, buscando evitar reparaciones costosas. El entrevistado tiene preferencia por el sistema iOS en móvil y laptop para web. Considera que una aplicación podría ser una herramienta ideal para centralizar la información de su vehículo. Le atraen especialmente las funcionalidades que le permitirían recibir notificaciones basadas en el kilometraje para los próximos servicios, acceder a un historial digital ordenado y poder compartir fácilmente este historial con un mecánico de confianza. Está abierto a considerar una suscripción de bajo costo si la aplicación demuestra ser confiable y le ayuda a mantener su moto en óptimas condiciones de manera consistente.
 
 
 | Entrevista 6              | ![Jair Huamani](images/chapter-2/thumbnail-motociclista3-jair.png) |
@@ -1088,7 +1179,7 @@ A continuación, se presentan detalles de las entrevistas realizadas a los dueñ
 | Duración de la Entrevista | 8:28                                                               |
 | Minuto de Inicio          | 25:18                                                              |
 
-Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de transporte en Lima, se caracteriza por su enfoque organizado y su interés en mantener la eficiencia y seguridad de su vehículo. Actualmente, lleva el control del gasto de combustible y mantenimiento de su moto de manera manual, lo que a veces le genera dificultades para recordar fechas importantes. Ha experimentado fallas inesperadas que le han ocasionado gastos imprevistos, lo que le ha llevado a valorar la importancia del mantenimiento preventivo. Se comunica con su mecánico principalmente a través de llamadas y mensajes de texto, pero no utiliza herramientas digitales específicas para gestionar el estado de su moto. Jair se muestra abierto a la idea de una aplicación que le permita monitorear automáticamente el estado de su moto, recibir alertas sobre posibles fallas y conocer métricas en tiempo real como presión de neumáticos, nivel de combustible y temperatura del motor. Valora la simplicidad y claridad en las aplicaciones móviles, y estaría dispuesto a pagar una suscripción mensual si el servicio le ofrece beneficios tangibles en términos de seguridad y ahorro en mantenimiento.
+Jair, un abogado de 32 años que utiliza su motocicleta como principal medio de transporte en Lima, se caracteriza por su enfoque organizado y su interés en mantener la eficiencia y seguridad de su vehículo. El entrevistado tiene preferencia por el sistema iOS en móvil y laptop para web. Actualmente, lleva el control del gasto de combustible y mantenimiento de su moto de manera manual, lo que a veces le genera dificultades para recordar fechas importantes. Ha experimentado fallas inesperadas que le han ocasionado gastos imprevistos, lo que le ha llevado a valorar la importancia del mantenimiento preventivo. Se comunica con su mecánico principalmente a través de llamadas y mensajes de texto, pero no utiliza herramientas digitales específicas para gestionar el estado de su moto. Jair se muestra abierto a la idea de una aplicación que le permita monitorear automáticamente el estado de su moto, recibir alertas sobre posibles fallas y conocer métricas en tiempo real como presión de neumáticos, nivel de combustible y temperatura del motor. Valora la simplicidad y claridad en las aplicaciones móviles, y estaría dispuesto a pagar una suscripción mensual si el servicio le ofrece beneficios tangibles en términos de seguridad y ahorro en mantenimiento.
 
 #### 2.2.3 Análisis de entrevistas
 
@@ -1115,13 +1206,13 @@ Los mecánicos ven valor en contar con telemetría remota (kilometraje, batería
 
 A continuación, se presenta el User Persona de Carlos Quispe. Él representa al mecánico joven y pragmático de Lima, enfocado en el mantenimiento rápido de motos de uso diario y delivery. Este perfil sintetiza las necesidades, frustraciones y motivaciones identificadas en el análisis, sirviendo como arquetipo del usuario objetivo para una solución digital que busca optimizar la gestión y el diagnóstico en talleres de servicio.
 
-![user_persona1.png](images/chapter-2/user_persona1.png)
+![user_persona1.png](images/chapter-2/user_persona_mechanic.png)
 
 **Segmento Objetivo: Motociclistas**
 
 A continuación, se presenta el perfil de Daniel Castro, un User Persona desarrollado para representar al segmento clave de motociclistas jóvenes y urbanos en Lima que han adoptado las motocicletas eléctricas como su principal medio de transporte. Este arquetipo sintetiza los hallazgos de la investigación de usuarios, encapsulando sus comportamientos, necesidades y metas.
 
-![user_persona2.png](images/chapter-2/user_persona.png)
+![user_persona2.png](images/chapter-2/user_persona_owner.png)
 
 #### 2.3.2 User Task Matrix
 
@@ -1218,10 +1309,8 @@ Al añadir los Actores (notas amarillas) y los Comandos (notas azules), converti
 ## Capítulo III: Requirements Specification
 
 ### 3.1 User Stories
-
+ 
 Epicas:
-
-# Épicas
 
 | Código | Título                                                          | Descripción                                                                                                                                                                                                                                                                                                                                                                                             |
 |--------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1235,52 +1324,52 @@ Epicas:
 
 User Stories:
 
-  | User Story ID | Título                                                          | Descripción                                                                                                                                                                                                                                                                                                                                        | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Relacionado con (Epic ID) |
-  |---------------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------|
-  | US-001        | Visualización del consumo de combustible en tiempo real         | Como motociclista, quiero visualizar en tiempo real el consumo de combustible de mi moto, para poder optimizar mi forma de conducir y ahorrar gastos.                                                                                                                                                                                              | Escenario 1: <br>Dado que el motociclista está conduciendo la motocicleta con la aplicación conectada, cuando accede al panel de métricas en tiempo real, entonces el sistema debe mostrar el consumo actual de combustible en L/100km y el valor debe actualizarse continuamente durante la conducción <br><br> Escenario 2: Dado que el motociclista ha finalizado un recorrido con la aplicación activa, cuando solicita ver el resumen del viaje completado, entonces el sistema debe mostrar el consumo promedio de combustible del trayecto en km/L y debe incluir la distancia total recorrida y el tiempo de viaje.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-001                    |
-  | US-002        | Registro de gastos de mantenimiento y repuestos                 | Como motociclista, quiero registrar los gastos de mantenimiento y repuestos que realizo, para llevar un control acumulado mensual o por kilometraje.                                                                                                                                                                                               | Escenario 1: <br>Dado que el motociclista se encuentra en la aplicación, cuando revisa sus gastos, entonces el sistema le muestra un listado de sus gastos recientes. <br><br> Escenario 2: <br>Dado que el motociclista se encuentra en la aplicación, cuando desea agrega un gasto, entonces el sistema muestra el formulario de registro de gastos.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-001                    |
-  | US-003        | Acceso al historial de servicios realizados                     | Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó.                                                                                                                                                                          | Escenario 1: <br>Dado que un motociclista desea visualizar los mantenimientos realizados, cuando el motociclista solicita ver los mantenimientos realizados y por realizar, entonces el sistema muestra todos los mantenimientos, separados según su estado. <br><br> Escenario 2: <br>que un motociclista desea ver los detalles de un mantenimiento, cuando el motociclista revisa los detalles del mantenimiento hecho, entonces el sistema muestra los detalle del mantenimiento junto a sus gastos asociados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-001                    |
-  | US-004        | Comparación de métricas entre motos similares                   | Como mecánico, quiero comparar las métricas de dos motos similares, para detectar posibles problemas o desviaciones en el rendimiento que requieran revisión.                                                                                                                                                                                      | Escenario 1: <br>Dado que existen en el sistema two motocicletas del mismo modelo y año con métricas registradas, cuando el mecánico selecciona ambas motos y solicita comparar sus métricas, entonces el sistema muestra una vista lado a lado con el consumo de combustible, temperatura de operación, kilometraje y alertas de mantenimiento. <br><br> Escenario 2: <br>Dado que la comparación entre dos motocicletas similares muestra variaciones significativas en sus métricas de rendimiento, cuando el mecánico revisa el reporte de comparación, entonces el sistema destaca las diferencias críticas y proporciona sugerencias de posibles problemas mecánicos que podrían causar dichas discrepancias.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-001                    |
-  | US-005        | Notificación de alerta por consumo excesivo.                    | Como motociclista, quiero que el aplicativo móvil me notifique en caso de que el sistema detecte un consumo anormalmente alto de combustible por kilómetro.                                                                                                                                                                                        | Escenario 1: <br>Dado que el consumo de combustible durante un trayecto supera los parámetros establecidos como normales para el modelo de la motocicleta, cuando este consumo anormalmente alto se mantiene durante al menos 15 minutos de conducción continua, entonces el sistema emite una notificación push en el aplicativo móvil alertando al usuario sobre el alto consumo de combustible. <br><br> Escenario 2: <br>Dado que el consumo de combustible había superado los parámetros normales y se había emitido una alerta previa, cuando el consumo se mantiene dentro de los rangos normales establecidos durante los últimos 10 minutos de conducción, entonces el sistema envía una notificación push al usuario informando que el consumo de combustible se ha normalizado y la alerta previa ha sido desactivada.                                                                                                                                                                                                                                                                                                                                                                                                                                                             | EP-02                     |
-  | US-006        | Notificación de alerta por presión de llantas.                  | Como motociclista, <br>quiero que el aplicativo móvil me notifique cuando la presión de las llantas sea anormal, <br>para poder tomar acciones preventivas que garanticen mi seguridad y el buen estado de la motocicleta.                                                                                                                         | Escenario 1: <br>Dado que la presión de una o más llantas de la motocicleta está por debajo del rango recomendado por el fabricante, cuando esta condición de baja presión se mantiene durante más de 5 minutos de conducción continua, entonces el sistema envía una notificación push al usuario especificando qué llanta(s) requiere(n) revisión inmediata y mostrando los valores de presión actuales. <br><br> Escenario 2: <br>Dado que la presión de las llantas que habían estado por debajo del rango recomendado ahora se encuentra dentro de los parámetros normales, cuando esta condición estable se mantiene durante al menos 5 minutos de conducción continua, entonces el sistema envía una notificación push al usuario informando que la presión de las llantas se ha normalizado e indicando los valores actuales dentro del rango seguro.                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-002                    |
-  | US-007        | Recomendación de mantenimiento.                                 | Como mecánico, quiero poder agendar citas con mis clientes en caso de detectar alguna medida anómala en sus motocicletas desde mi interfaz, para brindar un servicio oportuno y mantener la seguridad de sus vehículos.                                                                                                                            | Escenario 1: <br>Dado que el sistema ha detectado una medida anómala en los datos de rendimiento de la motocicleta de un cliente registrado, cuando el mecánico accede a la interfaz de gestión de clientes y selecciona al cliente afectado, entonces el sistema muestra las métricas anómalas y permite generar una recomendación de mantenimiento con la posibilidad de proponer una cita en el calendario disponible. <br><br> Escenario 2: <br>Dado que existe una cita de mantenimiento propuesta por el mecánico para un cliente específico, cuando el cliente confirma la cita a través de la aplicación móvil, entonces el sistema registra automáticamente la cita en la agenda del mecánico, marca el horario como ocupado y envía notificaciones de confirmación tanto al mecánico como al cliente con los detalles de la cita. <br><br> Escenario 3: <br>Dado que existe una cita de mantenimiento propuesta por el mecánico pendiente de confirmación, cuando el cliente rechaza la cita o solicita reprogramación a través de la aplicación móvil, entonces el sistema notifica inmediatamente al mecánico sobre la respuesta del cliente, libera el horario previamente reservado y habilita la opción para que el mecánico pueda proponer una nueva fecha y hora disponible. | EP-002                    |
-  | US-008        | Notificación de sobrecalentamiento del motor                    | Como motociclista, <br>quiero que el aplicativo móvil me notifique cuando el motor de mi motocicleta esté presentando un sobrecalentamiento, <br>para poder detenerme a tiempo y evitar daños mayores al vehículo o accidentes.                                                                                                                    | Escenario 1: <br>Dado que la temperatura del motor de la motocicleta ha superado el límite máximo seguro establecido por el fabricante, cuando esta condición de sobrecalentamiento se mantiene durante más de 60 segundos consecutivos, entonces el sistema emite una notificación de alerta urgente al usuario indicando el riesgo de sobrecalentamiento y recomendando detener la marcha de manera segura. <br><br> Escenario 2: <br>Dado que la temperatura del motor había superado los límites seguros y se había emitido una alerta de sobrecalentamiento, cuando la temperatura regresa y se mantiene dentro del rango normal durante al menos 5 minutos consecutivos, entonces el sistema envía una notificación al usuario informando que la temperatura del motor se ha normalizado y la alerta ha sido desactivada. <br><br> Escenario 3: <br>Dado que se han registrado tres o más episodios de sobrecalentamiento del motor en un período de 7 días, cuando el sistema detecta este patrón recurrente anómalo, entonces el sistema notifica al usuario recomendando agendar una revisión de mantenimiento urgente y ofrece la opción de contactar directamente con un taller especializado.                                                                                     | EP-002                    |
-  | US-009        | Sugerencias personalizadas para próximos mantenimientos         | Como motociclista, quiero recibir sugerencias personalizadas sobre el próximo mantenimiento que debo hacer, basadas en el historial y uso de mi moto.                                                                                                                                                                                              | Escenario 1: <br>Dado que se ha alcanzado el kilometraje o tiempo máximo recomendado para el mantenimiento de un componente específico según los intervalos establecidos por el fabricante, cuando el sistema analice el historial de servicios y el uso actual de la motocicleta, entonces generará una sugerencia personalizada indicando la necesidad de revisión o cambio del componente y mostrará el motivo basado en los criterios técnicos. <br><br> Escenario 2: <br>Dado que existen recomendaciones de mantenimiento pendientes generadas por el sistema para la motocicleta del usuario, cuando el motociclista acceda a la sección de sugerencias de mantenimiento en el aplicativo, entonces el sistema mostrará una lista priorizada de recomendaciones específicas con detalles sobre el componente, la razón de la sugerencia y el nivel de urgencia para cada mantenimiento requerido.                                                                                                                                                                                                                                                                                                                                                                                      | EP-003                    |
-  | US-010        | Generación de reporte de salud del vehículo                     | Como mecánico, quiero generar un reporte de salud del vehículo que incluya estado de batería, temperatura, consumo y alertas recientes, para entregarlo al cliente al final del servicio.                                                                                                                                                          | Escenario 1: <br>Dado que el mecánico ha completado un servicio de mantenimiento en una motocicleta y todos los datos del vehículo están actualizados en el sistema, cuando el mecánico selecciona la opción "Generar Reporte de Salud" desde la interfaz de finalización de servicio, entonces el sistema produce un documento detallado que incluye el estado de la batería, historial de temperatura, consumo de combustible, alertas recientes y las intervenciones realizadas durante el servicio. <br><br> Escenario 2: <br>Dado que se ha generado exitosamente el reporte de salud del vehículo para el cliente, cuando el mecánico selecciona la opción de compartir reporte, entonces el sistema ofrece las opciones de imprimir el documento directamente o enviarlo por correo electrónico al cliente desde la misma interfaz, con un formato profesional y fácil de entender.                                                                                                                                                                                                                                                                                                                                                                                                    | EP-003                    |
-  | US-011        | Consulta del historial de servicios por parte del mecánico      | Como mecánico, quiero consultar el historial de servicios realizados en una moto específica, para tomar decisiones informadas al momento del diagnóstico.                                                                                                                                                                                          | Escenario 1: <br>Dado que dado que un mecánico desea visualizar los mantenimientos de un motociclista con  mantenimientos programados, cuando el mecánico ingresa la placa o el nombre del cliente, entonces el sistema muestra los mantenimientos filtrados por moticiclista o placa. <br><br> Escenario 2: <br>Dado que el mecánico se encuentra visualizando los servicios de una motocicleta, cuando interactua con algún mantenimiento programado, entonces el sistema le permite asiganr un gasto y marcar el mantenimiento como completado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-003                    |
-  | US-012        | Resumen mensual de servicios, alertas y gastos                  | Como motociclista, quiero ver un resumen mensual de los servicios, alertas y gastos de mi moto, para tener una visión clara de su estado y del dinero invertido.                                                                                                                                                                                   | Escenario 1: <br>Dado que existen registros de servicios, alertas y gastos de mantenimiento para la motocicleta durante el mes actual, cuando el motociclista accede a la sección de reportes mensuales y selecciona un mes específico, entonces el sistema genera un resumen consolidado que incluye el total de gastos, cantidad de alertas, servicios realizados, kilometraje recorrido y una calificación del estado general del vehículo. <br><br> Escenario 2: <br>Dado que el motociclista se encuentra en el reporte mensual de su motocicleta, cuando solicita exportar o compartir el reporte, entonces el sistema genera un documento descargable en formato PDF con gráficos de tendencias, tablas comparativas con meses anteriores y un desglose detallado de categorías de gastos para su análisis financiero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-003                    |
-  | US-013        | Subscripción con mecánico.                                      | Como motociclista, quiero poder establecer una relación con mi mecánico de confianza dentro de la aplicación para darle acceso a los datos recopilados, así como permitirle enviarme mensajes o agendar citas.                                                                                                                                     | Escenario 1: <br>Dado que el motociclista se encuentre en la seccion de mecanicos, <br>cuando seleccione al mecánico desde la lista de disponibles o ingrese un código de invitación, <br>entonces el sistema deberá enviar una solicitud de relación al mecánico elegido. <br><br> Escenario 2: <br>Dado que un motociclista ha enviado una solicitud de relación a un mecánico, <br>cuando el mecánico acepte la solicitud, <br>entonces el sistema deberá confirmar la relación establecida y otorgar al mecánico acceso autorizado a los datos del motociclista.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | EP-005                    |
-  | US-014        | Visualización de subscripciones activas con clientes.           | Como mecánico, quiero poder visualizar las subscripciones activas de todos mis clientes, para tener claridad sobre qué motociclistas me han otorgado acceso a sus datos y poder gestionar mejor la relación.                                                                                                                                       | Escenario 1: <br>Dado que un mecánico ya posee suscripciones activas, cuando el mecánico visualiza las suscripciones activas relacionadas a él, entonces el sistema muestra una lista completa de todos los motociclistas con suscripciones vigentes, incluyendo nombre, modelo de moto y fecha de suscripción. <br><br> Escenario 2: <br>Dado que un cliente ha enviadouna solicitud de suscripción a un mecánico, cuando el mecánico visualiza las suscripciones pendientes, entonces el sistema le permite aceptarlas o denegarlas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-005                    |
-  | US-015        | Terminación de la subscripcion con el mecanico                  | Como motociclista , quiero poder terminar o cambiar la relación de vinculación en cualquier momento, para asegurar mi privacidad y poder elegir un nuevo mecánico si lo deseo.                                                                                                                                                                     | Escenario 1: <br>Dado que existe una suscripción activa entre el motociclista y un taller mecánico, cuando el motociclista accede a la configuración de privacidad en su aplicación y confirma la acción de "Revocar acceso", entonces el sistema elimina inmediatamente los permisos de acceso a los datos y notifica al taller sobre la terminación de la relación. <br><br> Escenario 2: <br>Dado que la suscripción entre el motociclista y el taller mecánico ha sido cancelada recientemente, cuando el mecánico intenta acceder a los datos históricos del vehículo o el motociclista busca información del taller en la aplicación, entonces el sistema muestra un mensaje indicando que no hay relación activa y bloquea el acceso a toda información compartida previamente hasta que se establezca una nueva vinculación explícita.                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-005                    |
-  | US-016        | Terminación de la subscripción con el cliente.                  | Como mecánico, <br>quiero poder terminar la relación de vinculación con un motociclista en cualquier momento, <br>para asegurar que no tenga acceso a mis servicios si ya no deseo mantener la relación.                                                                                                                                           | Escenario 1: <br>Dado que existe una relación de vinculación activa entre el mecánico y un motociclista cliente, cuando el mecánico accede al perfil del cliente en su sistema y selecciona la opción "Terminar relación de vinculación", entonces el sistema revoca inmediatamente todos los permisos de acceso a los datos del cliente, elimina la motocicleta de su lista de vehículos gestionados y envía una notificación automática al motociclista informando sobre la finalización del servicio. <br><br> Escenario 2: <br>Dado que el mecánico ha cancelado la suscripción de vinculación con un motociclista específico, cuando el mecánico intenta acceder al historial de servicios o datos de la motocicleta del cliente, o cuando el motociclista busca información del taller en su aplicación, entonces el sistema muestra un mensaje de "Relación no activa" y restringe completamente el acceso a toda información compartida previamente, requiriendo una nueva solicitud de vinculación mutua para restaurar el acceso.                                                                                                                                                                                                                                                   | EP-005                    |
-  | US-017        | Gestión de múltiples suscripciones con diferentes mecánicos     | Como motociclista, quiero poder tener y administrar suscripciones con más de un mecánico a la vez, para consultar métricas y recibir soporte especializado en diferentes áreas o ubicaciones.                                                                                                                                                      | Escenario 1: Dado que el motociclista mantiene suscripciones activas con múltiples talleres mecánicos, cuando el usuario accede a la sección de gestión de suscripciones en su aplicación, entonces el sistema muestra una lista completa con todos los mecánicos suscritos, permitiendo habilitar/deshabilitar notificaciones, revocar acceso individualmente y ver el nivel de permisos granted para cada taller. <br><br> Escenario 2: <br>Dado que el motociclista tiene relaciones activas con varios talleres mecánicos simultáneamente, cuando recibe notificaciones o alertas relacionadas con el estado de su motocicleta, entonces el sistema identifica claramente el taller de origen en cada mensaje y permite filtrar las comunicaciones por mecánico específico para una mejor organización.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | EP-005                    |
-  | US-018        | Notificación de nuevas suscripciones                            | Como mecánico, quiero recibir una notificación cuando un motociclista me otorgue acceso, para poder darle seguimiento inmediato y contactarlo si es necesario.                                                                                                                                                                                     | Escenario 1: <br>Dado que un motociclista ha enviado una solicitud de vinculación a un mecánico, <br>cuando el motociclista confirme la suscripción, <br>entonces el sistema debe enviar una notificación push al mecánico informando sobre la nueva relación <br><br> Escenario 2: <br>Dado que el mecánico ha recibido una notificación de nueva suscripción, <br>cuando accede a la sección de suscripciones en la aplicación, <br>entonces el sistema debe mostrar al nuevo cliente en la lista con sus datos básicos (nombre, modelo de moto, fecha de suscripción).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-005                    |
-  | US-019        | Historial de suscripciones pasadas                              | Como mecánico, quiero ver el historial de clientes con los que tuve suscripción, para mantener un registro de relaciones previas aunque ya no estén activas.                                                                                                                                                                                       | Escenario 1: <br>Dado que un cliente ha revocado o terminado su suscripción con un mecánico, <br>cuando el mecánico consulte la sección de historial de suscripciones, <br>entonces el sistema debe mostrar al cliente en un listado de relaciones pasadas con fecha de inicio y de finalización. <br><br> Escenario 2: <br>Dado que existen múltiples suscripciones pasadas, <br>cuando el mecánico aplique filtros por fecha o por cliente, <br>entonces el sistema debe mostrar únicamente las suscripciones que coincidan con los criterios de búsqueda.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | EP-003                    |
-  | US-020        | Notificación diferenciada de alertas críticas                   | Como motociclista, quiero que las alertas en la app se clasifiquen por nivel de severidad (informativa, preventiva, crítica), para poder priorizar mi respuesta según la urgencia.                                                                                                                                                                 | Escenario 1: <br>Dado que el sistema detecta una condición anómala en la motocicleta, <br>cuando la anomalía se clasifica como informativa, preventiva o crítica, <br>entonces el sistema debe enviar una notificación diferenciada con un color, ícono o etiqueta que refleje el nivel de severidad. <br><br> Escenario 2: <br>Dado que el motociclista recibe varias alertas en la aplicación, <br>cuando accede a la bandeja de notificaciones, <br>entonces el sistema debe mostrar las alertas agrupadas y ordenadas por nivel de severidad, priorizando las críticas en la parte superior.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | EP-002                    |
-  | US-021        | Redirección al aplicativo web.                                  | Como usuario, quiero que exista un botón en la landing page que me redirija al dashboard del aplicativo web del sistema, para acceder a este sin tener que buscar otro enlace.                                                                                                                                                                     | Escenario 1: <br>Dado un usuario en la landing page de la startup, cuando hace clic en el botón "Acceder al Dashboard" ubicado en el header de la página, entonces el sistema redirige automáticamente a la URL del aplicativo web, abriendo la página de Inicio de Sesión. <br><br> Escenario 2: <br>Dado un usuario que ya ha iniciado sesión previamente en el aplicativo web, cuando accede a la landing page y hace clic en el botón "Dashboard", entonces el sistema verifica las credenciales almacenadas y redirige directamente al dashboard principal sin requerir un nuevo inicio de sesión.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | EP-006                    |
-  | US-022        | Redirección a la descarga del aplicativo.                       | Como usuario, quiero que exista un botón en la landing page que me redirija a la descarga del aplicativo móvil, para poder acceder al mismo sin tener que buscar otro enlace.                                                                                                                                                                      | Escenario 1: <br>Dado que un usuario se encuentra en la landing page del aplicativo, cuando hace clic en el botón principal de "Descargar App" ubicado prominente en la página, entonces el sistema redirige automáticamente a la store correspondiente (Google Play Store o Apple App Store) según el sistema operativo de su dispositivo. <br><br> Escenario 2: <br>Dado que un usuario está navegando en la landing page desde un dispositivo móvil, cuando selecciona el botón de "Descargar Ahora" en la sección de llamada a la acción, entonces el sistema detecta automáticamente el tipo de dispositivo y lo redirige directamente al enlace de descarga específico para su sistema operativo sin pasos intermedios.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-006                    |
-  | US-023        | Visualización de Misión y Visión de la startup.                 | Como visitante, quiero ver una sección en la landing page con la Misión y Visión de la startup para conocer más a detalle los objetivos del proyecto.                                                                                                                                                                                              | Escenario 1: <br>Dado un visitante, cuando se encuentra dentro de la landing page, entonces el sistema muestra una sección con la Misión y Visión de la empresa en un diseño claro y conciso. <br><br> Escenario 2: <br>Dado un visitante, cuando se encuentra en la nav bar, entonces el sistema proporciona un acceso directo a la sección.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-006                    |
-  | US-024        | Testimonios de usuarios previos.                                | Como usuario interesado en el producto, quiero ver testimonios reales de clientes en la landing page, para poder confiar en la efectividad de la solución antes de probar el sistema.                                                                                                                                                              | Escenario 1: <br>Dado un usuario en la landing page, cuando se desplaza hasta la sección "Experiencias de Usuarios", entonces el sistema muestra al menos tres testimonios verificados con foto, nombre, ubicación y calificación por estrellas, junto con una descripción breve de su experiencia usando el sistema. <br><br> Escenario 2: <br>Dado un usuario interesado en conocer opiniones específicas, cuando hace clic en el botón "Ver más testimonios" en la sección designada, entonces el sistema redirige a una página dedicada con filtros por tipo de motocicleta, tiempo de uso del sistema y tipo de servicio evaluado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | EP-006                    |
-  | US-025        | Sección de ¿Cómo Funciona?.                                     | Como usuario, quiero ver una sección de en la landing page que explique el funcionamiento general del sistema, para entender el valor agregado y la tecnología detrás del producto.                                                                                                                                                                | Escenario 1: <br>Dado un usuario en la landing page, cuando se desplaza hasta la sección "¿Cómo Funciona?", entonces el sistema muestra una línea de tiempo visual con 4 pasos claros (ej: "Conecta los sensores", "Monitorea en tiempo real", "Recibe alertas inteligentes", "Optimiza tu rendimiento"), cada uno con un ícono representativo y una breve descripción. <br><br> Escenario 2: <br>Dado un usuario interesado en detalles técnicos, cuando hace clic en cualquier paso de la sección "¿Cómo Funciona?", entonces el sistema expande ese paso mostrando una explicación más detallada, un gráfico ilustrativo y opcionalmente un video corto demostrativo de esa funcionalidad específica.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | EP-006                    |
-  | US-026        | Registro inicial de moto                                        | Como motociclista, quiero registrar mi moto con sus datos básicos (placa, marca, modelo, año), para tener mi vehículo identificado dentro del sistema.                                                                                                                                                                                             | Escenario 1: Registro exitoso <br> Dado que el motociclista quiere agregar una moto al sistema, cuando ingresa correctamente los datos básicos de la moto (placa, marca, modelo, año), entonces el sistema guarda la moto y muestra un mensaje de confirmación: “Moto registrada con éxito”. <br><br> Escenario 2: <br><br> Dado que el motociclista intenta registrar una moto, cuando ingresa una placa que ya existe en su cuenta, entonces el sistema rechaza el registro y muestra un mensaje de error: “La placa ya está registrada en tu perfil”.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | EP-007                    |
-  | US-027        | Consulta de motos                                               | Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.                                                                                                                                                                                                                        | Escenario 1: <br> Dado que el motociclista no haregistrado ninguna moto, cuando desea visualizar sus vehiculos registrados, entonces el sistema muestra un mensaje "Ninguna moto registrada". <br><br> Escenario 2: <br><br> Dado que el motociclista tiene motos registradas, cuando visualiza el listado de motos, entonces el sistema muestra un resumen de detalles de la moto y los datos del mecánico vinculado a ella.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-007                    |
-  | US-028        | Actualización de información de moto                            | Como motociclista, quiero actualizar los datos de mi moto registrada (ej. cambio de color, actualización de seguro, accesorios relevantes), para mantener la información de mi vehículo al día.                                                                                                                                                    | Escenario 1: <br> Dado que el motociclista selecciona una moto registrada, cuando actualiza su información (ej. cambio de color o seguro) y guarda los cambios, entonces el sistema actualiza los datos y muestra un mensaje de confirmación: “La información de tu moto ha sido actualizada”. <br><br> Escenario 2: <br><br> Dado que el motociclista intenta actualizar una moto, cuando deja campos obligatorios vacíos o ingresa datos inválidos (ej. un año inexistente), entonces el sistema rechaza la actualización y muestra mensajes de validación indicando los errores.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-007                    |
-  | US-029        | Eliminación de moto                                             | Como motociclista, quiero dar de baja una moto de mi cuenta, para mantener en el sistema solo mis vehículos vigentes.                                                                                                                                                                                                                              | Escenario 1: <br> Dado que el motociclista desea dar de baja una moto, cuando selecciona la opción “Eliminar moto” y confirma la acción, entonces el sistema elimina el registro de la moto y la quita de la lista de vehículos. <br><br> Escenario 2: <br><br> Dado que el motociclista selecciona la opción “Eliminar moto”, cuando aparece el cuadro de confirmación y decide cancelar la acción, entonces el sistema no elimina la moto y la mantiene en la lista de vehículos registrados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | EP-007                    |
-  | US-030        | Visualización de las características del producto               | Como visitante, quiero poder ver las caracteristicas que brinda la solución                                                                                                                                                                                                                                                                        | Escenario 1: <br> Dado un visitante, cuando se encuentra dentro de la landing page, entonces el sistema muestra una sección con as caracteristicas del producto en un diseño claro y conciso. <br><br> Escenario 2: <br> Dado un visitante, cuando se encuentra en la landing page, entonces el sistema proporciona un acceso directo a la sección de caracteristicas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | EP-006                    |
-  | US-031        | Visualización del equipo de trabajo                             | Como visitante quiero poder ver al equipo de desarollo para así poder conocer a las personas detras del proyecto                                                                                                                                                                                                                                   | Escenario 1: <br> Dado un visitante, cuando se encuentra dentro de la landing page, entonces el sistema muestra una sección con el equipo de trabajo en un diseño claro y conciso. <br><br> Escenario 2: <br> Dado un visitante, cuando se encuentra en la landing page, entonces el sistema proporciona un acceso directo a la sección del equipo de trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-006                    |
-  | US-032        | Comparación de especificaciones técnicas entre motocicletas     | Como motociclista, quiero comparar las especificaciones técnicas de mi moto con otra motocicleta disponible en el sistema, para evaluar las diferencias en rendimiento y características antes de tomar decisiones de compra o mantenimiento.                                                                                                      | Escenario 1: Dado que el motociclista desea comparar su motocicleta con otra, cuando selecciona "Tu moto" y "Comparar con" de la lista de vehículos disponibles, entonces el sistema muestra una comparación lado a lado de las especificaciones técnicas incluyendo: cilindrada, potencia, torque, peso, transmisión, frenos, tanque, altura del asiento, consumo y precio aproximado. <br><br> Escenario 2: Dado que el motociclista está visualizando la comparación de especificaciones, cuando cambia la selección de una de las motocicletas, entonces el sistema actualiza automáticamente la tabla comparativa con las nuevas especificaciones correspondientes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | EP-001                    |
-  | US-033        | Evaluación de escenarios de uso entre motocicletas              | Como motociclista, quiero comparar el desempeño de diferentes motocicletas en escenarios específicos (tráfico, viajes, mantenimiento, reventa), para identificar cuál se adapta mejor a mis necesidades de uso.                                                                                                                                    | Escenario 1: Dado que el motociclista desea evaluar el rendimiento en diferentes escenarios, cuando visualiza la sección de escenarios en la comparativa, entonces el sistema muestra una calificación de 0 a 10 (con medios puntos) representada en estrellas para cada escenario: Tráfico, Viajes, Mantenimiento y Reventa. <br><br> Escenario 2: Dado que el motociclista está revisando las calificaciones de escenarios, cuando compara las puntuaciones entre ambas motocicletas, entonces puede identificar visualmente mediante las estrellas qué motocicleta tiene mejor desempeño en cada escenario específico.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | EP-001                    |
-  | US-034        | Comparación técnica de motocicletas por mecánico                | Como mecánico, quiero comparar las especificaciones técnicas de dos motocicletas diferentes bajo mi supervisión, para proporcionar recomendaciones informadas a los propietarios sobre mantenimiento y rendimiento.                                                                                                                                | Escenario 1: Dado que el mecánico accede a la vista de comparación de mecánico, cuando selecciona "Moto A" y "Moto B" de las motocicletas disponibles, entonces el sistema muestra la comparación completa de especificaciones técnicas con fondo naranja destacado para facilitar la lectura. <br><br> Escenario 2: Dado que el mecánico está revisando la comparación, cuando identifica diferencias significativas en las especificaciones (como potencia, torque o tipo de frenos), entonces puede utilizar esta información para recomendar mejoras o identificar posibles problemas mecánicos basados en las diferencias entre modelos.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-001                    |
-  | US-035        | Selección dinámica de vehículos para comparación                | Como motociclista o mecánico, quiero poder cambiar dinámicamente las motocicletas que estoy comparando mediante selectores, para realizar múltiples comparaciones sin necesidad de recargar la página.                                                                                                                                             | Escenario 1: Dado que el motociclista está en la página de comparación, cuando selecciona una motocicleta diferente entre sus motos registradas en el selector disponible, entonces el sistema actualiza inmediatamente toda la información de especificaciones y escenarios sin recargar la página. <br><br> Escenario 2: Dado que el mecánico está en la página de comparación, cuando selecciona una motocicleta diferente entre las motos asignadas a su taller o cartera de clientes, entonces el sistema actualiza dinámicamente las especificaciones y el historial sin recargar la página. <br><br> **Escenario 3 (Duplicado):** Dado que el usuario (motociclista o mecánico) selecciona la misma motocicleta en ambos selectores, cuando el sistema detecta esta selección duplicada, entonces automáticamente muestra una alerta y sugiere un vehículo diferente para mantener una comparación válida.                                                                                                                                                                                                                                                                                                                                                                             | EP-001                    |
-  | US-036        | Visualización de información básica del vehículo en comparativa | Como motociclista o mecánico, quiero ver la información básica de cada motocicleta (marca, modelo, año, placa) en la vista de comparación, para identificar rápidamente los vehículos que estoy comparando.                                                                                                                                        | Escenario 1: Dado que el motociclista está visualizando la comparación, cuando observa las tarjetas superiores de cada vehículo, entonces el sistema muestra claramente el título de la sección ("Tu moto"/"Comparar con"), junto con la marca, modelo, año y placa de sus motocicletas registradas. <br><br> Escenario 2: Dado que el mecánico está visualizando la comparación, cuando observa las tarjetas superiores de cada vehículo, entonces el sistema muestra los nombres de las motos asignadas a su cartera de clientes, junto con su marca, modelo, año y placa. <br><br> **Escenario 3 (Datos faltantes):** Dado que la información básica está siendo mostrada, cuando el vehículo tiene datos faltantes (como año o placa), entonces el sistema deja el campo vacío pero mantiene la estructura visual consistente.                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-001                    |
-  | TS-001        | Uso de polling para detección.                                  | Como desarrollador, quiero implementar un mecanismo de sondeo periódico (polling) para leer los valores de los sensores de la motocicleta (ej. presión de llantas, temperatura del motor, consumo de combustible), para garantizar que la aplicación obtenga datos actualizados constantemente, y estos se vean registrados a lo largo del tiempo. | Escenario 1: <br>Dado que la aplicación está conectada a los sensores de la motocicleta y el sistema de polling está configurado con un intervalo específico, cuando se ejecuta el ciclo periódico de lectura de sensores, entonces el sistema obtiene los valores actualizados de presión de llantas, temperatura del motor y consumo de combustible, y los almacena con timestamp en la base de datos local para su posterior análisis. <br><br> Escenario 2: <br>Dado que el último ciclo de polling detectó un valor de sensor que supera los umbrales predefinidos de seguridad, cuando el sistema procesa y valida esta lectura anómala, entonces genera inmediatamente un evento de alerta prioritario que activa las notificaciones al usuario y registra el incidente en el historial de anomalías del vehículo. <br><br> Escenario 3: <br>Dado que todos los valores de sensores leídos durante el ciclo de polling se encuentran dentro de los rangos normales establecidos, cuando el sistema completa la lectura y verificación de datos, entonces actualiza los registros históricos con los nuevos valores sin generar alertas ni notificaciones al usuario, manteniendo el funcionamiento silencioso del monitoreo.                                                           | EP-004                    |
-  | TS-002        | Monitoreo del estado de las métricas.                           | Como desarrollador, quiero que las métricas recopiladas actuales del vehículo aparezcan en el monitor serial del dispositivo, para comprobar que estas coincidan con los valores reales.                                                                                                                                                           | Escenario 1: <br>Dado que el sistema de sensores de la motocicleta está operativo y enviando datos en tiempo real, cuando se ejecuta la rutina de monitoreo y adquisición de datos, entonces los valores actuales de presión de llantas, temperatura del motor y consumo de combustible se imprimen en el monitor serial cada 2 segundos con el formato: "[TIMESTAMP] Sensor: [VALOR] [UNIDAD]". <br><br> Escenario 2: <br>Dado que un sensor específico reporta un valor que excede los umbrales normales predefinidos, cuando el sistema procesa y muestra este dato en el monitor serial, entonces la métrica aparece destacada con el formato "[ALERTA] Sensor: [VALOR] [UNIDAD] - FUERA DE RANGO" para facilitar su identificación inmediata durante las pruebas. <br><br> Escenario 3: <br>Dado que los sensores están reportando valores dentro de los rangos normales sin fluctuaciones significativas, cuando el sistema muestra las lecturas en el monitor serial, entonces los datos aparecen con valores estables y consistentes, manteniendo una variación máxima del 5% entre lecturas consecutivas y reflejando fielmente el comportamiento real de los sensores sin distorsiones.                                                                                             | EP-004                    |
-  | TS-003        | Lectura de sensor de presión de llantas                         | Como desarrollador, quiero implementar la lectura periódica de los sensores de presión de llantas, para disponer de datos confiables en el sistema.                                                                                                                                                                                                | Escenario 1: <br>Dado que los sensores de presión de llantas están correctamente conectados y calibrados, cuando el sistema ejecuta la rutina periódica de lectura de sensores, entonces obtiene y registra el valor actual en PSI de cada llanta (delantera y trasera) con una precisión de ±1 PSI and timestamp of the measurement. <br><br> Escenario 2: <br>Dado que se ha realizado una lectura de presión de llantas con valores fuera del rango seguro establecido (menor a 28 PSI o mayor a 40 PSI para motocicletas estándar), cuando el sistema procesa estos datos, entonces marca automáticamente la lectura como anómala en la base de datos y activa el protocolo de notificación de alerta temprana.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-04                     |
-  | TS-004        | Lectura de sensor de temperatura del motor                      | Como desarrollador, quiero integrar la lectura del sensor de temperatura del motor, para detectar condiciones de sobrecalentamiento.                                                                                                                                                                                                               | Escenario 1: <br>Dado que el sensor de temperatura del motor está instalado y funcionando correctamente, cuando el sistema ejecuta la rutina de monitoreo periódico, entonces el valor actual de temperatura en grados Celsius se registra en la memoria del dispositivo con una precisión de más o menos 2°C y se almacena con su timestamp correspondiente. <br><br> Escenario 2: <br>Dado que la lectura de temperatura del motor supera los 95°C (umbral de sobrecalentamiento para la mayoría de motocicletas), cuando el sistema procesa este dato, entonces marca la lectura como alerta crítica interna, activa el flag de sobrecalentamiento en el sistema y prepara el protocolo de notificación de emergencia. <br><br> Escenario 3: <br>Dado que la temperatura del motor se mantiene entre 70°C y 80°C (rango operativo normal), cuando el sistema registra la lectura en el log de datos, entonces almacena el valor sin activar alertas ni banderas de advertencia, manteniendo el estado operativo normal del sistema de monitoreo.                                                                                                                                                                                                                                           | EP-04                     |
-  | TS-005        | Lectura de sensor de consumo de combustible                     | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio.                                                                                                                                                                                                           | Escenario 1: <br>Dado que el motor de la motocicleta está en marcha y el sensor de flujo de combustible detecta circulación de combustible, cuando el sistema realiza la lectura periódica del sensor, entonces calcula el consumo instantáneo en L/100km basado en el flujo actual y la velocidad de la motocicleta, actualizando el valor cada 5 segundos. <br><br> Escenario 2: <br>Dado que el motociclista ha finalizado un trayecto y el motor se apaga, cuando el sistema procesa todos los datos acumulados del viaje, entonces calcula el consumo promedio de combustible dividiendo el total de combustible consumido entre la distancia recorrida, mostrando el resultado en km/L con dos decimales de precisión. <br><br> Escenario 3: <br>Dado que el motor de la motocicleta está apagado y no hay circulación de combustible, cuando el sistema ejecuta la rutina de lectura del sensor de flujo, entonces reporta un valor de 0.0 L/h para el consumo instantáneo y mantiene inactivo el cálculo de consumo hasta que se detecte nuevo flujo.                                                                                                                                                                                                                                 | EP-04                     |
-  | TS-006        | Registro de métricas en memoria local                           | Como desarrollador, quiero que todas las métricas capturadas se almacenen en memoria local del dispositivo, para permitir la persistencia de datos incluso sin conexión a la app.                                                                                                                                                                  | Escenario 1: <br>Dado que se completa exitosamente una lectura de cualquier sensor del sistema (presión, temperatura, combustible), cuando se obtiene el valor medido, entonces los datos se almacenan inmediatamente en la memoria local con un timestamp preciso y se etiquetan con el tipo de sensor correspondiente para su posterior recuperación. <br><br> Escenario 2: <br>Dado que la memoria local alcanza su capacidad máxima de almacenamiento (ej. 10,000 registros), cuando se intenta guardar un nuevo dato y el espacio está lleno, entonces el sistema elimina automáticamente el 10% de los registros más antiguos para liberar espacio y continúa almacenando los nuevos datos sin interrupción. <br><br> Escenario 3: <br>Dado que la aplicación recupera la conexión a internet después de un período sin conexión, cuando se ejecuta el proceso de sincronización con el servidor, entonces la memoria local envía todos los registros almacenados durante el período offline y los marca como sincronizados una vez confirmada su recepción exitosa.                                                                                                                                                                                                                    | EP-04                     |
-  | TS-007        | Sincronización de datos con la aplicación móvil                 | Como desarrollador, quiero sincronizar los datos de métricas almacenados en el dispositivo con la app móvil, para asegurar que el usuario siempre tenga la información más reciente.                                                                                                                                                               | Escenario 1: <br>Dado que el dispositivo tiene registros locales de métricas sin sincronizar almacenados en su memoria, cuando la aplicación móvil establece conexión estable con el dispositivo, entonces se inicia la transferencia de todos los datos pendientes en lotes organizados por timestamp y tipo de métrica. <br><br> Escenario 2: <br>Dado que la transmisión de datos desde el dispositivo hacia la aplicación móvil se ha completado exitosamente, cuando la aplicación confirma la recepción íntegra de todos los registros, entonces el dispositivo marca los datos como sincronizados en su base de datos local y los mantiene como respaldo histórico por un período determinado. <br><br> Escenario 3: <br>Dado que ocurre una falla durante el proceso de sincronización de datos, cuando el sistema reintenta la conexión y transferencia, entonces identifica los registros pendientes de sincronización mediante timestamps y envía solamente el diferencial de datos que no había sido transferido previamente.                                                                                                                                                                                                                                                     | EP-04                     |
-  | TS-008        | Integración con framework de comunicación IoT                   | Como desarrollador, quiero integrar el framework IoT del proyecto para enviar los datos recopilados a la nube, para habilitar reportes remotos y análisis avanzados.                                                                                                                                                                               | Escenario 1: <br>Dado que el dispositivo tiene conexión a internet activa y estable, cuando se completa un ciclo de lectura de sensores y procesamiento de datos, entonces el sistema envía automáticamente el paquete de métricas a la nube utilizando el framework IoT configurado, aplicando el protocolo de seguridad correspondiente. <br><br> Escenario 2: <br>Dado que la conexión a internet no está disponible o la transmisión a la nube falla, cuando el sistema intenta enviar los datos, entonces almacena la información en una cola local persistente con timestamp y reintenta el envío cada 5 minutos hasta que se restablezca la conectividad. <br><br> Escenario 3: <br>Dado que el envío de datos a la nube se completa exitosamente, cuando el servidor cloud confirma la recepción mediante acknowledge, entonces el sistema registra la confirmación en el log serial con el mensaje "[OK] Datos sincronizados - [TIMESTAMP]" y elimina los datos correspondientes de la cola local.                                                                                                                                                                                                                                                                                   | EP-04                     |
+| User Story ID | Título                                                    | Descripción                                                                                                                                                                                                                                                                                                                                        | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Epic ID |
+|---------------|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| US-001        | Manejo de asignaciones                                    | Como mecanico quiero manejar mis propias asignaciones para poder contraer un vinculo con los dueños de motocicletas                                                                                                                                                                                                                                | Escenario 1: Creación de asignación<br>Dado que el mecánico se encuentra dentro de la aplicación, cuando genera una asignación, entonces el sistema crea una asignación y brinda el código de esta misma.<br><br>Escenario 2: Eliminación de asignación<br>Dado que el mecánico encuentra dentro de la aplicación, cuando visualiza las asignaciones pendientes, entonces puede eliminar cualquiera de las asignaciones pendientes.<br><br>Escenario 3: Detalles de la asignación<br>Dado que el mecánico encuentra dentro de la aplicación, cuando interactúa con una asignación activa, entonces puede visualizar los detalles del dueño y la asignación hecha.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| US-002        | Vinculación de asignación                                 | Como dueño quiero poder vincularme con un mecánico para así permitirle acceder a los datos de mis vehiculos y tener una experiencia más completa                                                                                                                                                                                                   | Escenario 1: Vinculación<br>Dado que el dueño se encuentra en la aplicación cuando desea registrarse, entonces el sistema le solicita un código de asignación para poder vincularlo con un mecánico.<br><br>Escenario 2: Visualización<br>Dado que el dueño se encuentra dentro de la aplicación cuando se encuentra visualizando los datos generales entonces el sistema le muestra la información correspondiente a su asignación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |         |
+| US-003        | Creación de perfil para motociclistas                     | Como visitante, quiero crear una cuenta como motociclista para acceder a los servicios relacionados al rol.                                                                                                                                                                                                                                        | Escenario 1:<br>Dado que el motociclista se encuentre en el registro de cuentas, cuando el motociclista ingrese un código de invitación perteneciente a un mecánico, y el código pertenezca a un mecánico, y registre un perfil con los datos del usuario, entonces el sistema deberá crear la cuenta y vincular el motociclista al mecánico.<br><br>Escenario 2:<br>Dado que el motociclista se encuentre en el registro de cuentas, cuando el motociclista ingrese un código de invitación perteneciente a un mecánico, y el código no es válido o no pertenece a ningún mecánico, entonces el sistema deberá notificar que no se encontró a ningún mecánico relacionado a ese código.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |         |
+| US-004        | Creación de perfil para mecánicos                         | Como visitante, quiero crear una cuenta como mecánico para utilizar los servicios relacionados a mi rol.                                                                                                                                                                                                                                           | Escenario 1:<br>Dado que el usuario se encuentra en la pantalla de registro, cuando el usuario seleccione el botón de ver suscripciones y seleccione una suscripción de la lista de suscripciones disponibles y registre un perfil con los datos del usuario, entonces el sistema debe registrar la cuenta como mecánico.<br><br>Escenario 2:<br>Dado que el usuario se encuentre en la pantalla de registro, cuando el usuario seleccione el botón de ver suscripciones, y los datos del usuario son ya existentes, entonces el sistema debe notificar al usuario que el perfil ya existe.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |         |
+| US-005        | Autenticación en la aplicación web                        | Como usuario, quiero poder autenticarme en la aplicación web, para poder interactuar con mis datos de usuario.                                                                                                                                                                                                                                     | Escenario 1:<br>Dado que el usuario se encuentra iniciando sesión, cuando ingresa las credenciales correctas, entonces el sistema carga su perfil en la aplicación<br><br>Escenario 2:<br>Dado que el usuario se encuentra iniciando sesión, cuando ingresa credenciales incorrectas, entonces el sistema no le permite ingresar a la aplicación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |         |
+| US-006        | Sección de métricas por cada vehículo                     | Como mecánico, quiero poder acceder a la sección de métricas registradas para cada vehículo para poder analizar las métricas de cada moto de manera individual.                                                                                                                                                                                    | Escenario 1:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo específico, entonces el sistema muestra sus métricas de telemetría<br><br>Escenario 2:<br>Dado que veo los vehículos de un cliente, cuando solicito métricas de un vehículo sin registros, entonces el sistema muestra "No se encontró ninguna métrica relacionada a este vehículo"<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | EP-001  |
+| US-007        | Sistema de notificaciones interno                         | Como dueño, quiero recibir notificaciones de mis vehículos para conocer su estado                                                                                                                                                                                                                                                                  | Escenario 1:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo, entonces el sistema muestra las notificaciones de estado<br><br>Escenario 2:<br>Dado que veo mis vehículos registrados, cuando consulto el estado de un vehículo sin alertas, entonces el sistema muestra "No hay notificaciones para este vehículo"<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | EP-002  |
+| US-008        | Alerta de Temperatura Alta                                | Como dueño, quiero alertas de temperatura alta para saber si se supera el umbral permitido                                                                                                                                                                                                                                                         | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico temperatura y se supera el umbral, entonces el sistema envía notificación de temperatura alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico temperatura y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-002  |
+| US-009        | Alerta de Temperatura Baja                                | Como dueño, quiero alertas de temperatura baja para saber si está bajo el umbral mínimo                                                                                                                                                                                                                                                            | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico temperatura y está bajo el mínimo, entonces el sistema envía notificación de temperatura baja<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico temperatura y no está bajo el mínimo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | EP-002  |
+| US-010        | Alerta de Humedad Alta                                    | Como dueño, quiero alertas de humedad alta para saber si supera el umbral permitido                                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico humedad y se supera el umbral, entonces el sistema envía notificación de humedad alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico humedad y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-011        | Alerta de CO2 Alto                                        | Como dueño, quiero alertas de CO2 alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico CO2 y se supera el umbral, entonces el sistema envía notificación de CO2 alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico CO2 y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-002  |
+| US-012        | Alerta de NH3 Alto                                        | Como dueño, quiero alertas de NH3 alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico NH3 y se supera el umbral, entonces el sistema envía notificación de NH3 alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico NH3 y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | EP-002  |
+| US-013        | Alerta de Benceno Alto                                    | Como dueño, quiero alertas de benceno alto para saber si supera el umbral permitido                                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico benceno y se supera el umbral, entonces el sistema envía notificación de benceno alto<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico benceno y no se supera el umbral, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-014        | Alerta de Presión Baja                                    | Como dueño, quiero alertas de presión baja para saber si está bajo el umbral mínimo                                                                                                                                                                                                                                                                | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico presión y está bajo el mínimo, entonces el sistema envía notificación de presión baja<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico presión y no está bajo el mínimo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-015        | Alerta de Presión Alta                                    | Como dueño, quiero alertas de presión alta para saber si supera el umbral máximo                                                                                                                                                                                                                                                                   | Escenario 1:<br>Dado que veo mis vehículos, cuando verifico presión y se supera el máximo, entonces el sistema envía notificación de presión alta<br><br>Escenario 2:<br>Dado que veo mis vehículos, cuando verifico presión y no se supera el máximo, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | EP-002  |
+| US-016        | Alerta de Impacto Detectado                               | Como dueño, quiero alertas de impacto detectado para saber si mi moto sufrió colisión                                                                                                                                                                                                                                                              | Escenario 1:<br>ado que veo mis vehículos, cuando verifico impactos y se detecta uno, entonces el sistema envía notificación de impacto detectado<br><br>Escenario 2:<br>ado que veo mis vehículos, cuando verifico impactos y no se detecta ninguno, entonces el sistema no envía notificación<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-002  |
+| US-017        | Gestion de Gastos                                         | Como dueño, quiero agregar, ver y eliminar gastos relacionados con mi moto para llevar un control financiero de mis costos operativos                                                                                                                                                                                                              | Escenario 1: Visualización de gastos<br>Dado que el dueño de moto se encuentra en la aplicación, cuando accede a la sección de gastos, entonces el sistema le muestra un listado de todos sus gastos recientes organizados por fecha.<br><br>Escenario 2: Registro de nuevo gasto<br>Dado que el dueño de moto desea agregar un gasto, cuando selecciona la opción "Agregar gasto", entonces el sistema muestra un formulario con campos para tipo de gasto, monto, descripción y fecha.<br><br>Escenario 3: Eliminación de gasto<br>Dado que el dueño de moto visualiza un gasto registrado, cuando selecciona la opción "Eliminar" y confirma la acción, entonces el sistema remueve el gasto de su historial.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |         |
+| US-018        | Gestión de mantenimientos del dueño                       | Como mecánico, quiero crear y visualizar mantenimientos para el vehículo de un dueño específico para registrar los servicios requeridos                                                                                                                                                                                                            | Escenario 1: Visualización de mantenimientos por vehículo<br>Dado que el dueño de moto accede a la sección de mantenimientos, cuando selecciona un vehículo específico, entonces el sistema muestra todos los mantenimientos asociados a ese vehículo con detalles, fecha y estado.<br><br>Escenario 2: Detalle de mantenimiento completado<br>Dado que el dueño de moto visualiza un mantenimiento marcado como completado, cuando selecciona ver detalles, entonces el sistema muestra información completa incluyendo el gasto de mantenimiento asociado con todos sus items.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |         |
+| US-019        | Gestión del progreso del mantenimiento                    | Como mecánico, quiero actualizar el estado del mantenimiento (pendiente, en progreso, cancelado o completado) para gestionar el flujo de trabajo del servicio                                                                                                                                                                                      | Escenario 1: Actualización de estado de mantenimiento<br>Dado que el mecánico ha finalizado un mantenimiento, cuando actualiza el MaintenanceState a "Completado" mediante UpdateStateOfMaintenance, entonces el sistema cambia el estado del mantenimiento.<br><br>Escenario 2: Asociación de gasto a mantenimiento<br>Dado que un mantenimiento ha sido completado, cuando el mecánico utiliza AssignExpenseToMaintenance para asociar un gasto existente, entonces el sistema vincula el Expense al Maintenance mediante maintenanceExpense.<br><br>Escenario 3: Creación y asociación automática<br>Dado que el mecánico completa un mantenimiento, cuando crea un nuevo Expense y lo asocia al mantenimiento, entonces el sistema registra el gasto y lo vincula automáticamente al mantenimiento completado.<br>                                                                                                                                                                                                                                                                                                                                                                                                              |         |
+| US-020        | Comparación de vehículos por motociclista                 | Como motociclista o mecánico quiero comparar las especificaciones técnicas de mi motocicleta con otros modelos disponibles para evaluar el rendimiento y características de mi vehículo frente a alternativas del mercado                                                                                                                          | Escenario 1: Selección de vehículos para comparar<br>Dado que el motociclista tiene vehículos registrados en el sistema, cuando accede a la funcionalidad de comparación, entonces el sistema muestra sus vehículos registrados y le permite seleccionar uno como base de comparación junto con un modelo de la base de datos para contrastar.<br><br>Escenario 2: Visualización de comparación técnica<br>Dado que el motociclista ha seleccionado dos vehículos para comparar, cuando el sistema procesa la comparación, entonces muestra lado a lado las especificaciones técnicas (cilindrada, potencia, torque, peso, transmisión, frenos, tanque, altura del asiento, consumo y precio) destacando cuál vehículo tiene mejores valores en cada categoría.<br><br>Escenario 3: Persistencia de comparación<br>Dado que el motociclista ha realizado una comparación de vehículos, cuando sale y vuelve a ingresar a la funcionalidad, entonces el sistema restaura la última comparación realizada desde el almacenamiento local.<br>                                                                                                                                                                                          |         |
+| US-021        | Comparación de modelos por mecánico                       | Como mecánico quiero comparar especificaciones técnicas entre diferentes modelos de motocicletas para analizar y recomendar las mejores opciones a mis clientes según sus necesidades                                                                                                                                                              | Escenario 1: Acceso a comparación de modelos<br>Dado que el mecánico no tiene vehículos registrados bajo su nombre, cuando intenta acceder a la funcionalidad de comparación desde la vista de motociclista, entonces el sistema lo redirige automáticamente a la vista de comparación de modelos para mecánicos.<br><br>Escenario 2:<br>Dado que el mecánico accede a la comparación de modelos, cuando visualiza la interfaz, entonces puede seleccionar libremente cualquier par de modelos disponibles en la base de datos sin restricciones de propiedad.<br><br>Escenario 3: Análisis de múltiples comparaciones<br>Dado que el mecánico realiza varias comparaciones de modelos, cuando cambia la selección de cualquiera de los dos vehículos, entonces el sistema actualiza inmediatamente la comparación y guarda el estado actual para futuras consultas.<br>                                                                                                                                                                                                                                                                                                                                                            |         |
+| US-022        | Evaluación por escenarios de uso                          | Como motociclista o mecánico quiero visualizar el rendimiento de los vehículos en diferentes escenarios de uso para determinar cuál opción se adapta mejor a condiciones específicas de conducción                                                                                                                                                 | Escenario 1: Visualización de escenarios<br>Dado que se está comparando dos vehículos, cuando el usuario visualiza la sección de escenarios de uso, entonces el sistema muestra las puntuaciones (del 1 al 10 representadas en estrellas) para tráfico urbano, viajes largos, costo de mantenimiento y valor de reventa.<br><br>Escenario 2: Identificación de mejor opción por escenario<br>Dado que dos vehículos tienen diferentes puntuaciones en un escenario específico, cuando el sistema muestra la comparación, entonces destaca visualmente cuál vehículo es mejor para ese escenario particular y muestra el nombre del ganador.<br><br>Escenario 3: Comparación equilibrada<br>Dado que dos vehículos tienen la misma puntuación en un escenario, cuando el sistema muestra la comparación, entonces no destaca ningún vehículo como ganador en ese escenario específico.<br>                                                                                                                                                                                                                                                                                                                                           |         |
+| US-023        | Visualización de especificaciones detalladas              | Como motociclista o mecánico quiero ver una comparación detallada de todas las especificaciones técnicas para tomar decisiones informadas basadas en datos técnicos precisos                                                                                                                                                                       | Escenario 1: Listado completo de especificaciones<br>Dado que se están comparando dos vehículos, cuando el usuario visualiza la tarjeta de especificaciones, entonces el sistema muestra 10 categorías técnicas principales organizadas en filas con los valores de ambos vehículos lado a lado.<br><br>Escenario 2: Destacado de valores superiores<br>Dado que dos vehículos tienen valores numéricos diferentes en una especificación, cuando el sistema compara los valores, entonces resalta visualmente el valor superior con un indicador de ganador y un fondo distintivo.<br><br>Escenario 3: Manejo de datos faltantes<br>Dado que un vehículo no tiene información para una especificación específica, cuando el sistema muestra la comparación, entonces presenta un guion "-" en lugar de dejar el campo vacío o mostrar valores erróneos.<br>                                                                                                                                                                                                                                                                                                                                                                         |         |
+| US-024        | Visualización de vehículos                                | Como dueño de moto, quiero ver todas mis motos registradas en una lista para tener conocimiento de su registro.                                                                                                                                                                                                                                    | Escenario 1:<br>Dado que el dueño tiene vehículos registrados, cuando se dirija a la pantalla de Vehículos, entonces la aplicación mostrará una lista de sus vehículos registrados con datos básicos.<br><br>Escenario 2:<br>Dado que el dueño no tiene ningún vehículo registrado, cuando se diriga a la pantalla de Vehículos, entonces la aplicación mostrará un mensaje de “No tiene vehículos registrados“<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |         |
+| US-025        | Visualización de detalles de un vehículo                  | Como dueño, quiero ver los detalles específicos de mi vehículo, para tener conocimiento sobre sus especificaciones a la hora de buscar reparaciones.                                                                                                                                                                                               | Escenario 1:<br>Dado que el dueño se encuentra en la vista de Vehículos, cuando presione el botón de Ver Detalles de uno de los vehículos, se redirigirá a una pantalla con más datos.<br><br>Escenario 2:<br>Dado que el dueño ha ingresado a la vista de Detalles del Vehículo, cuando revise la información presentada, entonces debe poder visualizar todas las especificaciones registradas del modelo dl vehículo, con cualquier dato relevante para futuras reparaciones.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |         |
+| US-026        | Registro de Vehículo                                      | Como dueño, quiero registrar un vehículo de mi pertenencia en la plataforma, para que mi mecánico asignado pueda monitorearlo.                                                                                                                                                                                                                     | Escenario 1:<br>Dado que el dueño se encuentra en la pantalla de vehículos, puede presionar el botón de Registrar Vehículo, entonces el sistema debe mostrar un formulario para colocar los datos del vehículo.<br><br>Escenario 2:<br>Dado que el dueño se encuentra en el formulario y ha colocado los datos de su vehículo, puede presionar el botón de Registrar, entonces el sistema deberá validar los datos y registrar el vehículo si son correctos.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |         |
+| US-027        | Exportación de reporte técnico del vehículo               | Como mecánico o motociclista quiero exportar un reporte técnico completo del vehículo en formato CSV para tener un registro físico de las características y estado del vehículo que pueda compartir o archivar                                                                                                                                     | Escenario 1: Generación exitosa del reporte<br>Dado que el usuario se encuentra visualizando los detalles de un vehículo específico, cuando el usuario presiona el botón "Exportar", entonces el sistema genera y descarga automáticamente un archivo CSV con todas las especificaciones técnicas del vehículo incluyendo año del modelo, marca, tipo, desplazamiento, tipo de motor, capacidad del tanque, potencia máxima, torque máximo, conectividad, peso, capacidad de aceite y consumo de gasolina.<br><br>Escenario 2: Nomenclatura del archivo exportado<br>Dado que el sistema ha generado exitosamente el archivo CSV, cuando se descarga el archivo, entonces el nombre del archivo sigue el formato vehicle-report-{vehicleId}.csv donde vehicleId es el identificador único del vehículo.<br><br>Escenario 3: Manejo de error en la exportación<br>Dado que el usuario solicita exportar el reporte del vehículo, cuando ocurre un error durante la generación o descarga del archivo, entonces el sistema muestra un mensaje de alerta indicando "Error al exportar el reporte" sin descargar ningún archivo corrupto o incompleto.<br>                                                                              |         |
+| US-028        | Monitorear la temperatura de la moto                      | Como usuario del dispositivo, quiero que el sistema mida la temperatura de la moto, para detectar sobrecalentamientos y prevenir fallas mecánicas                                                                                                                                                                                                  | Escenario 1:<br>Dado que la moto se encuentra encendida, cuando el sensor de temperatura realiza una nueva lectura, entonces el valor se muestra en grados Celsius en el sistema.<br><br>Escenario 2:<br>Dado que la temperatura de la moto es monitoreada, cuando se excede los limites de temperatura, entonces el sistema genera un evento de notificación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |         |
+| US-029        | Monitorear la contaminación emitida por el tubo de escape | Como usuario del dispositivo, quiero que el sistema mida los gases emitidos por el tubo de escape, para conocer el nivel de contaminación generada por la moto.                                                                                                                                                                                    | Escenario 1:<br>Dado que la moto está encendida, cuando el sensor detecta concentraciones de CO₂, NH₃ y Benceno, entonces los valores se muestran en ppm.<br><br>Escenario 2:<br>Dado que se estan monitoreando los gases, cuando cualquiera de los gases excede el limite, entonces el sistema emite un evento de notificación.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |         |
+| US-030        | Detectar impactos cuando la moto está estacionada         | Como usuario del dispositivo, quiero que el sistema detecte impactos cuando la moto esté apagada, para identificar intentos de robo, caídas o golpes.                                                                                                                                                                                              | Escenario 1:<br>Dado que la moto se encuentra apagada, cuando el sensor de impacto detecta un golpe, entonces el sistema genera un evento de impacto.<br><br>Escenario 2:<br>Dado que ocurre un solo golpe, cuando se supera el umbral de sensibilidad, entonces se emite un único evento.<br><br>Escenario 3:<br>Dado que no existe impacto, cuando el sistema está en monitoreo, entonces no se generan eventos de impacto.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |         |
+| US-031        | Monitorear la presión de las llantas                      | Como usuario del dispositivo, quiero que el sistema mida la presión de las llantas, para garantizar una conducción segura.                                                                                                                                                                                                                         | Escenario 1:<br>Dado que el sensor de presión se encuentra activo, cuando detecta la presión de la llanta, entonces el sistema muestra el valor en hPa.<br><br>Escenario 2:<br>Dado que la presión se sale de los limites de nivel seguro, cuando se detecta la variación, entonces el sistema emite un evento de alerta.<br><br>Escenario 3:<br>Dado que la presión se mantiene estable, cuando se realizan múltiples lecturas, entonces no se generan eventos adicionales.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |         |
+| US-032        | Visualizar el estado general de la moto                   | Como usuario del dispositivo, quiero visualizar todos los datos del sistema en conjunto, para conocer el estado general del vehículo en tiempo real.                                                                                                                                                                                               | Escenario 1:<br>Dado que todos los sensores están activos, cuando el sistema actualiza las lecturas, entonces se muestran simultáneamente temperatura, gases, presión e impactos.<br><br>Escenario 2:<br>Dado que uno de los sensores falla, cuando ocurre la lectura, entonces el sistema continúa mostrando los demás valores disponibles.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |         |
+| US-033        | Integrar sensores con ModestIoT                           | Como desarrollador del dispositivo, quiero integrar todos los sensores usando ModestIoT, para evitar programación directa del hardware.                                                                                                                                                                                                            | Escenario 1:<br>Dado que el desarrollador incluye `<ModestIoT.h>`, cuando instancia `BykerZDevice`, entonces todos los sensores quedan registrados automáticamente.<br><br>Escenario 2:<br>Dado que el sistema está en ejecución, cuando ocurre un evento de sensor, entonces este es procesado por `BykerZDevice::on(Event)`.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |         |
+| US-034        | Arquitectura basada en eventos                            | Como desarrollador del dispositivo, quiero que el sistema funcione solo con eventos, para desacoplar la lógica del hardware.                                                                                                                                                                                                                       | Escenario 1: Emisión de eventos<br>Dado que un sensor detecta un cambio, cuando se supera el umbral definido, entonces se emite un único evento.<br><br>Escenario 2: Eventos controlados<br>Dado que no ocurre ningún cambio, cuando el sistema actualiza las lecturas, entonces no se emiten eventos.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |         |
+| US-035        | Escalabilidad del sistema                                 | Como desarrollador del dispositivo, quiero poder añadir nuevos sensores sin modificar la arquitectura base, para escalar el sistema en futuras versiones.                                                                                                                                                                                          | Escenario 1: Creación de sensor<br>Dado que se crea una nueva clase de sensor, cuando se integra al dispositivo, entonces no se debe modificar la clase base Device.<br><br>Escenario 2: Agregar nuevo sensor<br>Dado que el sistema está en producción, cuando se agrega un nuevo sensor, entonces los sensores existentes continúan funcionando correctamente.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |         |
+| US-036        | Depuración mediante Serial Monitor                        | Como desarrollador del dispositivo, quiero que todos los eventos se muestren por el Serial Monitor, para validar el comportamiento del sistema.                                                                                                                                                                                                    | Escenario 1: Emisión de evento<br>Dado que ocurre un evento de cualquier sensor, cuando es procesado por el dispositivo, entonces el valor se imprime por Serial a 115200 baudios.<br><br>Escenario 2: Sin evento registrado<br>Dado que no ocurren eventos, cuando el sistema está en reposo, entonces el Serial Monitor permanece sin mensajes nuevos.<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |         |
+| TS-001        | Uso de polling para detección.                            | Como desarrollador, quiero implementar un mecanismo de sondeo periódico (polling) para leer los valores de los sensores de la motocicleta (ej. presión de llantas, temperatura del motor, consumo de combustible), para garantizar que la aplicación obtenga datos actualizados constantemente, y estos se vean registrados a lo largo del tiempo. | Escenario 1: <br>Dado que la aplicación está conectada a los sensores de la motocicleta y el sistema de polling está configurado con un intervalo específico, cuando se ejecuta el ciclo periódico de lectura de sensores, entonces el sistema obtiene los valores actualizados de presión de llantas, temperatura del motor y consumo de combustible, y los almacena con timestamp en la base de datos local para su posterior análisis. <br><br> Escenario 2: <br>Dado que el último ciclo de polling detectó un valor de sensor que supera los umbrales predefinidos de seguridad, cuando el sistema procesa y valida esta lectura anómala, entonces genera inmediatamente un evento de alerta prioritario que activa las notificaciones al usuario y registra el incidente en el historial de anomalías del vehículo. <br><br> Escenario 3: <br>Dado que todos los valores de sensores leídos durante el ciclo de polling se encuentran dentro de los rangos normales establecidos, cuando el sistema completa la lectura y verificación de datos, entonces actualiza los registros históricos con los nuevos valores sin generar alertas ni notificaciones al usuario, manteniendo el funcionamiento silencioso del monitoreo. | EP-004  |
+| TS-002        | Monitoreo del estado de las métricas.                     | Como desarrollador, quiero que las métricas recopiladas actuales del vehículo aparezcan en el monitor serial del dispositivo, para comprobar que estas coincidan con los valores reales.                                                                                                                                                           | Escenario 1: <br>Dado que el sistema de sensores de la motocicleta está operativo y enviando datos en tiempo real, cuando se ejecuta la rutina de monitoreo y adquisición de datos, entonces los valores actuales de presión de llantas, temperatura del motor y consumo de combustible se imprimen en el monitor serial cada 2 segundos con el formato: "[TIMESTAMP] Sensor: [VALOR] [UNIDAD]". <br><br> Escenario 2: <br>Dado que un sensor específico reporta un valor que excede los umbrales normales predefinidos, cuando el sistema procesa y muestra este dato en el monitor serial, entonces la métrica aparece destacada con el formato "[ALERTA] Sensor: [VALOR] [UNIDAD] - FUERA DE RANGO" para facilitar su identificación inmediata durante las pruebas. <br><br> Escenario 3: <br>Dado que los sensores están reportando valores dentro de los rangos normales sin fluctuaciones significativas, cuando el sistema muestra las lecturas en el monitor serial, entonces los datos aparecen con valores estables y consistentes, manteniendo una variación máxima del 5% entre lecturas consecutivas y reflejando fielmente el comportamiento real de los sensores sin distorsiones.                                   | EP-004  |
+| TS-003        | Lectura de sensor de presión de llantas                   | Como desarrollador, quiero implementar la lectura periódica de los sensores de presión de llantas, para disponer de datos confiables en el sistema.                                                                                                                                                                                                | Escenario 1: <br>Dado que los sensores de presión de llantas están correctamente conectados y calibrados, cuando el sistema ejecuta la rutina periódica de lectura de sensores, entonces obtiene y registra el valor actual en PSI de cada llanta (delantera y trasera) con una precisión de ±1 PSI and timestamp of the measurement. <br><br> Escenario 2: <br>Dado que se ha realizado una lectura de presión de llantas con valores fuera del rango seguro establecido (menor a 28 PSI o mayor a 40 PSI para motocicletas estándar), cuando el sistema procesa estos datos, entonces marca automáticamente la lectura como anómala en la base de datos y activa el protocolo de notificación de alerta temprana.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | EP-04   |
+| TS-004        | Lectura de sensor de temperatura del motor                | Como desarrollador, quiero integrar la lectura del sensor de temperatura del motor, para detectar condiciones de sobrecalentamiento.                                                                                                                                                                                                               | Escenario 1: <br>Dado que el sensor de temperatura del motor está instalado y funcionando correctamente, cuando el sistema ejecuta la rutina de monitoreo periódico, entonces el valor actual de temperatura en grados Celsius se registra en la memoria del dispositivo con una precisión de más o menos 2°C y se almacena con su timestamp correspondiente. <br><br> Escenario 2: <br>Dado que la lectura de temperatura del motor supera los 95°C (umbral de sobrecalentamiento para la mayoría de motocicletas), cuando el sistema procesa este dato, entonces marca la lectura como alerta crítica interna, activa el flag de sobrecalentamiento en el sistema y prepara el protocolo de notificación de emergencia. <br><br> Escenario 3: <br>Dado que la temperatura del motor se mantiene entre 70°C y 80°C (rango operativo normal), cuando el sistema registra la lectura en el log de datos, entonces almacena el valor sin activar alertas ni banderas de advertencia, manteniendo el estado operativo normal del sistema de monitoreo.                                                                                                                                                                                 | EP-04   |
+| TS-005        | Lectura de sensor de consumo de combustible               | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio.                                                                                                                                                                                                           | Escenario 1: <br>Dado que el motor de la motocicleta está en marcha y el sensor de flujo de combustible detecta circulación de combustible, cuando el sistema realiza la lectura periódica del sensor, entonces calcula el consumo instantáneo en L/100km basado en el flujo actual y la velocidad de la motocicleta, actualizando el valor cada 5 segundos. <br><br> Escenario 2: <br>Dado que el motociclista ha finalizado un trayecto y el motor se apaga, cuando el sistema procesa todos los datos acumulados del viaje, entonces calcula el consumo promedio de combustible dividiendo el total de combustible consumido entre la distancia recorrida, mostrando el resultado en km/L con dos decimales de precisión. <br><br> Escenario 3: <br>Dado que el motor de la motocicleta está apagado y no hay circulación de combustible, cuando el sistema ejecuta la rutina de lectura del sensor de flujo, entonces reporta un valor de 0.0 L/h para el consumo instantáneo y mantiene inactivo el cálculo de consumo hasta que se detecte nuevo flujo.                                                                                                                                                                       | EP-04   |
+| TS-006        | Registro de métricas en memoria local                     | Como desarrollador, quiero que todas las métricas capturadas se almacenen en memoria local del dispositivo, para permitir la persistencia de datos incluso sin conexión a la app.                                                                                                                                                                  | Escenario 1: <br>Dado que se completa exitosamente una lectura de cualquier sensor del sistema (presión, temperatura, combustible), cuando se obtiene el valor medido, entonces los datos se almacenan inmediatamente en la memoria local con un timestamp preciso y se etiquetan con el tipo de sensor correspondiente para su posterior recuperación. <br><br> Escenario 2: <br>Dado que la memoria local alcanza su capacidad máxima de almacenamiento (ej. 10,000 registros), cuando se intenta guardar un nuevo dato y el espacio está lleno, entonces el sistema elimina automáticamente el 10% de los registros más antiguos para liberar espacio y continúa almacenando los nuevos datos sin interrupción. <br><br> Escenario 3: <br>Dado que la aplicación recupera la conexión a internet después de un período sin conexión, cuando se ejecuta el proceso de sincronización con el servidor, entonces la memoria local envía todos los registros almacenados durante el período offline y los marca como sincronizados una vez confirmada su recepción exitosa.                                                                                                                                                          | EP-04   |
+| TS-007        | Sincronización de datos con la aplicación móvil           | Como desarrollador, quiero sincronizar los datos de métricas almacenados en el dispositivo con la app móvil, para asegurar que el usuario siempre tenga la información más reciente.                                                                                                                                                               | Escenario 1: <br>Dado que el dispositivo tiene registros locales de métricas sin sincronizar almacenados en su memoria, cuando la aplicación móvil establece conexión estable con el dispositivo, entonces se inicia la transferencia de todos los datos pendientes en lotes organizados por timestamp y tipo de métrica. <br><br> Escenario 2: <br>Dado que la transmisión de datos desde el dispositivo hacia la aplicación móvil se ha completado exitosamente, cuando la aplicación confirma la recepción íntegra de todos los registros, entonces el dispositivo marca los datos como sincronizados en su base de datos local y los mantiene como respaldo histórico por un período determinado. <br><br> Escenario 3: <br>Dado que ocurre una falla durante el proceso de sincronización de datos, cuando el sistema reintenta la conexión y transferencia, entonces identifica los registros pendientes de sincronización mediante timestamps y envía solamente el diferencial de datos que no había sido transferido previamente.                                                                                                                                                                                           | EP-04   |
+| TS-008        | Integración con framework de comunicación IoT             | Como desarrollador, quiero integrar el framework IoT del proyecto para enviar los datos recopilados a la nube, para habilitar reportes remotos y análisis avanzados.                                                                                                                                                                               | Escenario 1: <br>Dado que el dispositivo tiene conexión a internet activa y estable, cuando se completa un ciclo de lectura de sensores y procesamiento de datos, entonces el sistema envía automáticamente el paquete de métricas a la nube utilizando el framework IoT configurado, aplicando el protocolo de seguridad correspondiente. <br><br> Escenario 2: <br>Dado que la conexión a internet no está disponible o la transmisión a la nube falla, cuando el sistema intenta enviar los datos, entonces almacena la información en una cola local persistente con timestamp y reintenta el envío cada 5 minutos hasta que se restablezca la conectividad. <br><br> Escenario 3: <br>Dado que el envío de datos a la nube se completa exitosamente, cuando el servidor cloud confirma la recepción mediante acknowledge, entonces el sistema registra la confirmación en el log serial con el mensaje "[OK] Datos sincronizados - [TIMESTAMP]" y elimina los datos correspondientes de la cola local.                                                                                                                                                                                                                         | EP-04   |
 
 ### 3.2 Impact Mapping
 
@@ -1294,45 +1383,52 @@ User Stories:
 
 ### 3.3 Product Backlog
 
-| Prioridad | Story ID | Título                                                      | Descripción                                                                                                                                                                                                                                                                                                                                        | SP |
-|:----------|:---------|:------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---|
-| 1         | US-001   | Visualización del consumo de combustible en tiempo real     | Como motociclista, quiero visualizar en tiempo real el consumo de combustible de mi moto, para poder optimizar mi forma de conducir y ahorrar gastos.                                                                                                                                                                                              | 2  |
-| 1         | US-005   | Notificación de alerta por consumo excesivo.                | Como motociclista, quiero que el aplicativo móvil me notifique en caso de que el sistema detecte un consumo anormalmente alto de combustible por kilómetro.                                                                                                                                                                                        | 3  |
-| 1         | US-006   | Notificación de alerta por presión de llantas.              | Como motociclista, quiero que el aplicativo móvil me notifique cuando la presión de las llantas sea anormal, para poder tomar acciones preventivas que garanticen mi seguridad y el buen estado de la motocicleta.                                                                                                                                 | 3  |
-| 1         | US-008   | Notificación de sobrecalentamiento del motor                | Como motociclista, quiero que el aplicativo móvil me notifique cuando el motor de mi motocicleta esté presentando un sobrecalentamiento, para poder detenerme a tiempo y evitar daños mayores al vehículo o accidentes.                                                                                                                            | 3  |
-| 1         | US-013   | Subscripción con mecánico.                                  | Como motociclista, quiero poder establecer una relación con mi mecánico de confianza dentro de la aplicación para darle acceso a los datos recopilados, así como permitirle enviarme mensajes o agendar citas.                                                                                                                                     | 3  |
-| 1         | US-020   | Notificación diferenciada de alertas críticas               | Como motociclista, quiero que las alertas en la app se clasifiquen por nivel de severidad (informativa, preventiva, crítica), para poder priorizar mi respuesta según la urgencia.                                                                                                                                                                 | 3  |
-| 1         | US-026   | Registro inicial de moto                                    | Como motociclista, quiero registrar mi moto con sus datos básicos (placa, marca, modelo, año, número de serie), para tener mi vehículo identificado dentro del sistema.                                                                                                                                                                            | 2  |
-| 1         | TS-003   | Lectura de sensor de presión de llantas                     | Como desarrollador, quiero implementar la lectura periódica de los sensores de presión de llantas, para disponer de datos confiables en el sistema.                                                                                                                                                                                                | 2  |
-| 2         | TS-001   | Uso de polling para detección.                              | Como desarrollador, quiero implementar un mecanismo de sondeo periódico (polling) para leer los valores de los sensores de la motocicleta (ej. presión de llantas, temperatura del motor, consumo de combustible), para garantizar que la aplicación obtenga datos actualizados constantemente, y estos se vean registrados a lo largo del tiempo. | 5  |
-| 1         | TS-004   | Lectura de sensor de temperatura del motor                  | Como desarrollador, quiero integrar la lectura del sensor de temperatura del motor, para detectar condiciones de sobrecalentamiento.                                                                                                                                                                                                               | 2  |
-| 1         | TS-005   | Lectura de sensor de consumo de combustible                 | Como desarrollador, quiero implementar la medición de flujo de combustible en tiempo real, para calcular consumo instantáneo y promedio.                                                                                                                                                                                                           | 3  |
-| 1         | US-002   | Registro de gastos de mantenimiento y repuestos             | Como motociclista, quiero registrar los gastos de mantenimiento y repuestos que realizo, para llevar un control acumulado mensual o por kilometraje.                                                                                                                                                                                               | 3  |
-| 1         | US-003   | Acceso al historial de servicios realizados                 | Como motociclista, quiero acceder fácilmente al historial de servicios realizados en mi moto, para saber cuándo fue la última vez que hice mantenimiento y qué se reparó.                                                                                                                                                                          | 3  |
-| 1         | US-007   | Recomendación de mantenimiento.                             | Como mecánico, quiero poder agendar citas con mis clientes en caso de detectar alguna medida anómala en sus motocicletas desde mi interfaz, para brindar un servicio oportuno y mantener la seguridad de sus vehículos.                                                                                                                            | 5  |
-| 1         | US-009   | Sugerencias personalizadas para próximos mantenimientos     | Como motociclista, quiero recibir sugerencias personalizadas sobre el próximo mantenimiento que debo hacer, basadas en el historial y uso de mi moto.                                                                                                                                                                                              | 5  |
-| 1         | US-010   | Generación de reporte de salud del vehículo                 | Como mecánico, quiero generar un reporte de salud del vehículo que incluya estado de batería, temperatura, consumo y alertas recientes, para entregarlo al cliente al final del servicio.                                                                                                                                                          | 5  |
-| 1         | US-011   | Consulta del historial de servicios por parte del mecánico  | Como mecánico, quiero consultar el historial de servicios realizados en una moto específica, para tomar decisiones informadas al momento del diagnóstico.                                                                                                                                                                                          | 3  |
-| 1         | US-012   | Resumen mensual de servicios, alertas y gastos              | Como motociclista, quiero ver un resumen mensual de los servicios, alertas y gastos de mi moto, para tener una visión clara de su estado y del dinero invertido.                                                                                                                                                                                   | 3  |
-| 1         | US-014   | Visualización de subscripciones activas con clientes.       | Como mecánico, quiero poder visualizar las subscripciones activas de todos mis clientes, para tener claridad sobre qué motociclistas me han otorgado acceso a sus datos y poder gestionar mejor la relación.                                                                                                                                       | 2  |
-| 1         | US-015   | Terminación de la subscripcion con el mecanico              | Como motociclista, quiero poder terminar o cambiar la relación de vinculación en cualquier momento, para asegurar mi privacidad y poder elegir un nuevo mecánico si lo deseo.                                                                                                                                                                      | 1  |
-| 1         | US-016   | Terminación de la subscripción con el cliente.              | Como mecánico, quiero poder terminar la relación de vinculación con un motociclista en cualquier momento, para asegurar que no tenga acceso a mis servicios si ya no deseo mantener la relación.                                                                                                                                                   | 1  |
-| 2         | US-018   | Notificación de nuevas suscripciones                        | Como mecánico, quiero recibir una notificación cuando un motociclista me otorgue acceso, para poder darle seguimiento inmediato y contactarlo si es necesario.                                                                                                                                                                                     | 1  |
-| 2         | US-027   | Consulta de motos                                           | Como motociclista, quiero consultar las motos que tengo registradas, para acceder rápidamente a la información de cada una.                                                                                                                                                                                                                        | 2  |
-| 2         | TS-002   | Monitoreo del estado de las métricas.                       | Como desarrollador, quiero que las métricas recopiladas actuales del vehículo aparezcan en el monitor serial del dispositivo, para comprobar que estas coincidan con los valores reales.                                                                                                                                                           | 3  |
-| 2         | TS-006   | Registro de métricas en memoria local                       | Como desarrollador, quiero que todas las métricas capturadas se almacenen en memoria local del dispositivo, para permitir la persistencia de datos incluso sin conexión a la app.                                                                                                                                                                  | 3  |
-| 2         | TS-007   | Sincronización de datos con la aplicación móvil             | Como desarrollador, quiero sincronizar los datos de métricas almacenados en el dispositivo con la app móvil, para asegurar que el usuario siempre tenga la información más reciente.                                                                                                                                                               | 2  |
-| 3         | US-004   | Comparación de métricas entre motos similares               | Como mecánico, quiero comparar las métricas de dos motos similares, para detectar posibles problemas o desviaciones en el rendimiento que requieran revisión.                                                                                                                                                                                      | 3  |
-| 3         | US-017   | Gestión de múltiples suscripciones con diferentes mecánicos | Como motociclista, quiero poder tener y administrar suscripciones con más de un mecánico a la vez, para consultar métricas y recibir soporte especializado en diferentes áreas o ubicaciones.                                                                                                                                                      | 3  |
-| 3         | US-019   | Historial de suscripciones pasadas                          | Como mecánico, quiero ver el historial de clientes con los que tuve suscripción, para mantener un registro de relaciones previas aunque ya no estén activas.                                                                                                                                                                                       | 2  |
-| 3         | US-021   | Redirección al aplicativo web.                              | Como usuario, quiero que exista un botón en la landing page que me redirija al dashboard del aplicativo web del sistema, para acceder a este sin tener que buscar otro enlace.                                                                                                                                                                     | 1  |
-| 3         | US-022   | Redirección a la descarga del aplicativo.                   | Como usuario, quiero que exista un botón en la landing page que me redirija a la descarga del aplicativo móvil, para poder acceder al mismo sin tener que buscar otro enlace.                                                                                                                                                                      | 1  |
-| 3         | US-023   | Visualización de Misión y Visión de la startup.             | Como usuario, quiero ver una sección en la landing page con la Misión y Visión de la startup para conocer más a detalle los objetivos del proyecto.                                                                                                                                                                                                | 1  |
-| 3         | US-024   | Testimonios de usuarios previos.                            | Como usuario interesado en el producto, quiero ver testimonios reales de clientes en la landing page, para poder confiar en la efectividad de la solución antes de probar el sistema.                                                                                                                                                              | 1  |
-| 3         | US-025   | Sección de ¿Cómo Funciona?.                                 | Como usuario, quiero ver una sección de en la landing page que explique el funcionamiento general del sistema, para entender el valor agregado y la tecnología detrás del producto.                                                                                                                                                                | 2  |
-| 3         | US-028   | Actualización de información de moto                        | Como motociclista, quiero actualizar los datos de mi moto registrada (ej. cambio de color, actualización de seguro, accesorios relevantes), para mantener la información de mi vehículo al día.                                                                                                                                                    | 2  |
-| 3         | US-029   | Eliminación de moto                                         | Como motociclista, quiero dar de baja una moto de mi cuenta, para mantener en el sistema solo mis vehículos vigentes.                                                                                                                                                                                                                              | 2  |
-| 3         | TS-008   | Integración con framework de comunicación IoT               | Como desarrollador, quiero integrar el framework IoT del proyecto para enviar los datos recopilados a la nube, para habilitar reportes remotos y análisis avanzados.                                                                                                                                                                               | 3  |
+| Prioridad | Story ID | Título                                        | Descripción                                                                                                                                                   | Story Points |
+|-----------|----------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 1         | US-001   | Manejo de asignaciones                        | Como mecánico quiero manejar mis propias asignaciones para poder contraer un vínculo con los dueños de motocicletas.                                          |              |
+| 2         | US-002   | Vinculación de asignación                     | Como dueño quiero poder vincularme con un mecánico para así permitirle acceder a los datos de mis vehículos y tener una experiencia más completa.             |              |
+| 3         | US-026   | Registro de Vehículo                          | Como dueño, quiero registrar un vehículo de mi pertenencia en la plataforma, para que mi mecánico asignado pueda monitorearlo.                                |              |
+| 4         | US-024   | Visualización de vehículos                    | Como dueño de moto, quiero ver todas mis motos registradas en una lista para tener conocimiento de su registro.                                               |              |
+| 5         | US-025   | Visualización de detalles de un vehículo      | Como dueño, quiero ver los detalles específicos de mi vehículo, para tener conocimiento sobre sus especificaciones a la hora de buscar reparaciones.          |              |
+| 6         | US-007   | Sistema de notificaciones interno             | Como dueño, quiero recibir notificaciones de mis vehículos para conocer su estado.                                                                            |              |
+| 7         | US-016   | Alerta de Impacto Detectado                   | Como dueño, quiero alertas de impacto detectado para saber si mi moto sufrió colisión.                                                                        |              |
+| 8         | US-008   | Alerta de Temperatura Alta                    | Como dueño, quiero alertas de temperatura alta para saber si se supera el umbral permitido.                                                                   |              |
+| 9         | US-009   | Alerta de Temperatura Baja                    | Como dueño, quiero alertas de temperatura baja para saber si está bajo el umbral mínimo.                                                                      |              |
+| 10        | US-014   | Alerta de Presión Baja                        | Como dueño, quiero alertas de presión baja para saber si está bajo el mínimo permitido.                                                                       |              |
+| 11        | US-015   | Alerta de Presión Alta                        | Como dueño, quiero alertas de presión alta para saber si supera el máximo permitido.                                                                          |              |
+| 12        | US-010   | Alerta de Humedad Alta                        | Como dueño, quiero alertas de humedad alta para saber si supera el umbral permitido.                                                                          |              |
+| 13        | US-011   | Alerta de CO₂ Alto                            | Como dueño, quiero alertas de CO₂ alto para saber si supera el umbral permitido.                                                                              |              |
+| 14        | US-012   | Alerta de NH₃ Alto                            | Como dueño, quiero alertas de NH₃ alto para saber si supera el umbral permitido.                                                                              |              |
+| 15        | US-013   | Alerta de Benceno Alto                        | Como dueño, quiero alertas de benceno alto para saber si supera el umbral permitido.                                                                          |              |
+| 16        | US-018   | Gestión de mantenimientos del dueño           | Como mecánico, quiero crear y visualizar mantenimientos para el vehículo de un dueño específico para registrar los servicios requeridos                       |              |
+| 17        | US-019   | Gestión del progreso del mantenimiento        | Como mecánico, quiero actualizar el estado del mantenimiento (pendiente, en progreso, cancelado o completado) para gestionar el flujo de trabajo del servicio |              |
+| 18        | US-017   | Gestión de Gastos                             | Como dueño, quiero agregar, ver y eliminar gastos relacionados con mi moto para llevar un control financiero de mis costos operativos                         |              |
+| 19        | US-006   | Sección de métricas por cada vehículo         | Como mecánico, quiero acceder a las métricas registradas por vehículo para analizarlas de manera individual.                                                  |              |
+| 20        | US-020   | Comparación de vehículos por motociclista     | Como motociclista o mecánico quiero comparar especificaciones técnicas entre mi moto y otros modelos.                                                         |              |
+| 21        | US-003   | Creación de perfil para motociclistas         | Como visitante, quiero crear una cuenta como motociclista para acceder a los servicios relacionados al rol.                                                   |              |
+| 22        | US-004   | Creación de perfil para mecánicos             | Como visitante, quiero crear una cuenta como mecánico para utilizar los servicios relacionados a mi rol.                                                      |              |
+| 23        | US-005   | Autenticación en la aplicación web            | Como usuario, quiero poder autenticarme en la aplicación web, para poder interactuar con mis datos de usuario.                                                |              |
+| 24        | US-021   | Comparación de modelos por mecánico           | Como mecánico quiero comparar especificaciones entre diferentes motos para hacer recomendaciones.                                                             |              |
+| 25        | US-022   | Evaluación por escenarios de uso              | Como usuario o mecánico quiero visualizar el rendimiento del vehículo en distintos escenarios de conducción.                                                  |              |
+| 26        | US-023   | Visualización de especificaciones detalladas  | Como usuario o mecánico quiero ver comparaciones detalladas de todas las especificaciones técnicas.                                                           |              |
+| 27        | US-027   | Exportación de reporte técnico del vehículo   | Como usuario o mecánico quiero exportar un reporte técnico en CSV para archivarlo o compartirlo.                                                              |              |
+| 28        | US-028   | Monitorear temperatura de la moto             | Como usuario del dispositivo, quiero que el sistema mida la temperatura de la moto para prevenir sobrecalentamientos.                                         |              |
+| 29        | US-029   | Monitorear contaminación del escape           | Como usuario del dispositivo, quiero medir gases emitidos por el escape para conocer la contaminación.                                                        |              |
+| 30        | US-030   | Detectar impactos con la moto estacionada     | Como usuario del dispositivo, quiero detectar impactos cuando la moto esté apagada para identificar caídas o robos.                                           |              |
+| 31        | US-031   | Monitorear presión de llantas                 | Como usuario del dispositivo, quiero medir la presión de las llantas para garantizar seguridad.                                                               |              |
+| 32        | US-032   | Visualizar estado general de la moto          | Como usuario del dispositivo, quiero ver todos los datos en conjunto para conocer su estado general.                                                          |              |
+| 33        | US-033   | Integrar sensores con ModestIoT               | Como desarrollador, quiero integrar los sensores usando ModestIoT para evitar programación directa del hardware.                                              |              |
+| 34        | US-034   | Arquitectura basada en eventos                | Como desarrollador, quiero que el sistema funcione solo con eventos para desacoplar la lógica del hardware.                                                   |              |
+| 35        | US-035   | Escalabilidad del sistema                     | Como desarrollador, quiero añadir nuevos sensores sin modificar la arquitectura base.                                                                         |              |
+| 36        | US-036   | Depuración mediante Serial Monitor            | Como desarrollador, quiero que todos los eventos se muestren por Serial Monitor para validar el comportamiento.                                               |              |
+| 37        | TS-001   | Uso de polling para detección                 | Como desarrollador, quiero usar polling para leer sensores periódicamente y garantizar datos actualizados.                                                    |              |
+| 38        | TS-002   | Monitoreo del estado de métricas              | Como desarrollador, quiero ver las métricas actuales en el Serial Monitor para confirmar valores reales.                                                      |              |
+| 39        | TS-003   | Lectura de sensor de presión de llantas       | Como desarrollador, quiero leer el sensor de presión de llantas para disponer de datos confiables.                                                            |              |
+| 40        | TS-004   | Lectura de sensor de temperatura del motor    | Como desarrollador, quiero leer la temperatura del motor para detectar sobrecalentamiento.                                                                    |              |
+| 41        | TS-005   | Lectura de sensor de consumo de combustible   | Como desarrollador, quiero medir el flujo de combustible en tiempo real.                                                                                      |              |
+| 42        | TS-006   | Registro de métricas en memoria local         | Como desarrollador, quiero almacenar métricas localmente para persistencia sin conexión.                                                                      |              |
+| 43        | TS-007   | Sincronización con la app móvil               | Como desarrollador, quiero sincronizar métricas con la app móvil para mantener la información actualizada.                                                    |              |
+| 44        | TS-008   | Integración con framework de comunicación IoT | Como desarrollador, quiero integrar el framework IoT para enviar datos a la nube y habilitar análisis.                                                        |              |
 
 ## Capítulo IV: Solution Software Design
 
@@ -1461,9 +1557,9 @@ En esta sección se desarrollan los Bounded Context Canvases correspondientes a 
 
 <img src="images/chapter-4/bc-canvas-reports.png" alt="Bounded Context Canvas Reports">
 
-**Subscription**
+**Assignments**
 
-<img src="images/chapter-4/bc-canvas-subscription.png" alt="Bounded Context Canvas Subscription">
+<img src="images/chapter-4/bc-canvas-assignments.png" alt="Bounded Context Canvas Subscription">
 
 **Vehicle Management**
 
@@ -1510,118 +1606,238 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ### 4.2 Tactical-Level Domain-Driven Design
 
-#### 4.2.1 Bounded Context: Gestión de Vehículos
+#### 4.2.1 Bounded Context: Vehicle Management
 
 ##### 4.2.1.1 Domain Layer
-### Aggregate: `Vehicle`
-**Descripción**: Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
 
-| Atributos           | Tipo de dato  | Visibilidad | Descripción                                  |
-|---------------------|---------------|-------------|----------------------------------------------|
-| id                  | Long          | Private     | Identificador único del vehículo.            |
-| ownerId             | Long          | Private     | ID del dueño de la moto.                     |
-| vin                 | String        | Private     | Número de identificación del vehículo (VIN). |
-| plateNumber         | String        | Private     | Número de placa del vehículo.                |
-| model               | String        | Private     | Modelo del vehículo.                         |
-| brand               | String        | Private     | Marca del vehículo.                          |
-| status              | VehicleStatus | Private     | Estado actual del vehículo.                  |
-| year                | Integer       | Private     | Año de fabricación del vehículo.             |
-| color               | String        | Private     | Color del vehículo.                          |
-| authorizedMecanicId | Long          | Private     | ID del mecánico autorizado para el vehículo. |
+**Aggregates**
 
-| Métodos                    | Tipo de retorno | Visibilidad | Descripción                                 |
-|----------------------------|-----------------|-------------|---------------------------------------------|
-| registerVehicle()          | void            | Public      | Registra un nuevo vehículo en el sistema.   |
-| updateVehicleDetails()     | void            | Public      | Actualiza los detalles del vehículo.        |
-| getVehicleStatus()         | VehicleStatus   | Public      | Obtiene el estado actual del vehículo.      |
-| assignAuthorizedMechanic() | void            | Public      | Asigna un mecánico autorizado al vehículo.  |
-| assignNewOwner()           | void            | Public      | Cambia el dueño del vehículo.               |
-| revokeAuthorizedMechanic() | void            | Public      | Revoca el mecánico autorizado del vehículo. |
+`Owner`
+**Descripción:** Representa a un dueño de moto registrado en el sistema. Contiene tanto una referencia a un profile como a los vehículos registrados a su nombre.
+
+| Atributos           | Tipo de dato   | Visibilidad | Descripción                                |
+|---------------------|----------------|-------------|--------------------------------------------|
+| id                  | Long           | Private     | Identificador único del dueño de vehículo. |
+| profile             | Profile        | Private     | Perfil de usuario asociado al dueño.       |
+| vehicles            | List<Vehicles> | Private     | Lista de Vehículos asociados al dueño.     |
+
+`Model`
+**Descripción:** Representa un modelo de moto registrado
+
+| Atributos     | Tipo de dato | Visibilidad | Descripción                                                   |
+|---------------|--------------|-------------|---------------------------------------------------------------|
+| id            | Long         | Private     | Identificador único del modelo.                               |
+| name          | String       | Private     | Nombre del modelo.                                            |
+| brand         | String       | Private     | Nombre de la marca a la que le pertenece el modelo.           |
+| modelYear     | String       | Private     | Año en el que salió el modelo.                                |
+| originCountry | String       | Private     | Nombre del país de origen del modelo.                         |
+| producedAt    | Date         | Private     | Fecha de producción del modelo.                               |
+| type          | String       | Private     | Tipo del modelo.                                              |
+| displacement  | String       | Private     | Cilindrada del motor del modelo.                              |
+| potency       | String       | Private     | Potencia máxima que puede generar el motor.                   |
+| engineType    | String       | Private     | Tipo o configuración del motor del modelo.                    |
+| engineTorque  | String       | Private     | Torque o fuerza de giro producida por el motor.               |
+| weight        | String       | Private     | Peso total del modelo.                                        |
+| transmission  | String       | Private     | Tipo de transmisión incorporada en el modelo.                 |
+| brakes        | String       | Private     | Sistema de frenos con el que está equipado el modelo.         |
+| tank          | String       | Private     | Capacidad del tanque de combustible del modelo.               |
+| seatHeight    | String       | Private     | Altura del asiento medida desde el suelo.                     |
+| consumption   | String       | Private     | Consumo promedio de combustible del modelo.                   |
+| price         | Float        | Private     | Precio estimado del modelo en el mercado.                     |
+| oilCapacity   | String       | Private     | Capacidad de aceite requerida por el motor del modelo.        |
+| connectivity  | String       | Private     | Tecnologías o sistemas de conectividad integrados.            |
+| durability    | String       | Private     | Nivel de durabilidad o resistencia del modelo.                |
+| octane        | String       | Private     | Nivel de octanaje recomendado para el combustible del modelo. |
+
+
+**Entities**
+
+`Vehicle`
+**Descripción:** Representa la moto registrada por el dueño en el sistema. Contiene los detalles para identificar el vehículo así como su estado actual.
+
+| Atributos           | Tipo de dato | Visibilidad | Descripción                       |
+|---------------------|--------------|-------------|-----------------------------------|
+| id                  | Long         | Private     | Identificador único del vehículo. |
+| owner               | Owner        | Private     | Dueño de la moto.                 |
+| model               | Model        | Private     | Modelo de la moto.                |
+| year                | Year         | Private     | Año de fabricación de la moto.    |
+| plate               | Plate        | Private     | Placa de la moto.                 |
+
+
+**Value Objects**
+
+`Plate` (Record)
+
+`Year` (Record)
+
+**Commands**
+* AddVehicleToOwnerCommand <<record>>
+* CreateModelCommand <<record>>
+* CreateOwnerCommand <<record>>
+* DeleteVehicleFromOwnerCommand <<record>>
+* SeedModelsCommand <<record>>
+* UpdateVehicleFromOwnerCommand <<record>>
+
+**Queries**
+* GetAllBrandsQuery <<record>>
+* GetAllModelsQuery <<record>>
+* GetAllOwnersQuery <<record>>
+* GetAllVehiclesQuery <<record>>
+* GetModelByIdQuery <<record>>
+* GetModelsByBrandQuery <<record>>
+* GetOwnerByIdQuery <<record>>
+* GetOwnerByVehicleIdQuery <<record>>
+* GetVehicleByIdQuery <<record>>
+* GetVehicleByPlateQuery <<record>>
+
+**Services**
+`ModelCommandService`
+* handle(CreateModelCommand)
+* handle(SeedModelsCommand)
+
+`ModelQueryService`
+* handle(GetAllModelsQuery)
+* handle(GetModelByIdQuery)
+* handle(GetModelsByBrandQuery)
+* handle(GetAllBrandsQuery)
+
+`OwnerCommandService`
+* handle(CreateOwnerCommand)
+* handle(AddVehicleToOwnerCommand)
+* handle(UpdateVehicleFromOwnerCommand)
+* handle(DeleteVehicleFromOwnerCommand)
+
+`OwnerQueryService`
+* handle(GetOwnerByIdQuery)
+* handle(GetOwnerByVehicleIdQuery)
+* handle(GetAllOwnersQuery)
+
+`VehicleQueryService`
+* handle(GetVehicleByIdQuery)
+* handle(GetVehicleByPlateQuery)
 
 ##### 4.2.1.2 Interface Layer
 
-### Controlador: `VehicleController`
-**Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de vehículos.
+**Rest Controllers**
 
-| Método               | Ruta                                                      | Descripción                                 |
-|----------------------|-----------------------------------------------------------|---------------------------------------------|
-| addVehicle()         | POST /api/v1/vehicles/                                    | Registra un nuevo vehículo.                 |
-| updateVehicle()      | PUT /api/v1/vehicles/{vehicleId}                          | Actualiza los detalles de un vehículo.      |
-| updateVehicleOwner() | PATCH /api/v1/vehicles/{vehicleId}/owner                  | Cambia el dueño del vehículo.               |
-| authorizeMechanic()  | POST /api/v1/vehicles/{vehicleId}/mechanic                | Asigna un mecánico autorizado al vehículo.  |
-| revokeMechanic()     | DELETE /api/v1/vehicles/{vehicleId}/mechanic/{mechanicId} | Revoca el mecánico autorizado del vehículo. |
-| getVehicle()         | GET /api/v1/vehicles/{vehicleId}                          | Consulta los detalles de un vehículo.       |
-| getMechanic()        | GET /api/v1/mechanics/{mechanicId}                        | Consulta los detalles de un mecánico.       |
+`ModelsController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los modelos.
 
-**Dependencias:**
+| Método             | Ruta                             | Descripción                                                    |
+|--------------------|----------------------------------|----------------------------------------------------------------|
+| getAllModels()     | GET /api/v1/models/              | Obtiene todos los modelos registrados.                         |
+| getModelById()     | GET /api/v1/models/{modelId}     | Obtiene un modelo por su identificador.                        |
+| getModelsByBrand() | GET /api/v1/models/brand/{brand} | Obtiene todos los modelos de una marca específica.             |
+| getAllBrands()     | GET /api/v1/models/brands        | Obtiene todas las marcas presentes en los modelos registrados. |
 
-| Dependencia                                    | Descripción                                                                          |
-|------------------------------------------------|--------------------------------------------------------------------------------------|
-| VehicleCommandService                          | Servicio para manejar comandos relacionados con vehículos.                           |
-| VehicleQueryService                            | Servicio para manejar consultas relacionadas con vehículos.                          |
-| CreateVehicleCommandFromResourceAssembler      | Ensamblador para convertir recursos REST a comandos para creación de vehículos.      |
-| UpdateVehicleCommandFromResourceAssembler      | Ensamblador para convertir recursos REST a comandos para actualización de vehículos. |
-| UpdateVehicleOwnerCommandFromResourceAssembler | Ensamblador para convertir recursos REST a comandos para actualización de dueños.    |
-| VehicleResourceFromEntityAssembler             | Ensamblador para convertir entidades de vehículos a recursos REST.                   |
+`OwnersController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los dueños.
+
+| Método                | Ruta                                   | Descripción                                          |
+|-----------------------|----------------------------------------|------------------------------------------------------|
+| getAllOwners()        | GET /api/v1/owners/                    | Obtiene todos los dueños de vehículos registrados.   |
+| getOwnerByVehicleId() | GET /api/v1/owners/vehicle/{vehicleId} | Obtiene el dueño de un vehículo por su identificador |
+| createOwner()         | POST /api/v1/owners                    | Crea un dueño de vehículo.                           |
+
+`VehiclesController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con los vehículos.
+
+| Método                 | Ruta                                | Descripción                                            |
+|------------------------|-------------------------------------|--------------------------------------------------------|
+| getVehiclesByOwnerId() | GET /api/v1/vehicles/               | Obtiene todos los vehículos registrados bajo un dueño. |
+| getVehicleById()       | GET /api/v1/vehicles/{vehicleId}    | Obtiene un vehículo por su identificador.              |
+| addVehicleToOwner()    | POST /api/v1/vehicles/{ownerId}     | Añade un vehículo a un dueño.                          |
+| deleteVehicleById()    | DELETE /api/v1/vehicles/{vehicleId} | Elimina un vehículo de un dueño.                       |
+
+**Resources**
+* AddVehicleResource <<record>>
+* CreateModelResource <<record>>
+* CreateOwnerResource <<record>>
+* ModelResource <<record>>
+* OwnerResource <<record>>
+* VehicleResource <<record>>
+
+**Assemblers**
+* AddVehicleCommandFromResourceAssembler
+* CreateModelCommandFromResourceAssembler
+* CreateOwnerCommandFromResourceAssembler
+* ModelResourceFromEntityAssembler
+* OwnerResourceFromEntityAssembler
+* VehicleResourceFromEntityAssembler
 
 ##### 4.2.1.3 Application Layer
 
-### Clase: `VehicleCommandServiceImpl`
-**Descripción:** Implementación del servicio de comandos para la gestión de vehículos.
+`ModelCommandService`
+**Descripción:** Implementación del servicio de comandos para la gestión de modelos.
 
-| Método                                   | Descripción                                 |
-|------------------------------------------|---------------------------------------------|
-| handle(CreateVehicleCommand)             | Crea un nuevo vehículo.                     |
-| handle(UpdateVehicleCommand)             | Actualiza los detalles de un vehículo.      |
-| handle(UpdateVehicleOwnerCommand)        | Cambia el dueño del vehículo.               |
-| handle(AddMechanicToVehicleCommand)      | Asigna un mecánico autorizado al vehículo.  |
-| handle(RemoveMechanicFromVehicleCommand) | Revoca el mecánico autorizado del vehículo. |
+| Método                     | Descripción                                |
+|----------------------------|--------------------------------------------|
+| handle(CreateModelCommand) | Crea un nuevo modelo.                      |
+| handle(SeedModelsCommand)  | Crea los modelos al iniciar la aplicación. |
 
-**Dependencias:**
+`ModelQueryService`
+**Descripción:** Implementación del servicio de consultas para la gestión de modelos.
 
-| Dependencia                      | Descripción                                      |
-|----------------------------------|--------------------------------------------------|
-| VehicleRepository                | Repositorio para consultar datos de vehículos.   |
-| CreateVehicleCommand             | Comando para crear un vehículo.                  |
-| UpdateVehicleCommand             | Comando para actualizar un vehículo.             |
-| UpdateVehicleOwnerCommand        | Comando para actualizar el dueño de un vehículo. |
-| AddMechanicToVehicleCommand      | Comando para asignar un mecánico a un vehículo.  |
-| RemoveMechanicFromVehicleCommand | Comando para revocar un mecánico de un vehículo. |
+| Método                        | Descripción                                                        |
+|-------------------------------|--------------------------------------------------------------------|
+| handle(GetAllModelsQuery)     | Obtiene todos los modelos registrados.                             |
+| handle(GetModelByIdQuery)     | Obtiene un modelo por su identificador.                            |
+| handle(GetModelsByBrandQuery) | Obtiene todos los modelos de una marca específica.                 |
+| handle(GetAllBrandsQuery)     | Obtiene todas las marcas existentes entre los modelos del sistema. |
 
-### Clase: `VehicleQueryServiceImpl`
+`OwnerCommandService`
+**Descripción:** Implementación del servicio de comandos para la gestión de dueños.
+
+| Método                                | Descripción                          |
+|---------------------------------------|--------------------------------------|
+| handle(CreateOwnerCommand)            | Crea un nuevo dueño de moto.         |
+| handle(AddVehicleToOwnerCommand)      | Añade un vehículo nuevo al dueño.    |
+| handle(UpdateVehicleFromOwnerCommand) | Actualiza un vehículo para su dueño. |
+| handle(DeleteVehicleFromOwnerCommand) | Elimina un vehículo de un dueño.     |
+
+`OwnerQueryService`
+**Descripción:** Implementación del servicio de consultas para la gestión de dueños.
+
+| Método                           | Descripción                                                         |
+|----------------------------------|---------------------------------------------------------------------|
+| handle(GetOwnerByIdQuery)        | Obtiene un dueño por su identificador.                              |
+| handle(GetOwnerByVehicleIdQuery) | Obtiene un dueño a través del identificador de uno de sus vehículos |
+| handle(GetAllOwnersQuery)        | Obtiene todos los dueños registrados.                               |
+
+`VehicleQueryServiceImpl`
 **Descripción:** Implementación del servicio de consultas para la gestión de vehículos.
 
-| Método                               | Descripción                                           |
-|--------------------------------------|-------------------------------------------------------|
-| handle(GetVehicleByIdQuery)          | Obtiene un vehículo por su ID.                        |
-| handle(GetVehiclesByOwnerIdQuery)    | Obtiene todos los vehículos de un dueño               |
-| handle(GetVehiclesByMechanicIdQuery) | Obtiene todos los vehículos vinculados a un mecánico. |
-| handle(GetVehicleByVinQuery)         | Obtiene un vehículo por su VIN.                       |
-
-**Dependencias:**
-
-| Dependencia                  | Descripción                                           |
-|------------------------------|-------------------------------------------------------|
-| VehicleRepository            | Repositorio para acceder a datos de vehículos.        |
-| GetVehicleByIdQuery          | Obtiene un vehículo por su ID.                        |
-| GetVehiclesByOwnerIdQuery    | Obtiene todos los vehículos de un dueño.              |
-| GetVehiclesByMechanicIdQuery | Obtiene todos los vehículos vinculados a un mecánico. |
-| GetVehicleByVinQuery         | Obtiene un vehículo por su VIN.                       |
+| Método                         | Descripción                       |
+|--------------------------------|-----------------------------------|
+| handle(GetVehicleByIdQuery)    | Obtiene un vehículo por su ID.    |
+| handle(GetVehicleByPlateQuery) | Obtiene un vehículo por su placa. |
 
 ##### 4.2.1.4 Infrastructure Layer
 
-### Clase: `VehicleRepository`
-**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de vehículos.
+`OwnerRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de dueños.
 
-| Método                            | Descripción                                |
-|-----------------------------------|--------------------------------------------|
-| save(Vehicle vehicle)             | Guarda o actualiza un vehículo.            |
-| findById(Long id)                 | Busca un vehículo por su ID.               |
-| findByVin(String vin)             | Busca un vehículo por su VIN.              |
-| findByOwnerId(Long ownerId)       | Busca vehículos por ID de dueño.           |
-| findByMechanicId(Long mechanicId) | Busca vehículos por ID de mecánico.        |
-| existsByVin(String vin)           | Verifica si un vehículo existe por su VIN. |
-| deleteById(Long id)               | Elimina un vehículo por su ID.             |
+| Método                 | Tipo de Retorno | Descripción                                  |
+|------------------------|-----------------|----------------------------------------------|
+| findOwnerByProfile_Id  | Optional<Owner> | Encuentra un dueño por su id de perfil.      |
+| findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
+
+`ModelRepository`
+**Descripción:** Interfaz de persistencia para operaciones CRUD y consultas de datos de modelos.
+
+| Método        | Tipo de Retorno | Descripción                                          |
+|---------------|-----------------|------------------------------------------------------|
+| existsByName  | boolean         | Valida la existencia de un modelo por su nombre.     |
+| findByBrand   | List<Model>     | Encuentra los modelos bajo una marca específica.     |
+| findAllBrands | List<String>    | Encuentra todas las marcas presentes en los modelos. |
+
+`VehicleReadRepositories`
+**Descripción:** Interfaz de persistencia para operaciones de lectura de vehículos.
+
+| Método                 | Tipo de Retorno | Descripción                                  |
+|------------------------|-----------------|----------------------------------------------|
+| findOwnerByProfile_Id  | Optional<Owner> | Encuentra un dueño por su id de perfil.      |
+| findOwnerByVehicles_Id | Optional<Owner> | Encuentra un Owner por uno de sus vehículos. |
 
 ##### 4.2.1.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -1630,743 +1846,249 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ##### 4.2.1.6 Bounded Context Software Architecture Code Level Diagrams
 
 ###### 4.2.1.6.1 Bounded Context Domain Layer Class Diagrams
-
-![Class Diagram](images/chapter-4/vehicle_management_bounded_context_domain_layer_class_diagram.png)
+<img src="./images/chapter-4/vehicle_management_bounded_context_domain_layer_class_diagram.jpg" alt="vehicles_domain_layer" width="1227"/>
 
 ###### 4.2.1.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
+<img src="./images/chapter-4/vehicles_db.png" alt="vehicle_db" width="431"/>
 
-#### 4.2.2 Bounded Context: Historiales
+#### 4.2.2 Bounded Context: Maintenance
 
 ##### 4.2.2.1 Domain Layer
 
-<h3>Aggregate: <code>ServiceHistory</code></h3>
-<p><strong>Descripción:</strong> Representa el registro histórico de servicios de mantenimiento y reparaciones realizadas a un vehículo, incluyendo detalles de gastos, repuestos utilizados y mecánicos involucrados.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>Identificador único del registro de servicio.</td>
-    </tr>
-    <tr>
-      <td>vehicleId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del vehículo al que se le realizó el servicio.</td>
-    </tr>
-    <tr>
-      <td>mechanicId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del mecánico que realizó el servicio.</td>
-    </tr>
-    <tr>
-      <td>serviceType</td>
-      <td>ServiceType</td>
-      <td>Private</td>
-      <td>Tipo de servicio realizado (mantenimiento, reparación, revisión).</td>
-    </tr>
-    <tr>
-      <td>serviceDate</td>
-      <td>Date</td>
-      <td>Private</td>
-      <td>Fecha en que se realizó el servicio.</td>
-    </tr>
-    <tr>
-      <td>mileage</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Kilometraje del vehículo al momento del servicio.</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String</td>
-      <td>Private</td>
-      <td>Descripción detallada del servicio realizado.</td>
-    </tr>
-    <tr>
-      <td>totalCost</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Costo total del servicio.</td>
-    </tr>
-  </tbody>
-</table>
+**Aggregates**
 
-<h3>Aggregate:<code>ExpenseHistory</code></h3>
-<p><strong>Descripción:</strong>Registra todos los gastos asociados a un vehículo por un usuario</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>Identificador único del gasto.</td>
-    </tr>
-    <tr>
-      <td>vehicleId</td>
-      <td>Long</td>
-      <td>Private</td>
-      <td>ID del vehículo asociado.</td>
-    </tr>
-    <tr>
-      <td>expenseType</td>
-      <td>ExpenseType</td>
-      <td>Private</td>
-      <td>Tipo de gasto.</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String</td>
-      <td>Private</td>
-      <td>Descripción del gasto.</td>
-    </tr>
-    <tr>
-      <td>amount</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Monto del gasto.</td>
-    </tr>
-    <tr>
-      <td>mileage</td>
-      <td>double</td>
-      <td>Private</td>
-      <td>Kilometraje al momento del gasto.</td>
-    </tr>
-  </tbody>
-</table>
+`Expense`
+**Descripción:** Representa un gasto registrado en el sistema, el cual puede ser de tipo personal o de mantenimiento. Agrupa los ítems del gasto y su clasificación.
 
-<h3>Interfaz:<code>ServiceHistoryQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de servicio.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetServiceHistoryByVehicleQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetServiceHistoryByIdQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetServicesByIdQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetServicesByDateRange)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+| Atributos    | Tipo de dato      | Visibilidad | Descripción                                  |
+|--------------|-------------------|-------------|----------------------------------------------|
+| id           | Long              | Private     | Identificador único del gasto.               |
+| name         | String            | Private     | Nombre o concepto del gasto.                 |
+| finalPrice   | Double            | Private     | Precio final acumulado del gasto.            |
+| userId       | Long              | Private     | Identificador del usuario creador del gasto. |
+| expenseItems | List<ExpenseItem> | Private     | Lista de ítems detallados del gasto.         |
+| expenseType  | ExpenseType       | Private     | Clasificación del tipo de gasto.             |
 
-<h3>Interfaz:<code>ServiceHistoryCommandService</code></h3>
-<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de servicio.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(CreateServiceHistory)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(UpdateServiceHistory)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(DeleteServiceHistory)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+`Maintenance`
+**Descripción:** Representa una actividad de mantenimiento (preventivo o correctivo) realizada sobre un vehículo. Gestiona el estado, la asignación de gastos y el mecánico responsable.
 
-<h3>Interfaz:<code>ExpenseHistoryQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas para recuperar información de historias de gastos.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByTypeQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByDateRangeQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(GetTotalInvestmentQuery)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+| Atributos          | Tipo de dato     | Visibilidad | Descripción                                        |
+|--------------------|------------------|-------------|----------------------------------------------------|
+| id                 | Long             | Private     | Identificador único del mantenimiento.             |
+| details            | String           | Private     | Detalles breves del servicio.                      |
+| vehicleId          | Long             | Private     | Identificador del vehículo asociado.               |
+| dateOfService      | Date             | Private     | Fecha en la que se realiza el servicio.            |
+| location           | String           | Private     | Ubicación o taller donde se realiza el servicio.   |
+| description        | String           | Private     | Descripción detallada del trabajo.                 |
+| maintenanceExpense | Expense          | Private     | Gasto asociado al mantenimiento (opcional).        |
+| state              | MaintenanceState | Private     | Estado actual del proceso de mantenimiento.        |
+| mechanicId         | Long             | Private     | Identificador del mecánico asignado al servicio.   |
 
-<h3>Interfaz:<code>ExpenseHistoryCommandService</code></h3>
-<p><strong>Descripción:</strong>Servicio de comandos para controlar información de historias de gastos.</p>
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Visibilidad</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(CreateExpenseHistoryCommand)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(UpdateExpenseHistoryCommand)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>handle(DeleteExpenseHistoryCommand)</td>
-    <td>Público</td>
-    <td></td>
-  </tr>
-  </tbody>
-</table>
+**Entities**
 
-<h3>Value Object:<code>ServiceType</code></h3>
-<table>
-  <thead>
-    <tr>
-      <th>ServiceType</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MAINTENANCE</td>
-      <td>REPAIR</td>
-      <td>INSPECTION</td>
-      <td>INSTALLATION</td>
-    </tr>
-  </tbody>
-</table>
+`ExpenseItem`
+**Descripción:** Representa un ítem individual dentro de un registro de gasto, detallando costos unitarios y totales.
 
-<h3>Value Object:<code>ExpenseType</code></h3>
-<table>
-  <thead>
-  <tr>
-    <th>ServiceType</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>MAINTENANCE</td>
-    <td>FUEL</td>
-    <td>INSURANCE</td>
-    <td>PROCEDURE</td>
-    <td>AESTHETIC</td>
-  </tr>
-  </tbody>
-</table>
+| Atributos  | Tipo de dato | Visibilidad | Descripción                             |
+|------------|--------------|-------------|-----------------------------------------|
+| id         | Long         | Private     | Identificador único del ítem.           |
+| name       | String       | Private     | Nombre del ítem.                        |
+| amount     | Integer      | Private     | Cantidad de unidades.                   |
+| unitPrice  | Double       | Private     | Precio por unidad.                      |
+| totalPrice | Double       | Private     | Precio total (cantidad * unitario).     |
+| expense    | Expense      | Private     | Gasto al que pertenece este ítem.       |
+| itemType   | ItemType     | Private     | Categoría del ítem (Multa, herramientas, etc.). |
 
-<table>
-    <thead>
-        <tr>
-            <td>Commands</td>
-            <td>Description</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>CreateHistoryCommand</td>
-          <td>Crea una historia de servicio.</td>
-        </tr>
-        <tr>
-          <td>UpdateServiceHistoryCommand</td>
-          <td>Actualiza una historia de servicio.</td>
-        </tr>
-        <tr>
-          <td>DeleteServiceHistoryCommand</td>
-          <td>Elimina una historia de servicio.</td>
-        </tr>
-        <tr>
-          <td>CreateExpenseHistoryCommand</td>
-          <td>Crea una historia de gasto.</td>
-        </tr>
-        <tr>
-          <td>DeleteExpenseHistoryCommand</td>
-          <td>Elimina una historia de gasto.</td>
-        </tr>
-        <tr>
-          <td>UpdateExpenseHistoryCommand</td>
-          <td>Actualiza una historia de gasto.</td>
-        </tr>
-    </tbody>
-</table>
+`ExpenseType`, `ItemType`, `MaintenanceState` (Entidades de catálogo)
 
-<table>
-  <thead>
-  <tr>
-    <td>Queries</td>
-    <td>Description</td>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>GetServiceHistoriesByVehicleQuery</td>
-    <td>Obtiene las historias de servicios realizados a un vehículo específico.</td>
-  </tr>
-  <tr>
-    <td>GetServiceHistoryByIdQuery</td>
-    <td>Recupera el detalle de un servicio en particular a partir de su identificador único.</td>
-  </tr>
-  <tr>
-    <td>GetServicesByTypeQuery</td>
-    <td>Filtra y devuelve los servicios de un vehículo según el tipo de servicio solicitado.</td>
-  </tr>
-  <tr>
-    <td>GetServicesByDateRangeQuery</td>
-    <td>Obtiene todos los servicios realizados a un vehículo dentro de un rango de fechas específico.</td>
-  </tr>
-  <tr>
-    <td>GetExpenseHistoryByVehicleQuery</td>
-    <td>Recupera el historial de gastos relacionados a un vehículo a lo largo del tiempo.</td>
-  </tr>
-  <tr>
-    <td>GetExpenseByTypeQuery</td>
-    <td>Devuelve los gastos de un vehículo clasificados por un tipo de gasto específico.</td>
-  </tr>
-  <tr>
-    <td>GetExpensesByDateRangeQuery</td>
-    <td>Obtiene todos los gastos de un vehículo registrados dentro de un rango de fechas definido.</td>
-  </tr>
-  <tr>
-    <td>GetTotalInvestmentQuery</td>
-    <td>Calcula el monto total invertido en un vehículo, sumando servicios y gastos registrados.</td>
-  </tr>
-  </tbody>
-</table>
+**Value Objects**
+
+`ExpenseTypes` (Enum: PERSONAL, MAINTENANCE)
+`ItemTypes` (Enum: FINE, PARKING, PAYMENT, SUPPLIES, TAX, TOOLS)
+`MaintenanceStates` (Enum: PENDING, IN_PROGRESS, COMPLETED, CANCELLED)
+
+**Commands**
+* AddExpenseItemCommand <<record>>
+* AssignExpenseToMaintenanceCommand <<record>>
+* CreateExpenseByOwnerIdCommand <<record>>
+* CreateExpenseCommand <<record>>
+* CreateMaintenanceCommand <<record>>
+* DeleteExpenseCommand <<record>>
+* DeleteExpenseItemsByExpenseIdCommand <<record>>
+* DeleteMaintenanceCommand <<record>>
+* SeedExpenseTypesCommand <<record>>
+* SeedItemTypesCommand <<record>>
+* SeedMaintenanceStatesCommand <<record>>
+* UpdateStateOfMaintenanceByIdCommand <<record>>
+
+**Queries**
+* GetAllExpenseItemsByExpenseIdQuery <<record>>
+* GetAllExpensesByUserIdQuery <<record>>
+* GetAllMaintenancesByMechanicIdQuery <<record>>
+* GetAllMaintenancesByVehicleIdQuery <<record>>
+* GetExpenseByIdQuery <<record>>
+* GetMaintenanceByIdQuery <<record>>
+* GetMaintenancesByOwnerIdQuery <<record>>
+
+**Services**
+
+`ExpenseCommandService`
+* handle(CreateExpenseCommand)
+* handle(CreateExpenseByOwnerIdCommand)
+* handle(DeleteExpenseCommand)
+
+`ExpenseItemCommandService`
+* handle(AddExpenseItemCommand)
+* handle(DeleteExpenseItemsByExpenseIdCommand)
+
+`ExpenseQueryService`
+* handle(GetAllExpensesByUserIdQuery)
+* handle(GetExpenseByIdQuery)
+
+`MaintenanceCommandService`
+* handle(CreateMaintenanceCommand)
+* handle(DeleteMaintenanceCommand)
+* handle(AssignExpenseToMaintenanceCommand)
+* handle(UpdateStateOfMaintenanceByIdCommand)
+
+`MaintenanceQueryService`
+* handle(GetAllMaintenancesByVehicleIdQuery)
+* handle(GetMaintenanceByIdQuery)
+* handle(GetAllMaintenancesByMechanicIdQuery)
+* handle(GetMaintenancesByOwnerIdQuery)
+
+`SeedServices` (Agrupación lógica)
+* ExpenseTypeCommandService.handle(SeedExpenseTypesCommand)
+* ItemTypeCommandService.handle(SeedItemTypesCommand)
+* MaintenanceStateCommandService.handle(SeedMaintenanceStatesCommand)
 
 ##### 4.2.2.2 Interface Layer
 
-<h3>Controlador:<code>HistoryController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>HistoryController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST que maneja las operaciones relacionadas con el historial de servicios y gastos de vehículos.</td>
-  </tr>
-</table>
+**Rest Controllers**
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>getServiceHistory(Long vehicleId)</td>
-      <td>GET /api/v1/history/service/{vehicleId}</td>
-      <td>Obtiene el historial completo de servicios de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>getServiceHistoryById(Long id)</td>
-      <td>GET /api/v1/history/service/{id}</td>
-      <td>Obtiene un servicio específico por su ID.</td>
-    </tr>
-    <tr>
-      <td>addServiceHistory(ServiceHistory history)</td>
-      <td>POST /api/v1/history/service</td>
-      <td>Agrega un nuevo registro de servicio.</td>
-    </tr>
-    <tr>
-      <td>updateServiceHistory(Long id, ServiceHistory history)</td>
-      <td>PUT /api/v1/history/service/{id}</td>
-      <td>Actualiza un registro de servicio existente.</td>
-    </tr>
-    <tr>
-      <td>deleteServiceHistory(Long id)</td>
-      <td>DELETE /api/v1/history/service/{id}</td>
-      <td>Elimina un registro de servicio.</td>
-    </tr>
-    <tr>
-      <td>getExpenseHistory(Long vehicleId)</td>
-      <td>GET /api/v1/history/expense/{vehicleId}</td>
-      <td>Obtiene el historial completo de gastos de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>addExpenseHistory(ExpenseHistory history)</td>
-      <td>POST /api/v1/history/expense</td>
-      <td>Agrega un nuevo registro de gasto al historial.</td>
-    </tr>
-    <tr>
-      <td>getMonthlySummary(Long vehicleId, int year, string month)</td>
-      <td>GET /api/v1/history/summary/{vehicleId}/{year}/{month}</td>
-      <td>Obtiene un resumen mensual de servicios y gastos.</td>
-    </tr>
-    <tr>
-      <td>getMaintenanceTimeline(Long vehicleId)</td>
-      <td>GET /api/v1/history/timeline/{vehicleId}</td>
-      <td>Obtiene una línea de tiempo de todos los mantenimientos.</td>
-    </tr>
-    <tr>
-      <td>exportHistoryReport(Long vehicleId)</td>
-      <td>GET /api/v1/history/export/{vehicleId}</td>
-      <td>Exporta el historial completo a formato PDF/Excel.</td>
-    </tr>
-  </tbody>
-</table>
+`ExpenseController`
+**Descripción:** Controlador REST que maneja las operaciones relacionadas con la gestión de gastos y sus ítems.
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HistoryResource</td>
-      <td>Recurso REST representante de un elemento de historial</td>
-    </tr>
-    <tr>
-      <td>CreateServiceHistoryResource</td>
-      <td>Recurso REST representante de la creación de un elemento de historial de servicios</td>
-    </tr>
-    <tr>
-      <td>CreateExpenseHistoryResource</td>
-      <td>Recurso REST representante de la creación de un elemento de historial de gastos</td>
-    </tr>
-    <tr>
-      <td>HistoryQueryService</td>
-      <td>Servicio para consultas y recuperación de datos de historiales.</td>
-    </tr>
-    <tr>
-      <td>HistoryCommandService</td>
-      <td>Servicio para ejecutar comandos de creación, actualización y eliminación de registros históricos.</td>
-    </tr>
-    <tr>
-      <td>CreateServiceHistoryCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de historiales de servicio.</td>
-    </tr>
-    <tr>
-      <td>CreateExpenseHistoryCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de historiales de gastos.</td>
-    </tr>
-    <tr>
-      <td>HistoryResourceFromEntityAssembler</td>
-      <td>Convierte entidades de historial en recursos REST para la respuesta.</td>
-    </tr>
-  </tbody>
-</table>
+| Método                 | Ruta                                  | Descripción                                            |
+|------------------------|---------------------------------------|--------------------------------------------------------|
+| getAllExpenses()       | GET /api/v1/expense                   | Obtiene todos los gastos del usuario autenticado.      |
+| createExpenseByOwnerId()| POST /api/v1/expense/owner/{ownerId} | Crea un gasto asociado a un dueño específico.          |
+| createExpense()        | POST /api/v1/expense/{userId}         | Crea un nuevo gasto para un usuario.                   |
+| getExpense()           | GET /api/v1/expense/{expenseId}       | Obtiene el detalle de un gasto por su ID.              |
+| deleteExpense()        | DELETE /api/v1/expense/{expenseId}    | Elimina un gasto existente.                            |
+
+`MaintenanceController`
+**Descripción:** Controlador REST que maneja las operaciones del ciclo de vida de los mantenimientos.
+
+| Método                      | Ruta                                                       | Descripción                                                       |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
+| getMaintenanceById()        | GET /api/v1/maintenance/{maintenanceId}                    | Obtiene un mantenimiento por su identificador.                    |
+| getMaintenancesByUserId()   | GET /api/v1/maintenance/vehicle/{vehicleId}                | Obtiene los mantenimientos asociados a un vehículo.               |
+| getMaintenancesByOwnerId()  | GET /api/v1/maintenance/owner/{ownerId}                    | Obtiene los mantenimientos de todos los vehículos de un dueño.    |
+| deleteMaintenanceById()     | DELETE /api/v1/maintenance/{maintenanceId}                 | Elimina un registro de mantenimiento.                             |
+| createMaintenance()         | POST /api/v1/maintenance                                   | Registra un nuevo mantenimiento.                                  |
+| updateMaintenanceStatusById()| PUT /api/v1/maintenance/{maintenanceId}                   | Actualiza el estado de un mantenimiento.                          |
+| assignExpenseToMaintenance()| PUT /api/v1/maintenance/{maintenanceId}/expense/assign/{id}| Asigna un gasto existente a un mantenimiento.                     |
+| getMaintenancesByMechanicId()| GET /api/v1/maintenance/mechanic/{mechanicId}             | Obtiene los mantenimientos asignados a un mecánico.               |
+
+**Resources**
+* CreateExpenseResource <<record>>
+* ExpenseResource <<record>>
+* CreateMaintenanceResource <<record>>
+* MaintenanceResource <<record>>
+* UpdateStatusOfMaintenanceResource <<record>>
+
+**Assemblers**
+* ExpenseResourceFromEntityAssembler
+* MaintenanceResourceFromEntityAssembler
+* CreateMaintenanceCommandFromResourceAssembler
 
 ##### 4.2.2.3 Application Layer
 
-<h3>Clase: <code>HistoryQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>HistoryQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de servicios.</td>
-  </tr>
-</table>
+`ExpenseCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos para la gestión de gastos.
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(GetServiceHistoryByVehicleQuery)</td>
-      <td>Obtiene el historial completo de servicios de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetServiceHistoryByIdQuery)</td>
-      <td>Obtiene un servicio específico por su ID.</td>
-    </tr>
-    <tr>
-      <td>handle(GetServicesByTypeQuery)</td>
-      <td>Filtra servicios por tipo.</td>
-    </tr>
-    <tr>
-      <td>handle(GetServicesByDateRangeQuery)</td>
-      <td>Obtiene servicios dentro de un rango de fechas.</td>
-    </tr>
-  </tbody>
-</table>
+| Método                               | Descripción                                                  |
+|--------------------------------------|--------------------------------------------------------------|
+| handle(CreateExpenseCommand)         | Crea un gasto validando la existencia del usuario.           |
+| handle(CreateExpenseByOwnerIdCommand)| Crea un gasto a partir del ID de un dueño, resolviendo su usuario.|
+| handle(DeleteExpenseCommand)         | Elimina un gasto por su ID.                                  |
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ServiceHistoryRepository</td>
-      <td>Repositorio para acceso a datos de historiales de servicio.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
+`ExpenseQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para gastos.
 
-<h3>Clase: <code>ServiceHistoryCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ServiceHistoryCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de servicios</td>
-  </tr>
-</table>
+| Método                              | Descripción                                      |
+|-------------------------------------|--------------------------------------------------|
+| handle(GetAllExpensesByUserIdQuery) | Recupera todos los gastos de un usuario.         |
+| handle(GetExpenseByIdQuery)         | Recupera un gasto específico por su ID.          |
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(CreateServiceHistoryCommand)</td><td>Crea un nuevo registro de servicio en el historial.</td></tr>
-    <tr><td>handle(UpdateServiceHistoryCommand)</td><td>Actualiza un registro de servicio existente.</td></tr>
-    <tr><td>handle(DeleteServiceHistoryCommand)</td><td>Elimina un registro de servicio.</td></tr>
-  </tbody>
-</table>
+`ExpenseItemCommandServiceImpl`
+**Descripción:** Implementación para la gestión de ítems dentro de los gastos.
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>ServiceHistoryRepository</td><td>Repositorio para persistencia de historiales de servicio.</td></tr>
-  </tbody>
-</table>
+| Método                                      | Descripción                                      |
+|---------------------------------------------|--------------------------------------------------|
+| handle(AddExpenseItemCommand)               | Agrega un nuevo ítem a un gasto existente.       |
+| handle(DeleteExpenseItemsByExpenseIdCommand)| Elimina todos los ítems asociados a un gasto.    |
 
-<h3>Clase: <code>ExpenseHistoryQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ExpenseHistoryQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para operaciones de lectura relacionadas con historiales de gastos.</td>
-  </tr>
-</table>
+`MaintenanceCommandServiceImpl`
+**Descripción:** Implementación del servicio de comandos para el ciclo de vida del mantenimiento.
 
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>handle(GetExpenseHistoryByVehicleQuery)</td>
-    <td>Obtiene el historial completo de gastos de un vehículo.</td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByTypeQuery)</td>
-    <td>Filtra gastos por tipo.</td>
-  </tr>
-  <tr>
-    <td>handle(GetExpensesByDateRangeQuery)</td>
-    <td>Obtiene gastos dentro de un rango de fechas.</td>
-  </tr>
-  <tr>
-    <td>handle(GetTotalInvestmentQuery)</td>
-    <td>Calcula la inversión total en un vehículo.</td>
-  </tr>
-  </tbody>
-</table>
+| Método                                     | Descripción                                                           |
+|--------------------------------------------|-----------------------------------------------------------------------|
+| handle(CreateMaintenanceCommand)           | Crea un mantenimiento validando el vehículo y estado inicial PENDING. |
+| handle(DeleteMaintenanceCommand)           | Elimina un mantenimiento y su gasto asociado si existe.               |
+| handle(AssignExpenseToMaintenanceCommand)  | Asocia un registro de gasto a un mantenimiento.                       |
+| handle(UpdateStateOfMaintenanceByIdCommand)| Actualiza el estado (e.j. IN_PROGRESS, COMPLETED) del mantenimiento.  |
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>ExpenseHistoryRepository</td>
-    <td>Repositorio para acceso a datos de historiales de gastos.</td>
-  </tr>
-  </tbody>
-</table>
-<hr>
+`MaintenanceQueryServiceImpl`
+**Descripción:** Implementación del servicio de consultas para mantenimientos.
 
-<h3>Clase: <code>ExpenseHistoryCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ExpenseHistoryCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de escritura relacionadas con historiales de gastos</td>
-  </tr>
-</table>
+| Método                                      | Descripción                                                      |
+|---------------------------------------------|------------------------------------------------------------------|
+| handle(GetAllMaintenancesByVehicleIdQuery)  | Obtiene el historial de mantenimientos de un vehículo.           |
+| handle(GetMaintenanceByIdQuery)             | Obtiene el detalle de un mantenimiento específico.               |
+| handle(GetAllMaintenancesByMechanicIdQuery) | Lista los mantenimientos asignados a un mecánico.                |
+| handle(GetMaintenancesByOwnerIdQuery)       | Lista los mantenimientos de todos los vehículos de un dueño.     |
 
-<table>
-  <thead>
-  <tr>
-    <th>Método</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr><td>handle(CreateExpenseHistoryCommand)</td><td>Crea un nuevo registro de gasto en el historial.</td></tr>
-  <tr><td>handle(UpdateExpenseHistoryCommand)</td><td>Actualiza un registro de gasto existente.</td></tr>
-  <tr><td>handle(DeleteExpenseHistoryCommand)</td><td>Elimina un registro de gasto.</td></tr>
-  </tbody>
-</table>
+`MaintenanceApplicationReadyEventHandler`
+**Descripción:** Manejador de eventos de inicio de aplicación para la carga de datos semilla (Seeders).
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-  <tr>
-    <th>Dependencia</th>
-    <th>Descripción</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>ExpenseHistoryRepository</td>
-    <td>Repositorio para persistencia de historiales de gastos.</td>
-  </tr>
-  </tbody>
-</table>
+| Método             | Descripción                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| onApplicationReady | Ejecuta los comandos de Seed para Tipos de Gasto, Items y Estados de Mant.  |
 
 ##### 4.2.2.4 Infrastructure Layer
 
-<h3>Interfaz:<code>ServiceHistoryRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ServiceHistoryRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas específicas de historiales de servicio.</td>
-  </tr>
-</table>
+`ExpenseRepository`
+**Descripción:** Interfaz de persistencia para la entidad Expense.
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de servicio asociados a un vehículo.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todos los historiales de servicio realizados por un mecánico.</td></tr>
-    <tr><td>findByServiceTypeAndVehicleId(ServiceType type, Long vehicleId)</td><td>Filtra historiales por tipo de servicio y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp start, Timestamp end, Long vehicleId)</td><td>Obtiene historiales dentro de un rango de fechas para un vehículo.</td></tr>
-    <tr><td>findLatestServiceByVehicleId(Long vehicleId)</td><td>Obtiene el servicio más reciente de un vehículo.</td></tr>
-    <tr><td>calculateTotalSpentByVehicleId(Long vehicleId)</td><td>Calcula el total gastado en servicios para un vehículo.</td></tr>
-  </tbody>
-</table>
+| Método       | Tipo de Retorno | Descripción                                    |
+|--------------|-----------------|------------------------------------------------|
+| findByUserId | List<Expense>   | Encuentra todos los gastos de un usuario.      |
 
-<h3>Interfaz:<code>ExpenseHistoryRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ExpenseHistoryRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones CRUD y consultas relacionadas con historiales de gastos.</td>
-  </tr>
-</table>
+`ExpenseItemRepository`
+**Descripción:** Interfaz de persistencia para los ítems de gasto.
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todos los historiales de gasto asociados a un vehículo.</td></tr>
-    <tr><td>findByExpenseTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Filtra gastos por tipo y vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Date start, Date end, Long vehicleId)</td><td>Obtiene gastos dentro de un rango de fechas para un vehículo.</td></tr>
-    <tr><td>calculateTotalExpensesByVehicleId(Long vehicleId)</td><td>Calcula el total gastado para un vehículo.</td></tr>
-    <tr><td>calculateExpensesByTypeAndVehicleId(ExpenseType type, Long vehicleId)</td><td>Calcula el gasto por tipo para un vehículo.</td></tr>
-  </tbody>
-</table>
+| Método                         | Tipo de Retorno | Descripción                                      |
+|--------------------------------|-----------------|--------------------------------------------------|
+| deleteExpenseItemsByExpense_Id | void            | Elimina todos los ítems de un ID de gasto dado.  |
+
+`MaintenanceRepository`
+**Descripción:** Interfaz de persistencia para la entidad Maintenance.
+
+| Método            | Tipo de Retorno   | Descripción                                                |
+|-------------------|-------------------|------------------------------------------------------------|
+| findByVehicleId   | List<Maintenance> | Encuentra mantenimientos por ID de vehículo.               |
+| findByMechanicId  | List<Maintenance> | Encuentra mantenimientos asignados a un mecánico.          |
+| findByVehicleIdIn | List<Maintenance> | Encuentra mantenimientos para una lista de IDs de vehículo.|
+
+`MaintenanceStateRepository`, `ExpenseTypeRepository`, `ItemTypeRepository`
+**Descripción:** Repositorios de catálogo para validar existencia de tipos y estados.
+
+| Método       | Tipo de Retorno | Descripción                                  |
+|--------------|-----------------|----------------------------------------------|
+| existsByName | boolean         | Valida si ya existe el tipo o estado en BD.  |
 
 ##### 4.2.2.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -2376,427 +2098,185 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.2.6.1 Bounded Context Domain Layer Class Diagrams
 
-![histories-class-diagram.png](images/chapter-4/histories-class-diagram.png)
+![maintenance-class-diagram.png](images/chapter-4/maintenance-class-diagram.png)
 
 ###### 4.2.2.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/history_db.png" alt="history_db" width="600"/>
+![maintenance-db.png](images/chapter-4/maintenance-db.png)
 
-#### 4.2.3 Bounded Context: Suscripción
+#### 4.2.3 Bounded Context: Assignments
 
 ##### 4.2.3.1 Domain Layer
 
-<h3>Aggregate: <code>Appointment</code></h3>
-<p><strong>Descripción:</strong> Representa una cita programada entre un <code>Mechanic</code> y un vehículo específico, con fecha y hora definidas.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>Identificador único del mecánico asignado.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Private</td><td>Identificador único del vehículo asociado.</td></tr>
-    <tr><td>scheduleAt</td><td>LocalDateTime</td><td>Private</td><td>Fecha y hora de la cita.</td></tr>
-  </tbody>
-</table>
+**Aggregates**
 
-<h3>Aggregate: <code>Subscription</code></h3>
-<p><strong>Descripción:</strong> Representa la relación entre un <code>User</code> (motociclista) y un <code>Mechanic</code>, establecida mediante una suscripción con código de invitación.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Atributos</th>
-      <th>Tipo de dato</th>
-      <th>Visibilidad</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>mechanicId</td><td>Long</td><td>Private</td><td>ID del mecánico vinculado.</td></tr>
-    <tr><td>userId</td><td>Long</td><td>Private</td><td>ID del usuario (motociclista).</td></tr>
-    <tr><td>status</td><td>SubscriptionStatus</td><td>Private</td><td>Estado actual de la suscripción.</td></tr>
-    <tr><td>invitationCode</td><td>String</td><td>Private</td><td>Código de invitación generado para vincular al usuario.</td></tr>
-  </tbody>
-</table>
+`Assignment`
+**Descripción:** Representa una asignación (relación) entre un mecánico y un dueño de motocicleta
 
-<h3>Value Objects</h3>
-<h4><code>AppointmentStatus</code> (Enum)</h4>
-<ul>
-  <li>SCHEDULED</li>
-  <li>COMPLETED</li>
-  <li>CANCELED</li>
-</ul>
-<h4><code>SubscriptionStatus</code> (Enum)</h4>
-<ul>
-  <li>ACTIVATED</li>
-  <li>CANCELED</li>
-</ul>
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                            |
+|----------------|------------------|-------------|----------------------------------------|
+| ownerId        | Long             | Private     | Identificador único del dueño asignado |
+| mechanic       | Mechanic         | Private     | Mecanico asignado                      |
+| status         | AssignmentStatus | Private     | Estado de la asignación                |
+| type           | AssignmentType   | Private     | Tipo de asignación                     |
+| assignmentCode | AssignmentCode   | Private     | Código único de la asignación          |
 
-<h3>Commands</h3>
-<ul>
-  <li>ScheduleAppointmentCommand &lt;&lt;Record&gt;&gt;</li>
-  <li>GenerateInvitationCodeCommand &lt;&lt;Record&gt;&gt;</li>
-  <li>CancelSubscriptionCommand &lt;&lt;Record&gt;&gt;</li>
-  <li>LinkMotorcyclistToMechanicCommand &lt;&lt;Record&gt;&gt;</li>
-</ul>
+`Mechanic`
+**Descripción:** Representa al mecánico en el sistema
 
-<h3>Queries</h3>
-<ul>
-  <li>GetAppointmentByIdQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetAppointmentByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetAppointmentsByDateRangeQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetUsersByMechanicQuery &lt;&lt;Record&gt;&gt;</li>
-  <li>GetSubscriptionByIdQuery &lt;&lt;Record&gt;&gt;</li>
-</ul>
+| Atributos   | Tipo de dato     | Visibilidad | Descripción           |
+|-------------|------------------|-------------|-----------------------|
+| profile     | Profile          | Private     | Perfil del mecánico   |
+| assignments | List<Assignment> | Private     | Lista de asignaciones |
 
-<h3>Services</h3>
-<h4><code>AppointmentCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(ScheduleAppointmentCommand)</li>
-</ul>
-<h4><code>AppointmentQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(GetAppointmentByIdQuery)</li>
-  <li>+handle(GetAppointmentsByMechanicQuery)</li>
-  <li>+handle(GetAppointmentsByDateRangeQuery)</li>
-</ul>
-<h4><code>SubscriptionCommandService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(GenerateInvitationCodeCommand)</li>
-  <li>+handle(CancelSubscriptionCommand)</li>
-  <li>+handle(LinkMotorcyclistToMechanicCommand)</li>
-</ul>
-<h4><code>SubscriptionQueryService</code> &lt;&lt;Interface&gt;&gt;</h4>
-<ul>
-  <li>+handle(GetSubscriptionByIdQuery)</li>
-  <li>+handle(GetUsersByMechanicQuery)</li>
-</ul>
+**Value Objects**
+
+`AssignmentStatus`(Enum)
+* ACTIVE
+* PENDING
+* CANCELLED
+
+`AssignmentType`(Enum)
+* UNCATEGORIZED
+* REGULAR
+* FREQUENT
+* BUSINESS
+
+`AssignmentCode`(Record)
+
+**Commands**
+* AssignOwnerToAssignmentCommand <<record>>
+* CreateAssignmentCommand <<record>>
+* CreateMechanicCommand <<record>>
+* DeleteAssignmentCommand <<record>>
+* UpdateAssignmentStatusCommand <<record>>
+* UpdateAssignmentTypeCommand <<record>>
+
+**Queries**
+* GetAssigmentByCodeQuery <<record>>
+* GetAssignmentByIdQuery <<record>>
+* GetAssignmentByOwnerIdQuery <<record>>
+* GetAssignmentsByMechanicIdAndStatusQuery <<record>>
+* GetMechanicByIdQuery <<record>>
+
+**Services**
+
+`AssignmentCommandService`(Interface)
+* handle(CreateAssignmentCommand)
+* handle(UpdateAssignmentStatusCommand)
+* handle(UpdateAssignmentTypeCommand)
+* handle(AssignOwnerToAssignmentCommand)
+* handle(DeleteAssignmentCommand)
+
+`AssignmentQueryService`(Interface)
+* handle(GetAssignmentByOwnerIdQuery)
+* handle(GetAssignmentsByMechanicIdAndStatusQuery)
+* handle(GetAssignmentByIdQuery)
+* handle(GetAssigmentByCodeQuery)
+
+`MechanicCommandService`(Interface)
+* handle(CreateMechanicCommand)
+
+`MechanicQueryService`(Interface)
+* handle(GetMechanicByIdQuery)
 
 ##### 4.2.3.2 Interface Layer
 
-<h3>Controlador: <code>AppointmentController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las citas (<code>Appointment</code>), incluyendo su creación y consultas por ID, mecánico o rango de fechas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>createAppointment</td><td>POST /api/v1/appointments</td><td>Crea una nueva cita a partir de los datos enviados en el recurso.</td></tr>
-    <tr><td>getAppointmentById</td><td>GET /api/v1/appointments/{appointmentId}</td><td>Obtiene los detalles de una cita específica por su ID.</td></tr>
-    <tr><td>getAppointmentsByMechanic</td><td>GET /api/v1/appointments/mechanics/{mechanicId}</td><td>Lista todas las citas asociadas a un mecánico en particular.</td></tr>
-    <tr><td>getAppointmentsByDateRange</td><td>GET /api/v1/appointments?start={start}&end={end}</td><td>Obtiene todas las citas registradas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentQueryService</td><td>Servicio para consultas de citas por ID, mecánico o rango de fechas.</td></tr>
-    <tr><td>AppointmentCommandService</td><td>Servicio para ejecutar comandos relacionados con la creación de citas.</td></tr>
-    <tr><td>GenerateAppointmentCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de creación de citas.</td></tr>
-    <tr><td>AppointmentResourceFromEntityAssembler</td><td>Convierte entidades de cita en recursos REST para la respuesta de la API.</td></tr>
-  </tbody>
-</table>
+**Rest Controllers**
 
-<h3>Controlador: <code>SubscriptionController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST encargado de gestionar las operaciones relacionadas con las suscripciones (<code>Subscription</code>), incluyendo la generación de códigos de invitación, cancelación, vinculación de motociclistas y consultas por ID o mecánico.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>generateInvitationCode</td><td>POST /api/v1/subscriptions/invitations</td><td>Genera un nuevo código de invitación para vincular un motociclista con un mecánico.</td></tr>
-    <tr><td>cancelSubscription</td><td>POST /api/v1/subscriptions/{subscriptionId}/cancel</td><td>Cancela una suscripción específica por su ID.</td></tr>
-    <tr><td>linkMotorcyclist</td><td>POST /api/v1/subscriptions/link</td><td>Vincula un motociclista a un mecánico utilizando un código de invitación.</td></tr>
-    <tr><td>getSubscriptionById</td><td>GET /api/v1/subscriptions/{subscriptionId}</td><td>Obtiene los detalles de una suscripción específica por su ID.</td></tr>
-    <tr><td>getUsersByMechanic</td><td>GET /api/v1/subscriptions/mechanics/{mechanicId}/users</td><td>Lista los motociclistas vinculados a un mecánico.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionQueryService</td><td>Servicio para consultas de suscripciones por ID y usuarios vinculados a mecánicos.</td></tr>
-    <tr><td>SubscriptionCommandService</td><td>Servicio para ejecutar comandos de generación de códigos de invitación, cancelación y vinculación.</td></tr>
-    <tr><td>GenerateInvitationCodeCommandFromResourceAssembler</td><td>Convierte recursos REST en comandos de generación de códigos de invitación.</td></tr>
-    <tr><td>SubscriptionResourceFromEntityAssembler</td><td>Convierte entidades de suscripción en recursos REST para la respuesta de la API.</td></tr>
-  </tbody>
-</table>
+`AssignmentController`
 
-<h3>Resources</h3>
-<ul>
-  <li><code>CreateAppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>AppointmentResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>GenerateInvitationCodeResource</code> &lt;&lt;Record&gt;&gt;</li>
-  <li><code>SubscriptionResource</code> &lt;&lt;Record&gt;&gt;</li>
-</ul>
+| Método                  | Ruta                                                             | Descripción                                                                         |
+|-------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| updateAssignmentStatus  | /api/v1/assignments/{assignmentId}/status                        | Actualiza el estado de una asignación por su id                                     |
+| updateAssignmentType    | /api/v1/assignments/{assignmentId}/type                          | Actualiza el tipo de una asignación por su id                                       |
+| getAssignmentById       | /api/v1/assignments/{assignmentId}                               | Devuelve una asignación por su id                                                   |
+| assignOwnerToAssignment | /api/v1/assignments/code/{assignmentCode}/assign-owner/{ownerId} | Vincula un dueño con una asignación mediante un codigo de asignación y id del dueño |
+| deleteAssignment        | /api/v1/assignments/{assignmentId}                               | Elimina una asignación por su id                                                    |
+| getAssignmentByCode     | /api/v1/assignments/code/{assignmentCode}                        | Devuelve una asignación por su código                                               |
+
+`MechanicAssigmentController`
+
+| Método           | Ruta                                               | Descripción                                                      |
+|------------------|----------------------------------------------------|------------------------------------------------------------------|
+| getAssignments   | /api/v1/mechanic/{mechanicId}/assignments/{status} | Obtiene todas las asignaciones asociadas a un mecánico por su id |
+| createAssignment | /api/v1/mechanic/{mechanicId}/assignments          | Crea una asignacion y la asocia a un mecánico por su id          |
+
+`MechanicController`
+
+| Método               | Ruta             | Descripción                                                             |
+|----------------------|------------------|-------------------------------------------------------------------------|
+| getOwnersForMechanic | /api/v1/mechanic | Obtiene todos los dueños vinculados a un mecánico por alguna asignación |
+
+`OwnerAssigmentController`
+
+| Método        | Ruta                               | Descripción                                           |
+|---------------|------------------------------------|-------------------------------------------------------|
+| getAssignment | /api/v1/owner/{ownerId}/assignment | Obtiene la asignación asociada con un dueño por su id |
+
+**Resources**
+* AssignmentResource <<record>>
+* MechanicResource <<record>>
+* UpdateAssignmentStatusResource <<record>>
+* UpdateAssignmentTypeResource <<record>>
+
+**Assemblers**
+* AssignmentResourceFromEntityAssembler
+* CreateAssigmentCommandAssembler
+* MechanicResourceFromEntityAssembler
+* UpdateAssignmentStatusCommandFromResourceAssembler
+* UpdateAssignmentTypeCommandFromResourceAssembler
 
 ##### 4.2.3.3 Application Layer
 
-<h3>Clase: <code>AppointmentCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones relacionadas con citas de suscripción.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(ScheduleAppointmentCommand)</td><td>Programa una nueva cita entre un Owner y un Mechanic.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentRepository</td><td>Repositorio encargado de gestionar la persistencia de citas.</td></tr>
-  </tbody>
-</table>
+`AssignmentCommandServiceImpl`
 
-<h3>Clase: <code>SubscriptionCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos para operaciones de creación, cancelación y vinculación de suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GenerateInvitationCodeCommand)</td><td>Genera un código de invitación para que un Owner pueda invitar a un Mechanic o Motorcyclist.</td></tr>
-    <tr><td>handle(CancelSubscriptionCommand)</td><td>Cancela una suscripción activa.</td></tr>
-    <tr><td>handle(LinkMotorcyclistToMechanicCommand)</td><td>Vincula un motociclista con un mecánico dentro de una suscripción.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de la persistencia de suscripciones.</td></tr>
-  </tbody>
-</table>
+| Método                                 | Descripción                           |
+|----------------------------------------|---------------------------------------|
+| handle(CreateAssignmentCommand)        | Crea una asignación                   |
+| handle(UpdateAssignmentStatusCommand)  | Actualiza el estado de una asignación |
+| handle(UpdateAssignmentTypeCommand)    | Actualiza el tipo de una asignación   |
+| handle(AssignOwnerToAssignmentCommand) | Asigna un dueño a una asignación      |
+| handle(DeleteAssignmentCommand)        | Elimina un asignación                 |
 
-<h3>Clase: <code>AppointmentQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas para obtener información de citas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GetAppointmentByIdQuery)</td><td>Obtiene una cita específica por su ID.</td></tr>
-    <tr><td>handle(GetAppointmentsByMechanicQuery)</td><td>Lista todas las citas programadas para un mecánico específico.</td></tr>
-    <tr><td>handle(GetAppointmentsByDateRangeQuery)</td><td>Obtiene todas las citas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>AppointmentRepository</td><td>Repositorio encargado de consultas de citas.</td></tr>
-  </tbody>
-</table>
+`AssignmentQueryServiceImpl`
 
-<h3>Clase: <code>SubscriptionQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de consultas relacionadas con suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr><th>Método</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>handle(GetSubscriptionByIdQuery)</td><td>Obtiene los detalles de una suscripción por su ID.</td></tr>
-    <tr><td>handle(GetUsersByMechanicQuery)</td><td>Lista todos los Owners y Motorcyclists vinculados a un mecánico a través de suscripciones.</td></tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr><th>Dependencia</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>SubscriptionRepository</td><td>Repositorio encargado de consultas de suscripciones.</td></tr>
-  </tbody>
-</table>
+| Método                                           | Descripción                                                           |
+|--------------------------------------------------|-----------------------------------------------------------------------|
+| handle(GetAssignmentByOwnerIdQuery)              | Obtiene una asignación por el id del dueño                            |
+| handle(GetAssignmentsByMechanicIdAndStatusQuery) | Obtiene las asignaciones por id de mecánico y estado de la asignación |
+| handle(GetAssignmentByIdQuery)                   | Obtiene una asignación por su id                                      |
+| handle(GetAssigmentByCodeQuery)                  | Obtiene una asignación por su código de asignación                    |
+
+`MechanicCommandServiceImpl`
+
+| Método                        | Descripción      |
+|-------------------------------|------------------|
+| handle(CreateMechanicCommand) | Crea un mecánico |
+
+`MechanicQueryServiceImpl`
+
+| Método                       | Descripción                   |
+|------------------------------|-------------------------------|
+| handle(GetMechanicByIdQuery) | Obtiene un mecánico por su id |
 
 ##### 4.2.3.4 Infrastructure Layer
 
-<h3>Clase: <code>AppointmentRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>AppointmentRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Appointment</code>, que gestiona las operaciones de acceso a datos de citas de suscripción.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Appointment)</td><td>Guarda o actualiza una cita en la base de datos.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una cita por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de una cita por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe una cita por su ID.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Obtiene todas las citas asociadas a un mecánico específico.</td></tr>
-    <tr><td>findByScheduleAtBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista todas las citas programadas dentro de un rango de fechas.</td></tr>
-  </tbody>
-</table>
+`AssignmentRepository`(interface)
 
-<h3>Clase: <code>SubscriptionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>SubscriptionRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para operaciones de acceso y gestión de <code>Subscription</code> en la base de datos. Extiende de un repositorio genérico para CRUD y define consultas específicas.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Subscription)</td><td>Guarda o actualiza una suscripción en la base de datos.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina (soft delete o hard delete) una suscripción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Recupera una suscripción por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe una suscripción por su ID.</td></tr>
-    <tr><td>findByOwnerId(Long, Pageable)</td><td>Obtiene todas las suscripciones de un dueño de vehículo, paginadas.</td></tr>
-    <tr><td>findByMechanicId(Long mechanicId)</td><td>Lista todas las suscripciones asociadas a un mecánico específico.</td></tr>
-    <tr><td>findByInvitationCode(String code)</td><td>Recupera una suscripción a partir de un código de invitación.</td></tr>
-    <tr><td>findByVehicleId(Long)</td><td>Obtiene la suscripción vinculada a un vehículo.</td></tr>
-    <tr><td>findExpiringBetween(LocalDateTime start, LocalDateTime end)</td><td>Lista suscripciones que expiran en un rango de fechas.</td></tr>
-  </tbody>
-</table>
+| Método                                         | Tipo de Retorno      | Descripción                                                                                                                |
+|------------------------------------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------|
+| findByOwnerIdAndStatus                         | Optional<Assignment> | Encuentra una asignación por el id del dueño y el estado                                                                   |
+| findByMechanic_IdAndStatusOrderByCreatedAtDesc | List<Assignment>     | Encuentra las asignaciones por el id del mecánico, el estado y las ordena de manera descendente según la fecha de creación |
+| existsByAssignmentCode                         | boolean              | Valida la existencia una asignación por código                                                                             |
+| existsByOwnerIdAndIdNotAndStatusNot            | boolean              | Valida la no existencia de una asignación por id de dueño y estado de asignación                                           |
+| findByAssignmentCode                           | Optional<Assignment> | Encuentra una asignación por su código                                                                                     |
 
-<h3>Clase: <code>PlanRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>PlanRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Plan</code>, que representa los planes de suscripción disponibles.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Plan)</td><td>Persiste un nuevo plan o actualiza uno existente.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina un plan por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de un plan por su ID.</td></tr>
-    <tr><td>existsById(Long)</td><td>Verifica si existe un plan por su ID.</td></tr>
-    <tr><td>findByName(String)</td><td>Busca un plan por su nombre.</td></tr>
-    <tr><td>findAll(Pageable)</td><td>Lista todos los planes con paginación.</td></tr>
-  </tbody>
-</table>
+`MechanicRepository`(interface)
 
-<h3>Clase: <code>PromotionRepository</code> &lt;&lt;Interface&gt;&gt;</h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>PromotionRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Interfaz de persistencia para la entidad <code>Promotion</code>, usada en la aplicación de descuentos y campañas de suscripciones.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>save(Promotion)</td><td>Guarda o actualiza una promoción.</td></tr>
-    <tr><td>deleteById(Long)</td><td>Elimina una promoción por su ID.</td></tr>
-    <tr><td>findById(Long)</td><td>Obtiene los detalles de una promoción por su ID.</td></tr>
-    <tr><td>existsByCode(String)</td><td>Verifica si existe una promoción con un código específico.</td></tr>
-    <tr><td>findByCode(String)</td><td>Recupera una promoción por su código.</td></tr>
-    <tr><td>findValidPromotions(LocalDateTime now)</td><td>Lista las promociones vigentes en un momento dado.</td></tr>
-  </tbody>
-</table>
-
+| Método                  | Tipo de Retorno    | Descripción                               |
+|-------------------------|--------------------|-------------------------------------------|
+| getMechanicByProfile_Id | Optional<Mechanic> | Encuentra un mecánico por id de su perfil |
 
 ##### 4.2.3.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -2806,138 +2286,165 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.3.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/subscription_code_level.png" alt="subscription_code_level" width="600"/>
+<img src="images/chapter-4/bounded-context/assignments-domain-layer.jpeg" alt="Assignments Domain Layer"/>
 
 ###### 4.2.3.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/subscription_db.png" alt="subscription_erd" width="600"/>
+<img src="images/chapter-4/bounded-context/assignments-db-diagram.png" alt="Assignments Domain Layer"/>
 
-#### 4.2.4 Bounded Context: Bienestar de Vehículos
+#### 4.2.4 Bounded Context: Vehicle Wellness
 
 ##### 4.2.4.1 Domain Layer
 
 <h3>Aggregates</h3>
-<h4><code>Notification</code></h4>
-<p><strong>Descripción:</strong> Agregado que representa una notificación generada a partir del monitoreo del vehículo. Puede ser de tipo alerta o recomendación, y requiere confirmación del usuario o mecánico.</p>
+<h4><code>WellnessMetric</code></h4>
+<p><strong>Descripción:</strong>Representa una métrica completa de bienestar registrada por un vehículo.</p>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>message</td><td>String</td><td>Mensaje de la notificación.</td></tr>
-    <tr><td>type</td><td>NotificationType (Enum)</td><td>Clasificación: ALERT o RECOMMENDATION.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo asociado.</td></tr>
-    <tr><td>status</td><td>NotificationStatus (Enum)</td><td>Estado de la notificación (PENDING, ACKNOWLEDGED).</td></tr>
-  </tbody>
-</table>
-
-<h4><code>Metric</code></h4>
-<p><strong>Descripción:</strong> Agregado que representa las métricas clave recopiladas por el dispositivo IoT del vehículo, organizadas como objetos de valor.</p>
-<table>
-  <thead>
-    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>odometer</td><td>Odometer (Value Object)</td><td>Distancia total recorrida.</td></tr>
-    <tr><td>temperature</td><td>Temperature (Value Object)</td><td>Temperatura actual del motor u otra parte crítica.</td></tr>
-    <tr><td>fuelConsumption</td><td>FuelConsumption (Value Object)</td><td>Consumo de combustible registrado.</td></tr>
-    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo asociado.</td></tr>
+    <tr><td>vehicleId</td><td>Long</td><td>Identificador único del vehículo que registra la métrica</td></tr>
+    <tr><td>coordinates</td><td>Coordinates (Enum)</td><td>Ubicación geográfica donde se tomó la medición</td></tr>
+    <tr><td>airQuality</td><td>AirQuality (Enum)</td><td>Medición de la calidad del aire en el entorno</td></tr>
+    <tr><td>environmentalConditions</td><td>EnvironmentalConditions (Enum)</td><td>Condiciones ambientales generales registradas</td></tr>
+    <tr><td>atmosphericPressure</td><td>AtmosphericPressure (Enum)</td><td>Nivel de presión atmosférica medido</td></tr>
+    <tr><td>statusImpact</td><td>StatusImpact (Enum)</td><td>Indicador del impacto en el estado del sistema</td></tr>
+    <tr><td>registeredAt</td><td>LocalDateTime</td><td>Fecha y hora en que se registró la métrica</td></tr>
   </tbody>
 </table>
 
 <h3>Value Objects</h3>
-<h4><code>FuelConsumption</code></h4>
+<h4><code>AirQuality</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Consumo registrado.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (ej. L/100km).</td></tr>
+    <tr><td>CO2Ppm</td><td>Double</td><td>Concentración de dióxido de carbono en partes por millón</td></tr>
+    <tr><td>NH3Ppm</td><td>Double</td><td>Concentración de amoníaco en partes por millón</td></tr>
+    <tr><td>BenzenePpm</td><td>Double</td><td>Concentración de benceno en partes por millón</td></tr>
   </tbody>
 </table>
 
-<h4><code>Odometer</code></h4>
+<h4><code>AtmosphericPressure</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Valor total recorrido.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (km, millas).</td></tr>
+    <tr><td>pressureHpa</td><td>Float</td><td>Valor de presión atmosférica en hectopascales</td></tr>
   </tbody>
 </table>
 
-<h4><code>Temperature</code></h4>
+<h4><code>Coordinates</code></h4>
 <table>
   <thead>
     <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>value</td><td>Double</td><td>Temperatura registrada.</td></tr>
-    <tr><td>unit</td><td>String</td><td>Unidad de medida (°C, °F).</td></tr>
+    <tr><td>latitude</td><td>Float</td><td>Coordenada de latitud de la ubicación</td></tr>
+    <tr><td>longitude</td><td>Float</td><td>Coordenada de longitud de la ubicación</td></tr>
   </tbody>
 </table>
 
-<h4><code>NotificationType</code> (Enum)</h4>
-<ul>
-  <li>ALERT</li>
-  <li>RECOMMENDATION</li>
-</ul>
+<h4><code>EnvironmentalConditions</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>temperatureCelsius</td><td>Float</td><td>Temperatura ambiental en grados Celsius</td></tr>
+    <tr><td>humidityPercentage</td><td>Float</td><td>Porcentaje de humedad relativa en el ambiente</td></tr>
+  </tbody>
+</table>
 
-<h4><code>NotificationStatus</code> (Enum)</h4>
-<ul>
-  <li>PENDING</li>
-  <li>ACKNOWLEDGED</li>
-</ul>
+<h4><code>StatusImpact</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>impactDetected</td><td>Boolean</td><td>	Indicador de si se detectó algún impacto en el sistema</td></tr>
+  </tbody>
+</table>
+
+<h3>Entities</h3>
+<h4><code>Notification</code></h4>
+<table>
+  <thead>
+    <tr><th>Atributo</th><th>Tipo</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>vehicleId</td><td>Long</td><td>Identificador del vehículo relacionado con la notificación</td></tr>
+    <tr><td>title</td><td>String</td><td>Título descriptivo de la notificación</td></tr>
+    <tr><td>message</td><td>String</td><td>Contenido detallado del mensaje de notificación</td></tr>
+    <tr><td>type</td><td>String</td><td>Categoría o clasificación de la notificación</td></tr>
+    <tr><td>severity</td><td>String</td><td>Nivel de gravedad o importancia de la notificación</td></tr>
+    <tr><td>read</td><td>boolean</td><td>Estado que indica si la notificación ha sido leída</td></tr>
+    <tr><td>occurredAt</td><td>LocalDateTime</td><td>Fecha y hora en que ocurrió el evento notificado</td></tr>
+  </tbody>
+</table>
 
 <h3>Commands</h3>
 <ul>
-  <li><code>CreateMetricCommand</code> (Record)</li>
-  <li><code>CreateNotificationCommand</code> (Record)</li>
-  <li><code>AcknowledgeNotificationCommand</code> (Record)</li>
+  <li><code>CreateNotificationCommand(Long vehicleId,String title,String message,String type,String severity,LocalDateTime occurredAt)</code> (Record)</li>
+  <li><code>CreateWellnessMetricCommand(Long vehicleId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)</code> (Record)</li>
+  <li><code>DeleteWellnessMetricCommand(Long wellnessMetricId)</code> (Record)</li>
+  <li><code>MarkNotificationAsReadCommand(Long notificationId)</code> (Record)</li>
+  <li><code>UpdateWellnessMetricCommand(Long wellnessMetricId,Float latitude,Float longitude,Double CO2Ppm,Double NH3Ppm,Double BenzenePpm,Float temperatureCelsius,Float humidityPercentage,Float pressureHpa,Boolean impactDetected)</code> (Record)</li>
 </ul>
 
 <h3>Queries</h3>
 <ul>
-  <li><code>GetMetricsByVehicleQuery</code> (Record)</li>
-  <li><code>GetMetricsByDateRangeQuery</code> (Record)</li>
-  <li><code>GetMetricByIdQuery</code> (Record)</li>
-  <li><code>GetNotificationsByVehicleQuery</code> (Record)</li>
-  <li><code>GetNotificationByTypeQuery</code> (Record)</li>
-  <li><code>GetNotificationByIdQuery</code> (Record)</li>
+  <li><code>GetAllNotificationsQuery()</code> (Record)</li>
+  <li><code>GetAllWellnessMetricsQuery()</code> (Record)</li>
+  <li><code>GetNotificationByIdQuery(Long notificationId)</code> (Record)</li>
+  <li><code>GetNotificationsByVehicleIdQuery(Long vehicleId)</code> (Record)</li>
+  <li><code>GetWellnessMetricByIdQuery(Long wellnessMetricId)</code> (Record)</li>
+  <li><code>GetWellnessMetricsByVehicleIdQuery(Long vehicleId)</code> (Record)</li>
+</ul>
+
+<h3>Events</h3>
+<ul>
+  <li><code>AirQualityAlertEvent</code></li>
+  <li><code>AtmosphericPressureAlertEvent</code></li>
+  <li><code>EnvironmentalConditionAlertEvent</code></li>
+  <li><code>StatusImpactAlertEvent</code></li>
 </ul>
 
 <h3>Services</h3>
-<h4><code>MetricCommandService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(CreateMetricCommand)</li>
-</ul>
-<h4><code>MetricQueryService</code> (Interface)</h4>
-<ul>
-  <li>+ handle(GetMetricsByVehicleQuery)</li>
-  <li>+ handle(GetMetricsByDateRangeQuery)</li>
-  <li>+ handle(GetMetricByIdQuery)</li>
-</ul>
 <h4><code>NotificationCommandService</code> (Interface)</h4>
 <ul>
-  <li>+ handle(CreateNotificationCommand)</li>
-  <li>+ handle(AcknowledgeNotificationCommand)</li>
+  <li>handle(CreateNotificationCommand)</li>
+  <li>handle(MarkNotificationAsReadCommand)</li>
 </ul>
 <h4><code>NotificationQueryService</code> (Interface)</h4>
 <ul>
-  <li>+ handle(GetNotificationsByVehicleQuery)</li>
-  <li>+ handle(GetNotificationByTypeQuery)</li>
-  <li>+ handle(GetNotificationByIdQuery)</li>
+  <li>handle(GetNotificationByIdQuery)</li>
+  <li>handle(GetAllNotificationsQuery)</li>
+  <li>handle(GetNotificationsByVehicleIdQuery)</li>
+</ul>
+<h4><code>WellnessMetricCommandService</code> (Interface)</h4>
+<ul>
+  <li>handle(CreateWellnessMetricCommand)</li>
+  <li>handle(UpdateWellnessMetricCommand)</li>
+  <li>handle(DeleteWellnessMetricCommand)</li>
+</ul>
+<h4><code>WellnessMetricQueryService</code> (Interface)</h4>
+<ul>
+  <li>handle(GetWellnessMetricByIdQuery)</li>
+  <li>handle(GetAllWellnessMetricsQuery)</li>
+  <li>handle(GetWellnessMetricsByVehicleIdQuery)</li>
 </ul>
 
 ##### 4.2.4.2 Interface Layer
-
-<h3>Controlador: <code>MetricController</code></h3>
+<h3>Controllers:</h3>
+<h4>Controlador: <code>WellnessMetricsController</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricController</td>
+    <td>Wellness Metrics Controller</td>
   </tr>
   <tr>
     <th>Descripción</th>
@@ -2954,63 +2461,120 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>createMetric</td>
+      <td>createWellnessMetric</td>
       <td>POST /api/v1/metrics</td>
-      <td>Crea una nueva métrica asociada a un vehículo.</td>
+      <td>Crea una nueva métrica de bienestar para un vehículo</td>
     </tr>
     <tr>
-      <td>getMetricsByVehicle</td>
-      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
-      <td>Obtiene todas las métricas registradas para un vehículo específico.</td>
+      <td>updateWellnessMetric</td>
+      <td>PUT /api/v1/metrics/{id}</td>
+      <td>Actualiza una métrica de bienestar existente</td>
     </tr>
     <tr>
-      <td>getMetricsByDateRange</td>
-      <td>GET /api/v1/metrics/vehicle/{vehicleId}/range?from={from}&to={to}</td>
-      <td>Recupera las métricas de un vehículo dentro de un rango de fechas específico.</td>
+      <td>deleteWellnessMetric</td>
+      <td>DELETE /api/v1/metrics/{id}</td>
+      <td>Elimina una métrica de bienestar por su ID</td>
     </tr>
     <tr>
-      <td>getMetricById</td>
+      <td>getWellnessMetricById</td>
       <td>GET /api/v1/metrics/{id}</td>
-      <td>Obtiene una métrica específica por su ID.</td>
+      <td>Recupera una métrica de bienestar específica por su ID</td>
+    </tr>
+    <tr>
+      <td>getAllWellnessMetrics</td>
+      <td>GET /api/v1/metrics</td>
+      <td>Recupera todas las métricas de bienestar disponibles</td>
+    </tr>
+    <tr>
+      <td>getWellnessMetricsByVehicleId</td>
+      <td>GET /api/v1/metrics/vehicle/{vehicleId}</td>
+      <td>Recupera todas las métricas de bienestar para un vehículo específico</td>
     </tr>
   </tbody>
 </table>
-<h4>Dependencias:</h4>
+
+<h4>Controlador: <code>Notifications Controller</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>Notifications Controller</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Controlador REST que gestiona las operaciones de creación, consulta y recuperación de las notificaciones de los vehículos.</td>
+  </tr>
+</table>
 <table>
   <thead>
     <tr>
-      <th>Dependencia</th>
+      <th>Método</th>
+      <th>Ruta</th>
       <th>Descripción</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>MetricQueryService</td>
-      <td>Servicio para consultas relacionadas con métricas de vehículos.</td>
+      <td>createNotification</td>
+      <td>POST /api/v1/notifications</td>
+      <td>Crea una nueva notificación en el sistema</td>
     </tr>
     <tr>
-      <td>MetricCommandService</td>
-      <td>Servicio para ejecutar comandos relacionados con la creación y gestión de métricas.</td>
+      <td>getNotificationById</td>
+      <td>GET /api/v1/notifications/{id}</td>
+      <td>Recupera una notificación específica por su ID</td>
     </tr>
     <tr>
-      <td>CreateMetricCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de métricas.</td>
+      <td>getAllNotifications</td>
+      <td>GET /api/v1/notifications</td>
+      <td>Recupera todas las notificaciones del sistema</td>
     </tr>
     <tr>
-      <td>MetricResourceFromEntityAssembler</td>
-      <td>Convierte entidades de métricas en recursos REST para la respuesta.</td>
+      <td>getNotificationsByVehicleId</td>
+      <td>GET /api/v1/notifications/vehicle/{vehicleId}</td>
+      <td>Recupera todas las notificaciones para un vehículo específico</td>
     </tr>
     <tr>
-      <td>CreateNotificationCommandFromResourceAssembler</td>
-      <td>Convierte recursos REST en comandos de creación de notificaciones preventivas relacionadas con métricas.</td>
-    </tr>
-    <tr>
-      <td>NotificationResourceFromEntityAssembler</td>
-      <td>Convierte entidades de notificación en recursos REST para la respuesta.</td>
+      <td>markNotificationAsRead</td>
+      <td>GET /api/v1/notifications/{id}/read</td>
+      <td>Marca una notificación como leída</td>
     </tr>
   </tbody>
 </table>
-<h4>Resources:</h4>
+
+
+<h3>Transforms:</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Transform</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CreateNotificationCommandFromResourceAssembler</td>
+      <td>Convierte los recursos de entrada en comandos para crear notificaciones</td>
+    </tr>
+    <tr>
+      <td>CreateWellnessMetricCommandFromResourceAssembler</td>
+      <td>Transforma los recursos de entrada en comandos para crear métricas de bienestar</td>
+    </tr>
+    <tr>
+      <td>NotificationResourceFromEntityAssembler</td>
+      <td>Convierte entidades de notificación en recursos de respuesta para la API</td>
+    </tr>
+    <tr>
+      <td>UpdateWellnessMetricCommandFromResourceAssembler</td>
+      <td>Transforma los recursos de actualización en comandos para modificar métricas</td>
+    </tr>
+    <tr>
+      <td>WellnessMetricResourceFromEntityAssembler</td>
+      <td>Convierte entidades de métricas de bienestar en recursos de respuesta para la API</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Resources:</h3>
 <table>
   <thead>
     <tr>
@@ -3020,73 +2584,38 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>CreateMetricResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para la creación de métricas.</td>
+      <td>CreateMetricResource</td>
+      <td>Estructura de datos para la creación de nuevas métricas en el sistema</td>
     </tr>
     <tr>
-      <td>MetricResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para exponer métricas en las respuestas REST.</td>
+      <td>CreateWellnessMetricResource</td>
+      <td>Modelo de datos para solicitudes de creación de métricas de bienestar</td>
     </tr>
     <tr>
-      <td>CreateNotificationResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para la creación de notificaciones asociadas al bienestar vehicular.</td>
+      <td>NotificationResource</td>
+      <td>Representación de notificaciones en las respuestas de la API</td>
     </tr>
     <tr>
-      <td>NotificationResource &lt;&lt;Record&gt;&gt;</td>
-      <td>Recurso usado para exponer notificaciones en las respuestas REST.</td>
+      <td>UpdateWellnessMetricResource</td>
+      <td>Estructura de datos para actualizar métricas de bienestar existentes</td>
+    </tr>
+    <tr>
+      <td>WellnessMetricResource</td>
+      <td>Representación de métricas de bienestar en las respuestas de la API</td>
     </tr>
   </tbody>
 </table>
+
+<h3>ACL:</h3>
+<h4><code>WellnessMetricContextFacade</code> (Interface)</h4>
+<ul>
+  <li>fetchWellnessMetricById(Long wellnessMetricId)</li>
+</ul>
 
 ##### 4.2.4.3 Application Layer
 
-<h3>Clase: <code>MetricCommandServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>MetricCommandServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación del servicio de comandos encargado de gestionar la creación y registro de métricas asociadas al bienestar de los vehículos.</td>
-  </tr>
-</table>
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(RegisterMetricCommand)</td>
-      <td>Registra una nueva métrica asociada a un vehículo en el repositorio.</td>
-    </tr>
-  </tbody>
-</table>
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MetricRepository</td>
-      <td>Repositorio encargado de la persistencia de métricas de vehículos.</td>
-    </tr>
-    <tr>
-      <td>RegisterMetricCommand</td>
-      <td>Comando para registrar nuevas métricas.</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-
-<h3>Clase: <code>NotificationCommandServiceImpl</code></h3>
+<h3>Command Services</h3>
+<h4>Clase: <code>NotificationCommandServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3094,7 +2623,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de comandos encargado de la creación y gestión del ciclo de vida de las notificaciones asociadas a métricas vehiculares.</td>
+    <td>Servicio que gestiona las operaciones de escritura y modificación de notificaciones en el sistema</td>
   </tr>
 </table>
 <table>
@@ -3106,12 +2635,12 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(CreateNotificationCommand)</td>
-      <td>Crea una notificación asociada a un evento de bienestar vehicular.</td>
+      <td>handle(CreateNotificationCommand createNotificationCommand)</td>
+      <td>Procesa la creación de una nueva notificación en el sistema</td>
     </tr>
     <tr>
-      <td>handle(AcknowledgeNotificationCommand)</td>
-      <td>Marca una notificación como reconocida por el usuario o sistema.</td>
+      <td>handle(MarkNotificationAsReadCommand command)</td>
+      <td>Maneja la marcación de una notificación como leída</td>
     </tr>
   </tbody>
 </table>
@@ -3126,29 +2655,26 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationRepository</td>
-      <td>Repositorio encargado de la persistencia de notificaciones.</td>
+      <td>Repositorio para acceder y gestionar los datos de notificaciones</td>
     </tr>
     <tr>
-      <td>CreateNotificationCommand</td>
-      <td>Comando para la creación de notificaciones.</td>
-    </tr>
-    <tr>
-      <td>AcknowledgeNotificationCommand</td>
-      <td>Comando para reconocer y actualizar el estado de una notificación.</td>
+      <td>ExternalVehiclesService</td>
+      <td>Servicio externo para obtener información de vehículos</td>
     </tr>
   </tbody>
 </table>
-<hr>
 
-<h3>Clase: <code>MetricQueryServiceImpl</code></h3>
+
+
+<h4>Clase: <code>WellnessMetricCommandServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricQueryServiceImpl</td>
+    <td>WellnessMetricCommandServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas encargado de recuperar información relacionada con notificaciones asociadas a métricas de los vehículos.</td>
+    <td>Servicio que maneja las operaciones de modificación de métricas de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3160,16 +2686,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetNotificationsByVehicleQuery)</td>
-      <td>Obtiene todas las notificaciones asociadas a un vehículo específico.</td>
+      <td>handle(CreateWellnessMetricCommand createWellnessMetricCommand)</td>
+      <td>Procesa la creación de nuevas métricas de bienestar</td>
     </tr>
     <tr>
-      <td>handle(GetNotificationsByTypeQuery)</td>
-      <td>Recupera notificaciones filtradas por tipo (ejemplo: alerta preventiva, advertencia crítica).</td>
+      <td>handle(UpdateWellnessMetricCommand updateWellnessMetricCommand)</td>
+      <td>Maneja la actualización de métricas de bienestar existentes</td>
     </tr>
     <tr>
-      <td>handle(GetNotificationByIdQuery)</td>
-      <td>Obtiene una notificación específica a partir de su ID.</td>
+      <td>handle(DeleteWellnessMetricCommand deleteWellnessMetricCommand)</td>
+      <td>Gestiona la eliminación de métricas de bienestar</td>
     </tr>
   </tbody>
 </table>
@@ -3183,26 +2709,24 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>MetricRepository</td>
-      <td>Repositorio encargado de gestionar métricas y notificaciones asociadas.</td>
+      <td>WellnessMetricRepository</td>
+      <td>Repositorio para almacenar y recuperar métricas de bienestar</td>
     </tr>
     <tr>
-      <td>GetNotificationsByVehicleQuery</td>
-      <td>Query para recuperar notificaciones de un vehículo.</td>
+      <td>WellnessMonitoringService</td>
+      <td>Servicio para monitorear y analizar las métricas de bienestar</td>
     </tr>
     <tr>
-      <td>GetNotificationsByTypeQuery</td>
-      <td>Query para recuperar notificaciones filtradas por tipo.</td>
-    </tr>
-    <tr>
-      <td>GetNotificationByIdQuery</td>
-      <td>Query para obtener una notificación específica por su ID.</td>
+      <td>ExternalVehiclesService</td>
+      <td>Servicio externo para validar y obtener datos de vehículos</td>
     </tr>
   </tbody>
 </table>
+
 <hr>
 
-<h3>Clase: <code>NotificationQueryServiceImpl</code></h3>
+<h3>Query Services</h3>
+<h4>Clase: <code>NotificationQueryServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3210,7 +2734,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Implementación del servicio de consultas encargado de recuperar métricas asociadas a un vehículo y exponerlas en diferentes vistas (por rango de fechas, por ID o por vehículo).</td>
+    <td>Servicio especializado en consultas y recuperación de notificaciones</td>
   </tr>
 </table>
 <table>
@@ -3222,16 +2746,16 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetMetricsByVehicleQuery)</td>
-      <td>Obtiene todas las métricas asociadas a un vehículo específico.</td>
+      <td>handle(GetNotificationByIdQuery getNotificationByIdQuery)</td>
+      <td>Recupera una notificación específica por su identificador</td>
     </tr>
     <tr>
-      <td>handle(GetMetricsByDateRangeQuery)</td>
-      <td>Recupera las métricas de un vehículo dentro de un rango de fechas.</td>
+      <td>handle(GetAllNotificationsQuery getAllNotificationsQuery)</td>
+      <td>Obtiene todas las notificaciones del sistema</td>
     </tr>
     <tr>
-      <td>handle(GetMetricByIdQuery)</td>
-      <td>Obtiene una métrica específica a partir de su ID.</td>
+      <td>handle(GetNotificationsByVehicleIdQuery getNotificationsByVehicleIdQuery)</td>
+      <td>Consulta las notificaciones asociadas a un vehículo específico</td>
     </tr>
   </tbody>
 </table>
@@ -3246,34 +2770,20 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   <tbody>
     <tr>
       <td>NotificationRepository</td>
-      <td>Repositorio encargado de la persistencia y consulta de métricas asociadas a notificaciones.</td>
-    </tr>
-    <tr>
-      <td>GetMetricsByVehicleQuery</td>
-      <td>Query para recuperar todas las métricas de un vehículo.</td>
-    </tr>
-    <tr>
-      <td>GetMetricsByDateRangeQuery</td>
-      <td>Query para recuperar métricas dentro de un rango de fechas.</td>
-    </tr>
-    <tr>
-      <td>GetMetricByIdQuery</td>
-      <td>Query para obtener una métrica específica por su ID.</td>
+      <td>Repositorio para acceder a los datos de notificaciones</td>
     </tr>
   </tbody>
 </table>
 
-##### 4.2.4.4 Infrastructure Layer
-
-<h3>Clase: <code>MetricRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
+<h4>Clase: <code>WellnessMetricQueryServiceImpl</code></h4>
 <table>
   <tr>
     <th>Título</th>
-    <td>MetricRepository</td>
+    <td>WellnessMetricQueryServiceImpl</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para métricas IoT que registran datos en tiempo real del estado del vehículo, con soporte para consultas históricas filtradas por rango de fechas.</td>
+    <td>Servicio que maneja las consultas de métricas de bienestar</td>
   </tr>
 </table>
 <table>
@@ -3284,16 +2794,149 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(Metric metric)</td><td>Persiste una nueva métrica o actualiza una existente.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera una métrica específica por identificador.</td></tr>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las métricas asociadas a un vehículo.</td></tr>
-    <tr><td>findByVehicleIdAndCreateAtBetween(Long vehicleId, LocalDateTime from, LocalDateTime to)</td><td>Obtiene todas las métricas de un vehículo registradas en un rango de fechas.</td></tr>
-    <tr><td>findLatestByVehicleId(Long vehicleId)</td><td>Obtiene la última métrica registrada de un vehículo.</td></tr>
-    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las métricas históricas de un vehículo.</td></tr>
+    <tr>
+      <td>handle(GetWellnessMetricByIdQuery getWellnessMetricByIdQuery)</td>
+      <td>Obtiene una métrica de bienestar específica por su ID</td>
+    </tr>
+    <tr>
+      <td>handle(GetAllWellnessMetricsQuery getAllWellnessMetricsQuery)</td>
+      <td>Recupera todas las métricas de bienestar disponibles</td>
+    </tr>
+    <tr>
+      <td>handle(GetWellnessMetricsByVehicleIdQuery getWellnessMetricsByVehicleIdQuery)</td>
+      <td>Consulta las métricas de bienestar de un vehículo específico</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WellnessMetricRepository</td>
+      <td>Repositorio para acceder a los datos de métricas de bienestar</td>
+    </tr>
   </tbody>
 </table>
 
-<h3>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h3>
+<hr>
+
+<h3>Event Handlers</h3>
+<h4>Clase: <code>WellnessAlertEventHandler</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>WellnessAlertEventHandler</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Manejador de eventos relacionados con alertas del sistema de bienestar</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>on(AirQualityAlertEvent event)</td>
+      <td>Procesa eventos de alerta relacionados con la calidad del aire</td>
+    </tr>
+    <tr>
+      <td>on(AtmosphericPressureAlertEvent event)</td>
+      <td>Maneja eventos de alerta por presión atmosférica</td>
+    </tr>
+    <tr>
+      <td>on(EnvironmentalConditionAlertEvent event)</td>
+      <td>Gestiona eventos de alerta por condiciones ambientales</td>
+    </tr>
+    <tr>
+      <td>on(StatusImpactAlertEvent event)</td>
+      <td>Procesa eventos de alerta por impacto en el estado del sistema</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NotificationCommandService</td>
+      <td>Servicio para crear notificaciones de alerta</td>
+    </tr>
+    <tr>
+      <td>NotificationQueryService</td>
+      <td>Servicio para consultar notificaciones existentes</td>
+    </tr>
+    <tr>
+      <td>WellnessWebSocketController</td>
+      <td>Controlador para enviar alertas en tiempo real</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>ACL</h3>
+<h4>Clase: <code>WellnessMetricContextFacadeImpl</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>WellnessMetricContextFacadeImpl</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Fachada que actúa como puente entre el contexto de bienestar y otros sistemas</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fetchWellnessMetricById(Long wellnessMetricId)</td>
+      <td>Recupera métricas de bienestar para su uso en otros contextos del sistema
+</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Dependencias:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WellnessMetricQueryService</td>
+      <td>Servicio para consultar métricas de bienestar</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 4.2.4.4 Infrastructure Layer
+
+<h3>Repositories</h3>
+<h4>Clase: <code>NotificationRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h4>
 <table>
   <tr>
     <th>Título</th>
@@ -3301,7 +2944,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Interfaz de persistencia para notificaciones derivadas del análisis de métricas, soportando búsquedas por vehículo y por rangos temporales.</td>
+    <td>Interfaz que define las operaciones de acceso a datos para las notificaciones</td>
   </tr>
 </table>
 <table>
@@ -3312,11 +2955,32 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     </tr>
   </thead>
   <tbody>
-    <tr><td>save(Notification notification)</td><td>Persiste una nueva notificación o actualiza una existente.</td></tr>
-    <tr><td>findById(Long id)</td><td>Recupera una notificación específica por identificador.</td></tr>
-    <tr><td>findByVehicleId(Long vehicleId)</td><td>Obtiene todas las notificaciones asociadas a un vehículo.</td></tr>
-    <tr><td>findByDateRangeAndVehicleId(Timestamp from, Timestamp to, long vehicleId)</td><td>Obtiene todas las notificaciones de un vehículo en un rango de fechas específico.</td></tr>
-    <tr><td>deleteByVehicleId(Long vehicleId)</td><td>Elimina todas las notificaciones asociadas a un vehículo.</td></tr>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Busca y recupera las notificaciones asociadas a un vehículo específico</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h4>Clase: <code>WellnessMetricRepository</code> <code>&lt;&lt;Interface&gt;&gt;</code></h4>
+<table>
+  <tr>
+    <th>Título</th>
+    <td>NotificationRepository</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Interfaz que define las operaciones de acceso a datos para las métricas de bienestar</td>
+  </tr>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>findByVehicleId(Long vehicleId)</td><td>Busca y recupera las métricas de bienestar asociadas a un vehículo específico</td></tr>
   </tbody>
 </table>
 
@@ -3328,25 +2992,169 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.4.6.1 Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/chapter-4/vehicle_wellness_code_level.png" alt="vehicle_wellness_code_level" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_code_level.drawio.png" alt="vehicle_wellness_code_level" width="600"/>
 
 ###### 4.2.4.6.2 Bounded Context Database Design Diagram
 
-<img src="./images/chapter-4/vehicle_db.png" alt="vehicle_db" width="600"/>
+<img src="./images/chapter-4/vehicle_wellness_db.png" alt="vehicle_db" width="600"/>
 
 #### 4.2.5 Bounded Context: Reportes
 
 ##### 4.2.5.1 Domain Layer
 
-<h3>Aggregate Root: <code>Report</code></h3>
-<p><strong>Descripción:</strong>Representa un reporte agregado que consolida información de un vehículo, sus mantenimientos y su asignación actual.</p>
 
-<h3>Query: <code>GetReportByVehicleIdQuery</code></h3>
-<p><strong>Descripción:</strong>Consulta que permite obtener un reporte consolidado a partir del identificador de un vehículo.</p>
+<!-- Aggregates -->
+<h3>Aggregates</h3>
+
+<h4><code>Report</code></h4>
+<p><strong>Descripción:</strong> Representa un reporte consolidado asociado a un vehículo. Contiene información generada mediante métricas, la fecha del reporte y la relación con el vehículo correspondiente.</p>
+
 <table>
   <thead>
     <tr>
-      <th>Campo</th>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del reporte</td>
+    </tr>
+    <tr>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador del vehículo asociado al reporte</td>
+    </tr>
+    <tr>
+      <td>metrics</td>
+      <td>List&lt;Metric&gt;</td>
+      <td>Private</td>
+      <td>Lista de métricas asociadas al reporte</td>
+    </tr>
+    <tr>
+      <td>reportDate</td>
+      <td>Date</td>
+      <td>Private</td>
+      <td>Fecha de generación del reporte</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Entities -->
+<h3>Entities</h3>
+
+<h4><code>Metric</code></h4>
+<p><strong>Descripción:</strong> Representa una métrica incluida dentro de un reporte. Puede ser cualquier tipo de información numérica o descriptiva relacionada con el estado del vehículo.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>metricId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único de la métrica</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>MetricType</td>
+      <td>Private</td>
+      <td>Tipo de métrica asociada</td>
+    </tr>
+    <tr>
+      <td>metricValue</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Valor registrado para esta métrica</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4><code>MetricType</code></h4>
+<p><strong>Descripción:</strong> Define el tipo de una métrica (por ejemplo: kilometraje, estado del aceite, temperatura, etc.).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atributos</th>
+      <th>Tipo de dato</th>
+      <th>Visibilidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>metricTypeId</td>
+      <td>Long</td>
+      <td>Private</td>
+      <td>Identificador único del tipo de métrica</td>
+    </tr>
+    <tr>
+      <td>metricName</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Nombre del tipo de métrica</td>
+    </tr>
+    <tr>
+      <td>metricDescription</td>
+      <td>String</td>
+      <td>Private</td>
+      <td>Descripción del tipo de métrica</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Value Objects -->
+<h3>Value Objects</h3>
+<p>(No se identifican value objects adicionales en este bounded context.)</p>
+
+<hr>
+
+<!-- Queries -->
+<h3>Queries</h3>
+
+<h4><code>GetReportByIdQuery</code> &lt;&lt;record&gt;&gt;</h4>
+<p>Obtiene un reporte específico mediante su identificador único.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo de dato</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Identificador del reporte a consultar</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4><code>GetReportByVehicleIdQuery</code> &lt;&lt;record&gt;&gt;</h4>
+<p>Obtiene todos los reportes asociados a un vehículo específico.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
       <th>Tipo de dato</th>
       <th>Descripción</th>
     </tr>
@@ -3355,13 +3163,38 @@ La arquitectura de software de la solución se ha representado utilizando el mod
     <tr>
       <td>vehicleId</td>
       <td>Long</td>
-      <td>Identificador del vehículo cuyo reporte se desea obtener.</td>
+      <td>Identificador del vehículo cuyos reportes se desean obtener</td>
     </tr>
   </tbody>
 </table>
 
-<h3>Interfaz: <code>ReportsQueryService</code></h3>
-<p><strong>Descripción:</strong>Servicio de consultas del dominio encargado de la recuperación de reportes consolidados.</p>
+<h4><code>GetMetricsByReportIdQuery</code> &lt;&lt;record&gt;&gt;</h4>
+<p>Obtiene todas las métricas pertenecientes a un reporte.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Atributo</th>
+      <th>Tipo de dato</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Identificador del reporte cuyas métricas serán recuperadas</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Services -->
+<h3>Services</h3>
+
+<h4><code>ReportQueryService</code> (Interface)</h4>
+<p>Interfaz de servicios de consultas para la recuperación de reportes y sus métricas.</p>
+
 <table>
   <thead>
     <tr>
@@ -3372,26 +3205,30 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>handle(GetReportByVehicleIdQuery query)</td>
+      <td>handle(GetReportByIdQuery)</td>
       <td>Público</td>
-      <td>Recupera un reporte consolidado para un vehículo específico.</td>
+      <td>Recupera un reporte mediante su identificador único</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportByVehicleIdQuery)</td>
+      <td>Público</td>
+      <td>Recupera todos los reportes generados para un vehículo específico</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricsByReportIdQuery)</td>
+      <td>Público</td>
+      <td>Recupera todas las métricas asociadas a un reporte específico</td>
     </tr>
   </tbody>
 </table>
 
 ##### 4.2.5.2 Interface Layer
 
-<h3>Controlador: <code>ReportController</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportController</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Controlador REST que maneja las peticiones relacionadas con la generación de reportes agregados por vehículo.</td>
-  </tr>
-</table>
+<h3>Rest Controllers</h3>
+
+<h4><code>ReportController</code></h4>
+
+<p><strong>Descripción:</strong> Controlador REST encargado de manejar las peticiones asociadas a la obtención de reportes y sus métricas.</p>
 
 <table>
   <thead>
@@ -3403,134 +3240,33 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>getReportByVehicleId(Long vehicleId)</td>
+      <td>getReportById</td>
+      <td>GET /api/v1/reports/{reportId}</td>
+      <td>Obtiene un reporte por su identificador único.</td>
+    </tr>
+    <tr>
+      <td>getAllReportsForVehicle</td>
       <td>GET /api/v1/reports/vehicle/{vehicleId}</td>
-      <td>Obtiene un reporte consolidado de vehículo, mantenimientos y asignación, según el identificador del vehículo.</td>
+      <td>Obtiene todos los reportes asociados a un vehículo por su id.</td>
+    </tr>
+    <tr>
+      <td>getAllMetricsFromReport</td>
+      <td>GET /api/v1/reports/{reportId}/metrics</td>
+      <td>Obtiene todas las métricas asociadas a un reporte dado.</td>
     </tr>
   </tbody>
 </table>
 
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ReportsQueryService</td>
-      <td>Servicio del dominio utilizado para manejar las consultas de reportes consolidados.</td>
-    </tr>
-    <tr>
-      <td>ReportResource</td>
-      <td>Recurso REST que representa la información consolidada del reporte.</td>
-    </tr>
-  </tbody>
-</table>
+<hr>
 
-##### 4.2.5.3 Application Layer
+<h3>Resources</h3>
 
-<h3>Clase: <code>ReportsQueryServiceImpl</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportsQueryServiceImpl</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Implementación de la interfaz <code>ReportsQueryService</code> encargada de construir reportes agregados combinando información de vehículos, mantenimientos y asignaciones.</td>
-  </tr>
-</table>
+<ul>
+  <li><code>ReportResource</code> &lt;&lt;class&gt;&gt;</li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>handle(GetReportByVehicleIdQuery query)</td>
-      <td>Obtiene el reporte consolidado correspondiente al vehículo indicado, incluyendo su información, mantenimientos y asignación actual.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4>Dependencias:</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Dependencia</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>VehiclesQueryService</td>
-      <td>Servicio encargado de recuperar información del vehículo.</td>
-    </tr>
-    <tr>
-      <td>MaintenanceQueryService</td>
-      <td>Servicio encargado de recuperar los mantenimientos asociados al vehículo.</td>
-    </tr>
-    <tr>
-      <td>AssignmentQueryService</td>
-      <td>Servicio encargado de recuperar la asignación activa del vehículo.</td>
-    </tr>
-    <tr>
-      <td>MechanicQueryService</td>
-      <td>Servicio encargado de recuperar la información del mecánico asignado (si aplica).</td>
-    </tr>
-    <tr>
-      <td>Logger (SLF4J)</td>
-      <td>Utilizado para registrar información y advertencias durante el proceso de consulta.</td>
-    </tr>
-  </tbody>
-</table>
-
-##### 4.2.5.4 Infrastructure Layer
-
-<h3>Clase: <code>ReportRepository</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportRepository</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Repositorio placeholder para operaciones de persistencia de reportes. Actualmente no implementa métodos de acceso a datos, pero se reserva para futuras extensiones del contexto.</td>
-  </tr>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Método</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>noop()</td>
-      <td>Método sin operación (no-op), utilizado como marcador para mantener compatibilidad estructural mientras se definen futuras funcionalidades de persistencia.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Clase: <code>ReportResource</code></h3>
-<table>
-  <tr>
-    <th>Título</th>
-    <td>ReportResource</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Recurso REST que representa un reporte consolidado, incluyendo la información del vehículo, sus mantenimientos y su asignación actual.</td>
-  </tr>
-</table>
+<h4><code>ReportResource</code></h4>
+<p><strong>Descripción:</strong> Representa la estructura de datos expuesta a través de la API para describir un reporte consolidado.</p>
 
 <table>
   <thead>
@@ -3542,22 +3278,222 @@ La arquitectura de software de la solución se ha representado utilizando el mod
   </thead>
   <tbody>
     <tr>
-      <td>vehicle</td>
-      <td>VehicleResource</td>
-      <td>Información detallada del vehículo.</td>
+      <td>reportId</td>
+      <td>Long</td>
+      <td>Identificador único del reporte</td>
     </tr>
     <tr>
-      <td>maintenances</td>
-      <td>List&lt;MaintenanceResource&gt;</td>
-      <td>Lista de mantenimientos realizados o programados para el vehículo.</td>
+      <td>vehicleId</td>
+      <td>Long</td>
+      <td>Identificador del vehículo asociado al reporte</td>
     </tr>
     <tr>
-      <td>assignment</td>
-      <td>AssignmentResource</td>
-      <td>Asignación actual del vehículo y el mecánico responsable (si aplica).</td>
+      <td>reportDate</td>
+      <td>Date</td>
+      <td>Fecha de generación del reporte</td>
+    </tr>
+    <tr>
+      <td>metrics</td>
+      <td>List&lt;Metric&gt;</td>
+      <td>Lista de métricas asociadas al reporte</td>
     </tr>
   </tbody>
 </table>
+
+<hr>
+
+<h3>Assemblers</h3>
+
+<ul>
+  <li><code>ReportResourceFromEntityAssembler</code></li>
+</ul>
+
+<h4><code>ReportResourceFromEntityAssembler</code></h4>
+<p><strong>Descripción:</strong> Ensamblador encargado de transformar una entidad <code>Report</code> del dominio en un recurso REST <code>ReportResource</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fromEntity(Report report)</td>
+      <td>Transforma una entidad del agregado Report en un recurso REST.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3>Dependencias</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportQueryService</td>
+      <td>Servicio de consultas del dominio utilizado para recuperar reportes y métricas.</td>
+    </tr>
+    <tr>
+      <td>ReportResourceFromEntityAssembler</td>
+      <td>Componente encargado de transformar entidades del dominio en recursos REST.</td>
+    </tr>
+    <tr>
+      <td>ReportResource</td>
+      <td>Recurso REST que representa la vista serializada del reporte consolidado.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+##### 4.2.5.3 Application Layer
+
+<h3><code>ReportQueryServiceImpl</code></h3>
+
+<p><strong>Descripción:</strong> Implementación del servicio de consultas <code>ReportQueryService</code>, responsable de recuperar reportes y métricas desde la capa de persistencia mediante el uso de consultas especializadas.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>handle(GetReportByIdQuery)</td>
+      <td>Obtiene un reporte por su identificador único.</td>
+    </tr>
+    <tr>
+      <td>handle(GetReportByVehicleIdQuery)</td>
+      <td>Obtiene todos los reportes asociados a un vehículo por su id.</td>
+    </tr>
+    <tr>
+      <td>handle(GetMetricsByReportIdQuery)</td>
+      <td>Obtiene todas las métricas relacionadas con un reporte específico.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReportRepository</td>
+      <td>Repositorio JPA encargado de la recuperación persistente de reportes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3><code>ApplicationReadyEventHandler</code></h3>
+
+<p><strong>Descripción:</strong> Componente ejecutado automáticamente al iniciar la aplicación. Se encarga de inicializar el sistema con valores por defecto para los tipos de métricas, en caso de que no existan registros previos.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>onApplicationEvent(ApplicationReadyEvent)</td>
+      <td>Se ejecuta al iniciar la aplicación; registra valores iniciales para los tipos de métricas si la base de datos está vacía.</td>
+    </tr>
+    <tr>
+      <td>currentTimestamp()</td>
+      <td>Devuelve el timestamp actual para propósitos de registro en logs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Dependencias:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependencia</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MetricTypeRepository</td>
+      <td>Repositorio encargado de gestionar tipos de métricas en la base de datos.</td>
+    </tr>
+    <tr>
+      <td>Logger (SLF4J)</td>
+      <td>Utilizado para registrar información, advertencias y errores durante la inicialización.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+##### 4.2.5.4 Infrastructure Layer
+
+
+<h3><code>ReportRepository</code> (interface)</h3>
+
+<p><strong>Descripción:</strong> Repositorio JPA encargado de las operaciones de persistencia del agregado <code>Report</code>. Provee métodos para obtener reportes por su identificador o por el identificador del vehículo asociado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>findByVehicleId(Long vehicleId)</td>
+      <td>List&lt;Report&gt;</td>
+      <td>Recupera todos los reportes asociados a un vehículo por su id.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3><code>MetricTypeRepository</code> (interface)</h3>
+
+<p><strong>Descripción:</strong> Repositorio JPA utilizado para gestionar la persistencia de los tipos de métricas (<code>MetricType</code>). Este repositorio permite realizar operaciones CRUD completas sobre los tipos de métricas del sistema.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de Retorno</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hereda métodos de JpaRepository</td>
+      <td>Varía</td>
+      <td>Permite realizar operaciones CRUD sobre los tipos de métricas.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ##### 4.2.5.5 Bounded Context Software Architecture Component Level Diagrams
 
@@ -3567,7 +3503,7 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 
 ###### 4.2.5.6.1 Bounded Context Domain Layer Class Diagrams
 
-![report-class-diagram.png](images/chapter-4/report-class-diagram.png)
+![DOMAINDIAGRAMREPORT.png](images/chapter-4/DOMAINDIAGRAMREPORT.png)
 
 ###### 4.2.5.6.2 Bounded Context Database Design Diagram
 
@@ -3899,6 +3835,8 @@ La arquitectura de software de la solución se ha representado utilizando el mod
 ###### 4.2.6.6.2 Bounded Context Database Design Diagram
 
 ![IAM-database.png](images/chapter-4/IAM-database.png)
+
+
 
 ## Capítulo V: Solution UI/UX Design
 
@@ -4452,11 +4390,11 @@ El flujo inicia cuando el usuario se encuentra en el Panel, luego accede a la p�
 En esta sección se presentan los prototipos interactivos de las aplicaciones móvil y web de BykerZ, los cuales permiten simular la experiencia de usuario final, facilitando la evaluación y validación del diseño antes de la implementación definitiva.
 
 **Aplicación Móvil:**
-- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202112078_upc_edu_pe/ESBhQRPgAiZKuXFHdlixAIsBdFKaB1B3DuZgQQmfxa5LxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=baa9gY)
+- [https://tinyurl.com/234dfsfgsg](https://tinyurl.com/234dfsfgsg)
 
 **Aplicación Web:**
-- [https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202112078_upc_edu_pe/EtChDRlCM8RItKwxwSCTR_UBzTQztoqY_LeyruEo6qGrHQ?e=mzL9e1)
-
+- [https://tinyurl.com/3vvdswr2](https://tinyurl.com/3vvdswr2)
+  
 ## Capítulo VI: Product Implementation, Validation & Deployment
 
 ### 6.1. Software Configuration Management.
@@ -4855,16 +4793,16 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Web Application**
 
-| Repository             | Branch            | Commit Id | Commit Message                                                      | Commit Message Body                                                 | Date       |
-|------------------------|-------------------|-----------|---------------------------------------------------------------------|---------------------------------------------------------------------|------------|
-| BykerZ-Web-Application | develop           | a0be106          | feat: initial routes set                                            | feat: initial routes set                                            | 08/10/2025 |
-| BykerZ-Web-Application | develop           | 89fa421          | feat: navbar implemented                                            | feat: navbar implemented                                            | 08/10/2025 |
-| BykerZ-Web-Application | develop           | 7c1d8ea          | feat: vehicle entity                                                | feat: vehicle entity                                                | 08/10/2025 |
-| BykerZ-Web-Application | develop           | 6d49a52          | feat: incomplete create dialog                                      | feat: incomplete create dialog                                      | 08/10/2025 |
-| BykerZ-Web-Application | develop           | 41d38a4          | feat: add vehicle form                                              | feat: add vehicle form                                              | 08/10/2025 |
-| BykerZ-Web-Application | develop           | e44a98e          | feat: vehicle details screen                                        | feat: vehicle details screen                                        | 08/10/2025 |
-| BykerZ-Web-Application | suscription       | 6d49a52          | feat(subscription): subscription page.                              | feat(subscription): subscription page.                              | 08/10/2025 |
-| BykerZ-Web-Application | vehicle-wellness  | 376f4a7          | feat: implement maintenance management features and update routing  | feat: implement maintenance management features and update routing  | 08/10/2025 |
+| Repository             | Branch           | Commit Id | Commit Message                                                     | Commit Message Body                                                | Date       |
+|------------------------|------------------|-----------|--------------------------------------------------------------------|--------------------------------------------------------------------|------------|
+| BykerZ-Web-Application | develop          | a0be106   | feat: initial routes set                                           | feat: initial routes set                                           | 08/10/2025 |
+| BykerZ-Web-Application | develop          | 89fa421   | feat: navbar implemented                                           | feat: navbar implemented                                           | 08/10/2025 |
+| BykerZ-Web-Application | develop          | 7c1d8ea   | feat: vehicle entity                                               | feat: vehicle entity                                               | 08/10/2025 |
+| BykerZ-Web-Application | develop          | 6d49a52   | feat: incomplete create dialog                                     | feat: incomplete create dialog                                     | 08/10/2025 |
+| BykerZ-Web-Application | develop          | 41d38a4   | feat: add vehicle form                                             | feat: add vehicle form                                             | 08/10/2025 |
+| BykerZ-Web-Application | develop          | e44a98e   | feat: vehicle details screen                                       | feat: vehicle details screen                                       | 08/10/2025 |
+| BykerZ-Web-Application | suscription      | 6d49a52   | feat(subscription): subscription page.                             | feat(subscription): subscription page.                             | 08/10/2025 |
+| BykerZ-Web-Application | vehicle-wellness | 376f4a7   | feat: implement maintenance management features and update routing | feat: implement maintenance management features and update routing | 08/10/2025 |
 
 
 **Backend**
@@ -4884,7 +4822,7 @@ Para este sprint no se desarrollaron pruebas unitarias ni de integración, ya qu
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ESwkWk-zHI9LpWQ9RVVVntUB9I-fhBWew_sQLhK6se9BKA?e=NfvVG5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Video: [https://tinyurl.com/mb7yfv2d](https://tinyurl.com/mb7yfv2d)
 
 **Landing Page**
 
@@ -4918,29 +4856,29 @@ Video: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/
 
 En esta sección se presentan los avances logrados en la documentación de los Web Services desarrollados durante el Sprint, evidenciando la correcta implementación y estandarización de los endpoints mediante OpenAPI. Se detallan las acciones disponibles (GET, POST, PUT, DELETE, PATCH), sus parámetros, ejemplos de respuesta y enlaces a la documentación correspondiente, garantizando la trazabilidad, comprensión y correcta integración entre los distintos componentes del sistema.
 
-Backend repository: []()
+Backend repository: [https://github.com/NRG-6-IOT/BykerZ-Backend](https://github.com/NRG-6-IOT/BykerZ-Backend)
 
-| endpoint | verbo http | descripción | parámetros | request body | response body | explicación |
-|-----------|-------------|-------------|-------------|---------------|----------------|-------------|
-| /api/v1/users | GET | Obtiene la lista completa de usuarios. | — | — | Lista de usuarios con sus datos principales. | Permite visualizar todos los usuarios registrados en el sistema. |
-| /api/v1/users | PUT | Actualiza la información de un usuario existente. | — | Objeto JSON con los datos actualizados del usuario. | Usuario actualizado con sus nuevos valores. | Modifica los datos de un usuario en la base de datos. |
-| /api/v1/users/{userId} | GET | Obtiene la información de un usuario específico. | `userId` (path) | — | Datos detallados del usuario. | Retorna la información del usuario identificado por su ID. |
-| /api/v1/users/{userId} | DELETE | Elimina un usuario del sistema. | `userId` (path) | — | Mensaje de confirmación de eliminación. | Permite eliminar usuarios registrados. |
-| /api/v1/users/me | GET | Obtiene la información del usuario autenticado. | Token de autenticación (header) | — | Datos del usuario autenticado. | Permite conocer los datos del usuario actualmente logueado. |
-| /api/v1/users/email/{username} | GET | Busca un usuario por su nombre de usuario o correo electrónico. | `username` (path) | — | Datos del usuario encontrado. | Permite consultar usuarios mediante su nombre de usuario o email. |
-| /api/v1/vehicles | GET | Lista todos los vehículos registrados. | — | — | Lista de vehículos registrados. | Permite visualizar los vehículos disponibles en el sistema. |
-| /api/v1/vehicles | POST | Registra un nuevo vehículo. | — | Objeto JSON con los datos del vehículo. | Vehículo creado con su ID asignado. | Permite añadir nuevos vehículos a la base de datos. |
-| /api/v1/vehicles/{vehicleId} | GET | Obtiene la información de un vehículo específico. | `vehicleId` (path) | — | Datos detallados del vehículo. | Retorna los datos de un vehículo registrado. |
-| /api/v1/brands | GET | Lista todas las marcas de vehículos. | — | — | Lista de marcas registradas. | Permite visualizar las marcas disponibles en el sistema. |
-| /api/v1/brands | POST | Crea una nueva marca. | — | Objeto JSON con los datos de la marca. | Marca creada con su identificador. | Permite registrar nuevas marcas de vehículos. |
-| /api/v1/brands/{brandId} | GET | Obtiene los detalles de una marca específica. | `brandId` (path) | — | Datos de la marca solicitada. | Retorna la información detallada de una marca registrada. |
-| /api/v1/models | GET | Lista todos los modelos de vehículos. | — | — | Lista de modelos registrados. | Permite consultar todos los modelos disponibles. |
-| /api/v1/models | POST | Crea un nuevo modelo de vehículo. | — | Objeto JSON con nombre, marca y año del modelo. | Modelo creado con su identificador. | Permite añadir nuevos modelos de vehículos. |
-| /api/v1/models/{modelId} | GET | Obtiene los detalles de un modelo específico. | `modelId` (path) | — | Datos detallados del modelo. | Retorna la información de un modelo de vehículo. |
-| /api/v1/authentication/sign-up | POST | Registra un nuevo usuario. | — | Objeto JSON con datos de registro (nombre, correo, contraseña, etc.). | Usuario creado con token de autenticación. | Permite crear nuevas cuentas de usuario en el sistema. |
-| /api/v1/authentication/sign-in | POST | Autentica a un usuario. | — | Objeto JSON con `username` y `password`. | Token JWT y datos del usuario autenticado. | Permite iniciar sesión y obtener credenciales para acceder a recursos protegidos. |
-| /api/v1/authentication/** | OPTIONS | Verifica los métodos HTTP soportados. | — | — | Cabeceras con métodos permitidos. | Usado para CORS y exploración de la API. |
-| /api/v1/roles | GET | Lista todos los roles disponibles. | — | — | Lista de roles registrados en el sistema. | Permite consultar los distintos roles de usuario disponibles. |
+| endpoint                       | verbo http | descripción                                                     | parámetros                      | request body                                                          | response body                                | explicación                                                                       |
+|--------------------------------|------------|-----------------------------------------------------------------|---------------------------------|-----------------------------------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------|
+| /api/v1/users                  | GET        | Obtiene la lista completa de usuarios.                          | —                               | —                                                                     | Lista de usuarios con sus datos principales. | Permite visualizar todos los usuarios registrados en el sistema.                  |
+| /api/v1/users                  | PUT        | Actualiza la información de un usuario existente.               | —                               | Objeto JSON con los datos actualizados del usuario.                   | Usuario actualizado con sus nuevos valores.  | Modifica los datos de un usuario en la base de datos.                             |
+| /api/v1/users/{userId}         | GET        | Obtiene la información de un usuario específico.                | `userId` (path)                 | —                                                                     | Datos detallados del usuario.                | Retorna la información del usuario identificado por su ID.                        |
+| /api/v1/users/{userId}         | DELETE     | Elimina un usuario del sistema.                                 | `userId` (path)                 | —                                                                     | Mensaje de confirmación de eliminación.      | Permite eliminar usuarios registrados.                                            |
+| /api/v1/users/me               | GET        | Obtiene la información del usuario autenticado.                 | Token de autenticación (header) | —                                                                     | Datos del usuario autenticado.               | Permite conocer los datos del usuario actualmente logueado.                       |
+| /api/v1/users/email/{username} | GET        | Busca un usuario por su nombre de usuario o correo electrónico. | `username` (path)               | —                                                                     | Datos del usuario encontrado.                | Permite consultar usuarios mediante su nombre de usuario o email.                 |
+| /api/v1/vehicles               | GET        | Lista todos los vehículos registrados.                          | —                               | —                                                                     | Lista de vehículos registrados.              | Permite visualizar los vehículos disponibles en el sistema.                       |
+| /api/v1/vehicles               | POST       | Registra un nuevo vehículo.                                     | —                               | Objeto JSON con los datos del vehículo.                               | Vehículo creado con su ID asignado.          | Permite añadir nuevos vehículos a la base de datos.                               |
+| /api/v1/vehicles/{vehicleId}   | GET        | Obtiene la información de un vehículo específico.               | `vehicleId` (path)              | —                                                                     | Datos detallados del vehículo.               | Retorna los datos de un vehículo registrado.                                      |
+| /api/v1/brands                 | GET        | Lista todas las marcas de vehículos.                            | —                               | —                                                                     | Lista de marcas registradas.                 | Permite visualizar las marcas disponibles en el sistema.                          |
+| /api/v1/brands                 | POST       | Crea una nueva marca.                                           | —                               | Objeto JSON con los datos de la marca.                                | Marca creada con su identificador.           | Permite registrar nuevas marcas de vehículos.                                     |
+| /api/v1/brands/{brandId}       | GET        | Obtiene los detalles de una marca específica.                   | `brandId` (path)                | —                                                                     | Datos de la marca solicitada.                | Retorna la información detallada de una marca registrada.                         |
+| /api/v1/models                 | GET        | Lista todos los modelos de vehículos.                           | —                               | —                                                                     | Lista de modelos registrados.                | Permite consultar todos los modelos disponibles.                                  |
+| /api/v1/models                 | POST       | Crea un nuevo modelo de vehículo.                               | —                               | Objeto JSON con nombre, marca y año del modelo.                       | Modelo creado con su identificador.          | Permite añadir nuevos modelos de vehículos.                                       |
+| /api/v1/models/{modelId}       | GET        | Obtiene los detalles de un modelo específico.                   | `modelId` (path)                | —                                                                     | Datos detallados del modelo.                 | Retorna la información de un modelo de vehículo.                                  |
+| /api/v1/authentication/sign-up | POST       | Registra un nuevo usuario.                                      | —                               | Objeto JSON con datos de registro (nombre, correo, contraseña, etc.). | Usuario creado con token de autenticación.   | Permite crear nuevas cuentas de usuario en el sistema.                            |
+| /api/v1/authentication/sign-in | POST       | Autentica a un usuario.                                         | —                               | Objeto JSON con `username` y `password`.                              | Token JWT y datos del usuario autenticado.   | Permite iniciar sesión y obtener credenciales para acceder a recursos protegidos. |
+| /api/v1/authentication/**      | OPTIONS    | Verifica los métodos HTTP soportados.                           | —                               | —                                                                     | Cabeceras con métodos permitidos.            | Usado para CORS y exploración de la API.                                          |
+| /api/v1/roles                  | GET        | Lista todos los roles disponibles.                              | —                               | —                                                                     | Lista de roles registrados en el sistema.    | Permite consultar los distintos roles de usuario disponibles.                     |
 
 ##### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
@@ -5011,37 +4949,37 @@ Durante el segundo sprint, el equipo orientó sus esfuerzos al fortalecimiento y
 
 Esta sección describe el proceso de planificación del Sprint 2, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación del Frontend (Mobile App y Web App) y del Backend.
 
-| Sprint #                         | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Date                             | 2025-10-13                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Sprint 2 - Review Summary        | No se alcanzaron desarrollar todos los entregables planteados como objetivo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
-| Sprint 2 - Retrospective Summary | Se realizó autocritica sobre las deficiencias de cada uno y se plantearon oportunidades de mejora, mejorando el compromiso entre los miembros del equipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Sprint 2 Goal                    | Nuestro enfoque está en entregar la segunda versión de la aplicación web y del backend con un 80% de cobertura funcional, junto con la primera versión de la aplicación móvil y el prototipo físico inicial del dispositivo IoT. Creemos que esto proporcionará un ecosistema más integrado y funcional para los usuarios de la plataforma, permitiendo el flujo de datos en tiempo real entre las aplicaciones y los componentes IoT. Esto se confirmará cuando la aplicación web y el backend alcancen un 80% de implementación de funcionalidades, la aplicación móvil se comunique exitosamente con los servicios del backend, y el prototipo IoT transmita datos de telemetría hacia la plataforma. |
-| Sprint 2 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Sprint #                         | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-10-13                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Sprint 2 - Review Summary        | No se alcanzaron desarrollar todos los entregables planteados como objetivo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | 
+| Sprint 2 - Retrospective Summary | Se realizó autocritica sobre las deficiencias de cada uno y se plantearon oportunidades de mejora, mejorando el compromiso entre los miembros del equipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Sprint 2 Goal                    | Nuestro enfoque está en que los motociclistas y mecánicos puedan monitorear el estado de su vehículo y recibir alertas preventivas desde cualquier lugar. Creemos que esto proporciona mayor tranquilidad y control sobre el mantenimiento a los motociclistas, y diagnósticos más rápidos y basados en datos a los mecánicos. Esto se confirmará cuando los motociclistas consulten el estado de su vehículo desde la app móvil y actúen programando un mantenimiento basado en una alerta y los mecánicos reciban en el panel web datos de telemetría para preparar un diagnóstico antes de que el cliente llegue al taller. |
+| Sprint 2 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ##### 6.2.2.2. Aspect Leaders and Collaborators.
 
 La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
 
-| Team Member                           | Github Username       | Aspect Name 1                     | Aspect Name 2           | Aspect Name 3    | Aspect Name 4          | Aspect Name 5     |
-|---------------------------------------|-----------------------|-----------------------------------|-------------------------|------------------|------------------------|-------------------|  
-| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
-| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) | Simulated Prototype (L) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
-| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (L) | Edge Services (L) |
-| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        | Simulated Prototype (C) | Embedded App (L) | Physical Prototype (L) | Edge Services (C) |
-| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
-| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Team Member                           | Github Username       | Bounded Context                   |  Simulated Prototype  |  Embedded App  |  Physical Prototype  |  Edge Services  |
+|---------------------------------------|-----------------------|-----------------------------------|:---------------------:|:--------------:|:--------------------:|:---------------:|  
+| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           |          (C)          |      (C)       |         (C)          |       (C)       |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) |          (L)          |      (C)       |         (C)          |       (C)       |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                |          (C)          |      (C)       |         (L)          |       (L)       |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        |          (C)          |      (L)       |         (L)          |       (C)       |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    |          (C)          |      (C)       |         (C)          |       (C)       |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            |          (C)          |      (C)       |         (C)          |       (C)       |
 
 ##### 6.2.2.3. Sprint Backlog 2.
 
 La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
 
-Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot](https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef99a3b4a399023c6989acc1c775c0793478F7/sprint-2-iot)
+Enlace al tablero: https://trello.com/b/p0Q6jeKS/sprint-2-iot
 
 <table>
   <tr>
@@ -5478,7 +5416,6 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Gianluca Pasquale</td>
     <td>Done</td>
   </tr>
-  
   <tr>
     <td rowspan="2">US-061</td>
     <td rowspan="2">Comparación de modelos por mecánico</td>
@@ -5652,7 +5589,6 @@ Enlace al tablero:[https://trello.com/invite/b/6914b0dcd5a5f7e3b2fdb1a0/ATTI9eef
     <td>Sebastian Real</td>
     <td>Done</td>
   </tr>
-
   <tr>
     <td rowspan="1">US-067</td>
     <td rowspan="1">Exportación de reporte técnico del vehículo</td>
@@ -5925,32 +5861,32 @@ En esta sección se presentan los avances alcanzados durante el Sprint en la imp
 
 **Mobile Application**
 
-| Repository                | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                        | Date       |
-|---------------------------|---------|--|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------|
-| BykerZ-Mobile-Application | develop | af7ce170 | fix(metrics-notifications): fix corrected fields                                                        | fix(metrics-notifications): fix corrected fields                                                           | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | f896d2ff | fix(metrics and notificaions): fix corrected fields                                                     | fix(metrics and notificaions): fix corrected fields                                                        | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | 2c0eadd1 | feat(notifications+websocket): added websocket implementation and notifications bc                      | feat(notifications+websocket): added websocket implementation and notifications bc                         | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | e46b85aa | fix(vehicle_wellness): fix vehicle\_wellness's metrics                                                  | fix(vehicle\_wellness): fix vehicle\_wellness's metrics                                                    | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | da9349df | fix(vehicle_management): fix colors,new button                                                          | fix(vehicle\_management): fix colors,new button                                                            | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | cb7c3c24 | feat: vehicle bloc creation and details                                                                 | feat: vehicle bloc creation and details                                                                    | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 2cf1e18b | feat: vehicles from owner page                                                                          | feat: vehicles from owner page                                                                             | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 0d9ddb87 | feat: model service                                                                                     | feat: model service                                                                                        | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 4ff35555 | feat: vehicle and model entities redefined                                                              | feat: vehicle and model entities redefined                                                                 | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 37aa3669 | fix(vehicle_wellness): added vehicle_wellness                                                           | fix(vehicle\_wellness): added vehicle\_wellness                                                            | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | 8287760c | fix(metrics): fix datasources                                                                           | fix(metrics): fix datasources                                                                              | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | a01aa02a | feat(iam): update image asset references in pubspec.yaml                                                | feat(iam): update image asset references in pubspec.yaml                                                   | 14/11/2025 |
-| BykerZ-Mobile-Application | develop | ebc4075b | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | f48e639e | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling          | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling             | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 5b055910 | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display              | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display                 | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 1ec74f2e | feat(bloc): added bloc                                                                                  | feat(bloc): added bloc                                                                                     | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | e38bc96f | feat(metrics-data-layer): added data layer                                                              | feat(metrics-data-layer): added data layer                                                                 | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | c4011a2 | feat(metrics): added metrics                                                                            | feat(metrics): added metrics                                                                               | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | e46c2fe8 | feat(expense): implement CreateExpense feature with BLoC for expense creation                           | feat(expense): implement CreateExpense feature with BLoC for expense creation                              | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 9b1edcd9 | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                   | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                      | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 1f6d26fa | feat(expense): add ExpenseDetail page with BLoC for expense details management                          | feat(expense): add ExpenseDetail page with BLoC for expense details management                             | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 5c46dbb9 | feat(maintenance): implement maintenance management with BLoC and API integration                       | feat(maintenance): implement maintenance management with BLoC and API integration                          | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | a14aad9c | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC           | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC              | 13/11/2025 |
-| BykerZ-Mobile-Application | develop | 2d9ee343 | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions              | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions                 | 13/11/2025 |
+| Repository                | Branch  | Commit Id | Commit Message                                                                                             | Commit Message Body                                                                                        | Date       |
+|---------------------------|---------|-----------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------|
+| BykerZ-Mobile-Application | develop | af7ce170  | fix(metrics-notifications): fix corrected fields                                                           | fix(metrics-notifications): fix corrected fields                                                           | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | f896d2ff  | fix(metrics and notificaions): fix corrected fields                                                        | fix(metrics and notificaions): fix corrected fields                                                        | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | 2c0eadd1  | feat(notifications+websocket): added websocket implementation and notifications bc                         | feat(notifications+websocket): added websocket implementation and notifications bc                         | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | e46b85aa  | fix(vehicle_wellness): fix vehicle\_wellness's metrics                                                     | fix(vehicle\_wellness): fix vehicle\_wellness's metrics                                                    | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | da9349df  | fix(vehicle_management): fix colors,new button                                                             | fix(vehicle\_management): fix colors,new button                                                            | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | cb7c3c24  | feat: vehicle bloc creation and details                                                                    | feat: vehicle bloc creation and details                                                                    | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 2cf1e18b  | feat: vehicles from owner page                                                                             | feat: vehicles from owner page                                                                             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 0d9ddb87  | feat: model service                                                                                        | feat: model service                                                                                        | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 4ff35555  | feat: vehicle and model entities redefined                                                                 | feat: vehicle and model entities redefined                                                                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 37aa3669  | fix(vehicle_wellness): added vehicle_wellness                                                              | fix(vehicle\_wellness): added vehicle\_wellness                                                            | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | 8287760c  | fix(metrics): fix datasources                                                                              | fix(metrics): fix datasources                                                                              | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | a01aa02a  | feat(iam): update image asset references in pubspec.yaml                                                   | feat(iam): update image asset references in pubspec.yaml                                                   | 14/11/2025 |
+| BykerZ-Mobile-Application | develop | ebc4075b  | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | feat(expense): enhance ExpenseDetail and Expenses screens with improved UI, animations, and error handling | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | f48e639e  | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling             | feat(maintenance): enhance Maintenance screen with improved UI, animations, and error handling             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 5b055910  | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display                 | feat(maintenance): enhance MaintenanceCardWidget with animations and improved data display                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 1ec74f2e  | feat(bloc): added bloc                                                                                     | feat(bloc): added bloc                                                                                     | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | e38bc96f  | feat(metrics-data-layer): added data layer                                                                 | feat(metrics-data-layer): added data layer                                                                 | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | c4011a2   | feat(metrics): added metrics                                                                               | feat(metrics): added metrics                                                                               | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | e46c2fe8  | feat(expense): implement CreateExpense feature with BLoC for expense creation                              | feat(expense): implement CreateExpense feature with BLoC for expense creation                              | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 9b1edcd9  | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                      | feat(navigation): implement MaintenanceNavigationHelper for expense detail navigation                      | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 1f6d26fa  | feat(expense): add ExpenseDetail page with BLoC for expense details management                             | feat(expense): add ExpenseDetail page with BLoC for expense details management                             | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 5c46dbb9  | feat(maintenance): implement maintenance management with BLoC and API integration                          | feat(maintenance): implement maintenance management with BLoC and API integration                          | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | a14aad9c  | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC              | feat(assignment): add Assignment, Owner, and Mechanic models with JSON serialization and BLoC              | 13/11/2025 |
+| BykerZ-Mobile-Application | develop | 2d9ee343  | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions                 | feat(expense, maintenance): add ExpenseService and MaintenanceService for API interactions                 | 13/11/2025 |
 
 **Edge Services**
 
@@ -5989,11 +5925,11 @@ Para este sprint no se contemplaron pruebas unitarias.
 
 En esta sección se documentan los resultados obtenidos durante el Sprint, mostrando evidencias visuales del progreso alcanzado. Se incluyen capturas de pantalla de las principales vistas implementadas y un video demostrativo que ilustra la funcionalidad, navegación e interacción logradas, destacando los avances respecto a los objetivos planteados para esta iteración.
 
-Video web app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Video web app: [https://tinyurl.com/473p96fd](https://tinyurl.com/473p96fd)
 
-Video mobile app: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV)
+Video mobile app: [https://tinyurl.com/5n764phe](https://tinyurl.com/5n764phe)
 
-Video IoT embedded application + edge services: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAT_gOk-s1E25r8KejgVYYQQ?e=MPnrSX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAT_gOk-s1E25r8KejgVYYQQ?e=MPnrSX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Video IoT embedded application + edge services: [https://tinyurl.com/ysefet27](https://tinyurl.com/ysefet27)
 
 **Landing Page**
 
@@ -6033,7 +5969,7 @@ Enlace: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://byk
 
 <img src="images/chapter-6/sprint-2/webapp-execution-evidence-4.png" alt="Web Application execution evidence 4"/>
 
-Enlace:[https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+Enlace: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
 
 **Mobile Application**
 
@@ -6739,6 +6675,540 @@ Distribución de commits:
 * Pasquale Barrenechea Gianluca Santino: 1 commits
 * Real Calderon Sebatian Omar: 2 commits
 
+#### 6.2.3. Sprint 3
+
+Este tercer sprint se centro en la culminación y pulido de todos los productos digitales del ecosistema BykerZ, asegurando que cada componente estuviera completamente funcional, integrado y listo para su despliegue. El equipo trabajó en la finalización de la Landing Page, la Web Application, la Mobile Application y el Backend, enfocándose en corregir errores, optimizar el rendimiento y mejorar la experiencia de usuario. Además, se realizaron pruebas exhaustivas para garantizar la estabilidad y confiabilidad de los sistemas antes de su lanzamiento oficial.
+
+##### 6.2.3.1. Sprint Planning 3
+
+Esta sección describe el proceso de planificación del Sprint 3, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación d la internacionalización y del dispositivo iot.
+
+| Sprint #                         | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-11-20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Sprint 2 - Review Summary        | Se logro implementar la primera versión completa del core business, logrando emitir metricas a traves del dispositivo iot e interactuar con los productos móviles y web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 
+| Sprint 2 - Retrospective Summary | Se detecto una mejora en el flujo de trabajo como equipo, evidenciando una mayor participación entre los miembros e interés en la finalización del proyecto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Sprint 3 Goal                    | El objetivo del Sprint 3 es entregar un prototipo IoT plenamente funcional capaz de capturar y transmitir datos críticos del vehículo (temperatura, ubicación, impactos, presión y niveles de contaminación) hacia la infraestructura en la nube, fortaleciendo así la propuesta tecnológica central del proyecto. De forma complementaria, se busca fortalecer la comunicación con los usuarios externos mediante la producción de videos demostrativos para la landing page (video about-the-product y about-the-team), y mejorar la experiencia de uso en la aplicación web y móvil a través de optimizaciones de la interfaz. El éxito del sprint se confirmará cuando el dispositivo IoT transmita datos reales de forma estable y los usuarios visualicen correctamente las mejoras en la plataforma digital y el material audiovisual publicado. |
+| Sprint 3 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Sum of Story Points              |
+
+##### 6.2.3.2. Aspect Leaders and Collaborators
+
+Los usuarios de github estan relacionados de la siguiente manera:
+
+* Alejo Cardenas Jose Antonio: Firtness       
+* Astonitas Díaz Juan Diego: NeoRise456   
+* Casas Sanchez Gabriel Alexander: Al3xiel      
+* Pacheco Astiguetta Sebastian: Pachieeee    
+* Pasquale Barrenechea Gianluca Santino: cwassointt   
+* Real Calderon Sebatian Omar: sebastianrealcalderon
+
+|        Aspecto        | Gabriel Casas | Juan Diego Astonitas | Gianluca Pasquale | Sebastian Pacheco | Jose Alejo | Sebastian Real |
+|:---------------------:|:-------------:|:--------------------:|:-----------------:|:-----------------:|:----------:|:--------------:|
+|    BC-Assignments     |       L       |          C           |         C         |         C         |     C      |       C        |
+|    BC-Maintenance     |       C       |          L           |         C         |         C         |     C      |       C        |
+|  BC-Vehicle Wellness  |       C       |          C           |         C         |         C         |     L      |       C        |
+|        BC-IAM         |       C       |          C           |         C         |         L         |     C      |       C        |
+|      BC-Reports       |       C       |          C           |         L         |         C         |     C      |       C        |
+| BC-Vehicle Management |       C       |          C           |         C         |         C         |     C      |       L        |
+|     Embedded App      |       L       |          C           |         C         |         L         |     C      |       C        |
+|      IoT Device       |       L       |          C           |         C         |         L         |     C      |       C        | 
+|  Simulated Prototype  |       L       |          L           |         C         |         C         |     C      |       C        | 
+|      Deployment       |       C       |          L           |         C         |         C         |     C      |       C        |
+
+##### 6.2.3.3. Sprint Backlog 3
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+Enlace al tablero: https://trello.com/b/YSmbG0JF/sprint-3-iot
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item/task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2">US-28</td>
+        <td colspan="2">Monitorear temperatura de la moto</td>
+        <td>T-001</td>
+        <td>Monitoreo de temperatura físico</td>
+        <td>Habilitar el monitoreo de temperatura en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de temperatura simulado</td>
+        <td>Habilitar el monitoreo de temperatura en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-29</td>
+        <td colspan="2">Monitorear contaminación del escape</td>
+        <td>T-001</td>
+        <td>Monitoreo de la contaminación física</td>
+        <td>Habilitar el monitoreo de la contaminación en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de contaminación simulada</td>
+        <td>Habilitar el monitoreo de la contaminación en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2" colspan="2">US-30</td>
+        <td colspan="2" colspan="2">Detectar impactos con la moto estacionada</td>
+        <td>T-001</td>
+        <td>Monitoreo de los impactos física</td>
+        <td>Habilitar el monitoreo de los impactos en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de los impactos simulada</td>
+        <td>Habilitar el monitoreo de los impactos en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-31</td>
+        <td colspan="2">Monitorear presión de llantas</td>
+        <td>T-001</td>
+        <td>Monitoreo de la presión de llantas física</td>
+        <td>Habilitar el monitoreo de la presión de llantas en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de la presión de llantas simulada</td>
+        <td>Habilitar el monitoreo de la presión de llantas en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-32</td>
+        <td colspan="2">Visualizar estado general de la moto</td>
+        <td>T-001</td>
+        <td>Monitoreo del estado general físico</td>
+        <td>Habilitar el monitoreo del estado general en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo del estado general simulado</td>
+        <td>Habilitar el monitoreo del estado general en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-33</td>
+        <td colspan="2">Integrar sensores con ModestIoT</td>
+        <td>T-001</td>
+        <td>Integrar ModestIoT en dispositivo físico</td>
+        <td>Programar el embedded application siguiendo ModestIoT</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Integrar ModestIoT en dispositivo simulado</td>
+        <td>Programar el simulated prototype siguiendo ModestIoT</td>
+        <td>8hrs</td>
+        <td>Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-34</td>
+        <td colspan="2">Arquitectura basada en eventos</td>
+        <td>T-001</td>
+        <td>Programar en base a eventos físicos</td>
+        <td>Programar la reacción de los sensores en base a eventos físicos</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Programar en base a eventos simulados</td>
+        <td>Programar la reacción de los sensores en base a eventos simulados</td>
+        <td>8hrs</td>
+        <td>Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-35</td>
+        <td>Escalabilidad del sistema</td>
+        <td>T-001</td>
+        <td>Programación orientada a objetos</td>
+        <td>Crear los sensores y dispositivos en base a la abstracción de conceptos</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco, Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-36</td>
+        <td>Depuración mediante Serial Monitor</td>
+        <td>T-001</td>
+        <td>Salida de datos</td>
+        <td>Mostrar en el monitor serial los datos leidos por los sensores</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco, Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+</table>
+
+##### 6.2.3.4. Development Evidence for Sprint Review
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Mobile Application Page, la Web Applications y el Backend. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**:
+
+| Repository                                          | Branch  | Commit Id | Commit Message                                                         | Commit Message Body                                                    | Date       |
+|-----------------------------------------------------|---------|-----------|------------------------------------------------------------------------|------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | a3ac35f3  | feat(i18n): add ngx-translate for internationalization support         | feat(i18n): add ngx-translate for internationalization support         | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 7bc47023  | feat(i18n): integrate ngx-translate for dynamic language support       | feat(i18n): integrate ngx-translate for dynamic language support       | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 54cddefa  | feat(i18n): add empty language files for English and Spanish           | feat(i18n): add empty language files for English and Spanish           | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | c1466e10  | feat(i18n): implement language switcher component with styling         | feat(i18n): implement language switcher component with styling         | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 65d463d9  | feat(i18n): add language switcher to navbar component                  | feat(i18n): add language switcher to navbar component                  | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 729610c6  | feat: owner dashboard structure                                        | feat: owner dashboard structure                                        | 25/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | eb600d35  | feat: owner vehicle card scroll structure                              | feat: owner vehicle card scroll structure                              | 25/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | dfc17b47  | feat: owner and mechanic dashboards                                    | feat: owner and mechanic dashboards                                    | 26/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | c06b2985  | fix(expense): update expense creation to use ownerId instead of userId | fix(expense): update expense creation to use ownerId instead of userId | 28/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 2ff54123  | fix: owner id retrieval                                                | fix: owner id retrieval                                                | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | c75f2e8b  | feat: add new style for pages.                                         | feat: add new style for pages.                                         | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 280efcd6  | feat: add new style for more pages.                                    | feat: add new style for more pages.                                    | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | d31b2699  | fix: improve styling and layout for various pages                      | fix: improve styling and layout for various pages                      | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 84c6c8dc  | feat(membership): added membershipType                                 | feat(membership): added membershipType                                 | 03/12/2025 |
+
+**Backend**
+
+|                 Repository                  | Branch  | Commit Id | Commit Message                                                                                                 | Commit Message Body                                                                                            | Date       |
+|:-------------------------------------------:|:-------:|-----------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 0928fb45  | fix(devices): add service for device authentication.                                                           | fix(devices): add service for device authentication.                                                           | 28/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | b3577b1a  | feat(metrics): added humidity deletedfix(iam): update endpoint to retrieve user by username instead of email.  | feat(metrics): added humidity deletedfix(iam): update endpoint to retrieve user by username instead of email.  | 29/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 49f98bf3  | fix(iam): update endpoint to retrieve user by username instead of email.                                       | fix(iam): update endpoint to retrieve user by username instead of email.                                       | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | b17af5fa  | feat(devices): enhance device model with JPA annotations and constructors.                                     | feat(devices): enhance device model with JPA annotations and constructors.                                     | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | e7e2f53d  | feat(devices): implement device registration and validation commands.                                          | feat(devices): implement device registration and validation commands.                                          | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 7b85378c  | feat(devices): add method to find device by vehicle ID.                                                        | feat(devices): add method to find device by vehicle ID.                                                        | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | ce9c6981  | feat(devices): add resource classes for device registration and validation.                                    | feat(devices): add resource classes for device registration and validation.                                    | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 7554a8ff  | feat(devices): add assemblers for transforming device resources and commands.                                  | feat(devices): add assemblers for transforming device resources and commands.                                  | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 3b4d5de0  | feat(devices): implement device authentication and registration endpoints.                                     | feat(devices): implement device authentication and registration endpoints.                                     | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | a1f30d3a  | feat(devices): update DeviceRepository to use device ID and add existence check.                               | feat(devices): update DeviceRepository to use device ID and add existence check.                               | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 01006533  | feat(devices): use device ID for existence checks and registration.                                            | feat(devices): use device ID for existence checks and registration.                                            | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 31d630d6  | feat(devices): add device authentication endpoint to security configuration                                    | feat(devices): add device authentication endpoint to security configuration                                    | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | c62f397e  | feat(devices): integrate external vehicle service for vehicle existence validation during device registration. | feat(devices): integrate external vehicle service for vehicle existence validation during device registration. | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 54dbbf65  | feat(maintenance): add endpoint to retrieve maintenances by owner ID                                           | feat(maintenance): add endpoint to retrieve maintenances by owner ID                                           | 03/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | aa45cc58  | feat(membershipType): added MembershipType Enum                                                                | feat(membershipType): added MembershipType Enum                                                                | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 690a9f23  | fix(mechanicController): fix corrected response                                                                | fix(mechanicController): fix corrected response                                                                | 03/12/2025 |
+
+**Mobile Application**
+
+| Repository                                             | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                     | Date       |
+|--------------------------------------------------------|---------|-----------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 21efc09d  | feat(l0n): add flutter_localizations and enable code generation                                         | feat(l0n): add flutter_localizations and enable code generation                                         | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 00d27673  | feat(l10n): add localization configuration for ARB files                                                | feat(l10n): add localization configuration for ARB files                                                | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 9ebbc0d8  | feat(l10n): add English and Spanish localization files                                                  | feat(l10n): add English and Spanish localization files                                                  | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 3c66ada5  | feat(l10n): add localization support for English and Spanish using terminal command "flutter gen-l10n". | feat(l10n): add localization support for English and Spanish using terminal command "flutter gen-l10n". | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 94d6694a  | feat(l10n): implement LocaleBloc and LocaleEvent for dynamic locale changes                             | feat(l10n): implement LocaleBloc and LocaleEvent for dynamic locale changes                             | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 786f427b  | feat(l10n): add LanguageSwitcherButton for toggling between English and Spanish                         | feat(l10n): add LanguageSwitcherButton for toggling between English and Spanish                         | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 1e04be05  | feat(l10n): integrate LocaleBloc for dynamic locale management in the app                               | feat(l10n): integrate LocaleBloc for dynamic locale management in the app                               | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | ea2b3622  | feat: dashboard bloc                                                                                    | feat: dashboard bloc                                                                                    | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | b59f18f0  | feat: maintenancesByOwnerId service                                                                     | feat: maintenancesByOwnerId service                                                                     | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 5fc4aba8  | feat: dashboard bloc implemented maintenances                                                           | feat: dashboard bloc implemented maintenances                                                           | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | d07c40a2  | feat: dashboard page                                                                                    | feat: dashboard page                                                                                    | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 6cefd1f7  | feat(vehicle): enhance vehicle management screens with localization, improved UI, and animations        | feat(vehicle): enhance vehicle management screens with localization, improved UI, and animations        | 03/12/2025 |
+
+**Embedded Application**
+
+| Repository                                               | Branch  | Commit Id | Commit Message                                                                                                   | Commit Message Body                                                                                              | Date       |
+|----------------------------------------------------------|---------|-----------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 3e997ff7  | feat(sensor): migrate initial implementation for IoT device with new configuration and environmental monitoring. | feat(sensor): migrate initial implementation for IoT device with new configuration and environmental monitoring. | 02/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 6b2c627d  | feat(handler): add command and event handler interfaces with unique identifiers.                                 | feat(handler): add command and event handler interfaces with unique identifiers.                                 | 02/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | eddbf49b  | feat(handler): add actuator and sensor components.                                                               | feat(handler): add actuator and sensor components.                                                               | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | d50576dd  | feat(device): add device common build.                                                                           | feat(device): add device common build.                                                                           | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | ff079f94  | feat(components): add device sensor components.                                                                  | feat(components): add device sensor components.                                                                  | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 153e8322  | feat(device): add device implementation                                                                          | feat(device): add device implementation                                                                          | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | c7f19041  | feat(sensor): update event IDs for BMP and DHT sensors.                                                          | feat(sensor): update event IDs for BMP and DHT sensors.                                                          | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | a24fed72  | feat(sensor): implement temperature scanning and event handling.                                                 | feat(sensor): implement temperature scanning and event handling.                                                 | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 61349f25  | feat(sensor): add pressure scanning and event handling for BMP sensor.                                           | feat(sensor): add pressure scanning and event handling for BMP sensor.                                           | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 8cfe7e89  | feat(sensor): add gas quality sensor implementation with calibration and event handling.                         | feat(sensor): add gas quality sensor implementation with calibration and event handling.                         | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | bfcf483b  | feat(sensor): add temperature sensor implementation with event handling.                                         | feat(sensor): add temperature sensor implementation with event handling.                                         | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 12ba875d  | feat(sensor): add knock sensor implementation for detecting knocks.                                              | feat(sensor): add knock sensor implementation for detecting knocks.                                              | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | ba5bc4a4  | feat(sensor): add GPS sensor implementation for location tracking.                                               | feat(sensor): add GPS sensor implementation for location tracking.                                               | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | c7d72d93  | feat(sensor): add comments to pin definitions in EmbeddedDevice for clarity                                      | feat(sensor): add comments to pin definitions in EmbeddedDevice for clarity                                      | 03/12/2025 |
+
+**Edge Service**
+
+| Repository                                       | Branch  | Commit Id | Commit Message                                                                                      | Commit Message Body                                                                                 | Date       |
+|--------------------------------------------------|---------|-----------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 28cff56d  | fix(database): move db.connect() to the correct position in initialize_db function.                 | fix(database): move db.connect() to the correct position in initialize_db function.                 | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | b8d2bdef  | docs(app): add docstrings to setup and about_edge_service functions.                                | docs(app): add docstrings to setup and about_edge_service functions.                                | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 9957438f  | fix(entities): update Device class constructor to use api_key instead of jwt_token.                 | fix(entities): update Device class constructor to use api_key instead of jwt_token.                 | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | e77e97ea  | fix(entities): update Device class to use api_key instead of jwt_token.                             | fix(entities): update Device class to use api_key instead of jwt_token.                             | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 9543459e  | fix(entities): update repository with appropiate terms and values.                                  | fix(entities): update repository with appropiate terms and values.                                  | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | ea00b834  | fix(services): update authentication to use api_key instead of jwt_token and adjust payload values. | fix(services): update authentication to use api_key instead of jwt_token and adjust payload values. | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 7b094aa4  | fix(services): remove unused parameters for creation.                                               | fix(services): remove unused parameters for creation.                                               | 03/12/2025 |
+
+##### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+Este sprint no contó con la implementación de pruebas automatizadas debido a la priorización del desarrollo de funcionalidades críticas para el proyecto. Sin embargo, se reconoce la importancia de establecer una suite de pruebas robusta en futuras iteraciones para garantizar la calidad y estabilidad del software. En los próximos sprints, se planifica la incorporación de pruebas unitarias, de integración y funcionales que permitan validar el correcto funcionamiento de las aplicaciones y servicios desarrollados, asegurando así una experiencia óptima para los usuarios finales.
+
+##### 6.2.3.6. Execution Evidence for Sprint Review
+En esta sección se documentan las evidencias relacionadas con la ejecución del Sprint, incluyendo capturas de pantalla y descripciones de las actividades realizadas durante el desarrollo. Se destacan los hitos alcanzados, los desafíos enfrentados y las soluciones implementadas para superar obstáculos técnicos o de gestión. Esta documentación proporciona una visión clara del progreso del equipo y del cumplimiento de los objetivos establecidos para el Sprint.
+
+**Web Application Execution Evidence:**
+En este sprint se mejoro la interfaz del usuario y se implemento la internacionalización a la aplicación web. A continuación, se presentan capturas de pantalla que evidencian estos avances:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-1.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-2.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-3.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-4.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-5.png" alt="Execution Evidence Web" />
+
+**Backend Execution Evidence:**
+Durante este sprint, se implementaron los endpoint de autenticación y registro de dispositivos:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-back-1.png" alt="Execution Evidence Backend" />
+
+**Mobile Application Execution Evidence:**
+En este sprint se mejoro la interfaz del usuario y se implemento la internacionalización a la aplicación móvil. A continuación, se presentan capturas de pantalla que evidencian estos avances:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-1.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-2.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-3.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-4.png" alt="Execution Evidence Mobile" />
+
+##### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación técnica desarrollada durante el Sprint para los servicios implementados en el proyecto. Esta documentación incluye descripciones detalladas de las APIs, diagramas de arquitectura, flujos de datos y cualquier otro recurso relevante que facilite la comprensión y el uso de los servicios por parte del equipo de desarrollo y otros stakeholders. La documentación se ha elaborado siguiendo las mejores prácticas de la industria para asegurar su claridad, precisión y utilidad.
+
+| endpoint                                | verbo http | descripción                                            | parámetros | request body                         | response body                                                    | explicación                                                                                        |
+|-----------------------------------------|:----------:|--------------------------------------------------------|------------|--------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| /api/v1/devices/authentication/validate |    POST    | Valida un dispositivo registrado mediante su device Id | -          | deviceId:string                      | id:int<br/>deviceId:string<br/>vehicleId:string<br/>token:string | Valida un device mediante su id y devuelve el id del vehiculo asociado y el token de autenticación |
+| /api/v1/devices/authentication/register |    POST    | Registra un nuevo dispositivo mediante su device id    | -          | deviceId:string<br/>vehicleId:string | id:int<br/>deviceId:string<br/>vehicleId:string<br/>             | Registra un nuevo dispositivo y lo relaciona con un vehiculo                                       |
+
+##### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-landing.png" alt="Deployed Landing Page">
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+Para desplegar la web application se necesita crear una cuenta en Render y crear un servicio web enlazado con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 4"/>
+
+Captura de pantalla de la aplicación web desplegada:
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-webapp.png" alt="Webb Application deploy evidence 5"/>
+
+Enlace a la web application en Render: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
+**Mobile Application**
+
+Para desplegar la aplicación de android primero se debe crear un proyecto en la plataforma de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-1.png" alt="Mobile Application deploy evidence 1"/>
+
+Luego se debe debe registrar una nueva aplicación de tipo flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-2.png" alt="Mobile Application deploy evidence 2"/>
+
+Ahora se siguen los siguientes pasos:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-3.png" alt="Mobile Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-4.png" alt="Mobile Application deploy evidence 4"/>
+
+Captura de pantalla de la aplicación móvil ejecutandose en un dispositivo móvil
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-5.png" alt="Mobile Application deploy evidence 5"/>
+
+Además de esto en el proyecto flutter dentro del pubspec.yaml se debe agregar el plugin de firebase distribution:
+
+```yaml
+dev_dependencies:
+  firebase_core: ^2.0.0
+```
+
+Ahora debemos inicializar firebase en el proyecto de flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-6.png" alt="Mobile Application deploy evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-7.png" alt="Mobile Application deploy evidence 7"/>
+
+Después de ejecutar el app ya esta presente en el dashboard de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-8.png" alt="Mobile Application deploy evidence 8"/>
+
+Luego se deben subir el/los archivo apk a firebase distribution, agregar verificadores y algún comentario. El apk se crear a partir del comando:
+
+```yaml
+flutter build apk --release
+```
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-9.png" alt="Mobile Application deploy evidence 9"/>
+
+Una vez enviada la invitación desde la aplicación apptester se debe probar la aplicación en un dispositivo móvil:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-10.png" alt="Mobile Application deploy evidence 10"/>
+
+img src="images/chapter-6/sprint-3/deployment-evidence-mobile.png" alt="Deployed Mobile App">
+
+**Backend**
+
+Antes de desplegar el backend se necesita crear una cuenta en Render y crear una base de datos en PostgreSQL:
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 4"/>
+
+Una vez creada la base de datos, se procede a crear el servicio web en Render y enlazarlo con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-1.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-2.png" alt="Backend deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-3.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-4.png" alt="Backend deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-5.png" alt="Backend deploy evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-6.png" alt="Backend deploy evidence 6"/>
+
+Captura de pantalla del servicio web desplegado:
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-backend.png" alt="Backend deploy evidence 7"/>
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
+
+##### 6.2.3.9. Team Collaboration Insights during Sprint
+
+Los usuarios de github estan relacionados de la siguiente manera:
+
+* Alejo Cardenas Jose Antonio: Firtness
+* Astonitas Díaz Juan Diego: NeoRise456
+* Casas Sanchez Gabriel Alexander: Al3xiel
+* Pacheco Astiguetta Sebastian: Pachieeee
+* Pasquale Barrenechea Gianluca Santino: cwassointt
+* Real Calderon Sebatian Omar: sebastianrealcalderon
+
+**Web App:**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-1.png" alt="Web App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-2.png" alt="Web App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-2.png" alt="Web App Insights">
+
+**Mobile App**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-1.png" alt="Mobile App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-2.png" alt="Mobile App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-2.png" alt="Mobile App Insights">
+
+**Backend:**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-1.png" alt="Backend Insights">
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-2.png" alt="Backend Insights">
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-2.png" alt="Backend Insights">
+
+**Embedded app**
+
+Todos los integrantes del equipo participaron en las reuniones fisicas dentro de clase en la elaboración del código, sin embargo solo el líder del desarollo del protipo iot se encargo de subir todos los archivos y avances
+
+<img src="images/chapter-6/sprint-3/insights/embedded-insights-1.png" alt="Embedded Insights">
+
+<img src="images/chapter-6/sprint-3/insights/embedded-insights-2.png" alt="Embedded Insights">
+
+**Edge Service**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-1.png" alt="Edge Insights">
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-2.png" alt="Edge Insights">
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-2.png" alt="Edge Insights">
+
 ### 6.3. Validation Interviews.
 
 En esta sección se documenta el proceso de validación realizado mediante entrevistas con usuarios pertenecientes a los segmentos objetivo. El propósito de estas actividades fue obtener retroalimentación directa sobre la usabilidad, funcionalidad y percepción general de la Landing Page, la Web Application y la Mobile Application, con el fin de identificar oportunidades de mejora y fortalecer la experiencia de usuario antes de las siguientes iteraciones del proyecto.
@@ -6791,7 +7261,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td><strong>Enlace a la entrevista</strong></td>
-      <td>-</td>
+      <td>https://tinyurl.com/bdafhej8</td>
     </tr>
     <tr>
       <td><strong>Nombre Entrevistado</strong></td>
@@ -6814,13 +7284,17 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
       <td> 03:22 </td>
     </tr>
     <tr>
+      <td><strong>Empieza en</strong></td>
+      <td> 00:06 </td>
+    </tr>
+    <tr>
       <td><strong>Minuto de Inicio</strong></td>
       <td>00:00</td>
     </tr>
     <tr>
       <td><strong>Análisis</strong></td>
       <td>
-        El entrevistado percibe la aplicación como profesional y de propósito claro desde el inicio, destacando la organización del panel de mecánico con las secciones de asignaciones y mantenimientos. Califica con 8/10 la claridad del panel principal, aunque sugiere incluir un contador de mantenimientos pendientes para mejor planificación. La navegación le resulta intuitiva y los tiempos de carga adecuados para su trabajo. Identifica como funcionalidad más útil la sección de comparativas entre motos, que facilita las explicaciones a clientes. Señala oportunidades de mejora como: añadir texto explicativo para el código de asignación, permitir eliminar asignaciones desde la vista principal, mostrar fecha de creación en las asignaciones, incorporar fotos del trabajo realizado, programar mantenimientos recurrentes, mejorar el título del diálogo de creación de gastos, e implementar notificaciones push, calendario mensual y carga de fotos del antes/después. En general, valora positivamente la aplicación por su utilidad en la organización del trabajo diario.
+        El entrevistado percibe la aplicación como profesional y de propósito claro desde el inicio, destacando la organización del panel de mecánico con las secciones de asignaciones y mantenimientos. El entrevistado tiene preferencia por el sistema iOS en móvil y laptop para web. Califica con 8/10 la claridad del panel principal, aunque sugiere incluir un contador de mantenimientos pendientes para mejor planificación. La navegación le resulta intuitiva y los tiempos de carga adecuados para su trabajo. Identifica como funcionalidad más útil la sección de comparativas entre motos, que facilita las explicaciones a clientes. Señala oportunidades de mejora como: añadir texto explicativo para el código de asignación, permitir eliminar asignaciones desde la vista principal, mostrar fecha de creación en las asignaciones, incorporar fotos del trabajo realizado, programar mantenimientos recurrentes, mejorar el título del diálogo de creación de gastos, e implementar notificaciones push, calendario mensual y carga de fotos del antes/después. En general, valora positivamente la aplicación por su utilidad en la organización del trabajo diario.
       </td>
     </tr>
   </tbody>
@@ -6836,7 +7310,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td>-</td>
+      <td>https://tinyurl.com/bdafhej8</td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -6859,18 +7333,70 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
       <td>02:27</td>
     </tr>
     <tr>
+      <td><strong>Empieza en</strong></td>
+      <td> 03:26 </td>
+    </tr>
+    <tr>
       <td>Minuto de Inicio</td>
       <td>00:00</td>
     </tr>
     <tr>
       <td>Análisis</td>
       <td>
-        La entrevistada encontró la aplicación intuitiva desde el inicio, destacando positivamente la pantalla de selección de roles y la sencillez del registro, aunque menciona que hubiera preferido ver información sobre planes de pago anticipadamente. Considera que el panel principal necesita más información, sugiriendo la inclusión de resúmenes de ingresos, mantenimientos completados y gráficos de desempeño. La navegación le resultó generalmente intuitiva, pero tuvo dificultad inicial para encontrar dónde crear asignaciones. Señala como punto de confusión la falta de explicación sobre el uso del código de asignación generado. Valora especialmente la sección de detalles de mantenimiento con gastos asociados y los colores profesionales de la interfaz. Entre sus principales sugerencias de mejora se encuentran: implementar filtros por nombre de cliente, mostrar cantidad de motos vinculadas por cliente, exportar historial en PDF, crear plantillas de servicios comunes, añadir gráficos visuales en comparativas, incluir guías durante la creación de mantenimientos, y agregar reportes financieros, recordatorios automáticos y chat interno con clientes. Los tiempos de respuesta de la aplicación fueron calificados como adecuados para la atención inmediata a clientes.
+        La entrevistada encontró la aplicación intuitiva desde el inicio, destacando positivamente la pantalla de selección de roles y la sencillez del registro, aunque menciona que hubiera preferido ver información sobre planes de pago anticipadamente. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web. Considera que el panel principal necesita más información, sugiriendo la inclusión de resúmenes de ingresos, mantenimientos completados y gráficos de desempeño. La navegación le resultó generalmente intuitiva, pero tuvo dificultad inicial para encontrar dónde crear asignaciones. Señala como punto de confusión la falta de explicación sobre el uso del código de asignación generado. Valora especialmente la sección de detalles de mantenimiento con gastos asociados y los colores profesionales de la interfaz. Entre sus principales sugerencias de mejora se encuentran: implementar filtros por nombre de cliente, mostrar cantidad de motos vinculadas por cliente, exportar historial en PDF, crear plantillas de servicios comunes, añadir gráficos visuales en comparativas, incluir guías durante la creación de mantenimientos, y agregar reportes financieros, recordatorios automáticos y chat interno con clientes. Los tiempos de respuesta de la aplicación fueron calificados como adecuados para la atención inmediata a clientes.
       </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td>
+        <img src="images/chapter-6/entrevista3.png" alt="interview 3 Juan Esteban" width="400" />
+      </td>
+    </tr>
+    <tr>
+      <td>Enlace a la entrevista</td>
+      <td>https://tinyurl.com/bdafhej8</td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Juan Esteban</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>La Molina</td>
+    </tr>
+    <tr>
+      <td>Ocupación</td>
+      <td>Ayudante mecánico</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:15</td>
+    </tr>
+    <tr>
+      <td><strong>Empieza en</strong></td>
+      <td> 05:56 </td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00</td>
+    </tr>
+    <tr>
+      <td>Análisis</td>
+      <td>
+        El entrevistado comprendió rápidamente el propósito de la aplicación, valorando la concreción de los textos y la navegación intuitiva, a la cual comparó con una red social. El entrevistado tiene preferencia por el sistema Android en móvil y laptop para web mencionado durante la entrevista. Calificó el dashboard con un 9/10, destacando la utilidad de los gráficos de productividad, aunque señaló como punto de mejora el tamaño de la fuente en la versión móvil. Resaltó positivamente el diseño de alto contraste, considerándolo ideal para las condiciones de iluminación y trabajo dentro de un taller. En cuanto a funcionalidad, valoró la clasificación de asignaciones en "Activas" y "Pendientes" y la fluidez de la aplicación incluso con mala conexión a internet. No reportó áreas de confusión, indicando que la interfaz es muy amigable. Entre sus sugerencias de mejora destacan: añadir un indicador visual de "Urgencia" en las listas, implementar autocompletado para servicios comunes en los formularios de mantenimiento y, como funcionalidad clave a futuro, integrar el control de inventario para gestionar el stock de repuestos directamente desde la programación del servicio.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.3.3. Evaluaciones según heurísticas.
 
@@ -6900,11 +7426,11 @@ En esta subsección se expone el análisis de las entrevistas basado en la aplic
 
 **Tabla de resumen**
 
-| #Orden | Problema | Escala de Severidad | Heurística / Principio violado(a) |
-|--------|----------|---------------------|-----------------------------------|
-| 1 | Falta de información contextual sobre códigos de asignación y su propósito | 3 | Visibilidad del estado del sistema / Ayuda y documentación |
-| 2 | Panel principal incompleto sin resúmenes clave para la toma de decisiones | 3 | Flexibilidad y eficiencia de uso / Diseño estético y minimalista |
-| 3 | Flujos de acción críticos sin confirmaciones claras o títulos descriptivos | 2 | Prevención de errores / Consistencia y estándares |
+| #Orden | Problema                                                                   | Escala de Severidad | Heurística / Principio violado(a)                                |
+|--------|----------------------------------------------------------------------------|---------------------|------------------------------------------------------------------|
+| 1      | Falta de información contextual sobre códigos de asignación y su propósito | 3                   | Visibilidad del estado del sistema / Ayuda y documentación       |
+| 2      | Panel principal incompleto sin resúmenes clave para la toma de decisiones  | 3                   | Flexibilidad y eficiencia de uso / Diseño estético y minimalista |
+| 3      | Flujos de acción críticos sin confirmaciones claras o títulos descriptivos | 2                   | Prevención de errores / Consistencia y estándares                |
 
 **Problema #1: Falta de información contextual sobre códigos de asignación y su propósito**
 
@@ -6943,19 +7469,34 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Resumen del video               | En este video se presenta una demostración completa de la Web Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo los usuarios pueden registrarse, iniciar sesión y navegar por el panel principal, donde pueden gestionar asignaciones, programar mantenimientos y acceder a comparativas entre motos. Además, se ilustran los flujos de trabajo para mecánicos y dueños de vehículos, enfatizando la facilidad de uso y la eficiencia que la aplicación ofrece para optimizar la gestión de servicios mecánicos. | 
 | Cuadro del video representativo | ![About The Product Web Application](images/chapter-6/about-the-product/about-the-product-web.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| URL del video                   | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQDkwPji9gCJS6_0pte59RNmAWCG0I-0x6P3O69xLW_z_d0?e=IGokUe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D]                                                                                                                                                                                                                                           |
+| URL del video                   | [https://tinyurl.com/473p96fd](https://tinyurl.com/473p96fd)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-| Sección                         | Mobile Application                                                                                                                                                                                                                                                                                                        |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Resumen del video               | En este video se presenta una demostración completa de la Mobile Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo los motociclistas pueden iniciar sesión, registrar sus vehículos y gestionar mantenimientos desde la comodidad de su dispositivo móvil.             |
-| Cuadro del video representativo | ![About The Product Mobile Application](images/chapter-6/about-the-product/about-the-product-mobile.png)                                                                                                                                                                                                                  |
-| URL del video                   | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQAuqGCPc3xdQagg5-9f5hhBAQpHjPZeKK6Ql0h8BJHMRGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fb5SmV] |
+| Sección                         | Mobile Application                                                                                                                                                                                                                                                                                            |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Resumen del video               | En este video se presenta una demostración completa de la Mobile Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo los motociclistas pueden iniciar sesión, registrar sus vehículos y gestionar mantenimientos desde la comodidad de su dispositivo móvil. |
+| Cuadro del video representativo | ![About The Product Mobile Application](images/chapter-6/about-the-product/about-the-product-mobile.png)                                                                                                                                                                                                      |
+| URL del video                   | [https://tinyurl.com/5n764phe](https://tinyurl.com/5n764phe)                                                                                                                                                                                                                                                  |
 
 | Sección                         | Embedded Application                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Resumen del video               | En este video se presenta una demostración completa de la Embedded Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo el dispositivo IoT se integra con la plataforma, permitiendo la recolección de datos en tiempo real sobre el estado del vehículo y su mantenimiento. Además, se ilustra el proceso de configuración y monitoreo a través de la aplicación móvil y web, enfatizando la eficiencia y precisión que el sistema ofrece para optimizar la gestión de servicios mecánicos. | 
 | Cuadro del video representativo | ![About The Product Embedded Application](images/chapter-6/about-the-product/about-the-product-embedded.png)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| URL del video                   | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAT_gOk-s1E25r8KejgVYYQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=XNorUj]                                                                                                                                                                                                                    |
+| URL del video                   | [https://tinyurl.com/ysefet27](https://tinyurl.com/ysefet27)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+### 6.4. Video About-the-Team
+
+| Sección                      | Contenido                                                    |
+|------------------------------|--------------------------------------------------------------|
+| Url (Microsoft)              | [https://tinyurl.com/bdhrajh2](https://tinyurl.com/bdhrajh2) |
+| imagen                       | ![About The Team](images/chapter-6/about-the-team.png)       |
+| Testimonio Casas Gabriel     | 00:00                                                        |
+| Testimonio Astonitas Juan    | 01:00                                                        |
+| Testimonio Real Sebastian    | 02:08                                                        |
+| Testimonio Pacheco Sebastian | 03:30                                                        |
+| Testimonio Alejo Jose        | 04:59                                                        |
+| Testimonio Pasquale Gianluca | 06:36                                                        |
+
+<div style="page-break-after: always;"></div>
 
 ## Conclusiones
 
@@ -6965,13 +7506,125 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 
 **TB2**: Durante el desarrollo del TB2, el equipo de trabajo logró implementar y desplegar con éxito los componentes clave del proyecto, incluyendo la web application, la mobile application y el backend. Se llevaron a cabo validaciones mediante entrevistas con usuarios objetivo, lo que permitió obtener retroalimentación valiosa para mejorar la usabilidad y funcionalidad de las aplicaciones. Además, se aplicaron heurísticas de usabilidad para identificar áreas de mejora, asegurando una experiencia de usuario óptima. El proceso de despliegue en plataformas como Render y Firebase demostró la capacidad del equipo para llevar el proyecto desde la fase de desarrollo hasta la implementación efectiva. En conjunto, estas actividades fortalecieron la calidad del producto final y prepararon el camino para futuras iteraciones y mejoras.
 
+**TF**: Durante el desarrollo del Trabajo Final, el equipo validó las hipótesis centrales del producto a través de entrevistas con usuarios objetivo (motociclistas y mecánicos), confirmando que la mayoría de las funcionalidades propuestas fueron apreciadas y aceptadas como soluciones a sus necesidades principales. Las hipótesis sobre alertas preventivas y telemetría, historial de mantenimiento centralizado, paneles comparativos para mecánicos, integración móvil-web, interfaz simple y confiable, y notificaciones automáticas fueron respaldadas explícitamente por los entrevistados. Esta validación demuestra que el desarrollo se ha alineado con un entendimiento profundo del usuario, y que el producto resuelve problemas reales de manera intuitiva y valiosa, estableciendo una base sólida para su adopción.
+<div style="page-break-after: always;"></div>
+
 ## Bibliografía
 
-Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://www.infobae.com/peru/2025/07/19/lima-registra-1668-muertes-por-accidentes-de-transito-en-lo-que-va-del-2025-motociclistas-lideran-victimas-segun-el-mtc/
+Freitas, M. C. (2025). Lima registra 1.668 muertes por accidentes de tránsito en lo que va del 2025: motociclistas lideran víctimas, según el MTC. Infobae. https://tinyurl.com/2s33z4je
+
+Gothelf, J., & Seiden, J. (2021). Lean UX: Creating Great Products with Agile Teams. O’Reilly Media.
+
+Harrold, C. (2020). Practical smart device design and construction: Understanding Smart Technologies and How to Build Them Yourself. Apress.
+
+Tamboli, A. (2022). Build your own IoT platform: Develop a Flexible and Scalable Internet of Things Platform.
+
+Naylamp Mechatronics. (s.f.). Cable Jumper Dupont Macho a Macho 10cm 20und. https://naylampmechatronics.com/cables/449-cable-jumper-dupont-macho-a-macho-10cm-20und.html
+
+Naylamp Mechatronics. (s.f.). Cable Jumper Dupont Hembra a Macho 10cm 20und. https://naylampmechatronics.com/cables/447-cable-jumper-dupont-hembra-a-macho-10cm-20und.html
+
+Naylamp Mechatronics. (s.f.). Cable Jumper Dupont Hembra a Hembra 10cm 20und. https://naylampmechatronics.com/cables/448-cable-jumper-dupont-hembra-a-hembra-10cm-20und.html
+
+Naylamp Mechatronics. (s.f.). Protoboard 830. https://naylampmechatronics.com/protoboard/222-protoboard-830.html
+
+Rincón Ingenieril. (2017, 10 de octubre). Cómo usar una protoboard. https://www.rinconingenieril.es/usar-una-protoboard/
+
+Naylamp Mechatronics. (s.f.). ESP32 DevKitC V4. https://naylampmechatronics.com/espressif-esp/1011-esp32-devkitc-v4-esp32-wifi-micro-usb.html
+
+Espressif Systems. (2024). ESP32 Datasheet . Naylamp Mechatronics. https://naylampmechatronics.com/img/cms/000384/000384_esp32_datasheet_en.pdf
+
+Components101. (2021,16 de Julio). DHT11 Temperature Sensor. https://components101.com/sensors/dht11-temperature-sensor
+
+DFRobot. (s.f.). DFR0067 DHT11 Datasheet . Components101. https://components101.com/sites/default/files/component_datasheet/DFR0067%20DHT11%20Datasheet.pdf
+
+Uelectronics. (s.f.). MQ-135 Módulo Detector de Calidad de Aire. https://uelectronics.com/producto/mq-135-modulo-detector-de-calidad-de-aire/
+
+Hanwei Electronics. (s.f.). SNS-MQ135 Datasheet . Uelectronics. https://uelectronics.com/wp-content/uploads/2018/01/SNS-MQ135.pdf
+
+Uelectronics. (s.f.). Sensor de Impacto KY-031. https://uelectronics.com/producto/sensor-de-impacto-ky-031/
+
+Uelectronics.(2020, 21 de Abril). KY-031 Datasheet .  https://uelectronics.com/wp-content/uploads/2017/06/KY-031.pdf
+
+Altronics. (s.f.). *Sensor de Presión BMP280 HW-611*. https://altronics.cl/sensor-presion-bmp280-hw-611
+
+Bosch Sensortec. (2015,Mayo). BST-BMP280-DS001-11 Datasheet . Adafruit. https://cdn-shop.adafruit.com/datasheets/BST-BMP280-DS001-11.pdf
+
+u-blox. (s.f.). NEO-6 Series. https://www.u-blox.com/en/product/neo-6-series?legacy=Current#Documentation-&-resources
+
+u-blox. (2011). NEO-6 DataSheet (GPS.G6-HW-09005) . https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf
+
+<div style="page-break-after: always;"></div>
 
 ## Anexos
 
-Video exposición tp: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220033_upc_edu_pe/ERrHq6jkyDBGvxhobAXQkk8BHTPPcFJZPSMNeTr92Ow6KA?e=d9twqQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+User Persona Dueño: https://tinyurl.com/8bha6kf5
+
+User Persona Mecanico: https://tinyurl.com/34t4bpac
+
+User Journey Dueño: https://tinyurl.com/mrxjk3hc
+
+User Journey Mecanico: https://tinyurl.com/df5erv2w
+
+Empathy Map Dueño: https://tinyurl.com/rdcwmwpy
+
+Empathy Map Mecanico: https://tinyurl.com/ybbwx2b9
+
+**Impact Mapping:** 
+
+Impact Mapping Parte 1: https://tinyurl.com/mtb6pkjd
+
+Impact Mapping Parte 2: https://tinyurl.com/musafma4
+
+Impact Mapping Parte 3: https://tinyurl.com/36rwk8z8
+
+Impact Mapping Parte 4: https://tinyurl.com/mr6vhnp8
+
+
+**Event Storming:**
+
+Event Storming Parte 1: https://tinyurl.com/2s3wpcez
+
+Event Storming Parte 2: https://tinyurl.com/kp27j7xb
+
+Event Storming Parte 3: https://tinyurl.com/2s38w3pd
+
+Story Telling Caso 1: https://tinyurl.com/2jcxvnec
+
+Story Telling Caso 2: https://tinyurl.com/3nyfevsj
+
+Story Telling Caso 3: https://tinyurl.com/2b9jnzs5
+
+Story Telling Caso 4: https://tinyurl.com/44ru5a7j
+
+Story Telling Caso 5: https://tinyurl.com/8ydt4tu2
+
+Story Telling Caso 6: https://tinyurl.com/jd4mfvhr
+
+Story Telling Caso 7: https://tinyurl.com/2ynm3a28
+
+Bounded Context Iam: https://tinyurl.com/5n6mrvp8
+
+Bounded Context Maintenance and Operations: https://tinyurl.com/3yv7r9ka
+
+Bounded Context Reports: https://tinyurl.com/4rw6pab7
+
+Bounded Context Subscriptions: https://tinyurl.com/tmf3atvr
+
+Bounded Context Management: https://tinyurl.com/363jfuax
+
+Bounded Context Vehicle Wellness: https://tinyurl.com/ffa8rtw2
+
+Context Mapping: https://tinyurl.com/3byvazzh
+
+System Landscape: https://tinyurl.com/hsfcx7ec
+
+System Context Diagram: https://tinyurl.com/5d5tzsz3
+
+System Container Diagram: https://tinyurl.com/5crkmvsu
+
+System Deployment Model: https://tinyurl.com/56fvesek
+
+Video exposición tp: https://tinyurl.com/mrxd5ne5
 
 Backend	BykerZ-Backend : [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)
 
@@ -6979,5 +7632,16 @@ BykerZ-Landing-Page: [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](http
 
 BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)
 
-Entrevistas del needfinding: [Needfinding Interviews - NRG6](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/EUX6HJSrkWFLsupKCjibccgBqipXedXcpryQbgwV-mpKdQ?e=fp4EZr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Videos:**
 
+Entrevistas del needfinding: https://tinyurl.com/26tdu3s4
+
+Entrevistas de validación: https://tinyurl.com/bdafhej8
+
+Video About the product web: https://tinyurl.com/473p96fd
+
+Video About the product mobile: https://tinyurl.com/5n764phe
+
+Video About the product embedded: https://tinyurl.com/ysefet27
+
+Video About the team: https://tinyurl.com/bdhrajh2
