@@ -7557,7 +7557,7 @@ Empathy Map Dueño: https://tinyurl.com/rdcwmwpy
 
 Empathy Map Mecanico: https://tinyurl.com/ybbwx2b9
 
-Impact Mapping: 
+**Impact Mapping:** 
 
 Impact Mapping Parte 1: https://tinyurl.com/mtb6pkjd
 
@@ -7568,7 +7568,8 @@ Impact Mapping Parte 3: https://tinyurl.com/36rwk8z8
 Impact Mapping Parte 4: https://tinyurl.com/mr6vhnp8
 
 
-Event Storming:
+**Event Storming:**
+
 Event Storming Parte 1: https://tinyurl.com/2s3wpcez
 
 Event Storming Parte 2: https://tinyurl.com/kp27j7xb
@@ -7619,5 +7620,16 @@ BykerZ-Landing-Page: [https://github.com/NRG-6-IOT/BykerZ-Landing-Page.git](http
 
 BykerZ-Web-Application: [https://github.com/NRG-6-IOT/BykerZ-Web-Application.git](https://github.com/NRG-6-IOT/BykerZ-Web-Application.git)
 
+**Videos:**
+
 Entrevistas del needfinding: https://tinyurl.com/26tdu3s4
 
+Entrevistas de validación: https://tinyurl.com/ydwyb7bs
+
+Video About the product web: https://tinyurl.com/473p96fd
+
+Video About the product mobile: https://tinyurl.com/5n764phe
+
+Video About the product embedded: https://tinyurl.com/ysefet27
+
+Video About the team: https://tinyurl.com/bdhrajh2
