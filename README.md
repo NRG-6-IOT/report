@@ -430,6 +430,7 @@ Distribución de commits:
       - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
       - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
     - [6.4. Video About-the-Product.](#64-video-about-the-product)
+    - [6.4. Video About-the-Team.](#64-video-about-the-team)
   - [Conclusiones](#conclusiones)
   - [Bibliografía](#bibliografía)
   - [Anexos](#anexos)
@@ -6895,6 +6896,19 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 | Resumen del video               | En este video se presenta una demostración completa de la Embedded Application de BykerZ, destacando sus principales funcionalidades y características. Se muestra cómo el dispositivo IoT se integra con la plataforma, permitiendo la recolección de datos en tiempo real sobre el estado del vehículo y su mantenimiento. Además, se ilustra el proceso de configuración y monitoreo a través de la aplicación móvil y web, enfatizando la eficiencia y precisión que el sistema ofrece para optimizar la gestión de servicios mecánicos. | 
 | Cuadro del video representativo | ![About The Product Embedded Application](images/chapter-6/about-the-product/about-the-product-embedded.png)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | URL del video                   | [About the product embedded](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202110291_upc_edu_pe/IQCiMM0dxygLSKkUAm_PaAAjAeRHES_aTNVMWgSPiR2iRNc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=GOujFx)                                                                                                                                                                                                                    |
+
+### 6.4. Video About-the-Team.
+
+|           Sección            | Contenido |
+|----------------------------|-----------|
+|        Url(microsoft)        | []()      |
+|         Url(youtube)         | []()      |
+|            imagen            |    ![]()       |
+|   Testimonio Alejo Jose   | min:seg   |
+|    Testimonio Calderon Sebastian    | min:seg   |
+|  Testimonio Astonitas Juan   | min:seg   |
+|   Testimonio Casas Gabriel   | min:seg   |
+| Testimonio Pasquale Gianluca | min:seg |
 
 <div style="page-break-after: always;"></div>
 
