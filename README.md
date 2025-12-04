@@ -483,7 +483,7 @@ Contenido
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
-  - [6.4. Video About-the-Team.](#64-video-about-the-team)
+  - [6.4. Video About-the-Team](#64-video-about-the-team)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -7261,7 +7261,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td><strong>Enlace a la entrevista</strong></td>
-      <td>-</td>
+      <td>https://tinyurl.com/yc22a6xh</td>
     </tr>
     <tr>
       <td><strong>Nombre Entrevistado</strong></td>
@@ -7306,7 +7306,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td>-</td>
+      <td>https://tinyurl.com/4y3v8zmt</td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -7351,7 +7351,7 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
     </tr>
     <tr>
       <td>Enlace a la entrevista</td>
-      <td>-</td>
+      <td>https://tinyurl.com/ydwyb7bs</td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
@@ -7475,7 +7475,7 @@ Establecer títulos descriptivos en todos los diálogos y modales de acción cr�
 
 | Sección                      | Contenido                                                    |
 |------------------------------|--------------------------------------------------------------|
-| Url (Microsoft)              | [https://tinyurl.com/ytd22trv](https://tinyurl.com/ytd22trv) |
+| Url (Microsoft)              | [https://tinyurl.com/bdhrajh2](https://tinyurl.com/bdhrajh2) |
 | imagen                       | ![About The Team](images/chapter-6/about-the-team.png)       |
 | Testimonio Casas Gabriel     | 00:00                                                        |
 | Testimonio Astonitas Juan    | 01:00                                                        |
