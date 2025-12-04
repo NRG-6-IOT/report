@@ -1152,13 +1152,13 @@ Los mecánicos ven valor en contar con telemetría remota (kilometraje, batería
 
 A continuación, se presenta el User Persona de Carlos Quispe. Él representa al mecánico joven y pragmático de Lima, enfocado en el mantenimiento rápido de motos de uso diario y delivery. Este perfil sintetiza las necesidades, frustraciones y motivaciones identificadas en el análisis, sirviendo como arquetipo del usuario objetivo para una solución digital que busca optimizar la gestión y el diagnóstico en talleres de servicio.
 
-![user_persona1.png](images/chapter-2/user_persona1.png)
+![user_persona1.png](images/chapter-2/user_persona_mechanic.png)
 
 **Segmento Objetivo: Motociclistas**
 
 A continuación, se presenta el perfil de Daniel Castro, un User Persona desarrollado para representar al segmento clave de motociclistas jóvenes y urbanos en Lima que han adoptado las motocicletas eléctricas como su principal medio de transporte. Este arquetipo sintetiza los hallazgos de la investigación de usuarios, encapsulando sus comportamientos, necesidades y metas.
 
-![user_persona2.png](images/chapter-2/user_persona.png)
+![user_persona2.png](images/chapter-2/user_persona_owner.png)
 
 #### 2.3.2 User Task Matrix
 
