@@ -263,38 +263,9 @@ Distribución de commits:
 <div style="page-break-after: always;"></div>
 
 ## Contenido
-- [Student Outcome](#student-outcome)
-  - [Capítulo I: Introducción](#capítulo-i-introducción)
-      - [1.1 Startup Profile](#11-startup-profile)
-          - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-          - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-      - [1.2 Solution Profile](#12-solution-profile)
-          - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-          - [1.2.2 Lean UX Process](#122-lean-ux-process)
-              - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-              - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-              - [1.2.2.3 Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-              - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-      - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-  - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-      - [2.1 Competidores](#21-competidores)
-          - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-          - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-      - [2.2 Entrevistas](#22-entrevistas)
-          - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-          - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-          - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-      - [2.3 Needfinding](#23-needfinding)
-          - [2.3.1 User Personas](#231-user-personas)
-          - [2.3.2 User Task Matrix](#232-user-task-matrix)
-          - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-          - [2.3.4 Empathy Mapping](#234-empathy-mapping)
-      - [2.4 Big Picture EventStorming](#24-big-picture-eventstorming)
-      - [2.5 Ubiquitous Language](#25-ubiquitous-language)
-  - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-      - [3.1 User Stories](#31-user-stories)
-      - [3.2 Impact Mapping](#32-impact-mapping)
-      - [3.3 Product Backlog](#33-product-backlog)
+- [Épicas](#épicas)
+    - [3.2 Impact Mapping](#32-impact-mapping)
+    - [3.3 Product Backlog](#33-product-backlog)
   - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
     - [4.1 Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
       - [4.1.1 Design-Level EventStorming](#411-design-level-eventstorming)
@@ -409,23 +380,23 @@ Distribución de commits:
         - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
         - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
       - [6.2.3. Sprint 3](#623-sprint-3)
-          - [6.2.3.1. Sprint Planning 3.](#6231-sprint-planning-3)
-          - [6.2.3.2. Aspect Leaders and Collaborators.](#6232-aspect-leaders-and-collaborators)
-          - [6.2.3.3. Sprint Backlog 3.](#6233-sprint-backlog-3)
-          - [6.2.3.4. Development Evidence for Sprint Review.](#6234-development-evidence-for-sprint-review)
-          - [6.2.3.5. Testing Suite Evidence for Sprint Review.](#6235-testing-suite-evidence-for-sprint-review)
-          - [6.2.3.6. Execution Evidence for Sprint Review.](#6236-execution-evidence-for-sprint-review)
-          - [6.2.3.7. Services Documentation Evidence for Sprint Review.](#6237-services-documentation-evidence-for-sprint-review)
-          - [6.2.3.8. Software Deployment Evidence for Sprint Review.](#6238-software-deployment-evidence-for-sprint-review)
-          - [6.2.3.9. Team Collaboration Insights during Sprint.](#6239-team-collaboration-insights-during-sprint)
+        - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+        - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+        - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
+        - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+        - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+        - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+        - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+        - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+        - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
     - [6.3. Validation Interviews.](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
       - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
       - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
     - [6.4. Video About-the-Product.](#64-video-about-the-product)
-- [Conclusiones](#conclusiones)
-- [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
+  - [Conclusiones](#conclusiones)
+  - [Bibliografía](#bibliografía)
+  - [Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
 
@@ -770,45 +741,27 @@ A. Motociclista urbano
 
 1. Alertas preventivas y monitoreo de telemetría en tiempo real
 
-Creemos que implementar alertas preventivas y monitoreo de telemetría en tiempo real
-para motociclistas y mecánicos
-logrará una mejor planificación del mantenimiento y una reducción de fallas inesperadas.
-Sabremos que esto es cierto cuando veamos un uso frecuente de las alertas, comentarios positivos sobre la confiabilidad y una disminución en las visitas no planificadas al taller.
+Creemos que el resultado de una mejor planificación del mantenimiento y una reducción de fallas inesperadas se conseguirá si el motociclista y el mecánico obtienen información predictiva con un sistema de alertas preventivas y monitoreo de telemetría en tiempo real.
 
 2. Historial de mantenimiento
 
-Creemos que ofrecer un historial detallado de mantenimiento y herramientas de visualización
-para motociclistas
-logrará una mejor organización de los servicios y un seguimiento más preciso del rendimiento de sus vehículos.
-Sabremos que esto es cierto cuando veamos un uso repetido del historial y una mejora en los niveles de satisfacción de los usuarios.
+Creemos que el resultado de una mejor organización de los servicios y un seguimiento preciso del rendimiento del vehículo se conseguirá si el motociclista obtiene visibilidad centralizada con un historial detallado de mantenimiento y herramientas de visualización.
 
 3. Paneles comparativos para mecánicos
 
-Creemos que desarrollar paneles comparativos basados en datos de IoT
-para mecánicos
-logrará diagnósticos más rápidos y recomendaciones de mantenimiento más precisas.
-Sabremos que esto es cierto cuando veamos una mejora en la eficiencia de los diagnósticos y retroalimentación positiva de los mecánicos.
+Creemos que el resultado de diagnósticos más rápidos y recomendaciones de mantenimiento más precisas se conseguirá si el mecánico obtiene paneles comparativos basados en datos de IoT.
 
 4. Integración entre la app móvil y el panel web
 
-Creemos que integrar la aplicación móvil para motociclistas con el panel web para talleres
-logrará una comunicación fluida y una gestión sincronizada de los servicios.
-Sabremos que esto es cierto cuando veamos un intercambio activo de datos entre ambas plataformas y un aumento en el uso conjunto de los sistemas.
+Creemos que el resultado de una comunicación fluida y una gestión sincronizada de servicios se conseguirá si el motociclista y el taller obtienen conectividad bidireccional con la integración entre la app móvil y el panel web.
 
 5. Interfaz simple, moderna y confiable
 
-Creemos que diseñar una interfaz limpia, intuitiva y visualmente atractiva
-para motociclistas y mecánicos
-logrará una mayor adopción del sistema y un uso continuo de la plataforma.
-Sabremos que esto es cierto cuando veamos resultados positivos en pruebas de usabilidad y altas tasas de retención de usuarios.
+Creemos que el resultado de una mayor adopción y un uso continuo de la plataforma se conseguirá si el motociclista y el mecánico obtienen una experiencia intuitiva y sin fricciones con una interfaz limpia, moderna y confiable.
 
 6. Notificaciones automáticas y recordatorios personalizados
 
-Creemos que implementar notificaciones inteligentes y recordatorios personalizados
-para motociclistas
-logrará un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria.
-Sabremos que esto es cierto cuando veamos una alta interacción con los recordatorios y una reducción en los servicios atrasados.
-
+Creemos que el resultado de un mayor compromiso con las tareas de mantenimiento y una experiencia de usuario más satisfactoria se conseguirá si el motociclista obtiene recordatorios contextuales con notificaciones automáticas y personalizadas.
 
 ##### 1.2.2.4 Lean UX Canvas
 ![Lean UX Canvas](images/chapter-1/lean_ux_canvas.jpg)
@@ -4904,7 +4857,7 @@ Esta sección describe el proceso de planificación del Sprint 2, donde el equip
 | Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Sprint 2 - Review Summary        | No se alcanzaron desarrollar todos los entregables planteados como objetivo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
 | Sprint 2 - Retrospective Summary | Se realizó autocritica sobre las deficiencias de cada uno y se plantearon oportunidades de mejora, mejorando el compromiso entre los miembros del equipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Sprint 2 Goal                    | Nuestro enfoque está en entregar la segunda versión de la aplicación web y del backend con un 80% de cobertura funcional, junto con la primera versión de la aplicación móvil y el prototipo físico inicial del dispositivo IoT. Creemos que esto proporcionará un ecosistema más integrado y funcional para los usuarios de la plataforma, permitiendo el flujo de datos en tiempo real entre las aplicaciones y los componentes IoT. Esto se confirmará cuando la aplicación web y el backend alcancen un 80% de implementación de funcionalidades, la aplicación móvil se comunique exitosamente con los servicios del backend, y el prototipo IoT transmita datos de telemetría hacia la plataforma. |
+| Sprint 2 Goal                    | Nuestro enfoque está en que los motociclistas y mecánicos puedan monitorear el estado de su vehículo y recibir alertas preventivas desde cualquier lugar. Creemos que esto proporciona mayor tranquilidad y control sobre el mantenimiento a los motociclistas, y diagnósticos más rápidos y basados en datos a los mecánicos. Esto se confirmará cuando los motociclistas consulten el estado de su vehículo desde la app móvil y actúen programando un mantenimiento basado en una alerta y los mecánicos reciban en el panel web datos de telemetría para preparar un diagnóstico antes de que el cliente llegue al taller. |
 | Sprint 2 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Sum of Story Points              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
