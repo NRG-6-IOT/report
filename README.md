@@ -7007,6 +7007,10 @@ Para desplegar la web application se necesita crear una cuenta en Render y crear
 
 <img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 4"/>
 
+Captura de pantalla de la aplicación web desplegada:
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-webapp.png" alt="Webb Application deploy evidence 5"/>
+
 Enlace a la web application en Render: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
 
 **Mobile Application**
@@ -7024,6 +7028,8 @@ Ahora se siguen los siguientes pasos:
 <img src="images/chapter-6/sprint-2/mobile-deploy-evidence-3.png" alt="Mobile Application deploy evidence 3"/>
 
 <img src="images/chapter-6/sprint-2/mobile-deploy-evidence-4.png" alt="Mobile Application deploy evidence 4"/>
+
+Captura de pantalla de la aplicación móvil ejecutandose en un dispositivo móvil
 
 <img src="images/chapter-6/sprint-2/mobile-deploy-evidence-5.png" alt="Mobile Application deploy evidence 5"/>
 
@@ -7083,6 +7089,10 @@ Una vez creada la base de datos, se procede a crear el servicio web en Render y 
 <img src="images/chapter-6/sprint-2/backend-deploy-evidence-5.png" alt="Backend deploy evidence 5"/>
 
 <img src="images/chapter-6/sprint-2/backend-deploy-evidence-6.png" alt="Backend deploy evidence 6"/>
+
+Captura de pantalla del servicio web desplegado:
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-backend.png" alt="Backend deploy evidence 7"/>
 
 Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
 
