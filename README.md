@@ -6957,6 +6957,72 @@ u-blox. (2011). NEO-6 DataSheet (GPS.G6-HW-09005) . https://content.u-blox.com/s
 
 ## Anexos
 
+User Persona Dueño: [User Persona Dueño]()
+
+User Persona Mecanico: [User Persona Mecanico]()
+
+User Journey Dueño: [User Journey Dueño](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQAzI7esgMsDTKLvXk9JjUSLAYrx578y28FgBuLJdLRvsDE?e=jRl9qh)
+
+User Journey Mecanico: [User Journey Mecanico](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQChepqIpuy6SKFqfIhKuUMiAcuHJcJU_DMS-GHk4GbsVcQ?e=oWMNTQ)
+
+Empathy Map Dueño: [Empathy Map Dueño](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDZZVJwqb42Qb14ss0n912yAUnyTUpyfemSy_M-vPkUv9k?e=BC9Ly7)
+
+Empathy Map Mecanico: [Empathy Map Mecanico](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQAF_C22fzsOQ4Nciu_vETjCAdtjwNjfklvbB_8WzHGGef4?e=2NrCdv)
+
+Impact Mapping: 
+
+[Impact Mapping Parte 1](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBAg2Pki564RZz_hIKK7gbNAe5RXB2qoqcEGXvqdf1LCUg?e=bX68bx)
+
+[Impact Mapping Parte 2](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCw6NyaykUIRoz72bVodRjaAXSIyefKGFFQ6kyzbdmiw-o?e=7VbeGx)
+
+[Impact Mapping Parte 3](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQC_hJALzDZORaejScpJDnK4Af_LF3vbHbsI54-c8ardmUc?e=GeqatX)
+
+[Impact Mapping Parte 4](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBlsidQ5cFZS4gzaLe64pVxASV5mfggIsoGOrDENbCrs-w?e=QdlWhB)
+
+
+Event Storming:
+ [Event Storming Parte 1](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBhdfYlMBr3QJBcOvthWIhCAYuekTnLV0aLVkKd4lcyKRY?e=eyL3fq)
+
+ [Event Storming Parte 2](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQA2zuc3xJxWToOxPKSajscKAdh7fZSWcgynneosREjNxeM?e=9F4GEd)
+
+ [Event Storming Parte 3](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBsz9yuzThCSJSIlPAjQl_WAXsodkDQjgIPJB-MVElMTHg?e=CqY8xX)
+
+Story Telling Caso 1: [Story Telling Caso 1](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQATdC3Ju8ZZQ7po2S4rCb16AWzI_rorVat_usNFIpx_PB4?e=9oB8i5)
+
+Story Telling Caso 2: [Story Telling Caso 2](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQA2a1TirxbjS7h86E3AqQQBASuGSu2BqsUMyOohDAcTDm8?e=arKNSi)
+
+Story Telling Caso 3: [Story Telling Caso 3](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCxzINTD2_mR5_-bxNEkZ0EASyyN2-ySf44l0g5t7Q4Vmw?e=O5ACbj)
+
+Story Telling Caso 4: [Story Telling Caso 4](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDF_rpYBcomS7cyyWF0skZwAdTxod-qruLXBO_52Ccrw60?e=6SiIBU)
+
+Story Telling Caso 5: [Story Telling Caso 5](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCBL9r2G2VATqjJXVdVkqHAAW_q5WcVfev8z7CByuS3-Fc?e=V6SkKW)
+
+Story Telling Caso 6: [Story Telling Caso 6](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQD2arbbTb7yQYTc27gBwq-TAWjqCN9yRbUbRs_N0nPvAVE?e=DNKba9)
+
+Story Telling Caso 7: [Story Telling Caso 7](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBA8onoLsvgSoARS96dQVXrAVXxWMMpRwD5Ba8G5Dua7xk?e=crLdjV)
+
+Bounded Context Iam: [Bounded Context Iam](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQBOYZyjoXFdS6dj4AxZ-iXQATgjNkZfK6qJt2yny5MgsIk?e=SU69jz)
+
+Bounded Context Maintenance and Operations: [Bounded Context Maintenance and Operations](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDcJLPgTGh5TbMcJpeCfyExAV6BwtLg02vwm6lOvtWbwEA?e=QUrvsZ)
+
+Bounded Context Reports: [Bounded Context Reports](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCgAuOnpGxYQJ2vAvY687cwAexwYT7YvydESosyKAapnO4?e=a6I6v1)
+
+Bounded Context Subscriptions: [Bounded Context Subscriptions](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDgMjZHspzwR6bwASbBRnsSAUxXaZlop95RwXiEKKlvqY0?e=fXT2n3)
+
+Bounded Context Management: [Bounded Context Management](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDVEL2x35BtSLWm03Uqq6Q5Aa-E7OBwrA7iZtvw97Juk8Q?e=8F5ZuS)
+
+Bounded Context Vehicle Wellness: [Bounded Context Vehicle Wellness](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQAw3CdNtDRORbEyOfeuh3XTAaA5EIjZirJtZNl8QAwnec0?e=n0OLvK)
+
+Context Mapping: [Context Mapping](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQA0SKESoRybQLAxaL1DWZytAZPqEI8FlQ6IW74RzGARk2k?e=Z0quhE)
+
+System Landscape: [System Landscape](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCbQJ4UKfWQSZBizy7VCsaUAYhKk4VYnUxD6Uy64mUfIoA?e=vuD73t)
+
+System Context Diagram: [System Context Diagram](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCvKG_fCG26Trt6E07eJBjpAQoHsQwzGTcRc2SSCEbdddM?e=bQ6Hko)
+
+System Container Diagram: [System Container Diagram](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQDMXfwgbidRQZJN6iWRtiBtAdVlEkKD44ZfniYj4Hyo8UU?e=CIfkCc)
+
+System Deployment Model: [System Deployment Model](https://upcedupe-my.sharepoint.com/:i:/g/personal/u202122484_upc_edu_pe/IQCGWpxMMaKpRJD34_Ej1rwMActWNkeEt9bUp22i2qVy-gk?e=afDxY9)
+
 Video exposición tp: https://tinyurl.com/mrxd5ne5
 
 Backend	BykerZ-Backend : [https://github.com/NRG-6-IOT/BykerZ-Backend.git](https://github.com/NRG-6-IOT/BykerZ-Backend.git)
