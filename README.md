@@ -6643,6 +6643,29 @@ Esta sección describe el proceso de planificación del Sprint 3, donde el equip
 | Sum of Story Points              |
 
 ##### 6.2.3.2. Aspect Leaders and Collaborators
+
+Los usuarios de github estan relacionados de la siguiente manera:
+
+* Alejo Cardenas Jose Antonio: Firtness       
+* Astonitas Díaz Juan Diego: NeoRise456   
+* Casas Sanchez Gabriel Alexander: Al3xiel      
+* Pacheco Astiguetta Sebastian: Pachieeee    
+* Pasquale Barrenechea Gianluca Santino: cwassointt   
+* Real Calderon Sebatian Omar: sebastianrealcalderon
+
+|        Aspecto        | Gabriel Casas | Juan Diego Astonitas | Gianluca Pasquale | Sebastian Pacheco | Jose Alejo | Sebastian Real |
+|:---------------------:|:-------------:|:--------------------:|:-----------------:|:-----------------:|:----------:|:--------------:|
+|    BC-Assignments     |       L       |          C           |         C         |         C         |     C      |       C        |
+|    BC-Maintenance     |       C       |          L           |         C         |         C         |     C      |       C        |
+|  BC-Vehicle Wellness  |       C       |          C           |         C         |         C         |     L      |       C        |
+|        BC-IAM         |       C       |          C           |         C         |         L         |     C      |       C        |
+|      BC-Reports       |       C       |          C           |         L         |         C         |     C      |       C        |
+| BC-Vehicle Management |       C       |          C           |         C         |         C         |     C      |       L        |
+|     Embedded App      |       L       |          C           |         C         |         L         |     C      |       C        |
+|      IoT Device       |       L       |          C           |         C         |         L         |     C      |       C        | 
+|  Simulated Prototype  |       L       |          L           |         C         |         C         |     C      |       C        | 
+|      Deployment       |       C       |          L           |         C         |         C         |     C      |       C        |
+
 ##### 6.2.3.3. Sprint Backlog 3
 ##### 6.2.3.4. Development Evidence for Sprint Review
 ##### 6.2.3.5. Testing Suite Evidence for Sprint Review
