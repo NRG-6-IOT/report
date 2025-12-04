@@ -4925,7 +4925,7 @@ La sección Aspect Leaders and Collaborators presenta la asignación de roles y 
 
 La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
 
-Enlace al tablero:
+Enlace al tablero: https://trello.com/b/p0Q6jeKS/sprint-2-iot
 
 <table>
   <tr>
@@ -6667,6 +6667,178 @@ Los usuarios de github estan relacionados de la siguiente manera:
 |      Deployment       |       C       |          L           |         C         |         C         |     C      |       C        |
 
 ##### 6.2.3.3. Sprint Backlog 3
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+Enlace al tablero: https://trello.com/b/YSmbG0JF/sprint-3-iot
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item/task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2">US-28</td>
+        <td colspan="2">Monitorear temperatura de la moto</td>
+        <td>T-001</td>
+        <td>Monitoreo de temperatura físico</td>
+        <td>Habilitar el monitoreo de temperatura en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de temperatura simulado</td>
+        <td>Habilitar el monitoreo de temperatura en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-29</td>
+        <td colspan="2">Monitorear contaminación del escape</td>
+        <td>T-001</td>
+        <td>Monitoreo de la contaminación física</td>
+        <td>Habilitar el monitoreo de la contaminación en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de contaminación simulada</td>
+        <td>Habilitar el monitoreo de la contaminación en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2" colspan="2">US-30</td>
+        <td colspan="2" colspan="2">Detectar impactos con la moto estacionada</td>
+        <td>T-001</td>
+        <td>Monitoreo de los impactos física</td>
+        <td>Habilitar el monitoreo de los impactos en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de los impactos simulada</td>
+        <td>Habilitar el monitoreo de los impactos en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-31</td>
+        <td colspan="2">Monitorear presión de llantas</td>
+        <td>T-001</td>
+        <td>Monitoreo de la presión de llantas física</td>
+        <td>Habilitar el monitoreo de la presión de llantas en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de la presión de llantas simulada</td>
+        <td>Habilitar el monitoreo de la presión de llantas en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-32</td>
+        <td colspan="2">Visualizar estado general de la moto</td>
+        <td>T-001</td>
+        <td>Monitoreo del estado general físico</td>
+        <td>Habilitar el monitoreo del estado general en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo del estado general simulado</td>
+        <td>Habilitar el monitoreo del estado general en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-33</td>
+        <td colspan="2">Integrar sensores con ModestIoT</td>
+        <td>T-001</td>
+        <td>Integrar ModestIoT en dispositivo físico</td>
+        <td>Programar el embedded application siguiendo ModestIoT</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Integrar ModestIoT en dispositivo simulado</td>
+        <td>Programar el simulated prototype siguiendo ModestIoT</td>
+        <td>8hrs</td>
+        <td>Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-34</td>
+        <td colspan="2">Arquitectura basada en eventos</td>
+        <td>T-001</td>
+        <td>Programar en base a eventos físicos</td>
+        <td>Programar la reacción de los sensores en base a eventos físicos</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Programar en base a eventos simulados</td>
+        <td>Programar la reacción de los sensores en base a eventos simulados</td>
+        <td>8hrs</td>
+        <td>Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-35</td>
+        <td>Escalabilidad del sistema</td>
+        <td>T-001</td>
+        <td>Programación orientada a objetos</td>
+        <td>Crear los sensores y dispositivos en base a la abstracción de conceptos</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco, Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-36</td>
+        <td>Depuración mediante Serial Monitor</td>
+        <td>T-001</td>
+        <td>Salida de datos</td>
+        <td>Mostrar en el monitor serial los datos leidos por los sensores</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco, Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+</table>
+
 ##### 6.2.3.4. Development Evidence for Sprint Review
 ##### 6.2.3.5. Testing Suite Evidence for Sprint Review
 ##### 6.2.3.6. Execution Evidence for Sprint Review
