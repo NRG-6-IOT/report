@@ -4946,7 +4946,7 @@ La sección Aspect Leaders and Collaborators presenta la asignación de roles y 
 
 La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
 
-Enlace al tablero:
+Enlace al tablero: https://trello.com/b/p0Q6jeKS/sprint-2-iot
 
 <table>
   <tr>
@@ -6643,15 +6643,538 @@ Distribución de commits:
 * Real Calderon Sebatian Omar: 2 commits
 
 #### 6.2.3. Sprint 3
+
+Este tercer sprint se centro en la culminación y pulido de todos los productos digitales del ecosistema BykerZ, asegurando que cada componente estuviera completamente funcional, integrado y listo para su despliegue. El equipo trabajó en la finalización de la Landing Page, la Web Application, la Mobile Application y el Backend, enfocándose en corregir errores, optimizar el rendimiento y mejorar la experiencia de usuario. Además, se realizaron pruebas exhaustivas para garantizar la estabilidad y confiabilidad de los sistemas antes de su lanzamiento oficial.
+
 ##### 6.2.3.1. Sprint Planning 3
+
+Esta sección describe el proceso de planificación del Sprint 3, donde el equipo definió los objetivos y entregables a desarrollar. Durante la reunión de Sprint Planning, se establecieron las prioridades del Product Backlog, los responsables de cada tarea y el alcance de las historias de usuario relacionadas con la implementación d la internacionalización y del dispositivo iot.
+
+| Sprint #                         | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date                             | 2025-11-20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Time                             | 10:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Location                         | Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Prepared by                      | Gabriel Alexander Casas Sanchez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Attendees                        | All team members ( Alejo Cardenas Jose Antonio, Astonitas Díaz Juan Diego, Casas Sanchez Gabriel Alexander, Pacheco Astiguetta Sebastian, Pasquale Barrenechea Gianluca Santino, Real Calderon Sebatian Omar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Sprint 2 - Review Summary        | Se logro implementar la primera versión completa del core business, logrando emitir metricas a traves del dispositivo iot e interactuar con los productos móviles y web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 
+| Sprint 2 - Retrospective Summary | Se detecto una mejora en el flujo de trabajo como equipo, evidenciando una mayor participación entre los miembros e interés en la finalización del proyecto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Sprint 3 Goal                    | El objetivo del Sprint 3 es entregar un prototipo IoT plenamente funcional capaz de capturar y transmitir datos críticos del vehículo (temperatura, ubicación, impactos, presión y niveles de contaminación) hacia la infraestructura en la nube, fortaleciendo así la propuesta tecnológica central del proyecto. De forma complementaria, se busca fortalecer la comunicación con los usuarios externos mediante la producción de videos demostrativos para la landing page (video about-the-product y about-the-team), y mejorar la experiencia de uso en la aplicación web y móvil a través de optimizaciones de la interfaz. El éxito del sprint se confirmará cuando el dispositivo IoT transmita datos reales de forma estable y los usuarios visualicen correctamente las mejoras en la plataforma digital y el material audiovisual publicado. |
+| Sprint 3 Velocity                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Sum of Story Points              |
+
 ##### 6.2.3.2. Aspect Leaders and Collaborators
+
+Los usuarios de github estan relacionados de la siguiente manera:
+
+* Alejo Cardenas Jose Antonio: Firtness       
+* Astonitas Díaz Juan Diego: NeoRise456   
+* Casas Sanchez Gabriel Alexander: Al3xiel      
+* Pacheco Astiguetta Sebastian: Pachieeee    
+* Pasquale Barrenechea Gianluca Santino: cwassointt   
+* Real Calderon Sebatian Omar: sebastianrealcalderon
+
+|        Aspecto        | Gabriel Casas | Juan Diego Astonitas | Gianluca Pasquale | Sebastian Pacheco | Jose Alejo | Sebastian Real |
+|:---------------------:|:-------------:|:--------------------:|:-----------------:|:-----------------:|:----------:|:--------------:|
+|    BC-Assignments     |       L       |          C           |         C         |         C         |     C      |       C        |
+|    BC-Maintenance     |       C       |          L           |         C         |         C         |     C      |       C        |
+|  BC-Vehicle Wellness  |       C       |          C           |         C         |         C         |     L      |       C        |
+|        BC-IAM         |       C       |          C           |         C         |         L         |     C      |       C        |
+|      BC-Reports       |       C       |          C           |         L         |         C         |     C      |       C        |
+| BC-Vehicle Management |       C       |          C           |         C         |         C         |     C      |       L        |
+|     Embedded App      |       L       |          C           |         C         |         L         |     C      |       C        |
+|      IoT Device       |       L       |          C           |         C         |         L         |     C      |       C        | 
+|  Simulated Prototype  |       L       |          L           |         C         |         C         |     C      |       C        | 
+|      Deployment       |       C       |          L           |         C         |         C         |     C      |       C        |
+
 ##### 6.2.3.3. Sprint Backlog 3
+
+La sección Sprint Backlog presenta la planificación detallada del trabajo a realizar durante el Sprint, alineada con el objetivo principal establecido. Aquí se muestra el tablero de gestión en Trello que refleja el estado de las tareas y su distribución entre los miembros del equipo. Además, se incluye una tabla con las User Stories seleccionadas y los Work-items o Tasks derivados, facilitando la trazabilidad y el control del avance del Sprint.
+
+Enlace al tablero: https://trello.com/b/YSmbG0JF/sprint-3-iot
+
+<table>
+    <tr>
+        <td colspan="1"><strong>Sprint #</strong></td>
+        <td colspan="7"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item/task</strong></td>
+    </tr>
+    <tr>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Id</strong></td>
+        <td colspan="1"><strong>Title</strong></td>
+        <td colspan="1"><strong>Description</strong></td>
+        <td colspan="1"><strong>Estimation(Hrs)</strong></td>
+        <td colspan="1"><strong>Assigned To</strong></td>
+        <td colspan="1"><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2">US-28</td>
+        <td colspan="2">Monitorear temperatura de la moto</td>
+        <td>T-001</td>
+        <td>Monitoreo de temperatura físico</td>
+        <td>Habilitar el monitoreo de temperatura en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de temperatura simulado</td>
+        <td>Habilitar el monitoreo de temperatura en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-29</td>
+        <td colspan="2">Monitorear contaminación del escape</td>
+        <td>T-001</td>
+        <td>Monitoreo de la contaminación física</td>
+        <td>Habilitar el monitoreo de la contaminación en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de contaminación simulada</td>
+        <td>Habilitar el monitoreo de la contaminación en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2" colspan="2">US-30</td>
+        <td colspan="2" colspan="2">Detectar impactos con la moto estacionada</td>
+        <td>T-001</td>
+        <td>Monitoreo de los impactos física</td>
+        <td>Habilitar el monitoreo de los impactos en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de los impactos simulada</td>
+        <td>Habilitar el monitoreo de los impactos en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-31</td>
+        <td colspan="2">Monitorear presión de llantas</td>
+        <td>T-001</td>
+        <td>Monitoreo de la presión de llantas física</td>
+        <td>Habilitar el monitoreo de la presión de llantas en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo de la presión de llantas simulada</td>
+        <td>Habilitar el monitoreo de la presión de llantas en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-32</td>
+        <td colspan="2">Visualizar estado general de la moto</td>
+        <td>T-001</td>
+        <td>Monitoreo del estado general físico</td>
+        <td>Habilitar el monitoreo del estado general en el dispositivo físico</td>
+        <td>5hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Monitoreo del estado general simulado</td>
+        <td>Habilitar el monitoreo del estado general en el dispositivo simulado</td>
+        <td>5hrs</td>
+        <td>Gabriel Casas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-33</td>
+        <td colspan="2">Integrar sensores con ModestIoT</td>
+        <td>T-001</td>
+        <td>Integrar ModestIoT en dispositivo físico</td>
+        <td>Programar el embedded application siguiendo ModestIoT</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Integrar ModestIoT en dispositivo simulado</td>
+        <td>Programar el simulated prototype siguiendo ModestIoT</td>
+        <td>8hrs</td>
+        <td>Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td colspan="2">US-34</td>
+        <td colspan="2">Arquitectura basada en eventos</td>
+        <td>T-001</td>
+        <td>Programar en base a eventos físicos</td>
+        <td>Programar la reacción de los sensores en base a eventos físicos</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>T-002</td>
+        <td>Programar en base a eventos simulados</td>
+        <td>Programar la reacción de los sensores en base a eventos simulados</td>
+        <td>8hrs</td>
+        <td>Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-35</td>
+        <td>Escalabilidad del sistema</td>
+        <td>T-001</td>
+        <td>Programación orientada a objetos</td>
+        <td>Crear los sensores y dispositivos en base a la abstracción de conceptos</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco, Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>US-36</td>
+        <td>Depuración mediante Serial Monitor</td>
+        <td>T-001</td>
+        <td>Salida de datos</td>
+        <td>Mostrar en el monitor serial los datos leidos por los sensores</td>
+        <td>8hrs</td>
+        <td>Sebastian Pacheco, Gabriel Casas, Juan Astonitas</td>
+        <td>Done</td>
+    </tr>
+</table>
+
 ##### 6.2.3.4. Development Evidence for Sprint Review
+
+En esta sección se presentan los avances alcanzados durante el Sprint en la implementación de los productos del proyecto, incluyendo la Mobile Application Page, la Web Applications y el Backend. Se resumen los progresos técnicos más relevantes y se evidencia la evolución del desarrollo mediante una tabla que detalla los commits realizados en cada repositorio, asegurando la trazabilidad y el seguimiento del trabajo ejecutado por el equipo.
+
+**Web Application**:
+
+| Repository                                          | Branch  | Commit Id | Commit Message                                                         | Commit Message Body                                                    | Date       |
+|-----------------------------------------------------|---------|-----------|------------------------------------------------------------------------|------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | a3ac35f3  | feat(i18n): add ngx-translate for internationalization support         | feat(i18n): add ngx-translate for internationalization support         | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 7bc47023  | feat(i18n): integrate ngx-translate for dynamic language support       | feat(i18n): integrate ngx-translate for dynamic language support       | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 54cddefa  | feat(i18n): add empty language files for English and Spanish           | feat(i18n): add empty language files for English and Spanish           | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | c1466e10  | feat(i18n): implement language switcher component with styling         | feat(i18n): implement language switcher component with styling         | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 65d463d9  | feat(i18n): add language switcher to navbar component                  | feat(i18n): add language switcher to navbar component                  | 23/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 729610c6  | feat: owner dashboard structure                                        | feat: owner dashboard structure                                        | 25/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | eb600d35  | feat: owner vehicle card scroll structure                              | feat: owner vehicle card scroll structure                              | 25/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | dfc17b47  | feat: owner and mechanic dashboards                                    | feat: owner and mechanic dashboards                                    | 26/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | c06b2985  | fix(expense): update expense creation to use ownerId instead of userId | fix(expense): update expense creation to use ownerId instead of userId | 28/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 2ff54123  | fix: owner id retrieval                                                | fix: owner id retrieval                                                | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | c75f2e8b  | feat: add new style for pages.                                         | feat: add new style for pages.                                         | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 280efcd6  | feat: add new style for more pages.                                    | feat: add new style for more pages.                                    | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | d31b2699  | fix: improve styling and layout for various pages                      | fix: improve styling and layout for various pages                      | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Web-Application | develop | 84c6c8dc  | feat(membership): added membershipType                                 | feat(membership): added membershipType                                 | 03/12/2025 |
+
+**Backend**
+
+|                 Repository                  | Branch  | Commit Id | Commit Message                                                                                                 | Commit Message Body                                                                                            | Date       |
+|:-------------------------------------------:|:-------:|-----------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 0928fb45  | fix(devices): add service for device authentication.                                                           | fix(devices): add service for device authentication.                                                           | 28/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | b3577b1a  | feat(metrics): added humidity deletedfix(iam): update endpoint to retrieve user by username instead of email.  | feat(metrics): added humidity deletedfix(iam): update endpoint to retrieve user by username instead of email.  | 29/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 49f98bf3  | fix(iam): update endpoint to retrieve user by username instead of email.                                       | fix(iam): update endpoint to retrieve user by username instead of email.                                       | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | b17af5fa  | feat(devices): enhance device model with JPA annotations and constructors.                                     | feat(devices): enhance device model with JPA annotations and constructors.                                     | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | e7e2f53d  | feat(devices): implement device registration and validation commands.                                          | feat(devices): implement device registration and validation commands.                                          | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 7b85378c  | feat(devices): add method to find device by vehicle ID.                                                        | feat(devices): add method to find device by vehicle ID.                                                        | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | ce9c6981  | feat(devices): add resource classes for device registration and validation.                                    | feat(devices): add resource classes for device registration and validation.                                    | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 7554a8ff  | feat(devices): add assemblers for transforming device resources and commands.                                  | feat(devices): add assemblers for transforming device resources and commands.                                  | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 3b4d5de0  | feat(devices): implement device authentication and registration endpoints.                                     | feat(devices): implement device authentication and registration endpoints.                                     | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | a1f30d3a  | feat(devices): update DeviceRepository to use device ID and add existence check.                               | feat(devices): update DeviceRepository to use device ID and add existence check.                               | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 01006533  | feat(devices): use device ID for existence checks and registration.                                            | feat(devices): use device ID for existence checks and registration.                                            | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 31d630d6  | feat(devices): add device authentication endpoint to security configuration                                    | feat(devices): add device authentication endpoint to security configuration                                    | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | c62f397e  | feat(devices): integrate external vehicle service for vehicle existence validation during device registration. | feat(devices): integrate external vehicle service for vehicle existence validation during device registration. | 30/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 54dbbf65  | feat(maintenance): add endpoint to retrieve maintenances by owner ID                                           | feat(maintenance): add endpoint to retrieve maintenances by owner ID                                           | 03/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | aa45cc58  | feat(membershipType): added MembershipType Enum                                                                | feat(membershipType): added MembershipType Enum                                                                | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Backend | develop | 690a9f23  | fix(mechanicController): fix corrected response                                                                | fix(mechanicController): fix corrected response                                                                | 03/12/2025 |
+
+**Mobile Application**
+
+| Repository                                             | Branch  | Commit Id | Commit Message                                                                                          | Commit Message Body                                                                                     | Date       |
+|--------------------------------------------------------|---------|-----------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 21efc09d  | feat(l0n): add flutter_localizations and enable code generation                                         | feat(l0n): add flutter_localizations and enable code generation                                         | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 00d27673  | feat(l10n): add localization configuration for ARB files                                                | feat(l10n): add localization configuration for ARB files                                                | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 9ebbc0d8  | feat(l10n): add English and Spanish localization files                                                  | feat(l10n): add English and Spanish localization files                                                  | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 3c66ada5  | feat(l10n): add localization support for English and Spanish using terminal command "flutter gen-l10n". | feat(l10n): add localization support for English and Spanish using terminal command "flutter gen-l10n". | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 94d6694a  | feat(l10n): implement LocaleBloc and LocaleEvent for dynamic locale changes                             | feat(l10n): implement LocaleBloc and LocaleEvent for dynamic locale changes                             | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 786f427b  | feat(l10n): add LanguageSwitcherButton for toggling between English and Spanish                         | feat(l10n): add LanguageSwitcherButton for toggling between English and Spanish                         | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 1e04be05  | feat(l10n): integrate LocaleBloc for dynamic locale management in the app                               | feat(l10n): integrate LocaleBloc for dynamic locale management in the app                               | 24/11/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | ea2b3622  | feat: dashboard bloc                                                                                    | feat: dashboard bloc                                                                                    | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | b59f18f0  | feat: maintenancesByOwnerId service                                                                     | feat: maintenancesByOwnerId service                                                                     | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 5fc4aba8  | feat: dashboard bloc implemented maintenances                                                           | feat: dashboard bloc implemented maintenances                                                           | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | d07c40a2  | feat: dashboard page                                                                                    | feat: dashboard page                                                                                    | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Mobile-Application | develop | 6cefd1f7  | feat(vehicle): enhance vehicle management screens with localization, improved UI, and animations        | feat(vehicle): enhance vehicle management screens with localization, improved UI, and animations        | 03/12/2025 |
+
+**Embedded Application**
+
+| Repository                                               | Branch  | Commit Id | Commit Message                                                                                                   | Commit Message Body                                                                                              | Date       |
+|----------------------------------------------------------|---------|-----------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 3e997ff7  | feat(sensor): migrate initial implementation for IoT device with new configuration and environmental monitoring. | feat(sensor): migrate initial implementation for IoT device with new configuration and environmental monitoring. | 02/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 6b2c627d  | feat(handler): add command and event handler interfaces with unique identifiers.                                 | feat(handler): add command and event handler interfaces with unique identifiers.                                 | 02/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | eddbf49b  | feat(handler): add actuator and sensor components.                                                               | feat(handler): add actuator and sensor components.                                                               | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | d50576dd  | feat(device): add device common build.                                                                           | feat(device): add device common build.                                                                           | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | ff079f94  | feat(components): add device sensor components.                                                                  | feat(components): add device sensor components.                                                                  | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 153e8322  | feat(device): add device implementation                                                                          | feat(device): add device implementation                                                                          | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | c7f19041  | feat(sensor): update event IDs for BMP and DHT sensors.                                                          | feat(sensor): update event IDs for BMP and DHT sensors.                                                          | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | a24fed72  | feat(sensor): implement temperature scanning and event handling.                                                 | feat(sensor): implement temperature scanning and event handling.                                                 | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 61349f25  | feat(sensor): add pressure scanning and event handling for BMP sensor.                                           | feat(sensor): add pressure scanning and event handling for BMP sensor.                                           | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 8cfe7e89  | feat(sensor): add gas quality sensor implementation with calibration and event handling.                         | feat(sensor): add gas quality sensor implementation with calibration and event handling.                         | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | bfcf483b  | feat(sensor): add temperature sensor implementation with event handling.                                         | feat(sensor): add temperature sensor implementation with event handling.                                         | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | 12ba875d  | feat(sensor): add knock sensor implementation for detecting knocks.                                              | feat(sensor): add knock sensor implementation for detecting knocks.                                              | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | ba5bc4a4  | feat(sensor): add GPS sensor implementation for location tracking.                                               | feat(sensor): add GPS sensor implementation for location tracking.                                               | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Embedded-Application | develop | c7d72d93  | feat(sensor): add comments to pin definitions in EmbeddedDevice for clarity                                      | feat(sensor): add comments to pin definitions in EmbeddedDevice for clarity                                      | 03/12/2025 |
+
+**Edge Service**
+
+| Repository                                       | Branch  | Commit Id | Commit Message                                                                                      | Commit Message Body                                                                                 | Date       |
+|--------------------------------------------------|---------|-----------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 28cff56d  | fix(database): move db.connect() to the correct position in initialize_db function.                 | fix(database): move db.connect() to the correct position in initialize_db function.                 | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | b8d2bdef  | docs(app): add docstrings to setup and about_edge_service functions.                                | docs(app): add docstrings to setup and about_edge_service functions.                                | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 9957438f  | fix(entities): update Device class constructor to use api_key instead of jwt_token.                 | fix(entities): update Device class constructor to use api_key instead of jwt_token.                 | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | e77e97ea  | fix(entities): update Device class to use api_key instead of jwt_token.                             | fix(entities): update Device class to use api_key instead of jwt_token.                             | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 9543459e  | fix(entities): update repository with appropiate terms and values.                                  | fix(entities): update repository with appropiate terms and values.                                  | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | ea00b834  | fix(services): update authentication to use api_key instead of jwt_token and adjust payload values. | fix(services): update authentication to use api_key instead of jwt_token and adjust payload values. | 03/12/2025 |
+| https://github.com/NRG-6-IOT/BykerZ-Edge-Service | develop | 7b094aa4  | fix(services): remove unused parameters for creation.                                               | fix(services): remove unused parameters for creation.                                               | 03/12/2025 |
+
 ##### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+Este sprint no contó con la implementación de pruebas automatizadas debido a la priorización del desarrollo de funcionalidades críticas para el proyecto. Sin embargo, se reconoce la importancia de establecer una suite de pruebas robusta en futuras iteraciones para garantizar la calidad y estabilidad del software. En los próximos sprints, se planifica la incorporación de pruebas unitarias, de integración y funcionales que permitan validar el correcto funcionamiento de las aplicaciones y servicios desarrollados, asegurando así una experiencia óptima para los usuarios finales.
+
 ##### 6.2.3.6. Execution Evidence for Sprint Review
+En esta sección se documentan las evidencias relacionadas con la ejecución del Sprint, incluyendo capturas de pantalla y descripciones de las actividades realizadas durante el desarrollo. Se destacan los hitos alcanzados, los desafíos enfrentados y las soluciones implementadas para superar obstáculos técnicos o de gestión. Esta documentación proporciona una visión clara del progreso del equipo y del cumplimiento de los objetivos establecidos para el Sprint.
+
+**Web Application Execution Evidence:**
+En este sprint se mejoro la interfaz del usuario y se implemento la internacionalización a la aplicación web. A continuación, se presentan capturas de pantalla que evidencian estos avances:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-1.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-2.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-3.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-4.png" alt="Execution Evidence Web" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-web-5.png" alt="Execution Evidence Web" />
+
+**Backend Execution Evidence:**
+Durante este sprint, se implementaron los endpoint de autenticación y registro de dispositivos:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-back-1.png" alt="Execution Evidence Backend" />
+
+**Mobile Application Execution Evidence:**
+En este sprint se mejoro la interfaz del usuario y se implemento la internacionalización a la aplicación móvil. A continuación, se presentan capturas de pantalla que evidencian estos avances:
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-1.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-2.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-3.png" alt="Execution Evidence Mobile" />
+
+<img src="images/chapter-6/sprint-3/execution-evidence-mobile-4.png" alt="Execution Evidence Mobile" />
+
 ##### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación técnica desarrollada durante el Sprint para los servicios implementados en el proyecto. Esta documentación incluye descripciones detalladas de las APIs, diagramas de arquitectura, flujos de datos y cualquier otro recurso relevante que facilite la comprensión y el uso de los servicios por parte del equipo de desarrollo y otros stakeholders. La documentación se ha elaborado siguiendo las mejores prácticas de la industria para asegurar su claridad, precisión y utilidad.
+
+| endpoint                                | verbo http | descripción                                            | parámetros | request body                         | response body                                                    | explicación                                                                                        |
+|-----------------------------------------|:----------:|--------------------------------------------------------|------------|--------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| /api/v1/devices/authentication/validate |    POST    | Valida un dispositivo registrado mediante su device Id | -          | deviceId:string                      | id:int<br/>deviceId:string<br/>vehicleId:string<br/>token:string | Valida un device mediante su id y devuelve el id del vehiculo asociado y el token de autenticación |
+| /api/v1/devices/authentication/register |    POST    | Registra un nuevo dispositivo mediante su device id    | -          | deviceId:string<br/>vehicleId:string | id:int<br/>deviceId:string<br/>vehicleId:string<br/>             | Registra un nuevo dispositivo y lo relaciona con un vehiculo                                       |
+
 ##### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-landing.png" alt="Deployed Landing Page">
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+Para desplegar la web application se necesita crear una cuenta en Render y crear un servicio web enlazado con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 4"/>
+
+Captura de pantalla de la aplicación web desplegada:
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-webapp.png" alt="Webb Application deploy evidence 5"/>
+
+Enlace a la web application en Render: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
+**Mobile Application**
+
+Para desplegar la aplicación de android primero se debe crear un proyecto en la plataforma de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-1.png" alt="Mobile Application deploy evidence 1"/>
+
+Luego se debe debe registrar una nueva aplicación de tipo flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-2.png" alt="Mobile Application deploy evidence 2"/>
+
+Ahora se siguen los siguientes pasos:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-3.png" alt="Mobile Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-4.png" alt="Mobile Application deploy evidence 4"/>
+
+Captura de pantalla de la aplicación móvil ejecutandose en un dispositivo móvil
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-5.png" alt="Mobile Application deploy evidence 5"/>
+
+Además de esto en el proyecto flutter dentro del pubspec.yaml se debe agregar el plugin de firebase distribution:
+
+```yaml
+dev_dependencies:
+  firebase_core: ^2.0.0
+```
+
+Ahora debemos inicializar firebase en el proyecto de flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-6.png" alt="Mobile Application deploy evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-7.png" alt="Mobile Application deploy evidence 7"/>
+
+Después de ejecutar el app ya esta presente en el dashboard de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-8.png" alt="Mobile Application deploy evidence 8"/>
+
+Luego se deben subir el/los archivo apk a firebase distribution, agregar verificadores y algún comentario. El apk se crear a partir del comando:
+
+```yaml
+flutter build apk --release
+```
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-9.png" alt="Mobile Application deploy evidence 9"/>
+
+Una vez enviada la invitación desde la aplicación apptester se debe probar la aplicación en un dispositivo móvil:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-10.png" alt="Mobile Application deploy evidence 10"/>
+
+img src="images/chapter-6/sprint-3/deployment-evidence-mobile.png" alt="Deployed Mobile App">
+
+**Backend**
+
+Antes de desplegar el backend se necesita crear una cuenta en Render y crear una base de datos en PostgreSQL:
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 4"/>
+
+Una vez creada la base de datos, se procede a crear el servicio web en Render y enlazarlo con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-1.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-2.png" alt="Backend deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-3.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-4.png" alt="Backend deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-5.png" alt="Backend deploy evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-6.png" alt="Backend deploy evidence 6"/>
+
+Captura de pantalla del servicio web desplegado:
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-backend.png" alt="Backend deploy evidence 7"/>
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
+
 ##### 6.2.3.9. Team Collaboration Insights during Sprint
+
+Los usuarios de github estan relacionados de la siguiente manera:
+
+* Alejo Cardenas Jose Antonio: Firtness
+* Astonitas Díaz Juan Diego: NeoRise456
+* Casas Sanchez Gabriel Alexander: Al3xiel
+* Pacheco Astiguetta Sebastian: Pachieeee
+* Pasquale Barrenechea Gianluca Santino: cwassointt
+* Real Calderon Sebatian Omar: sebastianrealcalderon
+
+**Web App:**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-1.png" alt="Web App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-2.png" alt="Web App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-2.png" alt="Web App Insights">
+
+**Mobile App**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-1.png" alt="Mobile App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-2.png" alt="Mobile App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-2.png" alt="Mobile App Insights">
+
+**Backend:**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-1.png" alt="Backend Insights">
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-2.png" alt="Backend Insights">
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-2.png" alt="Backend Insights">
+
+**Embedded app**
+
+Todos los integrantes del equipo participaron en las reuniones fisicas dentro de clase en la elaboración del código, sin embargo solo el líder del desarollo del protipo iot se encargo de subir todos los archivos y avances
+
+<img src="images/chapter-6/sprint-3/insights/embedded-insights-1.png" alt="Embedded Insights">
+
+<img src="images/chapter-6/sprint-3/insights/embedded-insights-2.png" alt="Embedded Insights">
+
+**Edge Service**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-1.png" alt="Edge Insights">
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-2.png" alt="Edge Insights">
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-2.png" alt="Edge Insights">
 
 ### 6.3. Validation Interviews.
 
