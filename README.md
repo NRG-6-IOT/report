@@ -7088,6 +7088,63 @@ Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/ind
 
 ##### 6.2.3.9. Team Collaboration Insights during Sprint
 
+Los usuarios de github estan relacionados de la siguiente manera:
+
+* Alejo Cardenas Jose Antonio: Firtness
+* Astonitas Díaz Juan Diego: NeoRise456
+* Casas Sanchez Gabriel Alexander: Al3xiel
+* Pacheco Astiguetta Sebastian: Pachieeee
+* Pasquale Barrenechea Gianluca Santino: cwassointt
+* Real Calderon Sebatian Omar: sebastianrealcalderon
+
+**Web App:**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-1.png" alt="Web App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-2.png" alt="Web App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/webapp-insights-2.png" alt="Web App Insights">
+
+**Mobile App**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-1.png" alt="Mobile App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-2.png" alt="Mobile App Insights">
+
+<img src="images/chapter-6/sprint-3/insights/mobile-insights-2.png" alt="Mobile App Insights">
+
+**Backend:**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-1.png" alt="Backend Insights">
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-2.png" alt="Backend Insights">
+
+<img src="images/chapter-6/sprint-3/insights/backend-insights-2.png" alt="Backend Insights">
+
+**Embedded app**
+
+Todos los integrantes del equipo participaron en las reuniones fisicas dentro de clase en la elaboración del código, sin embargo solo el líder del desarollo del protipo iot se encargo de subir todos los archivos y avances
+
+<img src="images/chapter-6/sprint-3/insights/embedded-insights-1.png" alt="Embedded Insights">
+
+<img src="images/chapter-6/sprint-3/insights/embedded-insights-2.png" alt="Embedded Insights">
+
+**Edge Service**
+
+Todos los integrantes del equipo participaron activamente en la revisión de código y en la gestión de issues y pull requests. A continuación, se presentan algunas capturas de pantalla que ilustran la colaboración dentro del equipo durante el sprint:
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-1.png" alt="Edge Insights">
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-2.png" alt="Edge Insights">
+
+<img src="images/chapter-6/sprint-3/insights/edge-insights-2.png" alt="Edge Insights">
+
 ### 6.3. Validation Interviews.
 
 En esta sección se documenta el proceso de validación realizado mediante entrevistas con usuarios pertenecientes a los segmentos objetivo. El propósito de estas actividades fue obtener retroalimentación directa sobre la usabilidad, funcionalidad y percepción general de la Landing Page, la Web Application y la Mobile Application, con el fin de identificar oportunidades de mejora y fortalecer la experiencia de usuario antes de las siguientes iteraciones del proyecto.
