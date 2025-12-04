@@ -6974,9 +6974,118 @@ En esta sección se presenta la documentación técnica desarrollada durante el 
 | endpoint                                | verbo http | descripción                                            | parámetros | request body                         | response body                                                    | explicación                                                                                        |
 |-----------------------------------------|:----------:|--------------------------------------------------------|------------|--------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | /api/v1/devices/authentication/validate |    POST    | Valida un dispositivo registrado mediante su device Id | -          | deviceId:string                      | id:int<br/>deviceId:string<br/>vehicleId:string<br/>token:string | Valida un device mediante su id y devuelve el id del vehiculo asociado y el token de autenticación |
-| /api/v1/devices/authentication/register |    POST    | Registra un nuevo dispositvo mediante su device id     | -          | deviceId:string<br/>vehicleId:string | id:int<br/>deviceId:string<br/>vehicleId:string<br/>             | Registra un nuevo dispositivo y lo relaciona con un vehiculo                                       |
+| /api/v1/devices/authentication/register |    POST    | Registra un nuevo dispositivo mediante su device id    | -          | deviceId:string<br/>vehicleId:string | id:int<br/>deviceId:string<br/>vehicleId:string<br/>             | Registra un nuevo dispositivo y lo relaciona con un vehiculo                                       |
 
 ##### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se presentan las evidencias relacionadas con el proceso de despliegue (Deployment) llevado a cabo durante el Sprint. Se detallan las actividades realizadas para la preparación, configuración e implementación de los diferentes productos digitales, incluyendo la Landing Page, los Web Services y Web Application. Asimismo, se describen las acciones de creación de cuentas, configuración de recursos en la nube, y automatización de procesos de despliegue, acompañadas de capturas de pantalla y explicaciones que sustentan el trabajo realizado por el equipo durante este Sprint.
+
+**Landing Page**
+1. Crear el repositorio en GitHub
+2. Crea el archivo de workflow: En la ruta .github/workflows/static.yml agrega el workflow que ya tienes configurado.
+3. Configura el branch de despliegue: El workflow está configurado para ejecutarse en el branch master. Asegúrate de que tu rama principal se llame así.
+4. Permisos del token: El workflow otorga permisos necesarios al GITHUB_TOKEN para leer el contenido y desplegar en GitHub Pages.
+5. Checkout del código: Usa la acción actions/checkout@v4 para obtener el código fuente del repositorio.
+6. Configura GitHub Pages: Usa la acción actions/configure-pages@v5 para preparar el entorno de Pages.
+7. Sube los archivos como artefacto: Usa actions/upload-pages-artifact@v3 para subir el contenido del repositorio como artefacto.
+8. Despliega a GitHub Pages: Usa actions/deploy-pages@v4 para desplegar el artefacto a GitHub Pages.
+9. Verifica el despliegue: Una vez completado el workflow, la landing page estará disponible en la URL de GitHub Pages configurada en el repositorio.
+
+<img src="images/chapter-6/sprint-3/deployment-evidence-landing.png" alt="Deployed Landing Page">
+
+Enlace a github pages: [https://nrg-6-iot.github.io/BykerZ-Landing-Page/](https://nrg-6-iot.github.io/BykerZ-Landing-Page/)
+
+**Web Application**
+
+Para desplegar la web application se necesita crear una cuenta en Render y crear un servicio web enlazado con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/webapp-deploy-evidence-1.png" alt="Webb Application deploy evidence 4"/>
+
+Enlace a la web application en Render: [https://bykerz-web-application.onrender.com/sign-in](https://bykerz-web-application.onrender.com/sign-in)
+
+**Mobile Application**
+
+Para desplegar la aplicación de android primero se debe crear un proyecto en la plataforma de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-1.png" alt="Mobile Application deploy evidence 1"/>
+
+Luego se debe debe registrar una nueva aplicación de tipo flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-2.png" alt="Mobile Application deploy evidence 2"/>
+
+Ahora se siguen los siguientes pasos:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-3.png" alt="Mobile Application deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-4.png" alt="Mobile Application deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-5.png" alt="Mobile Application deploy evidence 5"/>
+
+Además de esto en el proyecto flutter dentro del pubspec.yaml se debe agregar el plugin de firebase distribution:
+
+```yaml
+dev_dependencies:
+  firebase_core: ^2.0.0
+```
+
+Ahora debemos inicializar firebase en el proyecto de flutter:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-6.png" alt="Mobile Application deploy evidence 6"/>
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-7.png" alt="Mobile Application deploy evidence 7"/>
+
+Después de ejecutar el app ya esta presente en el dashboard de firebase:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-8.png" alt="Mobile Application deploy evidence 8"/>
+
+Luego se deben subir el/los archivo apk a firebase distribution, agregar verificadores y algún comentario. El apk se crear a partir del comando:
+
+```yaml
+flutter build apk --release
+```
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-9.png" alt="Mobile Application deploy evidence 9"/>
+
+Una vez enviada la invitación desde la aplicación apptester se debe probar la aplicación en un dispositivo móvil:
+
+<img src="images/chapter-6/sprint-2/mobile-deploy-evidence-10.png" alt="Mobile Application deploy evidence 10"/>
+
+img src="images/chapter-6/sprint-3/deployment-evidence-mobile.png" alt="Deployed Mobile App">
+
+**Backend**
+
+Antes de desplegar el backend se necesita crear una cuenta en Render y crear una base de datos en PostgreSQL:
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 3"/>
+
+<img src="images/chapter-6/sprint-2/database-deploy-evidence-1.png" alt="Database deploy evidence 4"/>
+
+Una vez creada la base de datos, se procede a crear el servicio web en Render y enlazarlo con el repositorio de GitHub:
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-1.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-2.png" alt="Backend deploy evidence 2"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-3.png" alt="Backend deploy evidence 1"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-4.png" alt="Backend deploy evidence 4"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-5.png" alt="Backend deploy evidence 5"/>
+
+<img src="images/chapter-6/sprint-2/backend-deploy-evidence-6.png" alt="Backend deploy evidence 6"/>
+
+Enlace al backend en Render: [https://bykerz-backend.onrender.com/swagger-ui/index.html#](https://bykerz-backend.onrender.com/swagger-ui/index.html#)
+
 ##### 6.2.3.9. Team Collaboration Insights during Sprint
 
 ### 6.3. Validation Interviews.
