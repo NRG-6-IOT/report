@@ -408,6 +408,16 @@ Distribución de commits:
         - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
         - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
         - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
+      - [6.2.3. Sprint 3](#623-sprint-3)
+          - [6.2.3.1. Sprint Planning 3.](#6231-sprint-planning-3)
+          - [6.2.3.2. Aspect Leaders and Collaborators.](#6232-aspect-leaders-and-collaborators)
+          - [6.2.3.3. Sprint Backlog 3.](#6233-sprint-backlog-3)
+          - [6.2.3.4. Development Evidence for Sprint Review.](#6234-development-evidence-for-sprint-review)
+          - [6.2.3.5. Testing Suite Evidence for Sprint Review.](#6235-testing-suite-evidence-for-sprint-review)
+          - [6.2.3.6. Execution Evidence for Sprint Review.](#6236-execution-evidence-for-sprint-review)
+          - [6.2.3.7. Services Documentation Evidence for Sprint Review.](#6237-services-documentation-evidence-for-sprint-review)
+          - [6.2.3.8. Software Deployment Evidence for Sprint Review.](#6238-software-deployment-evidence-for-sprint-review)
+          - [6.2.3.9. Team Collaboration Insights during Sprint.](#6239-team-collaboration-insights-during-sprint)
     - [6.3. Validation Interviews.](#63-validation-interviews)
       - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
       - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
@@ -4902,14 +4912,14 @@ Esta sección describe el proceso de planificación del Sprint 2, donde el equip
 
 La sección Aspect Leaders and Collaborators presenta la asignación de roles y responsabilidades dentro del Sprint, identificando los líderes y colaboradores por cada aspecto clave del desarrollo. Su propósito es optimizar la comunicación, fomentar la coordinación efectiva y asegurar que cada área del proyecto cuente con un referente claro para la toma de decisiones y el seguimiento del progreso.
 
-| Team Member                           | Github Username       | Aspect Name 1                     | Aspect Name 2           | Aspect Name 3    | Aspect Name 4          | Aspect Name 5     |
-|---------------------------------------|-----------------------|-----------------------------------|-------------------------|------------------|------------------------|-------------------|  
-| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
-| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) | Simulated Prototype (L) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
-| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (L) | Edge Services (L) |
-| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        | Simulated Prototype (C) | Embedded App (L) | Physical Prototype (L) | Edge Services (C) |
-| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
-| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            | Simulated Prototype (C) | Embedded App (C) | Physical Prototype (C) | Edge Services (C) |
+| Team Member                           | Github Username       | Bounded Context                   |  Simulated Prototype  |  Embedded App  |  Physical Prototype  |  Edge Services  |
+|---------------------------------------|-----------------------|-----------------------------------|:---------------------:|:--------------:|:--------------------:|:---------------:|  
+| Alejo Cardenas Jose Antonio           | Firtness              | Vehicle Wellness BC (L)           |          (C)          |      (C)       |         (C)          |       (C)       |
+| Astonitas Díaz Juan Diego             | NeoRise456            | Maintenance and Operations BC (L) |          (L)          |      (C)       |         (C)          |       (C)       |
+| Casas Sanchez Gabriel Alexander       | Al3xiel               | Assignments BC (L)                |          (C)          |      (C)       |         (L)          |       (L)       |
+| Pacheco Astiguetta Sebastian          | Pachieeee             | IAM BC (L)                        |          (C)          |      (L)       |         (L)          |       (C)       |
+| Pasquale Barrenechea Gianluca Santino | cwassointt            | Reports BC (L)                    |          (C)          |      (C)       |         (C)          |       (C)       |
+| Real Calderon Sebatian Omar           | sebastianrealcalderon | Vehicle Management (L)            |          (C)          |      (C)       |         (C)          |       (C)       |
 
 ##### 6.2.2.3. Sprint Backlog 2.
 
@@ -6611,6 +6621,17 @@ Distribución de commits:
 * Pasquale Barrenechea Gianluca Santino: 1 commits
 * Real Calderon Sebatian Omar: 2 commits
 
+#### 6.2.3. Sprint 3
+##### 6.2.3.1. Sprint Planning 3
+##### 6.2.3.2. Aspect Leaders and Collaborators
+##### 6.2.3.3. Sprint Backlog 3
+##### 6.2.3.4. Development Evidence for Sprint Review
+##### 6.2.3.5. Testing Suite Evidence for Sprint Review
+##### 6.2.3.6. Execution Evidence for Sprint Review
+##### 6.2.3.7. Services Documentation Evidence for Sprint Review
+##### 6.2.3.8. Software Deployment Evidence for Sprint Review
+##### 6.2.3.9. Team Collaboration Insights during Sprint
+
 ### 6.3. Validation Interviews.
 
 En esta sección se documenta el proceso de validación realizado mediante entrevistas con usuarios pertenecientes a los segmentos objetivo. El propósito de estas actividades fue obtener retroalimentación directa sobre la usabilidad, funcionalidad y percepción general de la Landing Page, la Web Application y la Mobile Application, con el fin de identificar oportunidades de mejora y fortalecer la experiencia de usuario antes de las siguientes iteraciones del proyecto.
@@ -6788,8 +6809,6 @@ Aquí se presenta el registro sistemático de las entrevistas realizadas, incluy
   </tbody>
 </table>
 
-
-
 #### 6.3.3. Evaluaciones según heurísticas.
 
 En esta subsección se expone el análisis de las entrevistas basado en la aplicación de heurísticas de usabilidad, arquitectura de información y diseño inclusivo, siguiendo el formato de evaluación establecido para el proyecto. El objetivo fue identificar fortalezas y debilidades en la experiencia de usuario, priorizando aquellas oportunidades de mejora que contribuyan a la optimización de la interacción y accesibilidad de las aplicaciones.
@@ -6818,11 +6837,11 @@ En esta subsección se expone el análisis de las entrevistas basado en la aplic
 
 **Tabla de resumen**
 
-| #Orden | Problema | Escala de Severidad | Heurística / Principio violado(a) |
-|--------|----------|---------------------|-----------------------------------|
-| 1 | Falta de información contextual sobre códigos de asignación y su propósito | 3 | Visibilidad del estado del sistema / Ayuda y documentación |
-| 2 | Panel principal incompleto sin resúmenes clave para la toma de decisiones | 3 | Flexibilidad y eficiencia de uso / Diseño estético y minimalista |
-| 3 | Flujos de acción críticos sin confirmaciones claras o títulos descriptivos | 2 | Prevención de errores / Consistencia y estándares |
+| #Orden | Problema                                                                   | Escala de Severidad | Heurística / Principio violado(a)                                |
+|--------|----------------------------------------------------------------------------|---------------------|------------------------------------------------------------------|
+| 1      | Falta de información contextual sobre códigos de asignación y su propósito | 3                   | Visibilidad del estado del sistema / Ayuda y documentación       |
+| 2      | Panel principal incompleto sin resúmenes clave para la toma de decisiones  | 3                   | Flexibilidad y eficiencia de uso / Diseño estético y minimalista |
+| 3      | Flujos de acción críticos sin confirmaciones claras o títulos descriptivos | 2                   | Prevención de errores / Consistencia y estándares                |
 
 **Problema #1: Falta de información contextual sobre códigos de asignación y su propósito**
 
